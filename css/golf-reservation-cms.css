@@ -1,4 +1,13 @@
+/* web */
 .reservation-product .tab-page .tab {
+    width: 100%;
+}
+
+.reservation-product > ul.tab-page li:nth-child(2) {
+    display: none;
+}
+
+.reservation-product .tab-page[data-len='2'] .tab {
     width: 100%;
 }
 
@@ -19,10 +28,17 @@
     color: #f7441b;
 }
 
-.reservation-product > ul.tab-page li:nth-child(2) {
-    display: none;
+/* mobile */
+.noIE.mob .detail-wrap {
+    padding: 0 15px;
+    letter-spacing: 0;
 }
 
-.reservation-product .tab-page[data-len='2'] .tab {
-    width: 100%;
+.noIE.mob .detail-wrap .head-sub.next-section {
+    text-align: center;
+    padding-left: 0;
+}
+
+.noIE.mob .detail-wrap ul li a.btn.small.light  {
+    margin-top: 5px;
 }
