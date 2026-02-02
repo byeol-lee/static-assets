@@ -30,15 +30,22 @@
 
 /* mobile */
 .noIE.mob .common-basic-info {
+    font-size: 14px;
     letter-spacing: 0;
+    border-bottom: 8px solid #f5f5f5;
 }
 
-.common-basic-info .basic-info-wrap {
+.noIE.mob .common-basic-info .basic-info-wrap {
     border-top: none;
 }
 
-.basic-info-wrap > .title:first-child {
+.noIE.mob .common-basic-info > .title {
     display: none;
+}
+
+.noIE.mob .basic-info-wrap > .title {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
 }
 
 .noIE.mob .detail-wrap .head-sub.next-section {
@@ -46,19 +53,21 @@
     padding-left: 0;
 }
 
-.noIE.mob .detail-wrap ul li a.btn.small.light  {
+.noIE.mob ul li a.btn.small.light  {
     margin-top: 5px;
+    color: #666;
+    border-color: #666;
 }
 
-.reservation-product .common-basic-info {
+.noIE.mob .reservation-product .common-basic-info {
     background: #fff;
 }
 
-.common-basic-info .dot-bu-list li:before {
+.noIE.mob .common-basic-info .dot-bu-list li:before {
     background: #222;
 }
 
-.common-basic-info .title,
-.common-basic-info {
+.noIE.mob .common-basic-info .title,
+.noIE.mob .common-basic-info {
     color: #222;
 }
