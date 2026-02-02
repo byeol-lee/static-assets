@@ -29,9 +29,16 @@
 }
 
 /* mobile */
-.noIE.mob .detail-wrap {
-    padding: 0 15px;
+.noIE.mob .common-basic-info {
     letter-spacing: 0;
+}
+
+.common-basic-info .basic-info-wrap {
+    border-top: none;
+}
+
+.basic-info-wrap > .title:first-child {
+    display: none;
 }
 
 .noIE.mob .detail-wrap .head-sub.next-section {
@@ -41,4 +48,17 @@
 
 .noIE.mob .detail-wrap ul li a.btn.small.light  {
     margin-top: 5px;
+}
+
+.reservation-product .common-basic-info {
+    background: #fff;
+}
+
+.common-basic-info .dot-bu-list li:before {
+    background: #222;
+}
+
+.common-basic-info .title,
+.common-basic-info {
+    color: #222;
 }
