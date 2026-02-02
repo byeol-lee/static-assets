@@ -1,0 +1,28 @@
+.reservation-product .tab-page .tab {
+    width: 100%;
+}
+
+.reservation-product .tab-page .tab.selected a {
+    color: #167a47;
+    border-color: #167a47;
+}
+
+.reservation-product .product-info-container .product-info {
+    padding: 0;
+}
+
+.reservation-product .product-info .sub {
+    color: #222;
+}
+
+.reservation-product .text-notice {
+    color: #f7441b;
+}
+
+.reservation-product > ul.tab-page li:nth-child(2) {
+    display: none;
+}
+
+.reservation-product .tab-page[data-len='2'] .tab {
+    width: 100%;
+}
