@@ -29,26 +29,13 @@
 
 .event-detail__container {
     padding: 0;
-    margin: 0;
-    /* font-family: 'Pretendard', sans-serif; */
+    margin: 0 auto;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     letter-spacing: 0;
     word-break: keep-all;
 }
-
-/* body,
-p {
-    padding: 0;
-    margin: 0;
-    font-family: 'Pretendard', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    letter-spacing: 0.4px;
-    word-break: keep-all;
-} */
 
 ul {
     list-style: none;
@@ -143,12 +130,6 @@ Event Detail - Common
     display: block;
 }
 
-.event-detail__container {
-    /* min-width: 320px; */
-    /* max-width: 1200px; */
-    margin: 0 auto;
-}
-
 .event-detail__content--wrap {
     margin: 0 16px
 }
@@ -201,7 +182,8 @@ Hero
 }
 
 .event-hero__title {
-    font-size: 24px;
+    font-size: 32px;
+    line-height: 40px;
     font-weight: 600;
     margin-bottom: 8px;
 }
