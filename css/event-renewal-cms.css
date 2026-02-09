@@ -495,6 +495,9 @@ CTA
 .table-container.deco.inner-bordered.center ~ .ref-bu-list {
     font-size: 16px;
     color: #666;
+    padding-left: 30px;
+    text-indent: -30px;
+    margin-top: 0;
 }
 
 .table-container.deco.inner-bordered.center ~ .ref-bu-list:first-child {
@@ -792,13 +795,16 @@ PC Responsive
 
     .table-container.deco.inner-bordered.center ~ .ref-bu-list {
         font-size: 24px;
+        padding-left: 30px;
+        text-indent: -30px;
+        margin-top: 0;
     }
 
-    .table-container.deco.inner-bordered.center ~ .ref-bu-list:first-child {
+    .table-container.deco.inner-bordered.center > .ref-bu-list:first-child {
         margin-top: -30px;
     }
 
-    .table-container.deco.inner-bordered.center ~ .ref-bu-list:last-child {
+    .table-container.deco.inner-bordered.center > .ref-bu-list:last-child {
         margin-bottom: 40px;
     }
 
