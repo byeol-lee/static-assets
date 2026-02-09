@@ -800,11 +800,11 @@ PC Responsive
         margin-top: 0;
     }
 
-    .table-container.deco.inner-bordered.center > .ref-bu-list:first-child {
+    .ref-bu-list:first-child {
         margin-top: -30px;
     }
 
-    .table-container.deco.inner-bordered.center > .ref-bu-list:last-child {
+    .ref-bu-list:last-child {
         margin-bottom: 40px;
     }
 
