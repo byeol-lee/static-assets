@@ -492,6 +492,16 @@ CTA
     transform: translateY(0);
 }
 
+.table-container.deco.inner-bordered.center + .ref-bu-list {
+    font-size: 16px;
+    color: #666;
+    margin-top: -20;
+}
+
+.table-container.deco.inner-bordered.center + .ref-bu-list:first-child {
+    margin: -30px 0 64px;
+}
+
 
 /* ==================================================
 PC Responsive
@@ -775,6 +785,14 @@ PC Responsive
 
     .table-container+.event-cta {
         margin-top: 0;
+    }
+
+    .table-container.deco.inner-bordered.center + .ref-bu-list {
+        font-size: 24px;
+    }
+
+    .table-container.deco.inner-bordered.center + .ref-bu-list:first-child {
+        margin: -30px 0 40px;
     }
 
 }
