@@ -492,22 +492,6 @@ CTA
     transform: translateY(0);
 }
 
-.table-container.deco.inner-bordered.center ~ .ref-bu-list {
-    font-size: 16px;
-    color: #666;
-    padding-left: 30px;
-    text-indent: -30px;
-    margin-top: 0;
-}
-
-.table-container.deco.inner-bordered.center ~ .ref-bu-list:first-child {
-    margin-top: -30px;
-}
-
-.table-container.deco.inner-bordered.center ~ .ref-bu-list:last-child {
-    margin-bottom: 40px;
-}
-
 
 /* ==================================================
 PC Responsive
@@ -601,9 +585,8 @@ PC Responsive
     }
 
     .event-hero__title {
-        font-size: 48px;
+        font-size: 40px;
         margin-bottom: 16px;
-        line-height: 56px;
     }
 
     .event-hero__period {
@@ -792,20 +775,4 @@ PC Responsive
     .table-container+.event-cta {
         margin-top: 0;
     }
-
-    .table-container.deco.inner-bordered.center ~ .ref-bu-list {
-        font-size: 24px;
-        padding-left: 30px;
-        text-indent: -30px;
-        margin-top: 0;
-    }
-
-    .ref-bu-list:first-child {
-        margin-top: -30px;
-    }
-
-    .ref-bu-list:last-child {
-        margin-bottom: 40px;
-    }
-
 }
