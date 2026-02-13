@@ -5,7 +5,6 @@ window.addEventListener('load', () => {
 
     const path = location.pathname;
 
-    // /board/event 이후는 제거
     const listUrl = path.replace(/\/board\/event.*$/, '/board/event');
 
     document
