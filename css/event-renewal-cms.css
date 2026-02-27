@@ -74,6 +74,20 @@ ul {
 }
 
 
+.table-container thead > th {
+    color: #222;
+    font-weight: 600;
+}
+
+.table-container tbody > th {
+    font-weight: 300;
+}
+
+.table-container th:not(.td),
+.table-container .td, .table-container td {
+    color: #222;
+}
+
 :root {
     --radius-badge: 12px;
     --radius-base: 16px;
