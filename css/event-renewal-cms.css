@@ -80,6 +80,7 @@ ul {
 }
 
 .table-container tbody th {
+    color: #222 !important;
     font-weight: 300 !important;
 }
 
