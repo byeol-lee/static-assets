@@ -74,12 +74,12 @@ ul {
 }
 
 
-.table-container thead > th {
+.table-container thead th {
     color: #222;
     font-weight: 600;
 }
 
-.table-container tbody > th {
+.table-container tbody th {
     font-weight: 300;
 }
 
