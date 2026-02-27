@@ -75,17 +75,12 @@ ul {
 
 
 .table-container thead th {
-    color: #222;
-    font-weight: 600;
+    color: #222 !important;
+    font-weight: 600 !important;
 }
 
 .table-container tbody th {
-    font-weight: 300;
-}
-
-.table-container th:not(.td),
-.table-container .td, .table-container td {
-    color: #222;
+    font-weight: 300 !important;
 }
 
 :root {
