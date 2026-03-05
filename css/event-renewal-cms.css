@@ -247,6 +247,9 @@ Info
     padding: 24px 0;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
+    display: grid;
+    justify-content: center;
+
 }
 
 .event-info__item {
@@ -645,12 +648,6 @@ PC Responsive
     .event-info {
         margin: 0 auto 64px;
         max-width: 1200px;
-    }
-
-    .event-info__list {
-        max-width: 100%;
-        display: grid;
-        justify-content: center;
     }
 
     .event-info__item {
