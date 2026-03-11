@@ -395,6 +395,10 @@ CTA
     margin-top: -20px;
 }
 
+.event-cta + .event-cta {
+    margin: -20px 0 40px 0;
+}
+
 .table-container {
     margin-bottom: 40px;
 }
