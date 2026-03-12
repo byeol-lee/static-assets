@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://leehelena.cafe24.com/style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://phoenixhnr.co.kr/mobile/css/ko/common.min.css">
+    <title>이벤트</title>
+
+    <style>
+        
+        @media (max-width:768px) {
+
+            .responsive-table thead {
+                display: none;
+            }
+
+            .responsive-table,
+            .responsive-table tbody,
+            .responsive-table tr,
+            .responsive-table td {
+                display: block;
+                width: 100%;
+            }
+
+            /* .responsive-table tr {
+                border-bottom: 1px solid #ddd;
+                padding: 15px 0;
+            } */
+
+            .responsive-table td {
+                display: flex;
+                gap: 16px;
+                height: auto;
+                align-items: center;
+                padding: 0 !important;
+            }
+
+            .responsive-table td::before {
+                content: attr(data-label);
+                width: 100px;
+                min-width: 100px;
+                font-weight: 600;
+                text-align: center;
+            }
+         
+            .responsive-table {
+            background-image: linear-gradient(to right, #f5f5f5f5 0, #f5f5f5f5 100px, transparent 100px);
+        }
+
+        }
+
+        /* .table-container .td, .table-container td {
+            height: auto;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="" style="display: none;">
+        <table class="table responsive-table">
+            <caption>기본 정보 안내표</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Bedding</th>
+                    <th scope="col">Stayover cleaning</th>
+                    <th scope="col">Uncleaned check-out</th>
+                    <th scope="col">Late check-out</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="left" data-label="Bedding">
+                        <ul class="dot-bu-list">
+                            <li>33,000원/박</li>
+                            <p class="ref-bu-list">※ 구성: 요 1, 싱글 이불 1, 베개 1<br />(한실 Bedding 1세트 기준)</p>
+                        </ul>
+                    </td>
+
+                    <td class="left" data-label="Stayover cleaning">
+                        <ul class="dot-bu-list">
+                            <li>30,000원</li>
+                            <p class="ref-bu-list">※ 3박 투숙 시 1회 무료</p>
+                            <p class="ref-bu-list">※ 12:00까지 접수 시 가능</p>
+                        </ul>
+                    </td>
+
+                    <td class="left" data-label="Uncleaned check-out">
+                        <ul class="dot-bu-list">
+                            <li>20,000원</li>
+                        </ul>
+                    </td>
+
+                    <td class="left" data-label="Late check-out">
+                        <ul class="dot-bu-list">
+                            <li>~ 13:00: 10,000원</li>
+                            <li>~ 14:00: 20,000원</li>
+                            <li>~ 15:00: 30,000원</li>
+                            <p class="ref-bu-list">※ 15:00 이후 1박 요금</p>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table-container deco inner-bordered center" style="display: block;">
+        <table class="table responsive-table">
+            <caption>기본 정보 안내표</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Bedding</th>
+                    <th scope="col">Stayover cleaning</th>
+                    <th scope="col">Uncleaned check-out</th>
+                    <th scope="col">Late check-out</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="left" data-label="Bedding">
+                        <ul class="dot-bu-list">
+                            <li>33,000원/박</li>
+                            <p class="ref-bu-list">※ 구성: 요 1, 싱글 이불 1, 베개 1<br />(한실 Bedding 1세트 기준)</p>
+                        </ul>
+                    </td>
+
+                    <td class="left" data-label="Stayover cleaning">
+                        <ul class="dot-bu-list">
+                            <li>30,000원</li>
+                            <p class="ref-bu-list">※ 3박 투숙 시 1회 무료</p>
+                            <p class="ref-bu-list">※ 12:00까지 접수 시 가능</p>
+                        </ul>
+                    </td>
+
+                    <td class="left" data-label="Uncleaned check-out">
+                        <ul class="dot-bu-list">
+                            <li>20,000원</li>
+                        </ul>
+                    </td>
+
+                    <td class="left" data-label="Late check-out">
+                        <ul class="dot-bu-list">
+                            <li>~ 13:00: 10,000원</li>
+                            <li>~ 14:00: 20,000원</li>
+                            <li>~ 15:00: 30,000원</li>
+                            <p class="ref-bu-list">※ 15:00 이후 1박 요금</p>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
