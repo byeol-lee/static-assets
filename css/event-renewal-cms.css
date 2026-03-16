@@ -581,6 +581,10 @@ PC Responsive
         margin: 0 auto;
     }
 
+    .table-container {
+        margin-bottom: 80px;
+    }
+
     .table-container th:not(.td),
     .table-container .td,
     .table-container td {
@@ -781,6 +785,12 @@ PC Responsive
         width: 3px;
         height: 3px;
         background: #666;
+    }
+
+    .event-detail__container .dot-bu-list li{
+        font-style: 24px;
+        display: block;  
+        padding-left: 13px;      
     }
 
     /* =========================
