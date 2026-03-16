@@ -788,7 +788,7 @@ PC Responsive
     }
 
     .event-detail__container .dot-bu-list li{
-        font-style: 24px;
+        font-size: 24px;
         display: block;  
         padding-left: 13px;      
     }
