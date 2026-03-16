@@ -791,10 +791,14 @@ PC Responsive
         background: #666;
     }
 
-    .event-detail__container .dot-bu-list li{
+    .event-detail__container .dot-bu-list li {
         font-size: 24px;
         display: block;  
         padding-left: 13px;      
+    }
+
+    .event-detail__container .dot-bu-list li:before {
+        background: #666;
     }
 
     /* =========================
