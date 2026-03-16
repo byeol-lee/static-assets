@@ -315,6 +315,10 @@ Body
     margin-bottom: 40px;
 }
 
+.event-body + .event-body:nth-child(n+1) {
+    margin-top: -32px;
+}
+
 .event-body__image {
     margin-bottom: 8px;
     overflow: hidden;
@@ -673,6 +677,10 @@ PC Responsive
         align-items: flex-start;
         max-width: 1200px;
         margin: 0 auto 80px;
+    }
+
+    .event-body + .event-body:nth-child(n+1) {
+        margin: -40px auto 80px
     }
 
     .event-body__image {
