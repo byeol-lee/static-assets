@@ -539,6 +539,10 @@ CTA
     display: block;
 }
 
+.event-detail__container .table-container.deco.inner-bordered {
+    margin-top: 8px;
+}
+
 
 /* ==================================================
 PC Responsive
@@ -789,6 +793,10 @@ PC Responsive
         width: 3px;
         height: 3px;
         background: #666;
+    }
+
+    .event-detail__container .table-container.deco.inner-bordered {
+        margin-top: 16px;
     }
 
     .event-detail__container .dot-bu-list li {
