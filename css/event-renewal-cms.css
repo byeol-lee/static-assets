@@ -356,6 +356,19 @@ Body
     word-break: break-all;
 }
 
+.event-section-title {
+    margin: -16px 0px 24px;
+    text-align: center;
+}
+
+.event-section-title__heading {
+    font-size: 24px;
+}
+
+.event-section-title__desc {
+    margin-top: 8px;
+}
+
 /* ==================================================
 CTA
 ================================================== */
@@ -710,6 +723,19 @@ PC Responsive
 
     .event-body__desc--content .event-notice__list {
         padding: 0;
+    }
+
+    .event-section-title {
+        margin: -40px 0 24px;
+        text-align: center;
+    }
+
+    .event-section-title__heading {
+        font-size: 32px;
+    }
+
+    .event-section-title__desc {
+        margin-top: 16px;
     }
 
     /* =========================
