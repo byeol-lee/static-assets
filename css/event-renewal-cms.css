@@ -357,8 +357,12 @@ Body
 }
 
 .event-section-title {
-    margin: -16px 0px 24px;
+    margin: 0 0 24px;
     text-align: center;
+}
+
+.event-body + .event-section-title {
+    margin: -16px 0 24px;
 }
 
 .event-section-title__heading {
@@ -730,8 +734,12 @@ PC Responsive
     }
 
     .event-section-title {
-        margin: -40px 0 24px;
+        margin: 0 0 24px;
         text-align: center;
+    }
+    
+    .event-body + .event-section-title {
+        margin: -40px 0 24px;
     }
 
     .event-section-title__heading {
