@@ -428,6 +428,10 @@ CTA
     margin: 10px 0 0 0;
 }
 
+.event-info + .event-cta {
+    margin-top: -16px;
+}
+
 /* ==================================================
 Notice
 ================================================== */
@@ -679,7 +683,7 @@ PC Responsive
     Info
     ========================= */
     .event-info {
-        margin: 0 auto 64px;
+        margin: 0 auto 80px;
         max-width: 1200px;
     }
 
@@ -775,6 +779,10 @@ PC Responsive
 
     .event-cta + .event-cta {
         margin: -40px 0 80px 0;
+    }
+
+    .event-info + .event-cta {
+        margin-top: -40px;
     }
 
     /* =========================
