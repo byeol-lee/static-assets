@@ -179,7 +179,9 @@ Hero
 .event-hero__inner {
     position: relative;
     z-index: 1;
-    padding: 24px 16px;
+    padding: 0 0 24px 16px;
+    padding: 0 0 calc(24px + env(safe-area-inset-bottom))
+             calc(16px + env(safe-area-inset-left));
     color: #fff;
 }
 
@@ -522,6 +524,9 @@ CTA
     display: flex;
     gap: 8px;
     padding: 0 16px 40px;
+    padding: 0 calc(16px + env(safe-area-inset-right))
+             calc(40px + env(safe-area-inset-bottom))
+             calc(16px + env(safe-area-inset-left));   
 }
 
 .event-navigation__button {
