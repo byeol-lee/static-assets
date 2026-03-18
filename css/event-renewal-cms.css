@@ -316,7 +316,7 @@ Info
     padding-left: 10px;
 }
 
-.event-info__note--dash::before {
+.event-info__note--dash li::before {
     content: '-';
     display: inline-block;
     position: absolute;
