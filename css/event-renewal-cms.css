@@ -141,7 +141,9 @@ Event Detail - Common
 }
 
 .event-detail__content--wrap {
-    margin: 0 16px
+    margin: 0 16px;
+    margin: 0 calc(16px + env(safe-area-inset-left))
+            0 calc(16px + env(safe-area-inset-right));
 }
 
 /* ==================================================
