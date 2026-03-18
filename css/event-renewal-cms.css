@@ -345,7 +345,7 @@ Body
 
 .event-body:has(.event-body__image):has(.event-body__desc) + 
 .event-body:has(.event-body__image):has(.event-body__desc) {
-    margin-top: 16px; 
+    margin-top: -16px; 
 }
 
 .event-body__image {
