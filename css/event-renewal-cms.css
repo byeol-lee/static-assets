@@ -339,8 +339,13 @@ Body
     margin-bottom: 40px;
 }
 
-.event-body + .event-body:nth-child(n+1) {
-    margin-top: -16px;
+.event-body + .event-body {
+    margin-top: -32px;
+}
+
+.event-body:has(.event-body__image):has(.event-body__desc) + 
+.event-body:has(.event-body__image):has(.event-body__desc) {
+    margin-top: 16px; 
 }
 
 .event-body__image {
