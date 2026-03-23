@@ -1,5 +1,5 @@
 /* web */
-.reservation-product .tab-page .tab {
+/* .reservation-product .tab-page .tab {
     width: 100%;
 }
 
@@ -9,7 +9,7 @@
 
 .reservation-product .tab-page[data-len='2'] .tab {
     width: 100%;
-}
+} */
 
 .reservation-product .tab-page .tab.selected a {
     color: #167a47;
