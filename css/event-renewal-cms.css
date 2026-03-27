@@ -417,7 +417,7 @@ ETC
 
 .event-auto__inner {
     padding: 24px 16px;
-    padding: 24px  calc(16px + env(safe-area-inset-left)) 0 calc(16px + env(safe-area-inset-right));
+    padding: 24px  calc(16px + env(safe-area-inset-left)) 24px calc(16px + env(safe-area-inset-right));
     background: #f8f8f8;
     border-radius: var(--radius-action);
 }
