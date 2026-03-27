@@ -412,21 +412,20 @@ ETC
 ========================= */
 
 .event-auto {
-    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .event-auto__inner {
-    padding: 24px 20px;
-    background: #f8f9fb;
-    border-radius: 12px;
+    padding: 24px 16px;
+    padding: 24px  calc(16px + env(safe-area-inset-left)) 0 calc(16px + env(safe-area-inset-right));
+    background: #f8f8f8;
+    border-radius: var(--radius-action);
 }
 
 .event-auto__desc {
-    margin-top: 10px;
-    font-size: 14px;
-    line-height: 1.7;
-    color: #444;
-    word-break: keep-all;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #666;
 }
 
 /* ==================================================
@@ -829,7 +828,7 @@ PC Responsive
     ========================= */
 
     .event-auto__inner {
-        padding: 28px 32px;
+        padding: 24px;
     }
 
     .event-auto__desc {
