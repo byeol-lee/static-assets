@@ -803,6 +803,39 @@ PC Responsive
     }
 
     /* =========================
+    ETC
+    ========================= */
+
+    .event-auto {
+        margin-top: 40px;
+    }
+
+    .event-auto__inner {
+        padding: 24px 20px;
+        background: #f8f9fb;
+        border-radius: 12px;
+    }
+
+    .event-auto__desc {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 1.7;
+        color: #444;
+        word-break: keep-all;
+    }
+
+    /* PC */
+    @media (min-width: 768px) {
+        .event-auto__inner {
+            padding: 28px 32px;
+        }
+
+        .event-auto__desc {
+            font-size: 15px;
+        }
+    }
+
+    /* =========================
     CTA
     ========================= */
 
