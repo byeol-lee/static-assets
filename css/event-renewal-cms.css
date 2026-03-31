@@ -981,12 +981,31 @@ PC Responsive
     ETC
     ========================= */
 
-    /* .event-auto__inner {
-        padding: 24px;
+    .event-auto {
+        margin-bottom: 80px;
+    }
+    .event-auto__inner {
+        padding: 40px;
+        background: #f8f8f8;
+        border-radius: var(--radius-base);
     }
 
-    .event-auto__desc {
-        font-size: 15px;
+    .event-auto__title {
+        position: relative;
+        padding-left: 32px;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #222;
+    }
+
+    .event-auto__title::before {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* .event-auto__desc {
+        font-size: 14px;
+        color: #666;
     } */
 
 
