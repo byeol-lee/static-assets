@@ -464,18 +464,24 @@ Body
 ETC
 ========================= */
 
-/* .event-auto {
+.event-auto {
     margin-bottom: 40px;
 }
-
 .event-auto__inner {
-    padding: 24px 16px;
-    padding: 24px calc(16px + env(safe-area-inset-left)) 24px calc(16px + env(safe-area-inset-right));
+    padding: 24px;
     background: #f8f8f8;
-    border-radius: var(--radius-action);
+    border-radius: var(--radius-base);
 }
 
-.event-notice__title::before {
+.event-auto__title {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #222;
+}
+
+.event-auto__title::before {
     content: '';
     position: absolute;
     left: 0;
@@ -485,14 +491,13 @@ ETC
     transform: translateY(-50%);
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23222'/%3E%3Crect x='11' y='5' width='2' height='8' rx='1' fill='%23fff'/%3E%3Ccircle cx='12' cy='17' r='1.2' fill='%23fff'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23222'/%3E%3Cpath d='M8 12.5 L11 15.5 L16 9.5' stroke='%23fff' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
 .event-auto__desc {
-    margin-top: 8px;
-    font-size: 16px;
+    font-size: 14px;
     color: #666;
-} */
+}
 
 /* ==================================================
 CTA
