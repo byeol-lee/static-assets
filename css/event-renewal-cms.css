@@ -1003,10 +1003,9 @@ PC Responsive
         height: 24px;
     }
 
-    /* .event-auto__desc {
-        font-size: 14px;
-        color: #666;
-    } */
+    .event-auto__desc {
+        font-size: 24px;
+    }
 
 
     /* =========================
