@@ -325,7 +325,7 @@ Info
     left: 0;
 }
 
-.table-container.deco.inner-bordered.center+.event-info__note {
+.table-container.deco.inner-bordered.center ~ .event-info__note {
     margin: -32px 0 40px;
 }
 
@@ -989,7 +989,7 @@ PC Responsive
         padding-left: 16px;
     }
 
-    .table-container.deco.inner-bordered.center+.event-info__note {
+    .table-container.deco.inner-bordered.center ~ .event-info__note {
         margin: -70px 0 80px;
     }
 
