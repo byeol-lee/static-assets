@@ -751,6 +751,22 @@ CTA
     }
 }
 
+.plus--park::after {
+    content: '+';
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: var(--park-color);
+    border-radius: 15px;
+    color: #fff;
+    position: absolute;
+    bottom: -15px;
+    left: calc(50% - 15px);
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ==================================================
 PC Responsive
 ================================================== */
@@ -1170,6 +1186,15 @@ PC Responsive
 
     .mo-br {
         display: none;
+    }
+
+    .plus--park::after {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        bottom: -20px;
+        left: calc(50% - 20px);
+        font-size: 32px;
     }
 
 }
