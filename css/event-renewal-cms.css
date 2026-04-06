@@ -499,6 +499,10 @@ ETC
     color: #666;
 }
 
+.event-auto__inner > .event-notice__list{
+    font-size: 14px;
+}
+
 /* ==================================================
 CTA
 ================================================== */
@@ -1021,6 +1025,11 @@ PC Responsive
 
     .event-auto__desc {
         font-size: 24px;
+    }
+
+    .event-auto__inner > .event-notice__list{
+        padding: 0px;
+        margin-top: 8px;
     }
 
 
