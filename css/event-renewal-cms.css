@@ -542,9 +542,10 @@ CTA
     border: none;
 }
 
+.event-info+.event-cta,
 .event-body+.event-cta,
 .event-body+.table-container {
-    margin-top: -20px;
+    margin-top: -16px;
 }
 
 .event-cta+.event-cta {
@@ -561,10 +562,6 @@ CTA
 
 .event-body__desc--content .table-container {
     margin: 10px 0 0 0;
-}
-
-.event-info+.event-cta {
-    margin-top: -16px;
 }
 
 /* ==================================================
@@ -1066,6 +1063,7 @@ PC Responsive
         justify-content: center;
     }
 
+    .event-info+.event-cta,
     .event-body+.event-cta,
     .event-body+.table-container {
         margin-top: -40px;
@@ -1073,10 +1071,6 @@ PC Responsive
 
     .event-cta+.event-cta {
         margin: -40px 0 80px 0;
-    }
-
-    .event-info+.event-cta {
-        margin-top: -40px;
     }
 
     /* =========================
