@@ -74,7 +74,8 @@ ul {
 }
 
 
-.table-container thead th {
+.table-container thead th,
+.table-container tbody th {
     color: #222 !important;
     font-weight: 600 !important;
 }
