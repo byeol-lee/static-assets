@@ -753,7 +753,7 @@ CTA
     }
 }
 
-.plus--park::after {
+.plus::after {
     content: '+';
     display: flex;
     width: 30px;
@@ -767,6 +767,10 @@ CTA
     font-size: 23px;
     justify-content: center;
     align-items: center;
+}
+
+.plus .park::after {
+    background-color: var(--park-color);
 }
 
 /* ==================================================
@@ -1194,7 +1198,7 @@ PC Responsive
         display: none;
     }
 
-    .plus--park::after {
+    .plus::after {
         width: 40px;
         height: 40px;
         border-radius: 20px;
