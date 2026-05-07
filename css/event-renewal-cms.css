@@ -773,6 +773,14 @@ CTA
     background-color: var(--park-color);
 }
 
+.plus.island::after {
+    background-color: var(--island-color);
+}
+
+.plus.camp::after {
+    background-color: var(--camp-color);
+}
+
 /* ==================================================
 PC Responsive
 ================================================== */
