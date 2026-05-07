@@ -758,7 +758,7 @@ CTA
     display: flex;
     width: 30px;
     height: 30px;
-    background-color: var(--park-color);
+    background-color: var(--common-color);
     border-radius: 15px;
     color: #fff;
     position: absolute;
@@ -769,7 +769,7 @@ CTA
     align-items: center;
 }
 
-.plus .park::after {
+.plus.park::after {
     background-color: var(--park-color);
 }
 
