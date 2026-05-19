@@ -1,11 +1,71 @@
-const STORAGE_KEY = 'pyeongchangWeatherCache';
-const WEEKLY_STORAGE_KEY = 'pyeongchangWeeklyWeatherCache';
+/* =========================
+region config
+========================= */
+
+const weatherRegion = (() => {
+
+    const wrap = document.querySelector('.weather-wrap');
+
+    if (!wrap) {
+
+        return {
+            storageKey: 'pyeongchangWeatherCache',
+            weeklyStorageKey: 'pyeongchangWeeklyWeatherCache',
+            nx: 84,
+            ny: 123,
+            regionName: '평창'
+        };
+    }
+
+    if (wrap.classList.contains('island')) {
+
+        return {
+            storageKey: 'jejuWeatherCache',
+            weeklyStorageKey: 'jejuWeeklyWeatherCache',
+            nx: 52,
+            ny: 33,
+            regionName: '제주'
+        };
+    }
+
+    if (wrap.classList.contains('camp')) {
+
+        return {
+            storageKey: 'jejuWeatherCache',
+            weeklyStorageKey: 'jejuWeeklyWeatherCache',
+            nx: 52,
+            ny: 33,
+            regionName: '제주'
+        };
+    }
+
+    return {
+        storageKey: 'pyeongchangWeatherCache',
+        weeklyStorageKey: 'pyeongchangWeeklyWeatherCache',
+        nx: 84,
+        ny: 123,
+        regionName: '평창'
+    };
+
+})();
+
+const STORAGE_KEY =
+    weatherRegion.storageKey;
+
+const WEEKLY_STORAGE_KEY =
+    weatherRegion.weeklyStorageKey;
 
 const serviceKey =
     'd283dee6bd88829ee65f062117a812d1d752156c6f6f4ea536e1d7765e8e1cc2';
 
-const NX = 84;
-const NY = 123;
+const NX =
+    weatherRegion.nx;
+
+const NY =
+    weatherRegion.ny;
+
+const REGION_NAME =
+    weatherRegion.regionName;
 
 /* =========================
 current weather
@@ -373,6 +433,10 @@ render ui
 
 function setWeather(data) {
 
+    $('#weatherRegionName').text(
+        REGION_NAME
+    );
+
     $('#weatherTemp').text(
         data.temp + '°'
     );
@@ -382,7 +446,9 @@ function setWeather(data) {
     );
 
     $('#weatherDesc').text(
-        '현재 평창의 기온은 ' +
+        '현재 ' +
+        REGION_NAME +
+        '의 기온은 ' +
         data.temp +
         '℃ 입니다.'
     );
