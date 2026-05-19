@@ -1,0 +1,225 @@
+.common-content > div:first-child {
+    max-width: unset;
+}
+
+.wrapper {
+    padding: 0 0 calc(200px - 10px) 0;
+}
+
+.weather-wrap {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    word-break: keep-all;
+}
+
+.weather-wrap.park {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url('https://byeol-lee.github.io/static-assets/images/ko/park/weather/weather-info-bg.png') center/cover no-repeat;
+}
+
+.weather-wrap.island {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url('https://byeol-lee.github.io/static-assets/images/ko/island/weather/weather-info-bg.png') center/cover no-repeat;
+}
+
+.weather-wrap.camp {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url('https://byeol-lee.github.io/static-assets/images/ko/camp/weather/weather-info-bg.png') center/cover no-repeat;
+}
+
+.weather-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+.weather-top {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.weather-desc {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.weather-temp {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.weather-bottom {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    color: #222;
+}
+
+.weather-item {
+    padding: 24px;
+    border-radius: 16px;
+    background: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-item strong {
+    opacity: .6;
+}
+
+.weather-item span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.weather-update {
+    margin-top: 16px;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* weekly weather */
+
+.weekly-weather {
+    margin-top: 40px;
+}
+
+.weekly-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.weekly-item {
+    padding: 24px 18px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, .06);
+    backdrop-filter: blur(8px);
+    text-align: center;
+}
+
+.weekly-icon {
+    margin: 18px 0 14px;
+    font-size: 34px;
+}
+
+.weekly-temp {
+    font-size: 24px;
+}
+
+.weekly-temp span {
+    margin-left: 4px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* mobile */
+
+@media(max-width:768px) {
+
+    .common-content {
+        margin: 0;
+        margin-left: calc(0 + env(safe-area-inset-left));
+        margin-right: calc(0 + env(safe-area-inset-right));
+    }
+
+    .common-page-title {
+        margin-bottom: 0;
+    }
+
+    .common-footer {
+        margin-top: 0;
+    }
+
+    .content-main-title,
+    .tab-page.type1 {
+        display: none;
+    }
+
+    .wrapper {
+        padding: 0;
+    }
+
+    .weather-wrap.park {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url('/api/editor/attach/view/default/2026/05/bvPoakOmFzFL3UimY3Uq_1_') center/cover no-repeat;
+    }
+
+    .weather-wrap.island {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url('/api/editor/attach/view/default/2026/05/bvPoakOmFzFL3UimY3Uq_1_ng') center/cover no-repeat;
+    }
+
+    .weather-wrap.camp {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url('/api/editor/attach/view/default/2026/05/bvPoakOmFzFL3UimY3Uq_1_') center/cover no-repeat;
+    }
+
+    .weather-card {
+        padding: 40px 16px;
+    }
+
+    .weather-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .weather-title {
+        font-size: 24px;
+    }
+
+    .weather-temp {
+        font-size: 56px;
+    }
+
+    .weather-bottom {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .weather-item {
+        padding: 16px;
+        display: block;
+    }
+
+    .weather-item span {
+        font-size: 16px;
+    }
+
+    .weekly-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .weekly-item {
+        padding: 16px;
+    }
+
+    .weekly-temp {
+        font-size: 16px;
+    }
+
+    .weekly-temp span {
+        font-size: 12px;
+    }
+
+    .weather-update {
+        font-size: 12px;
+    }
+
+}
