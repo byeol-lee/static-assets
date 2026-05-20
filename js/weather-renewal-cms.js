@@ -328,6 +328,9 @@ function weatherText(sky, pty) {
         case '3':
             return '❄️ 눈이 와요.';
 
+        case '4':
+            return '🌦️ 소나기가 와요.';
+
         case '5':
             return '☔ 빗방울이 떨어져요.';
 
