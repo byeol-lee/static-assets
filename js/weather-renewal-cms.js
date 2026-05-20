@@ -320,22 +320,22 @@ function weatherText(sky, pty) {
     switch (String(pty)) {
 
         case '1':
-            return '☔ 비';
+            return '☔ 비가 와요.';
 
         case '2':
-            return '☔/❄️ 비/눈';
+            return '☔/❄️ 비/눈이 와요.';
 
         case '3':
-            return '❄️ 눈';
+            return '❄️ 눈이 와요.';
 
         case '5':
-            return '☔ 빗방울';
+            return '☔ 빗방울이 떨어져요.';
 
         case '6':
-            return '❄️ 진눈깨비';
+            return '❄️ 진눈깨비가 와요.';
 
         case '7':
-            return '❄️ 눈날림';
+            return '❄️ 눈이 날려요.';
     }
 
     switch (String(sky)) {
