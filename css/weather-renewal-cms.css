@@ -194,7 +194,7 @@
 
     .weather-item {
         padding: 16px;
-        display: block;
+        /* display: block; */
     }
 
     .weather-item span {
