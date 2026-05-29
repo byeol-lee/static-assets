@@ -87,6 +87,10 @@
     font-weight: 600;
 }
 
+.weatherFeelTemp {
+    font-size: 16px;
+}
+
 .weather-update {
     margin-top: 16px;
     text-align: right;
@@ -198,6 +202,10 @@
     }
 
     .weather-item span {
+        font-size: 16px;
+    }
+
+    .weatherFeelTemp {
         font-size: 16px;
     }
 
