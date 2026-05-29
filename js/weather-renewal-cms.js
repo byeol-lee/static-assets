@@ -1,155 +1,165 @@
 /* =========================
-region config
-========================= */
+	region config
+	========================= */
 
 const weatherRegion = (() => {
 
-    const wrap = document.querySelector('.weather-wrap');
+	const wrap = document.querySelector('.weather-wrap');
 
-    if (!wrap) {
+	if (!wrap) {
 
-        return {
-            storageKey: 'pyeongchangWeatherCache',
-            weeklyStorageKey: 'pyeongchangWeeklyWeatherCache',
-            nx: 84,
-            ny: 123,
-            regionName: '평창'
-        };
-    }
+		return {
+			storageKey: 'pyeongchangWeatherCache',
+			weeklyStorageKey: 'pyeongchangWeeklyWeatherCache',
+			nx: 84,
+			ny: 123,
+			regionName: '평창'
+		};
+	}
 
-    if (wrap.classList.contains('island')) {
+	if (wrap.classList.contains('island')) {
 
-        return {
-            storageKey: 'jejuWeatherCache',
-            weeklyStorageKey: 'jejuWeeklyWeatherCache',
-            nx: 52,
-            ny: 33,
-            regionName: '제주'
-        };
-    }
+		return {
+			storageKey: 'jejuWeatherCache',
+			weeklyStorageKey: 'jejuWeeklyWeatherCache',
+			nx: 52,
+			ny: 33,
+			regionName: '제주'
+		};
+	}
 
-    if (wrap.classList.contains('camp')) {
+	if (wrap.classList.contains('camp')) {
 
-        return {
-            storageKey: 'jejuWeatherCache',
-            weeklyStorageKey: 'jejuWeeklyWeatherCache',
-            nx: 52,
-            ny: 33,
-            regionName: '제주'
-        };
-    }
+		return {
+			storageKey: 'jejuWeatherCache',
+			weeklyStorageKey: 'jejuWeeklyWeatherCache',
+			nx: 52,
+			ny: 33,
+			regionName: '제주'
+		};
+	}
 
-    return {
-        storageKey: 'pyeongchangWeatherCache',
-        weeklyStorageKey: 'pyeongchangWeeklyWeatherCache',
-        nx: 84,
-        ny: 123,
-        regionName: '평창'
-    };
+	return {
+		storageKey: 'pyeongchangWeatherCache',
+		weeklyStorageKey: 'pyeongchangWeeklyWeatherCache',
+		nx: 84,
+		ny: 123,
+		regionName: '평창'
+	};
 
 })();
 
+const SEOUL_STORAGE_KEY =
+	'seoulWeatherCache';
+
 const STORAGE_KEY =
-    weatherRegion.storageKey;
+	weatherRegion.storageKey;
 
 const WEEKLY_STORAGE_KEY =
-    weatherRegion.weeklyStorageKey;
+	weatherRegion.weeklyStorageKey;
 
 const serviceKey =
-    'd283dee6bd88829ee65f062117a812d1d752156c6f6f4ea536e1d7765e8e1cc2';
+	'd283dee6bd88829ee65f062117a812d1d752156c6f6f4ea536e1d7765e8e1cc2';
 
 const NX =
-    weatherRegion.nx;
+	weatherRegion.nx;
 
 const NY =
-    weatherRegion.ny;
+	weatherRegion.ny;
 
 const REGION_NAME =
-    weatherRegion.regionName;
+	weatherRegion.regionName;
+
+const SEOUL_NX = 61;
+const SEOUL_NY = 126;
+
+const IS_PARK =
+	document.querySelector('.weather-wrap.park');
 
 /* =========================
 current weather
 ========================= */
 
-async function getWeather() {
+async function getWeather(nx = NX, ny = NY) {
 
-    const now = new Date();
+	const now = new Date();
 
-    if (now.getMinutes() < 45) {
-        now.setHours(now.getHours() - 1);
-    }
+	if (now.getMinutes() < 45) {
+		now.setHours(now.getHours() - 1);
+	}
 
-    const baseDate = formatDate(now);
+	const baseDate = formatDate(now);
 
-    const baseHour =
-        String(now.getHours()).padStart(2, '0');
+	const baseHour =
+		String(now.getHours()).padStart(2, '0');
 
-    const ncstUrl =
-        'https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst' +
-        '?serviceKey=' + encodeURIComponent(serviceKey) +
-        '&pageNo=1' +
-        '&numOfRows=1000' +
-        '&dataType=JSON' +
-        '&base_date=' + baseDate +
-        '&base_time=' + baseHour + '00' +
-        '&nx=' + NX +
-        '&ny=' + NY;
+	const ncstUrl =
+		'https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst' +
+		'?serviceKey=' + encodeURIComponent(serviceKey) +
+		'&pageNo=1' +
+		'&numOfRows=1000' +
+		'&dataType=JSON' +
+		'&base_date=' + baseDate +
+		'&base_time=' + baseHour + '00' +
+		'&nx=' + nx +
+		'&ny=' + ny;
 
-    const fcstUrl =
-        'https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtFcst' +
-        '?serviceKey=' + encodeURIComponent(serviceKey) +
-        '&pageNo=1' +
-        '&numOfRows=1000' +
-        '&dataType=JSON' +
-        '&base_date=' + baseDate +
-        '&base_time=' + baseHour + '30' +
-        '&nx=' + NX +
-        '&ny=' + NY;
+	const fcstUrl =
+		'https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtFcst' +
+		'?serviceKey=' + encodeURIComponent(serviceKey) +
+		'&pageNo=1' +
+		'&numOfRows=1000' +
+		'&dataType=JSON' +
+		'&base_date=' + baseDate +
+		'&base_time=' + baseHour + '30' +
+		'&nx=' + nx +
+		'&ny=' + ny;
 
-    const [ncstRes, fcstRes] = await Promise.all([
-        fetch(ncstUrl),
-        fetch(fcstUrl)
-    ]);
+	const [ncstRes, fcstRes] = await Promise.all([
+		fetch(ncstUrl),
+		fetch(fcstUrl)
+	]);
 
-    const ncstData = await ncstRes.json();
-    const fcstData = await fcstRes.json();
+	const ncstData = await ncstRes.json();
+	const fcstData = await fcstRes.json();
 
-    const ncstItems =
-        ncstData.response.body.items.item;
+	const ncstItems =
+		ncstData.response.body.items.item;
 
-    const fcstItems =
-        fcstData.response.body.items.item;
+	const fcstItems =
+		fcstData.response.body.items.item;
 
-    const getNcstValue = category => {
+	const getNcstValue = category => {
 
-        const item = ncstItems.find(
-            v => v.category === category
-        );
+		const item = ncstItems.find(
+			v => v.category === category
+		);
 
-        return item ? item.obsrValue : '-';
-    };
+		return item ? item.obsrValue : '-';
+	};
 
-    const getFcstValue = category => {
+	const getFcstValue = category => {
 
-        const item = fcstItems.find(
-            v => v.category === category
-        );
+		const item = fcstItems.find(
+			v => v.category === category
+		);
 
-        return item ? item.fcstValue : '-';
-    };
+		return item ? item.fcstValue : '-';
+	};
 
-    return {
+	return {
 
-        temp: getNcstValue('T1H'),
-        humidity: getNcstValue('REH'),
-        wind: getNcstValue('WSD'),
-        rain: getNcstValue('RN1'),
+		temp: getNcstValue('T1H'),
+		humidity: getNcstValue('REH'),
+		wind: getNcstValue('WSD'),
+		rain: getNcstValue('RN1'),
 
-        sky: weatherText(
-            getFcstValue('SKY'),
-            getFcstValue('PTY')
-        )
-    };
+		sky: weatherText(
+			getFcstValue('SKY'),
+			getFcstValue('PTY'),
+			getNcstValue('RN1')
+		)
+	};
 }
 
 /* =========================
@@ -158,115 +168,116 @@ weekly weather
 
 async function getWeeklyWeather() {
 
-    const now = new Date();
+	const now = new Date();
 
-    const url =
-        'https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst' +
-        '?serviceKey=' + encodeURIComponent(serviceKey) +
-        '&pageNo=1' +
-        '&numOfRows=3000' +
-        '&dataType=JSON' +
-        '&base_date=' + formatDate(now) +
-        '&base_time=0500' +
-        '&nx=' + NX +
-        '&ny=' + NY;
+	const url =
+		'https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst' +
+		'?serviceKey=' + encodeURIComponent(serviceKey) +
+		'&pageNo=1' +
+		'&numOfRows=3000' +
+		'&dataType=JSON' +
+		'&base_date=' + formatDate(now) +
+		'&base_time=0500' +
+		'&nx=' + NX +
+		'&ny=' + NY;
 
-    const response = await fetch(url);
-    const data = await response.json();
+	const response = await fetch(url);
+	const data = await response.json();
 
-    const items =
-        data.response.body.items.item;
+	const items =
+		data.response.body.items.item;
 
-    const grouped = {};
+	const grouped = {};
 
-    items.forEach(item => {
+	items.forEach(item => {
 
-        const date = item.fcstDate;
-        const time = item.fcstTime;
+		const date = item.fcstDate;
+		const time = item.fcstTime;
 
-        if (time === '0000') {
-            return;
-        }
+		if (time === '0000') {
+			return;
+		}
 
-        if (!grouped[date]) {
+		if (!grouped[date]) {
 
-            grouped[date] = {
-                skyCodes: [],
-                ptyCodes: []
-            };
-        }
+			grouped[date] = {
+				skyCodes: [],
+				ptyCodes: []
+			};
+		}
 
-        if (item.category === 'TMN') {
-            grouped[date].min = item.fcstValue;
-        }
+		if (item.category === 'TMN') {
+			grouped[date].min = item.fcstValue;
+		}
 
-        if (item.category === 'TMX') {
-            grouped[date].max = item.fcstValue;
-        }
+		if (item.category === 'TMX') {
+			grouped[date].max = item.fcstValue;
+		}
 
-        if (item.category === 'SKY') {
-            grouped[date].skyCodes.push(item.fcstValue);
-        }
+		if (item.category === 'SKY') {
+			grouped[date].skyCodes.push(item.fcstValue);
+		}
 
-        if (item.category === 'PTY') {
-            grouped[date].ptyCodes.push(item.fcstValue);
-        }
+		if (item.category === 'PTY') {
+			grouped[date].ptyCodes.push(item.fcstValue);
+		}
 
-    });
+	});
 
-    Object.keys(grouped).forEach(date => {
+	Object.keys(grouped).forEach(date => {
 
-        const skyCodes =
-            grouped[date].skyCodes || [];
+		const skyCodes =
+			grouped[date].skyCodes || [];
 
-        const ptyCodes =
-            grouped[date].ptyCodes || [];
+		const ptyCodes =
+			grouped[date].ptyCodes || [];
 
-        let pty = '0';
+		let pty = '0';
 
-        if (ptyCodes.includes('1')) {
-            pty = '1';
-        } else if (ptyCodes.includes('2')) {
-            pty = '2';
-        } else if (ptyCodes.includes('3')) {
-            pty = '3';
-        } else if (ptyCodes.includes('4')) {
-            pty = '4';
-        }
+		if (ptyCodes.includes('1')) {
+			pty = '1';
+		} else if (ptyCodes.includes('2')) {
+			pty = '2';
+		} else if (ptyCodes.includes('3')) {
+			pty = '3';
+		} else if (ptyCodes.includes('4')) {
+			pty = '4';
+		}
 
-        let sky = '1';
+		let sky = '1';
 
-        if (skyCodes.includes('4')) {
-            sky = '4';
-        } else if (skyCodes.includes('3')) {
-            sky = '3';
-        }
+		if (skyCodes.includes('4')) {
+			sky = '4';
+		} else if (skyCodes.includes('3')) {
+			sky = '3';
+		}
 
-        grouped[date].sky =
-            getWeeklySky(sky, pty);
+		grouped[date].sky =
+			getWeeklySky(sky, pty);
 
-    });
+	});
 
-    return Object.entries(grouped)
+	return Object.entries(grouped)
 
-        .filter(([date, value]) => {
+		.filter(([date, value]) => {
 
-            return (
-                value.min ||
-                value.max ||
-                value.sky
-            );
+			return (
+				value.min ||
+				value.max ||
+				value.sky
+			);
 
-        })
+		})
 
-        .sort((a, b) => Number(a[0]) - Number(b[0]))
+		.sort((a, b) => Number(a[0]) - Number(b[0]))
 
-        .slice(0, 4)
+		.slice(0, 4)
 
-        .map(([date, value]) => ({
-            date,
-            ...value
-        }));
+		.map(([date, value]) => ({
+			date,
+			...value
+		}));
+
 }
 
 /* =========================
@@ -275,17 +286,17 @@ weekly render
 
 function renderWeeklyWeather(list) {
 
-    let html = '';
+	let html = '';
 
-    list.forEach(item => {
+	list.forEach(item => {
 
-        const month =
-            item.date.substr(4, 2);
+		const month =
+			item.date.substr(4, 2);
 
-        const day =
-            item.date.substr(6, 2);
+		const day =
+			item.date.substr(6, 2);
 
-        html += `
+		html += `
             <div class="weekly-item">
 
                 <div class="weekly-day">
@@ -298,7 +309,7 @@ function renderWeeklyWeather(list) {
 
                 <div class="weekly-temp">
                     ${item.max || '-'}°
-                    <span>
+                    <span >
                         ${item.min || '-'}°
                     </span>
                 </div>
@@ -306,92 +317,98 @@ function renderWeeklyWeather(list) {
             </div>
         `;
 
-    });
+	});
 
-    $('#weeklyWeather').html(html);
+	$('#weeklyWeather').html(html);
 }
 
 /* =========================
 weather text
 ========================= */
 
-function weatherText(sky, pty) {
+function weatherText(sky, pty, rain) {
 
-    switch (String(pty)) {
+	rain = parseFloat(rain);
 
-        case '1':
-            return '☔ 비가 와요.';
+	if (!isNaN(rain) && rain > 0) {
+		return '☔ 비가 와요.';
+	}
 
-        case '2':
-            return '☔/❄️ 비/눈이 와요.';
+	switch (String(pty)) {
 
-        case '3':
-            return '❄️ 눈이 와요.';
+		case '1':
+			return '☔ 비가 와요.';
 
-        case '4':
-            return '🌦️ 소나기가 와요.';
+		case '2':
+			return '☔/❄️ 비/눈이 와요.';
 
-        case '5':
-            return '☔ 빗방울이 떨어져요.';
+		case '3':
+			return '❄️ 눈이 와요.';
 
-        case '6':
-            return '❄️ 진눈깨비가 와요.';
+		case '4':
+			return '🌦️ 소나기가 와요.';
 
-        case '7':
-            return '❄️ 눈이 날려요.';
-    }
+		case '5':
+			return '☔ 빗방울이 떨어져요.';
 
-    switch (String(sky)) {
+		case '6':
+			return '❄️ 진눈깨비가 와요.';
 
-        case '1':
-            return '☀️ 맑아요.';
+		case '7':
+			return '❄️ 눈이 날려요.';
+	}
 
-        case '3':
-            return '⛅ 구름 많아요.';
+	switch (String(sky)) {
 
-        case '4':
-            return '☁️ 흐려요.';
+		case '1':
+			return '☀️ 맑아요.';
 
-        default:
-            return '☀️ 맑아요.';
+		case '3':
+			return '⛅ 구름 많아요.';
 
-    }
+		case '4':
+			return '☁️ 흐려요.';
+
+		default:
+			return '☀️ 맑아요.';
+
+	}
 }
 
 function getWeeklySky(sky, pty) {
 
-    sky = String(sky || '1').trim();
-    pty = String(pty || '0').trim();
+	sky = String(sky || '1').trim();
+	pty = String(pty || '0').trim();
 
-    if (pty === '1') {
-        return '☔';
-    }
+	if (pty === '1') {
+		return '☔';
+	}
 
-    if (pty === '2') {
-        return '🌨️';
-    }
+	if (pty === '2') {
+		return '☔/❄️';
+	}
 
-    if (pty === '3') {
-        return '❄️';
-    }
+	if (pty === '3') {
+		return '❄️';
+	}
 
-    if (pty === '4') {
-        return '🌦️';
-    }
+	if (pty === '4') {
+		return '?️';
+	}
 
-    if (sky === '1') {
-        return '☀️';
-    }
+	if (sky === '1') {
+		return '☀️';
+	}
 
-    if (sky === '3') {
-        return '⛅';
-    }
+	if (sky === '3') {
+		return '⛅';
+	}
 
-    if (sky === '4') {
-        return '☁️';
-    }
+	if (sky === '4') {
+		return '☁️';
+	}
 
-    return '☀️';
+	return '☀️';
 }
 
 /* =========================
@@ -400,34 +417,34 @@ common functions
 
 function formatDate(date) {
 
-    const year = date.getFullYear();
+	const year = date.getFullYear();
 
-    const month =
-        String(date.getMonth() + 1)
-            .padStart(2, '0');
+	const month =
+		String(date.getMonth() + 1)
+			.padStart(2, '0');
 
-    const day =
-        String(date.getDate())
-            .padStart(2, '0');
+	const day =
+		String(date.getDate())
+			.padStart(2, '0');
 
-    return year + month + day;
+	return year + month + day;
 }
 
 function calcFeelTemp(temp, wind) {
 
-    temp = parseFloat(temp);
-    wind = parseFloat(wind);
+	temp = parseFloat(temp);
+	wind = parseFloat(wind);
 
-    if (isNaN(temp) || isNaN(wind)) {
-        return '-';
-    }
+	if (isNaN(temp) || isNaN(wind)) {
+		return '-';
+	}
 
-    return (
-        13.12 +
-        (0.6215 * temp) -
-        (11.37 * Math.pow(wind, 0.16)) +
-        (0.3965 * temp * Math.pow(wind, 0.16))
-    ).toFixed(1) + '°';
+	return (
+		13.12 +
+		(0.6215 * temp) -
+		(11.37 * Math.pow(wind, 0.16)) +
+		(0.3965 * temp * Math.pow(wind, 0.16))
+	).toFixed(1) + '°';
 }
 
 /* =========================
@@ -436,59 +453,183 @@ render ui
 
 function setWeather(data) {
 
-    $('#weatherRegionName').text(
-        REGION_NAME
-    );
+	$('#weatherRegionName').text(
+		REGION_NAME
+	);
 
-    $('#weatherTemp').text(
-        data.temp + '°'
-    );
+	$('#weatherRegionNameText').text(
+		REGION_NAME
+	);
 
-    $('#weatherSky').text(
-        data.sky
-    );
+	$('#weatherTemp').text(
+		parseFloat(data.temp).toFixed(1) +
+		'°'
+	);
 
-    $('#weatherDesc').text(
-        '현재 ' +
-        REGION_NAME +
-        '의 기온은 ' +
-        data.temp +
-        '℃ 입니다.'
-    );
+	$('#weatherTempText').html(
+		parseFloat(data.temp).toFixed(1) +
+		'°' +
+		'<span class="weatherFeelTemp">' +
+		'/' +
+		calcFeelTemp(data.temp, data.wind) +
+		'</span>'
 
-    $('#weatherFeel').text(
-        calcFeelTemp(data.temp, data.wind)
-    );
+	);
 
-    $('#weatherHumidity').text(
-        data.humidity + '%'
-    );
+	$('#weatherSky').text(
+		data.sky
+	);
 
-    $('#weatherWind').text(
-        data.wind + 'm/s'
-    );
+	$('#weatherDesc').html(
+		'현재 ' +
+		REGION_NAME +
+		'의 기온은 ' +
+		'<u >' +
+		parseFloat(data.temp).toFixed(1) +
+		'°' +
+		'</u>' +
+		' 입니다.'
+	);
 
-    $('#weatherRain').text(
-        data.rain + 'mm'
-    );
+	$('#weatherFeel').text(
+		calcFeelTemp(data.temp, data.wind)
+	);
+
+	$('#weatherHumidity').text(
+		data.humidity + '%'
+	);
+
+	$('#weatherWind').text(
+		data.wind + 'm/s'
+	);
+
+	$('#weatherRain').text(
+		data.rain + 'mm'
+	);
+
+	if (
+		window.seoulTempValue &&
+		window.seoulWindValue &&
+		IS_PARK
+	) {
+
+		const gap =
+			parseFloat(window.seoulTempValue) -
+			parseFloat(data.temp);
+
+		const seoulFeelTemp =
+			parseFloat(
+				calcFeelTemp(
+					window.seoulTempValue,
+					window.seoulWindValue
+				)
+			);
+
+		const currentFeelTemp =
+			parseFloat(
+				calcFeelTemp(
+					data.temp,
+					data.wind
+				)
+			);
+
+		const feelGap =
+			seoulFeelTemp -
+			currentFeelTemp;
+
+		if (gap >= 0) {
+
+			$('#seoulWeatherWrap').show();
+
+			desc =
+				'서울보다 ' +
+				'<u >' +
+				gap.toFixed(1) +
+				'°' +
+				'</u>' +
+				', 체감 온도 ' +
+				'<u >' +
+				feelGap.toFixed(1) +
+				'°' +
+				'</u> ' +
+				' 더 시원한 ' +
+				REGION_NAME +
+				'의 날씨를 느껴 보세요.';
+
+		} else {
+
+			$('#seoulWeatherWrap').hide();
+
+		}
+
+	} else {
+
+		$('#seoulWeatherWrap').hide();
+
+	}
+
+	$('#gapTemp').html(desc);
+}
+
+function setSeoulWeather(data) {
+
+	$('#seoulWeatherTemp').html(
+		parseFloat(data.temp).toFixed(1) +
+		'°' +
+		'<span class="weatherFeelTemp">' +
+		'/' +
+		calcFeelTemp(data.temp, data.wind) +
+		'</span>'
+	);
+
+	$('#seoulWeatherFeel').text(
+		calcFeelTemp(data.temp, data.wind)
+	);
+
+	$('#seoulWeatherHumidity').text(
+		data.humidity + '%'
+	);
+
+	$('#seoulWeatherWind').text(
+		data.wind + 'm/s'
+	);
+
+	$('#seoulWeatherRain').text(
+		data.rain + 'mm'
+	);
+}
+
+function setTempGap(pyeongchangTemp, seoulTemp) {
+
+	const gap =
+		parseFloat(seoulTemp) -
+		parseFloat(pyeongchangTemp);
+
+	if (isNaN(gap)) {
+		return;
+	}
+
+	$('#tempGap').text(
+		gap.toFixed(1)
+	);
 }
 
 function setUpdateTime(dateString) {
 
-    const date = new Date(dateString);
+	const date = new Date(dateString);
 
-    const hours =
-        String(date.getHours()).padStart(2, '0');
+	const hours =
+		String(date.getHours()).padStart(2, '0');
 
-    const minutes =
-        String(date.getMinutes()).padStart(2, '0');
+	const minutes =
+		String(date.getMinutes()).padStart(2, '0');
 
-    $('#weatherUpdate').text(
-        'Weather data by KMA ㅣ LAST UPDATED ' +
-        hours +
-        ':' +
-        minutes
-    );
+	$('#weatherUpdate').text(
+		'주간 예보: 최고/최저 기온 ㅣ Weather data by KMA ㅣ LAST UPDATED ' +
+		hours +
+		':' +
+		minutes
+	);
 }
 
 /* =========================
@@ -497,90 +638,176 @@ load data
 
 async function loadWeather() {
 
-    const cached =
-        localStorage.getItem(STORAGE_KEY);
+	const cached =
+		localStorage.getItem(STORAGE_KEY);
 
-    if (cached) {
+	if (cached) {
 
-        try {
+		try {
 
-            const parsed = JSON.parse(cached);
+			const parsed = JSON.parse(cached);
 
-            setWeather(parsed.weather);
+			setWeather(parsed.weather);
 
-            if (parsed.updatedAt) {
-                setUpdateTime(parsed.updatedAt);
-            }
+			if (parsed.updatedAt) {
+				setUpdateTime(parsed.updatedAt);
+			}
 
-        } catch (e) {
-            console.log(e);
-        }
-    }
+		} catch (e) {
+			console.log(e);
+		}
+	}
 
-    const weeklyCached =
-        localStorage.getItem(
-            WEEKLY_STORAGE_KEY
-        );
+	const seoulCached =
+		localStorage.getItem(
+			SEOUL_STORAGE_KEY
+		);
 
-    if (weeklyCached) {
+	if (seoulCached) {
 
-        try {
+		try {
 
-            const parsedWeekly =
-                JSON.parse(weeklyCached);
+			const parsedSeoul =
+				JSON.parse(seoulCached);
 
-            renderWeeklyWeather(
-                parsedWeekly.weekly
-            );
+			window.seoulTempValue =
+				parsedSeoul.weather.temp;
 
-        } catch (e) {
-            console.log(e);
-        }
-    }
+			window.seoulWindValue =
+				parsedSeoul.weather.wind;
 
-    try {
+			setSeoulWeather(
+				parsedSeoul.weather
+			);
 
-        const weather =
-            await getWeather();
+			const currentCached =
+				localStorage.getItem(STORAGE_KEY);
 
-        setWeather(weather);
+			if (currentCached) {
 
-        const updatedAt =
-            new Date().toISOString();
+				try {
 
-        setUpdateTime(updatedAt);
+					const parsedCurrent =
+						JSON.parse(currentCached);
 
-        localStorage.setItem(
-            STORAGE_KEY,
-            JSON.stringify({
-                weather,
-                updatedAt
-            })
-        );
+					setWeather(parsedCurrent.weather);
 
-        const weekly =
-            await getWeeklyWeather();
+				} catch (e) {
+					console.log(e);
+				}
+			}
 
-        if (
-            weekly.length > 0 &&
-            !weekly[0].min
-        ) {
-            weekly[0].min =
-                weather.temp;
-        }
+		} catch (e) {
+			console.log(e);
+		}
+	}
 
-        renderWeeklyWeather(weekly);
+	const weeklyCached =
+		localStorage.getItem(
+			WEEKLY_STORAGE_KEY
+		);
 
-        localStorage.setItem(
-            WEEKLY_STORAGE_KEY,
-            JSON.stringify({ weekly })
-        );
+	if (weeklyCached) {
 
-    } catch (e) {
+		try {
 
-        console.log(e);
+			const parsedWeekly =
+				JSON.parse(weeklyCached);
 
-    }
+			renderWeeklyWeather(
+				parsedWeekly.weekly
+			);
+
+		} catch (e) {
+			console.log(e);
+		}
+	}
+
+	try {
+
+		const weather =
+			await getWeather();
+
+		const seoulWeather =
+			await getWeather(
+				SEOUL_NX,
+				SEOUL_NY
+			);
+
+		window.seoulTempValue =
+			seoulWeather.temp;
+
+		console.log('평창', weather);
+		console.log('서울', seoulWeather);
+
+		setWeather(weather);
+
+		setSeoulWeather(seoulWeather);
+
+		localStorage.setItem(
+			SEOUL_STORAGE_KEY,
+			JSON.stringify({
+				weather: seoulWeather
+			})
+		);
+
+		setTempGap(
+			weather.temp,
+			seoulWeather.temp
+		);
+
+		const updatedAt =
+			new Date().toISOString();
+
+		setUpdateTime(updatedAt);
+
+		localStorage.setItem(
+			STORAGE_KEY,
+			JSON.stringify({
+				weather,
+				updatedAt
+			})
+		);
+
+		const weekly =
+			await getWeeklyWeather();
+
+		if (
+			weekly.length > 0 &&
+			!weekly[0].min
+		) {
+			weekly[0].min =
+				weather.temp;
+		}
+
+		// if (weekly.length > 0 && weekly[0].min === '-') {
+		//     const prevWeeklyCached = localStorage.getItem(WEEKLY_STORAGE_KEY);
+		//     if (prevWeeklyCached) {
+		//         try {
+		//             const prevWeeklyData = JSON.parse(prevWeeklyCached).weekly;
+		//             if (prevWeeklyData && prevWeeklyData.length > 0 && prevWeeklyData[0].date === weekly[0].date) {
+		//                 if (prevWeeklyData[0].min && prevWeeklyData[0].min !== '-') {
+		//                     weekly[0].min = prevWeeklyData[0].min; // 저장되어 있던 유효한 최저 기온 복구
+		//                 }
+		//             }
+		//         } catch (e) {
+		//             console.log(e);
+		//         }
+		//     }
+		// }
+
+		renderWeeklyWeather(weekly);
+
+		localStorage.setItem(
+			WEEKLY_STORAGE_KEY,
+			JSON.stringify({ weekly })
+		);
+
+	} catch (e) {
+
+		console.log(e);
+
+	}
 }
 
 loadWeather();
@@ -593,17 +820,17 @@ inject styles
 
 $(function () {
 
-    $('.common-page-location,.content-main-title,.btn-top').hide();
+	$('.common-page-location,.content-main-title,.btn-top').hide();
 
-    $('.content-main-title,.common-page-title .title').text('날씨 안내');
+	$('.content-main-title,.common-page-title .title').text('날씨 안내');
 
-    $('.detail-content.no-margin,.event-detail .detail-content').css(
-        'border-bottom',
-        'none'
-    );
+	$('.detail-content.no-margin,.event-detail .detail-content').css(
+		'border-bottom',
+		'none'
+	);
 
-    $('.common-content').css(
-        'width',
-        '100%'
-    );
+	$('.common-content').css(
+		'width',
+		'100%'
+	);
 });
