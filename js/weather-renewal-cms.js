@@ -1,6 +1,6 @@
 /* =========================
-region config
-========================= */
+	region config
+	========================= */
 
 const weatherRegion = (() => {
 
@@ -770,29 +770,60 @@ async function loadWeather() {
 		const weekly =
 			await getWeeklyWeather();
 
-		if (
-			weekly.length > 0 &&
-			!weekly[0].min
-		) {
-			weekly[0].min =
-				weather.temp;
-		}
-
-		// if (weekly.length > 0 && weekly[0].min === '-') {
-		//     const prevWeeklyCached = localStorage.getItem(WEEKLY_STORAGE_KEY);
-		//     if (prevWeeklyCached) {
-		//         try {
-		//             const prevWeeklyData = JSON.parse(prevWeeklyCached).weekly;
-		//             if (prevWeeklyData && prevWeeklyData.length > 0 && prevWeeklyData[0].date === weekly[0].date) {
-		//                 if (prevWeeklyData[0].min && prevWeeklyData[0].min !== '-') {
-		//                     weekly[0].min = prevWeeklyData[0].min; // 저장되어 있던 유효한 최저 기온 복구
-		//                 }
-		//             }
-		//         } catch (e) {
-		//             console.log(e);
-		//         }
-		//     }
+		// if (
+		//     weekly.length > 0 &&
+		//     !weekly[0].min
+		// ) {
+		//     weekly[0].min =
+		//         weather.temp;
 		// }
+
+		if (weekly.length > 0) {
+
+			const todayDate =
+				weekly[0].date;
+
+			const prevWeeklyCached =
+				localStorage.getItem(
+					WEEKLY_STORAGE_KEY
+				);
+
+			if (
+				(
+					!weekly[0].min ||
+					weekly[0].min === '-'
+				) &&
+				prevWeeklyCached
+			) {
+
+				try {
+
+					const prevWeeklyData =
+						JSON.parse(prevWeeklyCached).weekly;
+
+					const matchedPrev =
+						prevWeeklyData.find(
+							item => item.date === todayDate
+						);
+
+					if (
+						matchedPrev &&
+						matchedPrev.min &&
+						matchedPrev.min !== '-'
+					) {
+
+						weekly[0].min =
+							matchedPrev.min;
+
+					}
+
+				} catch (e) {
+
+					console.log(e);
+
+				}
+			}
+		}
 
 		renderWeeklyWeather(weekly);
 
