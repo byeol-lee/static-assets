@@ -393,7 +393,7 @@ function getWeeklySky(sky, pty) {
 	}
 
 	if (pty === '4') {
-		return '?️';
+		return '🌦️';
 	}
 
 	if (sky === '1') {
