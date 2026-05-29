@@ -1,6 +1,6 @@
 /* =========================
-	region config
-	========================= */
+region config
+========================= */
 
 const weatherRegion = (() => {
 
@@ -453,6 +453,8 @@ render ui
 
 function setWeather(data) {
 
+	let desc = '';
+
 	$('#weatherRegionName').text(
 		REGION_NAME
 	);
@@ -557,18 +559,14 @@ function setWeather(data) {
 				'의 날씨를 느껴 보세요.';
 
 		} else {
-
 			$('#seoulWeatherWrap').hide();
-
 		}
 
 	} else {
-
 		$('#seoulWeatherWrap').hide();
-
 	}
 
-	$('#gapTemp').html(desc);
+	$('#gapTemp').html(desc || '');
 }
 
 function setSeoulWeather(data) {
