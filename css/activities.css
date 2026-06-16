@@ -390,9 +390,9 @@ img {
         padding-bottom: 80px;
     }
 
-    .activities-page {
+    /* .activities-page {
         padding: 32px 16px;
-    }
+    } */
 
     .activities-grid,
     .related-grid {
@@ -406,6 +406,10 @@ img {
 
     .btn-reserve-top {
         display: none;
+    }
+
+    .activity-card__thumb img {
+        width: 100%;
     }
 
     .mobile-sticky-bar {
