@@ -385,6 +385,10 @@ a:hover {
         grid-template-columns: 1fr;
         gap: 32px;
     }
+
+    .activity-card__thumb img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 767px) {
