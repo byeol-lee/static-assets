@@ -406,6 +406,17 @@ a:hover {
         font-size: 28px;
     }
 
+    .activity-card h3 {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+
+    .activity-card p {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
     .btn-reserve-top {
         display: none;
     }
