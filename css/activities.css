@@ -18,7 +18,6 @@ img {
 .activities-page {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 0;
 }
 
 .activities-hero {
@@ -80,6 +79,7 @@ img {
 }
 
 .activity-card__thumb img {
+    width: 380px;
     aspect-ratio: 4 / 2;
     object-fit: cover;
     transition: transform .4s;
@@ -302,7 +302,7 @@ img {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
     flex-wrap: wrap;
 }
 
