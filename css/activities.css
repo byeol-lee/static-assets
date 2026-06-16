@@ -73,9 +73,7 @@ img {
 
 .activity-card__thumb {
     overflow: hidden;
-    /* border-radius: 12px; */
     background: #f5f5f5;
-    margin-bottom: 16px;
 }
 
 .activity-card__thumb img {
@@ -108,18 +106,22 @@ img {
     font-weight: bold;
 }
 
+a:hover {
+    text-decoration: none;;
+}
+
 .activity-card h3 {
-    margin: 0 0 8px;
-    font-size: 16px;
+    margin-top: 27px;
+    font-size: 18px;
     color: #222;
     font-weight: 500;
     line-height: 1.2;
 }
 
 .activity-card p {
-    margin: 0 0 12px;
+    margin-top: 10px;
     color: #666;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
