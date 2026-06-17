@@ -102,12 +102,12 @@ img {
 
 .activity-reservation {
     font-size: 12px;
-    color: #ff2a7a;
+    color: #0079c3;
     font-weight: bold;
 }
 
 a:hover {
-    text-decoration: none;;
+    text-decoration: none;
 }
 
 .activity-card h3 {
@@ -489,7 +489,7 @@ a:hover {
 }
 
 .common-top-info .btn.round {
-    background: #e6007e;
+    background: #0079c3;
     border: none;
     margin-top: 20px;
 }
@@ -551,11 +551,11 @@ a:hover {
 
 .info-table th.spotlight-th {
     background: #fff0f5;
-    color: #e6007e;
+    color: #0079c3;
 }
 
 .info-table td.spotlight-td {
-    color: #e6007e;
+    color: #0079c3;
     font-weight: 700;
     background: #fffcfd;
 }
@@ -594,7 +594,7 @@ a:hover {
 
     .common-top-info .btn.round {
         margin: 15px 0px 0px;
-        background: rgb(230, 0, 126);
+        background: #0079c3;
         display: flex;
         align-items: center;
         justify-content: center;
