@@ -560,7 +560,7 @@ a:hover {
     background: #fffcfd;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     .activity-detail {
         padding: 0;
     }
@@ -569,7 +569,7 @@ a:hover {
         background: #fff;
         border-bottom: 8px solid #eee;
         color: #222;
-        margin: 0 -16px;
+        margin: 0 -15px;
     }
 
     .common-top-info .info .info-wrap {
