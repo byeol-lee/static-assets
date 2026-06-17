@@ -139,11 +139,11 @@ a:hover {
     color: #495057;
 }
 
-.activity-detail {
+/* .activity-detail {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 24px;
-}
+} */
 
 .activity-breadcrumb {
     font-size: 13px;
@@ -577,7 +577,7 @@ a:hover {
     }
 
     .common-top-info .info-copy {
-        margin-bottom: 9px;
+        margin: 16px 0 10px;
         text-align: center;
         font-weight: 500;
         font-size: 18px;
