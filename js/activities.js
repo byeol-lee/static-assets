@@ -30,8 +30,8 @@ const activities = [
         priceGuest: '26,000원',
         information: `
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 표선면 성읍이리로 85<br />
-        (휘닉스 아일랜드에서 차량으로 약 25분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        (휘닉스 아일랜드에서 차량으로 약 30분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 제공 항목: 물레를 사용하여 만든 도자 작품(찻잔 2개 or 접시 or 머그 컵 등)</p>
         `,
         notice: `
@@ -85,8 +85,11 @@ const activities = [
         priceGeneral: '35,000원',
         priceGuest: '30,000원',
         information: `
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 동류암로 20, 플레이스 캠프 액티비티 라운지<br />
+        (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
         <p class="ref-bu-list">※ 제공 항목: 요가 매트</p>
         <p class="ref-bu-list">※ 개인 준비물: 편안한 복장</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 해당 클래스는 2인 이상 모객 시 진행되는 프로그램입니다.</p>
         <p class="ref-bu-list">※ 강사 일정에 따라 운영 요일에 변동이 있을 수 있습니다.</p>
         <p class="ref-bu-list">※ 세부 내용은 변경될 수 있습니다.</p>
@@ -140,9 +143,9 @@ const activities = [
         priceGeneral: '38,000원',
         priceGuest: '35,000원',
         information: `
-        <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 오조리 747-4, 포포 공방<br />
-        (휘닉스 아일랜드에서 차량으로 약 4분, 도보로 약 30분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조로 93, 포포 공방<br />
+        (휘닉스 아일랜드에서 차량으로 약 10분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 본 프로그램은 11세 이상부터 참여 가능합니다.</p>
         `,
         notice: ``,
@@ -172,9 +175,9 @@ const activities = [
         priceGeneral: '28,000원',
         priceGuest: '25,000원',
         information: `
-        <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 오조리 747-4, 포포 공방<br />
-        (휘닉스 아일랜드에서 차량으로 약 4분, 도보로 약 30분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조로 93, 포포 공방<br />
+        (휘닉스 아일랜드에서 차량으로 약 10분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 본 프로그램은 11세 이상부터 참여 가능합니다.</p>
         `,
         notice: ``,
@@ -198,14 +201,14 @@ const activities = [
         ],
         tags: ['ART', 'HANDMADE'],
         category: 'ART',
-        date: '월 ~ 토요일',
-        duration: '90분',
-        priceGeneral: '30,000원',
-        priceGuest: '25,000원',
+        date: '금 ~ 수요일',
+        duration: '12:00 ~ 16:00',
+        priceGeneral: '60,000원',
+        priceGuest: '55,000원',
         information: `
-        <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 중산간동로 3242 단독 주택<br />
-        (휘닉스 아일랜드에서 차량으로 약 10분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 중산간동로 3242<br />
+        (휘닉스 아일랜드에서 차량으로 약 15분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         `,
         notice: ``,
         reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdmltPFYpCOZCeR-BqDHtWqCIjiF2ehVlhraEMoQ0XLboml_g/viewform',
@@ -234,9 +237,9 @@ const activities = [
         priceGeneral: '38,000원',
         priceGuest: '35,000원',
         information: `
-        <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 애월읍 고성서5길 15<br />
-        (휘닉스 아일랜드에서 차량으로 약 60분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 해맞이해안로 2688, 지하 1층 명상실(오디토리움)<br />
+        (휘닉스 아일랜드에서 차량으로 약 15분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 본 프로그램 참여 시 일상복은 입장이 불가하며 요가복, 운동복으로 환복하신 후 참여가 가능합니다.<br />
         복장 미비로 인한 프로그램 이용이 불가한 경우 환불이 불가합니다.</p>
         `,
@@ -283,8 +286,8 @@ const activities = [
         priceGuest: '35,000원',
         information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 해맞이해안로 2688, 지하 1층 명상실(오디토리움)<br />
-        (휘닉스 아일랜드에서 차량으로 약 7분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        (휘닉스 아일랜드에서 차량으로 약 15분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 본 프로그램 참여 시 일상복은 입장이 불가하며 요가복, 운동복으로 환복하신 후 참여가 가능합니다.<br />
         복장 미비로 인한 프로그램 이용이 불가한 경우 환불이 불가합니다.</p>
         `,
@@ -326,12 +329,12 @@ const activities = [
         category: 'REST',
         date: '',
         duration: '12:00, 13:00, 14:00, 15:00(진행 시간: 90분)',
-        priceGeneral: '참여 불가',
+        priceGeneral: '미진행',
         priceGuest: '25,000원',
         information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 해맞이해안로 2688, 지하 1층 티하우스<br />
-        (휘닉스 아일랜드에서 차량으로 약 7분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        (휘닉스 아일랜드에서 차량으로 약 15분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 본 프로그램 참여 시 일상복은 입장이 불가하며 요가복, 운동복으로 환복하신 후 참여가 가능합니다.<br />
         복장 미비로 인한 프로그램 이용이 불가한 경우 환불이 불가합니다.</p>
         <p class="ref-bu-list">※ 1인 1차가 제공됩니다.(차 종류의 차는 예약 접수 시 선택 바랍니다.)</p>
@@ -379,8 +382,8 @@ const activities = [
         priceGuest: '40,000원',
         information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 해맞이해안로 2688, 지하 1층 티하우스<br />
-        (휘닉스 아일랜드에서 차량으로 약 7분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        (휘닉스 아일랜드에서 차량으로 약 15분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         `,
         notice: `
         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
@@ -424,8 +427,8 @@ const activities = [
         priceGuest: '25,000원',
         information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 애월읍 고성서5길 15<br />
-        (휘닉스 아일랜드에서 차량으로 약 60분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        (휘닉스 아일랜드에서 차량으로 약 70분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 4세 이상부터 성인까지 누구나 쉽고 즐겁게 참여할 수 있는 프로그램입니다.</p>
         <p class="ref-bu-list">※ 향기 직접 조향 클래스입니다.</p>
         <p class="ref-bu-list">※ 200ml 탈취제 또는 섬유 향수 제작 가능합니다.</p>
@@ -469,8 +472,8 @@ const activities = [
         priceGuest: '30,000원',
         information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 애월읍 고성서5길 15<br />
-        (휘닉스 아일랜드에서 차량으로 약 60분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        (휘닉스 아일랜드에서 차량으로 약 70분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 4세 이상부터 성인까지 누구나 쉽고 즐겁게 참여할 수 있는 프로그램입니다.</p>
         <p class="ref-bu-list">※ 100ml + 50ml 또는 150ml 디퓨저 제작이 가능합니다.</p>
         <p class="ref-bu-list">※ 제주 치자, 비자, 감귤 등 다양한 제주 향료를 사용합니다.</p>
@@ -513,8 +516,8 @@ const activities = [
         priceGuest: '25,000원',
         information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 애월읍 고성서5길 15<br />
-        (휘닉스 아일랜드에서 차량으로 약 60분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        (휘닉스 아일랜드에서 차량으로 약 70분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 4세 이상부터 성인까지 누구나 쉽고 즐겁게 참여할 수 있는 프로그램입니다.</p>
         <p class="ref-bu-list">※ 숙성병 1개, 향 주머니 2개, 사쉐 파우치 4개 제공</p>
         <p class="ref-bu-list">※ 완성 후 약 4개월간 향이 지속됩니다.</p>
@@ -558,8 +561,8 @@ const activities = [
         priceGuest: '30,000원',
         information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 애월읍 고성서5길 15<br />
-        (휘닉스 아일랜드에서 차량으로 약 60분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        (휘닉스 아일랜드에서 차량으로 약 70분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 4세 이상부터 성인까지 누구나 쉽고 즐겁게 참여할 수 있는 프로그램입니다.</p>
         <p class="ref-bu-list">※ 하바리움 LED 받침대 1개 제공</p>
         <p class="ref-bu-list">※ 용기와 꽃은 직접 선택하여 진행됩니다.</p>
@@ -602,8 +605,8 @@ const activities = [
         priceGuest: '20,000원',
         information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 애월읍 고성서5길 15<br />
-        (휘닉스 아일랜드에서 차량으로 약 60분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        (휘닉스 아일랜드에서 차량으로 약 70분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 4세 이상부터 성인까지 누구나 쉽고 즐겁게 참여할 수 있는 프로그램입니다.</p>
         <p class="ref-bu-list">※ 파츠, 향료, 색상까지 모두 직접 선택하여 나만의 캔들을 만드는 체험입니다.</p>
         <p class="ref-bu-list">※ 체험 소요 시간은 약 1시간 ~ 1시간 30분입니다.</p>
@@ -656,8 +659,8 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ 투숙객 혜택: 웰컴 드링크 제공(커피 or 음료)</p>
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 환해장성로 945<br />
-        (휘닉스 아일랜드에서 차량으로 약 4분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 수업 중 촬영된 사진은 추후 홍보 콘텐츠로 활용될 수 있습니다. 촬영 및 활용을 원하지 않으시는 경우, 수업 시작 전 미리 말씀 부탁드립니다.</p>
         <p class="ref-bu-list">※ 주차는 가게 앞에 가능하며, 무료 주차입니다.</p>
         `,
@@ -687,7 +690,7 @@ const activities = [
         `,
         thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2025/05/IQTnwc3f1aPsEtulIkYm_1_',
+            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
             'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/30su09CIE0F6GU3IXtSq_1_'
         ],
         tags: ['REST', 'HEALING'],
@@ -699,8 +702,8 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ 투숙객 혜택: 웰컴 드링크 제공(커피 or 음료)</p>
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 환해장성로 945<br />
-        (휘닉스 아일랜드에서 차량으로 약 4분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 수업 중 촬영된 사진은 추후 홍보 콘텐츠로 활용될 수 있습니다. 촬영 및 활용을 원하지 않으시는 경우, 수업 시작 전 미리 말씀 부탁드립니다.</p>
         <p class="ref-bu-list">※ 주차는 가게 앞에 가능하며, 무료 주차입니다.</p>
         `,
@@ -729,7 +732,7 @@ const activities = [
         `,
         thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2025/05/IQTnwc3f1aPsEtulIkYm_1_',
+            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
             'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/z5U5mMjiTvu0JPbv288u_1_'
         ],
         tags: ['REST', 'HEALING'],
@@ -741,8 +744,8 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ 투숙객 혜택: 웰컴 드링크 제공(커피 or 음료)</p>
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 환해장성로 945<br />
-        (휘닉스 아일랜드에서 차량으로 약 4분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 수업 중 촬영된 사진은 추후 홍보 콘텐츠로 활용될 수 있습니다. 촬영 및 활용을 원하지 않으시는 경우, 수업 시작 전 미리 말씀 부탁드립니다.</p>
         <p class="ref-bu-list">※ 주차는 가게 앞에 가능하며, 무료 주차입니다.</p>
         `,
@@ -780,8 +783,8 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ 투숙객 혜택: 웰컴 드링크 제공(커피 or 음료)</p>
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 환해장성로 945<br />
-        (휘닉스 아일랜드에서 차량으로 약 4분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 수업 중 촬영된 사진은 추후 홍보 콘텐츠로 활용될 수 있습니다. 촬영 및 활용을 원하지 않으시는 경우, 수업 시작 전 미리 말씀 부탁드립니다.</p>
         <p class="ref-bu-list">※ 주차는 가게 앞에 가능하며, 무료 주차입니다.</p>
         `,
@@ -828,8 +831,8 @@ const activities = [
         priceGuest: '55,000원',
         information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 해맞이해안로 2688, 지하 1층 명상실(오디토리움)<br />
-        (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        (휘닉스 아일랜드에서 차량으로 약 10분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 본 프로그램 참여 시 일상복은 입장이 불가하며 요가복, 운동복으로 환복하신 후 참여가 가능합니다.<br />
         복장 미비로 인한 프로그램 이용이 불가한 경우 환불이 불가합니다.</p>
         `,
@@ -847,7 +850,7 @@ const activities = [
             </ul>
         </div>
         `,
-        reservation: '',
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfWwMFZdUZWYKse-ljK-VPuKbB3IPNsoB4LuLSabeqN_uj-kg/viewform',
         display: true,
     },
     {
@@ -874,7 +877,7 @@ const activities = [
         priceGuest: '69,000원',
         information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 성산리 143-4, 성산스쿠버<br />
-        (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
+        (휘닉스 아일랜드에서 차량으로 약 10분 소요)</p>
         <p class="ref-bu-list">※ 제공 항목: 스킨 스쿠버 다이빙 장비, 수건, 샤워 용품(샴푸, 린스, 바디 워시, 비누), 샤워장 완비</p>
         <p class="ref-bu-list">※ 개인 준비물: 비치 웨어(래시 가드 상/하의 or 워터 파크 반바지 or 수영복), 개인 세면 도구, 여벌 옷</p>
         `,
