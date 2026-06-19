@@ -544,6 +544,7 @@ CTA
 }
 
 .event-cta__button--line.small {
+    width: 50%;
     font-size:16px;
     background-color:#999;
     color:#fff;
@@ -1086,7 +1087,6 @@ PC Responsive
 
     .event-cta__button--line.small {
         margin-top: 16px;
-        width: 50%;
         font-size: 20px;
         background-color: #999;
         color: #fff;
