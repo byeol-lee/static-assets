@@ -543,6 +543,14 @@ CTA
     border: none;
 }
 
+.event-cta__button--line.small {
+    font-size:16px;
+    background-color:#999;
+    color:#fff;
+    padding:8px;
+    margin:8px auto 0;
+}
+
 .event-info+.event-cta,
 .event-body+.event-cta,
 .event-body+.table-container {
@@ -1074,6 +1082,15 @@ PC Responsive
         display: inline-flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .event-cta__button--line.small {
+        margin-top: 16px;
+        width: 50%;
+        font-size: 20px;
+        background-color: #999;
+        color: #fff;
+        padding: 16px 0;
     }
 
     .event-info+.event-cta,
