@@ -88,5 +88,5 @@ if (currentActivity) {
 
 } else {
     alert('존재하지 않는 액티비티입니다.');
-    window.location.href = 'https://phoenixhnr.co.kr/static/jeju/experience/leports/mintgarden';
+    window.location.href = '/static/jeju/activities';
 }
