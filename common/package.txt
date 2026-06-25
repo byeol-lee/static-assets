@@ -1,0 +1,240 @@
+<a class="camp-bnr" href="/page/playcecamp/board/event/190000046498" target="_blank">
+    <img class="next-section" src="/images/ko/package/banner/playcecamp1.png"
+        alt="4월 27일 ~ 5월 31일 투숙 한정, 투숙객 전원 맥주 1반 FREE! 스피닝 울프 한맥 생맥주 1인 1잔(300cc) 제공, 체크인 시 프론트 데스크 쿠폰 수령 후 이용 가능"
+        title="LET'S ENJOY at Playce CAMP 이벤트 자세히 보기">
+</a>
+<style>
+    .package-content {
+        word-break: keep-all;
+    }
+
+    .package-detail .detail-header-new {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .package-detail .detail-header-new .title {
+        font-weight: 400;
+        font-size: 42px;
+        color: #000;
+        word-wrap: break-word;
+    }
+
+    .package-detail .detail-header-new .info {
+        margin-top: 2px;
+        font-weight: 300;
+        font-size: 18px;
+        color: #666;
+    }
+
+    h5.head-sub2 {
+        position: relative;
+        font-weight: 500;
+        padding-left: 26px;
+    }
+
+    .package-detail .point {
+        color: #f7441b;
+    }
+
+    .package-info {
+        background-color: #f5f5f5;
+        padding: 40px;
+    }
+
+    h5.head-sub2:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background: url(https://leehelena.cafe24.com/images/icon-info.svg) no-repeat;
+        width: 20px;
+        height: 20px;
+        top: 3px;
+        left: 0;
+    }
+
+    .pg_st01,
+    .pg_st02,
+    .pg_st03 {
+        padding: 50px 39px;
+        border-top: 1px solid #222;
+        background-color: #f5f5f5;
+    }
+
+    .pg_st01 ul,
+    .pg_st02 ul,
+    .pg_st03 ul {
+        display: block;
+        padding: 58px 0;
+        border: 1px solid #e8e8e8;
+        background-color: #fff;
+    }
+
+    .pg_st01 ul:after,
+    .pg_st02 ul:after,
+    .pg_st03 ul:after {
+        content: '.';
+        display: block;
+        font-size: 0;
+        height: 0px;
+        line-height: 0;
+        clear: both;
+    }
+
+    .pg_st01 ul li,
+    .pg_st02 ul li,
+    .pg_st03 ul li {
+        display: table-cell;
+        letter-spacing: -0.04em;
+        vertical-align: middle;
+    }
+
+    .pg_st01 ul li:nth-child(1),
+    .pg_st02 ul li:nth-child(1),
+    .pg_st03 ul li:nth-child(1) {
+        width: 300px;
+        height: 51px;
+        line-height: 1.7;
+        border-right: 1px solid #bfbfbf;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .pg_st01 ul li:nth-child(2),
+    .pg_st02 ul li:nth-child(2),
+    .pg_st03 ul li:nth-child(2) {
+        padding: 0 48px;
+        font-size: 20px;
+        color: #232323;
+        line-height: 1.7;
+    }
+
+    .pg_st01 ul li:nth-child(1),
+    .pg_st01 .point {
+        color: #167a47;
+    }
+
+    .pg_st02 ul li:nth-child(1),
+    .pg_st02 .point {
+        color: #0079c3;
+    }
+
+    .pg_st03 ul li:nth-child(1),
+    .pg_st03 .point {
+        color: #e6007e;
+    }
+
+    .b2c-modal~.section-container.section-package .detail-header-new {
+        margin-top: 120px;
+    }
+
+    @media screen and (max-width:819px) {
+        .package-detail .detail-header-new {
+            margin-bottom: 20px;
+        }
+
+        .package-detail .detail-header-new .title {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .package-detail .detail-header-new .info {
+            margin-top: 1px;
+            font-weight: 400;
+            font-size: 14px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .package-info {
+            padding: 20px;
+        }
+
+        h5.head-sub2 {
+            font-size: 15px;
+            padding-left: 25px;
+        }
+
+        h5.head-sub2:before {
+            width: 18px;
+            height: 18px;
+            top: 0;
+        }
+
+        .package-content .page-foot {
+            margin: 0;
+        }
+
+        .pg_st01,
+        .pg_st02,
+        .pg_st03 {
+            padding: 20px 15px;
+        }
+
+        .pg_st01 ul,
+        .pg_st02 ul,
+        .pg_st03 ul {
+            display: block;
+            padding: 22px 15px;
+        }
+
+        .pg_st01 ul li,
+        .pg_st02 ul li,
+        .pg_st03 ul li {
+            display: block;
+        }
+
+        .pg_st01 ul li:nth-child(1),
+        .pg_st02 ul li:nth-child(1),
+        .pg_st03 ul li:nth-child(1) {
+            width: auto;
+            height: auto;
+            line-height: 1.5;
+            border-right: 0;
+            font-size: 19px;
+            text-align: left;
+        }
+
+        .pg_st01 ul li:nth-child(2),
+        .pg_st02 ul li:nth-child(2),
+        .pg_st03 ul li:nth-child(2) {
+            padding: 0;
+            font-size: 14px;
+            color: #232323;
+            line-height: 1.5;
+        }
+
+        .b2c-modal~.section-container.section-package .detail-header-new {
+            margin-top: 0;
+        }
+    }
+</style>
+<script>
+    $(function () {
+        $('.common-page-location').html('<span class="home">HOME</span> <span class="gt">&gt;</span> <span class="menu">스페셜 오퍼</span> <span class="gt">&gt;</span> <span class="menu">객실 패키지</span>');
+        $('.common-page-title').html('<h2 class="title">객실 패키지</h2><button type="button" onclick="history.back();" class="btn-back">Back</button>');
+        $('.detail-header-new').insertBefore('.main-banner');
+        $('.package-title,.detail-header').hide();
+
+        if ($('.common-content.package-detail .pg_st03').length > 0) {
+
+            if (window.location.href.includes('16035')) {
+                $('.camp-bnr').hide();
+            } else {
+                const startDat = new Date('2026-06-01T00:00:00').getTime();
+                const nowDat = new Date().getTime();
+
+                if (nowDat < startDat) {
+                    $('.camp-bnr').insertAfter('.pg_st03').show();
+                } else {
+                    $('.camp-bnr').hide();
+                }
+            }
+        } else {
+            $('.camp-bnr').hide();
+        }
+
+    });
+</script>

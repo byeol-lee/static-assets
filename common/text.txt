@@ -1,0 +1,514 @@
+<!-- 운영 안내 ko -->
+<div class="cm-pp-h-info">
+    <ul class="dot-bu-list">
+        <li>Check-in/out: 15:00 ~ 11:00</li>
+        <li>취소/변경 수수료<br />
+            <ul class="dash-bu-list">
+                <li>비수기: 이용일 기준 2일 전까지 수수료 없이 취소/변경 가능<br />
+                    (1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+                <li>성수기: 이용일 기준 7일 전까지 수수료 없이 취소/변경 가능<br />
+                    (6 ~ 4일 전: 10%, 3 ~ 2일 전: 20%, 1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+            </ul>
+        </li>
+        <li>전체 객실 금연</li>
+        <li>객실 정비: 1일 1회</li>
+    </ul>
+</div>
+<div class="cm-pp-r-info-I">
+    <ul class="dot-bu-list">
+        <li>Check-in/out: 15:00 ~ 11:00</li>
+        <li>취소/변경 수수료<br />
+            <ul class="dash-bu-list">
+                <li>비수기: 이용일 기준 2일 전까지 수수료 없이 취소/변경 가능<br />
+                    (1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+                <li>성수기: 이용일 기준 7일 전까지 수수료 없이 취소/변경 가능<br />
+                    (6 ~ 4일 전: 10%, 3 ~ 2일 전: 20%, 1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+            </ul>
+        </li>
+        <li>전체 객실 금연</li>
+    </ul>
+</div>
+<div class="cm-pp-r-info-II">
+    <ul class="dot-bu-list">
+        <li>Check-in/out: 15:00 ~ 11:00</li>
+        <li>취소/변경 수수료<br />
+            <ul class="dash-bu-list">
+                <li>비수기: 이용일 기준 2일 전까지 수수료 없이 취소/변경 가능<br />
+                    (1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+                <li>성수기: 이용일 기준 7일 전까지 수수료 없이 취소/변경 가능<br />
+                    (6 ~ 4일 전: 10%, 3 ~ 2일 전: 20%, 1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+            </ul>
+        </li>
+        <li>전체 객실 금연</li>
+        <li>육류, 튀김류, 생선류 등 연기 및 냄새가 심한 음식의 경우, 조리 불가</li>
+    </ul>
+</div>
+<div class="cm-info-island">
+    <ul class="dot-bu-list">
+        <li>Check-in/out: 15:00 ~ 11:00</li>
+        <li>취소/변경 수수료<br />
+            <ul class="dash-bu-list">
+                <li>비수기: 이용일 기준 2일 전까지 수수료 없이 취소/변경 가능<br />
+                    (1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+                <li>성수기: 이용일 기준 7일 전까지 수수료 없이 취소/변경 가능<br />
+                    (6 ~ 4일 전: 10%, 3 ~ 2일 전: 20%, 1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+            </ul>
+        </li>
+        <li>전체 객실 금연</li>
+    </ul>
+</div>
+
+<!-- 운영 안내 en -->
+<div class="cm-pp-h-info-en">
+    <ul class="dot-bu-list">
+        <li>Check-in/out: 15:00 ~ 11:00</li>
+        <li>Cancellation/Change fees<br>
+            <ul class="dash-bu-list">
+                <li>Off-season: Free cancellation or changes up to 2 days before the check-in date<br> (1 day before:
+                    50% fee, same day/No-show: 100% fee)</li>
+                <li>Peak season: Free cancellation or changes up to 7 days before the check-in date<br> (6 ~ 4 days
+                    before: 10% fee, 3 ~ 2 days before: 20% fee, 1 day before: 50% fee, same day/No-show: 100% fee)</li>
+            </ul>
+        </li>
+        <li>All rooms are non-smoking</li>
+        <li>Housekeeping: once per day</li>
+    </ul>
+    </ul>
+</div>
+<div class="cm-pp-r-info-I-en">
+    <ul class="dot-bu-list">
+        <li>Check-in/out: 15:00 ~ 11:00</li>
+        <li>Cancellation/Change fees<br>
+            <ul class="dash-bu-list">
+                <li>Off-season: Free cancellation or changes up to 2 days before the check-in date<br> (1 day before:
+                    50% fee, same day/No-show: 100% fee)</li>
+                <li>Peak season: Free cancellation or changes up to 7 days before the check-in date<br> (6 ~ 4 days
+                    before: 10% fee, 3 ~ 2 days before: 20% fee, 1 day before: 50% fee, same day/No-show: 100% fee)</li>
+            </ul>
+        </li>
+        <li>All rooms are non-smoking</li>
+    </ul>
+</div>
+<div class="cm-pp-r-info-II-en">
+    <ul class="dot-bu-list">
+        <li>Check-in/out: 15:00 ~ 11:00</li>
+        <li>Cancellation/Change fees<br>
+            <ul class="dash-bu-list">
+                <li>Off-season: Free cancellation or changes up to 2 days before the check-in date<br> (1 day before:
+                    50% fee, same day/No-show: 100% fee)</li>
+                <li>Peak season: Free cancellation or changes up to 7 days before the check-in date<br> (6 ~ 4 days
+                    before: 10% fee, 3 ~ 2 days before: 20% fee, 1 day before: 50% fee, same day/No-show: 100% fee)</li>
+            </ul>
+        </li>
+        <li>All rooms are non-smoking</li>
+        <li>Cooking of foods that produce strong smoke or odors, such as meat, fried dishes, and fish, is not allowed
+        </li>
+    </ul>
+</div>
+<div class="cm-pi-info-en">
+    <ul class="dot-bu-list">
+        <li>Check-in/out: 15:00 ~ 11:00</li>
+        <li>Cancellation/Change fees<br>
+            <ul class="dash-bu-list">
+                <li>Off-season: Free cancellation or changes up to 2 days before the check-in date<br> (1 day before:
+                    50% fee, same day/No-show: 100% fee)</li>
+                <li>Peak season: Free cancellation or changes up to 7 days before the check-in date<br> (6 ~ 4 days
+                    before: 10% fee, 3 ~ 2 days before: 20% fee, 1 day before: 50% fee, same day/No-show: 100% fee)</li>
+            </ul>
+        </li>
+        <li>All rooms are non-smoking</li>
+    </ul>
+</div>
+
+<div class="cm-info-island--en">
+    <ul class="dot-bu-list">
+        <li>Check-in/out: 15:00 ~ 11:00</li>
+        <li>Cancellation/Change fees<br>
+            <ul class="dash-bu-list">
+                <li>Off-season: Free cancellation or changes up to 2 days before the check-in date<br> (1 day before:
+                    50% fee, same day/No-show: 100% fee)</li>
+                <li>Peak season: Free cancellation or changes up to 7 days before the check-in date<br> (6 ~ 4 days
+                    before: 10% fee, 3 ~ 2 days before: 20% fee, 1 day before: 50% fee, same day/No-show: 100% fee)</li>
+            </ul>
+        </li>
+        <li>All rooms are non-smoking</li>
+    </ul>
+</div>
+
+<!-- guest/bedding(ko) -->
+<div class="cm-pp-r-gt_bd">
+    <ul class="dot-bu-list">
+        <li>최대 1인: 10,000원/박</li>
+        <li>침구: 30,000원/박
+            <p class="ref-bu-list">※ 구성: 이불, 패드, 베개</p>
+        </li>
+        <li>단품 대여 가능
+            <p class="ref-bu-list">※ 이불 10,000원, 패드 10,000원, 배개 5,000원</p>
+            <p class="ref-bu-list">※ 인원 추가 요금 미포함</p>
+        </li>
+    </ul>
+</div>
+<!-- // guest/bedding(ko) -->
+
+<!-- guest/bedding(en) -->
+<div class="cm-pp-r-gt_bd-en">
+    <ul class="dot-bu-list">
+        <li>Up to 1 guest: KRW 10,000/night</li>
+        <li>Bedding: KRW 30,000/night
+            <p class="ref-bu-list">※ Includes: blanket, pad, and pillow</p>
+        </li>
+        <li>Individual items available for rental
+            <p class="ref-bu-list">※ blanket KRW 10,000, pad KRW 10,000, pillow KRW 5,000</p>
+            <p class="ref-bu-list">※ Extra guest charge not included</p>
+        </li>
+    </ul>
+</div>
+<!-- // guest/bedding(en) -->
+
+<!-- towel(ko) -->
+<div class="cm-pp-r-tw">
+    <ul class="dot-bu-list">
+        <li>페이스 타월: 500원/장</li>
+        <li>생수 1L: 2,000원/개</li>
+    </ul>
+</div>
+<!-- // towel(ko) -->
+
+<!-- towel(en) -->
+<div class="cm-pp-r-tw-en">
+    <ul class="dot-bu-list">
+        <li>Face towel: KRW 500/towel</li>
+        <li>Bottled water 1L: KRW 2,000/bottle</li>
+    </ul>
+</div>
+<!-- // towel(en) -->
+
+<!-- pet(ko) -->
+<div class="cm-pp-r-pet-I">
+    <ul class="dot-bu-list">
+        <li>60,000원/박</li>
+    </ul>
+    <p class="ref-bu-list">※ 사전 예약 필수</p>
+    <p class="ref-bu-list">※ 최대 1마리까지 동반 가능</p>
+    <p class="ref-bu-list">※ 소/중/대형견 전체 이용 가능</p>
+</div>
+<div class="cm-pp-r-pet-II">
+    <ul class="dot-bu-list">
+        <li>30,000원/박</li>
+    </ul>
+    <p class="ref-bu-list">※ 사전 예약 필수</p>
+    <p class="ref-bu-list">※ 최대 1마리까지 동반 가능</p>
+    <p class="ref-bu-list">※ 소/중/대형견 전체 이용 가능</p>
+</div>
+<!-- // pet(ko) -->
+
+<!-- pet(en) -->
+<div class="cm-pp-r-pet-I-en">
+    <ul class="dot-bu-list">
+        <li>KRW 60,000/night</li>
+    </ul>
+    <p class="ref-bu-list">※ Advance reservation required</p>
+    <p class="ref-bu-list">※ Up to 1 pet allowed</p>
+    <p class="ref-bu-list">※ Small, medium, and large dogs are all welcome</p>
+</div>
+<div class="cm-pp-r-pet-II-en">
+    <ul class="dot-bu-list">
+        <li>KRW 30,000/night</li>
+    </ul>
+    <p class="ref-bu-list">※ Advance reservation required</p>
+    <p class="ref-bu-list">※ Up to 1 pet allowed</p>
+    <p class="ref-bu-list">※ Small, medium, and large dogs are all welcome</p>
+</div>
+<!-- // pet(en) -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- bedding(ko) -->
+<div class="cm-pp-h-bd">
+    <ul class="dot-bu-list">
+        <li>최대 1인: 30,000원(침구 포함)
+            <p class="ref-bu-list">※ 구성: 이불, 패드, 베개</p>
+            <p class="ref-bu-list">※ 엑스트라 베드 추가 시 50,000원(1인 포함)</p>
+        </li>
+        <!-- <li>엑스트라 베드: 40,000원</li> -->
+    </ul>
+</div>
+<!-- // bedding(ko) -->
+<!-- bedding(en) -->
+<div class="cm-pp-h-bd-en">
+    <ul class="dot-bu-list">
+        <li>Up to 1 guest: KRW 30,000(bedding included)
+            <p class="ref-bu-list">※ Includes: blanket, pad, and pillow</p>
+            <p class="ref-bu-list">※ Additional KRW 50,000 for an extra bed(includes 1 guest)</p>
+        </li>
+        <!-- <li>Extra bed: KRW 40,000</li> -->
+    </ul>
+</div>
+<!-- // bedding(en) -->
+
+<!-- towel/bottled water(ko) -->
+<div class="cm-pp-h-tw_bw">
+    <ul class="dot-bu-list">
+        <li>바디 타월: 2,000원/장</li>
+        <li>생수 500ml: 1,000원/개</li>
+    </ul>
+</div>
+<!-- // towel/bottled water(ko) -->
+<!-- towel/bottled water(en) -->
+<div class="cm-pp-h-tw_bw-en">
+    <ul class="dot-bu-list">
+        <li>Body towel: KRW 2,000/towel</li>
+        <li>Bottled water 500ml: KRW 1,000/bottle</li>
+    </ul>
+</div>
+<!-- // towel/bottled water(en) -->
+
+<!-- baby room(ko) -->
+<div class="cm-pp-h-br">
+    <ul class="dot-bu-list">
+        <li>100,000원/박
+            <p class="ref-bu-list">※ 사전 예약 필수</p>
+        </li>
+    </ul>
+</div>
+<!-- // baby room(ko) -->
+<!-- baby room(en) -->
+<div class="cm-pp-h-br-en">
+    <ul class="dot-bu-list">
+        <li>KRW 100,000/night
+            <p class="ref-bu-list">※ Advance reservation required</p>
+        </li>
+    </ul>
+</div>
+<!-- // baby room(en) -->
+
+<!-- early check-in(ko) -->
+<div class="cm-pp-h-eci">
+    <ul class="dot-bu-list">
+        <li>09:00 ~: 정상가의 30% 추가</li>
+        <li>10:00 ~: 정상가의 20% 추가</li>
+        <li>11:00 ~: 정상가의 10% 추가</li>
+    </ul>
+</div>
+<div class="cm-pp-r-eci">
+    <ul class="dot-bu-list">
+        <li>09:00 ~: 60,000원</li>
+        <li>10:00 ~: 40,000원</li>
+        <li>11:00 ~: 20,000원</li>
+    </ul>
+</div>
+<!-- // early check-in(ko) -->
+
+<!-- early check-in(en) -->
+<div class="cm-pp-h-eci-en">
+    <ul class="dot-bu-list">
+        <li>09:00 ~: 30% fee</li>
+        <li>10:00 ~: 20% fee</li>
+        <li>11:00 ~: 10% fee</li>
+    </ul>
+</div>
+<div class="cm-pp-r-eci-en">
+    <ul class="dot-bu-list">
+        <li>09:00 ~: KRW 60,000</li>
+        <li>10:00 ~: KRW 40,000</li>
+        <li>11:00 ~: KRW 20,000</li>
+    </ul>
+</div>
+<!-- // early check-in(en) -->
+
+<!-- late check-out(ko) -->
+<div class="cm-pp-h-lco">
+    <ul class="dot-bu-list">
+        <li>~ 12:00: 정상가의 5% 추가</li>
+        <li>~ 13:00: 정상가의 10% 추가</li>
+        <li>~ 14:00: 정상가의 20% 추가</li>
+        <li>~ 15:00: 정상가의 30% 추가</li>
+    </ul>
+    <p class="ref-bu-list">※ 15:00 이후 1박 요금(최대 16:00까지 퇴실)</p>
+</div>
+<div class="cm-pp-r-lco">
+    <ul class="dot-bu-list">
+        <li>~ 12:00: 10,000원</li>
+        <li>~ 13:00: 20,000원</li>
+        <li>~ 14:00: 40,000원</li>
+        <li>~ 15:00: 60,000원</li>
+    </ul>
+    <p class="ref-bu-list">※ 15:00 이후 1박 요금(최대 16:00까지 퇴실)</p>
+</div>
+
+<div class="cm-pi-lco">
+    <ul class="dot-bu-list">
+        <li>~ 13:00: 10,000원</li>
+        <li>~ 14:00: 20,000원</li>
+        <li>~ 15:00: 30,000원</li>
+    </ul>
+    <p class="ref-bu-list">※ 15:00 이후 1박 요금</p>
+</div>
+<!-- late check-out(ko) -->
+
+<!-- late check-out(en) -->
+<div class="cm-pp-h-lco-en">
+    <ul class="dot-bu-list">
+        <li>~ 12:00: 5% fee</li>
+        <li>~ 13:00: 10% fee</li>
+        <li>~ 14:00: 20% fee</li>
+        <li>~ 15:00: 30% fee</li>
+    </ul>
+    <p class="ref-bu-list">※ 15:00 ~: 1 night rate(check-out by 16:00)</p>
+</div>
+<div class="cm-pp-r-lco-en">
+    <ul class="dot-bu-list">
+        <li>~ 12:00: KRW 10,000</li>
+        <li>~ 13:00: KRW 20,000</li>
+        <li>~ 14:00: KRW 40,000</li>
+        <li>~ 15:00: KRW 60,000</li>
+    </ul>
+    <p class="ref-bu-list">※ 15:00 ~: 1 night rate(check-out by 16:00)</p>
+</div>
+<div class="cm-pi-lco-en">
+    <ul class="dot-bu-list">
+        <li>~ 13:00: KRW 10,000</li>
+        <li>~ 14:00: KRW 20,000</li>
+        <li>~ 15:00: KRW 30,000</li>
+    </ul>
+    <p class="ref-bu-list">※ 15:00 ~: 1 night rate</p>
+</div>
+<!-- // late check-out(en) -->
+
+<!-- stayover cleaning(ko) -->
+<div class="cm-pi-scn">
+    <ul class="dot-bu-list">
+        <li>30,000원</li>
+    </ul>
+    <p class="ref-bu-list">※ 3박 투숙 시 1회 무료</p>
+    <p class="ref-bu-list">※ 12:00까지 접수 시 가능</p>
+</div>
+<!-- // stayover cleaning(ko) -->
+
+<!-- stayover cleaning(en) -->
+<div class="cm-pi-scn-en">
+    <ul class="dot-bu-list">
+        <li>KRW 30,000</li>
+    </ul>
+    <p class="ref-bu-list">※ One free cleaning for stays of 3 nights or more</p>
+    <p class="ref-bu-list">※ Available for requests made by 12:00</p>
+</div>
+<!-- // stayover cleaning(en) -->
+
+<div class="table-container deco inner-bordered center is-mobile-responsive cm-fee-island">
+    <table class="table">
+        <caption>기본 정보 안내표</caption>
+        <colgroup>
+            <col style="width: auto;">
+        </colgroup>
+        <thead>
+            <tr>
+                <!-- <th scope="col" style="display: none;">반려동물 동반</th> -->
+                <th scope="col">침구</th>
+                <th scope="col">재실 청소</th>
+                <th scope="col">퇴실 미정비</th>
+                <th scope="col">퇴실 연장</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- <td data-title="반려동물 동반" class="left" style="display: none;">
+                    <ul class="dot-bu-list">
+                        <li>100,000원/박</li>
+                        <li>1마리 1실(최대 2마리)</li>
+                    </ul>
+                    <p class="ref-bu-list">※ 2마리 입실 시 추가 1마리 50,000원 적용<br> (비품 추가 제공)</p>
+                </td> -->
+                <td data-title="침구" class="left">
+                    <ul class="dot-bu-list">
+                        <li>33,000원/박</li>
+                    </ul>
+                    <p class="ref-bu-list">※ 구성: 요 1, 싱글 이불 1, 베개 1<br />(한실 침구 1세트 기준)</p>
+                </td>
+                <td data-title="재실 청소" class="left">
+                    <ul class="dot-bu-list">
+                        <li>30,000원</li>
+                    </ul>
+                    <p class="ref-bu-list">※ 3박 투숙 시 1회 무료</p>
+                    <p class="ref-bu-list">※ 12:00까지 접수 시 가능</p>
+                </td>
+                <td data-title="퇴실 미정비" class="left">
+                    <ul class="dot-bu-list">
+                        <li>20,000원</li>
+                    </ul>
+                </td>
+                <td data-title="퇴실 연장" class="left">
+                    <ul class="dot-bu-list">
+                        <li>~ 13:00: 10,000원</li>
+                        <li>~ 14:00: 20,000원</li>
+                        <li>~ 15:00: 30,000원</li>
+                    </ul>
+                    <p class="ref-bu-list">※ 15:00 이후 1박 요금</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="table-container deco inner-bordered center is-mobile-responsive cm-fee-island--en">
+    <table class="table">
+        <caption>Information table</caption>
+        <colgroup>
+            <col style="width: auto;">
+        </colgroup>
+        <thead>
+            <tr>
+                <!-- <th scope="col" class="pet-info">Pet stay</th> -->
+                <th scope="col">Bedding</th>
+                <th scope="col">Stayover cleaning</th>
+                <th scope="col">Uncleaned check-out</th>
+                <th scope="col">Late check-out</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- <td data-title="Pet stay" class="left pet-info">
+                    <ul class="dot-bu-list">
+                        <li>KRW 100,000/night</li>
+                        <li>1 pet/room(Max. 2 pets)</li>
+                    </ul>
+                    <p class="ref-bu-list">※ Additional KRW 50,000 for the second pet<br />(Additional amenities provided)</p>
+                </td> -->
+                <td data-title="Bedding" class="left">
+                    <ul class="dot-bu-list">
+                        <li>KRW 33,000/night</li>
+                    </ul>
+                    <p class="ref-bu-list">※ Includes: 1 mattress, 1 single blanket, 1 pillow(per Korean bedding set)
+                    </p>
+                </td>
+                <td data-title="Stayover cleaning" class="left">
+                    <ul class="dot-bu-list">
+                        <li>KRW 30,000</li>
+                    </ul>
+                    <p class="ref-bu-list">※ One free cleaning for stays of 3 nights or more</p>
+                    <p class="ref-bu-list">※ Available for requests made by 12:00</p>
+                </td>
+                <td data-title="Uncleaned check-out" class="left">
+                    <ul class="dot-bu-list">
+                        <li>KRW 20,000</li>
+                    </ul>
+                </td>
+                <td data-title="Late check-out" class="left">
+                    <ul class="dot-bu-list">
+                        <li>~ 13:00: KRW 10,000</li>
+                        <li>~ 14:00: KRW 20,000</li>
+                        <li>~ 15:00: KRW 30,000</li>
+                    </ul>
+                    <p class="ref-bu-list">※ 15:00 ~: 1 night rate</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

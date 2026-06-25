@@ -1,0 +1,1722 @@
+<!-- css -->
+<style>
+    /* common */
+    body {
+        word-break: keep-all;
+    }
+
+    .section-container {
+        letter-spacing: 0;
+    }
+
+    .main-hnr .date-search-form .btn-submit {
+        background-color: #76777a;
+        ;
+    }
+
+    .text-notice,
+    .site-pyeongchang .text-notice,
+    .site-jeju .text-notice {
+        color: #f7441b !important;
+    }
+
+    .site-pyeongchang .text-highlight {
+        color: #167a47;
+    }
+
+    .site-jeju .text-highlight {
+        color: #0079c3;
+    }
+
+    .site-playcecamp .text-highlight {
+        color: #e6007e;
+    }
+
+    /* .header-banner .txt-banner {
+        background-position: bottom;
+    } */
+
+    /* park ticket start */
+    /* .common-header .nav-main.is-pyeongchang .reservation-link a.ticket:before {
+        background-image: url(/api/editor/attach/view/default/2025/05/bBQJbY3jSQCRacsIl8IH_1_);
+        background-position: 0;
+        width: 26px;
+        height: 22px;
+    }
+
+    .common-header .nav-main.is-pyeongchang .reservation-link a {
+        display: inline-block;
+    } */
+    /* park ticket end */
+
+    a.guide-link {
+        font-size: 14px;
+        color: #222222;
+        letter-spacing: 0;
+        border-bottom: 1px solid #222222;
+    }
+
+    a.guide-link.type2 {
+        filter: invert(1);
+    }
+
+    .head-sub {
+        padding-left: 0;
+    }
+
+    .table-container th:not(.td) {
+        color: #222222;
+    }
+
+    .table .dot-bu-list li {
+        box-sizing: unset;
+        display: block;
+    }
+
+    .ref-bu-list {
+        padding-left: 18px;
+        text-indent: -18px;
+    }
+
+    .table .ref-bu-list {
+        color: #666666;
+    }
+
+    /* .table td.left {
+        justify-items: center;
+    } */
+
+    .table td.left.type2 {
+        justify-items: unset;
+    }
+
+    .table-container .td,
+    .table-container td {
+        padding: 4px 10px;
+    }
+
+    .common-photo-slider span.sub-info {
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 4px 10px 5px;
+        border-radius: 20px;
+    }
+
+    .site-jeju .common-photo-slider span.badge {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: #0079c3;
+        color: #fff;
+        font-size: 14px;
+        line-height: 18px;
+        z-index: 1;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    table.data-layout-table .ref-bu-list {
+        margin-top: 0;
+        color: #666666;
+    }
+
+    .info-box-list .info-area .info-data dt {
+        width: 50px;
+    }
+
+    .info-box-list .info-area .info-data dd {
+        width: calc(100% - 50px);
+    }
+
+    .info-box-list .info-area.type2 .info-data dt {
+        width: 80px;
+    }
+
+    .info-box-list .info-area.type2 .info-data dd {
+        width: calc(100% - 80px);
+    }
+
+    .info-data .ref-bu-list {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .info-data dd .ref-bu-list {
+        margin-top: 0;
+    }
+
+    .info-area .info-txt {
+        padding-left: 0px;
+    }
+
+    .common-txt {
+        padding: 0;
+    }
+
+    .site-pyeongchang .tab-page .tab.selected a {
+        color: #167a47;
+        border-color: #167a47;
+    }
+
+    .site-jeju .tab-page .tab.selected a {
+        color: #0079c3;
+        border-color: #0079c3;
+    }
+
+    /* accommodation */
+
+    /* 260213 */
+    .data-layout-table {
+        width: auto;
+        table-layout: auto;
+    }
+
+    .data-layout-table th,
+    .data-layout-table td {
+        padding-right: 20px;
+        white-space: nowrap;
+    }
+
+    .data-layout-table td:last-child {
+        white-space: unset;
+        padding-right: 0;
+    }
+
+    /* .site-jeju .room-detail.room-detail-condo .data-layout-table {
+        width: auto;
+        table-layout: auto;
+    }
+
+    .site-jeju .room-detail.room-detail-condo .data-layout-table th,
+    .site-jeju .room-detail.room-detail-condo .data-layout-table td {
+        padding-right: 20px;
+        white-space: nowrap;
+    }
+
+    .site-jeju .room-detail.room-detail-condo .data-layout-table td:last-child {
+        white-space: unset;
+        padding-right: 0;
+    } */
+    /* 260213 */
+
+    .room-detail-condo .room-info-wrap .data-layout-table {
+        margin-top: 0;
+    }
+
+    .room-detail .de-wrap {
+        display: flex;
+        padding: 30px 0 0;
+        margin: 30px 0;
+        text-align: center;
+        border-top: 1px solid #dddddd;
+        font-size: 14px;
+        color: #222222;
+        word-break: keep-all;
+    }
+
+    .room-detail .de-info {
+        width: 100%;
+        border-right: 1px solid #dddddd;
+    }
+
+    .room-detail .de-info:last-child {
+        border-right: none;
+    }
+
+    .room-detail .de-info p {
+        padding: 5px;
+    }
+
+    .room-detail .de-info p:before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 10px;
+        background-size: 60px 60px;
+    }
+
+    .room-detail .de-info p.info-t1:before {
+        background-image: url(/api/editor/attach/view/default/2025/08/kZDKNUUzY74lu92iBr6f_1_);
+    }
+
+    .room-detail .de-info p.info-t2:before {
+        background-image: url(/api/editor/attach/view/default/2025/08/6FHpexDS5bX7GPaUFqza_1_);
+    }
+
+    .room-detail .de-info p.info-t3:before {
+        background-image: url(/api/editor/attach/view/default/2025/08/SkmwjIhN1LF02l1DbTAV_1_);
+    }
+
+    .room-detail .de-info p.info-t4:before {
+        background-image: url(/api/editor/attach/view/default/2025/08/7NPt7Et3iI96JeGKO7mG_1_);
+    }
+
+    .room-detail .de-info p.info-t5:before {
+        background-image: url(/api/editor/attach/view/default/2025/08/UtDmT6ANWuiir7TkeQsN_1_);
+    }
+
+    .room-detail .de-info p.info-t6:before {
+        background-image: url(/api/editor/attach/view/default/2025/08/cTpUCEcNP0Sl1i19zWmM_1_);
+    }
+
+    /* .common-basic-info .info2 .list li:before {
+        top: 8px;
+    } */
+
+    .common-basic-info .info2 .dot-bu-list {
+        color: #ffffff;
+    }
+
+    .common-basic-info .info2 .dot-bu-list li:before {
+        background: #ffffff;
+    }
+
+    .dash-bu-list li:before {
+        content: '-' !important;
+        display: block;
+        width: 0 !important;
+        height: 0 !important;
+        background: #666666 !important;
+        position: absolute;
+        top: 0 !important;
+        left: 0 !important;
+    }
+
+    .dash-bu-list:first-child {
+        margin-top: 5px;
+    }
+
+    .dash-bu-list .ref-bu-list {
+        margin-top: 0;
+    }
+
+    .room-detail-condo .foot-info {
+        margin-bottom: 60px;
+    }
+
+    .room-detail-condo .foot-info .amenity-area {
+        border-top: none;
+        border-bottom: none;
+        padding: 0;
+        color: #222222;
+    }
+
+    .room-detail-condo .foot-info .amenity-area .amenity-list {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 30PX;
+    }
+
+    .room-detail-condo .amenity-list .item.amenity15 {
+        background: url(/api/editor/attach/view/default/2025/08/h530mETCl4CVX7ziIL0J_1_) no-repeat 50% 0;
+    }
+
+    .room-detail-condo .amenity-list .item.amenity16 {
+        background: url(/api/editor/attach/view/default/2025/08/h4rtI9IoarqYIFKSuk8i_1_) no-repeat 50% 0;
+    }
+
+    .room-detail-condo .amenity-list .item.amenity17 {
+        background: url(/api/editor/attach/view/default/2025/08/h8krvLHPF5hsMFl4fqX7_1_) no-repeat 50% 0;
+    }
+
+    .room-detail-condo .amenity-info-list {
+        display: flex;
+        justify-content: left;
+        margin-top: 30px;
+    }
+
+    .room-detail-condo .amenity-info-list .tit {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .room-detail-condo .amenity-info-list .list {
+        margin-top: 0;
+    }
+
+    .room-detail-condo .amenity-info-list .list .ref-bu-list {
+        font-size: 14px;
+        color: #666666;
+    }
+
+    .room-detail-condo .foot-info .head-sub3 {
+        margin-bottom: 0;
+        padding-left: 0;
+        line-height: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #222222;
+        letter-spacing: 0;
+    }
+
+    .room-detail-condo .foot-info .head-sub3:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .room-detail-condo .amenity-info-list .item {
+        padding-top: 0;
+    }
+
+    .room-detail-condo .amenity-info-list .item:not(:first-child) {
+        margin-left: 0;
+    }
+
+    .room-detail-condo .amenity-info-list .item:after {
+        display: none;
+    }
+
+    .site-pyeongchang .room-detail-condo .foot-item:nth-child(1),
+    .site-pyeongchang .room-detail-condo .foot-item:nth-child(2),
+    .site-pyeongchang .room-detail-condo .foot-item:nth-child(3),
+    .site-pyeongchang .room-detail-condo .foot-item:nth-child(4),
+    .site-pyeongchang .room-detail-condo .foot-item:nth-child(5) {
+        background: none;
+    }
+
+    .room-detail-condo .foot-item {
+        padding: 0 20px;
+    }
+
+    .room-detail-condo .foot-item:first-child {
+        padding-left: 0;
+    }
+
+    .room-detail-condo .foot-item:last-child {
+        padding-right: 0;
+    }
+
+    .room-detail-condo .foot-item dt {
+        height: auto;
+        padding-top: 0;
+        margin-bottom: 10px;
+        text-align: left;
+        font-size: 16px;
+        color: #222222;
+    }
+
+    .room-detail-condo .foot-item dd {
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .room-detail-condo .foot-item li {
+        position: relative;
+        padding-left: 10px;
+        text-indent: 0;
+    }
+
+    .room-detail-condo .foot-item li:before {
+        content: '';
+        display: block;
+        width: 3px;
+        height: 3px;
+        background-color: #666666;
+        position: absolute;
+        left: 0;
+        top: 12px;
+    }
+
+    .room-detail-condo .thumb-list-slider-wrap .bx-viewport {
+        height: auto !important;
+    }
+
+    .room-detail-condo .thumb-list-slider-wrap .thumb-list .thumb {
+        width: 575px;
+        height: auto;
+    }
+
+    .room-detail-condo .thumb-list-slider-wrap .thumb-list p {
+        margin-top: 14px;
+        font-size: 16px;
+    }
+
+    /* 251105 add s */
+    /* .snowpark-premium-kids .bottom-photo-area {
+        margin-top: 60px;
+    }
+
+    .snowpark-premium-kids .thumb-list2 .info,
+    .snowpark-premium-kids .thumb-list2 .desc {
+        width: 380px;
+    } */
+    /* 251105 add e */
+
+    /* 251113 add s */
+    .modal-info {
+        background-color: rgba(0, 0, 0, 0.4);
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        text-align: center;
+    }
+
+    .modal-info__container {
+        background-color: #fff;
+        width: 500px;
+        display: inline-block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .modal-info__title {
+        background-color: #232323;
+        height: 60px;
+        text-align: left;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        padding-left: 30px;
+        line-height: 60px;
+    }
+
+    .modal-info__content {
+        padding: 20px 30px 26px;
+        text-align: left;
+        font-weight: 400;
+        font-size: 16px;
+        color: #232323;
+    }
+
+    .modal-info__content .dot-bu-list {
+        background-color: #f5f5f5;
+        margin: 20px 0;
+        padding: 10px;
+    }
+
+    .modal-info__close {
+        text-align: left;
+        padding: 20px 30px;
+        border-top: 1px solid #ddd;
+    }
+
+    .modal-info__close-btn {
+        background-image: url(https://phoenixhnr.co.kr/images/ko/sprite/ico.png);
+        background-position: -65px -115px;
+        width: 21px;
+        height: 21px;
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 0;
+        filter: invert(1);
+        cursor: pointer;
+    }
+
+    .modal-info__close-txt {
+        float: right;
+        cursor: pointer;
+    }
+
+    .modal-info__today-chk {
+        margin-right: 8px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        accent-color: #222;
+    }
+
+    .box-quarter {
+        border-bottom: 1px solid #ddd
+    }
+
+    .box-quarter .con-wrap {
+        display: table;
+        width: 100%;
+        border-top: 1px solid #ddd;
+        border-right: 1px solid #ddd
+    }
+
+    .box-quarter .con {
+        box-sizing: border-box;
+        display: table-cell;
+        width: 50%;
+        padding: 37px 40px 40px;
+        border-left: 1px solid #ddd
+    }
+
+    .box-quarter .head-sub2 {
+        padding-left: 0
+    }
+
+    .box-quarter .dot-bu-list li:not(:first-child) {
+        margin-top: 10px
+    }
+
+    .head-sub2 {
+        padding-left: 0;
+    }
+
+    /* 251113 add e */
+
+    .ski-guide .newListType {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+
+    .ski-guide .newListType .item {
+        box-sizing: border-box;
+        width: 380px;
+        margin-left: 30px;
+        margin-top: 30px;
+        padding: 46px 30px;
+        border: 1px solid #ddd;
+        text-align: center;
+        letter-spacing: -0.05em;
+    }
+
+    .ski-guide .newListType .item img {
+        width: 87px;
+        height: 87px;
+        margin: 0 auto 43px;
+    }
+
+    .ski-guide .newListType .item .num {
+        color: #76777a;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 1;
+    }
+
+    .ski-guide .newListType .item .main-tit {
+        margin-bottom: 35px;
+        color: #232323;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+
+    .ski-guide .newListType .item .main-tit:before {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 1px;
+        margin: 12px auto 10px;
+        background: #76777b;
+        text-align: center;
+    }
+
+    .ski-guide .newListType .item .sub-desc {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.3;
+    }
+
+    .ski-guide .newListType .item .sub-desc.bullet:before {
+        content: '';
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        margin-right: 2px;
+        border-radius: 100%;
+        background: #666;
+        vertical-align: 3px;
+    }
+
+    .room-guide-list>dt a img {
+        display: block;
+        position: absolute;
+        top: calc(50% - 25px);
+        left: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .room-guide-list>dt .num {
+        color: #76777a;
+    }
+
+    /* modal start */
+    .modal-inner .modal-slider {
+        box-sizing: border-box;
+        padding-top: 100%;
+        background: #232323;
+        position: relative;
+        overflow: hidden
+    }
+
+    .modal-inner .modal-slider .modal-slider-list {
+        display: flex;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0
+    }
+
+    .modal-inner .modal-slider .modal-slider-item {
+        flex-shrink: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        position: relative
+    }
+
+    .modal-inner .modal-slider .modal-slider-link {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none
+    }
+
+    .modal-wrap {
+        box-sizing: border-box;
+        padding: 20px;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+        height: 100% !important;
+        background: rgba(0, 0, 0, 0.4);
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: auto;
+    }
+
+    .modal-wrap .modal-inner {
+        width: 500px;
+        font-size: 14px;
+        background: #fff;
+    }
+
+    .modal-wrap .modal-inner img {
+        width: 100%;
+    }
+
+    .modal-wrap .modal-inner .modal-footer {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .modal-wrap .modal-inner .modal-footer .modal-today-checkbox {
+        margin: 0 8px 3px 0;
+        width: 16px;
+        height: 16px;
+    }
+
+    input.modal-today-checkbox[type="checkbox"]:checked {
+        accent-color: #222222;
+    }
+
+    .modal-inner .modal-paging {
+        display: flex;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: 998;
+        bottom: 40px;
+        justify-content: center;
+    }
+
+    .modal-inner .modal-paging .swiper-pagination-bullet {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border-radius: 5px;
+        transition: width .2s;
+    }
+
+    .modal-inner .modal-paging .swiper-pagination-bullet:not(:first-child) {
+        margin-left: 10px
+    }
+
+    .modal-inner .modal-paging .swiper-pagination-bullet-active {
+        background: #ffffff;
+        width: 30px;
+    }
+
+    .modal-inner .modal-footer label,
+    .modal-inner .modal-footer label input.modal-today-checkbox,
+    .modal-inner .modal-footer .modal-close-btn {
+        cursor: pointer;
+    }
+
+    /* modal end */
+
+    .mo-br {
+        display: none;
+    }
+
+    .main-hnr .promotion+.promotion {
+        padding: 0 0 70px;
+    }
+
+    @media screen and (max-width:819px) {
+
+        .section-main .visual-banner .main-copy {
+            font-size: 32px;
+            padding: 0 15px;
+        }
+
+        .section-main .visual-banner .sub-copy {
+            padding: 0 15px;
+        }
+
+        .main-hnr .reservation-form .btn-submit {
+            background: #76777a;
+        }
+
+        /* common */
+        .content-main,
+        .common-page-title,
+        .head-sub2,
+        .foot-sticky-action>a {
+            letter-spacing: 0;
+        }
+
+        .common-header {
+            position: sticky;
+            top: 0;
+        }
+
+        .tab-page-scroll.js-scroll-tab {
+            position: sticky;
+            top: 55px;
+            z-index: 10;
+            background-color: #fff;
+        }
+
+        .common-content>.tab-page-scroll.js-scroll-tab {
+            margin-top: -20px;
+        }
+
+        .common-content>.tab-page-scroll.js-scroll-tab+.tab-block-scroll {
+            margin: -10px -5px 10px;
+        }
+
+        .tab-page a {
+            letter-spacing: 0;
+            border-bottom: 4px solid #dddddd;
+        }
+
+        .common-content .tab-page-scroll+.common-photo-slider+.common-photo-slider {
+            margin-top: -20px;
+        }
+
+        .common-photo-slider span.sub-info {
+            top: 15px;
+            right: 15px;
+            font-size: 10px;
+            padding: 4px 8px;
+        }
+
+        .site-jeju .common-photo-slider span.badge {
+            width: 50px;
+            height: 50px;
+            font-size: 10px;
+            line-height: 14px;
+            top: 15px;
+            right: 15px;
+        }
+
+        .common-photo-slider .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+        }
+
+        .site-pyeongchang .common-photo-slider .swiper-pagination-bullet-active,
+        .site-pyeongchang .foot-sticky-action .primary {
+            background: #167a47;
+        }
+
+        .site-jeju .common-photo-slider .swiper-pagination-bullet-active,
+        .site-jeju .foot-sticky-action .primary {
+            background: #0079c3;
+        }
+
+        .site-playcecamp .common-photo-slider .swiper-pagination-bullet-active,
+        .site-playcecamp .foot-sticky-action .primary {
+            background: #e6007e;
+        }
+
+        .section-guide.site-pyeongchang .common-basic-info,
+        .section-snowpark .common-basic-info,
+        .common-basic-info {
+            padding: 30px 15px;
+            color: #222222;
+            background: #fff;
+            border-bottom: 8px solid #f5f5f5;
+        }
+
+        .common-basic-info .title {
+            font-size: 16px;
+        }
+
+        .common-basic-info .basic-info-wrap {
+            border-top: 1px solid #dddddd;
+        }
+
+        .data-layout-table th,
+        .data-layout-table td,
+        .room-detail-condo .content-area,
+        .common-accordion .accordion-content {
+            font-size: 14px;
+            word-break: keep-all;
+        }
+
+        .common-basic-info .data-layout-table th:before {
+            background: #222222;
+        }
+
+        table.data-layout-table td.title {
+            font-weight: 500;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        table.data-layout-table .ref-bu-list,
+        table.table .ref-bu-list {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .table td.left {
+            justify-items: unset;
+        }
+
+        .table-container {
+            border-bottom: 1px solid #dddddd;
+            word-break: keep-all;
+        }
+
+        .table-container th:not(.td) {
+            color: #222222;
+            background-color: #f5f5f5;
+        }
+
+        .table-container.inner-bordered td:not(:first-child),
+        .table-container.inner-bordered th:not(:first-child) {
+            border-left: 1px solid #dddddd;
+        }
+
+        .table-container tbody tr:not(:first-child) td,
+        .table-container tbody tr:not(:first-child) th {
+            border-top: 1px solid #dddddd;
+        }
+
+        .detail-wrap {
+            padding: 0;
+        }
+
+        .detail-wrap img {
+            margin: 30px 0 -20px;
+        }
+
+        .detail-wrap .detail-txt {
+            padding: 10px 0 0;
+        }
+
+        /* 260126 */
+        .detail-wrap .detail-txt .ref-bu-list {
+            /* margin-top: 10px; */
+            font-size: 14px;
+        }
+
+        .detail-wrap .detail-txt td .ref-bu-list {
+            margin-top: 0;
+        }
+
+        .detail-wrap+.foot-sticky-action,
+        .detail-wrap+.common-accordion {
+            margin-top: 30px;
+        }
+
+        .room-detail.room-detail-condo>.common-accordion {
+            margin-top: 0;
+        }
+
+        a.guide-link {
+            font-size: 12px;
+        }
+
+        .rightover {
+            position: relative;
+        }
+
+        .rightover:after {
+            display: inline-block;
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 39px;
+            background: url(/mobile/images/ko/com/scroll.png) 100% 0 no-repeat;
+            background-size: 40px 39px;
+            z-index: 9;
+        }
+
+        /* .common-photo-slider .swiper-pagination-bullet-active {
+            background: #167a47;
+        } */
+
+        .main-info {
+            padding: 25px 0 20px;
+        }
+
+        .main-info .title {
+            margin-bottom: 7px;
+            line-height: 1.3;
+            font-size: 18px;
+            color: #232323;
+            letter-spacing: 0;
+        }
+
+        .party-wedding {
+            margin: 0;
+        }
+
+        .common-basic-info .btn-map-pin {
+            background-image: url(/mobile/images/ko/sprite/ico.png);
+            background-position: -285px -45px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+        }
+
+        .table-container th:not(.td),
+        .table-container .td,
+        .table-container td {
+            font-size: 14px;
+        }
+
+        /* accommodation */
+        .room-detail .de-wrap {
+            padding: 15px 0 0;
+            margin: 15px 0 0;
+            font-size: 12px;
+        }
+
+        .room-detail .de-info {
+            padding: 0 4px;
+        }
+
+        .room-detail .de-info:first-child {
+            padding-left: 0;
+        }
+
+        .room-detail .de-info:last-child {
+            padding-right: 0;
+        }
+
+        .room-detail .de-info p:before {
+            width: 45px;
+            height: 45px;
+            background-size: 45px 45px;
+        }
+
+        .room-detail .detail-wrap {
+            padding: 30px 15px;
+        }
+
+        .room-detail-condo .foot-info {
+            margin-top: 0;
+            padding: 30px 15px 40px;
+            background: #f5f5f5;
+        }
+
+        .room-detail-condo .foot-info {
+            margin-bottom: 0;
+        }
+
+        .room-detail-condo .foot-info .section-title {
+            color: #222222;
+        }
+
+        .room-detail-condo .foot-info .content-area {
+            color: #666666;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .room-detail-condo .amenity {
+            justify-content: center;
+            padding: 0;
+        }
+
+        .room-detail-condo .amenity li {
+            width: 33.3%;
+            font-size: 14px;
+            color: #222222;
+        }
+
+        .room-detail-condo .amenity .ico1:before {
+            background-image: url(/api/editor/attach/view/default/2025/08/OgPJ09Gyia5bDJ6cHpMv_1_);
+        }
+
+        .room-detail-condo .amenity .ico2:before {
+            background-image: url(/api/editor/attach/view/default/2025/08/9w8DG0zQ9RyYXdReuYBW_1_);
+        }
+
+        .room-detail-condo .amenity .ico3:before {
+            background-image: url(/api/editor/attach/view/default/2025/08/fpredS3NJwAY7QMwFgut_1_);
+        }
+
+        .room-detail-condo .amenity .ico4:before {
+            background-image: url(/api/editor/attach/view/default/2025/08/VgXy84Vgn0zwKgVmcFNw_1_);
+        }
+
+        .room-detail-condo .amenity .ico5:before {
+            background-image: url(/api/editor/attach/view/default/2025/08/G6emrm97BBu8giXx85VN_1_);
+        }
+
+        .room-detail-condo .amenity .ico6:before {
+            background-image: url(/api/editor/attach/view/default/2025/08/0yXdJ6UDePLPDbkpTyht_1_);
+        }
+
+        .room-detail-condo .amenity .ico7:before {
+            background-image: url(/api/editor/attach/view/default/2025/08/UALPpr1wYjlgdlkHDVDO_1_);
+        }
+
+        .room-detail-condo .amenity .ico9:before {
+            background-image: url(/api/editor/attach/view/default/2025/08/SJk6DSVjm0weW9Efvyei_1_);
+        }
+
+        .room-detail-condo .amenity .ico11:before {
+            background-image: url(/api/editor/attach/view/default/2026/02/NuzVuszLJklD8VQebX8k_1_);
+        }
+
+        .room-detail-condo .amenity .ico12:before {
+            background-image: url(/api/editor/attach/view/default/2025/08/qUH5PKseLxadCg3Z8J5c_1_);
+        }
+
+        .room-detail-condo .amenity .ico14:before {
+            background-image: url(/api/editor/attach/view/default/2025/08/Q5VSPiKlqCbEst4n6FcY_1_);
+        }
+
+        .room-detail-condo .amenity .ico15:before {
+            background-image: url(/api/editor/attach/view/default/2025/08/nTgY5uLRzRuojUxYW0Ac_1_);
+        }
+
+        .room-detail-condo .amenity .ico16:before {
+            background-image: url(/api/editor/attach/view/default/2025/08/fffsFLbe0F0DQyuVQuYh_1_);
+        }
+
+        .room-detail-condo .amenity .ico17:before {
+            background-image: url(/api/editor/attach/view/default/2025/08/KpNh9RofRDmWueE49c8B_1_);
+        }
+
+        .room-detail-condo .amenity li:nth-child(3)~li {
+            margin-top: 15px;
+        }
+
+        .room-detail-condo .foot-info .btn-expand-toggle,
+        .room-detail-condo .foot-info .btn-expand-toggle.is-active {
+            background-image: url(/api/editor/attach/view/default/2025/08/8MRckJXZa0POG5vqG4Wt_1_);
+        }
+
+        .room-detail-condo .foot-info .folding-content {
+            padding: 30px 0;
+            border: 1px solid #dddddd;
+            border-bottom: 0;
+        }
+
+        .room-detail-condo .foot-info .head-sub2 {
+            padding-top: 0;
+            background-image: none;
+            color: #222222;
+        }
+
+        .room-detail-condo .foot-info .head-sub3 {
+            margin: 10px 0;
+            padding-left: 0;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .room-detail-condo .item-list {
+            padding: 0 30px;
+            letter-spacing: 0;
+        }
+
+        .room-detail-condo .item-list li {
+            overflow-wrap: break-word;
+        }
+
+        .room-detail-condo .item-list li:before {
+            background: #666666;
+        }
+
+        .room-detail-condo .item-list li:nth-child(even) {
+            padding-right: 0;
+        }
+
+        .common-accordion .accordion-title {
+            padding: 0 15px;
+        }
+
+        .common-accordion .accordion-section.is-active .accordion-title {
+            background: #ffffff;
+            border-top: 1px solid #dddddd;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        @supports ((position: -webkit-sticky) or (position: sticky)) {
+            .common-accordion .accordion-title {
+                top: 95px;
+            }
+        }
+
+        .common-accordion .accordion-content {
+            padding: 15px;
+        }
+
+        .common-accordion .accordion-content .dot-bu-list {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .common-accordion .accordion-content .ref-bu-list {
+            margin: 5px 0 0;
+            color: #666666;
+        }
+
+        .common-photo-slider .btn-vr-view {
+            display: none;
+        }
+
+        .photo-detail-info .common-photo-slider {
+            padding-top: 46.75%;
+        }
+
+        .tab-block-scroll {
+            margin: 10px;
+        }
+
+        .tab-block-scroll.js-scroll-tab.rightover:after {
+            top: -7px;
+            right: -15px;
+            z-index: 0;
+        }
+
+        /* waterpark */
+        .waterpark-guide {
+            margin-bottom: 0;
+        }
+
+        /* .common-photo-slider .swiper-pagination-bullet-active {
+            background: #167a47;
+        } */
+
+        .section-snowpark>.photo-detail-info {
+            margin: 0 15px;
+            padding: 40px 0;
+        }
+
+        .section-snowpark>.photo-detail-info .common-photo-slider .pagination {
+            bottom: 50px;
+        }
+
+        .section-snowpark>.slider-item p.shcool-info {
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            background: #fff;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .guide-map {
+            margin-top: 40px;
+        }
+
+        .guide-map .map-playcecamp1 {
+            padding-top: 49.48%;
+        }
+
+        .guide-map .map-viewer .con {
+            min-width: 770px;
+        }
+
+        .guide-map .detail {
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 10px 5px 20px;
+            margin-top: 0;
+            border: none;
+        }
+
+        .guide-map .detail>div:not(:first-child) {
+            margin-left: 0px;
+        }
+
+        .guide-map .detail .gh-guide-map .num-forestpark,
+        .guide-map .detail .seopji-plaza .num-forestpark {
+            background: #0079c3;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+        }
+
+        /* modal start */
+        .modal-wrap .modal-inner {
+            width: 280px;
+            min-width: 280px;
+        }
+
+        .modal-inner .modal-paging {
+            bottom: 15px;
+        }
+
+        .modal-inner .modal-paging .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+        }
+
+        .modal-inner .modal-paging .swiper-pagination-bullet:not(:first-child) {
+            margin-left: 5px
+        }
+
+        .main-hnr .modal-inner .modal-paging .swiper-pagination-bullet-active {
+            background: #76777a;
+        }
+
+        .main-pyeongchang .modal-inner .modal-paging .swiper-pagination-bullet-active {
+            background: #167a47;
+        }
+
+        .main-jeju .modal-inner .modal-paging .swiper-pagination-bullet-active {
+            background: #0079c3;
+        }
+
+        .main-playcecamp .modal-inner .modal-paging .swiper-pagination-bullet-active {
+            background: #e6007e;
+        }
+
+        /* modal end */
+
+        /* park ticket start */
+        /* .common-header.is-pyeongchang.is-main button.ticket {
+            width: 50px;
+            height: 0;
+            max-height: 55px;
+            padding-top: 55px;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            right: 40px;
+        }
+
+        .common-header.is-pyeongchang.is-main button.ticket:after {
+            width: 25px;
+            height: 20px;
+            background-image: url(/api/editor/attach/view/default/2025/05/y2tfro8PHssoYXzkCfU0_1_);
+            background-size: 25px 20px;
+            background-position: 0;
+            content: '';
+            display: block;
+            margin: -10.5px 0 0 -10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        } */
+        /* park ticket end */
+
+        .is-mobile-responsive thead {
+            display: none;
+        }
+
+        .is-mobile-responsive table,
+        .is-mobile-responsive tbody,
+        .is-mobile-responsive tr,
+        .is-mobile-responsive th,
+        .is-mobile-responsive td {
+            display: block;
+        }
+
+        .is-mobile-responsive table {
+            background-image: linear-gradient(to right, #f5f5f5f5 0, #f5f5f5f5 50%, transparent 50%);
+        }
+
+        .is-mobile-responsive td {
+            position: relative;
+            padding-left: calc(50% + 10px);
+            height: auto;
+        }
+
+        .table-container.inner-bordered.is-mobile-responsive td:not(:first-child) {
+            border-left: none;
+        }
+
+        .is-mobile-responsive td:before {
+            content: attr(data-title);
+            position: absolute;
+            top: calc(50% - 10px);
+            left: 0;
+            width: 50%;
+            white-space: nowrap;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        /* .is-mobile-responsive thead {
+            display: none;
+        }
+
+        .is-mobile-responsive,
+        .is-mobile-responsive tbody,
+        .is-mobile-responsive tr,
+        .is-mobile-responsive td {
+            display: block;
+            width: 100%;
+        }
+
+        .is-mobile-responsive td {
+            display: flex;
+            gap: 8px;
+            height: auto;
+            align-items: center;
+            padding: 0 !important;
+        }
+
+        .is-mobile-responsive td::before {
+            content: attr(data-label);
+            width: 100px;
+            min-width: 100px;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .is-mobile-responsive {
+            background-image: linear-gradient(to right, #f5f5f5f5 0, #f5f5f5f5 100px, transparent 100px);
+        } */
+
+        .mo-br {
+            display: block;
+        }
+
+        .main-hnr .promotion+.promotion {
+            padding: 0 0 20px;
+        }
+    }
+
+    @media screen and (max-width: 319px) {
+        .modal-wrap {
+            justify-content: left;
+        }
+    }
+</style>
+
+<!-- html -->
+<!-- <button style="display: none;" type="button" class="ticket"
+    onclick="location.href='/m/page/reservation/pyeongchang/ticket'">티켓 구매</button> -->
+
+<!-- <div class="modal-wrap" data-popup="integrated" style="display: none;">
+    <div class="modal-inner">
+        <div class="modal-slider">
+            <ul class="modal-slider-list swiper-wrapper">
+                <li class="modal-slider-item swiper-slide"
+                    style="background-image: url('/api/editor/attach/view/default/2026/06/MMmJL9RbasQFH5aq5aGQ_1_');">
+                    <a href="/page/board/event/180000046798" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
+            </ul>
+            <div class="modal-paging"></div>
+        </div>
+        <div class="modal-footer">
+            <label>
+                <input class="modal-today-checkbox" type="checkbox" name="modal-today-checkbox" />오늘 하루 열지 않기
+            </label>
+            <p class="modal-close-btn">닫기</p>
+        </div>
+    </div>
+</div> -->
+
+<div class="modal-wrap" data-popup="park" style="display: none;">
+    <div class="modal-inner">
+        <div class="modal-slider">
+            <ul class="modal-slider-list swiper-wrapper">
+                <li class="modal-slider-item swiper-slide"
+                    style="background-image: url('/api/editor/attach/view/default/2026/06/iCiI1pzLs6Blqtj8B9bW_1_');">
+                    <a href="/page/pyeongchang/board/event/170000046656" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
+                <!-- <li class="modal-slider-item swiper-slide"
+                    style="background-image: url('/api/editor/attach/view/default/2026/06/LIvwfZyLGF4frcf03pPi_1_');">
+                    <a href="/page/pyeongchang/board/event/100000046756" class="modal-slider-link" target="_blank">
+                    </a>
+                </li> -->
+            </ul>
+            <div class="modal-paging"></div>
+        </div>
+        <div class="modal-footer">
+            <label>
+                <input class="modal-today-checkbox" type="checkbox" name="modal-today-checkbox" />오늘 하루 열지 않기
+            </label>
+            <p class="modal-close-btn">닫기</p>
+        </div>
+    </div>
+</div>
+
+<div class="modal-wrap" data-popup="island" style="display: none;">
+    <div class="modal-inner">
+        <div class="modal-slider">
+            <ul class="modal-slider-list swiper-wrapper">
+                <li class="modal-slider-item swiper-slide"
+                    style="background-image: url('/api/editor/attach/view/default/2026/06/FjsZr2QcQaWMe5uoCuSY_1_');">
+                    <a href="/page/customer/notice/14499" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
+                <li class="modal-slider-item swiper-slide"
+                    style="background-image: url('/api/editor/attach/view/default/2026/06/VZM77HUUJFCMuFKQh3kb_1_');">
+                    <a href="/page/customer/notice/14498" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
+            </ul>
+            <div class="modal-paging"></div>
+        </div>
+        <div class="modal-footer">
+            <label>
+                <input class="modal-today-checkbox" type="checkbox" name="modal-today-checkbox" />오늘 하루 열지 않기
+            </label>
+            <p class="modal-close-btn">닫기</p>
+        </div>
+    </div>
+</div>
+
+<div class="modal-wrap" data-popup="playcecamp" style="display: none;">
+    <div class="modal-inner">
+        <div class="modal-slider">
+            <ul class="modal-slider-list swiper-wrapper">
+                <li class="modal-slider-item swiper-slide"
+                    style="background-image: url('/api/editor/attach/view/default/2026/04/l3vSqaNLcL1sM8ofBQOo_1_');">
+                    <a href="/page/playcecamp/board/event/120000046480" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
+            </ul>
+            <div class="modal-paging"></div>
+        </div>
+        <div class="modal-footer">
+            <label>
+                <input class="modal-today-checkbox" type="checkbox" name="modal-today-checkbox" />오늘 하루 열지 않기
+            </label>
+            <p class="modal-close-btn">닫기</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        // const startDat = new Date('2026-06-08T09:00:00').getTime();
+        // let nowDat = new Date().getTime();
+
+        // $('.endCont, .startCont').hide();
+
+        // if (nowDat < startDat) {
+        //     $('.endCont').show();
+        // } else {
+        //     $('.startCont').show();
+        // }
+
+        // youtube
+        // $('.main-pyeongchang section.waterpark').html(`
+        //     <h3 class="section-title" style="color: #232323;height: 80px;">25/26 SNOW PARK</h3>
+        //     <div class="wrap scroll-check in"><iframe width="1200px" height="675px"
+        //             src="https://www.youtube.com/embed/5euQGMrSKXE?rel=0&showinfo=0&modestbranding=1" frameborder="0"></iframe>
+        //     </div>
+        // `);
+
+        $('.main-pyeongchang section.waterpark').html(`
+            <h3 class="section-title" style="color: #232323;height: 80px;">FOREST PARK</h3>
+            <div style="background-image: url(/images/ko/main/pyeongchang/2023key-visual_forestpark.gif);width: 1200px;height: 675px;margin: 0 auto;background-size: cover;"></div>
+        `);
+
+        // a/w
+        $('.noIE.mob .main-pyeongchang section.waterpark').html(`
+            <h3 class="section-title" style="font-size: 22px;color: #232323;">25/26 SNOW PARK</h3>
+            <div style="position: relative;padding-bottom: 56.25%;">
+                <iframe src="https://www.youtube.com/embed/5euQGMrSKXE?rel=0&showinfo=0&modestbranding=1" frameborder="0" style="width: 100%;height: 100%;position: absolute;"></iframe>
+            </div>
+        `);
+
+        // s/s
+        $('.noIE.mob .main-pyeongchang section.waterpark').html(`
+            <h3 class="section-title" style="font-size: 22px;color: #232323;">FOREST PARK</h3>
+            <div style="background-image: url(/images/ko/main/pyeongchang/2023key-visual_forestpark.gif);background-size: cover;background-position: 50% 50%;padding-top: 56.25%;"></div>
+        `);
+
+        const popupMap = {
+            'main-hnr': 'integrated',
+            'main-pyeongchang': 'park',
+            'main-jeju': 'island',
+            'main-playcecamp': 'playcecamp'
+        };
+
+        const hour = 24;
+        let popupType = '';
+
+        $.each(popupMap, function (pageClass, type) {
+            if ($('.' + pageClass).length) {
+                popupType = type;
+                return false;
+            }
+        });
+
+        if (!popupType) return;
+
+        const $popup = $(`.modal-wrap[data-popup="${popupType}"]`);
+        const cookieKey = `hidePopup_${popupType}`;
+
+        if (!$popup.length) return;
+
+        $popup.on('click', '.modal-close-btn', function (e) {
+            e.preventDefault();
+
+            if ($popup.find('.modal-today-checkbox').prop('checked')) {
+                const date = new Date();
+                date.setTime(date.getTime() + hour * 60 * 60 * 1000);
+                document.cookie = `${cookieKey}=true; expires=${date.toUTCString()}; path=/`;
+            }
+
+            $popup.hide();
+        });
+
+        if (document.cookie.includes(`${cookieKey}=true`)) {
+            $popup.hide();
+        } else {
+            $popup.show();
+        }
+
+        $popup.insertBefore('.visual-banner');
+
+        const $slider = $popup.find('.modal-slider');
+        const slideCount = $slider.find('.swiper-slide').length;
+
+        new Swiper($slider[0], {
+            slidesPerView: 1,
+            loop: slideCount > 1,
+            autoplay: slideCount > 1 ? {
+                delay: 3000
+            } : false,
+            pagination: slideCount > 1 ? {
+                el: $popup.find('.modal-paging')[0],
+                type: 'bullets',
+            } : false,
+        });
+    });
+</script>
+<script>
+    $(function () {
+        // tab check s
+        function checkTabs() {
+            $('.tab-page-scroll.js-scroll-tab').each(function () {
+                // $('.tab-page-scroll.js-scroll-tab,.tab-block-scroll.js-scroll-tab').each(function () {
+                var $container = $(this);
+                var $tabs = $container.find('ul li');
+                var count = $tabs.length;
+
+                if (count === 2) {
+                    $tabs.css('width', '50%');
+                } else if (count === 3) {
+                    $tabs.css('width', '33.3%');
+                } else if (count >= 4) {
+                    $tabs.css('min-width', '30%');
+                }
+
+                var totalWidth = 0;
+                $tabs.each(function () {
+                    totalWidth += $(this).outerWidth(true);
+                });
+
+                $container.toggleClass('rightover', totalWidth > $container.width());
+            });
+        }
+
+        checkTabs();
+
+        var resizeTimer;
+        $(window).on('resize', function () {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function () {
+                checkTabs();
+            }, 150);
+        });
+        // tab check e
+
+        $('.common-content').removeClass(function (_, cls) {
+            return cls.replace('common-content', '').trim();
+        });
+
+        const parts = document.title.split('|')[0]
+            .split('<').map(s => $.trim(s)).filter(Boolean);
+
+        if (parts.length === 2) {
+            $('.common-content .tab-page-scroll.js-scroll-tab:eq(0)').hide();
+        }
+
+        const depthText = parts.length > 1 ? parts[parts.length - 2] : parts[0] || '';
+
+        $('.content-main-title').text(depthText);
+
+        $('.common-page-title').html(`
+            <h2 class="title">${depthText}</h2>
+            <button type="button" onclick="history.back();" class="btn-back">Back</button>
+        `);
+
+        $('.common-content').each(function () {
+            const $container = $(this);
+
+            function hideIfMultiple(targetClass, indexToHide) {
+                const $targets = $container.find(targetClass);
+                if ($targets.length > 1) {
+                    $targets.eq(indexToHide).hide();
+                }
+            }
+
+            const hasSnowparkParent = $container.closest('.section-snowpark.site-pyeongchang').length > 0;
+
+            if (!hasSnowparkParent) {
+                hideIfMultiple('.tab-page-scroll.js-scroll-tab', 0);
+                hideIfMultiple('.common-top-info', 0);
+                hideIfMultiple('.common-photo-slider', 0);
+            }
+
+            hideIfMultiple('.foot-sticky-action', 1);
+        });
+
+        /* ===== 성수기 ===== */
+        const dday = Math.ceil(
+            (new Date('2026-05-13') - new Date()) / (1000 * 60 * 60 * 24)
+        );
+
+        $('#dDay').text(dday > 0 ? 'D-' + dday : 'D-Day');
+        /* ================== */
+
+    });
+</script>
