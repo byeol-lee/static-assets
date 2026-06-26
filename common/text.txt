@@ -1,139 +1,127 @@
 <!-- 운영 안내 ko -->
-<div class="cm-pp-h-info">
-    <ul class="dot-bu-list">
-        <li>Check-in/out: 15:00 ~ 11:00</li>
-        <li>취소/변경 수수료<br />
-            <ul class="dash-bu-list">
-                <li>비수기: 이용일 기준 2일 전까지 수수료 없이 취소/변경 가능<br />
-                    (1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
-                <li>성수기: 이용일 기준 7일 전까지 수수료 없이 취소/변경 가능<br />
-                    (6 ~ 4일 전: 10%, 3 ~ 2일 전: 20%, 1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
-            </ul>
-        </li>
-        <li>전체 객실 금연</li>
-        <li>객실 정비: 1일 1회</li>
-    </ul>
-</div>
-<div class="cm-pp-r-info-I">
-    <ul class="dot-bu-list">
-        <li>Check-in/out: 15:00 ~ 11:00</li>
-        <li>취소/변경 수수료<br />
-            <ul class="dash-bu-list">
-                <li>비수기: 이용일 기준 2일 전까지 수수료 없이 취소/변경 가능<br />
-                    (1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
-                <li>성수기: 이용일 기준 7일 전까지 수수료 없이 취소/변경 가능<br />
-                    (6 ~ 4일 전: 10%, 3 ~ 2일 전: 20%, 1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
-            </ul>
-        </li>
-        <li>전체 객실 금연</li>
-    </ul>
-</div>
-<div class="cm-pp-r-info-II">
-    <ul class="dot-bu-list">
-        <li>Check-in/out: 15:00 ~ 11:00</li>
-        <li>취소/변경 수수료<br />
-            <ul class="dash-bu-list">
-                <li>비수기: 이용일 기준 2일 전까지 수수료 없이 취소/변경 가능<br />
-                    (1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
-                <li>성수기: 이용일 기준 7일 전까지 수수료 없이 취소/변경 가능<br />
-                    (6 ~ 4일 전: 10%, 3 ~ 2일 전: 20%, 1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
-            </ul>
-        </li>
-        <li>전체 객실 금연</li>
-        <li>육류, 튀김류, 생선류 등 연기 및 냄새가 심한 음식의 경우, 조리 불가</li>
-    </ul>
-</div>
-<div class="cm-info-island">
-    <ul class="dot-bu-list">
-        <li>Check-in/out: 15:00 ~ 11:00</li>
-        <li>취소/변경 수수료<br />
-            <ul class="dash-bu-list">
-                <li>비수기: 이용일 기준 2일 전까지 수수료 없이 취소/변경 가능<br />
-                    (1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
-                <li>성수기: 이용일 기준 7일 전까지 수수료 없이 취소/변경 가능<br />
-                    (6 ~ 4일 전: 10%, 3 ~ 2일 전: 20%, 1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
-            </ul>
-        </li>
-        <li>전체 객실 금연</li>
-    </ul>
-</div>
+
+<ul class="dot-bu-list cm-pp-h-info">
+    <li>Check-in/out: 15:00 ~ 11:00</li>
+    <li>취소/변경 수수료<br />
+        <ul class="dash-bu-list">
+            <li>비수기: 이용일 기준 2일 전까지 수수료 없이 취소/변경 가능<br />
+                (1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+            <li>성수기: 이용일 기준 7일 전까지 수수료 없이 취소/변경 가능<br />
+                (6 ~ 4일 전: 10%, 3 ~ 2일 전: 20%, 1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+        </ul>
+    </li>
+    <li>전체 객실 금연</li>
+    <li>객실 정비: 1일 1회</li>
+</ul>
+
+<ul class="dot-bu-list cm-pp-r-info-I">
+    <li>Check-in/out: 15:00 ~ 11:00</li>
+    <li>취소/변경 수수료<br />
+        <ul class="dash-bu-list">
+            <li>비수기: 이용일 기준 2일 전까지 수수료 없이 취소/변경 가능<br />
+                (1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+            <li>성수기: 이용일 기준 7일 전까지 수수료 없이 취소/변경 가능<br />
+                (6 ~ 4일 전: 10%, 3 ~ 2일 전: 20%, 1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+        </ul>
+    </li>
+    <li>전체 객실 금연</li>
+</ul>
+
+<ul class="dot-bu-list cm-pp-r-info-II">
+    <li>Check-in/out: 15:00 ~ 11:00</li>
+    <li>취소/변경 수수료<br />
+        <ul class="dash-bu-list">
+            <li>비수기: 이용일 기준 2일 전까지 수수료 없이 취소/변경 가능<br />
+                (1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+            <li>성수기: 이용일 기준 7일 전까지 수수료 없이 취소/변경 가능<br />
+                (6 ~ 4일 전: 10%, 3 ~ 2일 전: 20%, 1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+        </ul>
+    </li>
+    <li>전체 객실 금연</li>
+    <li>육류, 튀김류, 생선류 등 연기 및 냄새가 심한 음식의 경우, 조리 불가</li>
+</ul>
+
+<ul class="dot-bu-list cm-info-island">
+    <li>Check-in/out: 15:00 ~ 11:00</li>
+    <li>취소/변경 수수료<br />
+        <ul class="dash-bu-list">
+            <li>비수기: 이용일 기준 2일 전까지 수수료 없이 취소/변경 가능<br />
+                (1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+            <li>성수기: 이용일 기준 7일 전까지 수수료 없이 취소/변경 가능<br />
+                (6 ~ 4일 전: 10%, 3 ~ 2일 전: 20%, 1일 전: 50%, 이용일/No-Show: 100% 수수료 발생)</li>
+        </ul>
+    </li>
+    <li>전체 객실 금연</li>
+</ul>
 
 <!-- 운영 안내 en -->
-<div class="cm-pp-h-info-en">
-    <ul class="dot-bu-list">
-        <li>Check-in/out: 15:00 ~ 11:00</li>
-        <li>Cancellation/Change fees<br>
-            <ul class="dash-bu-list">
-                <li>Off-season: Free cancellation or changes up to 2 days before the check-in date<br> (1 day before:
-                    50% fee, same day/No-show: 100% fee)</li>
-                <li>Peak season: Free cancellation or changes up to 7 days before the check-in date<br> (6 ~ 4 days
-                    before: 10% fee, 3 ~ 2 days before: 20% fee, 1 day before: 50% fee, same day/No-show: 100% fee)</li>
-            </ul>
-        </li>
-        <li>All rooms are non-smoking</li>
-        <li>Housekeeping: once per day</li>
-    </ul>
-    </ul>
-</div>
-<div class="cm-pp-r-info-I-en">
-    <ul class="dot-bu-list">
-        <li>Check-in/out: 15:00 ~ 11:00</li>
-        <li>Cancellation/Change fees<br>
-            <ul class="dash-bu-list">
-                <li>Off-season: Free cancellation or changes up to 2 days before the check-in date<br> (1 day before:
-                    50% fee, same day/No-show: 100% fee)</li>
-                <li>Peak season: Free cancellation or changes up to 7 days before the check-in date<br> (6 ~ 4 days
-                    before: 10% fee, 3 ~ 2 days before: 20% fee, 1 day before: 50% fee, same day/No-show: 100% fee)</li>
-            </ul>
-        </li>
-        <li>All rooms are non-smoking</li>
-    </ul>
-</div>
-<div class="cm-pp-r-info-II-en">
-    <ul class="dot-bu-list">
-        <li>Check-in/out: 15:00 ~ 11:00</li>
-        <li>Cancellation/Change fees<br>
-            <ul class="dash-bu-list">
-                <li>Off-season: Free cancellation or changes up to 2 days before the check-in date<br> (1 day before:
-                    50% fee, same day/No-show: 100% fee)</li>
-                <li>Peak season: Free cancellation or changes up to 7 days before the check-in date<br> (6 ~ 4 days
-                    before: 10% fee, 3 ~ 2 days before: 20% fee, 1 day before: 50% fee, same day/No-show: 100% fee)</li>
-            </ul>
-        </li>
-        <li>All rooms are non-smoking</li>
-        <li>Cooking of foods that produce strong smoke or odors, such as meat, fried dishes, and fish, is not allowed
-        </li>
-    </ul>
-</div>
-<div class="cm-pi-info-en">
-    <ul class="dot-bu-list">
-        <li>Check-in/out: 15:00 ~ 11:00</li>
-        <li>Cancellation/Change fees<br>
-            <ul class="dash-bu-list">
-                <li>Off-season: Free cancellation or changes up to 2 days before the check-in date<br> (1 day before:
-                    50% fee, same day/No-show: 100% fee)</li>
-                <li>Peak season: Free cancellation or changes up to 7 days before the check-in date<br> (6 ~ 4 days
-                    before: 10% fee, 3 ~ 2 days before: 20% fee, 1 day before: 50% fee, same day/No-show: 100% fee)</li>
-            </ul>
-        </li>
-        <li>All rooms are non-smoking</li>
-    </ul>
-</div>
+<ul class="dot-bu-list cm-pp-h-info-en">
+    <li>Check-in/out: 15:00 ~ 11:00</li>
+    <li>Cancellation/Change fees<br>
+        <ul class="dash-bu-list">
+            <li>Off-season: Free cancellation or changes up to 2 days before the check-in date<br> (1 day before:
+                50% fee, same day/No-show: 100% fee)</li>
+            <li>Peak season: Free cancellation or changes up to 7 days before the check-in date<br> (6 ~ 4 days
+                before: 10% fee, 3 ~ 2 days before: 20% fee, 1 day before: 50% fee, same day/No-show: 100% fee)</li>
+        </ul>
+    </li>
+    <li>All rooms are non-smoking</li>
+    <li>Housekeeping: once per day</li>
+</ul>
+</ul>
 
-<div class="cm-info-island--en">
-    <ul class="dot-bu-list">
-        <li>Check-in/out: 15:00 ~ 11:00</li>
-        <li>Cancellation/Change fees<br>
-            <ul class="dash-bu-list">
-                <li>Off-season: Free cancellation or changes up to 2 days before the check-in date<br> (1 day before:
-                    50% fee, same day/No-show: 100% fee)</li>
-                <li>Peak season: Free cancellation or changes up to 7 days before the check-in date<br> (6 ~ 4 days
-                    before: 10% fee, 3 ~ 2 days before: 20% fee, 1 day before: 50% fee, same day/No-show: 100% fee)</li>
-            </ul>
-        </li>
-        <li>All rooms are non-smoking</li>
-    </ul>
-</div>
+<ul class="dot-bu-list cm-pp-r-info-I-en">
+    <li>Check-in/out: 15:00 ~ 11:00</li>
+    <li>Cancellation/Change fees<br>
+        <ul class="dash-bu-list">
+            <li>Off-season: Free cancellation or changes up to 2 days before the check-in date<br> (1 day before:
+                50% fee, same day/No-show: 100% fee)</li>
+            <li>Peak season: Free cancellation or changes up to 7 days before the check-in date<br> (6 ~ 4 days
+                before: 10% fee, 3 ~ 2 days before: 20% fee, 1 day before: 50% fee, same day/No-show: 100% fee)</li>
+        </ul>
+    </li>
+    <li>All rooms are non-smoking</li>
+</ul>
+<ul class="dot-bu-list cm-pp-r-info-II-en">
+    <li>Check-in/out: 15:00 ~ 11:00</li>
+    <li>Cancellation/Change fees<br>
+        <ul class="dash-bu-list">
+            <li>Off-season: Free cancellation or changes up to 2 days before the check-in date<br> (1 day before:
+                50% fee, same day/No-show: 100% fee)</li>
+            <li>Peak season: Free cancellation or changes up to 7 days before the check-in date<br> (6 ~ 4 days
+                before: 10% fee, 3 ~ 2 days before: 20% fee, 1 day before: 50% fee, same day/No-show: 100% fee)</li>
+        </ul>
+    </li>
+    <li>All rooms are non-smoking</li>
+    <li>Cooking of foods that produce strong smoke or odors, such as meat, fried dishes, and fish, is not allowed
+    </li>
+</ul>
+
+<ul class="dot-bu-list cm-pi-info-en">
+    <li>Check-in/out: 15:00 ~ 11:00</li>
+    <li>Cancellation/Change fees<br>
+        <ul class="dash-bu-list">
+            <li>Off-season: Free cancellation or changes up to 2 days before the check-in date<br> (1 day before:
+                50% fee, same day/No-show: 100% fee)</li>
+            <li>Peak season: Free cancellation or changes up to 7 days before the check-in date<br> (6 ~ 4 days
+                before: 10% fee, 3 ~ 2 days before: 20% fee, 1 day before: 50% fee, same day/No-show: 100% fee)</li>
+        </ul>
+    </li>
+    <li>All rooms are non-smoking</li>
+</ul>
+
+<ul class="dot-bu-list cm-info-island--en">
+    <li>Check-in/out: 15:00 ~ 11:00</li>
+    <li>Cancellation/Change fees<br>
+        <ul class="dash-bu-list">
+            <li>Off-season: Free cancellation or changes up to 2 days before the check-in date<br> (1 day before:
+                50% fee, same day/No-show: 100% fee)</li>
+            <li>Peak season: Free cancellation or changes up to 7 days before the check-in date<br> (6 ~ 4 days
+                before: 10% fee, 3 ~ 2 days before: 20% fee, 1 day before: 50% fee, same day/No-show: 100% fee)</li>
+        </ul>
+    </li>
+    <li>All rooms are non-smoking</li>
+</ul>
 
 <!-- guest/bedding(ko) -->
 <div class="cm-pp-r-gt_bd">
