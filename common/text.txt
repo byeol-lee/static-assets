@@ -41,7 +41,7 @@
     <li>육류, 튀김류, 생선류 등 연기 및 냄새가 심한 음식의 경우, 조리 불가</li>
 </ul>
 
-<ul class="dot-bu-list cm-info-island">
+<ul class="dot-bu-list cm-pi-r-info">
     <li>Check-in/out: 15:00 ~ 11:00</li>
     <li>취소/변경 수수료<br />
         <ul class="dash-bu-list">
@@ -55,7 +55,7 @@
 </ul>
 
 <!-- 운영 안내 en -->
-<ul class="dot-bu-list cm-pp-h-info-en">
+<ul class="dot-bu-list cm-pp-h-info--en">
     <li>Check-in/out: 15:00 ~ 11:00</li>
     <li>Cancellation/Change fees<br>
         <ul class="dash-bu-list">
@@ -70,7 +70,7 @@
 </ul>
 </ul>
 
-<ul class="dot-bu-list cm-pp-r-info-I-en">
+<ul class="dot-bu-list cm-pp-r-info-I--en">
     <li>Check-in/out: 15:00 ~ 11:00</li>
     <li>Cancellation/Change fees<br>
         <ul class="dash-bu-list">
@@ -82,7 +82,7 @@
     </li>
     <li>All rooms are non-smoking</li>
 </ul>
-<ul class="dot-bu-list cm-pp-r-info-II-en">
+<ul class="dot-bu-list cm-pp-r-info-II--en">
     <li>Check-in/out: 15:00 ~ 11:00</li>
     <li>Cancellation/Change fees<br>
         <ul class="dash-bu-list">
@@ -97,7 +97,7 @@
     </li>
 </ul>
 
-<ul class="dot-bu-list cm-pi-info-en">
+<ul class="dot-bu-list cm-pi-info--en">
     <li>Check-in/out: 15:00 ~ 11:00</li>
     <li>Cancellation/Change fees<br>
         <ul class="dash-bu-list">
@@ -110,7 +110,7 @@
     <li>All rooms are non-smoking</li>
 </ul>
 
-<ul class="dot-bu-list cm-info-island--en">
+<ul class="dot-bu-list cm-pi-r-info--en">
     <li>Check-in/out: 15:00 ~ 11:00</li>
     <li>Cancellation/Change fees<br>
         <ul class="dash-bu-list">
@@ -139,7 +139,7 @@
 <!-- // guest/bedding(ko) -->
 
 <!-- guest/bedding(en) -->
-<div class="cm-pp-r-gt_bd-en">
+<div class="cm-pp-r-gt_bd--en">
     <ul class="dot-bu-list">
         <li>Up to 1 guest: KRW 10,000/night</li>
         <li>Bedding: KRW 30,000/night
@@ -173,7 +173,7 @@
 <!-- // water/towel(ko) -->
 
 <!-- towel(en) -->
-<div class="cm-pp-r-tw-en">
+<div class="cm-pp-r-tw--en">
     <ul class="dot-bu-list">
         <li>Face towel: KRW 500/towel</li>
         <li>Bottled water 1L: KRW 2,000/bottle</li>
@@ -201,7 +201,7 @@
 <!-- // pet(ko) -->
 
 <!-- pet(en) -->
-<div class="cm-pp-r-pet-I-en">
+<div class="cm-pp-r-pet-I--en">
     <ul class="dot-bu-list">
         <li>KRW 60,000/night</li>
     </ul>
@@ -209,7 +209,7 @@
     <p class="ref-bu-list">※ Up to 1 pet allowed</p>
     <p class="ref-bu-list">※ Small, medium, and large dogs are all welcome</p>
 </div>
-<div class="cm-pp-r-pet-II-en">
+<div class="cm-pp-r-pet-II--en">
     <ul class="dot-bu-list">
         <li>KRW 30,000/night</li>
     </ul>
@@ -240,7 +240,7 @@
 </div>
 <!-- // bedding(ko) -->
 <!-- bedding(en) -->
-<div class="cm-pp-h-gt_bd-en">
+<div class="cm-pp-h-gt_bd--en">
     <ul class="dot-bu-list">
         <li>Up to 1 guest: KRW 30,000(bedding included)</li>
         <!-- <li>Extra bed: KRW 40,000</li> -->
@@ -260,7 +260,7 @@
 <!-- // water/towel(ko) -->
 
 <!-- water/towel(en) -->
-<div class="cm-pp-h-wt_tw-en">
+<div class="cm-pp-h-wt_tw--en">
     <ul class="dot-bu-list">
         <li>Bottled water 500ml: KRW 1,000/bottle</li>
         <li>Body towel: KRW 2,000/towel</li>
@@ -277,7 +277,7 @@
 </div>
 <!-- // baby room(ko) -->
 <!-- baby room(en) -->
-<div class="cm-pp-h-br-en">
+<div class="cm-pp-h-br--en">
     <ul class="dot-bu-list">
         <li>KRW 100,000/night</li>
     </ul>
@@ -303,14 +303,14 @@
 <!-- // early check-in(ko) -->
 
 <!-- early check-in(en) -->
-<div class="cm-pp-h-eci-en">
+<div class="cm-pp-h-eci--en">
     <ul class="dot-bu-list">
         <li>09:00 ~: 30% fee</li>
         <li>10:00 ~: 20% fee</li>
         <li>11:00 ~: 10% fee</li>
     </ul>
 </div>
-<div class="cm-pp-r-eci-en">
+<div class="cm-pp-r-eci--en">
     <ul class="dot-bu-list">
         <li>09:00 ~: KRW 60,000</li>
         <li>10:00 ~: KRW 40,000</li>
@@ -350,7 +350,7 @@
 <!-- late check-out(ko) -->
 
 <!-- late check-out(en) -->
-<div class="cm-pp-h-lco-en">
+<div class="cm-pp-h-lco--en">
     <ul class="dot-bu-list">
         <li>~ 12:00: 5% fee</li>
         <li>~ 13:00: 10% fee</li>
@@ -359,7 +359,7 @@
     </ul>
     <p class="ref-bu-list">※ 15:00 ~: 1 night rate(check-out by 16:00)</p>
 </div>
-<div class="cm-pp-r-lco-en">
+<div class="cm-pp-r-lco--en">
     <ul class="dot-bu-list">
         <li>~ 12:00: KRW 10,000</li>
         <li>~ 13:00: KRW 20,000</li>
@@ -368,7 +368,7 @@
     </ul>
     <p class="ref-bu-list">※ 15:00 ~: 1 night rate(check-out by 16:00)</p>
 </div>
-<div class="cm-pi-lco-en">
+<div class="cm-pi-lco--en">
     <ul class="dot-bu-list">
         <li>~ 13:00: KRW 10,000</li>
         <li>~ 14:00: KRW 20,000</li>
@@ -389,7 +389,7 @@
 <!-- // stayover cleaning(ko) -->
 
 <!-- stayover cleaning(en) -->
-<div class="cm-pi-scn-en">
+<div class="cm-pi-scn--en">
     <ul class="dot-bu-list">
         <li>KRW 30,000</li>
     </ul>
@@ -398,61 +398,60 @@
 </div>
 <!-- // stayover cleaning(en) -->
 
-<div class="table-container deco inner-bordered center is-mobile-responsive cm-fee-island">
-    <table class="table">
-        <caption>기본 정보 안내표</caption>
-        <colgroup>
-            <col style="width: auto;">
-        </colgroup>
-        <thead>
-            <tr>
-                <!-- <th scope="col" style="display: none;">반려동물 동반</th> -->
-                <th scope="col">침구</th>
-                <th scope="col">재실 청소</th>
-                <th scope="col">퇴실 미정비</th>
-                <th scope="col">퇴실 연장</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <!-- <td data-title="반려동물 동반" class="left" style="display: none;">
-                    <ul class="dot-bu-list">
-                        <li>100,000원/박</li>
-                        <li>1마리 1실(최대 2마리)</li>
-                    </ul>
-                    <p class="ref-bu-list">※ 2마리 입실 시 추가 1마리 50,000원 적용<br> (비품 추가 제공)</p>
-                </td> -->
-                <td data-title="침구" class="left">
-                    <ul class="dot-bu-list">
-                        <li>33,000원/박</li>
-                    </ul>
-                    <p class="ref-bu-list">※ 구성: 요 1, 싱글 이불 1, 베개 1<br />(한실 침구 1세트 기준)</p>
-                </td>
-                <td data-title="재실 청소" class="left">
-                    <ul class="dot-bu-list">
-                        <li>30,000원</li>
-                    </ul>
-                    <p class="ref-bu-list">※ 3박 투숙 시 1회 무료</p>
-                    <p class="ref-bu-list">※ 12:00까지 접수 시 가능</p>
-                </td>
-                <td data-title="퇴실 미정비" class="left">
-                    <ul class="dot-bu-list">
-                        <li>20,000원</li>
-                    </ul>
-                </td>
-                <td data-title="퇴실 연장" class="left">
-                    <ul class="dot-bu-list">
-                        <li>~ 13:00: 10,000원</li>
-                        <li>~ 14:00: 20,000원</li>
-                        <li>~ 15:00: 30,000원</li>
-                    </ul>
-                    <p class="ref-bu-list">※ 15:00 이후 1박 요금</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<div class="table-container deco inner-bordered center is-mobile-responsive cm-fee-island--en">
+<table class="table cm-pi-r-scg">
+    <caption>기본 정보 안내표</caption>
+    <colgroup>
+        <col style="width: auto;">
+    </colgroup>
+    <thead>
+        <tr>
+            <!-- <th scope="col" style="display: none;">반려동물 동반</th> -->
+            <th scope="col">침구</th>
+            <th scope="col">재실 청소</th>
+            <th scope="col">퇴실 미정비</th>
+            <th scope="col">퇴실 연장</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <!-- <td data-title="반려동물 동반" class="left" style="display: none;">
+                <ul class="dot-bu-list">
+                    <li>100,000원/박</li>
+                    <li>1마리 1실(최대 2마리)</li>
+                </ul>
+                <p class="ref-bu-list">※ 2마리 입실 시 추가 1마리 50,000원 적용<br> (비품 추가 제공)</p>
+            </td> -->
+            <td data-title="침구" class="left">
+                <ul class="dot-bu-list">
+                    <li>33,000원/박</li>
+                </ul>
+                <p class="ref-bu-list">※ 구성: 요 1, 싱글 이불 1, 베개 1<br />(한실 침구 1세트 기준)</p>
+            </td>
+            <td data-title="재실 청소" class="left">
+                <ul class="dot-bu-list">
+                    <li>30,000원</li>
+                </ul>
+                <p class="ref-bu-list">※ 3박 투숙 시 1회 무료</p>
+                <p class="ref-bu-list">※ 12:00까지 접수 시 가능</p>
+            </td>
+            <td data-title="퇴실 미정비" class="left">
+                <ul class="dot-bu-list">
+                    <li>20,000원</li>
+                </ul>
+            </td>
+            <td data-title="퇴실 연장" class="left">
+                <ul class="dot-bu-list">
+                    <li>~ 13:00: 10,000원</li>
+                    <li>~ 14:00: 20,000원</li>
+                    <li>~ 15:00: 30,000원</li>
+                </ul>
+                <p class="ref-bu-list">※ 15:00 이후 1박 요금</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="table-container deco inner-bordered center is-mobile-responsive cm-pi-r-scg--en">
     <table class="table">
         <caption>Information table</caption>
         <colgroup>
