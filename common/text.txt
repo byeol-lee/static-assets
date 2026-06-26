@@ -166,8 +166,8 @@
 <div class="cm-pp-r-wt_tw-II">
     <ul class="dot-bu-list">
         <li>생수 1L: 2,000원/개</li>
-        <li>바디 타월: 2,000원/장</li>
         <li>페이스 타월: 500원/장</li>
+        <li>바디 타월: 2,000원/장</li>
     </ul>
 </div>
 <!-- // water/towel(ko) -->
