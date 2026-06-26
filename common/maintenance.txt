@@ -1721,7 +1721,19 @@
         );
 
         $('#dDay').text(dday > 0 ? 'D-' + dday : 'D-Day');
-        /* ================== */
+
+        /* ==================================================
+        data layout table - add column for 3 column layout
+        ================================================== */
+        $('.data-layout-table').each(function () {
+            const $table = $(this);
+
+            if ($table.find('tbody tr').filter(function () {
+                return $(this).children('td').length === 2;
+            }).length) {
+                $table.find('colgroup').append('<col style="width:0;">');
+            }
+        });        
 
     });
 </script>
