@@ -1489,6 +1489,11 @@
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
                 <li class="modal-slider-item swiper-slide"
+                    style="background-image: url('/api/editor/attach/view/default/2026/06/LgURvivVHFIOCFdGURa6_1_');">
+                    <a href="/page/jeju/board/package/16063" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
+                <li class="modal-slider-item swiper-slide"
                     style="background-image: url('/api/editor/attach/view/default/2026/06/FjsZr2QcQaWMe5uoCuSY_1_');">
                     <a href="/page/customer/notice/14499" class="modal-slider-link" target="_blank">
                     </a>
