@@ -230,44 +230,43 @@
 
 
 <!-- bedding(ko) -->
-<div class="cm-pp-h-bd">
+<div class="cm-pp-h-gt_bd">
     <ul class="dot-bu-list">
-        <li>최대 1인: 30,000원(침구 포함)
-            <p class="ref-bu-list">※ 구성: 이불, 패드, 베개</p>
-            <p class="ref-bu-list">※ 엑스트라 베드 추가 시 50,000원(1인 포함)</p>
-        </li>
+        <li>최대 1인: 30,000원(침구 포함)</li>
         <!-- <li>엑스트라 베드: 40,000원</li> -->
+        <p class="ref-bu-list">※ 구성: 이불, 패드, 베개</p>
+        <p class="ref-bu-list">※ 엑스트라 베드 추가 시 50,000원(1인 포함)</p>
     </ul>
 </div>
 <!-- // bedding(ko) -->
 <!-- bedding(en) -->
-<div class="cm-pp-h-bd-en">
+<div class="cm-pp-h-gt_bd-en">
     <ul class="dot-bu-list">
-        <li>Up to 1 guest: KRW 30,000(bedding included)
-            <p class="ref-bu-list">※ Includes: blanket, pad, and pillow</p>
-            <p class="ref-bu-list">※ Additional KRW 50,000 for an extra bed(includes 1 guest)</p>
-        </li>
+        <li>Up to 1 guest: KRW 30,000(bedding included)</li>
         <!-- <li>Extra bed: KRW 40,000</li> -->
+        <p class="ref-bu-list">※ Includes: blanket, pad, and pillow</p>
+        <p class="ref-bu-list">※ Additional KRW 50,000 for an extra bed(includes 1 guest)</p>
     </ul>
 </div>
 <!-- // bedding(en) -->
 
-<!-- towel/bottled water(ko) -->
-<div class="cm-pp-h-tw_bw">
+<!-- towel/water(ko) -->
+<div class="cm-pp-h-wt_tw">
     <ul class="dot-bu-list">
         <li>바디 타월: 2,000원/장</li>
         <li>생수 500ml: 1,000원/개</li>
     </ul>
 </div>
-<!-- // towel/bottled water(ko) -->
-<!-- towel/bottled water(en) -->
-<div class="cm-pp-h-tw_bw-en">
+<!-- // towel/water(ko) -->
+
+<!-- towel/water(en) -->
+<div class="cm-pp-h-wt_tw-en">
     <ul class="dot-bu-list">
         <li>Body towel: KRW 2,000/towel</li>
         <li>Bottled water 500ml: KRW 1,000/bottle</li>
     </ul>
 </div>
-<!-- // towel/bottled water(en) -->
+<!-- // towel/water(en) -->
 
 <!-- baby room(ko) -->
 <div class="cm-pp-h-br">
