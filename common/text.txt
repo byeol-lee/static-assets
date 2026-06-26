@@ -153,24 +153,24 @@
 </div>
 <!-- // guest/bedding(en) -->
 
-<!-- towel/water(ko) -->
+<!-- water/towel(ko) -->
 <div class="cm-pp-r-wt_tw-I">
     <ul class="dot-bu-list">
-        <li>페이스 타월: 500원/장</li>
         <li>생수 1L: 2,000원/개</li>
+        <li>페이스 타월: 500원/장</li>
     </ul>
 </div>
-<!-- // towel/water(ko) -->
+<!-- // water/towel(ko) -->
 
-<!-- towel/water(ko) -->
+<!-- water/towel(ko) -->
 <div class="cm-pp-r-wt_tw-II">
     <ul class="dot-bu-list">
+        <li>생수 1L: 2,000원/개</li>
         <li>바디 타월: 2,000원/장</li>
         <li>페이스 타월: 500원/장</li>
-        <li>생수 1L: 2,000원/개</li>
     </ul>
 </div>
-<!-- // towel/water(ko) -->
+<!-- // water/towel(ko) -->
 
 <!-- towel(en) -->
 <div class="cm-pp-r-tw-en">
@@ -250,23 +250,23 @@
 </div>
 <!-- // bedding(en) -->
 
-<!-- towel/water(ko) -->
+<!-- water/towel(ko) -->
 <div class="cm-pp-h-wt_tw">
     <ul class="dot-bu-list">
-        <li>바디 타월: 2,000원/장</li>
         <li>생수 500ml: 1,000원/개</li>
+        <li>바디 타월: 2,000원/장</li>
     </ul>
 </div>
-<!-- // towel/water(ko) -->
+<!-- // water/towel(ko) -->
 
-<!-- towel/water(en) -->
+<!-- water/towel(en) -->
 <div class="cm-pp-h-wt_tw-en">
     <ul class="dot-bu-list">
-        <li>Body towel: KRW 2,000/towel</li>
         <li>Bottled water 500ml: KRW 1,000/bottle</li>
+        <li>Body towel: KRW 2,000/towel</li>
     </ul>
 </div>
-<!-- // towel/water(en) -->
+<!-- // water/towel(en) -->
 
 <!-- baby room(ko) -->
 <div class="cm-pp-h-br">
