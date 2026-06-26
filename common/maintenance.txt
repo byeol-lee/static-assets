@@ -1437,13 +1437,18 @@
 <!-- <button style="display: none;" type="button" class="ticket"
     onclick="location.href='/m/page/reservation/pyeongchang/ticket'">티켓 구매</button> -->
 
-<!-- <div class="modal-wrap" data-popup="integrated" style="display: none;">
+<div class="modal-wrap" data-popup="integrated" style="display: none;">
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
                 <li class="modal-slider-item swiper-slide"
-                    style="background-image: url('/api/editor/attach/view/default/2026/06/MMmJL9RbasQFH5aq5aGQ_1_');">
-                    <a href="/page/board/event/180000046798" class="modal-slider-link" target="_blank">
+                    style="background-image: url('/api/editor/attach/view/default/2026/06/LgURvivVHFIOCFdGURa6_1_');">
+                    <a href="/page/board/package/16063" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
+                <li class="modal-slider-item swiper-slide"
+                    style="background-image: url('/api/editor/attach/view/default/2026/06/FjsZr2QcQaWMe5uoCuSY_1_');">
+                    <a href="/page/customer/notice/14499" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
             </ul>
@@ -1456,7 +1461,7 @@
             <p class="modal-close-btn">닫기</p>
         </div>
     </div>
-</div> -->
+</div>
 
 <div class="modal-wrap" data-popup="park" style="display: none;">
     <div class="modal-inner">
@@ -1722,9 +1727,9 @@
 
         $('#dDay').text(dday > 0 ? 'D-' + dday : 'D-Day');
 
-        /* ==================================================
+        /* ===============================================
         data layout table - add column for 3 column layout
-        ================================================== */
+        =============================================== */
         $('.data-layout-table').each(function () {
             const $table = $(this);
 
