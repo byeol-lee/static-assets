@@ -234,9 +234,9 @@
     <ul class="dot-bu-list">
         <li>최대 1인: 30,000원(침구 포함)</li>
         <!-- <li>엑스트라 베드: 40,000원</li> -->
-        <p class="ref-bu-list">※ 구성: 이불, 패드, 베개</p>
-        <p class="ref-bu-list">※ 엑스트라 베드 추가 시 50,000원(1인 포함)</p>
     </ul>
+    <p class="ref-bu-list">※ 구성: 이불, 패드, 베개</p>
+    <p class="ref-bu-list">※ 엑스트라 베드 추가 시 50,000원(1인 포함)</p>
 </div>
 <!-- // bedding(ko) -->
 <!-- bedding(en) -->
@@ -244,9 +244,9 @@
     <ul class="dot-bu-list">
         <li>Up to 1 guest: KRW 30,000(bedding included)</li>
         <!-- <li>Extra bed: KRW 40,000</li> -->
-        <p class="ref-bu-list">※ Includes: blanket, pad, and pillow</p>
-        <p class="ref-bu-list">※ Additional KRW 50,000 for an extra bed(includes 1 guest)</p>
     </ul>
+    <p class="ref-bu-list">※ Includes: blanket, pad, and pillow</p>
+    <p class="ref-bu-list">※ Additional KRW 50,000 for an extra bed(includes 1 guest)</p>
 </div>
 <!-- // bedding(en) -->
 
@@ -271,19 +271,17 @@
 <!-- baby room(ko) -->
 <div class="cm-pp-h-br">
     <ul class="dot-bu-list">
-        <li>100,000원/박
-            <p class="ref-bu-list">※ 사전 예약 필수</p>
-        </li>
+        <li>100,000원/박</li>
     </ul>
+    <p class="ref-bu-list">※ 사전 예약 필수</p>
 </div>
 <!-- // baby room(ko) -->
 <!-- baby room(en) -->
 <div class="cm-pp-h-br-en">
     <ul class="dot-bu-list">
-        <li>KRW 100,000/night
-            <p class="ref-bu-list">※ Advance reservation required</p>
-        </li>
+        <li>KRW 100,000/night</li>
     </ul>
+    <p class="ref-bu-list">※ Advance reservation required</p>
 </div>
 <!-- // baby room(en) -->
 
