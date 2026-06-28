@@ -1431,6 +1431,68 @@
             justify-content: left;
         }
     }
+
+    .share-wrap {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding: 24px;
+        background: #f8f8f8;
+    }
+
+    .share-qr {
+        background: #fff;
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+
+    .share-title {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 4px;
+        color: #222;
+    }
+
+    .share-desc {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 16px;
+    }
+
+    .share-buttons {
+        display: flex;
+        gap: 8px;
+    }
+
+    .btn-icon {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .btn-icon .icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .btn-icon.share {
+        background: #222;
+        color: #fff;
+    }
+
+    .btn-icon.kakao {
+        background: #fee500;
+        color: #222;
+    }
+
+    .btn-icon.copy {
+        background:#ddd;
+        color: #222;    
+    }
 </style>
 
 <!-- html -->
