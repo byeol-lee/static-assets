@@ -160,9 +160,6 @@
         <li>페이스 타월: 500원/장</li>
     </ul>
 </div>
-<!-- // water/towel(ko) -->
-
-<!-- water/towel(ko) -->
 <div class="cm-pp-r-wt_tw-II">
     <ul class="dot-bu-list">
         <li>생수 1L: 2,000원/개</li>
@@ -172,14 +169,21 @@
 </div>
 <!-- // water/towel(ko) -->
 
-<!-- towel(en) -->
-<div class="cm-pp-r-tw--en">
+<!-- water/towel(en) -->
+<div class="cm-pp-r-wt_tw-I--en">
     <ul class="dot-bu-list">
-        <li>Face towel: KRW 500/towel</li>
         <li>Bottled water 1L: KRW 2,000/bottle</li>
+        <li>Face towel: KRW 500/towel</li>
     </ul>
 </div>
-<!-- // towel(en) -->
+<div class="cm-pp-r-wt_tw-II--en">
+    <ul class="dot-bu-list">
+        <li>Bottled water 1L: KRW 2,000/bottle</li>
+        <li>Face towel: KRW 500/towel</li>
+        <li>Body towel: KRW 2,000/towel</li>
+    </ul>
+</div>
+<!-- // water/towel(en) -->
 
 <!-- pet(ko) -->
 <div class="cm-pp-r-pet-I">
