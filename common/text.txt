@@ -126,7 +126,7 @@
 <!-- guest/bedding(ko) -->
 <div class="cm-pp-r-gt_bd">
     <ul class="dot-bu-list">
-        <li>최대 1인: 10,000원/박</li>
+        <li>기준 인원 초과 시 1인당 10,000원/박</li>
         <li>침구: 30,000원/박
             <p class="ref-bu-list">※ 구성: 이불, 패드, 베개</p>
         </li>
@@ -141,7 +141,7 @@
 <!-- guest/bedding(en) -->
 <div class="cm-pp-r-gt_bd--en">
     <ul class="dot-bu-list">
-        <li>Up to 1 guest: KRW 10,000/night</li>
+        <li>Beyond standard occupancy: KRW 10,000/person/night</li>
         <li>Bedding: KRW 30,000/night
             <p class="ref-bu-list">※ Includes: blanket, pad, and pillow</p>
         </li>
