@@ -455,58 +455,56 @@
     </tbody>
 </table>
 
-<div class="table-container deco inner-bordered center is-mobile-responsive cm-pi-r-scg--en">
-    <table class="table">
-        <caption>Information table</caption>
-        <colgroup>
-            <col style="width: auto;">
-        </colgroup>
-        <thead>
-            <tr>
-                <!-- <th scope="col" class="pet-info">Pet stay</th> -->
-                <th scope="col">Bedding</th>
-                <th scope="col">Stayover cleaning</th>
-                <th scope="col">Uncleaned check-out</th>
-                <th scope="col">Late check-out</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <!-- <td data-title="Pet stay" class="left pet-info">
-                    <ul class="dot-bu-list">
-                        <li>KRW 100,000/night</li>
-                        <li>1 pet/room(Max. 2 pets)</li>
-                    </ul>
-                    <p class="ref-bu-list">※ Additional KRW 50,000 for the second pet<br />(Additional amenities provided)</p>
-                </td> -->
-                <td data-title="Bedding" class="left">
-                    <ul class="dot-bu-list">
-                        <li>KRW 33,000/night</li>
-                    </ul>
-                    <p class="ref-bu-list">※ Includes: 1 mattress, 1 single blanket, 1 pillow(per Korean bedding set)
-                    </p>
-                </td>
-                <td data-title="Stayover cleaning" class="left">
-                    <ul class="dot-bu-list">
-                        <li>KRW 30,000</li>
-                    </ul>
-                    <p class="ref-bu-list">※ One free cleaning for stays of 3 nights or more</p>
-                    <p class="ref-bu-list">※ Available for requests made by 12:00</p>
-                </td>
-                <td data-title="Uncleaned check-out" class="left">
-                    <ul class="dot-bu-list">
-                        <li>KRW 20,000</li>
-                    </ul>
-                </td>
-                <td data-title="Late check-out" class="left">
-                    <ul class="dot-bu-list">
-                        <li>~ 13:00: KRW 10,000</li>
-                        <li>~ 14:00: KRW 20,000</li>
-                        <li>~ 15:00: KRW 30,000</li>
-                    </ul>
-                    <p class="ref-bu-list">※ 15:00 ~: 1 night rate</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<table class="table cm-pi-r-scg--en">
+    <caption>Information table</caption>
+    <colgroup>
+        <col style="width: auto;">
+    </colgroup>
+    <thead>
+        <tr>
+            <!-- <th scope="col" class="pet-info">Pet stay</th> -->
+            <th scope="col">Bedding</th>
+            <th scope="col">Stayover cleaning</th>
+            <th scope="col">Uncleaned check-out</th>
+            <th scope="col">Late check-out</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <!-- <td data-title="Pet stay" class="left pet-info">
+                <ul class="dot-bu-list">
+                    <li>KRW 100,000/night</li>
+                    <li>1 pet/room(Max. 2 pets)</li>
+                </ul>
+                <p class="ref-bu-list">※ Additional KRW 50,000 for the second pet<br />(Additional amenities provided)</p>
+            </td> -->
+            <td data-title="Bedding" class="left">
+                <ul class="dot-bu-list">
+                    <li>KRW 33,000/night</li>
+                </ul>
+                <p class="ref-bu-list">※ Includes: 1 mattress, 1 single blanket, 1 pillow(per Korean bedding set)
+                </p>
+            </td>
+            <td data-title="Stayover cleaning" class="left">
+                <ul class="dot-bu-list">
+                    <li>KRW 30,000</li>
+                </ul>
+                <p class="ref-bu-list">※ One free cleaning for stays of 3 nights or more</p>
+                <p class="ref-bu-list">※ Available for requests made by 12:00</p>
+            </td>
+            <td data-title="Uncleaned check-out" class="left">
+                <ul class="dot-bu-list">
+                    <li>KRW 20,000</li>
+                </ul>
+            </td>
+            <td data-title="Late check-out" class="left">
+                <ul class="dot-bu-list">
+                    <li>~ 13:00: KRW 10,000</li>
+                    <li>~ 14:00: KRW 20,000</li>
+                    <li>~ 15:00: KRW 30,000</li>
+                </ul>
+                <p class="ref-bu-list">※ 15:00 ~: 1 night rate</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
