@@ -15,12 +15,12 @@ const activities = [
         교육부 지정 진로 체험 인증 기관으로 등록되어 있으며 전통 문화 인성 교육 센터로 지정되었습니다.<br />
         연인, 가족, 단체, 개인 남녀노소 누구나 모두 도자기를 만들면서 힐링할 수 있는 공간입니다.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2025/05/IQTnwc3f1aPsEtulIkYm_1_',
+        thumbnail: '/api/editor/attach/view/default/2025/05/IQTnwc3f1aPsEtulIkYm_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2025/05/IQTnwc3f1aPsEtulIkYm_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2025/05/NRjatN0z0eClQ9m41w4B_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2025/05/jfYpdDZlBBROOTuw1BI8_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2025/05/CzltJ9UVhiQKzFgg7kme_1_'
+            '/api/editor/attach/view/default/2025/05/IQTnwc3f1aPsEtulIkYm_1_',
+            '/api/editor/attach/view/default/2025/05/NRjatN0z0eClQ9m41w4B_1_',
+            '/api/editor/attach/view/default/2025/05/jfYpdDZlBBROOTuw1BI8_1_',
+            '/api/editor/attach/view/default/2025/05/CzltJ9UVhiQKzFgg7kme_1_'
         ],
         tags: ['LOCAL', 'HANDMADE', 'EXPERIENCE'],
         category: 'LOCAL',
@@ -71,12 +71,12 @@ const activities = [
         몸과 마음을 스트레칭해 주며 요가를 처음 접하는 분들과 아침을 상쾌하게 맞이하실 분들을 위한 클래스입니다.<br />
         간단한 스트레칭과 함께 척추를 따라 몸을 일깨워주는 동작으로 진행됩니다.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2024/12/8HisF02v6NK4XxNeiL72_1_',
+        thumbnail: '/api/editor/attach/view/default/2024/12/8HisF02v6NK4XxNeiL72_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2024/12/8HisF02v6NK4XxNeiL72_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2024/12/JpU4R9ARZ9BpwOeETNE1_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2024/12/xqwW8cryUPuUFvEImLkp_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2024/12/UX0henYQKukEl3Zha3AB_1_'
+            '/api/editor/attach/view/default/2024/12/8HisF02v6NK4XxNeiL72_1_',
+            '/api/editor/attach/view/default/2024/12/JpU4R9ARZ9BpwOeETNE1_1_',
+            '/api/editor/attach/view/default/2024/12/xqwW8cryUPuUFvEImLkp_1_',
+            '/api/editor/attach/view/default/2024/12/UX0henYQKukEl3Zha3AB_1_'
         ],
         tags: ['REST', 'HEALING', 'YOGA'],
         category: 'REST',
@@ -131,10 +131,10 @@ const activities = [
         완성된 썬캐쳐는 공간에 따뜻한 분위기를 더해주는 특별한 오브제로, 제주 여행 속 소중한 추억을 직접 만들어 갈 수 있는 체험입니다.<br />
         반짝이는 빛을 담은 나만의 썬캐쳐를 만들어 보세요.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/AMoIJ3UxrVM0UjL7McD5_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/05/AMoIJ3UxrVM0UjL7McD5_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/AMoIJ3UxrVM0UjL7McD5_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/MC3G79ZIqbjoOEk0B9Ka_1_'
+            '/api/editor/attach/view/default/2026/05/AMoIJ3UxrVM0UjL7McD5_1_',
+            '/api/editor/attach/view/default/2026/05/MC3G79ZIqbjoOEk0B9Ka_1_'
         ],
         tags: ['ART', 'DIY', 'INDOCK'],
         category: 'ART',
@@ -162,11 +162,11 @@ const activities = [
         유리 절단이나 납땜 과정 없이 누구나 쉽고 안전하게 참여할 수 있으며, 스테인드 글라스 특유의 감성과 반짝이는 색감을 부담 없이 경험할 수 있습니다.<br />
         햇살이 비칠 때마다 더욱 아름답게 빛나는 나만의 도어벨로 제주의 따뜻한 분위기를 일상 속 공간에 더해 보세요.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/o5rzMpiF835pPq2QnrRv_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/05/o5rzMpiF835pPq2QnrRv_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/hhjlI6NIJ7Zjt7EcsOpk_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/o5rzMpiF835pPq2QnrRv_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/sRnE5927v3LuuVwijOJZ_1_'
+            '/api/editor/attach/view/default/2026/05/hhjlI6NIJ7Zjt7EcsOpk_1_',
+            '/api/editor/attach/view/default/2026/05/o5rzMpiF835pPq2QnrRv_1_',
+            '/api/editor/attach/view/default/2026/05/sRnE5927v3LuuVwijOJZ_1_'
         ],
         tags: ['ART', 'DIY'],
         category: 'ART',
@@ -194,10 +194,10 @@ const activities = [
         제주의 감성을 담은 작은 집을 하나씩 완성하며, 여행의 순간을 오래도록 추억할 수 있는 DIY 클래스입니다.<br />
         완성된 작품은 창가나 벽에 걸어두어 일상 속에서도 제주를 떠올릴 수 있는 감성 오브제로 활용할 수 있습니다.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/jhZsodnKIazb4kVDV0bn_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/05/jhZsodnKIazb4kVDV0bn_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/jhZsodnKIazb4kVDV0bn_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/NhEbCijYuIcdussy1VxK_1_'
+            '/api/editor/attach/view/default/2026/05/jhZsodnKIazb4kVDV0bn_1_',
+            '/api/editor/attach/view/default/2026/05/NhEbCijYuIcdussy1VxK_1_'
         ],
         tags: ['ART', 'HANDMADE'],
         category: 'ART',
@@ -224,11 +224,11 @@ const activities = [
         깊은 이완으로 하루를 여는 릴렉스 요가부터 차크라의 균형과 마음의 안정을 돕는 명상 요가, 편백 롤러를 활용해 긴장을 풀어주는 리스토러티브 요가까지.<br />
         요일마다 각기 다른 컨셉의 프로그램으로 여행 속 여유롭고 평온한 아침을 경험해 보세요.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/PevxgaNHduOhIZQGoDiM_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/05/PevxgaNHduOhIZQGoDiM_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/PevxgaNHduOhIZQGoDiM_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/J846Z0L7LhSlli2PQCh4_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/OhDjhJCzmJ6dx8umJcc7_1_'
+            '/api/editor/attach/view/default/2026/05/PevxgaNHduOhIZQGoDiM_1_',
+            '/api/editor/attach/view/default/2026/05/J846Z0L7LhSlli2PQCh4_1_',
+            '/api/editor/attach/view/default/2026/05/OhDjhJCzmJ6dx8umJcc7_1_'
         ],
         tags: ['REST', 'HEALING'],
         category: 'REST',
@@ -272,11 +272,11 @@ const activities = [
         일상 속 쌓인 피로와 스트레스를 내려놓는 시간을 경험할 수 있습니다.<br />
         잔잔하게 퍼지는 울림 속에서 호흡에 집중하며, 내면의 균형과 깊은 안정감을 찾아 보세요.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/EURQkUVmxY7h6HN0usai_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/05/EURQkUVmxY7h6HN0usai_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/EURQkUVmxY7h6HN0usai_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/mnxeS8aPZbql2FwODH6J_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/VCeh9RuIW5szrSGj7cRL_1_'
+            '/api/editor/attach/view/default/2026/05/EURQkUVmxY7h6HN0usai_1_',
+            '/api/editor/attach/view/default/2026/05/mnxeS8aPZbql2FwODH6J_1_',
+            '/api/editor/attach/view/default/2026/05/VCeh9RuIW5szrSGj7cRL_1_'
         ],
         tags: ['REST', 'HEALING'],
         category: 'REST',
@@ -318,12 +318,12 @@ const activities = [
         클래스 종료 후에는 안내자가 자리를 비워 드리며, 60분 동안 프라이빗한 공간에서 오롯이 자신만의 티 타임을 경험하실 수 있습니다.<br />
         차에 대한 설명과 다기 사용 안내문도 함께 제공되어 처음 접하시는 분들도 부담 없이 편안하게 즐기실 수 있습니다.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/cQe0W3xJE5YGWImGxeDh_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/05/cQe0W3xJE5YGWImGxeDh_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/cQe0W3xJE5YGWImGxeDh_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/Cgvmcsdzq6JdCzgX2tm7_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/jo9HVC4WZVQzi8unhhqK_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/VnQ4g7fZeAN3OgtnLaOu_1_'
+            '/api/editor/attach/view/default/2026/05/cQe0W3xJE5YGWImGxeDh_1_',
+            '/api/editor/attach/view/default/2026/05/Cgvmcsdzq6JdCzgX2tm7_1_',
+            '/api/editor/attach/view/default/2026/05/jo9HVC4WZVQzi8unhhqK_1_',
+            '/api/editor/attach/view/default/2026/05/VnQ4g7fZeAN3OgtnLaOu_1_'
         ],
         tags: ['REST', 'HEALING'],
         category: 'REST',
@@ -367,12 +367,12 @@ const activities = [
         한 자리에서 제주 차가 지닌 각기 다른 향과 풍미를 경험하고, 차선을 이용해 직접 말차 거품을 내며 나만의 말차를 완성합니다.<br />
         손끝의 움직임과 차분한 울림 속에서 작은 명상 같은 휴식을 경험할 수 있으며, 차와 다기, 사람에 담긴 제주의 깊은 이야기도 함께 만나볼 수 있습니다.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/DBCCmYRRezjFp4ESQOfh_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/05/DBCCmYRRezjFp4ESQOfh_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/DBCCmYRRezjFp4ESQOfh_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/eOPurCbsj8BDpZc0yYV4_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/stBEtQKSyMNzkH64oIn1_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/rA1GDroJbRsXU80EqN3p_1_'
+            '/api/editor/attach/view/default/2026/05/DBCCmYRRezjFp4ESQOfh_1_',
+            '/api/editor/attach/view/default/2026/05/eOPurCbsj8BDpZc0yYV4_1_',
+            '/api/editor/attach/view/default/2026/05/stBEtQKSyMNzkH64oIn1_1_',
+            '/api/editor/attach/view/default/2026/05/rA1GDroJbRsXU80EqN3p_1_'
         ],
         tags: ['REST', 'HEALING'],
         category: 'REST',
@@ -412,11 +412,11 @@ const activities = [
         완성한 향은 탈취제 또는 섬유 향수로 만들어 드리며 차량, 옷장, 침구, 패브릭 공간 등 일상 속 다양한 공간에서 사용할 수 있습니다.<br />
         은은하게 퍼지는 향과 함께 제주의 여행 순간을 오래도록 기억해 보세요.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/AfSdvuLfwPra8L4F9xki_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/06/AfSdvuLfwPra8L4F9xki_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/AfSdvuLfwPra8L4F9xki_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/y0Lyd7Hhfub7SAvjP70s_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/XuGfgUIR9f5VWCQN7aTx_1_'
+            '/api/editor/attach/view/default/2026/06/AfSdvuLfwPra8L4F9xki_1_',
+            '/api/editor/attach/view/default/2026/06/y0Lyd7Hhfub7SAvjP70s_1_',
+            '/api/editor/attach/view/default/2026/06/XuGfgUIR9f5VWCQN7aTx_1_'
         ],
 
         tags: ['REST', 'HEALING'],
@@ -458,11 +458,11 @@ const activities = [
         감성적인 보틀과 플라워 오브제를 더해 인테리어 소품처럼 아름다운 디퓨저를 제작하며, 은은하게 퍼지는 향이 공간을 편안하게 채워줍니다.<br />
         여행의 기억을 향으로 간직하는 힐링 가득한 DIY 클래스를 경험해 보세요.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/Spd31nazIhMTCyvcj0Y6_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/06/Spd31nazIhMTCyvcj0Y6_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/Spd31nazIhMTCyvcj0Y6_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/M4uZfRaVQXCVTzPPgr5s_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/6rpFEecIGZtNJHQY9EKe_1_'
+            '/api/editor/attach/view/default/2026/06/Spd31nazIhMTCyvcj0Y6_1_',
+            '/api/editor/attach/view/default/2026/06/M4uZfRaVQXCVTzPPgr5s_1_',
+            '/api/editor/attach/view/default/2026/06/6rpFEecIGZtNJHQY9EKe_1_'
         ],
         tags: ['REST', 'HEALING'],
         category: 'REST',
@@ -503,10 +503,10 @@ const activities = [
         다양한 향료를 조합해 세상에 하나뿐인 나만의 향을 완성합니다.<br />
         완성된 사쉐는 약 4개월 동안 은은한 향이 지속되어 옷장, 차량, 침실 등 다양한 공간에서 사용할 수 있습니다.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/LhBRgnFzqoPJiaWDjgaE_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/06/LhBRgnFzqoPJiaWDjgaE_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/LhBRgnFzqoPJiaWDjgaE_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/2j31jKY4cG3Er3ZkjoAH_1_'
+            '/api/editor/attach/view/default/2026/06/LhBRgnFzqoPJiaWDjgaE_1_',
+            '/api/editor/attach/view/default/2026/06/2j31jKY4cG3Er3ZkjoAH_1_'
         ],
         tags: ['REST', 'HEALING'],
         category: 'REST',
@@ -547,11 +547,11 @@ const activities = [
         여행의 순간을 오래 간직할 수 있는 특별한 제주 감성 DIY 클래스를 경험해 보세요.<br />
         은은한 빛과 함께 하루의 분위기를 더욱 따뜻하게 만들어줍니다.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/fkVEFSdWlCykzjnvScE9_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/06/fkVEFSdWlCykzjnvScE9_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/fkVEFSdWlCykzjnvScE9_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/6xK3s63wSVDpqUGAeUDj_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/LB7IVWpIYOKFyUunaPNp_1_'
+            '/api/editor/attach/view/default/2026/06/fkVEFSdWlCykzjnvScE9_1_',
+            '/api/editor/attach/view/default/2026/06/6xK3s63wSVDpqUGAeUDj_1_',
+            '/api/editor/attach/view/default/2026/06/LB7IVWpIYOKFyUunaPNp_1_'
         ],
         tags: ['REST', 'HEALING'],
         category: 'REST',
@@ -592,10 +592,10 @@ const activities = [
         은은한 향과 함께 제주의 여행 순간을 오래 간직할 수 있는 감성 가득한 DIY 클래스입니다.<br />
         제주 바다의 반짝이는 기억을 작은 캔들 안에 담아 보세요.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/W1jsF6a5yYmKXwpGofbK_1_'
+            '/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_',
+            '/api/editor/attach/view/default/2026/06/W1jsF6a5yYmKXwpGofbK_1_'
         ],
         tags: ['REST', 'HEALING'],
         category: 'REST',
@@ -638,11 +638,11 @@ const activities = [
         프로그램 예약 시 강습부터 웻슈트 대여, 샤워 시설까지 모두 포함되어 가볍게 몸만 와서 참여할 수 있습니다.<br />
         제주의 바람과 파도를 온몸으로 느끼며 여행 속 가장 시원한 순간을 만들어 보세요.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/vLeWQGVIL7oRwIe4lYd1_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/VtMg21Z66rMqk3tBuiMn_1_'
+            '/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_',
+            '/api/editor/attach/view/default/2026/06/vLeWQGVIL7oRwIe4lYd1_1_',
+            '/api/editor/attach/view/default/2026/06/VtMg21Z66rMqk3tBuiMn_1_'
         ],
         tags: ['REST', 'HEALING'],
         category: 'REST',
@@ -688,10 +688,10 @@ const activities = [
         제주를 담은 다양한 도안과 컬러 아크릴을 조합해 세상에 하나뿐인 나만의 책갈피를 완성합니다.<br />
         책을 펼치는 순간마다 제주의 여행 기억과 감성이 함께 머무는 특별한 글라스아트 클래스를 경험해 보세요.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/30su09CIE0F6GU3IXtSq_1_'
+            '/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
+            '/api/editor/attach/view/default/2026/06/30su09CIE0F6GU3IXtSq_1_'
         ],
         tags: ['REST', 'HEALING'],
         category: 'REST',
@@ -730,10 +730,10 @@ const activities = [
         제주의 색과 감성을 담아 나만의 컬러를 더해 특별한 손거울을 완성합니다.<br />
         매일 꺼내볼 때마다 제주의 여행 순간이 다시 떠오르는 감성 가득한 아트 클래스를 경험해 보세요.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/z5U5mMjiTvu0JPbv288u_1_'
+            '/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
+            '/api/editor/attach/view/default/2026/06/z5U5mMjiTvu0JPbv288u_1_'
         ],
         tags: ['REST', 'HEALING'],
         category: 'REST',
@@ -772,8 +772,8 @@ const activities = [
         제주의 색과 감성을 담아 나만의 제주 여행 감성이 깃든 키링을 만들어 보세요.<br />
         한라봉, 제주 말, 한라산, 조개, 동백꽃 등 제주를 닮은 다양한 도안 위에 나만의 취향과 색감을 더해 특별한 작품을 완성합니다.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
-        heroImage: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
+        heroImage: '/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
         tags: ['REST', 'HEALING'],
         category: 'REST',
         date: '',
@@ -813,15 +813,15 @@ const activities = [
         오후 타임에는 라이브 뮤직 명상, 크리스탈 싱잉볼 명상, 하타요가, 밸런스 요가 등<br />
         감각적인 프로그램들이 요일별로 다르게 운영되어 매일 새로운 웰니스 경험을 선사합니다.
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/IzJqFInRW5g5sZGyCtjt_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/06/IzJqFInRW5g5sZGyCtjt_1_',
         heroImage: [
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/IzJqFInRW5g5sZGyCtjt_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/pStUW7rVmFqSUyrAPheS_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/mOXaXcAlWlbxfiKr70r0_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/otFelRNAWi4rWMwUhiy3_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/2XpUCQeKhKtCRQptdt90_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/qukBIhmMZs4fqb8oRaCf_1_',
-            'https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/Lkcq2UkGNkS1pQmYKUBu_1_'
+            '/api/editor/attach/view/default/2026/06/IzJqFInRW5g5sZGyCtjt_1_',
+            '/api/editor/attach/view/default/2026/06/pStUW7rVmFqSUyrAPheS_1_',
+            '/api/editor/attach/view/default/2026/06/mOXaXcAlWlbxfiKr70r0_1_',
+            '/api/editor/attach/view/default/2026/06/otFelRNAWi4rWMwUhiy3_1_',
+            '/api/editor/attach/view/default/2026/06/2XpUCQeKhKtCRQptdt90_1_',
+            '/api/editor/attach/view/default/2026/06/qukBIhmMZs4fqb8oRaCf_1_',
+            '/api/editor/attach/view/default/2026/06/Lkcq2UkGNkS1pQmYKUBu_1_'
         ],
         tags: ['REST', 'HEALING'],
         category: 'REST',
@@ -863,11 +863,11 @@ const activities = [
         성산일출봉을 바라보며 바다로 입수하는 짜릿한 경험은 또 하나의 즐거움입니다.<br />
         성산일출봉의 수중 세계를 경험하고 바다 생물들과 함께할 수 있는 기회, 도전하세요!
         `,
-        thumbnail: 'https://phoenixhnr.co.kr/images/ko/activity/playcecamp/outdoor/out-scuba-diving-idx01.jpg',
+        thumbnail: '/images/ko/activity/playcecamp/outdoor/out-scuba-diving-idx01.jpg',
         heroImage: [
-            'https://phoenixhnr.co.kr/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-1.jpg',
-            'https://phoenixhnr.co.kr/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-2.jpg',
-            'https://phoenixhnr.co.kr/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-3.jpg'
+            '/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-1.jpg',
+            '/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-2.jpg',
+            '/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-3.jpg'
         ],
         tags: ['REST', 'HEALING'],
         category: 'REST',
@@ -888,7 +888,7 @@ const activities = [
             <li>본 프로그램은 주최측 및 호스트의 상황에 따라 변동될 수 있습니다.</li>
             <li>참여가 불가능한 상태(음주, 흥분, 위협 등)일 경우 호스트가 프로그램을 취소할 수 있습니다.</li>
             <li>전일 21:00 ~ 당일 08:00 사이, 당일 예약은 예약 상황 및 기상 상황에 따라 변동 또는 취소될 수 있습니다.</li>
-            <li>당일 기상 상황에 따라 프로그램은 취소될 수 있고 출발 2시간 전 개별 안내되며 100% 환불됩니다.</li> <br>
+            <li>당일 기상 상황에 따라 프로그램은 취소될 수 있고 출발 2시간 전 개별 안내되며 100% 환불됩니다.</li> <br />
             <div class="common-txt">
                 <p class="strong">[취소/환불 규정]</p>
                 <ul class="dot-bu-list">
@@ -903,5 +903,63 @@ const activities = [
         `,
         reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfl2K0y_N0wLXg0UEtelRvoOzRtSoIHDRn0svw8Mw_wZTaKhQ/viewform',
         display: true,
+    },
+    {
+        id: 21,
+        program: 'yacht-tour',
+        title: '김녕에서의 요트 투어',
+        subtitle: '짜릿한 바다 낚시 체험, 운이 좋으면 돌고래를 만나는 특별한 순간까지!',
+        description: `
+        에메랄드빛 김녕 해상 풍차 마을을 배경으로 떠나는 특별한 요트 투어!<br />
+        시원한 바닷바람을 맞으며 여유로운 세일링을 즐기고,약 15 ~ 20분간 진행되는 바다 낚시 체험으로 제주 바다의 또 다른 매력을 경험해 보세요.<br />
+        <br />
+        요트 위에서는 컵 과일, 생맥주, 음료, 간단한 다과가 제공되며 운이 좋은 날에는 제주 바다를 자유롭게 헤엄치는 돌고래를 만나는 특별한 행운도 기다리고 있습니다.<br />
+        <br />
+        눈앞에 펼쳐지는 에메랄드빛 바다와 풍차가 어우러진 풍경 속에서 제주에서만 가능한 특별한 추억을 만들어 보세요.<br />
+        <p class="ref-bu-list">※ 돌고래는 야생 동물이므로 출현 여부는 당일 해상 및 기상 상황에 따라 달라질 수 있습니다.</p>
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
+            '/api/editor/attach/view/default/2026/07/hPCeB1a4OtvkyLYm1jpl_1_',
+            '/api/editor/attach/view/default/2026/07/sAkf6QEqghhl9ufuOALl_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '매일',
+        duration: '10:30 ~ 17:30(30분 단위)',
+        priceGeneral: '30,000원',
+        priceGuest: '25,000원',
+        information: `
+        <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 구좌읍 구좌해안로 229-16<br />
+        (휘닉스 아일랜드에서 차량으로 약 35분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 원활한 탑승을 위해 출항 20분 전까지 도착해 주세요.</p>
+        <p class="ref-bu-list">※ 최소 출항 인원은 10명입니다. 예약 인원 미달 시 항차가 취소되거나 출항 시간이 변경될 수 있으며, 이 경우 100% 환불해 드립니다.</p>
+        <p class="ref-bu-list">※ 당일 기상 악화(우천, 높은 파도 등)로 운항이 어려운 경우에는 취소 처리가 진행됩니다.</p>
+        <p class="ref-bu-list">※ 당일 시간 변경은 출항 2시간 전까지 가능합니다.</p>
+        <p class="ref-bu-list">※ 반려동물 동반은 10kg 미만 소형견에 한하여 가능합니다. 반드시 케이지 또는 반려동물 이동가방에 넣어 탑승해 주세요.<br />
+        예약 후 반려동물 동반 여부를 반드시 사전에 알려주시기 바랍니다.</p>
+        <p class="ref-bu-list">※ 현장에서는 멀미약이 제공되지 않습니다. 멀미가 걱정되시는 분은 출발 전 미리 준비하여 복용해 주시기 바랍니다.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
+            <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
+            <div class="common-txt">
+                <p class="strong">[취소/환불 규정]</p>
+                <ul class="dot-bu-list">
+                    <li>당일 시간 변경은 출항 2시간 전까지 가능합니다.</li>
+                    <li>이용일 1일 전 취소 시 결제 금액의 20%가 취소 수수료로 부과됩니다.</li>
+                    <li>당일 취소 시 결제 금액의 50%가 취소 수수료로 부과됩니다.</li>
+                    <li>기상 악화 또는 업체 사정으로 운항이 취소되는 경우에는 100% 환불해 드립니다.</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeKoP36h8vjLEWOQgJlhzd22cIJdCsNckfQ2W3DPURF_wy0_w/viewform?usp=publish-editor',
+        display: true,
     }
 ];
+
+
