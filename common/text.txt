@@ -508,3 +508,33 @@
         </tr>
     </tbody>
 </table>
+<script>
+    $(function () {
+        if ($('.site-pyeongchang').length) {
+
+            $('*').each(function () {
+                if ($(this).children().length) return;
+
+                const text = $.trim($(this).text());
+
+                // 생수 관련 문구만 있는 경우 삭제
+                if (
+                    /^생수/i.test(text) ||
+                    /^Bottled water/i.test(text) ||
+                    /^1L Bottled water/i.test(text)
+                ) {
+                    $(this).remove();
+                    return;
+                }
+
+                // 타월/생수 → 타월
+                $(this).text(
+                    text
+                        .replace('/생수', '')
+                        .replace('/Bottled water', '')
+                );
+            });
+
+        }
+    });
+</script>
