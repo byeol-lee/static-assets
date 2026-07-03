@@ -1805,30 +1805,34 @@
     });
 </script>
 <script>
-$(window).on('load', function () {
+$(document).one('ajaxStop', function () {
 
     if (!$('body').hasClass('site-pyeongchang')) return;
 
-    $('*').each(function () {
-        if ($(this).children().length) return;
+    setTimeout(function () {
 
-        const text = $.trim($(this).text());
+        $('*').each(function () {
+            if ($(this).children().length) return;
 
-        if (
-            /^생수/i.test(text) ||
-            /^Bottled water/i.test(text) ||
-            /^1L Bottled water/i.test(text)
-        ) {
-            $(this).remove();
-            return;
-        }
+            const text = $.trim($(this).text());
 
-        $(this).text(
-            text
-                .replace('/생수', '')
-                .replace('/Bottled water', '')
-        );
-    });
+            if (
+                /^생수/i.test(text) ||
+                /^Bottled water/i.test(text) ||
+                /^1L Bottled water/i.test(text)
+            ) {
+                $(this).remove();
+                return;
+            }
+
+            $(this).text(
+                text
+                    .replace('/생수', '')
+                    .replace('/Bottled water', '')
+            );
+        });
+
+    }, 1000);
 
 });
 </script>
