@@ -509,32 +509,32 @@
     </tbody>
 </table>
 <script>
-    $(function () {
-        if ($('.site-pyeongchang').length) {
+setTimeout(function () {
 
-            $('*').each(function () {
-                if ($(this).children().length) return;
+    if (!$('body').hasClass('site-pyeongchang')) return;
 
-                const text = $.trim($(this).text());
+    $('*').each(function () {
+        if ($(this).children().length) return;
 
-                // 생수 관련 문구만 있는 경우 삭제
-                if (
-                    /^생수/i.test(text) ||
-                    /^Bottled water/i.test(text) ||
-                    /^1L Bottled water/i.test(text)
-                ) {
-                    $(this).remove();
-                    return;
-                }
+        const text = $.trim($(this).text());
 
-                // 타월/생수 → 타월
-                $(this).text(
-                    text
-                        .replace('/생수', '')
-                        .replace('/Bottled water', '')
-                );
-            });
-
+        // 생수 관련 문구만 있는 요소 삭제
+        if (
+            /^생수/i.test(text) ||
+            /^Bottled water/i.test(text) ||
+            /^1L Bottled water/i.test(text)
+        ) {
+            $(this).remove();
+            return;
         }
+
+        // 타월/생수 → 타월
+        $(this).text(
+            text
+                .replace('/생수', '')
+                .replace('/Bottled water', '')
+        );
     });
+
+}, 300);
 </script>
