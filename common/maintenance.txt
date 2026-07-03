@@ -1805,20 +1805,16 @@
     });
 
     $(function () {
-    // 생수 및 타월 문구를 정리하는 핵심 함수
     function cleanUpWaterAndTowel() {
-        // 조건: body나 상위 요소에 site-pyeongchang이 있고, room-detail-condo 클래스가 존재할 때
         if (($('body').hasClass('site-pyeongchang') || $('.site-pyeongchang').length > 0) && 
             ($('.room-detail-condo').length > 0 || $('.common-content').length > 0)) {
             
-            // 1. 전체 삭제할 생수 관련 텍스트들
             const waterTexts = [
                 "생수 1L(1개)", "생수 1L: 2,000원/개", "생수(2개)", "생수 500ml: 1,000원/개 1L",
                 "Bottled water(1 bottle)", "Bottled water 1L: KRW 2,000/bottle", 
                 "Bottled water(2 bottles)", "Bottled water 500ml: KRW 1,000/bottle"
             ];
 
-            // 페이지 내의 모든 li, p, td 태그를 돌며 해당 텍스트가 있으면 통째로 삭제
             $('li, p, td').each(function () {
                 const textVal = $(this).text().trim().replace(/\s+/g, ' '); // 공백 불일치 방지
                 if (waterTexts.includes(textVal)) {
@@ -1826,30 +1822,26 @@
                 }
             });
 
-            // 2. '/' 포함해서 삭제해야 하는 '타월/생수' 처리
             $('th, td, dt, dd, li, p').each(function () {
                 let htmlVal = $(this).html();
                 if (htmlVal) {
                     if (htmlVal.indexOf('타월/생수') !== -1) {
-                        $(this).html(htmlVal.replace('타월/생수', '타월생수'));
+                        $(this).html(htmlVal.replace('타월/생수', '타월'));
                     }
                     if (htmlVal.indexOf('Towel/Bottled water') !== -1) {
-                        $(this).html(htmlVal.replace('Towel/Bottled water', 'TowelBottled water'));
+                        $(this).html(htmlVal.replace('Towel/Bottled water', 'Towel'));
                     }
                 }
             });
         }
     }
 
-    // [안전장치 1] 문서가 로드되었을 때 즉시 실행
     cleanUpWaterAndTowel();
 
-    // [안전장치 2] text.txt 나 다른 파일들이 load()로 다 불러와진 직후(AJAX 완료 시점) 다시 실행
     $(document).ajaxComplete(function () {
         cleanUpWaterAndTowel();
     });
 
-    // [안전장치 3] 혹시 모를 비동기 딜레이를 위해 0.5초 뒤에 한 번 더 실행
     setTimeout(cleanUpWaterAndTowel, 500);
 });
 </script>
