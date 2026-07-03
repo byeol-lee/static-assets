@@ -903,64 +903,63 @@ const activities = [
         `,
         reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfl2K0y_N0wLXg0UEtelRvoOzRtSoIHDRn0svw8Mw_wZTaKhQ/viewform',
         display: true,
+    },
+    {
+        id: 21,
+        program: 'yacht-tour',
+        title: '김녕에서의 요트 투어',
+        subtitle: '짜릿한 바다 낚시 체험, 운이 좋으면 돌고래를 만나는 특별한 순간까지!',
+        description: `
+        에메랄드빛 김녕 해상 풍차 마을을 배경으로 떠나는 특별한 요트 투어!<br />
+        시원한 바닷바람을 맞으며 여유로운 세일링을 즐기고,약 15 ~ 20분간 진행되는 바다 낚시 체험으로 제주 바다의 또 다른 매력을 경험해 보세요.<br />
+        <br />
+        요트 위에서는 컵 과일, 생맥주, 음료, 간단한 다과가 제공되며 운이 좋은 날에는 제주 바다를 자유롭게 헤엄치는 돌고래를 만나는 특별한 행운도 기다리고 있습니다.<br />
+        <br />
+        눈앞에 펼쳐지는 에메랄드빛 바다와 풍차가 어우러진 풍경 속에서 제주에서만 가능한 특별한 추억을 만들어 보세요.<br />
+        <p class="ref-bu-list">※ 돌고래는 야생 동물이므로 출현 여부는 당일 해상 및 기상 상황에 따라 달라질 수 있습니다.</p>
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
+            '/api/editor/attach/view/default/2026/07/hPCeB1a4OtvkyLYm1jpl_1_',
+            '/api/editor/attach/view/default/2026/07/sAkf6QEqghhl9ufuOALl_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '매일',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: '60,000원',
+        priceGuest: '45,000원',
+        information: `
+        <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 구좌읍 구좌해안로 229-16<br />
+        (휘닉스 아일랜드에서 차량으로 약 35분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 원활한 탑승을 위해 출항 20분 전까지 도착해 주세요.</p>
+        <p class="ref-bu-list">※ 최소 출항 인원은 10명입니다. 예약 인원 미달 시 항차가 취소되거나 출항 시간이 변경될 수 있으며, 이 경우 100% 환불해 드립니다.</p>
+        <p class="ref-bu-list">※ 당일 기상 악화(우천, 높은 파도 등)로 운항이 어려운 경우에는 취소 처리가 진행됩니다.</p>
+        <p class="ref-bu-list">※ 당일 시간 변경은 출항 2시간 전까지 가능합니다.</p>
+        <p class="ref-bu-list">※ 반려동물 동반은 10kg 미만 소형견에 한하여 가능합니다. 반드시 케이지 또는 반려동물 이동가방에 넣어 탑승해 주세요.<br />
+        예약 후 반려동물 동반 여부를 반드시 사전에 알려주시기 바랍니다.</p>
+        <p class="ref-bu-list">※ 현장에서는 멀미약이 제공되지 않습니다. 멀미가 걱정되시는 분은 출발 전 미리 준비하여 복용해 주시기 바랍니다.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
+            <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
+            <div class="common-txt">
+                <p class="strong">[취소/환불 규정]</p>
+                <ul class="dot-bu-list">
+                    <li>당일 시간 변경은 출항 2시간 전까지 가능합니다.</li>
+                    <li>이용일 1일 전 취소 시 결제 금액의 20%가 취소 수수료로 부과됩니다.</li>
+                    <li>당일 취소 시 결제 금액의 50%가 취소 수수료로 부과됩니다.</li>
+                    <li>기상 악화 또는 업체 사정으로 운항이 취소되는 경우에는 100% 환불해 드립니다.</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeKoP36h8vjLEWOQgJlhzd22cIJdCsNckfQ2W3DPURF_wy0_w/viewform?usp=publish-editor',
+        display: true,
     }
-    // ,
-    // {
-    //     id: 21,
-    //     program: 'yacht-tour',
-    //     title: '김녕에서의 요트 투어',
-    //     subtitle: '짜릿한 바다 낚시 체험, 운이 좋으면 돌고래를 만나는 특별한 순간까지!',
-    //     description: `
-    //     에메랄드빛 김녕 해상 풍차 마을을 배경으로 떠나는 특별한 요트 투어!<br />
-    //     시원한 바닷바람을 맞으며 여유로운 세일링을 즐기고,약 15 ~ 20분간 진행되는 바다 낚시 체험으로 제주 바다의 또 다른 매력을 경험해 보세요.<br />
-    //     <br />
-    //     요트 위에서는 컵 과일, 생맥주, 음료, 간단한 다과가 제공되며 운이 좋은 날에는 제주 바다를 자유롭게 헤엄치는 돌고래를 만나는 특별한 행운도 기다리고 있습니다.<br />
-    //     <br />
-    //     눈앞에 펼쳐지는 에메랄드빛 바다와 풍차가 어우러진 풍경 속에서 제주에서만 가능한 특별한 추억을 만들어 보세요.<br />
-    //     <p class="ref-bu-list">※ 돌고래는 야생 동물이므로 출현 여부는 당일 해상 및 기상 상황에 따라 달라질 수 있습니다.</p>
-    //     `,
-    //     thumbnail: '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
-    //     heroImage: [
-    //         '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
-    //         '/api/editor/attach/view/default/2026/07/hPCeB1a4OtvkyLYm1jpl_1_',
-    //         '/api/editor/attach/view/default/2026/07/sAkf6QEqghhl9ufuOALl_1_'
-    //     ],
-    //     tags: ['REST', 'HEALING'],
-    //     category: 'REST',
-    //     date: '매일',
-    //     duration: '10:30 ~ 17:30(30분 단위)',
-    //     priceGeneral: '30,000원',
-    //     priceGuest: '25,000원',
-    //     information: `
-    //     <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 구좌읍 구좌해안로 229-16<br />
-    //     (휘닉스 아일랜드에서 차량으로 약 35분 소요)</p>
-    //     <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
-    //     <p class="ref-bu-list">※ 원활한 탑승을 위해 출항 20분 전까지 도착해 주세요.</p>
-    //     <p class="ref-bu-list">※ 최소 출항 인원은 10명입니다. 예약 인원 미달 시 항차가 취소되거나 출항 시간이 변경될 수 있으며, 이 경우 100% 환불해 드립니다.</p>
-    //     <p class="ref-bu-list">※ 당일 기상 악화(우천, 높은 파도 등)로 운항이 어려운 경우에는 취소 처리가 진행됩니다.</p>
-    //     <p class="ref-bu-list">※ 당일 시간 변경은 출항 2시간 전까지 가능합니다.</p>
-    //     <p class="ref-bu-list">※ 반려동물 동반은 10kg 미만 소형견에 한하여 가능합니다. 반드시 케이지 또는 반려동물 이동가방에 넣어 탑승해 주세요.<br />
-    //     예약 후 반려동물 동반 여부를 반드시 사전에 알려주시기 바랍니다.</p>
-    //     <p class="ref-bu-list">※ 현장에서는 멀미약이 제공되지 않습니다. 멀미가 걱정되시는 분은 출발 전 미리 준비하여 복용해 주시기 바랍니다.</p>
-    //     `,
-    //     notice: `
-    //     <ul class="dot-bu-list">
-    //         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
-    //         <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
-    //         <div class="common-txt">
-    //             <p class="strong">[취소/환불 규정]</p>
-    //             <ul class="dot-bu-list">
-    //                 <li>당일 시간 변경은 출항 2시간 전까지 가능합니다.</li>
-    //                 <li>이용일 1일 전 취소 시 결제 금액의 20%가 취소 수수료로 부과됩니다.</li>
-    //                 <li>당일 취소 시 결제 금액의 50%가 취소 수수료로 부과됩니다.</li>
-    //                 <li>기상 악화 또는 업체 사정으로 운항이 취소되는 경우에는 100% 환불해 드립니다.</li>
-    //             </ul>
-    //         </div>
-    //     </ul>
-    //     `,
-    //     reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeKoP36h8vjLEWOQgJlhzd22cIJdCsNckfQ2W3DPURF_wy0_w/viewform?usp=publish-editor',
-    //     display: true,
-    // }
 ];
 
 
