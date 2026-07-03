@@ -1803,36 +1803,6 @@
         });
 
     });
-</script>
-<script>
-$(document).one('ajaxStop', function () {
 
-    if (!$('body').hasClass('site-pyeongchang')) return;
-
-    setTimeout(function () {
-
-        $('*').each(function () {
-            if ($(this).children().length) return;
-
-            const text = $.trim($(this).text());
-
-            if (
-                /^생수/i.test(text) ||
-                /^Bottled water/i.test(text) ||
-                /^1L Bottled water/i.test(text)
-            ) {
-                $(this).remove();
-                return;
-            }
-
-            $(this).text(
-                text
-                    .replace('/생수', '')
-                    .replace('/Bottled water', '')
-            );
-        });
-
-    }, 1000);
-
-});
+    $('.cm-pp-h-wt_tw li:e(0)').hide();
 </script>
