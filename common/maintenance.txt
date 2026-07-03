@@ -1804,5 +1804,51 @@
 
     });
 
-    $('.cm-pp-h-wt_tw li:e(0)').hide();
+    $(function () {
+        // 1. .cm-pi-r-scg 요소에 load() 처리가 완료된 시점을 잡기 위해 ajaxSuccess 등을 활용하거나, 
+        // 안전하게 문서 전체의 AJAX 로드가 완료된 시점 혹은 주기적 체크를 통해 텍스트를 정제합니다.
+        $(document).ajaxComplete(function (event, xhr, settings) {
+            // text.txt를 불러오는 ajax 요청이 끝났을 때 실행
+            if (settings.url.indexOf('text.txt') !== -1) {
+                
+                // 조건: site-pyeongchang 클래스와 room-detail room-detail-condo 클래스가 존재할 때만 작동
+                if ($('.site-pyeongchang').length > 0 && $('.room-detail.room-detail-condo').length > 0) {
+                    
+                    // 삭제할 텍스트 대상 배열 (정확히 매칭되어 삭제될 수 있도록 문구 지정)
+                    const targetsToRemove = [
+                        "생수 1L(1개)",
+                        "생수 1L: 2,000원/개",
+                        "생수(2개)",
+                        "생수 500ml: 1,000원/개 1L",
+                        "Bottled water(1 bottle)",
+                        "Bottled water 1L: KRW 2,000/bottle",
+                        "Bottled water(2 bottles)",
+                        "Bottled water 500ml: KRW 1,000/bottle"
+                    ];
+
+                    // 타겟 클래스 내의 모든 li 및 p 태그 검사하여 일치하는 것 삭제
+                    $('.amenity-info-list, .cm-pp-r-wt_tw-I, .cm-pp-r-wt_tw-II').find('li, p').each(function () {
+                        const textVal = $(this).text().trim();
+                        if (targetsToRemove.includes(textVal)) {
+                            $(this).remove();
+                        }
+                    });
+
+                    // '타월/생수' 및 'Towel/Bottled water' 내부의 '/'를 포함한 글자 삭제 처리
+                    $('.amenity-info-list, .cm-pp-r-wt_tw-I, .cm-pp-r-wt_tw-II').find('th, td, dt, dd, li, p').each(function () {
+                        let htmlVal = $(this).html();
+                        
+                        if (htmlVal.indexOf('타월/생수') !== -1) {
+                            htmlVal = htmlVal.replace('타월/생수', '타월생수');
+                            $(this).html(htmlVal);
+                        }
+                        if (htmlVal.indexOf('Towel/Bottled water') !== -1) {
+                            htmlVal = htmlVal.replace('Towel/Bottled water', 'TowelBottled water');
+                            $(this).html(htmlVal);
+                        }
+                    });
+                }
+            }
+        });
+    });
 </script>
