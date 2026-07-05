@@ -1529,11 +1529,11 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide"
+                <!-- <li class="modal-slider-item swiper-slide"
                     style="background-image: url('/api/editor/attach/view/default/2026/06/iCiI1pzLs6Blqtj8B9bW_1_');">
                     <a href="/page/pyeongchang/board/event/170000046656" class="modal-slider-link" target="_blank">
                     </a>
-                </li>
+                </li> -->
                 <li class="modal-slider-item swiper-slide"
                     style="background-image: url('/api/editor/attach/view/default/2026/07/jB5pS96tiFgn9nbLRvmR_1_');">
                     <a href="/page/pyeongchang/board/event/110000046898" class="modal-slider-link" target="_blank">
