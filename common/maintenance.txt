@@ -1845,4 +1845,36 @@
 
         setTimeout(cleanUpWaterAndTowel, 500);
     });
+
+    $(function () {
+        function cleanUpWaterAndTowel() {
+            if (($('body').hasClass('site-jeju') || $('.site-jeju').length > 0) &&
+                ($('.room-detail-condo').length > 0 || $('.common-content').length > 0)) {
+
+                const amenitieTexts = [
+                    "핸드 드립 세트",
+                    "핸드 드립 세트(드립백 2개)",
+                    "티백(2종)",
+                    "Pour-over coffee set",
+                    "Pour-over coffee set(2 drip bags)",
+                    "Tea-bags(2 types)"
+                ];
+
+                $('li, p, td').each(function () {
+                    const textVal = $(this).text().trim().replace(/\s+/g, ' ');
+                    if (amenitieTexts.includes(textVal)) {
+                        $(this).remove();
+                    }
+                });
+            }
+        }
+
+        cleanUpWaterAndTowel();
+
+        $(document).ajaxComplete(function () {
+            cleanUpWaterAndTowel();
+        });
+
+        setTimeout(cleanUpWaterAndTowel, 500);
+    });
 </script>
