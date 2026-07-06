@@ -1854,9 +1854,13 @@
                 const amenitieTexts = [
                     "핸드 드립 세트",
                     "핸드 드립 세트(드립백 2개)",
+                    "핸드 드립 세트(로얄 스위트)",
+                    "티백",
                     "티백(2종)",
                     "Pour-over coffee set",
                     "Pour-over coffee set(2 drip bags)",
+                    "Pour-over coffee set(Royal Suite)",
+                    "Tea-bag",
                     "Tea-bags(2 types)"
                 ];
 
