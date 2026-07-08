@@ -36,19 +36,6 @@
         background-position: bottom;
     } */
 
-    /* park ticket start */
-    /* .common-header .nav-main.is-pyeongchang .reservation-link a.ticket:before {
-        background-image: url(/api/editor/attach/view/default/2025/05/bBQJbY3jSQCRacsIl8IH_1_);
-        background-position: 0;
-        width: 26px;
-        height: 22px;
-    }
-
-    .common-header .nav-main.is-pyeongchang .reservation-link a {
-        display: inline-block;
-    } */
-    /* park ticket end */
-
     a.guide-link {
         font-size: 14px;
         color: #222222;
@@ -192,23 +179,6 @@
         white-space: unset;
         padding-right: 0;
     }
-
-    /* .site-jeju .room-detail.room-detail-condo .data-layout-table {
-        width: auto;
-        table-layout: auto;
-    }
-
-    .site-jeju .room-detail.room-detail-condo .data-layout-table th,
-    .site-jeju .room-detail.room-detail-condo .data-layout-table td {
-        padding-right: 20px;
-        white-space: nowrap;
-    }
-
-    .site-jeju .room-detail.room-detail-condo .data-layout-table td:last-child {
-        white-space: unset;
-        padding-right: 0;
-    } */
-    /* 260213 */
 
     .room-detail-condo .room-info-wrap .data-layout-table {
         margin-top: 0;
@@ -1530,12 +1500,7 @@
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
                 <li class="modal-slider-item swiper-slide"
-                    style="background-image: url('/api/editor/attach/view/default/2026/06/iCiI1pzLs6Blqtj8B9bW_1_');">
-                    <a href="/page/pyeongchang/board/event/170000046656" class="modal-slider-link" target="_blank">
-                    </a>
-                </li>
-                <li class="modal-slider-item swiper-slide"
-                    style="background-image: url('/api/editor/attach/view/default/2026/07/jB5pS96tiFgn9nbLRvmR_1_');">
+                    style="background-image: url('/api/editor/attach/view/default/2026/07/863iSwHhkCCvrE9fkE8F_1_');">
                     <a href="/page/pyeongchang/board/event/110000046898" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
@@ -1605,17 +1570,6 @@
 
 <script>
     $(function () {
-        // const startDat = new Date('2026-06-08T09:00:00').getTime();
-        // let nowDat = new Date().getTime();
-
-        // $('.endCont, .startCont').hide();
-
-        // if (nowDat < startDat) {
-        //     $('.endCont').show();
-        // } else {
-        //     $('.startCont').show();
-        // }
-
         // youtube
         // $('.main-pyeongchang section.waterpark').html(`
         //     <h3 class="section-title" style="color: #232323;height: 80px;">25/26 SNOW PARK</h3>
