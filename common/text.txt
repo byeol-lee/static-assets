@@ -11,7 +11,7 @@
         </ul>
     </li>
     <li>전체 객실 금연</li>
-    <li>객실 정비: 1일 1회</li>
+    <!-- <li>객실 정비: 1일 1회</li> -->
 </ul>
 
 <ul class="dot-bu-list cm-pp-r-info-I">
@@ -66,7 +66,7 @@
         </ul>
     </li>
     <li>All rooms are non-smoking</li>
-    <li>Housekeeping: once per day</li>
+    <!-- <li>Housekeeping: once per day</li> -->
 </ul>
 </ul>
 
