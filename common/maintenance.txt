@@ -1495,7 +1495,7 @@
     </div>
 </div>
 
-<!-- <div class="modal-wrap" data-popup="park" style="display: none;">
+<div class="modal-wrap" data-popup="park" style="display: none;">
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
@@ -1514,7 +1514,7 @@
             <p class="modal-close-btn">닫기</p>
         </div>
     </div>
-</div> -->
+</div>
 
 <div class="modal-wrap" data-popup="island" style="display: none;">
     <div class="modal-inner">
