@@ -1473,11 +1473,11 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <!-- <li class="modal-slider-item swiper-slide"
-                    style="background-image: url('/api/editor/attach/view/default/2026/06/LgURvivVHFIOCFdGURa6_1_');">
-                    <a href="/page/board/package/16063" class="modal-slider-link" target="_blank">
+                <li class="modal-slider-item swiper-slide"
+                    style="background-image: url('/api/editor/attach/view/default/2026/07/M9m5c29RGmQQ4YVz6Icm_1_');">
+                    <a href="/page/board/package/16078" class="modal-slider-link" target="_blank">
                     </a>
-                </li> -->
+                </li>
                 <li class="modal-slider-item swiper-slide"
                     style="background-image: url('/api/editor/attach/view/default/2026/06/7uHTfGtJZLBSzKZ3Af3U_1_');">
                     <a href="/page/customer/notice/14499" class="modal-slider-link" target="_blank">
@@ -1520,11 +1520,11 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <!-- <li class="modal-slider-item swiper-slide"
-                    style="background-image: url('/api/editor/attach/view/default/2026/06/LgURvivVHFIOCFdGURa6_1_');">
-                    <a href="/page/jeju/board/package/16063" class="modal-slider-link" target="_blank">
+                <li class="modal-slider-item swiper-slide"
+                    style="background-image: url('/api/editor/attach/view/default/2026/07/M9m5c29RGmQQ4YVz6Icm_1_');">
+                    <a href="/page/jeju/board/package/16078" class="modal-slider-link" target="_blank">
                     </a>
-                </li> -->
+                </li>
                 <li class="modal-slider-item swiper-slide"
                     style="background-image: url('/api/editor/attach/view/default/2026/06/7uHTfGtJZLBSzKZ3Af3U_1_');">
                     <a href="/page/customer/notice/14499" class="modal-slider-link" target="_blank">
