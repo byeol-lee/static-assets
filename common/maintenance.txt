@@ -1484,6 +1484,11 @@
                     </a>
                 </li>
                 <li class="modal-slider-item swiper-slide"
+                    style="background-image: url('/api/editor/attach/view/default/2026/07/lcUrnj3nXfOqryvPxpzu_1_');">
+                    <a href="/page/board/package/16082" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
+                <li class="modal-slider-item swiper-slide"
                     style="background-image: url('/api/editor/attach/view/default/2026/06/7uHTfGtJZLBSzKZ3Af3U_1_');">
                     <a href="/page/customer/notice/14499" class="modal-slider-link" target="_blank">
                     </a>
@@ -1507,6 +1512,11 @@
                 <li class="modal-slider-item swiper-slide"
                     style="background-image: url('/api/editor/attach/view/default/2026/07/mVM0HCmaLSSDYrGFQN70_1_');">
                     <a href="/page/pyeongchang/board/package/16079" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
+                <li class="modal-slider-item swiper-slide"
+                    style="background-image: url('/api/editor/attach/view/default/2026/07/lcUrnj3nXfOqryvPxpzu_1_');">
+                    <a href="/page/pyeongchang/board/package/16082" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
                 <li class="modal-slider-item swiper-slide"
