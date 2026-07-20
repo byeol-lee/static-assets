@@ -23,7 +23,7 @@ function filterAndRender() {
         });
     }
 
-    renderActivities(filtered);
+    renderActivities();
 }
 
 function renderActivities(items) {
