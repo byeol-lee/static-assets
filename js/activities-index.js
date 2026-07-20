@@ -42,7 +42,7 @@ function renderActivities(items) {
         `).join('');
 
         grid.innerHTML += `
-            <a class="activity-card" href="https://phoenixhnr.co.kr/static/jeju/eating/seopji?program=${item.program}">
+            <a class="activity-card" href="https://phoenixhnr.co.kr/static/jeju/activities/program?program=${item.program}">
                 <div class="activity-card__thumb">
                     <img src="${item.thumbnail}" alt="${item.title}">
                 </div>
