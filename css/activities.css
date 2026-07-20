@@ -494,6 +494,10 @@ a:hover {
     margin-top: 20px;
 }
 
+.common-top-info .btn.round .camp {
+    background: #e6007e !important;
+}
+
 .activity-detail__body-content {
     max-width: 900px;
     margin: 0 auto;
@@ -594,7 +598,6 @@ a:hover {
 
     .common-top-info .btn.round {
         margin: 15px 0px 0px;
-        background: #0079c3;
         display: flex;
         align-items: center;
         justify-content: center;
