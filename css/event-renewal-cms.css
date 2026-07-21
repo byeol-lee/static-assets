@@ -35,6 +35,7 @@
     font-weight: 400;
     letter-spacing: 0;
     word-break: keep-all;
+    overflow-x: hidden;
 }
 
 ul {
