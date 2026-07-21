@@ -1571,11 +1571,11 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-start="2026-07-21T00:00:00" style="background-image: url('/api/editor/attach/view/default/2026/07/OySpbS7qBIDFCwSHTJ6M_1_');">
+                <li class="modal-slider-item swiper-slide" style="background-image: url('/api/editor/attach/view/default/2026/07/OySpbS7qBIDFCwSHTJ6M_1_');">
                     <a href="/page/playcecamp/board/event/120000045302" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-end="2026-07-21T00:00:00" style="background-image: url('/api/editor/attach/view/default/2026/04/l3vSqaNLcL1sM8ofBQOo_1_');">
+                <li class="modal-slider-item swiper-slide" style="background-image: url('/api/editor/attach/view/default/2026/04/l3vSqaNLcL1sM8ofBQOo_1_');">
                     <a href="/page/playcecamp/board/event/120000046480" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
@@ -1590,6 +1590,10 @@
         </div>
     </div>
 </div>
+
+/* ==============================================================
+data-end="2026-00-00T00:00:00" | data-start="2026-00-00T00:00:00"
+============================================================== */
 
 <script>
     $(function () {
@@ -1622,97 +1626,87 @@
     });
 </script>
 <script>
-$(function () {
-    const popupMap = {
-        'main-hnr': 'integrated',
-        'main-pyeongchang': 'park',
-        'main-jeju': 'island',
-        'main-playcecamp': 'playcecamp'
-    };
+    $(function () {
+        const popupMap = {
+            'main-hnr': 'integrated',
+            'main-pyeongchang': 'park',
+            'main-jeju': 'island',
+            'main-playcecamp': 'playcecamp'
+        };
 
-    const hour = 24;
-    let popupType = '';
+        const hour = 24;
+        let popupType = '';
 
-    $.each(popupMap, function (pageClass, type) {
-        if ($('.' + pageClass).length) {
-            popupType = type;
-            return false;
+        $.each(popupMap, function (pageClass, type) {
+            if ($('.' + pageClass).length) {
+                popupType = type;
+                return false;
+            }
+        });
+
+        if (!popupType) return;
+
+        const $popup = $(`.modal-wrap[data-popup="${popupType}"]`);
+        const cookieKey = `hidePopup_${popupType}`;
+
+        if (!$popup.length) return;
+
+        const now = Date.now();
+
+        $popup.find('.swiper-slide').each(function () {
+
+            const $slide = $(this);
+
+            const start = $slide.data('start');
+            const end = $slide.data('end');
+
+            if (start && now < new Date(start).getTime()) {
+                $slide.remove();
+                return;
+            }
+
+            if (end && now >= new Date(end).getTime()) {
+                $slide.remove();
+                return;
+            }
+
+        });
+
+        $popup.on('click', '.modal-close-btn', function (e) {
+            e.preventDefault();
+
+            if ($popup.find('.modal-today-checkbox').prop('checked')) {
+                const date = new Date();
+                date.setTime(date.getTime() + hour * 60 * 60 * 1000);
+                document.cookie = `${cookieKey}=true; expires=${date.toUTCString()}; path=/`;
+            }
+
+            $popup.hide();
+        });
+
+        if (document.cookie.includes(`${cookieKey}=true`)) {
+            $popup.hide();
+        } else {
+            $popup.show();
         }
+
+        $popup.insertBefore('.visual-banner');
+
+        const $slider = $popup.find('.modal-slider');
+        const slideCount = $slider.find('.swiper-slide').length;
+
+        new Swiper($slider[0], {
+            slidesPerView: 1,
+            loop: slideCount > 1,
+            autoplay: slideCount > 1 ? {
+                delay: 3000
+            } : false,
+            pagination: slideCount > 1 ? {
+                el: $popup.find('.modal-paging')[0],
+                type: 'bullets',
+            } : false,
+        });
     });
-
-    if (!popupType) return;
-
-    const $popup = $(`.modal-wrap[data-popup="${popupType}"]`);
-    const cookieKey = `hidePopup_${popupType}`;
-
-    if (!$popup.length) return;
-
-    /* ==========================
-       날짜별 슬라이드 제어
-       data-start : 지정한 날짜부터 노출
-       data-end   : 지정한 날짜까지 노출
-    ========================== */
-
-    const now = Date.now();
-
-    $popup.find('.swiper-slide').each(function () {
-
-        const $slide = $(this);
-
-        const start = $slide.data('start');
-        const end = $slide.data('end');
-
-        // 시작일 이전이면 제거
-        if (start && now < new Date(start).getTime()) {
-            $slide.remove();
-            return;
-        }
-
-        // 종료일 이후면 제거
-        if (end && now >= new Date(end).getTime()) {
-            $slide.remove();
-            return;
-        }
-
-    });
-
-    /* ========================== */
-
-    $popup.on('click', '.modal-close-btn', function (e) {
-        e.preventDefault();
-
-        if ($popup.find('.modal-today-checkbox').prop('checked')) {
-            const date = new Date();
-            date.setTime(date.getTime() + hour * 60 * 60 * 1000);
-            document.cookie = `${cookieKey}=true; expires=${date.toUTCString()}; path=/`;
-        }
-
-        $popup.hide();
-    });
-
-    if (document.cookie.includes(`${cookieKey}=true`)) {
-        $popup.hide();
-    } else {
-        $popup.show();
-    }
-
-    $popup.insertBefore('.visual-banner');
-
-    const $slider = $popup.find('.modal-slider');
-    const slideCount = $slider.find('.swiper-slide').length;
-
-    new Swiper($slider[0], {
-        slidesPerView: 1,
-        loop: slideCount > 1,
-        autoplay: slideCount > 1 ? {
-            delay: 3000
-        } : false,
-        pagination: slideCount > 1 ? {
-            el: $popup.find('.modal-paging')[0],
-            type: 'bullets',
-        } : false,
-    });
-});
 </script>
 <script>
     $(function () {
