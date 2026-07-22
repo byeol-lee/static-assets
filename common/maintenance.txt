@@ -1473,12 +1473,12 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide"
+                <li class="modal-slider-item swiper-slide" data-end="2026-08-01T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/07/M9m5c29RGmQQ4YVz6Icm_1_');">
                     <a href="/page/board/package/16078" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide"
+                <li class="modal-slider-item swiper-slide" data-end="2026-07-27T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/07/mVM0HCmaLSSDYrGFQN70_1_');">
                     <a href="/page/board/package/16079" class="modal-slider-link" target="_blank">
                     </a>
@@ -1488,7 +1488,7 @@
                     <a href="/page/board/package/16082" class="modal-slider-link" target="_blank">
                     </a>
                 </li> -->
-                <li class="modal-slider-item swiper-slide"
+                <li class="modal-slider-item swiper-slide" data-end="2026-08-24T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/06/7uHTfGtJZLBSzKZ3Af3U_1_');">
                     <a href="/page/customer/notice/14499" class="modal-slider-link" target="_blank">
                     </a>
@@ -1509,7 +1509,7 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide"
+                <li class="modal-slider-item swiper-slide" data-end="2026-06-24T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/07/mVM0HCmaLSSDYrGFQN70_1_');">
                     <a href="/page/pyeongchang/board/package/16079" class="modal-slider-link" target="_blank">
                     </a>
@@ -1540,12 +1540,12 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide"
+                <li class="modal-slider-item swiper-slide" data-end="2026-08-01T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/07/M9m5c29RGmQQ4YVz6Icm_1_');">
                     <a href="/page/jeju/board/package/16078" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide"
+                <li class="modal-slider-item swiper-slide" data-end="2026-08-24T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/06/7uHTfGtJZLBSzKZ3Af3U_1_');">
                     <a href="/page/customer/notice/14499" class="modal-slider-link" target="_blank">
                     </a>
@@ -1571,7 +1571,7 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-end="2026-06-24T00:00:00"
+                <li class="modal-slider-item swiper-slide" data-end="2026-08-24T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/07/OySpbS7qBIDFCwSHTJ6M_1_');">
                     <a href="/page/playcecamp/board/event/120000045302" class="modal-slider-link" target="_blank">
                     </a>
