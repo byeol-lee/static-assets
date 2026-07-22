@@ -1567,15 +1567,17 @@
     </div>
 </div>
 
-<div class="modal-wrap" data-popup="playcecamp" style="display: none;">
+<div class="modal-wrap" data-popup="camp" style="display: none;">
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" style="background-image: url('/api/editor/attach/view/default/2026/07/OySpbS7qBIDFCwSHTJ6M_1_');">
+                <li class="modal-slider-item swiper-slide" data-end="2026-06-24T00:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/07/OySpbS7qBIDFCwSHTJ6M_1_');">
                     <a href="/page/playcecamp/board/event/120000045302" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" style="background-image: url('/api/editor/attach/view/default/2026/04/l3vSqaNLcL1sM8ofBQOo_1_');">
+                <li class="modal-slider-item swiper-slide"
+                    style="background-image: url('/api/editor/attach/view/default/2026/04/l3vSqaNLcL1sM8ofBQOo_1_');">
                     <a href="/page/playcecamp/board/event/120000046480" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
@@ -1626,7 +1628,7 @@
             'main-hnr': 'integrated',
             'main-pyeongchang': 'park',
             'main-jeju': 'island',
-            'main-playcecamp': 'playcecamp'
+            'main-playcecamp': 'camp'
         };
 
         const hour = 24;
