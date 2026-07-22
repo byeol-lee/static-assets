@@ -1505,11 +1505,11 @@
     </div>
 </div>
 
-<div class="modal-wrap" data-popup="park" style="display: none;">
+<div class="modal-wrap" data-popup="park" style="display: none;" data-end="2026-06-24T00:00:00">
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-end="2026-06-24T00:00:00"
+                <li class="modal-slider-item swiper-slide"
                     style="background-image: url('/api/editor/attach/view/default/2026/07/mVM0HCmaLSSDYrGFQN70_1_');">
                     <a href="/page/pyeongchang/board/package/16079" class="modal-slider-link" target="_blank">
                     </a>
