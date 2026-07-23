@@ -1478,8 +1478,8 @@
                     <a href="/page/board/event/150000047000" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-end="2026-08-01T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/07/M9m5c29RGmQQ4YVz6Icm_1_');">
+                <li class="modal-slider-item swiper-slide" data-end="2026-08-15T00:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/07/2VSceFRsw8W9IZo8WcVw_1_');">
                     <a href="/page/board/package/16078" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
@@ -1540,8 +1540,8 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-end="2026-08-01T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/07/M9m5c29RGmQQ4YVz6Icm_1_');">
+                <li class="modal-slider-item swiper-slide" data-end="2026-08-15T00:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/07/2VSceFRsw8W9IZo8WcVw_1_');">
                     <a href="/page/jeju/board/package/16078" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
