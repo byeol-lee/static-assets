@@ -1,6 +1,61 @@
 const activities = [
     {
         id: 1,
+		program: 'kitesurfing',
+		title: '카이트서핑',
+		subtitle: '바람을 타고 바다 위를 질주하는 특별한 액티비티!',
+		description: `
+        제주의 푸른 바다와 시원한 바람을 온몸으로 느끼는 특별한 해양 스포츠<br />
+        IKO(국제카이트보딩기구) 공인 강사와 함께하는 카이트서핑을 처음 접하는 분들을 위한 원데이 레슨부터,<br />
+        기본기를 갖춘 라이더를 위한 1시간 레슨까지 실력에 맞는 프로그램을 선택해 즐길 수 있습니다.<br />
+        <br />
+        원데이 레슨은 전문 강사의 체계적인 지도 아래 안전교육, 장비 사용법, 카이트 조작법, 바다 실습까지 단계별로 진행되어<br />
+        초보자도 부담 없이 카이트서핑의 기초를 익힐 수 있습니다.<br />
+        <br />
+        1시간 레슨은 기본적인 카이트 컨트롤이 가능한 참가자를 대상으로 진행되며,<br />
+        라이딩 기술을 보완하고 더욱 자유롭고 역동적인 카이트서핑을 즐길 수 있도록 구성되어 있습니다.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_',
+			'/api/editor/attach/view/default/2026/07/dGkT6E7lMtWgszB0yyi3_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: '매일',
+		duration: '09:00 ~ 18:00',
+		priceGeneral: `
+        원데이 325,000원(장비 대여료 포함)<br />
+        1시간 100,000원(장비 대여료 별도)
+        `,
+		priceGuest: `
+        원데이 292,500원(장비 대여료 포함)<br />
+        1시간 90,000원(장비 대여료 별도)
+        `,
+		information: `
+        <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 구좌읍 구좌해안로 229-16<br />
+        (휘닉스 아일랜드에서 차량으로 약 4분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
+            <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
+            <div class="common-txt">
+                <p class="strong">[취소/환불 규정]</p>
+                <ul class="dot-bu-list">
+                    <li>이용일 1일 전 취소 시 결제 금액의 20%가 취소 수수료로 부과됩니다.</li>
+                    <li>당일 취소 시 결제 금액의 50%가 취소 수수료로 부과됩니다.</li>
+                    <li>기상 악화 또는 업체 사정으로 운항이 취소되는 경우에는 100% 환불해 드립니다.</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSd9i_sZCaSV23tYKcyZQAiOVYQVFDhTts5IH_dSYEL2OPP1hA/viewform?usp=publish',
+		display: true,
+    },
+    {
+        id: 2,
 		program: 'yacht-tour',
 		title: '김녕에서의 요트 투어',
 		subtitle: '짜릿한 바다 낚시 체험, 운이 좋으면 돌고래를 만나는 특별한 순간까지!',
@@ -56,7 +111,7 @@ const activities = [
 		display: true,
     },
     {
-        id: 2,
+        id: 3,
 		program: 'scuba-diving',
 		title: '스쿠버 다이빙 체험',
 		subtitle: '성산일출봉을 바라보며 바다로 입수하는 짜릿한 경험',
@@ -107,7 +162,7 @@ const activities = [
 		display: true,
     },
     {
-        id: 3,
+        id: 4,
 		program: 'surfing-class',
 		title: '서핑 클래스',
 		subtitle: '처음이어도 즐거운 제주 서핑 체험',
@@ -158,7 +213,7 @@ const activities = [
 		display: true,
     },
     {
-        id: 4,
+        id: 5,
 		program: 'keyring-diy',
 		title: '키링 DIY',
 		subtitle: '제주 도안으로 만드는 특별한 아크릴 키링',
@@ -197,7 +252,7 @@ const activities = [
 		display: true,
     },
     {
-        id: 5,
+        id: 6,
 		program: 'bookmark-diy',
 		title: '책갈피 DIY',
 		subtitle: '제주 도안으로 완성하는 스테인드 책갈피',
@@ -240,7 +295,7 @@ const activities = [
 		display: true,
     },
     {
-        id: 6,
+        id: 7,
         program: 'hand-mirror-diy',
 		title: '손 거울 DIY',
 		subtitle: '제주 감성을 담아 만드는 손거울 아트 클래스',
@@ -282,7 +337,7 @@ const activities = [
 		display: true,
     },
     {
-        id: 7,
+        id: 8,
         program: 'candle-diy',
 		title: '제주 바다 캔들 DIY',
 		subtitle: '바다빛으로 완성하는 제주 캔들 클래스',
@@ -328,7 +383,7 @@ const activities = [
 		display: true,
     },
     {
-        id: 8,
+        id: 9,
         program: 'mood-lamp-diy',
 		title: '수국 무드등 DIY',
 		subtitle: '빛으로 피어나는 수국 무드등 클래스',
@@ -373,7 +428,7 @@ const activities = [
 		display: true,
     },
     {
-        id: 9,
+        id: 10,
         program: 'tea-class',
 		title: '프라이빗 티 클래스',
 		subtitle: '은은한 차의 향과 함께 천천히 나에게 집중하는 시간',
@@ -422,7 +477,7 @@ const activities = [
 		display: true,
     },
     {
-        id: 10,
+        id: 11,
         program: 'wall-hanging-diy',
 		title: '월 행잉 DIY',
 		subtitle: '실과 패브릭으로 완성하는 감성 인테리어 오브제, 월 행잉 DIY 클래스',
@@ -452,7 +507,7 @@ const activities = [
 		display: true,
     },
     {
-        id: 11,
+        id: 12,
         program: 'glass-art-suncatcher',
 		title: '글라스 아트 썬캐처',
 		subtitle: '햇살이 비치는 순간 더욱 아름다운 빛과 그림자를 만들어 내는 썬캐쳐 클래스',
@@ -483,7 +538,7 @@ const activities = [
 		display: true,
     },
     {
-        id: 12,
+        id: 13,
         program: 'glass-art-doorbell',
 		title: '글라스 아트 도어벨',
 		subtitle: '제주의 감성을 담은 글라스 아트 도어벨 클래스',
@@ -515,7 +570,7 @@ const activities = [
 		display: true,
     },
     {
-        id: 13,
+        id: 14,
         program: 'pottery-class',
 		title: '성지도예 물레 도자 클래스',
 		subtitle: '섬세한 손끝에서 빚어지는 도자기를 경험해 볼 수 있는 성지도예',
@@ -578,7 +633,7 @@ const activities = [
 		display: true,
     },
     {
-		id: 14,
+		id: 15,
 		program: 'day-yoga',
 		title: '데이 요가',
 		subtitle: '여행의 아침을 상쾌하게 맞이하는 리프레쉬 요가',
@@ -637,7 +692,7 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 15,
+		id: 16,
 		program: 'morning-yoga',
 		title: '아침 요가',
 		subtitle: '요일별 다양한 웰니스 프로그램으로 몸과 마음의 균형을 깨우는 요가 클래스',
@@ -683,7 +738,7 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 16,
+		id: 17,
 		program: 'singing-bowl-meditation',
 		title: '싱잉볼 명상',
 		subtitle: '싱잉볼의 울림으로 몸과 마음을 깨우는 명상',
@@ -730,7 +785,7 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 17,
+		id: 18,
 		program: 'tea-ceremony',
 		title: '제주 차회',
 		subtitle: '3가지의 제주 차&다식&나만의 말차 만들기로 구성된 티 클래스',
@@ -775,7 +830,7 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 18,
+		id: 19,
 		program: 'perfume-diy',
 		title: '나만의 커스텀 향 DIY',
 		subtitle: '제주를 대표하는 50여종의 다양한 향료를 조합하여 만드는 시그니처 향',
@@ -821,7 +876,7 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 19,
+		id: 20,
 		program: 'diffuser-diy',
 		title: '퍼퓸 디퓨저 DIY',
 		subtitle: '제주 무드를 채우는 퍼퓸 디퓨저 만들기',
@@ -866,7 +921,7 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 20,
+		id: 21,
 		program: 'sachet-class',
 		title: '제주 사쉐 클래스',
 		subtitle: '직접 조향하는 제주 감성 사쉐 만들기',
@@ -909,7 +964,7 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 21,
+		id: 22,
 		program: 'one-day-wellness',
 		title: '원데이 웰니스 패키지',
 		subtitle: '원하는 시간대의 두 가지 클래스를 선택해 즐기실 수 있는 원데이 웰니스 패키지',
