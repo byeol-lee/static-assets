@@ -1519,6 +1519,11 @@
                     <a href="/page/pyeongchang/board/event/150000047000" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
+                <li class="modal-slider-item swiper-slide" data-start="2026-07-27T00:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/07/fN1lMjuKpyRJcbuKe1tw_1_');">
+                    <a href="/page/pyeongchang/board/event/190000047026" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
                 <li class="modal-slider-item swiper-slide" data-end="2026-07-27T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/07/mVM0HCmaLSSDYrGFQN70_1_');">
                     <a href="/page/pyeongchang/board/package/16079" class="modal-slider-link" target="_blank">
