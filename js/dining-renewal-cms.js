@@ -1,112 +1,134 @@
-function scrollToCenter(btn) {
-    if (!btn) return;
-    btn.scrollIntoView({
-        behavior: 'smooth',
-        inline: 'center',
-        block: 'nearest'
-    });
-}
+    let currentCategory = 'all';
+    let currentTag = '';
 
-function resetCategoryToAll() {
-    currentCategory = 'all';
-    const allBtn = document.querySelector(".category-tab-wrap .tab-btn[onclick*='all']");
+    function scrollToCenter(btn) {
+        if (!btn) return;
+        const $container = $('#categoryTabWrap');
+        if (!$container.length) return;
 
-    document.querySelectorAll('.category-tab-wrap .tab-btn').forEach(b => b.classList.remove('active'));
+        // 중앙 위치 계산
+        const targetScroll = btn.offsetLeft - ($container.width() / 2) + ($(btn).outerWidth() / 2);
 
-    if (allBtn) {
-        allBtn.classList.add('active');
-        scrollToCenter(allBtn);
+        $container.stop().animate({
+            scrollLeft: targetScroll
+        }, 400, 'swing');
     }
-}
 
-function setCategory(cat, btn) {
-    currentCategory = cat;
-
-    document.querySelectorAll('.category-tab-wrap .tab-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-
-    scrollToCenter(btn);
-    applyFilter();
-}
-
-function searchSubmit() {
-    resetCategoryToAll();
-    applyFilter();
-}
-
-function toggleTag(tag, btn) {
-    const isSelected = (currentTag === tag);
-
-    document.querySelectorAll('.kw-tag').forEach(b => b.classList.remove('active'));
-
-    if (isSelected) {
-        currentTag = '';
-    } else {
-        currentTag = tag;
+    // 1. 카테고리 탭 변경
+    function setCategory(cat, btn) {
+        currentCategory = cat;
+        document.querySelectorAll('.category-tab-wrap .tab-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
+
+        scrollToCenter(btn);
+
+        applyFilter();
     }
 
-    applyFilter();
-}
+    function searchSubmit() {
+        currentCategory = 'all';
 
-function resetFilters() {
-    currentTag = '';
-    document.getElementById('searchKeyword').value = '';
+        const allBtn = document.querySelector(".category-tab-wrap .tab-btn[onclick*='all']");
+        if (allBtn) {
+            document.querySelectorAll('.category-tab-wrap .tab-btn').forEach(b => b.classList.remove('active'));
+            allBtn.classList.add('active');
 
-    resetCategoryToAll();
-    applyFilter();
-}
+            scrollToCenter(allBtn);
+        }
 
-function applyFilter() {
-    const searchInput = document.getElementById("searchKeyword").value.toLowerCase().trim();
-    const cards = document.querySelectorAll(".item-card");
-    const tagLower = currentTag.toLowerCase();
-    let visibleCount = 0;
+        applyFilter();
+    }
 
-    cards.forEach(card => {
-        const cardCat = card.getAttribute("data-category");
-        const cardKeywords = (card.getAttribute("data-keywords") || "").toLowerCase();
-        const cardText = card.innerText.toLowerCase();
+    function toggleTag(tag, btn) {
+        if (currentTag === tag) {
+            currentTag = '';
+            btn.classList.remove('active');
+        } else {
+            document.querySelectorAll('.kw-tag').forEach(b => b.classList.remove('active'));
+            currentTag = tag;
+            btn.classList.add('active');
+        }
+        applyFilter();
+    }
 
-        const matchCategory = (currentCategory === 'all' || cardCat === currentCategory);
-        const matchTag = (!currentTag || cardText.includes(tagLower) || cardKeywords.includes(tagLower));
-        const matchSearch = (!searchInput || cardText.includes(searchInput) || cardKeywords.includes(searchInput));
+    function resetFilters() {
+        currentCategory = 'all';
+        currentTag = '';
+        document.getElementById('searchKeyword').value = '';
 
-        const isVisible = matchCategory && matchTag && matchSearch;
-        card.style.display = isVisible ? "block" : "none";
+        const allBtn = document.querySelector(".category-tab-wrap .tab-btn[onclick*='all']");
+        document.querySelectorAll('.category-tab-wrap .tab-btn').forEach(b => b.classList.remove('active'));
+        if (allBtn) {
+            allBtn.classList.add('active');
+            scrollToCenter(allBtn);
+        }
 
-        if (isVisible) visibleCount++;
-    });
+        document.querySelectorAll('.kw-tag').forEach(b => b.classList.remove('active'));
 
-    const noResultDiv = document.getElementById("noResult");
-    if (noResultDiv) {
+        applyFilter();
+    }
+
+    function applyFilter() {
+        const searchInput = document.getElementById("searchKeyword").value.toLowerCase().trim();
+        const cards = document.querySelectorAll(".item-card");
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+            const cardCat = card.getAttribute("data-category");
+            const cardKeywords = (card.getAttribute("data-keywords") || "").toLowerCase();
+            const cardText = card.innerText.toLowerCase();
+
+            const matchCategory = (currentCategory === 'all' || cardCat === currentCategory);
+            const matchTag = (currentTag === '' || cardText.includes(currentTag.toLowerCase()) || cardKeywords.includes(currentTag.toLowerCase()));
+            const matchSearch = (searchInput === '' || cardText.includes(searchInput) || cardKeywords.includes(searchInput));
+
+            if (matchCategory && matchTag && matchSearch) {
+                card.style.display = "block";
+                visibleCount++;
+            } else {
+                card.style.display = "none";
+            }
+        });
+
+        const noResultDiv = document.getElementById("noResult");
         noResultDiv.style.display = (visibleCount === 0) ? "block" : "none";
     }
-}
 
-function checkTabScroll() {
-    const wrap = document.getElementById('categoryTabWrap');
-    if (!wrap) return;
+    function checkTabScroll() {
+        const $wrap = $('#categoryTabWrap');
+        if (!$wrap.length) return;
 
-    const scrollLeft = wrap.scrollLeft;
-    const maxScrollLeft = wrap.scrollWidth - wrap.clientWidth;
+        const el = $wrap[0];
+        const scrollLeft = el.scrollLeft;
+        const maxScrollLeft = el.scrollWidth - el.clientWidth;
 
-    const $leftArrow = $('.tab-scroll-arrow.arrow-left');
-    const $rightArrow = $('.tab-scroll-arrow.arrow-right');
+        const $leftArrow = $('.tab-scroll-arrow.arrow-left');
+        const $rightArrow = $('.tab-scroll-arrow.arrow-right');
 
-    if (maxScrollLeft <= 2) {
-        $leftArrow.hide();
-        $rightArrow.hide();
-        return;
+        if (maxScrollLeft <= 2) {
+            $leftArrow.hide();
+            $rightArrow.hide();
+            return;
+        }
+
+        if (scrollLeft > 5) {
+            $leftArrow.fadeIn(150);
+        } else {
+            $leftArrow.fadeOut(150);
+        }
+
+        if (scrollLeft < maxScrollLeft - 5) {
+            $rightArrow.fadeIn(150);
+        } else {
+            $rightArrow.fadeOut(150);
+        }
     }
 
-    scrollLeft > 5 ? $leftArrow.fadeIn(150) : $leftArrow.fadeOut(150);
-    scrollLeft < maxScrollLeft - 5 ? $rightArrow.fadeIn(150) : $rightArrow.fadeOut(150);
-}
+    // Dynamic Style Injection
+    $(function () {
 
-$(function () {
-    checkTabScroll();
-    $('#categoryTabWrap').on('scroll', checkTabScroll);
-    $(window).on('resize', checkTabScroll);
-});
-</script >
+        checkTabScroll();
+
+        $('#categoryTabWrap').on('scroll', checkTabScroll);
+        $(window).on('resize', checkTabScroll);
+    });
