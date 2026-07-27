@@ -289,7 +289,6 @@
                     flex-wrap: nowrap;
                     scrollbar-width: none;
                     -webkit-overflow-scrolling: touch;
-                    border-bottom: 1px solid #999;
                 }
 
                 .category-tab-wrap::-webkit-scrollbar {
@@ -302,12 +301,13 @@
                     font-size: 14px;
                     position: relative;
                     z-index: 1;
+                    border-bottom: 1px solid #999;
                 }
 
                 .category-tab-wrap .tab-btn.active {
                     color: #222;
                     font-weight: 500;
-                    border-bottom: 2px solid #222 !important;
+                    border-bottom: 1px solid #222;
                 }
 
                 /* 2. 키워드 검색 부분 가로 100% 정렬 & 돋보기 대신 PC 스타일 '검색' 텍스트 강제 적용 */
