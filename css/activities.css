@@ -391,14 +391,14 @@ a:hover {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 819px) {
     body {
         padding-bottom: 80px;
     }
 
-    /* .activities-page {
-        padding: 32px 16px;
-    } */
+    .activities-page {
+        padding-top: 16px;
+    }
 
     .activities-grid,
     .related-grid {
