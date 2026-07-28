@@ -657,7 +657,6 @@ const activities = [
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 동류암로 20, 플레이스 캠프 액티비티 라운지</p>
         <p class="ref-bu-list">※ 제공 항목: 요가 매트</p>
         <p class="ref-bu-list">※ 개인 준비물: 편안한 복장</p>
-        <p class="ref-bu-list">※ 본 프로그램은 플레이스 캠프가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 해당 클래스는 2인 이상 모객 시 진행되는 프로그램입니다.</p>
         <p class="ref-bu-list">※ 강사 일정에 따라 운영 요일에 변동이 있을 수 있습니다.</p>
         <p class="ref-bu-list">※ 세부 내용은 변경될 수 있습니다.</p>
