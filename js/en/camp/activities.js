@@ -75,11 +75,18 @@ const activities = [
 		category: 'REST',
 		date: 'Daily',
 		duration: '10:00 ~ 17:00',
-		priceGeneral: 'KRW 60,000',
-		priceGuest: 'KRW 45,000',
+		priceGeneral: `
+		Adults KRW 60,000<br />
+		Children KRW 40,000
+		`,
+		priceGuest: `
+		Adults: KRW 45,000<br />
+		Children: KRW 33,000
+		`,
 		information: `
         <p class="ref-bu-list">※ Location: 229-16, Gujwahaean-ro, Gujwa-eup, Jeju-si, Jeju-do<br />
         (Takes approx. 31 minutes by car from Playce Camp)</p>
+		<p class="ref-bu-list">※ Children: Ages 37 months–13 years</p>
         <p class="ref-bu-list">※ Participants must travel individually to the program location, not Playce Camp.</p>
         <p class="ref-bu-list">※ Please arrive 20 minutes before departure for smooth boarding.</p>
         <p class="ref-bu-list">※ Minimum departure capacity is 10 passengers. If the minimum number is not met, the schedule may be canceled or departure time adjusted, in which case a 100% refund will be issued.</p>
