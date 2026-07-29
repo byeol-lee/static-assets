@@ -75,11 +75,18 @@ const activities = [
         category: 'REST',
         date: 'Daily',
         duration: '10:00 ~ 17:00',
-        priceGeneral: 'KRW 60,000',
-        priceGuest: 'KRW 45,000',
+        priceGeneral: `
+		Adults KRW 60,000<br />
+		Children KRW 40,000
+		`,
+		priceGuest: `
+		Adults: KRW 45,000<br />
+		Children: KRW 33,000
+		`,
         information: `
         <p class="ref-bu-list">※ Location: 229-16 Gujwahaean-ro, Gujwa-eup, Jeju-si, Jeju-do<br />
-      (Takes approx. 35 minutes by car from Phoenix Island)</p>
+        (Takes approx. 35 minutes by car from Phoenix Island)</p>
+        <p class="ref-bu-list">※ Children: Ages 37 months–13 years</p>
         <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
         <p class="ref-bu-list">※ Please arrive 20 minutes prior to departure for smooth boarding.</p>
         <p class="ref-bu-list">※ Minimum passenger count for departure is 10 people. If the minimum is not met, the schedule may be canceled or the departure time changed, in which case a 100% refund will be issued.</p>
