@@ -78,11 +78,18 @@ const activities = [
 		category: 'REST',
 		date: '매일',
 		duration: '10:00 ~ 17:00',
-		priceGeneral: '60,000원',
-		priceGuest: '45,000원',
+		priceGeneral: `
+		성인 60,000원<br />
+		소인 40,000원
+		`,
+		priceGuest: `
+		성인 45,000원<br />
+		소인 33,000원
+		`,
 		information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 구좌읍 구좌해안로 229-16<br />
         (휘닉스 아일랜드에서 차량으로 약 35분 소요)</p>
+		<p class="ref-bu-list">※ 소인 기준: 37개월 ~ 13세</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
         <p class="ref-bu-list">※ 원활한 탑승을 위해 출항 20분 전까지 도착해 주세요.</p>
         <p class="ref-bu-list">※ 최소 출항 인원은 10명입니다. 예약 인원 미달 시 항차가 취소되거나 출항 시간이 변경될 수 있으며, 이 경우 100% 환불해 드립니다.</p>
