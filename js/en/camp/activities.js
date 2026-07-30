@@ -576,22 +576,16 @@ const activities = [
     {
         id: 14,
         program: 'pottery-class',
-		title: 'Seongji Pottery Wheel Class',
-		subtitle: 'Experience pottery shaping crafted by delicate fingertips at Seongji Pottery',
+		title: 'Pottery Class',
+		subtitle: 'Create a special keepsake with your own hands through a traditional pottery experience.',
 		description: `
-        An experience where you make traditional pottery using a potter's wheel.<br />
-        Select your desired items like 2 teacups, plates, or mugs to create. Completed works will be delivered via courier after two months!<br />
-        (Shipping fees are included in the Play participation fee.)<br />
-        If you wish to create larger pieces or add intricate inlaid patterns, extra payment can be made on-site.<br />
-        <br />
-        [About Seongji Pottery]<br />
-        Seongji Pottery has been sharing pleasant encounters through traditional pottery experiences in Jeju for 25 years.<br />
-        It is registered as a career experience certification institution designated by the Ministry of Education and designated as a traditional cultural personality education center.<br />
-        A healing space for everyone—couples, families, groups, or individuals of all ages and genders.
+        Experience the art of traditional pottery using a potter's wheel to create your own unique ceramic piece.<br />
+		Choose from two teacups, a plate, a mug, or other available items and craft them yourself.<br />
+		Your finished piece will be fired and delivered to you by courier approximately two months later.<br />
+		If you would like to create a larger piece or add decorative patterns using the traditional inlay technique, you may do so by paying an additional fee on site.
         `,
-		thumbnail: '/api/editor/attach/view/default/2025/05/IQTnwc3f1aPsEtulIkYm_1_',
+		thumbnail: '/api/editor/attach/view/default/2025/05/NRjatN0z0eClQ9m41w4B_1_',
 		heroImage: [
-			'/api/editor/attach/view/default/2025/05/IQTnwc3f1aPsEtulIkYm_1_',
 			'/api/editor/attach/view/default/2025/05/NRjatN0z0eClQ9m41w4B_1_',
 			'/api/editor/attach/view/default/2025/05/jfYpdDZlBBROOTuw1BI8_1_',
 			'/api/editor/attach/view/default/2025/05/CzltJ9UVhiQKzFgg7kme_1_'
@@ -609,18 +603,9 @@ const activities = [
         <p class="ref-bu-list">※ Items provided: Wheel-spun ceramic artwork(2 teacups or plate or mug, etc.)</p>
         `,
 		notice: `
-        <li>Same-day reservation unavailable.(Phone inquiry for same-day booking: +82-64-766-3083)</li>
-        <li>Reservations close at 17:00 on the day prior to use.</li>
-        <li>Phone & Naver TalkTalk consultations: Weekdays(Mon ~ Fri) 09:00 ~ 18:00.</li>
-        <li>Detailed information can be checked via Naver Booking - Details.</li>
-        <li>On-site booking is accepted for remaining slots, but if advance booking closes, on-site booking is unavailable.</li>
         <li>This program is conducted in Korean only.</li>
-        <li>Hotel guest discount does not apply to this program.</li>
-        <li>Nighttime bookings(between 17:00 previous day and 09:00 same day) or same-day bookings may be subject to change or cancellation depending on availability and weather conditions.</li>
-        <li>No-Shows will be declared if absent without prior notice or arriving more than 10 minutes after scheduled time.</li><br />
-        <li>Activity programs operate on a advance reservation basis.</li>
-        <li>This program is subject to change based on organizer and host circumstances.</li>
-        <li>Hosts may cancel participation if a participant is in an unfit condition(intoxication, excitement, hostile behavior, etc.).</li><br />
+		<li>Guests who fail to arrive without prior notice or arrive more than 10 minutes after the program starts may be considered a No-Show and may not be allowed to participate.</li>
+		<li>The schedule and program details are subject to change depending on operational circumstances or the host's discretion.</li><br />
         <div class="common-txt">
             <p class="strong">[Cancellation/Refund Policy]</p>
             <ul class="dot-bu-list">
