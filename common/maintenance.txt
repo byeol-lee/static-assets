@@ -1469,7 +1469,7 @@
     }
 
     .mob .promotion.activities .controls {
-        display: block;
+        display: inline-flex;
     }
 </style>
 
@@ -1606,7 +1606,7 @@
     <div class="main-thumb-list">
         <ul class="list">
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/jeju/activities/program?program=kitesurfing"
+                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=kitesurfing"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
                         <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_"
@@ -1619,7 +1619,7 @@
                 </a>
             </li>
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/jeju/activities/program?program=yacht-tour"
+                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=yacht-tour"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
                         <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_"
@@ -1632,7 +1632,7 @@
                 </a>
             </li>
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/jeju/activities/program?program=scuba-diving"
+                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=scuba-diving"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
                         <img src="https://phoenixhnr.co.kr/images/ko/activity/playcecamp/outdoor/out-scuba-diving-idx01.jpg"
@@ -1645,7 +1645,7 @@
                 </a>
             </li>
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/jeju/activities/program?program=surfing-class"
+                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=surfing-class"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
                         <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_"
@@ -1658,7 +1658,7 @@
                 </a>
             </li>
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/jeju/activities/program?program=keyring-diy"
+                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=keyring-diy"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
                         <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_"
@@ -1671,7 +1671,7 @@
                 </a>
             </li>
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/jeju/activities/program?program=bookmark-diy"
+                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=bookmark-diy"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
                         <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_"
@@ -1684,7 +1684,7 @@
                 </a>
             </li>
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/jeju/activities/program?"
+                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
                         <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_"
@@ -1697,7 +1697,7 @@
                 </a>
             </li>
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/jeju/activities/program?program=candle-diy"
+                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=candle-diy"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
                         <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_"
