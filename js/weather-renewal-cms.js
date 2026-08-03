@@ -76,6 +76,23 @@ const SEOUL_NY = 126;
 const IS_PARK =
 	document.querySelector('.weather-wrap.park');
 
+/* ============================
+Auto-detect Korean topic marke
+============================ */
+function getEunNeun(text) {
+	if (!text) return '';
+	const cleanText = text.trim();
+	const lastChar = cleanText.charAt(cleanText.length - 1);
+	const unicode = lastChar.charCodeAt(0);
+
+	// 한글 범위(가 ~ 힣) 체크 후 종성(받침) 여부 판별
+	if (unicode >= 0xAC00 && unicode <= 0xD7A3) {
+		const hasBatchim = (unicode - 0xAC00) % 28 !== 0;
+		return `${cleanText}${hasBatchim ? '은' : '는'}`;
+	}
+	return `${cleanText}는`;
+}
+
 /* =========================
 current weather
 ========================= */
@@ -456,7 +473,7 @@ function setWeather(data) {
 	let desc = '';
 
 	$('#weatherRegionName').text(
-		REGION_NAME
+		getEunNeun(REGION_NAME)
 	);
 
 	$('#weatherRegionNameText').text(
@@ -769,14 +786,6 @@ async function loadWeather() {
 
 		const weekly =
 			await getWeeklyWeather();
-
-		// if (
-		//     weekly.length > 0 &&
-		//     !weekly[0].min
-		// ) {
-		//     weekly[0].min =
-		//         weather.temp;
-		// }
 
 		if (weekly.length > 0) {
 
