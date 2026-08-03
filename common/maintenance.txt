@@ -1517,19 +1517,9 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-end="2026-07-30T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/07/qMRNd6judSd642U1Cx47_1_');">
-                    <a href="/page/pyeongchang/board/event/150000047000" class="modal-slider-link" target="_blank">
-                    </a>
-                </li>
-                <li class="modal-slider-item swiper-slide" data-end="2026-08-01T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/07/fN1lMjuKpyRJcbuKe1tw_1_');">
-                    <a href="/page/pyeongchang/board/event/190000047026" class="modal-slider-link" target="_blank">
-                    </a>
-                </li>
-                <li class="modal-slider-item swiper-slide" data-end="2026-07-31T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/07/6nvCR6fNAvrAQKr8l8Ah_1_');">
-                    <a href="/page/pyeongchang/board/package/16095" class="modal-slider-link" target="_blank">
+                <li class="modal-slider-item swiper-slide" data-end="2026-08-24T00:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/08/mcuk5AiV4Xtm5T4PiJK4_1_');">
+                    <a href="/page/pyeongchang/board/event/100000046648" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
             </ul>
