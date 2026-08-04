@@ -1,9 +1,6 @@
 @charset "UTF-8";
 
 * {
-    /* box-sizing: border-box;
-    margin: 0;
-    padding: 0; */
     font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
 }
 
@@ -178,7 +175,6 @@
 .custom-marker.active {
     background-color: #0079c3;
     color: #ffffff;
-    /* transform: scale(1.08); */
 }
 
 .custom-marker .badge {
@@ -187,7 +183,6 @@
     background-color: #0079c3;
     color: white;
     border-radius: 50%;
-    display: flex;
     display: none !important;
     align-items: center;
     justify-content: center;
@@ -242,7 +237,6 @@
     background-color: #ffffff;
     color: #0079c3;
     border-radius: 50%;
-    display: flex;
     display: none !important;
     align-items: center;
     justify-content: center;
@@ -284,6 +278,9 @@
     word-break: break-all;
 }
 
+/* ==================================================
+   모바일 전용 스타일 (반응형)
+   ================================================== */
 @media (max-width: 819px) {
     #container {
         position: relative;
@@ -291,24 +288,25 @@
         left: 0;
         transform: none;
         flex-direction: column;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
         max-width: 100%;
-        max-height: 100%;
+        height: auto; /* 고정 높이 해제 */
+        max-height: none;
         border-radius: 0;
         box-shadow: none;
+        overflow-x: hidden; /* 가로 스크롤 방지 */
     }
 
     #map {
         width: 100%;
-        height: 30vh;
+        height: 35vh; /* 요청하신 35vh 적용 */
         flex: none;
         order: 1;
     }
 
     #sidebar {
         width: 100%;
-        height: 70vh;
+        height: auto; /* 고정 높이 해제하여 내용만큼 늘어남 */
         order: 2;
         box-shadow: none;
         display: flex;
@@ -325,6 +323,8 @@
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
         flex-shrink: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .thumb-scroll-bar::-webkit-scrollbar {
@@ -344,7 +344,6 @@
 
     .thumb-item.active {
         opacity: 1;
-        /* transform: scale(1.03); */
     }
 
     .thumb-item .img-wrapper {
@@ -373,15 +372,17 @@
     }
 
     .place-list {
-        flex: 1;
-        overflow-y: auto;
+        flex: none;
+        overflow-y: visible; /* 자체 스크롤 제거 */
         padding: 0;
+        border-bottom: none;
     }
 
     .place-item {
         display: none;
         padding: 16px;
         border-bottom: none;
+        box-sizing: border-box;
     }
 
     .place-item.active {
