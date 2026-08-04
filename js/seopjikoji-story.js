@@ -45,7 +45,7 @@ const locations = [
         detailDesc: "글라스 하우스 앞 야외 정원은 해맞이의 감동을 더하기 위해 기하학적 형태로 경사지게 디자인 되어, 사계절 화려한 꽃들로 잊지 못할 추억을 선사해 줄 것입니다. 야외 정원에는 성산일출봉을 배경으로 기념 사진을 찍을 수 있는 ‘그랜드 스윙’이 있습니다.",
         img: "/api/editor/attach/view/default/2026/08/sR5M9NWgu9XV67sZEldX_1_",
         walkTime: "도보 14분",
-        link: "#",
+        link: "https://phoenixhnr.co.kr/static/jeju/facilities/glasshouse-garden",
         lat: 33.4295,
         lng: 126.9345
     },
@@ -55,7 +55,7 @@ const locations = [
         detailDesc: "세 개의 입구가 있는 대형 거석문으로 어느 쪽으로 가야할지를 알려주는 이정표 역할을 합니다. 행복의 문을 지나면서 세 가지 소원을 빌면 이루어 진다고 하니, 사랑하는 사람과 함께 행복의 문을 지나며 소원을 빌어보세요!",
         img: "/api/editor/attach/view/default/2026/08/D1DMNo4tQBsv645MHdO1_1_",
         walkTime: "도보 10분",
-        link: "#",
+        link: false,
         lat: 33.4296,
         lng: 126.9285
     },      
@@ -65,7 +65,7 @@ const locations = [
         detailDesc: "섭지코지 붉은 오름 정상에 1998년 12월에 설치된 무인 등대입니다. 야간에 백 등을 4초 간격으로 점등하여, 약 20km 거리에서도 확인이 가능합니다.",
         img: "/api/editor/attach/view/default/2026/08/vAq71auk6JuOK7qCVv57_1_",
         walkTime: "도보 15분",
-        link: "https://example.com",
+        link: false,
         lat: 33.4274,
         lng: 126.9336
     },
@@ -75,7 +75,7 @@ const locations = [
         detailDesc: "제주의 지형을 그대로 본떠 만들어진 올레길 미로(가운데 한라산 정산 표현) 나지막한 돌담 사이 좁은 골목길마다 제주에서만 볼 수 있는 붉은색의 화산제 송이 흙이 깔려 있어 제주도만의 정치를 물씬 느끼실 수 있습니다.",
         img: "/api/editor/attach/view/default/2026/08/RvnbkalFfgCmh5A4oF5w_1_",
         walkTime: "도보 6분",
-        link: "#",
+        link: false,
         lat: 33.4276,
         lng: 126.9292
     }
