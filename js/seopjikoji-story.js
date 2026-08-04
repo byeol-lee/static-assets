@@ -161,13 +161,13 @@ kakao.maps.load(function () {
         const walkTimeHtml = isValidWalkTime
             ? `<div class="walk-info">
                 <img src="https://phoenixhnr.co.kr/images/ko/experience/ico-address.png" alt="위치 아이콘" class="ico-address">
-                <span>휘닉스 아일랜드 B동 기준 ${loc.walkTime}</span>
+                <span>B동 기준 ${loc.walkTime}</span>
                </div>`
             : '';
 
         const isValidLink = loc.link && loc.link !== "false" && loc.link !== false;
         const linkHtml = isValidLink
-            ? `<a href="${loc.link}" class="detail-link" onclick="event.stopPropagation();">자세히 보기</a>`
+            ? `<a href="${loc.link}" class="detail-link" target="_blank" onclick="event.stopPropagation();">자세히 보기</a>`
             : '';
 
         const listItem = document.createElement('li');
