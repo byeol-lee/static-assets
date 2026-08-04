@@ -199,10 +199,16 @@ kakao.maps.load(function () {
     });
 
     function selectPlace(index) {
+        const isAlreadyActive = listItems[index].classList.contains('active');
+
         infoOverlays.forEach(overlay => overlay.setMap(null));
         listItems.forEach(item => item.classList.remove('active'));
         thumbItems.forEach(item => item.classList.remove('active'));
         markerElements.forEach(el => el.classList.remove('active'));
+
+        if (isAlreadyActive) {
+            return;
+        }
 
         const targetInfoOverlay = infoOverlays[index];
         const targetLoc = locations[index];
