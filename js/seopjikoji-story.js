@@ -176,12 +176,12 @@ kakao.maps.load(function () {
             <div class="item-header">
                 <img src="${loc.img}" alt="${loc.title}" class="list-thumb">
                 <div class="item-info">
-                    <h3>${index + 1}. ${loc.title}</h3>
+                    <h3><span class="num">${index + 1}. </span>${loc.title}</h3>
                     <div class="basic-desc">${loc.desc}</div>
                 </div>
             </div>
             <div class="detail-box">
-                <h2 class="detail-title">${index + 1}. ${loc.title}</h2>
+                <h2 class="detail-title"><span class="num">${index + 1}. </span>${loc.title}</h2>
                 <img src="${loc.img}" alt="${loc.title}" class="detail-img">
                 <div class="detail-desc">${loc.detailDesc}</div>
                 ${walkTimeHtml}
