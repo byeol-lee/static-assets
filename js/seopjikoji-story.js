@@ -207,7 +207,6 @@ kakao.maps.load(function () {
         thumbItems.forEach(item => item.classList.remove('active'));
         markerElements.forEach(el => el.classList.remove('active'));
 
-        // PC(width > 820px)에서만 이미 활성화된 상태를 다시 누르면 닫힘
         if (isPc && isAlreadyActive) {
             return;
         }
@@ -226,8 +225,6 @@ kakao.maps.load(function () {
 
         if (isPc) {
             listItems[index].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        } else {
-            placeListEl.scrollTop = 0;
         }
     }
 
