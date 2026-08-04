@@ -723,7 +723,7 @@ const activities = [
         </div>
         `,
 		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe8PMQr5Pl0zvPQ5xSPcNaZLvoR2Ahg-e-aBWOw47_cWOghHw/viewform',
-		display: true,
+		display: false,
 	},
 	{
 		id: 17,
