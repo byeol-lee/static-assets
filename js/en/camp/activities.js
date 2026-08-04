@@ -998,6 +998,6 @@ const activities = [
         </div>
         `,
 		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfWwMFZdUZWYKse-ljK-VPuKbB3IPNsoB4LuLSabeqN_uj-kg/viewform',
-		display: true,
+		display: false,
 	}
 ];
