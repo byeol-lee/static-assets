@@ -6,8 +6,8 @@ const locations = [
         img: "/api/editor/attach/view/default/2026/08/pFJQVGG7HEuQv2lIdX24_1_",
         walkTime: false,
         link: false,
-        lat: 33.4293,
-        lng: 126.9292
+        lat: 33.4303,
+        lng: 126.9293
     },
     {
         title: "글라스 하우스",
@@ -16,8 +16,8 @@ const locations = [
         img: "/api/editor/attach/view/default/2026/08/HugWfXInyKzSXaJjXBMQ_1_",
         walkTime: "도보 12분",
         link: "/static/jeju/architecture/glass-house",
-        lat: 33.4291,
-        lng: 126.9339
+        lat: 33.4285,
+        lng: 126.9337
     },
     {
         title: "유민 아르누보 뮤지엄",
