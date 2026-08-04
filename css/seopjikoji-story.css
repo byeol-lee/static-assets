@@ -178,7 +178,7 @@
 .custom-marker.active {
     background-color: #0079c3;
     color: #ffffff;
-    transform: scale(1.08);
+    /* transform: scale(1.08); */
 }
 
 .custom-marker .badge {
@@ -322,7 +322,6 @@
         padding: 16px;
         overflow-x: auto;
         white-space: nowrap;
-        border-bottom: 1px solid #f0f0f0;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
         flex-shrink: 0;
