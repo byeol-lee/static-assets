@@ -199,6 +199,7 @@ kakao.maps.load(function () {
     });
 
     function selectPlace(index) {
+        const isPc = window.innerWidth > 820;
         const isAlreadyActive = listItems[index].classList.contains('active');
 
         infoOverlays.forEach(overlay => overlay.setMap(null));
@@ -206,7 +207,8 @@ kakao.maps.load(function () {
         thumbItems.forEach(item => item.classList.remove('active'));
         markerElements.forEach(el => el.classList.remove('active'));
 
-        if (isAlreadyActive) {
+        // PC(width > 820px)에서만 이미 활성화된 상태를 다시 누르면 닫힘
+        if (isPc && isAlreadyActive) {
             return;
         }
 
@@ -222,7 +224,7 @@ kakao.maps.load(function () {
 
         thumbItems[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
 
-        if (window.innerWidth > 820) {
+        if (isPc) {
             listItems[index].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         } else {
             placeListEl.scrollTop = 0;
