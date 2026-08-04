@@ -22,12 +22,12 @@ html {
     height: 100vh;
     max-height: 600px;
     margin: 0 auto;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     background: #ffffff;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
     border-radius: 12px;
     overflow: hidden;
 }
@@ -35,8 +35,8 @@ html {
 #sidebar {
     width: 380px;
     height: 100%;
-    background-color: #ffffff;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+    /* background-color: #ffffff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05); */
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -59,6 +59,10 @@ html {
     border-bottom: 1px solid #f0f0f0;
     cursor: pointer;
     transition: background 0.2s ease;
+}
+
+.place-item:first-child {
+    border-top: 1px solid #f0f0f0;
 }
 
 .place-item:hover {
