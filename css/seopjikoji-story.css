@@ -35,17 +35,19 @@
     overflow-y: auto;
     flex: 1;
     scroll-behavior: smooth;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .place-item {
     padding: 20px;
-    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
     cursor: pointer;
     transition: background 0.2s ease;
 }
 
 .place-item:last-child {
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: none;
 }
 
 .place-item:hover {
@@ -107,9 +109,7 @@
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 14px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 8px;
 }
 
 .place-item .detail-desc {
@@ -279,14 +279,6 @@
 }
 
 @media (max-width: 819px) {
-
-    /* body,
-    html {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    } */
-
     #container {
         position: relative;
         top: 0;
@@ -303,14 +295,14 @@
 
     #map {
         width: 100%;
-        height: 50vh;
+        height: 30vh;
         flex: none;
         order: 1;
     }
 
     #sidebar {
         width: 100%;
-        height: 50vh;
+        height: 70vh;
         order: 2;
         box-shadow: none;
         display: flex;
@@ -321,7 +313,7 @@
     .thumb-scroll-bar {
         display: flex;
         gap: 16px;
-        padding: 16px 20px 12px;
+        padding: 16px;
         overflow-x: auto;
         white-space: nowrap;
         border-bottom: 1px solid #f0f0f0;
@@ -338,7 +330,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 72px;
+        width: 56px;
         cursor: pointer;
         opacity: 0.6;
         transition: opacity 0.2s ease, transform 0.2s ease;
@@ -347,16 +339,15 @@
 
     .thumb-item.active {
         opacity: 1;
-        transform: scale(1.03);
+        /* transform: scale(1.03); */
     }
 
     .thumb-item .img-wrapper {
-        width: 58px;
-        height: 58px;
+        width: 56px;
+        height: 56px;
         border-radius: 50%;
         overflow: hidden;
-        margin-bottom: 6px;
-        border: 2px solid transparent;
+        margin-bottom: 8px;
     }
 
     .thumb-item img {
@@ -384,7 +375,7 @@
 
     .place-item {
         display: none;
-        padding: 20px;
+        padding: 16px;
         border-bottom: none;
     }
 
@@ -396,7 +387,7 @@
         display: none;
     }
 
-    .place-item .detail-box {
+    .place-item.active .detail-box {
         display: block !important;
         margin-top: 0;
         border-top: none !important;
