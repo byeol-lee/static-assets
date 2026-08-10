@@ -1472,8 +1472,8 @@
         display: inline-flex;
     }
 
-    .main-jeju > .wedding-info + .yuminart,
-    .main-jeju > .wedding + .yuminart {
+    .main-jeju .wedding-info + .yuminart,
+    .main-jeju .wedding + .yuminart {
         display: none;
     }
 </style>
