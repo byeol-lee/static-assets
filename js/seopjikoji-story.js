@@ -262,7 +262,7 @@ kakao.maps.load(function () {
         thumbItems[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
 
         if (isPc) {
-            listItems[index].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            listItems[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     }
 
