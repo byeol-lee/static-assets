@@ -142,11 +142,14 @@
     margin: 0 auto;
     text-align: center;
     width: 120px;
+    transition: all 0.2s ease;
 }
 
 .place-item .detail-link:hover {
     color: #fff;
     background-color: #999;
+    text-decoration: none;
+    transition: all 0.2s ease;
 }
 
 #map {
