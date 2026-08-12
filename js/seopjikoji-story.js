@@ -112,7 +112,7 @@ const locations = [
 ];
 
 kakao.maps.load(function () {
-    const container = document.getElementById('map');
+    const container = document.getElementById('seopjikoji-story');
 
     // 노출할 데이터만 필터링
     const activeLocations = locations.filter(loc => loc.visible !== false);
