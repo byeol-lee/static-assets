@@ -149,7 +149,7 @@
     background-color: #999;
 }
 
-#seopjikoji-map {
+#map {
     flex: 1;
     height: 100%;
 }
@@ -293,7 +293,7 @@
         overflow-x: hidden; /* 가로 스크롤 방지 */
     }
 
-    #seopjikoji-map {
+    #map {
         width: 100%;
         height: 35vh; /* 요청하신 35vh 적용 */
         flex: none;
