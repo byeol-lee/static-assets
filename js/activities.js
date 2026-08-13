@@ -1,5 +1,53 @@
 const activities = [
     {
+		program: 'wing-surfing',
+		title: '윙 서핑',
+		subtitle: '제주의 아름다운 해안에서 윙 포일링의 기술을 마스터하세요!',
+		description: `
+        제주 바다에서 즐기는 윙 포일링 프라이빗 레슨입니다.<br />
+        초보자부터 실력 향상을 원하는 분까지 수준에 맞춘 2시간 맞춤 강습으로 진행되며, 필요한 장비는 모두 제공됩니다.<br />
+        당일 바람과 조류에 따라 최적의 해변에서 진행되어 안전하고 즐겁게 윙 포일링을 경험할 수 있습니다.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
+			'/api/editor/attach/view/default/2026/08/2AE83MGdLdnl5hRKRKMF_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: '',
+		duration: '09:00 ~ 18:00',
+		priceGeneral: `
+        150,000원<br />
+        (2시간/장비 대여료 포함)
+        `,
+		priceGuest: `
+        135,000원<br />
+        (2시간/장비 대여료 포함)
+        `,
+		information: `
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 환해장성로 923<br />
+        (휘닉스 아일랜드에서 차량으로 약 4분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
+            <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
+            <div class="common-txt">
+                <p class="strong">[취소/환불 규정]</p>
+                <ul class="dot-bu-list">
+                    <li>이용일 1일 전 취소 시 결제 금액의 50%가 취소 수수료로 부과됩니다.</li>
+                    <li>당일 취소 시 결제 금액의 100%가 취소 수수료로 부과됩니다.</li>
+                    <li>기상 악화 또는 업체 사정으로 취소되는 경우에는 100% 환불해 드립니다.</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdiOkPW8VAXjVNJ8WL_fGXVzWSYnQKRirbTcsUXQIf-SpzT3g/viewform?usp=publish-editor',
+		display: true,
+    },
+    {
         id: 1,
 		program: 'kitesurfing',
 		title: '카이트서핑',
