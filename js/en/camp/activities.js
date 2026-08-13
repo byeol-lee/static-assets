@@ -1,6 +1,53 @@
 const activities = [
     {
-        id: 1,
+		program: 'wing-surfing',
+		title: 'Wing Surfing',
+		subtitle: 'Master the art of wing foiling along Jeju’s beautiful coast.',
+		description: `
+        Enjoy a private wing foiling lesson in the waters of Jeju.<br />
+        Whether you're a beginner or looking to improve your skills, each 2-hour lesson is tailored to your experience level, with all necessary equipment provided.<br />
+        Lessons take place at the most suitable beach based on the day's wind and sea conditions, allowing you to experience wing foiling safely and enjoyably.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
+			'/api/editor/attach/view/default/2026/08/2AE83MGdLdnl5hRKRKMF_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: '',
+		duration: '09:00 ~ 18:00',
+		priceGeneral: `
+        KRW 150,000<br />
+        (2 Hour/Equipment rental included)
+        `,
+		priceGuest: `
+        KRW 135,000<br />
+        (2 Hour/Equipment rental included)
+        `,
+		information: `
+        <p class="ref-bu-list">※ Location: 923, Hwanhaejang성-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
+        (Takes approx. 4 minutes by car from Playce Camp)
+        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Playce Camp.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>After receiving the reservation request, your booking may be confirmed or canceled depending on program availability.</li>
+            <li>The program is available upon payment of the fee in advance following booking confirmation.</li><br />
+            <div class="common-txt">
+                <p class="strong">[Cancellation / Refund Policy]</p>
+                <ul class="dot-bu-list">
+                    <li>Cancellation 1 day prior to the date of use: A cancellation fee of 50% of the payment amount will be charged.</li>
+                    <li>Same-day cancellation: A cancellation fee of 100% of the payment amount will be charged.</li>
+                    <li>Cancellations due to severe weather conditions or vendor circumstances: 100% full refund.</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdiOkPW8VAXjVNJ8WL_fGXVzWSYnQKRirbTcsUXQIf-SpzT3g/viewform?usp=publish-editor',
+		display: true,
+    },
+    {
 		program: 'kitesurfing',
 		title: 'Kitesurfing',
 		subtitle: 'A Special Ocean Activity Riding the Wind Across the Sea!',
@@ -52,7 +99,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 2,
 		program: 'yacht-tour',
 		title: 'Yacht Tour in Gimnyeong',
 		subtitle: 'Thrilling sea fishing experience, and a special moment meeting dolphins if you are lucky!',
@@ -115,7 +161,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 3,
 		program: 'scuba-diving',
 		title: 'Discovery Scuba Diving',
 		subtitle: 'A thrilling experience entering the sea while facing Seongsan Ilchulbong',
@@ -166,7 +211,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 4,
 		program: 'surfing-class',
 		title: 'Surfing Class',
 		subtitle: 'An enjoyable Jeju surfing experience, even for beginners',
@@ -217,7 +261,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 5,
 		program: 'keyring-diy',
 		title: 'Keyring DIY',
 		subtitle: 'Special acrylic keyring made with Jeju designs',
@@ -256,7 +299,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 6,
 		program: 'bookmark-diy',
 		title: 'Bookmark DIY',
 		subtitle: 'Stained glass bookmark created with Jeju designs',
@@ -299,7 +341,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 7,
         program: 'hand-mirror-diy',
 		title: 'Hand Mirror DIY',
 		subtitle: 'Hand mirror art class crafted with Jeju vibes',
@@ -341,7 +382,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 8,
         program: 'candle-diy',
 		title: 'Jeju Ocean Candle DIY',
 		subtitle: 'Jeju candle class completed with ocean colors',
@@ -387,7 +427,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 9,
         program: 'mood-lamp-diy',
 		title: 'Hydrangea Mood Lamp DIY',
 		subtitle: 'Hydrangea mood lamp class blooming with light',
@@ -432,7 +471,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 10,
         program: 'tea-class',
 		title: 'Private Tea Class',
 		subtitle: 'Time to slowly focus on yourself with the gentle aroma of tea',
@@ -481,7 +519,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 11,
         program: 'wall-hanging-diy',
 		title: 'Wall Hanging DIY',
 		subtitle: 'Emotional interior decor object made with yarn and fabric, Wall Hanging DIY Class',
@@ -511,7 +548,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 12,
         program: 'glass-art-suncatcher',
 		title: 'Glass Art Suncatcher',
 		subtitle: 'Suncatcher class creating beautiful light and shadow when sunlight shines through',
@@ -542,7 +578,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 13,
         program: 'glass-art-doorbell',
 		title: 'Glass Art Doorbell',
 		subtitle: 'Glass art doorbell class featuring Jeju aesthetic',
@@ -574,7 +609,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 14,
         program: 'pottery-class',
 		title: 'Pottery Class',
 		subtitle: 'Create a special keepsake with your own hands through a traditional pottery experience.',
@@ -621,7 +655,6 @@ const activities = [
 		display: true,
     },
     {
-		id: 15,
 		program: 'day-yoga',
 		title: 'Day Yoga',
 		subtitle: 'Refreshing yoga to greet your travel morning energy',
@@ -678,7 +711,6 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 16,
 		program: 'morning-yoga',
 		title: 'Morning Yoga',
 		subtitle: 'Yoga class awakening mind and body balance with daily wellness programs',
@@ -724,7 +756,6 @@ const activities = [
 		display: false,
 	},
 	{
-		id: 17,
 		program: 'singing-bowl-meditation',
 		title: 'Singing Bowl Meditation',
 		subtitle: 'Meditation awakening mind and body through singing bowl resonance',
@@ -771,7 +802,6 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 18,
 		program: 'tea-ceremony',
 		title: 'Jeju Tea Gathering',
 		subtitle: 'Tea class featuring 3 types of Jeju tea, tea treats, & custom Matcha whisking',
@@ -816,7 +846,6 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 19,
 		program: 'perfume-diy',
 		title: 'Custom Scent DIY',
 		subtitle: 'Signature scent created by blending over 50 varieties of fragrance oils representing Jeju',
@@ -862,7 +891,6 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 20,
 		program: 'diffuser-diy',
 		title: 'Perfume Diffuser DIY',
 		subtitle: 'Making a perfume diffuser to fill Jeju mood',
@@ -907,7 +935,6 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 21,
 		program: 'sachet-class',
 		title: 'Jeju Sachet Class',
 		subtitle: 'Handcrafting a Jeju aesthetic sachet with custom blending',
@@ -950,7 +977,6 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 22,
 		program: 'one-day-wellness',
 		title: 'One-Day Wellness Package',
 		subtitle: 'A one-day wellness package where you can choose two classes at your preferred times',
