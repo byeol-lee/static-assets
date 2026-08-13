@@ -1622,7 +1622,7 @@
     <div class="main-thumb-list">
         <ul class="list">
             <li class="item">
-                <a href="/static/jeju/activities/program?program=wing-surfing"
+                <a href="/static/playcecamp/activities/program?program=wing-surfing"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
                         <img src="/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_"
