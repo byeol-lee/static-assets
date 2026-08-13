@@ -13,8 +13,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
 			'/api/editor/attach/view/default/2026/08/2AE83MGdLdnl5hRKRKMF_1_',
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
 		date: '',
 		duration: '09:00 ~ 18:00',
 		priceGeneral: `
@@ -48,7 +46,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 1,
 		program: 'kitesurfing',
 		title: '카이트서핑',
 		subtitle: '바람을 타고 바다 위를 질주하는 특별한 액티비티!',
@@ -68,9 +65,7 @@ const activities = [
 			'/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_',
 			'/api/editor/attach/view/default/2026/07/dGkT6E7lMtWgszB0yyi3_1_',
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '매일',
+		date: '',
 		duration: '09:00 ~ 18:00',
 		priceGeneral: `
         원데이 325,000원(장비 대여료 포함)<br />
@@ -103,7 +98,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 2,
 		program: 'yacht-tour',
 		title: '김녕에서의 요트 투어',
 		subtitle: '짜릿한 바다 낚시 체험, 운이 좋으면 돌고래를 만나는 특별한 순간까지!',
@@ -122,9 +116,7 @@ const activities = [
 			'/api/editor/attach/view/default/2026/07/hPCeB1a4OtvkyLYm1jpl_1_',
 			'/api/editor/attach/view/default/2026/07/sAkf6QEqghhl9ufuOALl_1_'
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '매일',
+		date: '',
 		duration: '10:00 ~ 17:00',
 		priceGeneral: `
 		성인 60,000원<br />
@@ -166,7 +158,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 3,
 		program: 'scuba-diving',
 		title: '스쿠버 다이빙 체험',
 		subtitle: '성산일출봉을 바라보며 바다로 입수하는 짜릿한 경험',
@@ -181,9 +172,7 @@ const activities = [
 			'/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-2.jpg',
 			'/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-3.jpg'
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '매일',
+		date: '',
 		duration: '09:00, 11:00, 14:00, 15:30(2시간)',
 		priceGeneral: '150,000원',
 		priceGuest: '69,000원',
@@ -217,7 +206,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 4,
 		program: 'surfing-class',
 		title: '서핑 클래스',
 		subtitle: '처음이어도 즐거운 제주 서핑 체험',
@@ -233,8 +221,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/vLeWQGVIL7oRwIe4lYd1_1_',
 			'/api/editor/attach/view/default/2026/06/VtMg21Z66rMqk3tBuiMn_1_'
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
 		date: '',
 		duration: '10:00 ~ 17:00',
 		priceGeneral: `
@@ -268,7 +254,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 5,
 		program: 'keyring-diy',
 		title: '키링 DIY',
 		subtitle: '제주 도안으로 만드는 특별한 아크릴 키링',
@@ -278,8 +263,6 @@ const activities = [
         `,
 		thumbnail: '/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
 		heroImage: '/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
 		date: '',
 		duration: '10:00 ~ 17:00',
 		priceGeneral: '15,000원',
@@ -307,7 +290,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 6,
 		program: 'bookmark-diy',
 		title: '책갈피 DIY',
 		subtitle: '제주 도안으로 완성하는 스테인드 책갈피',
@@ -321,8 +303,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
 			'/api/editor/attach/view/default/2026/06/30su09CIE0F6GU3IXtSq_1_'
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
 		date: '',
 		duration: '10:00 ~ 17:00',
 		priceGeneral: '15,000원',
@@ -350,7 +330,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 7,
         program: 'hand-mirror-diy',
 		title: '손 거울 DIY',
 		subtitle: '제주 감성을 담아 만드는 손거울 아트 클래스',
@@ -363,8 +342,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
 			'/api/editor/attach/view/default/2026/06/z5U5mMjiTvu0JPbv288u_1_'
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
 		date: '',
 		duration: '10:00 ~ 17:00',
 		priceGeneral: '20,000원',
@@ -392,7 +369,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 8,
         program: 'candle-diy',
 		title: '제주 바다 캔들 DIY',
 		subtitle: '바다빛으로 완성하는 제주 캔들 클래스',
@@ -407,8 +383,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_',
 			'/api/editor/attach/view/default/2026/06/W1jsF6a5yYmKXwpGofbK_1_'
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
 		date: '',
 		duration: '10:30 ~ 17:30(30분 단위)',
 		priceGeneral: '30,000원',
@@ -438,7 +412,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 9,
         program: 'mood-lamp-diy',
 		title: '수국 무드등 DIY',
 		subtitle: '빛으로 피어나는 수국 무드등 클래스',
@@ -454,8 +427,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/6xK3s63wSVDpqUGAeUDj_1_',
 			'/api/editor/attach/view/default/2026/06/LB7IVWpIYOKFyUunaPNp_1_'
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
 		date: '',
 		duration: '10:30 ~ 17:30(30분 단위)',
 		priceGeneral: '35,000원',
@@ -483,7 +454,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 10,
         program: 'tea-class',
 		title: '프라이빗 티 클래스',
 		subtitle: '은은한 차의 향과 함께 천천히 나에게 집중하는 시간',
@@ -499,8 +469,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/05/jo9HVC4WZVQzi8unhhqK_1_',
 			'/api/editor/attach/view/default/2026/05/VnQ4g7fZeAN3OgtnLaOu_1_'
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
 		date: '',
 		duration: '12:00, 13:00, 14:00, 15:00(진행 시간: 90분)',
 		priceGeneral: '미진행',
@@ -532,7 +500,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 11,
         program: 'wall-hanging-diy',
 		title: '월 행잉 DIY',
 		subtitle: '실과 패브릭으로 완성하는 감성 인테리어 오브제, 월 행잉 DIY 클래스',
@@ -546,8 +513,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/05/jhZsodnKIazb4kVDV0bn_1_',
 			'/api/editor/attach/view/default/2026/05/NhEbCijYuIcdussy1VxK_1_'
 		],
-		tags: ['ART', 'HANDMADE'],
-		category: 'ART',
 		date: '금 ~ 수요일',
 		duration: '12:00 ~ 16:00',
 		priceGeneral: '60,000원',
@@ -562,7 +527,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 12,
         program: 'glass-art-suncatcher',
 		title: '글라스 아트 썬캐처',
 		subtitle: '햇살이 비치는 순간 더욱 아름다운 빛과 그림자를 만들어 내는 썬캐쳐 클래스',
@@ -576,8 +540,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/05/AMoIJ3UxrVM0UjL7McD5_1_',
 			'/api/editor/attach/view/default/2026/05/MC3G79ZIqbjoOEk0B9Ka_1_'
 		],
-		tags: ['ART', 'DIY', 'INDOCK'],
-		category: 'ART',
 		date: '목 ~ 화요일',
 		duration: '10:00 ~ 17:00',
 		priceGeneral: '38,000원',
@@ -593,7 +555,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 13,
         program: 'glass-art-doorbell',
 		title: '글라스 아트 도어벨',
 		subtitle: '제주의 감성을 담은 글라스 아트 도어벨 클래스',
@@ -608,8 +569,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/05/o5rzMpiF835pPq2QnrRv_1_',
 			'/api/editor/attach/view/default/2026/05/sRnE5927v3LuuVwijOJZ_1_'
 		],
-		tags: ['ART', 'DIY'],
-		category: 'ART',
 		date: '목 ~ 화요일',
 		duration: '10:00 ~ 17:00',
 		priceGeneral: '28,000원',
@@ -625,7 +584,6 @@ const activities = [
 		display: true,
     },
     {
-        id: 14,
         program: 'pottery-class',
 		title: '도예 클래스',
 		subtitle: '손끝으로 빚어내는 특별한 추억, 전통 도자기 체험',
@@ -640,8 +598,6 @@ const activities = [
 			'/api/editor/attach/view/default/2025/05/jfYpdDZlBBROOTuw1BI8_1_',
 			'/api/editor/attach/view/default/2025/05/CzltJ9UVhiQKzFgg7kme_1_'
 		],
-		tags: ['LOCAL', 'HANDMADE', 'EXPERIENCE'],
-		category: 'LOCAL',
 		date: '월 ~ 토',
 		duration: '11:00, 15:00/40분 ~ 60분',
 		priceGeneral: '30,000원',
@@ -671,7 +627,6 @@ const activities = [
 		display: true,
     },
     {
-		id: 15,
 		program: 'day-yoga',
 		title: '데이 요가',
 		subtitle: '여행의 아침을 상쾌하게 맞이하는 리프레쉬 요가',
@@ -686,8 +641,6 @@ const activities = [
 			'/api/editor/attach/view/default/2024/12/xqwW8cryUPuUFvEImLkp_1_',
 			'/api/editor/attach/view/default/2024/12/UX0henYQKukEl3Zha3AB_1_'
 		],
-		tags: ['REST', 'HEALING', 'YOGA'],
-		category: 'REST',
 		date: '',
 		duration: '10:00 ~ 11:20',
 		priceGeneral: '35,000원',
@@ -730,7 +683,6 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 16,
 		program: 'morning-yoga',
 		title: '아침 요가',
 		subtitle: '요일별 다양한 웰니스 프로그램으로 몸과 마음의 균형을 깨우는 요가 클래스',
@@ -745,8 +697,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/05/J846Z0L7LhSlli2PQCh4_1_',
 			'/api/editor/attach/view/default/2026/05/OhDjhJCzmJ6dx8umJcc7_1_'
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
 		date: '월 ~ 일요일',
 		duration: '08:10(진행 시간: 60 ~ 70분)',
 		priceGeneral: '38,000원',
@@ -776,7 +726,6 @@ const activities = [
 		display: false,
 	},
 	{
-		id: 17,
 		program: 'singing-bowl-meditation',
 		title: '싱잉볼 명상',
 		subtitle: '싱잉볼의 울림으로 몸과 마음을 깨우는 명상',
@@ -792,8 +741,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/05/mnxeS8aPZbql2FwODH6J_1_',
 			'/api/editor/attach/view/default/2026/05/VCeh9RuIW5szrSGj7cRL_1_'
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
 		date: '수요일',
 		duration: '17:30(진행 시간: 60분)',
 		priceGeneral: '38,000원',
@@ -823,7 +770,6 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 18,
 		program: 'tea-ceremony',
 		title: '제주 차회',
 		subtitle: '3가지의 제주 차&다식&나만의 말차 만들기로 구성된 티 클래스',
@@ -839,8 +785,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/05/stBEtQKSyMNzkH64oIn1_1_',
 			'/api/editor/attach/view/default/2026/05/rA1GDroJbRsXU80EqN3p_1_'
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
 		date: '금, 토',
 		duration: '13:00(진행 시간: 90분)',
 		priceGeneral: '45,000원',
@@ -868,7 +812,6 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 19,
 		program: 'perfume-diy',
 		title: '나만의 커스텀 향 DIY',
 		subtitle: '제주를 대표하는 50여종의 다양한 향료를 조합하여 만드는 시그니처 향',
@@ -884,8 +827,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/XuGfgUIR9f5VWCQN7aTx_1_'
 		],
 
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
 		date: '',
 		duration: '10:30 ~ 17:30(30분 단위)',
 		priceGeneral: '30,000원',
@@ -914,7 +855,6 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 20,
 		program: 'diffuser-diy',
 		title: '퍼퓸 디퓨저 DIY',
 		subtitle: '제주 무드를 채우는 퍼퓸 디퓨저 만들기',
@@ -929,8 +869,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/M4uZfRaVQXCVTzPPgr5s_1_',
 			'/api/editor/attach/view/default/2026/06/6rpFEecIGZtNJHQY9EKe_1_'
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
 		date: '',
 		duration: '10:30 ~ 17:30(30분 단위)',
 		priceGeneral: '35,000원',
@@ -959,7 +897,6 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 21,
 		program: 'sachet-class',
 		title: '제주 사쉐 클래스',
 		subtitle: '직접 조향하는 제주 감성 사쉐 만들기',
@@ -973,8 +910,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/LhBRgnFzqoPJiaWDjgaE_1_',
 			'/api/editor/attach/view/default/2026/06/2j31jKY4cG3Er3ZkjoAH_1_'
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
 		date: '',
 		duration: '10:30 ~ 17:30(30분 단위)',
 		priceGeneral: '30,000원',
@@ -1002,7 +937,6 @@ const activities = [
 		display: true,
 	},
 	{
-		id: 22,
 		program: 'one-day-wellness',
 		title: '원데이 웰니스 패키지',
 		subtitle: '원하는 시간대의 두 가지 클래스를 선택해 즐기실 수 있는 원데이 웰니스 패키지',
@@ -1022,8 +956,6 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/qukBIhmMZs4fqb8oRaCf_1_',
 			'/api/editor/attach/view/default/2026/06/Lkcq2UkGNkS1pQmYKUBu_1_'
 		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
 		date: '월 ~ 금',
 		duration: '오전/오후',
 		priceGeneral: '60,000원',
