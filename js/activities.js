@@ -69,7 +69,7 @@ const activities = [
 		],
 		tags: ['REST', 'HEALING'],
 		category: 'REST',
-		date: '매일',
+		date: '',
 		duration: '09:00 ~ 18:00',
 		priceGeneral: `
         원데이 325,000원(장비 대여료 포함)<br />
@@ -122,7 +122,7 @@ const activities = [
 		],
 		tags: ['REST', 'HEALING'],
 		category: 'REST',
-		date: '매일',
+		date: '',
 		duration: '10:00 ~ 17:00',
 		priceGeneral: `
 		성인 60,000원<br />
@@ -180,7 +180,7 @@ const activities = [
 		],
 		tags: ['REST', 'HEALING'],
 		category: 'REST',
-		date: '매일',
+		date: '',
 		duration: '09:00, 11:00, 14:00, 15:30(2시간)',
 		priceGeneral: '150,000원',
 		priceGuest: '69,000원',
