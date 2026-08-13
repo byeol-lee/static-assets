@@ -13,6 +13,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
 			'/api/editor/attach/view/default/2026/08/2AE83MGdLdnl5hRKRKMF_1_',
 		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
 		date: '',
 		duration: '09:00 ~ 18:00',
 		priceGeneral: `
@@ -65,7 +67,9 @@ const activities = [
 			'/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_',
 			'/api/editor/attach/view/default/2026/07/dGkT6E7lMtWgszB0yyi3_1_',
 		],
-		date: '',
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: '매일',
 		duration: '09:00 ~ 18:00',
 		priceGeneral: `
         원데이 325,000원(장비 대여료 포함)<br />
@@ -116,7 +120,9 @@ const activities = [
 			'/api/editor/attach/view/default/2026/07/hPCeB1a4OtvkyLYm1jpl_1_',
 			'/api/editor/attach/view/default/2026/07/sAkf6QEqghhl9ufuOALl_1_'
 		],
-		date: '',
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: '매일',
 		duration: '10:00 ~ 17:00',
 		priceGeneral: `
 		성인 60,000원<br />
@@ -172,7 +178,9 @@ const activities = [
 			'/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-2.jpg',
 			'/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-3.jpg'
 		],
-		date: '',
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: '매일',
 		duration: '09:00, 11:00, 14:00, 15:30(2시간)',
 		priceGeneral: '150,000원',
 		priceGuest: '69,000원',
@@ -221,6 +229,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/vLeWQGVIL7oRwIe4lYd1_1_',
 			'/api/editor/attach/view/default/2026/06/VtMg21Z66rMqk3tBuiMn_1_'
 		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
 		date: '',
 		duration: '10:00 ~ 17:00',
 		priceGeneral: `
@@ -263,6 +273,8 @@ const activities = [
         `,
 		thumbnail: '/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
 		heroImage: '/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
 		date: '',
 		duration: '10:00 ~ 17:00',
 		priceGeneral: '15,000원',
@@ -303,6 +315,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
 			'/api/editor/attach/view/default/2026/06/30su09CIE0F6GU3IXtSq_1_'
 		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
 		date: '',
 		duration: '10:00 ~ 17:00',
 		priceGeneral: '15,000원',
@@ -342,6 +356,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
 			'/api/editor/attach/view/default/2026/06/z5U5mMjiTvu0JPbv288u_1_'
 		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
 		date: '',
 		duration: '10:00 ~ 17:00',
 		priceGeneral: '20,000원',
@@ -383,6 +399,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_',
 			'/api/editor/attach/view/default/2026/06/W1jsF6a5yYmKXwpGofbK_1_'
 		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
 		date: '',
 		duration: '10:30 ~ 17:30(30분 단위)',
 		priceGeneral: '30,000원',
@@ -427,6 +445,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/6xK3s63wSVDpqUGAeUDj_1_',
 			'/api/editor/attach/view/default/2026/06/LB7IVWpIYOKFyUunaPNp_1_'
 		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
 		date: '',
 		duration: '10:30 ~ 17:30(30분 단위)',
 		priceGeneral: '35,000원',
@@ -469,6 +489,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/05/jo9HVC4WZVQzi8unhhqK_1_',
 			'/api/editor/attach/view/default/2026/05/VnQ4g7fZeAN3OgtnLaOu_1_'
 		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
 		date: '',
 		duration: '12:00, 13:00, 14:00, 15:00(진행 시간: 90분)',
 		priceGeneral: '미진행',
@@ -513,6 +535,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/05/jhZsodnKIazb4kVDV0bn_1_',
 			'/api/editor/attach/view/default/2026/05/NhEbCijYuIcdussy1VxK_1_'
 		],
+		tags: ['ART', 'HANDMADE'],
+		category: 'ART',
 		date: '금 ~ 수요일',
 		duration: '12:00 ~ 16:00',
 		priceGeneral: '60,000원',
@@ -540,6 +564,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/05/AMoIJ3UxrVM0UjL7McD5_1_',
 			'/api/editor/attach/view/default/2026/05/MC3G79ZIqbjoOEk0B9Ka_1_'
 		],
+		tags: ['ART', 'DIY', 'INDOCK'],
+		category: 'ART',
 		date: '목 ~ 화요일',
 		duration: '10:00 ~ 17:00',
 		priceGeneral: '38,000원',
@@ -569,6 +595,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/05/o5rzMpiF835pPq2QnrRv_1_',
 			'/api/editor/attach/view/default/2026/05/sRnE5927v3LuuVwijOJZ_1_'
 		],
+		tags: ['ART', 'DIY'],
+		category: 'ART',
 		date: '목 ~ 화요일',
 		duration: '10:00 ~ 17:00',
 		priceGeneral: '28,000원',
@@ -598,6 +626,8 @@ const activities = [
 			'/api/editor/attach/view/default/2025/05/jfYpdDZlBBROOTuw1BI8_1_',
 			'/api/editor/attach/view/default/2025/05/CzltJ9UVhiQKzFgg7kme_1_'
 		],
+		tags: ['LOCAL', 'HANDMADE', 'EXPERIENCE'],
+		category: 'LOCAL',
 		date: '월 ~ 토',
 		duration: '11:00, 15:00/40분 ~ 60분',
 		priceGeneral: '30,000원',
@@ -641,6 +671,8 @@ const activities = [
 			'/api/editor/attach/view/default/2024/12/xqwW8cryUPuUFvEImLkp_1_',
 			'/api/editor/attach/view/default/2024/12/UX0henYQKukEl3Zha3AB_1_'
 		],
+		tags: ['REST', 'HEALING', 'YOGA'],
+		category: 'REST',
 		date: '',
 		duration: '10:00 ~ 11:20',
 		priceGeneral: '35,000원',
@@ -697,6 +729,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/05/J846Z0L7LhSlli2PQCh4_1_',
 			'/api/editor/attach/view/default/2026/05/OhDjhJCzmJ6dx8umJcc7_1_'
 		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
 		date: '월 ~ 일요일',
 		duration: '08:10(진행 시간: 60 ~ 70분)',
 		priceGeneral: '38,000원',
@@ -741,6 +775,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/05/mnxeS8aPZbql2FwODH6J_1_',
 			'/api/editor/attach/view/default/2026/05/VCeh9RuIW5szrSGj7cRL_1_'
 		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
 		date: '수요일',
 		duration: '17:30(진행 시간: 60분)',
 		priceGeneral: '38,000원',
@@ -785,6 +821,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/05/stBEtQKSyMNzkH64oIn1_1_',
 			'/api/editor/attach/view/default/2026/05/rA1GDroJbRsXU80EqN3p_1_'
 		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
 		date: '금, 토',
 		duration: '13:00(진행 시간: 90분)',
 		priceGeneral: '45,000원',
@@ -827,6 +865,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/XuGfgUIR9f5VWCQN7aTx_1_'
 		],
 
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
 		date: '',
 		duration: '10:30 ~ 17:30(30분 단위)',
 		priceGeneral: '30,000원',
@@ -869,6 +909,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/M4uZfRaVQXCVTzPPgr5s_1_',
 			'/api/editor/attach/view/default/2026/06/6rpFEecIGZtNJHQY9EKe_1_'
 		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
 		date: '',
 		duration: '10:30 ~ 17:30(30분 단위)',
 		priceGeneral: '35,000원',
@@ -910,6 +952,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/LhBRgnFzqoPJiaWDjgaE_1_',
 			'/api/editor/attach/view/default/2026/06/2j31jKY4cG3Er3ZkjoAH_1_'
 		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
 		date: '',
 		duration: '10:30 ~ 17:30(30분 단위)',
 		priceGeneral: '30,000원',
@@ -956,6 +1000,8 @@ const activities = [
 			'/api/editor/attach/view/default/2026/06/qukBIhmMZs4fqb8oRaCf_1_',
 			'/api/editor/attach/view/default/2026/06/Lkcq2UkGNkS1pQmYKUBu_1_'
 		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
 		date: '월 ~ 금',
 		duration: '오전/오후',
 		priceGeneral: '60,000원',
