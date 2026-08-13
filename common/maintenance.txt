@@ -1622,10 +1622,23 @@
     <div class="main-thumb-list">
         <ul class="list">
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=kitesurfing"
+                <a href="/static/jeju/activities/program?program=wing-surfing"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_"
+                        <img src="/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_"
+                            alt="" class="img">
+                    </div>
+                    <div class="con">
+                        <div class="title">윙 서핑</div>
+                        <div class="info">제주의 아름다운 해안에서 윙 포일링의 기술을 마스터하세요!</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a href="/static/playcecamp/activities/program?program=kitesurfing"
+                    class="link promotion-link countable-banner">
+                    <div class="thumb">
+                        <img src="/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_"
                             alt="" class="img">
                     </div>
                     <div class="con">
@@ -1635,10 +1648,10 @@
                 </a>
             </li>
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=yacht-tour"
+                <a href="/static/playcecamp/activities/program?program=yacht-tour"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_"
+                        <img src="/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_"
                             alt="" class="img">
                     </div>
                     <div class="con">
@@ -1648,10 +1661,10 @@
                 </a>
             </li>
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=scuba-diving"
+                <a href="/static/playcecamp/activities/program?program=scuba-diving"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="https://phoenixhnr.co.kr/images/ko/activity/playcecamp/outdoor/out-scuba-diving-idx01.jpg"
+                        <img src="/images/ko/activity/playcecamp/outdoor/out-scuba-diving-idx01.jpg"
                             alt="" class="img">
                     </div>
                     <div class="con">
@@ -1661,10 +1674,10 @@
                 </a>
             </li>
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=surfing-class"
+                <a href="/static/playcecamp/activities/program?program=surfing-class"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_"
+                        <img src="/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_"
                             alt="" class="img">
                     </div>
                     <div class="con">
@@ -1674,10 +1687,10 @@
                 </a>
             </li>
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=keyring-diy"
+                <a href="/static/playcecamp/activities/program?program=keyring-diy"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_"
+                        <img src="/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_"
                             alt="" class="img">
                     </div>
                     <div class="con">
@@ -1687,10 +1700,10 @@
                 </a>
             </li>
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=bookmark-diy"
+                <a href="/static/playcecamp/activities/program?program=bookmark-diy"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_"
+                        <img src="/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_"
                             alt="" class="img">
                     </div>
                     <div class="con">
@@ -1700,28 +1713,15 @@
                 </a>
             </li>
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?"
+                <a href="/static/playcecamp/activities/program?"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_"
+                        <img src="/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_"
                             alt="" class="img">
                     </div>
                     <div class="con">
                         <div class="title">손 거울 DIY</div>
                         <div class="info">제주 감성을 담아 만드는 손거울 아트 클래스</div>
-                    </div>
-                </a>
-            </li>
-            <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=candle-diy"
-                    class="link promotion-link countable-banner">
-                    <div class="thumb">
-                        <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_"
-                            alt="" class="img">
-                    </div>
-                    <div class="con">
-                        <div class="title">제주 바다 캔들 DIY</div>
-                        <div class="info">바다빛으로 완성하는 제주 캔들 클래스</div>
                     </div>
                 </a>
             </li>
