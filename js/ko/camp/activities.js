@@ -1,5 +1,66 @@
 const activities = [
     {
+		program: 'makgeolli-making',
+		title: '찹쌀 막걸리 빚기&전통주 시음',
+		subtitle: '직접 찹쌀 막걸리를 빚고, 다양한 전통주를 맛볼 수 있는 시간',
+		description: `
+        전통주에 대해 배우고 직접 찹쌀 막걸리를 빚어보는 체험 프로그램입니다.<br />
+        막걸리가 만들어 지는 과정을 알아보고, 다양한 양조장 술을 시음하며 우리 술의 맛과 향을 경험해 보세요.<br />
+        <br />
+        <strong>Program A │ 찹쌀막걸리 만들기 & 전통주 시음</strong><br />
+        직접 찹쌀 막걸리를 빚고 양조장 술 6종을 시음하는 가벼운 전통주 체험입니다.<br />
+        직접 만든 막걸리와 면보 자루를 가져갈 수 있습니다.(국내선 기내 반입 가능)<br />
+        <br />
+        <strong>Program B │ 막걸리&소주 만들기와 저녁 식사</strong><br />
+        찹쌀 막걸리 빚기와 소주 증류 과정을 함께 체험하고, 양조장 술 6종과 저녁 식사를 즐기는 보다 깊이 있는 프로그램입니다.<br />
+        직접 만든 막걸리와 면보 자루, 누룩 200g, 오리지널 소주 1병이 제공됩니다.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
+			'/api/editor/attach/view/default/2026/08/JvT9mdK9C1LqhE1PlwEv_1_',
+			'/api/editor/attach/view/default/2026/08/CJaUQsBZKnDzg5GerQ04_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: `
+        Program A: 목 ~ 화<br />
+        Program B: 금 ~ 월
+        `,
+		duration: `
+        Program A: 13:30 ~ 14:30<br />
+        Program B: 16:00 ~ 18:00
+        `,
+		priceGeneral: `
+        Program A: 1인 29,000원<br />
+        Program B: 1인 27,000원
+        `,
+		priceGuest: `
+        Program A: 1인 55,000원<br />
+        Program B: 1인 52,000원
+        `,
+		information: `
+        <p class="ref-bu-list">※ 장소: 제주 제주시 구좌읍 한동로 27 1층<br />
+        (플레이스 캠프에서 차량으로 약 21분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
+            <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
+            <div class="common-txt">
+                <p class="strong">[취소/환불 규정]</p>
+                <ul class="dot-bu-list">
+                    <li>이용일 1일 전까지 무료 취소</li>
+                    <li>당일 취소 및 노쇼: 환불 불가</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe-UwiMp8M7eEfc4SXcNsxIGh4hD4v7XMqj379DXKm3zQEQ_w/viewform?usp=header',
+		display: true,
+    },
+    {
 		program: 'wing-surfing',
 		title: '윙 서핑',
 		subtitle: '제주의 아름다운 해안에서 윙 포일링의 기술을 마스터하세요!',
