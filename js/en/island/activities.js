@@ -24,8 +24,8 @@ const activities = [
 		tags: ['REST', 'HEALING'],
 		category: 'REST',
 		date: `
-        A: Thursday – Tuesday<br />
-        B: Friday – Monday
+        A: Thursday ~ Tuesday<br />
+        B: Friday ~ Monday
         `,
 		duration: `
         A: 13:30 ~ 14:30<br />
