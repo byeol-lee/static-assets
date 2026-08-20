@@ -33,10 +33,10 @@ const activities = [
         `,
 		priceGeneral: `
         Program A: 1인 29,000원<br />
-        Program B: 1인 27,000원
+        Program B: 1인 55,000원
         `,
 		priceGuest: `
-        Program A: 1인 55,000원<br />
+        Program A: 1인 27,000원<br />
         Program B: 1인 52,000원
         `,
 		information: `
