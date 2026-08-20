@@ -1,5 +1,66 @@
 const activities = [
     {
+		program: 'makgeolli-making',
+		title: 'Makgeolli Brewing & Traditional Liquor Tasting',
+		subtitle: 'Make your own glutinous rice makgeolli and enjoy a tasting of a variety of traditional liquors.',
+		description: `
+        Learn about Korean traditional liquor and experience the process of making glutinous rice makgeolli yourself.<br />
+        Discover how makgeolli is made while tasting a selection of liquors from local breweries and exploring the unique flavors and aromas of Korea's traditional spirits.<br />
+        <br />
+        <strong>Program A │ Glutinous Rice Makgeolli Making & Traditional Liquor Tasting</strong><br />
+        A light introduction to Korean traditional liquor, where you can make your own glutinous rice makgeolli and taste six different brewery-made liquors.<br />
+        Take home the makgeolli you make and a muslin bag.(Permitted in carry-on baggage on domestic flights.)<br />
+        <br />
+        <strong>Program B │ Makgeolli & Soju Making with Dinner</strong><br />
+        A more immersive experience featuring glutinous rice makgeolli brewing and the process of soju distillation, along with six types of brewery-made liquors and dinner.<br />
+        Includes your homemade makgeolli, a muslin bag, 200 g of nuruk, and one bottle of original soju.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
+			'/api/editor/attach/view/default/2026/08/JvT9mdK9C1LqhE1PlwEv_1_',
+			'/api/editor/attach/view/default/2026/08/CJaUQsBZKnDzg5GerQ04_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: `
+        Program A: Thursday – Tuesday<br />
+        Program B: Friday – Monday
+        `,
+		duration: `
+        Program A: 13:30 ~ 14:30<br />
+        Program B: 16:00 ~ 18:00
+        `,
+		priceGeneral: `
+        Program A: KRW 29,000/person<br />
+        Program B: KRW 55,000/person
+        `,
+		priceGuest: `
+        Program A: KRW 27,000/person<br />
+        Program B: KRW 52,000/person
+        `,
+		information: `
+        <p class="ref-bu-list">※ Location: 1F, 27 Handong-ro, Gujwa-eup, Jeju-si, Jeju<br />
+        (Takes approx. 25 minutes by car from Phoenix Island)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>After receiving the reservation request, your booking may be confirmed or canceled depending on program availability.</li>
+            <li>The program is available upon payment of the fee in advance following booking confirmation.</li><br />
+            <div class="common-txt">
+                <p class="strong">[Cancellation / Refund Policy]</p>
+                <ul class="dot-bu-list">
+                    <li>Free cancellation until 1 day before the date of use</li>
+                    <li>Same-day cancellation or no-show: Non-refundable</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe-UwiMp8M7eEfc4SXcNsxIGh4hD4v7XMqj379DXKm3zQEQ_w/viewform?usp=header',
+		display: true,
+    },
+    {
 		program: 'wing-surfing',
 		title: 'Wing Surfing',
 		subtitle: 'Master the art of wing foiling along Jeju’s beautiful coast.',
@@ -26,7 +87,7 @@ const activities = [
         (2 Hour/Equipment rental included)
         `,
 		information: `
-        <p class="ref-bu-list">※ Location: 923, Hwanhaejang성-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
+        <p class="ref-bu-list">※ Location: 923, Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
         (Takes approx. 4 minutes by car from Phoenix Island)
         <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
         `,
