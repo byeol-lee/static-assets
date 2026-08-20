@@ -46,8 +46,8 @@ if (currentActivity) {
 
     document.getElementById('activityDescription').innerHTML = currentActivity.description;
 
-    document.getElementById('activityDateData').textContent = currentActivity.date || '매일';
-    document.getElementById('activityDateDuration').textContent = currentActivity.duration || '';
+    document.getElementById('activityDateData').innerHTML = currentActivity.date || '매일';
+    document.getElementById('activityDateDuration').innerHTML = currentActivity.duration || '';
     document.getElementById('priceGeneral').innerHTML = currentActivity.priceGeneral || '0원';
     document.getElementById('priceGuest').innerHTML = currentActivity.priceGuest || '0원';
 
