@@ -24,20 +24,20 @@ const activities = [
 		tags: ['REST', 'HEALING'],
 		category: 'REST',
 		date: `
-        Program A: Thursday – Tuesday<br />
-        Program B: Friday – Monday
+        A: Thursday – Tuesday<br />
+        B: Friday – Monday
         `,
 		duration: `
-        Program A: 13:30 ~ 14:30<br />
-        Program B: 16:00 ~ 18:00
+        A: 13:30 ~ 14:30<br />
+        B: 16:00 ~ 18:00
         `,
 		priceGeneral: `
-        Program A: KRW 29,000/person<br />
-        Program B: KRW 55,000/person
+        A: KRW 29,000/person<br />
+        B: KRW 55,000/person
         `,
 		priceGuest: `
-        Program A: KRW 27,000/person<br />
-        Program B: KRW 52,000/person
+        A: KRW 27,000/person<br />
+        B: KRW 52,000/person
         `,
 		information: `
         <p class="ref-bu-list">※ Location: 1F, 27 Handong-ro, Gujwa-eup, Jeju-si, Jeju<br />
