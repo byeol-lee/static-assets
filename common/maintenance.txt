@@ -1622,11 +1622,21 @@
     <div class="main-thumb-list">
         <ul class="list">
             <li class="item">
+                <a href="/static/playcecamp/activities/program?program=makgeolli-making" class="link promotion-link countable-banner">
+                    <div class="thumb">
+                        <img src="/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_" alt="" class="img">
+                    </div>
+                    <div class="con">
+                        <div class="title">찹쌀 막걸리 빚기&전통주 시음</div>
+                        <div class="info">직접 찹쌀 막걸리를 빚고, 다양한 전통주를 맛볼 수 있는 시간</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
                 <a href="/static/playcecamp/activities/program?program=wing-surfing"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_"
-                            alt="" class="img">
+                        <img src="/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_" alt="" class="img">
                     </div>
                     <div class="con">
                         <div class="title">윙 서핑</div>
@@ -1638,8 +1648,7 @@
                 <a href="/static/playcecamp/activities/program?program=kitesurfing"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_"
-                            alt="" class="img">
+                        <img src="/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_" alt="" class="img">
                     </div>
                     <div class="con">
                         <div class="title">카이트서핑</div>
@@ -1651,8 +1660,7 @@
                 <a href="/static/playcecamp/activities/program?program=yacht-tour"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_"
-                            alt="" class="img">
+                        <img src="/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_" alt="" class="img">
                     </div>
                     <div class="con">
                         <div class="title">김녕에서의 요트 투어</div>
@@ -1664,8 +1672,7 @@
                 <a href="/static/playcecamp/activities/program?program=scuba-diving"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="/images/ko/activity/playcecamp/outdoor/out-scuba-diving-idx01.jpg"
-                            alt="" class="img">
+                        <img src="/images/ko/activity/playcecamp/outdoor/out-scuba-diving-idx01.jpg" alt="" class="img">
                     </div>
                     <div class="con">
                         <div class="title">스쿠버 다이빙 체험</div>
@@ -1677,8 +1684,7 @@
                 <a href="/static/playcecamp/activities/program?program=surfing-class"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_"
-                            alt="" class="img">
+                        <img src="/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_" alt="" class="img">
                     </div>
                     <div class="con">
                         <div class="title">서핑 클래스</div>
@@ -1690,8 +1696,7 @@
                 <a href="/static/playcecamp/activities/program?program=keyring-diy"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_"
-                            alt="" class="img">
+                        <img src="/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_" alt="" class="img">
                     </div>
                     <div class="con">
                         <div class="title">키링 DIY</div>
@@ -1703,25 +1708,11 @@
                 <a href="/static/playcecamp/activities/program?program=bookmark-diy"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_"
-                            alt="" class="img">
+                        <img src="/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_" alt="" class="img">
                     </div>
                     <div class="con">
                         <div class="title">책갈피 DIY</div>
                         <div class="info">제주 도안으로 완성하는 스테인드 책갈피</div>
-                    </div>
-                </a>
-            </li>
-            <li class="item">
-                <a href="/static/playcecamp/activities/program?"
-                    class="link promotion-link countable-banner">
-                    <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_"
-                            alt="" class="img">
-                    </div>
-                    <div class="con">
-                        <div class="title">손 거울 DIY</div>
-                        <div class="info">제주 감성을 담아 만드는 손거울 아트 클래스</div>
                     </div>
                 </a>
             </li>
