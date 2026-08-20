@@ -46,8 +46,8 @@ if (currentActivity) {
 
     document.getElementById('activityDescription').innerHTML = currentActivity.description;
 
-    document.getElementById('activityDateData').textContent = currentActivity.date || 'Daily';
-    document.getElementById('activityDateDuration').textContent = currentActivity.duration || '';
+    document.getElementById('activityDateData').innerHTML = currentActivity.date || 'Daily';
+    document.getElementById('activityDateDuration').innerHTML = currentActivity.duration || '';
     document.getElementById('priceGeneral').innerHTML = currentActivity.priceGeneral || 'KRW 0';
     document.getElementById('priceGuest').innerHTML = currentActivity.priceGuest || 'KRW 0';
 
