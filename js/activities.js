@@ -24,20 +24,20 @@ const activities = [
 		tags: ['REST', 'HEALING'],
 		category: 'REST',
 		date: `
-        Program A: 목 ~ 화<br />
-        Program B: 금 ~ 월
+        A: 목 ~ 화<br />
+        B: 금 ~ 월
         `,
 		duration: `
-        Program A: 13:30 ~ 14:30<br />
-        Program B: 16:00 ~ 18:00
+        A: 13:30 ~ 14:30<br />
+        B: 16:00 ~ 18:00
         `,
 		priceGeneral: `
-        Program A: 1인 29,000원<br />
-        Program B: 1인 55,000원
+        A: 1인 29,000원<br />
+        B: 1인 55,000원
         `,
 		priceGuest: `
-        Program A: 1인 27,000원<br />
-        Program B: 1인 52,000원
+        A: 1인 27,000원<br />
+        B: 1인 52,000원
         `,
 		information: `
         <p class="ref-bu-list">※ 장소: 제주 제주시 구좌읍 한동로 27 1층<br />
