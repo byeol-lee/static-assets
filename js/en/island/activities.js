@@ -4,16 +4,17 @@ const activities = [
 		title: 'Makgeolli Brewing & Traditional Liquor Tasting',
 		subtitle: 'Make your own glutinous rice makgeolli and enjoy a tasting of a variety of traditional liquors.',
 		description: `
-        Learn about Korean traditional liquor and experience the process of making glutinous rice makgeolli yourself.<br />
-        Discover how makgeolli is made while tasting a selection of liquors from local breweries and exploring the unique flavors and aromas of Korea's traditional spirits.<br />
+		Learn about Korean traditional liquor and experience the art of making your own glutinous rice makgeolli.<br />
+		In collaboration with Suldoga Jeju Badang, a local Jeju brewery known for Kiwi Sul, Malgeun Badang, and Hanbadang, learn how makgeolli is made and craft your very own glutinous rice makgeolli.<br />
+		Taste a variety of locally brewed traditional liquors and discover the diverse flavors and aromas of Korea’s traditional drinks.<br />
         <br />
         <strong>Program A │ Glutinous Rice Makgeolli Making & Traditional Liquor Tasting</strong><br />
         A light introduction to Korean traditional liquor, where you can make your own glutinous rice makgeolli and taste six different brewery-made liquors.<br />
-        Take home the makgeolli you make and a muslin bag.(Permitted in carry-on baggage on domestic flights.)<br />
+        Take home your homemade makgeolli and a cotton wrapping cloth.(Permitted in carry-on baggage on domestic flights.)<br />
         <br />
         <strong>Program B │ Makgeolli & Soju Making with Dinner</strong><br />
         A more immersive experience featuring glutinous rice makgeolli brewing and the process of soju distillation, along with six types of brewery-made liquors and dinner.<br />
-        Includes your homemade makgeolli, a muslin bag, 200 g of nuruk, and one bottle of original soju.
+        Includes your homemade makgeolli, a cotton wrapping cloth, 200 g of nuruk, and one bottle of original soju.
         `,
 		thumbnail: '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
 		heroImage: [
