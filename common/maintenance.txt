@@ -1500,7 +1500,7 @@
                     </a>
                 </li>
                 <li class="modal-slider-item swiper-slide" data-end="2026-09-24T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/08/JxJSv37MwNqeV2RIjENf_1_');">
+                    style="background-image: url('/api/editor/attach/view/default/2026/08/wjTxfJEQOIFhHGXa8NSX_1_');">
                     <a href="/page/board/package/16107" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
@@ -1531,7 +1531,7 @@
                     </a>
                 </li>
                 <li class="modal-slider-item swiper-slide" data-end="2026-09-24T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/08/JxJSv37MwNqeV2RIjENf_1_');">
+                    style="background-image: url('/api/editor/attach/view/default/2026/08/wjTxfJEQOIFhHGXa8NSX_1_');">
                     <a href="/page/pyeongchang/board/package/16107" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
