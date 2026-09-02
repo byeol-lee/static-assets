@@ -1830,7 +1830,7 @@
     $(function () {
 
         // 카테고리 컨텐츠 날짜 제어
-        dateControl($('.common-content [data-start], .common-content [data-end]'));
+        dateControl($('[data-start],[data-end]'));
 
         // tab check s
         function checkTabs() {
