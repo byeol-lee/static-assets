@@ -1577,7 +1577,7 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-end="2026-09-01T00:00:00"
+                <li class="modal-slider-item swiper-slide"
                     style="background-image: url('/api/editor/attach/view/default/2026/04/l3vSqaNLcL1sM8ofBQOo_1_');">
                     <a href="/page/playcecamp/board/event/120000046480" class="modal-slider-link" target="_blank">
                     </a>
@@ -1682,7 +1682,7 @@
                     </div>
                 </a>
             </li>
-            <li class="item" data-end="2026-09-01T00:00:00">
+            <li class="item">
                 <a href="/static/playcecamp/activities/program?program=bookmark-diy"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
@@ -1732,7 +1732,6 @@
     });
 </script>
 <script>
-    // 날짜별 컨텐츠 제어
     function dateControl($targets) {
         const now = Date.now();
 
@@ -1829,7 +1828,6 @@
 <script>
     $(function () {
 
-        // 카테고리 컨텐츠 날짜 제어
         dateControl($('[data-start],[data-end]'));
 
         // tab check s
