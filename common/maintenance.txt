@@ -1577,7 +1577,7 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide"
+                <li class="modal-slider-item swiper-slide" data-end="2026-09-01T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/04/l3vSqaNLcL1sM8ofBQOo_1_');">
                     <a href="/page/playcecamp/board/event/120000046480" class="modal-slider-link" target="_blank">
                     </a>
@@ -1682,7 +1682,7 @@
                     </div>
                 </a>
             </li>
-            <li class="item">
+            <li class="item" data-end="2026-09-01T00:00:00">
                 <a href="/static/playcecamp/activities/program?program=bookmark-diy"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
@@ -1732,6 +1732,29 @@
     });
 </script>
 <script>
+    // 날짜별 컨텐츠 제어
+    function dateControl($targets) {
+        const now = Date.now();
+
+        $targets.each(function () {
+
+            const $target = $(this);
+            const start = $target.data('start');
+            const end = $target.data('end');
+
+            if (start && now < new Date(start).getTime()) {
+                $target.remove();
+                return;
+            }
+
+            if (end && now >= new Date(end).getTime()) {
+                $target.remove();
+                return;
+            }
+
+        });
+    }
+
     $(function () {
         const popupMap = {
             'main-hnr': 'integrated',
@@ -1750,77 +1773,65 @@
             }
         });
 
-        if (!popupType) return;
+        if (popupType) {
 
-        const $popup = $(`.modal-wrap[data-popup="${popupType}"]`);
-        const cookieKey = `hidePopup_${popupType}`;
+            const $popup = $(`.modal-wrap[data-popup="${popupType}"]`);
+            const cookieKey = `hidePopup_${popupType}`;
 
-        if (!$popup.length) return;
+            if ($popup.length) {
 
-        const now = Date.now();
+                dateControl($popup.find('.swiper-slide'));
 
-        $popup.find('.swiper-slide').each(function () {
+                if ($popup.find('.swiper-slide').length === 0) {
+                    $popup.hide();
+                    return;
+                }
 
-            const $slide = $(this);
+                $popup.on('click', '.modal-close-btn', function (e) {
+                    e.preventDefault();
 
-            const start = $slide.data('start');
-            const end = $slide.data('end');
+                    if ($popup.find('.modal-today-checkbox').prop('checked')) {
+                        const date = new Date();
+                        date.setTime(date.getTime() + hour * 60 * 60 * 1000);
+                        document.cookie = `${cookieKey}=true; expires=${date.toUTCString()}; path=/`;
+                    }
 
-            if (start && now < new Date(start).getTime()) {
-                $slide.remove();
-                return;
+                    $popup.hide();
+                });
+
+                if (document.cookie.includes(`${cookieKey}=true`)) {
+                    $popup.hide();
+                } else {
+                    $popup.show();
+                }
+
+                $popup.insertBefore('.visual-banner');
+
+                const $slider = $popup.find('.modal-slider');
+                const slideCount = $slider.find('.swiper-slide').length;
+
+                new Swiper($slider[0], {
+                    slidesPerView: 1,
+                    loop: slideCount > 1,
+                    autoplay: slideCount > 1 ? {
+                        delay: 3000
+                    } : false,
+                    pagination: slideCount > 1 ? {
+                        el: $popup.find('.modal-paging')[0],
+                        type: 'bullets',
+                    } : false,
+                });
             }
 
-            if (end && now >= new Date(end).getTime()) {
-                $slide.remove();
-                return;
-            }
-
-        });
-
-        if ($popup.find('.swiper-slide').length === 0) {
-            $popup.hide();
-            return;
         }
-
-        $popup.on('click', '.modal-close-btn', function (e) {
-            e.preventDefault();
-
-            if ($popup.find('.modal-today-checkbox').prop('checked')) {
-                const date = new Date();
-                date.setTime(date.getTime() + hour * 60 * 60 * 1000);
-                document.cookie = `${cookieKey}=true; expires=${date.toUTCString()}; path=/`;
-            }
-
-            $popup.hide();
-        });
-
-        if (document.cookie.includes(`${cookieKey}=true`)) {
-            $popup.hide();
-        } else {
-            $popup.show();
-        }
-
-        $popup.insertBefore('.visual-banner');
-
-        const $slider = $popup.find('.modal-slider');
-        const slideCount = $slider.find('.swiper-slide').length;
-
-        new Swiper($slider[0], {
-            slidesPerView: 1,
-            loop: slideCount > 1,
-            autoplay: slideCount > 1 ? {
-                delay: 3000
-            } : false,
-            pagination: slideCount > 1 ? {
-                el: $popup.find('.modal-paging')[0],
-                type: 'bullets',
-            } : false,
-        });
     });
 </script>
 <script>
     $(function () {
+
+        // 카테고리 컨텐츠 날짜 제어
+        dateControl($('.common-content [data-start], .common-content [data-end]'));
+
         // tab check s
         function checkTabs() {
             $('.tab-page-scroll.js-scroll-tab').each(function () {
