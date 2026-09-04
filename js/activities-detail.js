@@ -12,7 +12,12 @@ if (currentActivity) {
 
     const reserveBtn = document.getElementById('activityReserveBtn');
     if (reserveBtn) {
-        reserveBtn.href = currentActivity.reservation || '';
+        if (currentActivity.reservation) {
+            reserveBtn.href = currentActivity.reservation;
+            reserveBtn.style.display = '';
+        } else {
+            reserveBtn.style.display = 'none';
+        }
     }
 
     const sliderList = document.getElementById('activitySliderList');
