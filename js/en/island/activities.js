@@ -1,47 +1,5 @@
 const activities = [
     {
-        program: 'fitness-day-pass',
-        title: 'Fitness Day Pass',
-        subtitle: 'An unmanned gym equipped with the most extensive range of machines in Seongsan',
-        description: `
-        Seongsan Gym is a premium, standalone fitness center located on the first floor, offering the largest fitness space in Seongsan.<br />
-        Equipped with a wide range of machines, it is ideal for everyone from those who enjoy weight training to those looking for a structured workout,<br />
-        and you can conveniently enjoy the facilities with a one-day pass.<br />
-        <br />
-        Open 24 hours a day, 365 days a year with an unmanned system, so you can enjoy a relaxed workout at your own pace, just like having your own private gym.
-        `,
-        thumbnail: '/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
-        heroImage: [
-            '/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
-            '/api/editor/attach/view/default/2026/09/AM3mbl74r9M0CVKgFuX7_1_',
-            '/api/editor/attach/view/default/2026/09/nlFjkkoBU7jM2DsjXY8Z_1_',
-            '/api/editor/attach/view/default/2026/09/3PvWHufvYBQKgBf080no_1_',
-            '/api/editor/attach/view/default/2026/09/j4116ENiABeAFSSPGISV_1_',
-            '/api/editor/attach/view/default/2026/09/0uToerpPIwF2bCsSEjwf_1_',
-        ],
-        tags: ['REST', 'HEALING'],
-        category: 'REST',
-        date: ``,
-        duration: `00:00 ~ 24:00`,
-        priceGeneral: `KRW 20,000`,
-        priceGuest: `KRW 15,000`,
-        information: `
-        <p class="ref-bu-list">※ Location: 1F, 31, Seongsanjungang-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
-        (Takes approx. 8-minute drive from Phoenix Island)</p>
-        <p class="ref-bu-list">※ This gym operates 24 hours a day with an unmanned system and does not have separate shower facilities.</p>
-        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
-        `,
-        notice: `
-        <ul class="dot-bu-list">
-            <li>No advance reservation is required. Guests can receive exclusive benefits by presenting proof of their stay at Phoenix Island.</li>
-            <li>Free parking</li>
-        </ul>
-        `,
-        reservation: false,
-        inquiries: `Seongsan Gym <a href="tel:+8250713419372">+82-507-1341-9372</a>`,
-        display: true,
-    },
-    {
 		program: 'arte-kids-park',
 		title: 'Arte Kids Park Jeju',
 		subtitle: 'A fun-filled world of play surrounded by nature',
@@ -212,20 +170,110 @@ const activities = [
         reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeYqiy1gv0ZkUIaWE6SKDL9c7ltNs7s4MDR1xkpQBXwzeTcEw/viewform?usp=publish-editor',
         display: true,
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    {
+        program: 'yacht-tour',
+        title: 'Yacht Tour in Gimnyeong',
+        subtitle: 'Thrilling ocean fishing experience, and if you are lucky, a special moment meeting wild dolphins!',
+        description: `
+        A special yacht tour set against the backdrop of the emerald sea and wind turbine village in Gimnyeong!<br />
+        Feel the cool sea breeze while enjoying a relaxing sail, and experience another side of Jeju's ocean charm with a 15–20 minute sea fishing session.<br />
+        <br />
+        Onboard, cup fruits, draft beer, beverages, and light snacks are provided. On lucky days, you might even encounter wild dolphins freely swimming in the Jeju sea.<br />
+        <br />
+        Create unforgettable memories unique to Jeju amidst emerald waters and wind turbines unfolding before your eyes.<br />
+        <p class="ref-bu-list">※ Dolphins are wild animals, so their appearance depends on the sea and weather conditions of the day.</p>
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
+            '/api/editor/attach/view/default/2026/07/hPCeB1a4OtvkyLYm1jpl_1_',
+            '/api/editor/attach/view/default/2026/07/sAkf6QEqghhl9ufuOALl_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: `
+		Adults KRW 60,000<br />
+		Children KRW 40,000
+		`,
+		priceGuest: `
+		Adults: KRW 45,000<br />
+		Children: KRW 33,000
+		`,
+        information: `
+        <p class="ref-bu-list">※ Location: 229-16 Gujwahaean-ro, Gujwa-eup, Jeju-si, Jeju-do<br />
+        (Takes approx. 35 minutes by car from Phoenix Island)</p>
+        <p class="ref-bu-list">※ Children: Ages 37 months–13 years</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        <p class="ref-bu-list">※ Please arrive 20 minutes prior to departure for smooth boarding.</p>
+        <p class="ref-bu-list">※ Minimum passenger count for departure is 10 people. If the minimum is not met, the schedule may be canceled or the departure time changed, in which case a 100% refund will be issued.</p>
+        <p class="ref-bu-list">※ If operation is difficult due to bad weather(rain, high waves, etc.) on the day, it will be canceled.</p>
+        <p class="ref-bu-list">※ Same-day time changes are permitted up to 2 hours before departure.</p>
+        <p class="ref-bu-list">※ Pets under 10kg(small dogs only) are allowed onboard. They must be kept inside a carrier or pet bag.<br />
+        Please notify us in advance regarding your pet after booking.</p>
+        <p class="ref-bu-list">※ Motion sickness medication is not provided on-site. If you are prone to motion sickness, please prepare and take it prior to departure.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>After receiving the reservation request, your booking may be confirmed or canceled depending on program availability.</li>
+            <li>The program is available upon payment of the fee in advance following booking confirmation.</li><br />
+            <div class="common-txt">
+                <p class="strong">[Cancellation / Refund Policy]</p>
+                <ul class="dot-bu-list">
+                    <li>Same-day time changes are allowed up to 2 hours before departure.</li>
+                    <li>Cancellation 1 day prior to the date of use: 20% cancellation fee.</li>
+                    <li>Same-day cancellation: 50% cancellation fee.</li>
+                    <li>Cancellations due to severe weather or vendor circumstances: 100% full refund.</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeKoP36h8vjLEWOQgJlhzd22cIJdCsNckfQ2W3DPURF_wy0_w/viewform?usp=publish-editor',
+        display: true,
+    },
+    {
+        program: 'fitness-day-pass',
+        title: 'Fitness Day Pass',
+        subtitle: 'An unmanned gym equipped with the most extensive range of machines in Seongsan',
+        description: `
+        Seongsan Gym is a premium, standalone fitness center located on the first floor, offering the largest fitness space in Seongsan.<br />
+        Equipped with a wide range of machines, it is ideal for everyone from those who enjoy weight training to those looking for a structured workout,<br />
+        and you can conveniently enjoy the facilities with a one-day pass.<br />
+        <br />
+        Open 24 hours a day, 365 days a year with an unmanned system, so you can enjoy a relaxed workout at your own pace, just like having your own private gym.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
+            '/api/editor/attach/view/default/2026/09/AM3mbl74r9M0CVKgFuX7_1_',
+            '/api/editor/attach/view/default/2026/09/nlFjkkoBU7jM2DsjXY8Z_1_',
+            '/api/editor/attach/view/default/2026/09/3PvWHufvYBQKgBf080no_1_',
+            '/api/editor/attach/view/default/2026/09/j4116ENiABeAFSSPGISV_1_',
+            '/api/editor/attach/view/default/2026/09/0uToerpPIwF2bCsSEjwf_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `00:00 ~ 24:00`,
+        priceGeneral: `KRW 20,000`,
+        priceGuest: `KRW 15,000`,
+        information: `
+        <p class="ref-bu-list">※ Location: 1F, 31, Seongsanjungang-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
+        (Takes approx. 8-minute drive from Phoenix Island)</p>
+        <p class="ref-bu-list">※ This gym operates 24 hours a day with an unmanned system and does not have separate shower facilities.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>No advance reservation is required. Guests can receive exclusive benefits by presenting proof of their stay at Phoenix Island.</li>
+            <li>Free parking</li>
+        </ul>
+        `,
+        reservation: false,
+        inquiries: `Seongsan Gym <a href="tel:+8250713419372">+82-507-1341-9372</a>`,
+        display: true,
+    },
     {
 		program: 'makgeolli-making',
 		title: 'Makgeolli Brewing & Traditional Liquor Tasting',
@@ -385,68 +433,6 @@ const activities = [
         </ul>
         `,
         reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSd9i_sZCaSV23tYKcyZQAiOVYQVFDhTts5IH_dSYEL2OPP1hA/viewform?usp=publish',
-        display: true,
-    },
-    {
-        program: 'yacht-tour',
-        title: 'Yacht Tour in Gimnyeong',
-        subtitle: 'Thrilling ocean fishing experience, and if you are lucky, a special moment meeting wild dolphins!',
-        description: `
-        A special yacht tour set against the backdrop of the emerald sea and wind turbine village in Gimnyeong!<br />
-        Feel the cool sea breeze while enjoying a relaxing sail, and experience another side of Jeju's ocean charm with a 15–20 minute sea fishing session.<br />
-        <br />
-        Onboard, cup fruits, draft beer, beverages, and light snacks are provided. On lucky days, you might even encounter wild dolphins freely swimming in the Jeju sea.<br />
-        <br />
-        Create unforgettable memories unique to Jeju amidst emerald waters and wind turbines unfolding before your eyes.<br />
-        <p class="ref-bu-list">※ Dolphins are wild animals, so their appearance depends on the sea and weather conditions of the day.</p>
-        `,
-        thumbnail: '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
-        heroImage: [
-            '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
-            '/api/editor/attach/view/default/2026/07/hPCeB1a4OtvkyLYm1jpl_1_',
-            '/api/editor/attach/view/default/2026/07/sAkf6QEqghhl9ufuOALl_1_'
-        ],
-        tags: ['REST', 'HEALING'],
-        category: 'REST',
-        date: '',
-        duration: '10:00 ~ 17:00',
-        priceGeneral: `
-		Adults KRW 60,000<br />
-		Children KRW 40,000
-		`,
-		priceGuest: `
-		Adults: KRW 45,000<br />
-		Children: KRW 33,000
-		`,
-        information: `
-        <p class="ref-bu-list">※ Location: 229-16 Gujwahaean-ro, Gujwa-eup, Jeju-si, Jeju-do<br />
-        (Takes approx. 35 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ Children: Ages 37 months–13 years</p>
-        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
-        <p class="ref-bu-list">※ Please arrive 20 minutes prior to departure for smooth boarding.</p>
-        <p class="ref-bu-list">※ Minimum passenger count for departure is 10 people. If the minimum is not met, the schedule may be canceled or the departure time changed, in which case a 100% refund will be issued.</p>
-        <p class="ref-bu-list">※ If operation is difficult due to bad weather(rain, high waves, etc.) on the day, it will be canceled.</p>
-        <p class="ref-bu-list">※ Same-day time changes are permitted up to 2 hours before departure.</p>
-        <p class="ref-bu-list">※ Pets under 10kg(small dogs only) are allowed onboard. They must be kept inside a carrier or pet bag.<br />
-        Please notify us in advance regarding your pet after booking.</p>
-        <p class="ref-bu-list">※ Motion sickness medication is not provided on-site. If you are prone to motion sickness, please prepare and take it prior to departure.</p>
-        `,
-        notice: `
-        <ul class="dot-bu-list">
-            <li>After receiving the reservation request, your booking may be confirmed or canceled depending on program availability.</li>
-            <li>The program is available upon payment of the fee in advance following booking confirmation.</li><br />
-            <div class="common-txt">
-                <p class="strong">[Cancellation / Refund Policy]</p>
-                <ul class="dot-bu-list">
-                    <li>Same-day time changes are allowed up to 2 hours before departure.</li>
-                    <li>Cancellation 1 day prior to the date of use: 20% cancellation fee.</li>
-                    <li>Same-day cancellation: 50% cancellation fee.</li>
-                    <li>Cancellations due to severe weather or vendor circumstances: 100% full refund.</li>
-                </ul>
-            </div>
-        </ul>
-        `,
-        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeKoP36h8vjLEWOQgJlhzd22cIJdCsNckfQ2W3DPURF_wy0_w/viewform?usp=publish-editor',
         display: true,
     },
     {
