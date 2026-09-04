@@ -1,11 +1,93 @@
 const activities = [
     {
+		program: 'arte-kids-park',
+		title: '피트니스 1일 이용',
+		subtitle: '성산에서 최다 머신들로 갖춰진 무인 헬스장',
+		description: `
+        제주 성산 최대 규모의 단독 1층 프리미엄 헬스장, 성산짐입니다.<br />
+        성산 지역에서 다양한 머신을 갖춘 헬스장으로, 웨이트 트레이닝을 즐기는 분들부터 체계적인 운동을 원하는 분들까지<br />
+        '1일 이용권'으로 편하게 이용하실 수 있습니다.<br />
+        <br />
+        365일 연중무휴, 24시간 무인 시스템으로 운영되어 시간에 구애받지 않고 개인 헬스장처럼 여유롭게 운동해 보세요.
+        `,
+		'/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
+			'/api/editor/attach/view/default/2026/09/AM3mbl74r9M0CVKgFuX7_1_',
+			'/api/editor/attach/view/default/2026/09/nlFjkkoBU7jM2DsjXY8Z_1_',
+			'/api/editor/attach/view/default/2026/09/3PvWHufvYBQKgBf080no_1_',
+			'/api/editor/attach/view/default/2026/09/j4116ENiABeAFSSPGISV_1_',
+			'/api/editor/attach/view/default/2026/09/0uToerpPIwF2bCsSEjwf_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: ``,
+		duration: `00:00 ~ 24:00`,
+		priceGeneral: `20,000원`,
+		priceGuest: `15,000원`,
+		information: `
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 성산중앙로 31, 1층<br />
+        (휘닉스 아일랜드에서 차량으로 약 8분 소요)</p>
+        <p class="ref-bu-list">※ 24시간 무인 시스템으로 운영되는 헬스장으로 별도의 샤워 시설은 마련되어 있지 않습니다.</p>
+        <p class="ref-bu-list">※  본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>별도의 사전 예약 없이 이용 가능하며, 휘닉스 아일랜드 투숙 내역을 증빙하여 방문 시 전용 혜택을 받으실 수 있습니다.</li>
+            <li>주차 무료</li>
+        </ul>
+        `,
+		reservation: false,
+        inquiries: `성산짐 <a href="tel:050713419372">0507-1341-9372</a>`,
+		display: true,
+    },
+    {
+		program: 'arte-kids-park',
+		title: '아르떼 키즈 파크 제주',
+		subtitle: '환상적인 자연 속에서의 즐거운 놀이 세상',
+		description: `
+        전 세계 천만 명 이상이 관람한 아르떼 뮤지엄(ARTE MUSEUM)이 선보이는 체험형 미디어 아트 놀이터입니다.<br />
+        아이들이 마음껏 뛰어놀 수 있는 놀이 공간과 미디어 아트 전시 공간, 그리고 가족 모두를 위한 프로그램이 마련되어 있습니다.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/09/0qZpFDMh8hVwh5D6NtZb_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/0qZpFDMh8hVwh5D6NtZb_1_',
+			'/api/editor/attach/view/default/2026/09/Ya3xB6RMh3QcJ7mIhnhO_1_',
+			'/api/editor/attach/view/default/2026/09/gLm32h4RmSjJwxxzqjYL_1_',
+			'/api/editor/attach/view/default/2026/09/kfhNq4KbtYkMpX6gkXy7_1_',
+			'/api/editor/attach/view/default/2026/09/weRpjypFl9tpq8sZrARa_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: ``,
+		duration: `10:00 ~ 19:00`,
+		priceGeneral: `
+        평일: 25,000원/주말&공휴일: 30,000원<br />
+        2시간 이용권(12개월 ~ 13세 이하)
+        `,
+		priceGuest: `20% 할인`,
+		information: `
+        <p class="ref-bu-list">※ 장소: 제주시 애월읍 월각로 929<br />
+        (휘닉스 아일랜드에서 차량으로 약 1시간 20분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>별도의 사전 예약 없이 이용 가능하며, 할인 쿠폰은 프론트에 비치되어 있습니다.</li>
+            <li>본 할인권은 최대 4인까지 적용 가능하며, 타 할인 및 혜택과 중복 적용되지 않습니다.</li>
+            <li>본 할인권은 아르떼 키즈 파크 제주에서만 사용 가능합니다.</li>
+        </ul>
+        `,
+		reservation: false,
+        inquiries: `아르떼 키즈 파크 제주 <a href="tel:0647997007">064-799-7007</a>`,
+		display: true,
+    },
+    {
 		program: 'arte-museum',
 		title: '아르떼 뮤지엄 제주',
 		subtitle: '국내 최대 규모의 몰입형 미디어 아트 전시관',
 		description: `
         빛과 소리, 향기로 제주의 감성을 표현한 국내 최대 규모의 몰입형 미디어아트 전시관입니다.<br />
-        <br />
         약 1,400평의 넓은 공간에서 펼쳐지는 16개의 다채로운 미디어아트를 감상하며 아르떼 뮤지엄만의 압도적인 몰입감을 경험해 보세요.
         `,
 		thumbnail: '/api/editor/attach/view/default/2026/09/PEnbkWjB0mPFpc1yB1QY_1_',
@@ -38,7 +120,7 @@ const activities = [
         </ul>
         `,
 		reservation: false,
-        inquiries: `<a href="tel:0647997007">064-799-7007</a>`,
+        inquiries: `아르떼 뮤지엄 제주 <a href="tel:0647997007">064-799-7007</a>`,
 		display: true,
     },
     {
