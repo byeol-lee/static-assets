@@ -1,22 +1,14 @@
 @charset "UTF-8";
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.pc-only {
+    display: block;
 }
 
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-    padding: 10px;
+.mobile-only {
+    display: none;
 }
 
-/* ---------------- 반응형 유틸리티 클래스 ---------------- */
-.pc-only { display: block; }
-.mobile-only { display: none; }
-
-/* ---------------- [PC] 대형 테이블 스타일 ---------------- */
-.table-container {
+/* .table-container {
     width: 1200px;
     min-width: 819px;
     margin: 0 auto;
@@ -24,7 +16,7 @@ body {
 
 .table-container th:not(.td) {
     font-size: 16px;
-}
+} */
 
 .schedule-table {
     width: 100%;
@@ -95,7 +87,6 @@ body {
     z-index: 1;
 }
 
-/* ================= 제주 (.site-jeju) 스펙 ================= */
 .site-jeju .cell-highlight-bar,
 .site-jeju .schedule-table td.cell-highlight {
     background-color: #e5f1f9;
@@ -121,7 +112,6 @@ body {
     border-bottom: 1px solid #0079c3;
 }
 
-/* ================= 평창 (.site-pyeongchang) 스펙 ================= */
 .site-pyeongchang .cell-highlight-bar,
 .site-pyeongchang .schedule-table td.cell-highlight {
     background-color: #e7f1ec;
@@ -147,26 +137,81 @@ body {
     border-bottom: 1px solid #167a47;
 }
 
-/* ---------------- PC 위치 정렬 ---------------- */
-.tooltip-container.align-center::after { margin-bottom: -5px; }
-.tooltip-container.align-left::after { margin-left: 11px; margin-bottom: -5px; }
-.tooltip-container.align-right.arrow-top::after { margin-right: 11px; margin-bottom: -5px; }
-.tooltip-container.align-right.arrow-bottom::after { margin-right: 11px; margin-top: -5px; }
-.tooltip-container.align-center { left: 50%; transform: translateX(-50%); }
-.tooltip-container.align-left { left: 4px; align-items: flex-start; }
-.tooltip-container.align-left .tooltip-dot { margin-left: 12px; }
-.tooltip-container.align-right { right: 4px; align-items: flex-end; }
-.tooltip-container.align-right .tooltip-dot { margin-right: 12px; }
-.tooltip-container.arrow-top { top: 8px; }
-.tooltip-container.arrow-top .tooltip-dot { margin-bottom: 4px; }
-.tooltip-container.arrow-top::after { order: 2; }
-.tooltip-container.arrow-top .tooltip-box { order: 3; }
-.tooltip-container.arrow-bottom { bottom: 69px; flex-direction: column-reverse; }
-.tooltip-container.arrow-bottom .tooltip-dot { margin-top: 4px; }
-.tooltip-container.arrow-bottom::after { order: 2; }
-.tooltip-container.arrow-bottom .tooltip-box { order: 3; }
+.tooltip-container.align-center::after {
+    margin-bottom: -5px;
+}
 
-/* ---------------- [모바일] 타임라인 UI 스타일 ---------------- */
+.tooltip-container.align-left::after {
+    margin-left: 11px;
+    margin-bottom: -5px;
+}
+
+.tooltip-container.align-right.arrow-top::after {
+    margin-right: 11px;
+    margin-bottom: -5px;
+}
+
+.tooltip-container.align-right.arrow-bottom::after {
+    margin-right: 11px;
+    margin-top: -5px;
+}
+
+.tooltip-container.align-center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip-container.align-left {
+    left: 4px;
+    align-items: flex-start;
+}
+
+.tooltip-container.align-left .tooltip-dot {
+    margin-left: 12px;
+}
+
+.tooltip-container.align-right {
+    right: 4px;
+    align-items: flex-end;
+}
+
+.tooltip-container.align-right .tooltip-dot {
+    margin-right: 12px;
+}
+
+.tooltip-container.arrow-top {
+    top: 8px;
+}
+
+.tooltip-container.arrow-top .tooltip-dot {
+    margin-bottom: 4px;
+}
+
+.tooltip-container.arrow-top::after {
+    order: 2;
+}
+
+.tooltip-container.arrow-top .tooltip-box {
+    order: 3;
+}
+
+.tooltip-container.arrow-bottom {
+    bottom: 69px;
+    flex-direction: column-reverse;
+}
+
+.tooltip-container.arrow-bottom .tooltip-dot {
+    margin-top: 4px;
+}
+
+.tooltip-container.arrow-bottom::after {
+    order: 2;
+}
+
+.tooltip-container.arrow-bottom .tooltip-box {
+    order: 3;
+}
+
 .m-timeline-container {
     margin: 0 auto;
     display: flex;
@@ -175,45 +220,45 @@ body {
     padding: 6px;
 }
 
-.m-year-header { 
-    font-size: 14px; 
-    font-weight: 500; 
-    color: #222; 
-    padding: 10px 4px 6px; 
-    border-bottom: 1px solid #666; 
-    margin-top: 6px; 
+.m-year-header {
+    font-size: 14px;
+    font-weight: 500;
+    color: #222;
+    padding: 10px 4px 6px;
+    border-bottom: 1px solid #666;
+    margin-top: 6px;
     display: flex;
     align-items: center;
     gap: 6px;
 }
 
-.m-season-group-card { 
+.m-season-group-card {
     color: #222;
-    display: flex; 
+    display: flex;
     border-bottom: 1px solid #ddd;
     padding-bottom: 16px;
 }
 
-.m-season-badge-box { 
-    flex-shrink: 0; 
-    width: 72px; 
-    text-align: center; 
+.m-season-badge-box {
+    flex-shrink: 0;
+    width: 72px;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.m-season-title { 
-    font-size: 14px; 
-    font-weight: 500; 
+.m-season-title {
+    font-size: 14px;
+    font-weight: 500;
     line-height: 1.2;
 }
 
-.m-month-list { 
-    flex-grow: 1; 
-    display: flex; 
-    flex-direction: column; 
-    gap: 12px; 
+.m-month-list {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .m-month-item {
@@ -227,26 +272,38 @@ body {
     padding-bottom: 10px;
 }
 
-.m-month-label { 
-    display: inline-block; 
-    font-size: 12px; 
-    font-weight: 500; 
-    padding: 0 8px 2px; 
-    border-radius: 4px; 
-    width: fit-content; 
+.m-month-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 8px 2px;
+    border-radius: 4px;
+    width: fit-content;
 }
 
-.site-jeju .m-month-label { background: #e5f1f9; color: #0079c3; }
-.site-pyeongchang .m-month-label { background: #e7f1ec; color: #167a47; }
+.site-jeju .m-month-label {
+    background: #e5f1f9;
+    color: #0079c3;
+}
 
-.m-date-detail-text { 
-    font-size: 14px; 
-    color: #222; 
-    font-weight: 400; 
-    line-height: 1.6; 
+.site-pyeongchang .m-month-label {
+    background: #e7f1ec;
+    color: #167a47;
+}
+
+.m-date-detail-text {
+    font-size: 14px;
+    color: #222;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 @media screen and (max-width: 819px) {
-    .pc-only { display: none; }
-    .mobile-only { display: block; }
+    .pc-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
 }
