@@ -51,9 +51,12 @@ if (currentActivity) {
     document.getElementById('priceGeneral').innerHTML = currentActivity.priceGeneral || '0원';
     document.getElementById('priceGuest').innerHTML = currentActivity.priceGuest || '0원';
 
-    document.getElementById('activityInquiries').innerHTML = `
+    document.getElementById('activityInquiries').innerHTML = currentActivity.inquiries || `
     <p>액티비티 <a href="http://talk.naver.com/WBZZIZQ" target="_blank">네이버 톡톡(http://talk.naver.com/WBZZIZQ)</a></p>
     `;
+    // document.getElementById('activityInquiries').innerHTML = `
+    // <p>액티비티 <a href="http://talk.naver.com/WBZZIZQ" target="_blank">네이버 톡톡(http://talk.naver.com/WBZZIZQ)</a></p>
+    // `;
 
     const locationEl = document.getElementById('activityInformation');
     if (locationEl) {
