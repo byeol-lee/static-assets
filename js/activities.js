@@ -1,6 +1,6 @@
 const activities = [
     {
-		program: 'arte-kids-park',
+		program: 'fitness-day-pass',
 		title: '피트니스 1일 이용',
 		subtitle: '성산에서 최다 머신들로 갖춰진 무인 헬스장',
 		description: `
