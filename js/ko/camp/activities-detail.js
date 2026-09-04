@@ -12,7 +12,12 @@ if (currentActivity) {
 
     const reserveBtn = document.getElementById('activityReserveBtn');
     if (reserveBtn) {
-        reserveBtn.href = currentActivity.reservation || '';
+        if (currentActivity.reservation) {
+            reserveBtn.href = currentActivity.reservation;
+            reserveBtn.style.display = '';
+        } else {
+            reserveBtn.style.display = 'none';
+        }
     }
 
     const sliderList = document.getElementById('activitySliderList');
@@ -51,9 +56,12 @@ if (currentActivity) {
     document.getElementById('priceGeneral').innerHTML = currentActivity.priceGeneral || '0원';
     document.getElementById('priceGuest').innerHTML = currentActivity.priceGuest || '0원';
 
-    document.getElementById('activityInquiries').innerHTML = `
+    document.getElementById('activityInquiries').innerHTML = currentActivity.inquiries || `
     <p>액티비티 <a href="http://talk.naver.com/WBZZIZQ" target="_blank">네이버 톡톡(http://talk.naver.com/WBZZIZQ)</a></p>
     `;
+    // document.getElementById('activityInquiries').innerHTML = `
+    // <p>액티비티 <a href="http://talk.naver.com/WBZZIZQ" target="_blank">네이버 톡톡(http://talk.naver.com/WBZZIZQ)</a></p>
+    // `;
 
     const locationEl = document.getElementById('activityInformation');
     if (locationEl) {
@@ -88,5 +96,5 @@ if (currentActivity) {
 
 } else {
     alert('존재하지 않는 액티비티입니다.');
-    window.location.href = '/static/playcecamp/activities';
+    window.location.href = '/static/jeju/activities';
 }
