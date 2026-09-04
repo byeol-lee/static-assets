@@ -38,7 +38,7 @@ const activities = [
         </ul>
         `,
         reservation: false,
-        inquiries: `Seongsan Gym <a href="tel:050713419372">0507-1341-9372</a>`,
+        inquiries: `Seongsan Gym <a href="tel:050713419372">+82-507-1341-9372</a><a href="tel:050713419372">0507-1341-9372</a>`,
         display: true,
     },
     {
