@@ -42,6 +42,47 @@ const activities = [
         display: true,
     },
     {
+		program: 'arte-kids-park',
+		title: 'Arte Kids Park Jeju',
+		subtitle: 'A fun-filled world of play surrounded by nature',
+		description: `
+        An interactive media art playground presented by ARTE MUSEUM, which has welcomed more than 10 million visitors worldwide.<br />
+        Featuring play areas where children can run and play freely, media art exhibitions, and programs for the whole family.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/09/0qZpFDMh8hVwh5D6NtZb_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/0qZpFDMh8hVwh5D6NtZb_1_',
+			'/api/editor/attach/view/default/2026/09/Ya3xB6RMh3QcJ7mIhnhO_1_',
+			'/api/editor/attach/view/default/2026/09/gLm32h4RmSjJwxxzqjYL_1_',
+			'/api/editor/attach/view/default/2026/09/kfhNq4KbtYkMpX6gkXy7_1_',
+			'/api/editor/attach/view/default/2026/09/weRpjypFl9tpq8sZrARa_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: ``,
+		duration: `10:00 ~ 19:00`,
+		priceGeneral: `
+        Weekdays: KRW 25,000/Weekends & Holidays: KRW 30,000<br />
+        2-hour pass(12 months ~ Age 13)
+        `,
+		priceGuest: `20% off`,
+		information: `
+        <p class="ref-bu-list">※ Location: 929 Wolgak-ro, Aewol-eup, Jeju-si, Jeju<br />
+        (Takes approx. 1 hour 20 minutes by car from Phoenix Island)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>Available without prior reservation. Discount coupons are available at the front desk.</li>
+            <li>Applicable to up to 4 persons. Cannot be combined with other discounts or benefits.</li>
+            <li>Valid only at ARTE Kids Park Jeju.</li>
+        </ul>
+        `,
+		reservation: false,
+        inquiries: `Arte Kids Park Jeju <a href="tel:+82647997007">+82-64-799-7007</a>`,
+		display: true,
+    },
+    {
         program: 'arte-museum',
         title: 'Arte Museum Jeju',
         subtitle: 'Korea’s largest immersive media art exhibition',
@@ -79,7 +120,7 @@ const activities = [
         </ul>
         `,
         reservation: false,
-        inquiries: `Arte Museum Jeju <a href="tel:0647997007">064-799-7007</a>`,
+        inquiries: `Arte Museum Jeju <a href="tel:+82647997007">+82-64-799-7007</a>`,
         display: true,
     },
     {
