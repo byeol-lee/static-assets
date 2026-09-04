@@ -38,7 +38,7 @@ const activities = [
         </ul>
         `,
         reservation: false,
-        inquiries: `Seongsan Gym <a href="tel:050713419372">0507-1341-9372</a>`,
+        inquiries: `Seongsan Gym <a href="tel:+8250713419372">+82-507-1341-9372</a>`,
         display: true,
     },
     {
@@ -79,7 +79,7 @@ const activities = [
         </ul>
         `,
         reservation: false,
-        inquiries: `Arte Museum Jeju <a href="tel:0647997007">064-799-7007</a>`,
+        inquiries: `Arte Museum Jeju <a href="tel:+82647997007">+82-64-799-7007</a>`,
         display: true,
     },
     {
