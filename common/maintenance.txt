@@ -1599,6 +1599,54 @@
     <div class="main-thumb-list">
         <ul class="list">
             <li class="item">
+                <a href="/static/playcecamp/activities/program?program=fitness-day-pass"
+                    class="link promotion-link countable-banner">
+                    <div class="thumb">
+                        <img src="/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_" alt="" class="img">
+                    </div>
+                    <div class="con">
+                        <div class="title">피트니스 1일 이용</div>
+                        <div class="info">성산에서 최다 머신들로 갖춰진 무인 헬스장</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a href="/static/playcecamp/activities/program?program=arte-museum"
+                    class="link promotion-link countable-banner">
+                    <div class="thumb">
+                        <img src="/api/editor/attach/view/default/2026/09/PEnbkWjB0mPFpc1yB1QY_1_" alt="" class="img">
+                    </div>
+                    <div class="con">
+                        <div class="title">아르떼 뮤지엄 제주</div>
+                        <div class="info">국내 최대 규모의 몰입형 미디어 아트 전시관</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a href="/static/playcecamp/activities/program?program=starlight-oreum"
+                    class="link promotion-link countable-banner">
+                    <div class="thumb">
+                        <img src="/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_" alt="" class="img">
+                    </div>
+                    <div class="con">
+                        <div class="title">별빛 오름 투어</div>
+                        <div class="info">제주의 밤을 가장 가까이 만나는 시간</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a href="/static/playcecamp/activities/program?program=forest-experience"
+                    class="link promotion-link countable-banner">
+                    <div class="thumb">
+                        <img src="/api/editor/attach/view/default/2026/09/ovDNoPKSsmKpNvxPczGy_1_" alt="" class="img">
+                    </div>
+                    <div class="con">
+                        <div class="title">제주 숲 체험</div>
+                        <div class="info">제주 숲을 걸으며 자연과 생태에 숨겨진 이야기를 만나보는 숲 해설</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
                 <a href="/static/playcecamp/activities/program?program=makgeolli-making"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
@@ -1643,54 +1691,6 @@
                     <div class="con">
                         <div class="title">김녕에서의 요트 투어</div>
                         <div class="info">짜릿한 바다 낚시 체험, 운이 좋으면 돌고래를 만나는 특별한 순간까지!</div>
-                    </div>
-                </a>
-            </li>
-            <li class="item">
-                <a href="/static/playcecamp/activities/program?program=scuba-diving"
-                    class="link promotion-link countable-banner">
-                    <div class="thumb">
-                        <img src="/images/ko/activity/playcecamp/outdoor/out-scuba-diving-idx01.jpg" alt="" class="img">
-                    </div>
-                    <div class="con">
-                        <div class="title">스쿠버 다이빙 체험</div>
-                        <div class="info">성산일출봉을 바라보며 바다로 입수하는 짜릿한 경험</div>
-                    </div>
-                </a>
-            </li>
-            <li class="item">
-                <a href="/static/playcecamp/activities/program?program=surfing-class"
-                    class="link promotion-link countable-banner">
-                    <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_" alt="" class="img">
-                    </div>
-                    <div class="con">
-                        <div class="title">서핑 클래스</div>
-                        <div class="info">처음이어도 즐거운 제주 서핑 체험</div>
-                    </div>
-                </a>
-            </li>
-            <li class="item">
-                <a href="/static/playcecamp/activities/program?program=keyring-diy"
-                    class="link promotion-link countable-banner">
-                    <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_" alt="" class="img">
-                    </div>
-                    <div class="con">
-                        <div class="title">키링 DIY</div>
-                        <div class="info">제주 도안으로 만드는 특별한 아크릴 키링</div>
-                    </div>
-                </a>
-            </li>
-            <li class="item">
-                <a href="/static/playcecamp/activities/program?program=bookmark-diy"
-                    class="link promotion-link countable-banner">
-                    <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_" alt="" class="img">
-                    </div>
-                    <div class="con">
-                        <div class="title">책갈피 DIY</div>
-                        <div class="info">제주 도안으로 완성하는 스테인드 책갈피</div>
                     </div>
                 </a>
             </li>
