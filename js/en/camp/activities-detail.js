@@ -56,7 +56,7 @@ if (currentActivity) {
     document.getElementById('priceGeneral').innerHTML = currentActivity.priceGeneral || 'KRW 0';
     document.getElementById('priceGuest').innerHTML = currentActivity.priceGuest || 'KRW 0';
 
-    document.getElementById('activityInquiries').innerHTML = `
+    document.getElementById('activityInquiries').innerHTML = currentActivity.inquiries || `
     <p>Activities <a href="http://talk.naver.com/WBZZIZQ" target="_blank">Naver TalkTalk(http://talk.naver.com/WBZZIZQ)</a></p>
     `;
 
