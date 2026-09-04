@@ -1,5 +1,191 @@
 const activities = [
     {
+        program: 'fitness-day-pass',
+        title: 'Fitness Day Pass',
+        subtitle: 'An unmanned gym equipped with the most extensive range of machines in Seongsan',
+        description: `
+        Seongsan Gym is a premium, standalone fitness center located on the first floor, offering the largest fitness space in Seongsan.<br />
+        Equipped with a wide range of machines, it is ideal for everyone from those who enjoy weight training to those looking for a structured workout,<br />
+        and you can conveniently enjoy the facilities with a one-day pass.<br />
+        <br />
+        Open 24 hours a day, 365 days a year with an unmanned system, so you can enjoy a relaxed workout at your own pace, just like having your own private gym.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
+            '/api/editor/attach/view/default/2026/09/AM3mbl74r9M0CVKgFuX7_1_',
+            '/api/editor/attach/view/default/2026/09/nlFjkkoBU7jM2DsjXY8Z_1_',
+            '/api/editor/attach/view/default/2026/09/3PvWHufvYBQKgBf080no_1_',
+            '/api/editor/attach/view/default/2026/09/j4116ENiABeAFSSPGISV_1_',
+            '/api/editor/attach/view/default/2026/09/0uToerpPIwF2bCsSEjwf_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `00:00 ~ 24:00`,
+        priceGeneral: `KRW 20,000`,
+        priceGuest: `KRW 15,000`,
+        information: `
+        <p class="ref-bu-list">※ Location: 1F, 31, Seongsanjungang-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
+        (Takes approx. 8-minute drive from Phoenix Island)</p>
+        <p class="ref-bu-list">※ This gym operates 24 hours a day with an unmanned system and does not have separate shower facilities.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>No advance reservation is required. Guests can receive exclusive benefits by presenting proof of their stay at Phoenix Island.</li>
+            <li>Free parking</li>
+        </ul>
+        `,
+        reservation: false,
+        inquiries: `Seongsan Gym <a href="tel:050713419372">0507-1341-9372</a>`,
+        display: true,
+    },
+    {
+        program: 'arte-museum',
+        title: 'Arte Museum Jeju',
+        subtitle: 'Korea’s largest immersive media art exhibition',
+        description: `
+        Korea’s largest immersive media art exhibition, expressing the unique essence of Jeju through light, sound, and scent.<br />
+        Explore 16 diverse media art installations across a spacious 1,400-pyeong exhibition space and experience the overwhelming immersion unique to Arte Museum.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/09/PEnbkWjB0mPFpc1yB1QY_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/PEnbkWjB0mPFpc1yB1QY_1_',
+            '/api/editor/attach/view/default/2026/09/rlQ3XwCRcl5aiRrpz3Zh_1_',
+            '/api/editor/attach/view/default/2026/09/N9XpA1VqBCwe2p6qB6JM_1_',
+            '/api/editor/attach/view/default/2026/09/wqfu2CH1nJBQlpRRuUtx_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `10:00 ~ 20:00(Last admission at 19:00)`,
+        priceGeneral: `
+        Adults (Born 1963 - 2007) KRW 18,000<br />
+        Youth (Born 2008 - 2013) KRW 14,000<br />
+        Children (Born 2014 - 2019) KRW 11,000
+        `,
+        priceGuest: `20% off`,
+        information: `
+        <p class="ref-bu-list">※ Location: 478, Eorimbi-ro, Aewol-eup, Jeju-si, Jeju<br />
+        (Takes approx. 1 hour 20-minute drive from Phoenix Island)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>No advance reservation is required. Discount coupons are available at the front desk.</li>
+            <li>The discount is available for up to 4 people and cannot be combined with other discounts or benefits.</li>
+            <li>The discount is valid only at Arte Museum Jeju.</li>
+        </ul>
+        `,
+        reservation: false,
+        inquiries: `Arte Museum Jeju <a href="tel:0647997007">064-799-7007</a>`,
+        display: true,
+    },
+    {
+        program: 'starlight-oreum',
+        title: 'Starlight Oreum Tour',
+        subtitle: 'A chance to experience Jeju’s night sky up close',
+        description: `
+        A nighttime trekking program where you hike up an oreum with a professional guide and admire the stars filling the night sky.<br />
+        Based on the weather and stargazing conditions of the day, a suitable oreum in eastern Jeju will be selected for the tour.<br />
+        <br />
+        Walk safely along the oreum with your guide and discover a side of Jeju that is different from its daytime scenery, creating special memories under the stars.<br />
+        During the trek, your guide will take photos of special moments beneath the stars.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
+            '/api/editor/attach/view/default/2026/09/sDLnIQdzyNPfL1j9IqAB_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `Departure between 20:00 ~ 22:00`,
+        priceGeneral: `KRW 45,000`,
+        priceGuest: `KRW 35,000`,
+        information: `
+        <p class="ref-bu-list">※ Duration: Approx. 120 minutes</p>
+        <p class="ref-bu-list">※ Detailed operating hours will be provided upon confirmation of the reservation, depending on the conditions of the day.</p>
+        <p class="ref-bu-list">※ The most suitable oreum will be selected based on the weather and conditions on the day.</p>
+        <p class="ref-bu-list">※ Location: 941-1, Ojo-ri, Seongsan-eup, Seogwipo-si, Jeju<br />
+        (Takes approx. 8-minute drive from Phoenix Island)</p>
+        <p class="ref-bu-list">※ Guests are required to travel individually to the meeting point. From there, the guide will drive the group to an oreum in eastern Jeju selected according to the weather and stargazing conditions on the day.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>Reservations may be confirmed or canceled depending on program availability after the reservation request is submitted.</li>
+            <li>The program is available after the fee has been paid in advance following reservation confirmation.</li><br />
+            <div class="common-txt">
+                <p class="strong">[Cancellation/Refund Policy]</p>
+                <ul class="dot-bu-list">
+                    <li>Free cancellation up to 1 day before the scheduled date</li>
+                    <li>No refunds for same-day cancellations or no-shows</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeFp70MPCLGRpMV-VDn6W67tEPMzZ8TLonwaZyDb8Ktjjvohg/viewform?usp=publish-editor',
+        display: true,
+    },
+    {
+        program: 'forest-experience',
+        title: 'Jeju Forest Experience',
+        subtitle: 'A guided forest experience exploring the hidden stories of Jeju’s nature and ecosystem',
+        description: `
+        Take a walk along Green Forest Jigri or Saryeoni Forest Path with a professional forest guide and discover the stories hidden within Jeju’s nature.<br />
+        Enjoy the fresh air while learning about Jeju’s ecosystem and the fascinating stories found throughout its forests.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/09/ovDNoPKSsmKpNvxPczGy_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/ovDNoPKSsmKpNvxPczGy_1_',
+            '/api/editor/attach/view/default/2026/09/7zkhlz03ciOPFiLmIn8C_1_',
+            '/api/editor/attach/view/default/2026/09/JhVlpdFLn0ReUWhR7FIp_1_',
+            '/api/editor/attach/view/default/2026/09/1OnZABhiMvOijPeb3dwj_1_',
+            '/api/editor/attach/view/default/2026/09/O5FdP2Ur6R4gEuz5ieW4_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `09:00 ~ 18:00`,
+        priceGeneral: `KRW 50,000`,
+        priceGuest: `KRW 40,000`,
+        information: `
+        <p class="ref-bu-list">※ Duration: Approx. 120 minutes</p>
+        <p class="ref-bu-list">※ After submitting a reservation request, the experience location suitable for the weather conditions on the day will be selected through a phone consultation with the guide. Guests are required to travel individually to the designated location.</p>
+        <p class="ref-bu-list">※ As the program mainly takes place on unpaved forest trails, comfortable clothing and sneakers are recommended.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>Reservations may be confirmed or canceled depending on program availability after the reservation request is submitted.</li>
+            <li>The program is available after the fee has been paid in advance following reservation confirmation.</li><br />
+            <div class="common-txt">
+                <p class="strong">[Cancellation/Refund Policy]</p>
+                <ul class="dot-bu-list">
+                    <li>Free cancellation up to 1 day before the scheduled date</li>
+                    <li>No refunds for same-day cancellations or no-shows</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeYqiy1gv0ZkUIaWE6SKDL9c7ltNs7s4MDR1xkpQBXwzeTcEw/viewform?usp=publish-editor',
+        display: true,
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    {
 		program: 'makgeolli-making',
 		title: 'Makgeolli Brewing & Traditional Liquor Tasting',
 		subtitle: 'Make your own glutinous rice makgeolli and enjoy a tasting of a variety of traditional liquors.',
@@ -90,7 +276,7 @@ const activities = [
 		information: `
         <p class="ref-bu-list">※ Location: 923, Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
         (Takes approx. 4 minutes by car from Phoenix Island)
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
 		notice: `
         <ul class="dot-bu-list">
@@ -141,7 +327,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: 923 Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
       (Takes approx. 4 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
         notice: `
         <ul class="dot-bu-list">
@@ -195,7 +381,7 @@ const activities = [
         <p class="ref-bu-list">※ Location: 229-16 Gujwahaean-ro, Gujwa-eup, Jeju-si, Jeju-do<br />
         (Takes approx. 35 minutes by car from Phoenix Island)</p>
         <p class="ref-bu-list">※ Children: Ages 37 months–13 years</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Please arrive 20 minutes prior to departure for smooth boarding.</p>
         <p class="ref-bu-list">※ Minimum passenger count for departure is 10 people. If the minimum is not met, the schedule may be canceled or the departure time changed, in which case a 100% refund will be issued.</p>
         <p class="ref-bu-list">※ If operation is difficult due to bad weather(rain, high waves, etc.) on the day, it will be canceled.</p>
@@ -304,7 +490,7 @@ const activities = [
         <p class="ref-bu-list">※ Guest Benefit: Welcome drink provided(Coffee or Beverage)</p>
         <p class="ref-bu-list">※ Location: 945 Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
      (Takes approx. 5 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Photos taken during class may be used for promotional content. If you do not wish to be photographed or have photos used, please inform us prior to class.</p>
         <p class="ref-bu-list">※ Free parking is available in front of the venue.</p>
         `,
@@ -342,7 +528,7 @@ const activities = [
         <p class="ref-bu-list">※ Guest Benefit: Welcome drink provided(Coffee or Beverage)</p>
         <p class="ref-bu-list">※ Location: 945 Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
      (Takes approx. 5 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Photos taken during class may be used for promotional content. If you do not wish to be photographed or have photos used, please inform us prior to class.</p>
         <p class="ref-bu-list">※ Free parking is available in front of the venue.</p>
         `,
@@ -384,7 +570,7 @@ const activities = [
         <p class="ref-bu-list">※ Guest Benefit: Welcome drink provided(Coffee or Beverage)</p>
         <p class="ref-bu-list">※ Location: 945 Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
      (Takes approx. 5 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Photos taken during class may be used for promotional content. If you do not wish to be photographed or have photos used, please inform us prior to class.</p>
         <p class="ref-bu-list">※ Free parking is available in front of the venue.</p>
         `,
@@ -425,7 +611,7 @@ const activities = [
         <p class="ref-bu-list">※ Guest Benefit: Welcome drink provided(Coffee or Beverage)</p>
         <p class="ref-bu-list">※ Location: 945 Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
      (Takes approx. 5 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Photos taken during class may be used for promotional content. If you do not wish to be photographed or have photos used, please inform us prior to class.</p>
         <p class="ref-bu-list">※ Free parking is available in front of the venue.</p>
         `,
@@ -467,7 +653,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: 15 Goseongseo 5-gil, Aewol-eup, Jeju-si, Jeju-do<br />
      (Takes approx. 70 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Easy and fun program suitable for everyone aged 4 and above.</p>
         <p class="ref-bu-list">※ Fully customizable experience where you choose parts, fragrances, and colors yourself.</p>
         <p class="ref-bu-list">※ Class duration is approx. 1 hour to 1 hour 30 minutes.</p>
@@ -513,7 +699,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: 15 Goseongseo 5-gil, Aewol-eup, Jeju-si, Jeju-do<br />
      (Takes approx. 70 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Easy and fun program suitable for everyone aged 4 and above.</p>
         <p class="ref-bu-list">※ Includes 1 Herbarium LED base.</p>
         <p class="ref-bu-list">※ Vessels and flowers are self-selected.</p>
@@ -557,7 +743,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: Teahouse B1, 2688 Haemajihaean-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
      (Takes approx. 15 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Casual clothes are NOT allowed; participation is only permitted after changing into yoga wear or sportswear.<br />
         No refunds if participation is restricted due to inappropriate attire.</p>
         <p class="ref-bu-list">※ 1 cup of tea per person.(Please select tea type upon reservation.)</p>
@@ -603,7 +789,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: 3242 Joongsangan-dongro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
      (Takes approx. 15 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
         notice: ``,
         reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdmltPFYpCOZCeR-BqDHtWqCIjiF2ehVlhraEMoQ0XLboml_g/viewform',
@@ -632,7 +818,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: Popo Workshop, 93 Ojo-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
      (Takes approx. 10 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Participation is available for ages 11 and up.</p>
         `,
         notice: ``,
@@ -663,7 +849,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: Popo Workshop, 93 Ojo-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
      (Takes approx. 10 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Participation is available for ages 11 and up.</p>
         `,
         notice: ``,
@@ -695,7 +881,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: 85 Seongeup-i-ri-ro, Pyoseon-myeon, Seogwipo-si, Jeju<br />
      (Takes approx. 30 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Provided items: Ceramic piece made with a potter's wheel(2 teacups, plate, or mug, etc.)</p>
         `,
         notice: `
@@ -792,7 +978,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: Meditation Room B1(Auditorium), 2688 Haemajihaean-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
         (Takes approx. 15 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Casual clothes are NOT allowed; participation is only permitted after changing into yoga wear or sportswear.<br />
         No refunds if participation is restricted due to inappropriate attire.</p>
         `,
@@ -837,7 +1023,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: Meditation Room B1(Auditorium), 2688 Haemajihaean-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
        (Takes approx. 15 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Casual clothes are NOT allowed; participation is only permitted after changing into yoga wear or sportswear.<br />
         No refunds if participation is restricted due to inappropriate attire.</p>
         `,
@@ -883,7 +1069,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: Teahouse B1, 2688 Haemajihaean-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
       (Takes approx. 15 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
         notice: `
         <li>After receiving the reservation request, your booking may be confirmed or canceled depending on program availability.</li>
@@ -927,7 +1113,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: 15 Goseongseo 5-gil, Aewol-eup, Jeju-si, Jeju-do<br />
       (Takes approx. 70 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Easy and fun program suitable for everyone aged 4 and above.</p>
         <p class="ref-bu-list">※ Scent blending workshop.</p>
         <p class="ref-bu-list">※ Makes 200ml deodorizer or fabric perfume.</p>
@@ -971,7 +1157,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: 15 Goseongseo 5-gil, Aewol-eup, Jeju-si, Jeju-do<br />
       (Takes approx. 70 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Easy and fun program suitable for everyone aged 4 and above.</p>
         <p class="ref-bu-list">※ Available in 100ml + 50ml or 150ml sizes.</p>
         <p class="ref-bu-list">※ Uses diverse Jeju scents(gardenia, nutmeg, tangerine, etc.).</p>
@@ -1014,7 +1200,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: 15 Goseongseo 5-gil, Aewol-eup, Jeju-si, Jeju-do<br />
       (Takes approx. 70 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Easy and fun program suitable for everyone aged 4 and above.</p>
         <p class="ref-bu-list">※ Includes 1 aging bottle, 2 scent pouches, and 4 sachet pouches.</p>
         <p class="ref-bu-list">※ Fragrance lasts about 4 months after completion.</p>
@@ -1062,7 +1248,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: Meditation Room B1(Auditorium), 2688 Haemajihaean-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
       (Takes approx. 10 minutes by car from Phoenix Island)</p>
-        <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Phoenix Island.</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Casual clothes are NOT allowed; participation is only permitted after changing into yoga wear or sportswear.<br />
         No refunds if participation is restricted due to inappropriate attire.</p>
         `,
