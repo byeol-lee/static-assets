@@ -1,5 +1,177 @@
 const activities = [
     {
+		program: 'fitness-day-pass',
+		title: '피트니스 1일 이용',
+		subtitle: '성산에서 최다 머신들로 갖춰진 무인 헬스장',
+		description: `
+        제주 성산 최대 규모의 단독 1층 프리미엄 헬스장, 성산짐입니다.<br />
+        성산 지역에서 다양한 머신을 갖춘 헬스장으로, 웨이트 트레이닝을 즐기는 분들부터 체계적인 운동을 원하는 분들까지<br />
+        '1일 이용권'으로 편하게 이용하실 수 있습니다.<br />
+        <br />
+        365일 연중무휴, 24시간 무인 시스템으로 운영되어 시간에 구애받지 않고 개인 헬스장처럼 여유롭게 운동해 보세요.
+        `,
+		thumbnail:'/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
+			'/api/editor/attach/view/default/2026/09/AM3mbl74r9M0CVKgFuX7_1_',
+			'/api/editor/attach/view/default/2026/09/nlFjkkoBU7jM2DsjXY8Z_1_',
+			'/api/editor/attach/view/default/2026/09/3PvWHufvYBQKgBf080no_1_',
+			'/api/editor/attach/view/default/2026/09/j4116ENiABeAFSSPGISV_1_',
+			'/api/editor/attach/view/default/2026/09/0uToerpPIwF2bCsSEjwf_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: ``,
+		duration: `00:00 ~ 24:00`,
+		priceGeneral: `20,000원`,
+		priceGuest: `15,000원`,
+		information: `
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 성산중앙로 31, 1층<br />
+        (플레이스 캠프에서 차량으로 약 4분 소요)</p>
+        <p class="ref-bu-list">※ 24시간 무인 시스템으로 운영되는 헬스장으로 별도의 샤워 시설은 마련되어 있지 않습니다.</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>별도의 사전 예약 없이 이용 가능하며, 휘닉스 아일랜드 투숙 내역을 증빙하여 방문 시 전용 혜택을 받으실 수 있습니다.</li>
+            <li>주차 무료</li>
+        </ul>
+        `,
+		reservation: false,
+        inquiries: `성산짐 <a href="tel:050713419372">0507-1341-9372</a>`,
+		display: true,
+    },
+    {
+		program: 'arte-museum',
+		title: '아르떼 뮤지엄 제주',
+		subtitle: '국내 최대 규모의 몰입형 미디어 아트 전시관',
+		description: `
+        빛과 소리, 향기로 제주의 감성을 표현한 국내 최대 규모의 몰입형 미디어아트 전시관입니다.<br />
+        약 1,400평의 넓은 공간에서 펼쳐지는 16개의 다채로운 미디어아트를 감상하며 아르떼 뮤지엄만의 압도적인 몰입감을 경험해 보세요.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/09/PEnbkWjB0mPFpc1yB1QY_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/PEnbkWjB0mPFpc1yB1QY_1_',
+			'/api/editor/attach/view/default/2026/09/rlQ3XwCRcl5aiRrpz3Zh_1_',
+			'/api/editor/attach/view/default/2026/09/N9XpA1VqBCwe2p6qB6JM_1_',
+			'/api/editor/attach/view/default/2026/09/wqfu2CH1nJBQlpRRuUtx_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: ``,
+		duration: `10:00 ~ 20:00(19:00 입장 마감)`,
+		priceGeneral: `
+        성인(63 ~ 07년생) 18,000원<br />
+        청소년(08 ~ 13년생) 14,000원<br />
+        어린이(14 ~ 19년생) 11,000원
+        `,
+		priceGuest: `20% 할인`,
+		information: `
+        <p class="ref-bu-list">※ 장소: 제주시 애월읍 어림비로 478<br />
+        (플레이스 캠프에서 차량으로 약 1시간 15분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>별도의 사전 예약 없이 이용 가능하며, 할인 쿠폰은 프론트에 비치되어 있습니다.</li>
+            <li>본 할인권은 최대 4인까지 적용 가능하며, 타 할인 및 혜택과 중복 적용되지 않습니다.</li>
+            <li>본 할인권은 아르떼 뮤지엄 제주에서만 사용 가능합니다.</li>
+        </ul>
+        `,
+		reservation: false,
+        inquiries: `아르떼 뮤지엄 제주 <a href="tel:0647997007">064-799-7007</a>`,
+		display: true,
+    },
+    {
+		program: 'starlight-oreum',
+		title: '별빛 오름 투어',
+		subtitle: '제주의 밤을 가장 가까이 만나는 시간',
+		description: `
+        제주의 밤, 전문 가이드와 함께 오름에 올라 밤하늘을 가득 채운 별을 감상하는 야간 트레킹 프로그램입니다.<br />
+        그날의 날씨와 별 관측 환경을 고려해 제주 동쪽 지역의 오름 중 적합한 장소를 선정하여 진행합니다.<br />
+        <br />
+        가이드와 함께 안전하게 오름을 걸으며 낮과는 또 다른 제주의 풍경을 만나고, 별빛 아래에서 특별한 추억을 남겨 보세요.<br />
+        트레킹 중에는 가이드가 별과 함께하는 순간을 사진으로 촬영해 드립니다.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
+			'/api/editor/attach/view/default/2026/09/sDLnIQdzyNPfL1j9IqAB_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: ``,
+		duration: `20:00 ~ 22:00 사이 출발`,
+		priceGeneral: `45,000원`,
+		priceGuest: `35,000원`,
+		information: `
+        <p class="ref-bu-list">※ 소요 시간: 약 120분</p>
+        <p class="ref-bu-list">※ 자세한 운영 시간은 예약 확정 시 당일 상황에 따라 안내드립니다.</p>
+        <p class="ref-bu-list">※ 당일 날씨 및 기상 상황에 따라 가장 적합한 오름을 선정하여 진행합니다.</p>
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조리 941-1<br />
+        (플레이스 캠프에서 차량으로 약 4분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 집결 장소까지는 개별 이동 이후, 가이드분이 운전하여 당일 기상 및 별 관측 환경에 따라 선정된 제주 동쪽 지역의 오름으로 함께 이동하여 프로그램을 진행합니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
+            <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
+            <div class="common-txt">
+                <p class="strong">[취소/환불 규정]</p>
+                <ul class="dot-bu-list">
+                    <li>이용일 1일 전까지 무료 취소</li>
+                    <li>당일 취소 및 노쇼: 환불 불가</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeFp70MPCLGRpMV-VDn6W67tEPMzZ8TLonwaZyDb8Ktjjvohg/viewform?usp=publish-editor',
+		display: true,
+    },
+    {
+		program: 'forest-experience',
+		title: '제주 숲 체험',
+		subtitle: '제주 숲을 걸으며 자연과 생태에 숨겨진 이야기를 만나보는 숲 해설',
+		description: `
+        숲 해설 전문가와 초록숲 지그리 또는 사려니숲길을 따라 걸으며 자연에 숨겨진 이야기를 듣는 시간입니다.<br />
+        맑은 공기를 느끼며 제주의 생태, 숲에 담긴 재미있는 이야기까지 함께 만나볼 수 있습니다.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/09/ovDNoPKSsmKpNvxPczGy_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/ovDNoPKSsmKpNvxPczGy_1_',
+			'/api/editor/attach/view/default/2026/09/7zkhlz03ciOPFiLmIn8C_1_',
+			'/api/editor/attach/view/default/2026/09/JhVlpdFLn0ReUWhR7FIp_1_',
+			'/api/editor/attach/view/default/2026/09/1OnZABhiMvOijPeb3dwj_1_',
+			'/api/editor/attach/view/default/2026/09/O5FdP2Ur6R4gEuz5ieW4_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: ``,
+		duration: `09:00 ~ 18:00`,
+		priceGeneral: `50,000원`,
+		priceGuest: `40,000원`,
+		information: `
+        <p class="ref-bu-list">※ 소요 시간: 약 120분</p>
+        <p class="ref-bu-list">※ 예약 접수 후 가이드와의 유선 미팅을 통해 당일 기상 상황에 적합한 체험 장소를 선정하며, 안내받은 장소까지 개별 이동해 주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 흙길 위주로 진행되는 프로그램으로 편안한 복장과 운동화 착용을 권장드립니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
+            <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
+            <div class="common-txt">
+                <p class="strong">[취소/환불 규정]</p>
+                <ul class="dot-bu-list">
+                    <li>이용일 1일 전까지 무료 취소</li>
+                    <li>당일 취소 및 노쇼: 환불 불가</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeYqiy1gv0ZkUIaWE6SKDL9c7ltNs7s4MDR1xkpQBXwzeTcEw/viewform?usp=publish-editor',
+		display: true,
+    },
+    {
 		program: 'makgeolli-making',
 		title: '찹쌀 막걸리 빚기&전통주 시음',
 		subtitle: '직접 찹쌀 막걸리를 빚고, 다양한 전통주를 맛볼 수 있는 시간',
