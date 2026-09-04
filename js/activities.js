@@ -10,7 +10,7 @@ const activities = [
         <br />
         365일 연중무휴, 24시간 무인 시스템으로 운영되어 시간에 구애받지 않고 개인 헬스장처럼 여유롭게 운동해 보세요.
         `,
-		'/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
+		thumbnail:'/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
 		heroImage: [
 			'/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
 			'/api/editor/attach/view/default/2026/09/AM3mbl74r9M0CVKgFuX7_1_',
