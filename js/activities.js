@@ -29,7 +29,7 @@ const activities = [
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 성산중앙로 31, 1층<br />
         (휘닉스 아일랜드에서 차량으로 약 8분 소요)</p>
         <p class="ref-bu-list">※ 24시간 무인 시스템으로 운영되는 헬스장으로 별도의 샤워 시설은 마련되어 있지 않습니다.</p>
-        <p class="ref-bu-list">※  본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
         `,
 		notice: `
         <ul class="dot-bu-list">
