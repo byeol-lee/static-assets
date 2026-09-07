@@ -253,17 +253,41 @@ kakao.maps.load(function () {
         const targetLoc = activeLocations[index];
         const moveLatLon = new kakao.maps.LatLng(targetLoc.lat, targetLoc.lng);
 
-        map.panTo(moveLatLon);
+        // map.panTo(moveLatLon);
+        // targetInfoOverlay.setMap(map);
+        // listItems[index].classList.add('active');
+        // thumbItems[index].classList.add('active');
+        // markerElements[index].classList.add('active');
+
+        // thumbItems[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+
+        // if (isPc) {
+        //     listItems[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // }
+
+        map.setCenter(moveLatLon); 
+
         targetInfoOverlay.setMap(map);
         listItems[index].classList.add('active');
         thumbItems[index].classList.add('active');
         markerElements[index].classList.add('active');
 
-        thumbItems[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-
-        if (isPc) {
-            listItems[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // 1. 모바일 썸네일 바 스크롤 (body 스크롤에 영향을 주지 않도록 요소 자체 스크롤)
+        const thumbItem = thumbItems[index];
+        if (!isPc && thumbItem && thumbBarEl) {
+            const scrollLeft = thumbItem.offsetLeft - (thumbBarEl.clientWidth / 2) + (thumbItem.clientWidth / 2);
+            thumbBarEl.scrollTo({ left: scrollLeft, behavior: 'smooth' });
         }
+
+        // 2. PC 전용 사이드바 리스트 스크롤 (body/window 스크롤 튀기 방지)
+        if (isPc) {
+            const targetItem = listItems[index];
+            if (targetItem && placeListEl) {
+                const scrollTop = targetItem.offsetTop - placeListEl.offsetTop;
+                placeListEl.scrollTo({ top: scrollTop, behavior: 'smooth' });
+            }
+        }
+        
     }
 
     selectPlace(0);
