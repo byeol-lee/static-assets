@@ -236,6 +236,32 @@ kakao.maps.load(function () {
         markerContent.addEventListener('click', handleClick);
     });
 
+// [추가] 사이드바 전용 부드럽고 가속도 일정한 스크롤 애니메이션 함수
+    function smoothScrollTo(element, targetLocation, duration = 400) {
+        const startLocation = element.scrollTop;
+        const distance = targetLocation - startLocation;
+        let startTime = null;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 1);
+            
+            // easeInOutCubic: 스크롤 속도가 급격하게 튀지 않고 편안하게 움직임
+            const ease = progress < 0.5
+                ? 4 * progress * progress * progress
+                : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+            element.scrollTop = startLocation + (distance * ease);
+
+            if (timeElapsed < duration) {
+                requestAnimationFrame(animation);
+            }
+        }
+
+        requestAnimationFrame(animation);
+    }
+
     function selectPlace(index) {
         const isPc = window.innerWidth > 820;
         const isAlreadyActive = listItems[index].classList.contains('active');
@@ -253,41 +279,29 @@ kakao.maps.load(function () {
         const targetLoc = activeLocations[index];
         const moveLatLon = new kakao.maps.LatLng(targetLoc.lat, targetLoc.lng);
 
-        // map.panTo(moveLatLon);
-        // targetInfoOverlay.setMap(map);
-        // listItems[index].classList.add('active');
-        // thumbItems[index].classList.add('active');
-        // markerElements[index].classList.add('active');
-
-        // thumbItems[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-
-        // if (isPc) {
-        //     listItems[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
-        // }
-
-        map.setCenter(moveLatLon); 
+        // 1. 지도 이동: panTo 사용으로 부드럽게 전환
+        map.panTo(moveLatLon);
 
         targetInfoOverlay.setMap(map);
         listItems[index].classList.add('active');
         thumbItems[index].classList.add('active');
         markerElements[index].classList.add('active');
 
-        // 1. 모바일 썸네일 바 스크롤 (body 스크롤에 영향을 주지 않도록 요소 자체 스크롤)
+        // 2. 모바일 썸네일 바 스크롤
         const thumbItem = thumbItems[index];
         if (!isPc && thumbItem && thumbBarEl) {
             const scrollLeft = thumbItem.offsetLeft - (thumbBarEl.clientWidth / 2) + (thumbItem.clientWidth / 2);
             thumbBarEl.scrollTo({ left: scrollLeft, behavior: 'smooth' });
         }
 
-        // 2. PC 전용 사이드바 리스트 스크롤 (body/window 스크롤 튀기 방지)
+        // 3. PC 사이드바 스크롤: 0.4초(400ms) 동안 일정하고 부드럽게 이동
         if (isPc) {
             const targetItem = listItems[index];
             if (targetItem && placeListEl) {
                 const scrollTop = targetItem.offsetTop - placeListEl.offsetTop;
-                placeListEl.scrollTo({ top: scrollTop, behavior: 'smooth' });
+                smoothScrollTo(placeListEl, scrollTop, 400);
             }
         }
-        
     }
 
     selectPlace(0);
