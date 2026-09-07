@@ -279,22 +279,24 @@ kakao.maps.load(function () {
         const targetLoc = activeLocations[index];
         const moveLatLon = new kakao.maps.LatLng(targetLoc.lat, targetLoc.lng);
 
-        // 1. 지도 이동: panTo 사용으로 부드럽게 전환
-        map.panTo(moveLatLon);
+        // 카카오맵 렌더링 프레임에 맞춰 이동시켜 타일 깜빡임 방지
+        requestAnimationFrame(() => {
+            map.panTo(moveLatLon);
+        });
 
         targetInfoOverlay.setMap(map);
         listItems[index].classList.add('active');
         thumbItems[index].classList.add('active');
         markerElements[index].classList.add('active');
 
-        // 2. 모바일 썸네일 바 스크롤
+        // 모바일 썸네일 스크롤
         const thumbItem = thumbItems[index];
         if (!isPc && thumbItem && thumbBarEl) {
             const scrollLeft = thumbItem.offsetLeft - (thumbBarEl.clientWidth / 2) + (thumbItem.clientWidth / 2);
             thumbBarEl.scrollTo({ left: scrollLeft, behavior: 'smooth' });
         }
 
-        // 3. PC 사이드바 스크롤: 0.4초(400ms) 동안 일정하고 부드럽게 이동
+        // PC 사이드바 스크롤
         if (isPc) {
             const targetItem = listItems[index];
             if (targetItem && placeListEl) {
