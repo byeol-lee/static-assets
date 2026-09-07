@@ -114,10 +114,8 @@ const locations = [
 kakao.maps.load(function () {
     const container = document.getElementById('map');
 
-    // 노출할 데이터만 필터링
     const activeLocations = locations.filter(loc => loc.visible !== false);
 
-    // 노출 대상 데이터가 하나도 없으면 중단
     if (activeLocations.length === 0) return;
 
     const defaultCenter = new kakao.maps.LatLng(activeLocations[0].lat, activeLocations[0].lng);
@@ -134,7 +132,6 @@ kakao.maps.load(function () {
     const placeListEl = document.getElementById('placeList');
     const thumbBarEl = document.getElementById('thumbScrollBar');
 
-    // 필터링된 노출 대상(activeLocations)에만 마커 및 뷰 생성
     activeLocations.forEach((loc, index) => {
         const position = new kakao.maps.LatLng(loc.lat, loc.lng);
 
@@ -236,7 +233,6 @@ kakao.maps.load(function () {
         markerContent.addEventListener('click', handleClick);
     });
 
-// [추가] 사이드바 전용 부드럽고 가속도 일정한 스크롤 애니메이션 함수
     function smoothScrollTo(element, targetLocation, duration = 400) {
         const startLocation = element.scrollTop;
         const distance = targetLocation - startLocation;
@@ -247,7 +243,6 @@ kakao.maps.load(function () {
             const timeElapsed = currentTime - startTime;
             const progress = Math.min(timeElapsed / duration, 1);
             
-            // easeInOutCubic: 스크롤 속도가 급격하게 튀지 않고 편안하게 움직임
             const ease = progress < 0.5
                 ? 4 * progress * progress * progress
                 : 1 - Math.pow(-2 * progress + 2, 3) / 2;
@@ -279,24 +274,19 @@ kakao.maps.load(function () {
         const targetLoc = activeLocations[index];
         const moveLatLon = new kakao.maps.LatLng(targetLoc.lat, targetLoc.lng);
 
-        // 카카오맵 렌더링 프레임에 맞춰 이동시켜 타일 깜빡임 방지
-        requestAnimationFrame(() => {
-            map.panTo(moveLatLon);
-        });
+        map.panTo(moveLatLon);
 
         targetInfoOverlay.setMap(map);
         listItems[index].classList.add('active');
         thumbItems[index].classList.add('active');
         markerElements[index].classList.add('active');
 
-        // 모바일 썸네일 스크롤
         const thumbItem = thumbItems[index];
         if (!isPc && thumbItem && thumbBarEl) {
             const scrollLeft = thumbItem.offsetLeft - (thumbBarEl.clientWidth / 2) + (thumbItem.clientWidth / 2);
             thumbBarEl.scrollTo({ left: scrollLeft, behavior: 'smooth' });
         }
 
-        // PC 사이드바 스크롤
         if (isPc) {
             const targetItem = listItems[index];
             if (targetItem && placeListEl) {
