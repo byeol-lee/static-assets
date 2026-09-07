@@ -277,6 +277,15 @@
     word-break: break-all;
 }
 
+html {
+    overflow-y: scroll;
+}
+
+#map, #map * {
+    outline: none !important;
+    touch-action: pan-x pan-y;
+}
+
 /* ==================================================
    모바일 전용 스타일 (반응형)
    ================================================== */
