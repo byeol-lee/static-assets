@@ -149,7 +149,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentSite = getCurrentSiteType();
     const currentData = scheduleData[currentSite] || [];
 
-    /* ---------------- 1. PC 테이블 렌더링 ---------------- */
     function getValue(val, index, defaultValue) {
         if (Array.isArray(val)) {
             return val[index] !== undefined ? val[index] : defaultValue;
@@ -208,7 +207,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /* ---------------- 2. 모바일 타임라인 렌더링 ---------------- */
     function renderMobileTimeline() {
         const container = document.getElementById('m-timeline-container');
         if (!container) return;
