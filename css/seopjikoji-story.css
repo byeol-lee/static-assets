@@ -286,18 +286,6 @@ html {
     touch-action: pan-x pan-y;
 }
 
-#map {
-    background-color: #eef0f2 !important;
-}
-
-#map div, 
-#map canvas {
-    background-color: #eef0f2 !important;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transform: translate3d(0,0,0);
-}
-
 /* ==================================================
    모바일 전용 스타일 (반응형)
    ================================================== */
