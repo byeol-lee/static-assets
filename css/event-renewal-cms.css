@@ -997,6 +997,7 @@ PC Responsive
 
     .event-section-title__heading {
         font-size: 32px;
+        line-height: 48px;
     }
 
     .event-section-title__desc {
