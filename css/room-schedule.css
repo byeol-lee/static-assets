@@ -29,10 +29,9 @@
 }
 
 .schedule-table td.row-header {
-    background-color: #fafafa;
-    font-weight: bold;
-    color: #333;
-    width: 80px;
+    background-color: #f8f8f8;
+    font-weight: 500;
+    color: #222;
 }
 
 .cell-highlight-bar {
