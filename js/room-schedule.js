@@ -261,4 +261,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     renderMobileTimeline();
+
+    function setResortType() {
+        var siteType = getCurrentSiteType(); 
+        var targetType = (siteType === 'island') ? 'island' : 'park';
+
+        var urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('type')) {
+            targetType = urlParams.get('type');
+        }
+
+        if (typeof $ !== 'undefined') {
+            $('.room-info').hide();
+            $('.room-info.' + targetType).show();
+        } else {
+            document.querySelectorAll('.resort-info').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.resort-info.' + targetType).forEach(el => el.style.display = '');
+        }
+    }
+
+    setResortType();
+
 });
