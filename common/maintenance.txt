@@ -1499,6 +1499,11 @@
                     <a href="/page/board/event/190000047134" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
+                <li class="modal-slider-item swiper-slide" data-start="2026-09-10T00:00:00" data-end="2026-09-22T00:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/09/jLdzJFRsUhyAJWbzmuRq_1_');">
+                    <a href="/page/board/package/16151" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
                 <li class="modal-slider-item swiper-slide" data-end="2026-09-14T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/09/0lDBeNZsVWnxEp7OQ6Iz_1_');">
                     <a href="/page/board/package/16157" class="modal-slider-link" target="_blank">
@@ -1533,6 +1538,11 @@
                 <li class="modal-slider-item swiper-slide" data-start="2026-08-24T17:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/08/xinZI225EyPlCx5lDk3g_1_');">
                     <a href="/page/pyeongchang/board/event/190000047134" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
+                <li class="modal-slider-item swiper-slide" data-start="2026-09-10T00:00:00" data-end="2026-09-22T00:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/09/jLdzJFRsUhyAJWbzmuRq_1_');">
+                    <a href="/page/pyeongchang/board/package/16151" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
                 <li class="modal-slider-item swiper-slide" data-end="2026-09-24T00:00:00"
