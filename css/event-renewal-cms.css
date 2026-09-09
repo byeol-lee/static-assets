@@ -153,14 +153,11 @@ Hero
     position: relative;
     margin-bottom: 24px;
     text-align: left;
-
-    /* 배경 이미지 */
-    background-image: url('https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/02/cA3Shxvn4klYG1Uhs2OG_1_');
-    background-repeat: no-repeat;
+    /* background-image: url('https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/02/cA3Shxvn4klYG1Uhs2OG_1_');
+    background-repeat: no-repeat; */
     background-position: center;
     background-size: cover;
 
-    /* 모바일 기본 높이 */
     min-height: 280px;
 
     display: flex;
@@ -173,7 +170,6 @@ Hero
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.35);
-    /* 텍스트 가독성용 */
 }
 
 .event-hero__inner {
