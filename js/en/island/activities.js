@@ -888,10 +888,15 @@ const activities = [
         title: 'Pottery Class',
         subtitle: 'Create a special keepsake with your own hands through a traditional pottery experience.',
         description: `
-        Experience the art of traditional pottery using a potter's wheel to create your own unique ceramic piece.<br />
-		Choose from two teacups, a plate, a mug, or other available items and craft them yourself.<br />
-		Your finished piece will be fired and delivered to you by courier approximately two months later.<br />
-		If you would like to create a larger piece or add decorative patterns using the traditional inlay technique, you may do so by paying an additional fee on site.
+		This is an experience where you create your own ceramic piece using a pottery wheel in the traditional way.<br />
+		<br />
+		Choose from a coffee cup, mug, bowl, small plate, or a set of two drinking cups and create your own piece.<br />
+		<br />
+		The basic experience also includes decorating your piece using the inlay technique, allowing you to add your desired patterns and create a one-of-a-kind ceramic piece.<br />
+		<br />
+		Your finished piece will be dried and fired before completion. Delivery of the finished piece is included in the experience fee, so you can receive it without any additional shipping charges.<br />
+		<br />
+		<p class="ref-bu-list">※ Additional charges may apply depending on the size of the piece or any additional customization.</p>
         `,
         thumbnail: '/api/editor/attach/view/default/2025/05/NRjatN0z0eClQ9m41w4B_1_',
         heroImage: [
@@ -903,7 +908,7 @@ const activities = [
         category: 'LOCAL',
         date: 'Mon ~ Sat',
         duration: '11:00, 15:00 / 40 ~ 60 mins',
-        priceGeneral: 'KRW 30,000',
+        priceGeneral: 'KRW 31,000',
         priceGuest: 'KRW 26,000',
         information: `
         <p class="ref-bu-list">※ Location: 85 Seongeup-i-ri-ro, Pyoseon-myeon, Seogwipo-si, Jeju<br />
