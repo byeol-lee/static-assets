@@ -1516,7 +1516,7 @@
                 </li>
                 <li class="modal-slider-item swiper-slide" data-end="2026-10-01T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/09/ZpFxKs230HU0LhuPorjy_1_');">
-                    <a href="/page/board/package/15989" class="modal-slider-link" target="_blank">
+                    <a href="/page/board/package/16163" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
             </ul>
@@ -1573,7 +1573,7 @@
                 </li>
                 <li class="modal-slider-item swiper-slide" data-end="2026-10-01T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/09/ZpFxKs230HU0LhuPorjy_1_');">
-                    <a href="/page/jeju/board/package/15989" class="modal-slider-link" target="_blank">
+                    <a href="/page/jeju/board/package/16163" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
                 <li class="modal-slider-item swiper-slide"
