@@ -745,8 +745,10 @@
         padding: 0 0 70px;
     }
 
+    .common-content a:active,
+    .common-content a:focus,
     .common-content a:hover {
-        text-decoration: none;
+        text-decoration: none !important;
     }
 
     @media screen and (max-width:819px) {
