@@ -745,6 +745,10 @@
         padding: 0 0 70px;
     }
 
+    .common-content a:hover {
+        text-decoration: none;
+    }
+
     @media screen and (max-width:819px) {
 
         .section-main .visual-banner .main-copy {
