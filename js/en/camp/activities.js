@@ -1,5 +1,98 @@
 const activities = [
     {
+		program: 'traveler-pt',
+		title: 'Traveler PT',
+		subtitle: 'Professional personal training classes led directly by the gym owner, focusing on proper weight training',
+		description: `
+        How about working out on the Stairway to Heaven with Seongsan Ilchulbong in view?<br />
+        <br />
+        Located in Seongsan, Jeju, this personal training program is led directly by the gym owner and focuses on weight training.<br />
+        Classes are limited to a maximum of two people, providing personalized instruction.<br />
+        <br />
+        Beginners can learn the fundamentals step by step.<br />
+        Learn proper exercise techniques and build consistent workout habits.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
+			'/api/editor/attach/view/default/2026/09/g4zgEx63Na5EvylB3cSJ_1_',
+			'/api/editor/attach/view/default/2026/09/FGLjKVVozcHBRTlzKIwK_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: `Weekdays`,
+		duration: `08:00`,
+		priceGeneral: `KRW 29,000`,
+		priceGuest: `KRW 20,000`,
+		information: `
+        <p class="ref-bu-list">※ Location: 3F, 18 Ilchul-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
+        (Takes approx. 1 minute drive or 7 minute walk from Playce Camp)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        <p class="ref-bu-list">※ Indoor sneakers are required.</p>
+        <p class="ref-bu-list">※ Parking: Seongsan Health Subcenter(42, Goseongojo-ro, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea)</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>Your reservation will be confirmed once payment is completed after the reservation is confirmed.</li>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdUouyKsSC2mcsx2Toy0Wr9KVSGW5yyWraL00VuzT2J4UJTzQ/viewform?usp=publish-editor',
+        inquiries: ``,
+		display: true,
+    },
+    {
+		program: 'jeju-snap',
+		title: 'One Frame in Jeju, Emotional Snap',
+		subtitle: 'Choose your favorite setting - a charming photo studio, Jeju stone walls, or the sea - and capture your special moments in photos.',
+		description: `
+        Capture special moments filled with the unique charm of Jeju.<br />
+        <br />
+        From a cozy photo studio featuring traditional rafters and stone walls, to a front yard surrounded by Jeju stone walls,<br />
+        or a seaside harbor overlooking the ocean at Seopjikoji - choose from three unique locations for your photo shoot.<br />
+        We’ll capture natural and comfortable moments against the distinctive scenery of Jeju.<br />
+        <br />
+        Turn your travel memories into special photos you’ll treasure for years to come.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
+			'/api/editor/attach/view/default/2026/09/iQgK0K7N0EHa2wPqfxOk_1_',
+			'/api/editor/attach/view/default/2026/09/AOP8pu5DdYYiMVZZLBUf_1_',
+			'/api/editor/attach/view/default/2026/09/v9CE5E81DaYQNLGi6wid_1_',
+			'/api/editor/attach/view/default/2026/09/6pPKaCqCYtuucx9zrLZP_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: `Open daily(Closed Wednesdays)`,
+		duration: `11:00 ~ 17:00`,
+		priceGeneral: `
+        1-2 people: KRW 25,000<br />
+        1 person with a pet: KRW 25,000<br />
+        3 people: KRW 75,000<br />
+        4 people: KRW 100,000<br />
+        On-location shoot: KRW 150,000<br />
+        Drone video(Approx. 40 sec.): KRW 40,000
+        `,
+		priceGuest: `KRW 5,000 off the regular rate`,
+		information: `
+        <p class="ref-bu-list">※ Location: Kkulkkuk Photo Studio, 941, Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea<br />
+        (Takes approx. 3 minute walk from Playce Camp)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        <p class="ref-bu-list">※ Each person will receive one 4×6 postcard-size print from the photo shoot.</p>
+        <p class="ref-bu-list">※ On-location shoots are available at nearby attractions, including Seongsan Ilchulbong and Seopjikoji, with no limit on the number of participants<br />
+        After the shoot, select two photos to receive as two printed copies.</p>
+        <p class="ref-bu-list">※ Drone shoots feature the sea at Seopjikoji and produce a video approximately 40 seconds long. The original drone video file will be provided.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>Same-day reservations are not available(Min. 1 day in advance)</li>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScoLvv1O_JRHA7WcPlGY06-wx0mMLKfn11yCepllGm5keFtGA/viewform?usp=dialog',
+        inquiries: ``,
+		display: true,
+    },
+    {
         program: 'fitness-day-pass',
         title: 'Fitness Day Pass',
         subtitle: 'An unmanned gym equipped with the most extensive range of machines in Seongsan',
