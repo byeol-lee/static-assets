@@ -1,5 +1,98 @@
 const activities = [
     {
+		program: 'traveler-pt',
+		title: '여행자 PT',
+		subtitle: '관장 직접 지도 개인레슨 전문으로 올바른 웨이트 트레이닝 클래스',
+		description: `
+        성산일출봉 보면서 천국의 계단 어때요?<br />
+        <br />
+        제주 성산에 위치한 개인레슨 전문 PT 프로그램으로 관장이 직접 지도하며 웨이트 트레이닝을 중심으로 진행합니다.<br />
+        수업은 최대 2인 소규모로 진행됩니다.<br />
+        <br />
+        운동 초보자도 기초부터 차근차근 배우실 수 있습니다.<br />
+        올바른 운동 방법과 꾸준한 운동 습관을 만들어드립니다.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
+			'/api/editor/attach/view/default/2026/09/g4zgEx63Na5EvylB3cSJ_1_',
+			'/api/editor/attach/view/default/2026/09/FGLjKVVozcHBRTlzKIwK_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: `평일 운영`,
+		duration: `08:00`,
+		priceGeneral: `29,000원`,
+		priceGuest: `20,000원`,
+		information: `
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 일출로 18, 3층<br />
+        (플레이스 캠프에서 차량 약 1분, 도보 약 7분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 실내 운동화 필수 지참</p>
+        <p class="ref-bu-list">※ 주차 이용 시 성산보건지소(제주 서귀포시 성산읍 고성오조로 42)</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>예약 확정 이후 이용 요금 결제 완료 시 최종 예약이 완료됩니다.</li>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdUouyKsSC2mcsx2Toy0Wr9KVSGW5yyWraL00VuzT2J4UJTzQ/viewform?usp=publish-editor',
+        inquiries: ``,
+		display: true,
+    },
+    {
+		program: 'jeju-snap',
+		title: '제주 한 장, 감성 스냅',
+		subtitle: '제주 감성 가득한 사진관·돌담·바다 중 원하는 장소를 선택해 특별한 순간을 사진으로 남겨 보세요.',
+		description: `
+        제주의 감성을 담아 특별한 순간을 사진으로 남겨 보세요.<br />
+        <br />
+        서까래와 돌담이 어우러진 감성적인 사진관부터 제주 돌담이 있는 앞마당, 섭지코지 바다가 보이는 포구까지!<br />
+        세 가지 촬영 장소 중 원하는 곳을 선택할 수 있습니다.<br />
+        제주다운 풍경을 배경으로 자연스럽고 편안하게 촬영해 드립니다.<br />
+        <br />
+        여행의 순간을 오래 간직할 수 있는 특별한 사진으로 남겨 보세요.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
+			'/api/editor/attach/view/default/2026/09/iQgK0K7N0EHa2wPqfxOk_1_',
+			'/api/editor/attach/view/default/2026/09/AOP8pu5DdYYiMVZZLBUf_1_',
+			'/api/editor/attach/view/default/2026/09/v9CE5E81DaYQNLGi6wid_1_',
+			'/api/editor/attach/view/default/2026/09/6pPKaCqCYtuucx9zrLZP_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: `매일 운영(수요일 제외)`,
+		duration: `11:00 ~ 17:00`,
+		priceGeneral: `
+        1 ~ 2인: 25,000원<br />
+        반려동물과 1인: 25,000원<br />
+        3인: 75,000원<br />
+        4인: 100,000원<br />
+        출장 촬영: 150,000원<br />
+        드론 영상(40초 내외): 40,000원
+        `,
+		priceGuest: `정상 요금 기준 5,000원 할인`,
+		information: `
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 환해장성로 941, 꿀꺽사진관<br />
+        (플레이스 캠프에서 도보 약 3분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 사진 촬영 시 4×6 엽서 사이즈 인화 사진을 1인당 1장씩 제공합니다.</p>
+        <p class="ref-bu-list">※ 출장 촬영은 인원 제한 없이 성산일출봉·섭지코지 등 인근 명소에서 진행됩니다.<br />
+        출장 촬영 후 원하는 사진 2장을 셀렉하여 인화본 2장을 제공합니다.</p>
+        <p class="ref-bu-list">※ 드론 촬영은 섭지코지 바다를 배경으로 약 40초 분량의 영상으로 제작되며, 촬영한 드론 영상은 원본 파일로 제공해 드립니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>당일 예약 불가(최소 1일 전까지 예약 가능)</li>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScoLvv1O_JRHA7WcPlGY06-wx0mMLKfn11yCepllGm5keFtGA/viewform?usp=dialog',
+        inquiries: ``,
+		display: true,
+    },
+    {
 		program: 'fitness-day-pass',
 		title: '피트니스 1일 이용',
 		subtitle: '성산에서 최다 머신들로 갖춰진 무인 헬스장',
