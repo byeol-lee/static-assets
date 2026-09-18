@@ -1546,7 +1546,7 @@
                     <a href="/page/pyeongchang/board/event/190000047134" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-start="2026-09-10T00:00:00" data-end="2026-09-22T00:00:00"
+                <li class="modal-slider-item swiper-slide" data-start="2026-09-10T00:00:00" data-end="2026-09-21T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/09/gqlTa6zvNqAGCZ94omKH_1_');">
                     <a href="/page/pyeongchang/board/package/16151" class="modal-slider-link" target="_blank">
                     </a>
