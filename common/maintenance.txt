@@ -1625,6 +1625,30 @@
     <div class="main-thumb-list">
         <ul class="list">
             <li class="item">
+                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=traveler-pt"
+                    class="link promotion-link countable-banner">
+                    <div class="thumb">
+                        <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_" alt="" class="img">
+                    </div>
+                    <div class="con">
+                        <div class="title">여행자 PT</div>
+                        <div class="info">관장 직접 지도 개인레슨 전문으로 올바른 웨이트 트레이닝 클래스</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=jeju-snap"
+                    class="link promotion-link countable-banner">
+                    <div class="thumb">
+                        <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_" alt="" class="img">
+                    </div>
+                    <div class="con">
+                        <div class="title">제주 한 장, 감성 스냅</div>
+                        <div class="info">제주 감성 가득한 장소를 선택해 특별한 순간을 사진으로 남겨 보세요.</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
                 <a href="/static/playcecamp/activities/program?program=fitness-day-pass"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
@@ -1693,30 +1717,6 @@
                     <div class="con">
                         <div class="title">윙 서핑</div>
                         <div class="info">제주의 아름다운 해안에서 윙 포일링의 기술을 마스터하세요!</div>
-                    </div>
-                </a>
-            </li>
-            <li class="item">
-                <a href="/static/playcecamp/activities/program?program=kitesurfing"
-                    class="link promotion-link countable-banner">
-                    <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_" alt="" class="img">
-                    </div>
-                    <div class="con">
-                        <div class="title">카이트서핑</div>
-                        <div class="info">바람을 타고 바다 위를 질주하는 특별한 액티비티!</div>
-                    </div>
-                </a>
-            </li>
-            <li class="item">
-                <a href="/static/playcecamp/activities/program?program=yacht-tour"
-                    class="link promotion-link countable-banner">
-                    <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_" alt="" class="img">
-                    </div>
-                    <div class="con">
-                        <div class="title">김녕에서의 요트 투어</div>
-                        <div class="info">짜릿한 바다 낚시 체험, 운이 좋으면 돌고래를 만나는 특별한 순간까지!</div>
                     </div>
                 </a>
             </li>
