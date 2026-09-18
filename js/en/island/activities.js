@@ -1,44 +1,137 @@
 const activities = [
     {
-		program: 'arte-kids-park',
-		title: 'Arte Kids Park Jeju',
-		subtitle: 'A fun-filled world of play surrounded by nature',
+		program: 'traveler-pt',
+		title: 'Traveler PT',
+		subtitle: 'Professional personal training classes led directly by the gym owner, focusing on proper weight training',
 		description: `
-        An interactive media art playground presented by ARTE MUSEUM, which has welcomed more than 10 million visitors worldwide.<br />
-        Featuring play areas where children can run and play freely, media art exhibitions, and programs for the whole family.
+        How about working out on the Stairway to Heaven with Seongsan Ilchulbong in view?<br />
+        <br />
+        Located in Seongsan, Jeju, this personal training program is led directly by the gym owner and focuses on weight training.<br />
+        Classes are limited to a maximum of two people, providing personalized instruction.<br />
+        <br />
+        Beginners can learn the fundamentals step by step.<br />
+        Learn proper exercise techniques and build consistent workout habits.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/0qZpFDMh8hVwh5D6NtZb_1_',
+		thumbnail: '/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
 		heroImage: [
-			'/api/editor/attach/view/default/2026/09/0qZpFDMh8hVwh5D6NtZb_1_',
-			'/api/editor/attach/view/default/2026/09/Ya3xB6RMh3QcJ7mIhnhO_1_',
-			'/api/editor/attach/view/default/2026/09/gLm32h4RmSjJwxxzqjYL_1_',
-			'/api/editor/attach/view/default/2026/09/kfhNq4KbtYkMpX6gkXy7_1_',
-			'/api/editor/attach/view/default/2026/09/weRpjypFl9tpq8sZrARa_1_',
+			'/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
+			'/api/editor/attach/view/default/2026/09/g4zgEx63Na5EvylB3cSJ_1_',
+			'/api/editor/attach/view/default/2026/09/FGLjKVVozcHBRTlzKIwK_1_',
 		],
 		tags: ['REST', 'HEALING'],
 		category: 'REST',
-		date: ``,
-		duration: `10:00 ~ 19:00`,
+		date: `Weekdays`,
+		duration: `08:00`,
+		priceGeneral: `KRW 29,000`,
+		priceGuest: `KRW 20,000`,
+		information: `
+        <p class="ref-bu-list">※ Location: 3F, 18 Ilchul-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
+        (Takes approx. 5 minutes by car from Phoenix Island)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        <p class="ref-bu-list">※ Indoor sneakers are required.</p>
+        <p class="ref-bu-list">※ Parking: Seongsan Health Subcenter(42, Goseongojo-ro, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea)</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>Your reservation will be confirmed once payment is completed after the reservation is confirmed.</li>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdUouyKsSC2mcsx2Toy0Wr9KVSGW5yyWraL00VuzT2J4UJTzQ/viewform?usp=publish-editor',
+        inquiries: ``,
+		display: true,
+    },
+    {
+		program: 'jeju-snap',
+		title: 'One Frame in Jeju, Emotional Snap',
+		subtitle: 'Choose your favorite setting - a charming photo studio, Jeju stone walls, or the sea - and capture your special moments in photos.',
+		description: `
+        Capture special moments filled with the unique charm of Jeju.<br />
+        <br />
+        From a cozy photo studio featuring traditional rafters and stone walls, to a front yard surrounded by Jeju stone walls,<br />
+        or a seaside harbor overlooking the ocean at Seopjikoji - choose from three unique locations for your photo shoot.<br />
+        We’ll capture natural and comfortable moments against the distinctive scenery of Jeju.<br />
+        <br />
+        Turn your travel memories into special photos you’ll treasure for years to come.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
+			'/api/editor/attach/view/default/2026/09/iQgK0K7N0EHa2wPqfxOk_1_',
+			'/api/editor/attach/view/default/2026/09/AOP8pu5DdYYiMVZZLBUf_1_',
+			'/api/editor/attach/view/default/2026/09/v9CE5E81DaYQNLGi6wid_1_',
+			'/api/editor/attach/view/default/2026/09/6pPKaCqCYtuucx9zrLZP_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: `Open daily(Closed Wednesdays)`,
+		duration: `11:00 ~ 17:00`,
 		priceGeneral: `
+        1-2 people: KRW 25,000<br />
+        1 person with a pet: KRW 25,000<br />
+        3 people: KRW 75,000<br />
+        4 people: KRW 100,000<br />
+        On-location shoot: KRW 150,000<br />
+        Drone video(Approx. 40 sec.): KRW 40,000
+        `,
+		priceGuest: `KRW 5,000 off the regular rate`,
+		information: `
+        <p class="ref-bu-list">※ Location: Kkulkkuk Photo Studio, 941, Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea<br />
+        (Takes approx. 3 minutes by car from Phoenix Island)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        <p class="ref-bu-list">※ Each person will receive one 4×6 postcard-size print from the photo shoot.</p>
+        <p class="ref-bu-list">※ On-location shoots are available at nearby attractions, including Seongsan Ilchulbong and Seopjikoji, with no limit on the number of participants<br />
+        After the shoot, select two photos to receive as two printed copies.</p>
+        <p class="ref-bu-list">※ Drone shoots feature the sea at Seopjikoji and produce a video approximately 40 seconds long. The original drone video file will be provided.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>Same-day reservations are not available(Min. 1 day in advance)</li>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScoLvv1O_JRHA7WcPlGY06-wx0mMLKfn11yCepllGm5keFtGA/viewform?usp=dialog',
+        inquiries: ``,
+		display: true,
+    },
+    {
+        program: 'arte-kids-park',
+        title: 'Arte Kids Park Jeju',
+        subtitle: 'A fun-filled world of play surrounded by nature',
+        description: `
+        An interactive media art playground presented by ARTE MUSEUM, which has welcomed more than 10 million visitors worldwide.<br />
+        Featuring play areas where children can run and play freely, media art exhibitions, and programs for the whole family.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/09/0qZpFDMh8hVwh5D6NtZb_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/0qZpFDMh8hVwh5D6NtZb_1_',
+            '/api/editor/attach/view/default/2026/09/Ya3xB6RMh3QcJ7mIhnhO_1_',
+            '/api/editor/attach/view/default/2026/09/gLm32h4RmSjJwxxzqjYL_1_',
+            '/api/editor/attach/view/default/2026/09/kfhNq4KbtYkMpX6gkXy7_1_',
+            '/api/editor/attach/view/default/2026/09/weRpjypFl9tpq8sZrARa_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `10:00 ~ 19:00`,
+        priceGeneral: `
         Weekdays: KRW 25,000/Weekends & Holidays: KRW 30,000<br />
         2-hour pass(12 months ~ Age 13)
         `,
-		priceGuest: `20% off`,
-		information: `
+        priceGuest: `20% off`,
+        information: `
         <p class="ref-bu-list">※ Location: 929 Wolgak-ro, Aewol-eup, Jeju-si, Jeju<br />
         (Takes approx. 1 hour 20 minutes by car from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>Available without prior reservation. Discount coupons are available at the front desk.</li>
             <li>Applicable to up to 4 persons. Cannot be combined with other discounts or benefits.</li>
             <li>Valid only at ARTE Kids Park Jeju.</li>
         </ul>
         `,
-		reservation: false,
+        reservation: false,
         inquiries: `Arte Kids Park Jeju <a href="tel:+82647997007">+82-64-799-7007</a>`,
-		display: true,
+        display: true,
     },
     {
         program: 'arte-museum',
@@ -197,7 +290,7 @@ const activities = [
 		Adults KRW 60,000<br />
 		Children KRW 40,000
 		`,
-		priceGuest: `
+        priceGuest: `
 		Adults: KRW 45,000<br />
 		Children: KRW 33,000
 		`,
@@ -275,10 +368,10 @@ const activities = [
         display: true,
     },
     {
-		program: 'makgeolli-making',
-		title: 'Makgeolli Brewing & Traditional Liquor Tasting',
-		subtitle: 'Make your own glutinous rice makgeolli and enjoy a tasting of a variety of traditional liquors.',
-		description: `
+        program: 'makgeolli-making',
+        title: 'Makgeolli Brewing & Traditional Liquor Tasting',
+        subtitle: 'Make your own glutinous rice makgeolli and enjoy a tasting of a variety of traditional liquors.',
+        description: `
 		Learn about Korean traditional liquor and experience the art of making your own glutinous rice makgeolli.<br />
 		In collaboration with Suldoga Jeju Badang, a local Jeju brewery known for Kiwi Sul, Malgeun Badang, and Hanbadang, learn how makgeolli is made and craft your very own glutinous rice makgeolli.<br />
 		Taste a variety of locally brewed traditional liquors and discover the diverse flavors and aromas of Korea’s traditional drinks.<br />
@@ -291,36 +384,36 @@ const activities = [
         A more immersive experience featuring glutinous rice makgeolli brewing and the process of soju distillation, along with six types of brewery-made liquors and dinner.<br />
         Includes your homemade makgeolli, a cotton wrapping cloth, 200 g of nuruk, and one bottle of original soju.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
-			'/api/editor/attach/view/default/2026/08/JvT9mdK9C1LqhE1PlwEv_1_',
-			'/api/editor/attach/view/default/2026/08/CJaUQsBZKnDzg5GerQ04_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: `
+        thumbnail: '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
+            '/api/editor/attach/view/default/2026/08/JvT9mdK9C1LqhE1PlwEv_1_',
+            '/api/editor/attach/view/default/2026/08/CJaUQsBZKnDzg5GerQ04_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: `
         A: Thursday ~ Tuesday<br />
         B: Friday ~ Monday
         `,
-		duration: `
+        duration: `
         A: 13:30 ~ 14:30<br />
         B: 16:00 ~ 18:00
         `,
-		priceGeneral: `
+        priceGeneral: `
         A: KRW 29,000/person<br />
         B: KRW 55,000/person
         `,
-		priceGuest: `
+        priceGuest: `
         A: KRW 27,000/person<br />
         B: KRW 52,000/person
         `,
-		information: `
+        information: `
         <p class="ref-bu-list">※ Location: 1F, 27 Handong-ro, Gujwa-eup, Jeju-si, Jeju<br />
         (Takes approx. 25 minutes by car from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>After receiving the reservation request, your booking may be confirmed or canceled depending on program availability.</li>
             <li>The program is available upon payment of the fee in advance following booking confirmation.</li><br />
@@ -333,41 +426,41 @@ const activities = [
             </div>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe-UwiMp8M7eEfc4SXcNsxIGh4hD4v7XMqj379DXKm3zQEQ_w/viewform?usp=header',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe-UwiMp8M7eEfc4SXcNsxIGh4hD4v7XMqj379DXKm3zQEQ_w/viewform?usp=header',
+        display: true,
     },
     {
-		program: 'wing-surfing',
-		title: 'Wing Surfing',
-		subtitle: 'Master the art of wing foiling along Jeju’s beautiful coast.',
-		description: `
+        program: 'wing-surfing',
+        title: 'Wing Surfing',
+        subtitle: 'Master the art of wing foiling along Jeju’s beautiful coast.',
+        description: `
         Enjoy a private wing foiling lesson in the waters of Jeju.<br />
         Whether you're a beginner or looking to improve your skills, each 2-hour lesson is tailored to your experience level, with all necessary equipment provided.<br />
         Lessons take place at the most suitable beach based on the day's wind and sea conditions, allowing you to experience wing foiling safely and enjoyably.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
-			'/api/editor/attach/view/default/2026/08/2AE83MGdLdnl5hRKRKMF_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '09:00 ~ 18:00',
-		priceGeneral: `
+        thumbnail: '/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
+            '/api/editor/attach/view/default/2026/08/2AE83MGdLdnl5hRKRKMF_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '09:00 ~ 18:00',
+        priceGeneral: `
         KRW 150,000<br />
         (2 Hour/Equipment rental included)
         `,
-		priceGuest: `
+        priceGuest: `
         KRW 135,000<br />
         (2 Hour/Equipment rental included)
         `,
-		information: `
+        information: `
         <p class="ref-bu-list">※ Location: 923, Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
         (Takes approx. 4 minutes by car from Phoenix Island)
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>After receiving the reservation request, your booking may be confirmed or canceled depending on program availability.</li>
             <li>The program is available upon payment of the fee in advance following booking confirmation.</li><br />
@@ -381,8 +474,8 @@ const activities = [
             </div>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdiOkPW8VAXjVNJ8WL_fGXVzWSYnQKRirbTcsUXQIf-SpzT3g/viewform?usp=publish-editor',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdiOkPW8VAXjVNJ8WL_fGXVzWSYnQKRirbTcsUXQIf-SpzT3g/viewform?usp=publish-editor',
+        display: true,
     },
     {
         program: 'kitesurfing',
