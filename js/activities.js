@@ -31,7 +31,11 @@ const activities = [
         <p class="ref-bu-list">※ 실내 운동화 필수 지참</p>
         <p class="ref-bu-list">※ 주차 이용 시 성산보건지소(제주 서귀포시 성산읍 고성오조로 42)</p>
         `,
-		notice: false,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>예약 확정 이후 이용 요금 결제 완료 시 최종 예약이 완료됩니다.</li>
+        </ul>
+        `,
 		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdUouyKsSC2mcsx2Toy0Wr9KVSGW5yyWraL00VuzT2J4UJTzQ/viewform?usp=publish-editor',
         inquiries: ``,
 		display: true,
