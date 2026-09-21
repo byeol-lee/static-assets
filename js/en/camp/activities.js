@@ -1,9 +1,98 @@
 const activities = [
     {
-		program: 'traveler-pt',
-		title: 'Traveler PT',
-		subtitle: 'Professional personal training classes led directly by the gym owner, focusing on proper weight training',
-		description: `
+        program: 'aquaplanet',
+        title: 'Aqua Planet',
+        subtitle: 'A World-Class Aquarium Showcasing Jeju',
+        description: `
+        Discover Aqua Planet Jeju, a unique marine space that brings the beauty of Jeju’s ocean to life.<br />
+        Get up close with a wide variety of marine life in the massive aquarium tanks.<br />
+        <br />
+        With sharks, rays, and other marine life swimming right before your eyes, it is an ideal destination for family trips with children, as well as trips to Jeju with your partner or friends.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
+            '/api/editor/attach/view/default/2026/09/HtnfB1YA1toAnYdeNE7u_1_',
+            '/api/editor/attach/view/default/2026/09/fWtJFlGI3nES5xqEGa9b_1_',
+            '/api/editor/attach/view/default/2026/09/wvAlO4sNLfsAgzs65UJp_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `09:30 ~ 18:00`,
+        priceGeneral: `
+        Adults KRW 45,500<br />
+        Youth KRW 43,600<br />
+        Children KRW 41,400<br />
+        Seniors KRW 43,600
+        `,
+        priceGuest: `20% off`,
+        information: `
+        <p class="ref-bu-list">※ Location: 95, Seopjikoji-ro, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Koreaㄴ<br />
+        (Takes approx. 4-minute drive from Playce Camp)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>No advance reservation is required. Present your stay details at the Aqua Planet Jeju ticket counter to receive the discount.</li>
+            <li>Cannot be combined with other discounts or benefits.</li>
+        </ul>
+        `,
+        reservation: false,
+        inquiries: `aqua planet JeJU <a href="tel:+8218337001">+82-1833-7001</a>`,
+        display: true,
+    },
+    {
+        program: 'snoopygarden',
+        title: 'Snoopy Garden',
+        subtitle: 'A Special Place to Meet the Peanuts Friends in Jeju’s Nature',
+        description: `
+        Discover Snoopy Garden, a special place where you can meet the Peanuts friends surrounded by the nature of Jeju.<br />
+        Explore a variety of themed spaces featuring beloved characters such as Snoopy and Charlie Brown.<br />
+        <br />
+        Stroll through the gardens at your own pace while enjoying the beautiful combination of lush greenery and Jeju’s natural scenery.<br />
+        Capture special memories of your Jeju trip at the character sculptures and photo spots throughout the garden,<br />
+        and enjoy the seasonal beauty of nature alongside the charm of Peanuts.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
+            '/api/editor/attach/view/default/2026/09/PL5W55SESXrSjTAnyoQK_1_',
+            '/api/editor/attach/view/default/2026/09/1F91LKnwYwSuMN8gS9QH_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `
+        Summer Season(April - September): 09:00 ~ 19:00(Last admission 18:00)<br />
+        Winter Season(October - March): 09:00 ~ 18:00(Last admission 17:00)
+        `,
+        priceGeneral: `
+        Adults KRW 19,000<br />
+        Youth KRW 16,000<br />
+        Children KRW 13,000
+        `,
+        priceGuest: `20% off`,
+        information: `
+        <p class="ref-bu-list">※ Location: 916, Geumbaekjo-ro, Gujwa-eup, Jeju-si, Jeju-do, Republic of Korea<br />
+        (Takes approx. 19-minute drive from Playce Camp)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>No advance reservation is required. Discount coupons are available at the front desk.(Benefits may not be available once coupons run out.)</li>
+            <li>Cannot be combined with other discounts or benefits.</li>
+        </ul>
+        `,
+        reservation: false,
+        inquiries: `Snoopy Garden <a href="tel:+82648051118">+82-64-805-1118</a>`,
+        display: true,
+    },
+    {
+        program: 'traveler-pt',
+        title: 'Traveler PT',
+        subtitle: 'Professional personal training classes led directly by the gym owner, focusing on proper weight training',
+        description: `
         How about working out on the Stairway to Heaven with Seongsan Ilchulbong in view?<br />
         <br />
         Located in Seongsan, Jeju, this personal training program is led directly by the gym owner and focuses on weight training.<br />
@@ -12,39 +101,39 @@ const activities = [
         Beginners can learn the fundamentals step by step.<br />
         Learn proper exercise techniques and build consistent workout habits.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
-			'/api/editor/attach/view/default/2026/09/g4zgEx63Na5EvylB3cSJ_1_',
-			'/api/editor/attach/view/default/2026/09/FGLjKVVozcHBRTlzKIwK_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: `Weekdays`,
-		duration: `08:00`,
-		priceGeneral: `KRW 29,000`,
-		priceGuest: `KRW 20,000`,
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
+            '/api/editor/attach/view/default/2026/09/g4zgEx63Na5EvylB3cSJ_1_',
+            '/api/editor/attach/view/default/2026/09/FGLjKVVozcHBRTlzKIwK_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: `Weekdays`,
+        duration: `08:00`,
+        priceGeneral: `KRW 29,000`,
+        priceGuest: `KRW 20,000`,
+        information: `
         <p class="ref-bu-list">※ Location: 3F, 18 Ilchul-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
         (Takes approx. 1 minute drive or 7 minute walk from Playce Camp)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Indoor sneakers are required.</p>
         <p class="ref-bu-list">※ Parking: Seongsan Health Subcenter(42, Goseongojo-ro, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea)</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>Your reservation will be confirmed once payment is completed after the reservation is confirmed.</li>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdUouyKsSC2mcsx2Toy0Wr9KVSGW5yyWraL00VuzT2J4UJTzQ/viewform?usp=publish-editor',
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdUouyKsSC2mcsx2Toy0Wr9KVSGW5yyWraL00VuzT2J4UJTzQ/viewform?usp=publish-editor',
         inquiries: ``,
-		display: true,
+        display: true,
     },
     {
-		program: 'jeju-snap',
-		title: 'One Frame in Jeju, Emotional Snap',
-		subtitle: 'Choose your favorite setting - a charming photo studio, Jeju stone walls, or the sea - and capture your special moments in photos.',
-		description: `
+        program: 'jeju-snap',
+        title: 'One Frame in Jeju, Emotional Snap',
+        subtitle: 'Choose your favorite setting - a charming photo studio, Jeju stone walls, or the sea - and capture your special moments in photos.',
+        description: `
         Capture special moments filled with the unique charm of Jeju.<br />
         <br />
         From a cozy photo studio featuring traditional rafters and stone walls, to a front yard surrounded by Jeju stone walls,<br />
@@ -53,19 +142,19 @@ const activities = [
         <br />
         Turn your travel memories into special photos you’ll treasure for years to come.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
-			'/api/editor/attach/view/default/2026/09/iQgK0K7N0EHa2wPqfxOk_1_',
-			'/api/editor/attach/view/default/2026/09/AOP8pu5DdYYiMVZZLBUf_1_',
-			'/api/editor/attach/view/default/2026/09/v9CE5E81DaYQNLGi6wid_1_',
-			'/api/editor/attach/view/default/2026/09/6pPKaCqCYtuucx9zrLZP_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: `Open daily(Closed Wednesdays)`,
-		duration: `11:00 ~ 17:00`,
-		priceGeneral: `
+        thumbnail: '/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
+            '/api/editor/attach/view/default/2026/09/iQgK0K7N0EHa2wPqfxOk_1_',
+            '/api/editor/attach/view/default/2026/09/AOP8pu5DdYYiMVZZLBUf_1_',
+            '/api/editor/attach/view/default/2026/09/v9CE5E81DaYQNLGi6wid_1_',
+            '/api/editor/attach/view/default/2026/09/6pPKaCqCYtuucx9zrLZP_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: `Open daily(Closed Wednesdays)`,
+        duration: `11:00 ~ 17:00`,
+        priceGeneral: `
         1-2 people: KRW 25,000<br />
         1 person with a pet: KRW 25,000<br />
         3 people: KRW 75,000<br />
@@ -73,8 +162,8 @@ const activities = [
         On-location shoot: KRW 150,000<br />
         Drone video(Approx. 40 sec.): KRW 40,000
         `,
-		priceGuest: `KRW 5,000 off the regular rate`,
-		information: `
+        priceGuest: `KRW 5,000 off the regular rate`,
+        information: `
         <p class="ref-bu-list">※ Location: Kkulkkuk Photo Studio, 941, Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea<br />
         (Takes approx. 3 minute walk from Playce Camp)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
@@ -83,14 +172,14 @@ const activities = [
         After the shoot, select two photos to receive as two printed copies.</p>
         <p class="ref-bu-list">※ Drone shoots feature the sea at Seopjikoji and produce a video approximately 40 seconds long. The original drone video file will be provided.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>Same-day reservations are not available(Min. 1 day in advance)</li>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScoLvv1O_JRHA7WcPlGY06-wx0mMLKfn11yCepllGm5keFtGA/viewform?usp=dialog',
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScoLvv1O_JRHA7WcPlGY06-wx0mMLKfn11yCepllGm5keFtGA/viewform?usp=dialog',
         inquiries: ``,
-		display: true,
+        display: true,
     },
     {
         program: 'fitness-day-pass',
@@ -265,10 +354,10 @@ const activities = [
         display: true,
     },
     {
-		program: 'makgeolli-making',
-		title: 'Makgeolli Brewing & Traditional Liquor Tasting',
-		subtitle: 'Make your own glutinous rice makgeolli and enjoy a tasting of a variety of traditional liquors.',
-		description: `
+        program: 'makgeolli-making',
+        title: 'Makgeolli Brewing & Traditional Liquor Tasting',
+        subtitle: 'Make your own glutinous rice makgeolli and enjoy a tasting of a variety of traditional liquors.',
+        description: `
 		Learn about Korean traditional liquor and experience the art of making your own glutinous rice makgeolli.<br />
 		In collaboration with Suldoga Jeju Badang, a local Jeju brewery known for Kiwi Sul, Malgeun Badang, and Hanbadang, learn how makgeolli is made and craft your very own glutinous rice makgeolli.<br />
 		Taste a variety of locally brewed traditional liquors and discover the diverse flavors and aromas of Korea’s traditional drinks.<br />
@@ -281,36 +370,36 @@ const activities = [
         A more immersive experience featuring glutinous rice makgeolli brewing and the process of soju distillation, along with six types of brewery-made liquors and dinner.<br />
         Includes your homemade makgeolli, a cotton wrapping cloth, 200 g of nuruk, and one bottle of original soju.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
-			'/api/editor/attach/view/default/2026/08/JvT9mdK9C1LqhE1PlwEv_1_',
-			'/api/editor/attach/view/default/2026/08/CJaUQsBZKnDzg5GerQ04_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: `
+        thumbnail: '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
+            '/api/editor/attach/view/default/2026/08/JvT9mdK9C1LqhE1PlwEv_1_',
+            '/api/editor/attach/view/default/2026/08/CJaUQsBZKnDzg5GerQ04_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: `
         A: Thursday ~ Tuesday<br />
         B: Friday ~ Monday
         `,
-		duration: `
+        duration: `
         A: 13:30 ~ 14:30<br />
         B: 16:00 ~ 18:00
         `,
-		priceGeneral: `
+        priceGeneral: `
         A: KRW 29,000/person<br />
         B: KRW 55,000/person
         `,
-		priceGuest: `
+        priceGuest: `
         A: KRW 27,000/person<br />
         B: KRW 52,000/person
         `,
-		information: `
+        information: `
         <p class="ref-bu-list">※ Location: 1F, 27 Handong-ro, Gujwa-eup, Jeju-si, Jeju<br />
-        (Takes approx. 25 minutes by car from Playce Camp)</p>
+        (Takes approx. 25 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>After receiving the reservation request, your booking may be confirmed or canceled depending on program availability.</li>
             <li>The program is available upon payment of the fee in advance following booking confirmation.</li><br />
@@ -323,41 +412,41 @@ const activities = [
             </div>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe-UwiMp8M7eEfc4SXcNsxIGh4hD4v7XMqj379DXKm3zQEQ_w/viewform?usp=header',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe-UwiMp8M7eEfc4SXcNsxIGh4hD4v7XMqj379DXKm3zQEQ_w/viewform?usp=header',
+        display: true,
     },
     {
-		program: 'wing-surfing',
-		title: 'Wing Surfing',
-		subtitle: 'Master the art of wing foiling along Jeju’s beautiful coast.',
-		description: `
+        program: 'wing-surfing',
+        title: 'Wing Surfing',
+        subtitle: 'Master the art of wing foiling along Jeju’s beautiful coast.',
+        description: `
         Enjoy a private wing foiling lesson in the waters of Jeju.<br />
         Whether you're a beginner or looking to improve your skills, each 2-hour lesson is tailored to your experience level, with all necessary equipment provided.<br />
         Lessons take place at the most suitable beach based on the day's wind and sea conditions, allowing you to experience wing foiling safely and enjoyably.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
-			'/api/editor/attach/view/default/2026/08/2AE83MGdLdnl5hRKRKMF_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '09:00 ~ 18:00',
-		priceGeneral: `
+        thumbnail: '/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
+            '/api/editor/attach/view/default/2026/08/2AE83MGdLdnl5hRKRKMF_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '09:00 ~ 18:00',
+        priceGeneral: `
         KRW 150,000<br />
         (2 Hour/Equipment rental included)
         `,
-		priceGuest: `
+        priceGuest: `
         KRW 135,000<br />
         (2 Hour/Equipment rental included)
         `,
-		information: `
+        information: `
         <p class="ref-bu-list">※ Location: 923, Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
-        (Takes approx. 4 minutes by car from Playce Camp)
+        (Takes approx. 4 minutes by drive from Phoenix Island)
         <p class="ref-bu-list">※ For this program, you must travel individually to the program venue, not Playce Camp.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>After receiving the reservation request, your booking may be confirmed or canceled depending on program availability.</li>
             <li>The program is available upon payment of the fee in advance following booking confirmation.</li><br />
@@ -371,14 +460,14 @@ const activities = [
             </div>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdiOkPW8VAXjVNJ8WL_fGXVzWSYnQKRirbTcsUXQIf-SpzT3g/viewform?usp=publish-editor',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdiOkPW8VAXjVNJ8WL_fGXVzWSYnQKRirbTcsUXQIf-SpzT3g/viewform?usp=publish-editor',
+        display: true,
     },
     {
-		program: 'kitesurfing',
-		title: 'Kitesurfing',
-		subtitle: 'A Special Ocean Activity Riding the Wind Across the Sea!',
-		description: `
+        program: 'kitesurfing',
+        title: 'Kitesurfing',
+        subtitle: 'A Special Ocean Activity Riding the Wind Across the Sea!',
+        description: `
         A special marine sport where you can fully experience Jeju's blue ocean and refreshing breeze.<br />
         Led by IKO (International Kiteboarding Organization) certified instructors, you can choose a program suited to your skill level—from a one-day lesson for beginners to a 1-hour lesson for experienced riders.<br />
         <br />
@@ -386,29 +475,29 @@ const activities = [
         <br />
         The 1-Hour Lesson is designed for participants capable of basic kite control, helping them refine riding techniques for a more dynamic and free kitesurfing experience.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_',
-			'/api/editor/attach/view/default/2026/07/dGkT6E7lMtWgszB0yyi3_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: 'Daily',
-		duration: '09:00 ~ 18:00',
-		priceGeneral: `
+        thumbnail: '/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_',
+            '/api/editor/attach/view/default/2026/07/dGkT6E7lMtWgszB0yyi3_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: 'Daily',
+        duration: '09:00 ~ 18:00',
+        priceGeneral: `
         One-Day KRW 325,000(Equipment rental included)<br />
         1 Hour KRW 100,000(Equipment rental separate)
         `,
-		priceGuest: `
+        priceGuest: `
         One-Day KRW 292,500(Equipment rental included)<br />
         1 Hour KRW 90,000(Equipment rental separate)
         `,
-		information: `
+        information: `
         <p class="ref-bu-list">※ Location: 923, Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
-        (Takes approx. 4 minutes by car from Playce Camp)</p>
+        (Takes approx. 4 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
             <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
@@ -422,14 +511,14 @@ const activities = [
             </div>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSd9i_sZCaSV23tYKcyZQAiOVYQVFDhTts5IH_dSYEL2OPP1hA/viewform?usp=publish',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSd9i_sZCaSV23tYKcyZQAiOVYQVFDhTts5IH_dSYEL2OPP1hA/viewform?usp=publish',
+        display: true,
     },
     {
-		program: 'yacht-tour',
-		title: 'Yacht Tour in Gimnyeong',
-		subtitle: 'Thrilling sea fishing experience, and a special moment meeting dolphins if you are lucky!',
-		description: `
+        program: 'yacht-tour',
+        title: 'Yacht Tour in Gimnyeong',
+        subtitle: 'Thrilling sea fishing experience, and a special moment meeting dolphins if you are lucky!',
+        description: `
         A special yacht tour set against the backdrop of the emerald Gimnyeong Windmill Village!<br />
         Enjoy relaxing sailing while feeling the cool ocean breeze, and experience another charm of Jeju's sea through a 15–20 minute sea fishing session.<br />
         <br />
@@ -438,27 +527,27 @@ const activities = [
         Create unforgettable memories unique to Jeju amidst scenery where emerald waters meet majestic windmills.<br />
         <p class="ref-bu-list">※ Since dolphins are wild animals, sightings depend on daily maritime and weather conditions.</p>
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
-			'/api/editor/attach/view/default/2026/07/hPCeB1a4OtvkyLYm1jpl_1_',
-			'/api/editor/attach/view/default/2026/07/sAkf6QEqghhl9ufuOALl_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: 'Daily',
-		duration: '10:00 ~ 17:00',
-		priceGeneral: `
+        thumbnail: '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
+            '/api/editor/attach/view/default/2026/07/hPCeB1a4OtvkyLYm1jpl_1_',
+            '/api/editor/attach/view/default/2026/07/sAkf6QEqghhl9ufuOALl_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: 'Daily',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: `
 		Adults KRW 60,000<br />
 		Children KRW 40,000
 		`,
-		priceGuest: `
+        priceGuest: `
 		Adults: KRW 45,000<br />
 		Children: KRW 33,000
 		`,
-		information: `
+        information: `
         <p class="ref-bu-list">※ Location: 229-16, Gujwahaean-ro, Gujwa-eup, Jeju-si, Jeju-do<br />
-        (Takes approx. 31 minutes by car from Playce Camp)</p>
+        (Takes approx. 31 minutes by drive from Phoenix Island)</p>
 		<p class="ref-bu-list">※ Children: Ages 37 months–13 years</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Please arrive 20 minutes before departure for smooth boarding.</p>
@@ -469,7 +558,7 @@ const activities = [
         Please inform us in advance after booking if you plan to bring a pet.</p>
         <p class="ref-bu-list">※ Motion sickness medication is not provided on-site. If you are prone to motion sickness, please prepare and take it prior to departure.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
             <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
@@ -484,37 +573,37 @@ const activities = [
             </div>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeKoP36h8vjLEWOQgJlhzd22cIJdCsNckfQ2W3DPURF_wy0_w/viewform?usp=publish-editor',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeKoP36h8vjLEWOQgJlhzd22cIJdCsNckfQ2W3DPURF_wy0_w/viewform?usp=publish-editor',
+        display: true,
     },
     {
-		program: 'scuba-diving',
-		title: 'Discovery Scuba Diving',
-		subtitle: 'A thrilling experience entering the sea while facing Seongsan Ilchulbong',
-		description: `
+        program: 'scuba-diving',
+        title: 'Discovery Scuba Diving',
+        subtitle: 'A thrilling experience entering the sea while facing Seongsan Ilchulbong',
+        description: `
         Scuba diving can sometimes require physical and time energy depending on travel routes.<br />
         The thrilling experience of diving into the sea while gazing at Seongsan Ilchulbong provides another layer of joy.<br />
         Take on the challenge to experience the underwater world of Seongsan Ilchulbong and swim alongside marine life!
         `,
-		thumbnail: '/images/ko/activity/playcecamp/outdoor/out-scuba-diving-idx01.jpg',
-		heroImage: [
-			'/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-1.jpg',
-			'/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-2.jpg',
-			'/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-3.jpg'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: 'Daily',
-		duration: '09:00, 11:00, 14:00, 15:30(2 hours)',
-		priceGeneral: 'KRW 150,000',
-		priceGuest: 'KRW 69,000',
-		information: `
+        thumbnail: '/images/ko/activity/playcecamp/outdoor/out-scuba-diving-idx01.jpg',
+        heroImage: [
+            '/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-1.jpg',
+            '/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-2.jpg',
+            '/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-3.jpg'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: 'Daily',
+        duration: '09:00, 11:00, 14:00, 15:30(2 hours)',
+        priceGeneral: 'KRW 150,000',
+        priceGuest: 'KRW 69,000',
+        information: `
         <p class="ref-bu-list">※ Location: Seongsan Scuba, 143-4, Seongsan-ri, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-        (Takes approx. 5 minutes by car from Playce Camp)</p>
+        (Takes approx. 5 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Provided items: Skin scuba diving gear, towel, shower amenities(shampoo, conditioner, body wash, soap), full shower facility access</p>
         <p class="ref-bu-list">※ Personal items to bring: Beachwear(rashguard top/bottom or water park shorts or swimsuit), personal toiletries, extra clothes</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>Activity programs are operated on a advance reservation basis.</li>
             <li>Guest discounts will be verified on-site on the day of participation via room key card or booking confirmation text message.</li>
@@ -534,46 +623,46 @@ const activities = [
             </div>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfl2K0y_N0wLXg0UEtelRvoOzRtSoIHDRn0svw8Mw_wZTaKhQ/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfl2K0y_N0wLXg0UEtelRvoOzRtSoIHDRn0svw8Mw_wZTaKhQ/viewform',
+        display: true,
     },
     {
-		program: 'surfing-class',
-		title: 'Surfing Class',
-		subtitle: 'An enjoyable Jeju surfing experience, even for beginners',
-		description: `
+        program: 'surfing-class',
+        title: 'Surfing Class',
+        subtitle: 'An enjoyable Jeju surfing experience, even for beginners',
+        description: `
         Experience thrilling surfing moments on Jeju's clear blue sea.<br />
         Systematic instruction with professional coaches allows even first-timers to enjoy surfing without pressure.<br />
         When booking, everything from instruction to wetsuit rental and shower facilities is included, so you can join empty-handed.<br />
         Feel Jeju's wind and waves with your whole body and create the coolest moments of your trip.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_',
-			'/api/editor/attach/view/default/2026/06/vLeWQGVIL7oRwIe4lYd1_1_',
-			'/api/editor/attach/view/default/2026/06/VtMg21Z66rMqk3tBuiMn_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:00 ~ 17:00',
-		priceGeneral: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_',
+            '/api/editor/attach/view/default/2026/06/vLeWQGVIL7oRwIe4lYd1_1_',
+            '/api/editor/attach/view/default/2026/06/VtMg21Z66rMqk3tBuiMn_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: `
         Trial Lesson(1 Hour): KRW 50,000<br />
         Beginner Lesson(1 hour 30 mins + Unlimited free surfing): KRW 60,000
         `,
-		priceGuest: `
+        priceGuest: `
         Trial Lesson(1 Hour): KRW 50,000<br />
         Beginner Lesson(1 hour 30 mins + Unlimited free surfing): KRW 60,000
         `,
-		information: `
+        information: `
         <p class="ref-bu-list">※ Hotel Guest Benefit: Welcome drink provided(coffee or beverage)</p>
         <p class="ref-bu-list">※ Location: 945, Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-        (Takes approx. 4 minutes by car from Playce Camp)</p>
+        (Takes approx. 4 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Photos taken during class may be used for future promotional content. If you do not wish to be photographed or have images used, please inform us before class starts.</p>
         <p class="ref-bu-list">※ Free parking is available in front of the shop.</p>
         `,
-		notice: `
+        notice: `
         <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
         <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
         <div class="common-txt">
@@ -584,34 +673,34 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSc1fUSdvlpACcjnZnPZwKzOOSTio2BYXcuvgJV7UsvwGjrgCg/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSc1fUSdvlpACcjnZnPZwKzOOSTio2BYXcuvgJV7UsvwGjrgCg/viewform',
+        display: true,
     },
     {
-		program: 'keyring-diy',
-		title: 'Keyring DIY',
-		subtitle: 'Special acrylic keyring made with Jeju designs',
-		description: `
+        program: 'keyring-diy',
+        title: 'Keyring DIY',
+        subtitle: 'Special acrylic keyring made with Jeju designs',
+        description: `
         Capture the colors and vibes of Jeju to craft a keyring infused with your travel memories.<br />
         Add your own taste and colors onto various Jeju-themed designs such as Hallabong tangerines, Jeju horses, Mt. Halla, seashells, and camellia flowers to complete a special piece.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
-		heroImage: '/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:00 ~ 17:00',
-		priceGeneral: 'KRW 15,000',
-		priceGuest: 'KRW 15,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
+        heroImage: '/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: 'KRW 15,000',
+        priceGuest: 'KRW 15,000',
+        information: `
         <p class="ref-bu-list">※ Hotel Guest Benefit: Welcome drink provided(coffee or beverage)</p>
         <p class="ref-bu-list">※ Location: 945, Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-        (Takes approx. 4 minutes by car from Playce Camp)</p>
+        (Takes approx. 4 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Photos taken during class may be used for future promotional content. If you do not wish to be photographed or have images used, please inform us before class starts.</p>
         <p class="ref-bu-list">※ Free parking is available in front of the shop.</p>
         `,
-		notice: `
+        notice: `
         <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
         <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
         <div class="common-txt">
@@ -622,38 +711,38 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScoZX4ZZYuXtC2HAfuz4AthJMK1tfSajZOYR7d487Cz4CRdMg/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScoZX4ZZYuXtC2HAfuz4AthJMK1tfSajZOYR7d487Cz4CRdMg/viewform',
+        display: true,
     },
     {
-		program: 'bookmark-diy',
-		title: 'Bookmark DIY',
-		subtitle: 'Stained glass bookmark created with Jeju designs',
-		description: `
+        program: 'bookmark-diy',
+        title: 'Bookmark DIY',
+        subtitle: 'Stained glass bookmark created with Jeju designs',
+        description: `
         Make a stained glass style bookmark that sparkles softly under the sunlight.<br />
         Combine various Jeju designs with colorful acrylics to complete a one-of-a-kind bookmark.<br />
         Experience a special glass art class where Jeju travel memories and vibes linger every time you open a book.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
-			'/api/editor/attach/view/default/2026/06/30su09CIE0F6GU3IXtSq_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:00 ~ 17:00',
-		priceGeneral: 'KRW 15,000',
-		priceGuest: 'KRW 15,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
+            '/api/editor/attach/view/default/2026/06/30su09CIE0F6GU3IXtSq_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: 'KRW 15,000',
+        priceGuest: 'KRW 15,000',
+        information: `
         <p class="ref-bu-list">※ Hotel Guest Benefit: Welcome drink provided(coffee or beverage)</p>
         <p class="ref-bu-list">※ Location: 945, Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-        (Takes approx. 4 minutes by car from Playce Camp)</p>
+        (Takes approx. 4 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Photos taken during class may be used for future promotional content. If you do not wish to be photographed or have images used, please inform us before class starts.</p>
         <p class="ref-bu-list">※ Free parking is available in front of the shop.</p>
         `,
-		notice: `
+        notice: `
         <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
         <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
         <div class="common-txt">
@@ -664,37 +753,37 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdSHUxZxi1WaHKzsploaaEv6IOQyNSbt2LyriB6fSqDyMzqQw/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdSHUxZxi1WaHKzsploaaEv6IOQyNSbt2LyriB6fSqDyMzqQw/viewform',
+        display: true,
     },
     {
         program: 'hand-mirror-diy',
-		title: 'Hand Mirror DIY',
-		subtitle: 'Hand mirror art class crafted with Jeju vibes',
-		description: `
+        title: 'Hand Mirror DIY',
+        subtitle: 'Hand mirror art class crafted with Jeju vibes',
+        description: `
         Incorporate the colors and aesthetic of Jeju by adding your own colors to craft a special hand mirror.<br />
         Experience an emotional art class that brings back Jeju travel moments every time you pull it out.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
-			'/api/editor/attach/view/default/2026/06/z5U5mMjiTvu0JPbv288u_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:00 ~ 17:00',
-		priceGeneral: 'KRW 20,000',
-		priceGuest: 'KRW 20,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
+            '/api/editor/attach/view/default/2026/06/z5U5mMjiTvu0JPbv288u_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: 'KRW 20,000',
+        priceGuest: 'KRW 20,000',
+        information: `
         <p class="ref-bu-list">※ Hotel Guest Benefit: Welcome drink provided(coffee or beverage)</p>
         <p class="ref-bu-list">※ Location: 945, Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-        (Takes approx. 4 minutes by car from Playce Camp)</p>
+        (Takes approx. 4 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Photos taken during class may be used for future promotional content. If you do not wish to be photographed or have images used, please inform us before class starts.</p>
         <p class="ref-bu-list">※ Free parking is available in front of the shop.</p>
         `,
-		notice: `
+        notice: `
         <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
         <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
         <div class="common-txt">
@@ -705,33 +794,33 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdpG32wY9-mILpNnSwrM5ObtmmUNBn21-qGy3YyqSXM4tSvYg/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdpG32wY9-mILpNnSwrM5ObtmmUNBn21-qGy3YyqSXM4tSvYg/viewform',
+        display: true,
     },
     {
         program: 'candle-diy',
-		title: 'Jeju Ocean Candle DIY',
-		subtitle: 'Jeju candle class completed with ocean colors',
-		description: `
+        title: 'Jeju Ocean Candle DIY',
+        subtitle: 'Jeju candle class completed with ocean colors',
+        description: `
         Create a one-of-a-kind ocean candle using colors and objects resembling Jeju's sea.<br />
         Utilize colored wax reminiscent of blue Jeju seas alongside various objects like shells, sand, and stones to craft a candle infused with your touch.<br />
         A sentimental DIY class allowing you to cherish Jeju travel moments for a long time accompanied by subtle fragrances.<br />
         Encapsulate sparkling memories of Jeju's sea inside a small candle.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_',
-			'/api/editor/attach/view/default/2026/06/W1jsF6a5yYmKXwpGofbK_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:30 ~ 17:30(30-minute intervals)',
-		priceGeneral: 'KRW 30,000',
-		priceGuest: 'KRW 20,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_',
+            '/api/editor/attach/view/default/2026/06/W1jsF6a5yYmKXwpGofbK_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:30 ~ 17:30(30-minute intervals)',
+        priceGeneral: 'KRW 30,000',
+        priceGuest: 'KRW 20,000',
+        information: `
         <p class="ref-bu-list">※ Location: 15, Goseongseo 5-gil, Aewol-eup, Jeju-si, Jeju-do<br />
-        (Takes approx. 60 minutes by car from Playce Camp)</p>
+        (Takes approx. 60 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Anyone aged 4 and above can easily and enjoyably participate.</p>
         <p class="ref-bu-list">※ A hands-on experience where you personally select all parts, scents, and colors to make your candle.</p>
@@ -739,7 +828,7 @@ const activities = [
         <p class="ref-bu-list">※ Crafted as a large 270ml capacity candle.</p>
         <p class="ref-bu-list">※ Can also be made as a candle warmer compatible candle.</p>
         `,
-		notice: `
+        notice: `
         <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
         <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
         <div class="common-txt">
@@ -750,40 +839,40 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfGD9E-miZXQEv3avRU0KwpLwXHqWVcwB0MlBlM3oNU8SAw8Q/viewform?usp=publish-editor',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfGD9E-miZXQEv3avRU0KwpLwXHqWVcwB0MlBlM3oNU8SAw8Q/viewform?usp=publish-editor',
+        display: true,
     },
     {
         program: 'mood-lamp-diy',
-		title: 'Hydrangea Mood Lamp DIY',
-		subtitle: 'Hydrangea mood lamp class blooming with light',
-		description: `
+        title: 'Hydrangea Mood Lamp DIY',
+        subtitle: 'Hydrangea mood lamp class blooming with light',
+        description: `
         Create your own softly glowing mood lamp capturing Jeju's hydrangea vibe.<br />
         Combine colorful hydrangea flowers and objects to design according to your personal taste. Warm light fills the space with an emotional atmosphere.<br />
         Experience a special Jeju-vibe DIY class to cherish your travel moments long after.<br />
         Warmly enhance the atmosphere of your day with gentle light.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/fkVEFSdWlCykzjnvScE9_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/fkVEFSdWlCykzjnvScE9_1_',
-			'/api/editor/attach/view/default/2026/06/6xK3s63wSVDpqUGAeUDj_1_',
-			'/api/editor/attach/view/default/2026/06/LB7IVWpIYOKFyUunaPNp_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:30 ~ 17:30(30-minute intervals)',
-		priceGeneral: 'KRW 35,000',
-		priceGuest: 'KRW 30,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/fkVEFSdWlCykzjnvScE9_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/fkVEFSdWlCykzjnvScE9_1_',
+            '/api/editor/attach/view/default/2026/06/6xK3s63wSVDpqUGAeUDj_1_',
+            '/api/editor/attach/view/default/2026/06/LB7IVWpIYOKFyUunaPNp_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:30 ~ 17:30(30-minute intervals)',
+        priceGeneral: 'KRW 35,000',
+        priceGuest: 'KRW 30,000',
+        information: `
         <p class="ref-bu-list">※ Location: 15, Goseongseo 5-gil, Aewol-eup, Jeju-si, Jeju-do<br />
-        (Takes approx. 60 minutes by car from Playce Camp)</p>
+        (Takes approx. 60 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Anyone aged 4 and above can easily and enjoyably participate.</p>
         <p class="ref-bu-list">※ 1 Herbarium LED base provided</p>
         <p class="ref-bu-list">※ Containers and flowers are directly selected by participants.</p>
         `,
-		notice: `
+        notice: `
         <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
         <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
         <div class="common-txt">
@@ -794,41 +883,41 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScRx1RrAN-PiO7rPN2yvY0DE6wWQTWhSLIq9xNYQKjbHBkktA/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScRx1RrAN-PiO7rPN2yvY0DE6wWQTWhSLIq9xNYQKjbHBkktA/viewform',
+        display: true,
     },
     {
         program: 'tea-class',
-		title: 'Private Tea Class',
-		subtitle: 'Time to slowly focus on yourself with the gentle aroma of tea',
-		description: `
+        title: 'Private Tea Class',
+        subtitle: 'Time to slowly focus on yourself with the gentle aroma of tea',
+        description: `
         During this 30-minute class, learn stories about tea, tea utensil instructions, and take time to comfortably enjoy tea.<br />
         After the class, the guide will step out, allowing you 60 minutes in a private space to fully experience your own tea time.<br />
         Explanations about tea and tea utensil manuals are provided, ensuring even first-timers can comfortably enjoy without pressure.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/05/cQe0W3xJE5YGWImGxeDh_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/05/cQe0W3xJE5YGWImGxeDh_1_',
-			'/api/editor/attach/view/default/2026/05/Cgvmcsdzq6JdCzgX2tm7_1_',
-			'/api/editor/attach/view/default/2026/05/jo9HVC4WZVQzi8unhhqK_1_',
-			'/api/editor/attach/view/default/2026/05/VnQ4g7fZeAN3OgtnLaOu_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '12:00, 13:00, 14:00, 15:00(Duration: 90 mins)',
-		priceGeneral: 'Unavailable',
-		priceGuest: 'KRW 25,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/05/cQe0W3xJE5YGWImGxeDh_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/05/cQe0W3xJE5YGWImGxeDh_1_',
+            '/api/editor/attach/view/default/2026/05/Cgvmcsdzq6JdCzgX2tm7_1_',
+            '/api/editor/attach/view/default/2026/05/jo9HVC4WZVQzi8unhhqK_1_',
+            '/api/editor/attach/view/default/2026/05/VnQ4g7fZeAN3OgtnLaOu_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '12:00, 13:00, 14:00, 15:00(Duration: 90 mins)',
+        priceGeneral: 'Unavailable',
+        priceGuest: 'KRW 25,000',
+        information: `
         <p class="ref-bu-list">※ Location: Teahouse B1, 2688, Haemajihaean-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-        (Takes approx. 7 minutes by car from Playce Camp)</p>
+        (Takes approx. 7 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Daily wear is not permitted when participating in this program; entry is allowed only after changing into yoga wear or sportswear.<br />
         Refunds are not possible if participation is prevented due to improper clothing.</p>
         <p class="ref-bu-list">※ 1 tea per person is provided.(Please select tea type upon reservation.)</p>
         <p class="ref-bu-list">※ Only 1 team per session can reserve.</p>
         `,
-		notice: `
+        notice: `
         <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
         <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
         <div class="common-txt">
@@ -842,104 +931,104 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdyVKfBCTuPvOOkXB5I8ABIMBMezdXRsbcc1aJM4QxU1lGGzg/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdyVKfBCTuPvOOkXB5I8ABIMBMezdXRsbcc1aJM4QxU1lGGzg/viewform',
+        display: true,
     },
     {
         program: 'wall-hanging-diy',
-		title: 'Wall Hanging DIY',
-		subtitle: 'Emotional interior decor object made with yarn and fabric, Wall Hanging DIY Class',
-		description: `
+        title: 'Wall Hanging DIY',
+        subtitle: 'Emotional interior decor object made with yarn and fabric, Wall Hanging DIY Class',
+        description: `
         A special time to handcraft colorful traditional Jeju houses yourself.<br />
         Complete small house items with Jeju aesthetics step-by-step in a DIY class that lets you reminisce about travel moments for a long time.<br />
         Hang completed artworks near windows or on walls as interior decor objects that bring Jeju to mind in daily life.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/05/jhZsodnKIazb4kVDV0bn_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/05/jhZsodnKIazb4kVDV0bn_1_',
-			'/api/editor/attach/view/default/2026/05/NhEbCijYuIcdussy1VxK_1_'
-		],
-		tags: ['ART', 'HANDMADE'],
-		category: 'ART',
-		date: 'Fri ~ Wed',
-		duration: '12:00 ~ 16:00',
-		priceGeneral: 'KRW 60,000',
-		priceGuest: 'KRW 55,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/05/jhZsodnKIazb4kVDV0bn_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/05/jhZsodnKIazb4kVDV0bn_1_',
+            '/api/editor/attach/view/default/2026/05/NhEbCijYuIcdussy1VxK_1_'
+        ],
+        tags: ['ART', 'HANDMADE'],
+        category: 'ART',
+        date: 'Fri ~ Wed',
+        duration: '12:00 ~ 16:00',
+        priceGeneral: 'KRW 60,000',
+        priceGuest: 'KRW 55,000',
+        information: `
         <p class="ref-bu-list">※ Location: 3242, Joongsangandong-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-        (Takes approx. 10 minutes by car from Playce Camp)</p>
+        (Takes approx. 10 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
-		notice: ``,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdmltPFYpCOZCeR-BqDHtWqCIjiF2ehVlhraEMoQ0XLboml_g/viewform',
-		display: true,
+        notice: ``,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdmltPFYpCOZCeR-BqDHtWqCIjiF2ehVlhraEMoQ0XLboml_g/viewform',
+        display: true,
     },
     {
         program: 'glass-art-suncatcher',
-		title: 'Glass Art Suncatcher',
-		subtitle: 'Suncatcher class creating beautiful light and shadow when sunlight shines through',
-		description: `
+        title: 'Glass Art Suncatcher',
+        subtitle: 'Suncatcher class creating beautiful light and shadow when sunlight shines through',
+        description: `
         Anyone can safely experience stained glass vibes without glass cutting or soldering, allowing beginners to easily finish personal decor accessories without pressure.<br />
         The completed suncatcher acts as a special object adding warm vibes to your space, letting you handcraft precious memories from your Jeju trip.<br />
         Make your own suncatcher filled with sparkling light.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/05/AMoIJ3UxrVM0UjL7McD5_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/05/AMoIJ3UxrVM0UjL7McD5_1_',
-			'/api/editor/attach/view/default/2026/05/MC3G79ZIqbjoOEk0B9Ka_1_'
-		],
-		tags: ['ART', 'DIY', 'INDOCK'],
-		category: 'ART',
-		date: 'Thu ~ Tue',
-		duration: '10:00 ~ 17:00',
-		priceGeneral: 'KRW 38,000',
-		priceGuest: 'KRW 35,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/05/AMoIJ3UxrVM0UjL7McD5_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/05/AMoIJ3UxrVM0UjL7McD5_1_',
+            '/api/editor/attach/view/default/2026/05/MC3G79ZIqbjoOEk0B9Ka_1_'
+        ],
+        tags: ['ART', 'DIY', 'INDOCK'],
+        category: 'ART',
+        date: 'Thu ~ Tue',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: 'KRW 38,000',
+        priceGuest: 'KRW 35,000',
+        information: `
         <p class="ref-bu-list">※ Location: Popo Workshop, 93, Ojo-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
-        (Takes approx. 4 minutes by car from Playce Camp)</p>
+        (Takes approx. 4 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Available for ages 11 and above.</p>
         `,
-		notice: ``,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdR1F796ednS9nNG-sD3pxtvO75mZtZQNsxF_oS72fcuAwgmw/viewform',
-		display: true,
+        notice: ``,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdR1F796ednS9nNG-sD3pxtvO75mZtZQNsxF_oS72fcuAwgmw/viewform',
+        display: true,
     },
     {
         program: 'glass-art-doorbell',
-		title: 'Glass Art Doorbell',
-		subtitle: 'Glass art doorbell class featuring Jeju aesthetic',
-		description: `
+        title: 'Glass Art Doorbell',
+        subtitle: 'Glass art doorbell class featuring Jeju aesthetic',
+        description: `
         Utilize representative Jeju icons like Hallabong tangerines, camellia flowers, and Dolharubang statues to craft special decor items bringing good energy.<br />
         Safe and accessible for anyone without glass cutting or soldering, offering a comfortable experience with stained glass's unique aesthetic and shimmering colors.<br />
         Add Jeju's cozy mood to your daily space with a personalized doorbell that shines beautifully whenever sunlight strikes.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/05/o5rzMpiF835pPq2QnrRv_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/05/hhjlI6NIJ7Zjt7EcsOpk_1_',
-			'/api/editor/attach/view/default/2026/05/o5rzMpiF835pPq2QnrRv_1_',
-			'/api/editor/attach/view/default/2026/05/sRnE5927v3LuuVwijOJZ_1_'
-		],
-		tags: ['ART', 'DIY'],
-		category: 'ART',
-		date: 'Thu ~ Tue',
-		duration: '10:00 ~ 17:00',
-		priceGeneral: 'KRW 28,000',
-		priceGuest: 'KRW 25,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/05/o5rzMpiF835pPq2QnrRv_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/05/hhjlI6NIJ7Zjt7EcsOpk_1_',
+            '/api/editor/attach/view/default/2026/05/o5rzMpiF835pPq2QnrRv_1_',
+            '/api/editor/attach/view/default/2026/05/sRnE5927v3LuuVwijOJZ_1_'
+        ],
+        tags: ['ART', 'DIY'],
+        category: 'ART',
+        date: 'Thu ~ Tue',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: 'KRW 28,000',
+        priceGuest: 'KRW 25,000',
+        information: `
         <p class="ref-bu-list">※ Location: Popo Workshop, 93, Ojo-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
-        (Takes approx. 4 minutes by car from Playce Camp)</p>
+        (Takes approx. 4 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Available for ages 11 and above.</p>
         `,
-		notice: ``,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe_xXFXoM6FVJ0Y8qwQfrh6C8w9dbENiRCCB_jAX7kfsQLWIw/viewform',
-		display: true,
+        notice: ``,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe_xXFXoM6FVJ0Y8qwQfrh6C8w9dbENiRCCB_jAX7kfsQLWIw/viewform',
+        display: true,
     },
     {
         program: 'pottery-class',
-		title: 'Pottery Class',
-		subtitle: 'Create a special keepsake with your own hands through a traditional pottery experience.',
-		description: `
+        title: 'Pottery Class',
+        subtitle: 'Create a special keepsake with your own hands through a traditional pottery experience.',
+        description: `
 		This is an experience where you create your own ceramic piece using a pottery wheel in the traditional way.<br />
 		<br />
 		Choose from a coffee cup, mug, bowl, small plate, or a set of two drinking cups and create your own piece.<br />
@@ -950,25 +1039,25 @@ const activities = [
 		<br />
 		<p class="ref-bu-list">※ Additional charges may apply depending on the size of the piece or any additional customization.</p>
         `,
-		thumbnail: '/api/editor/attach/view/default/2025/05/NRjatN0z0eClQ9m41w4B_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2025/05/NRjatN0z0eClQ9m41w4B_1_',
-			'/api/editor/attach/view/default/2025/05/jfYpdDZlBBROOTuw1BI8_1_',
-			'/api/editor/attach/view/default/2025/05/CzltJ9UVhiQKzFgg7kme_1_'
-		],
-		tags: ['LOCAL', 'HANDMADE', 'EXPERIENCE'],
-		category: 'LOCAL',
-		date: 'Mon ~ Sat',
-		duration: '11:00, 15:00/40 mins ~ 60 mins',
-		priceGeneral: 'KRW 31,000',
-		priceGuest: 'KRW 26,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2025/05/NRjatN0z0eClQ9m41w4B_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2025/05/NRjatN0z0eClQ9m41w4B_1_',
+            '/api/editor/attach/view/default/2025/05/jfYpdDZlBBROOTuw1BI8_1_',
+            '/api/editor/attach/view/default/2025/05/CzltJ9UVhiQKzFgg7kme_1_'
+        ],
+        tags: ['LOCAL', 'HANDMADE', 'EXPERIENCE'],
+        category: 'LOCAL',
+        date: 'Mon ~ Sat',
+        duration: '11:00, 15:00/40 mins ~ 60 mins',
+        priceGeneral: 'KRW 31,000',
+        priceGuest: 'KRW 26,000',
+        information: `
         <p class="ref-bu-list">※ Location: 85, Seongeup-iri-ro, Pyoseon-myeon, Seogwipo-si, Jeju<br />
-        (Takes approx. 25 minutes by car from Playce Camp)</p>
+        (Takes approx. 25 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Items provided: Wheel-spun ceramic artwork(2 teacups or plate or mug, etc.)</p>
         `,
-		notice: `
+        notice: `
         <li>This program is conducted in Korean only.</li>
 		<li>Guests who fail to arrive without prior notice or arrive more than 10 minutes after the program starts may be considered a No-Show and may not be allowed to participate.</li>
 		<li>The schedule and program details are subject to change depending on operational circumstances or the host's discretion.</li><br />
@@ -983,31 +1072,31 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSd6Qg7MWgQo4GHd4tG4Wozux9nTbUqN7EqQkYz45AhiM6hhzw/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSd6Qg7MWgQo4GHd4tG4Wozux9nTbUqN7EqQkYz45AhiM6hhzw/viewform',
+        display: true,
     },
     {
-		program: 'day-yoga',
-		title: 'Day Yoga',
-		subtitle: 'Refreshing yoga to greet your travel morning energy',
-		description: `
+        program: 'day-yoga',
+        title: 'Day Yoga',
+        subtitle: 'Refreshing yoga to greet your travel morning energy',
+        description: `
         A class designed to stretch body and mind, perfect for beginners and anyone looking to greet the morning refreshed.<br />
         Includes simple stretching and movements awakening the body along the spine.
         `,
-		thumbnail: '/api/editor/attach/view/default/2024/12/8HisF02v6NK4XxNeiL72_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2024/12/8HisF02v6NK4XxNeiL72_1_',
-			'/api/editor/attach/view/default/2024/12/JpU4R9ARZ9BpwOeETNE1_1_',
-			'/api/editor/attach/view/default/2024/12/xqwW8cryUPuUFvEImLkp_1_',
-			'/api/editor/attach/view/default/2024/12/UX0henYQKukEl3Zha3AB_1_'
-		],
-		tags: ['REST', 'HEALING', 'YOGA'],
-		category: 'REST',
-		date: '',
-		duration: '10:00 ~ 11:20',
-		priceGeneral: 'KRW 35,000',
-		priceGuest: 'KRW 30,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2024/12/8HisF02v6NK4XxNeiL72_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2024/12/8HisF02v6NK4XxNeiL72_1_',
+            '/api/editor/attach/view/default/2024/12/JpU4R9ARZ9BpwOeETNE1_1_',
+            '/api/editor/attach/view/default/2024/12/xqwW8cryUPuUFvEImLkp_1_',
+            '/api/editor/attach/view/default/2024/12/UX0henYQKukEl3Zha3AB_1_'
+        ],
+        tags: ['REST', 'HEALING', 'YOGA'],
+        category: 'REST',
+        date: '',
+        duration: '10:00 ~ 11:20',
+        priceGeneral: 'KRW 35,000',
+        priceGuest: 'KRW 30,000',
+        information: `
         <p class="ref-bu-list">※ Location: Playce Camp Activity Lounge, 20, Dongryuam-ro, Seongsan-eup, Seogwipo-si, Jeju</p>
         <p class="ref-bu-list">※ Items provided: Yoga mat</p>
         <p class="ref-bu-list">※ Personal items: Comfortable clothing</p>
@@ -1021,7 +1110,7 @@ const activities = [
             <li>11:20 - Class Ends</li>
         </ul> -->
         `,
-		notice: `
+        notice: `
         <li>Activity programs operate on a advance reservation basis.</li>
         <li>Guest discounts will be verified on-site on the day of participation via room key card or booking confirmation text message.</li>
         <li>This program is subject to change depending on organizer and host circumstances.</li>
@@ -1039,38 +1128,38 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSemW5kBpPOOz-ys0E6U__pAJYaZZsbXJJ_mzRgrJRGqI-9-zw/viewform',
-		display: true,
-	},
-	{
-		program: 'morning-yoga',
-		title: 'Morning Yoga',
-		subtitle: 'Yoga class awakening mind and body balance with daily wellness programs',
-		description: `
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSemW5kBpPOOz-ys0E6U__pAJYaZZsbXJJ_mzRgrJRGqI-9-zw/viewform',
+        display: true,
+    },
+    {
+        program: 'morning-yoga',
+        title: 'Morning Yoga',
+        subtitle: 'Yoga class awakening mind and body balance with daily wellness programs',
+        description: `
         Every morning at 8:10 AM, a wellness yoga program balancing mind and body takes place.<br />
         From Relax Yoga starting the day in deep relaxation, to Meditation Yoga helping Chakra balance and mental peace, and Restorative Yoga using Hinoki cypress rollers to ease tension.<br />
         Experience serene, peaceful mornings during your trip with daily rotating themed programs.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/05/PevxgaNHduOhIZQGoDiM_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/05/PevxgaNHduOhIZQGoDiM_1_',
-			'/api/editor/attach/view/default/2026/05/J846Z0L7LhSlli2PQCh4_1_',
-			'/api/editor/attach/view/default/2026/05/OhDjhJCzmJ6dx8umJcc7_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: 'Mon ~ Sun',
-		duration: '08:10(Duration: 60 ~ 70 mins)',
-		priceGeneral: 'KRW 38,000',
-		priceGuest: 'KRW 35,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/05/PevxgaNHduOhIZQGoDiM_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/05/PevxgaNHduOhIZQGoDiM_1_',
+            '/api/editor/attach/view/default/2026/05/J846Z0L7LhSlli2PQCh4_1_',
+            '/api/editor/attach/view/default/2026/05/OhDjhJCzmJ6dx8umJcc7_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: 'Mon ~ Sun',
+        duration: '08:10(Duration: 60 ~ 70 mins)',
+        priceGeneral: 'KRW 38,000',
+        priceGuest: 'KRW 35,000',
+        information: `
         <p class="ref-bu-list">※ Location: Meditation Room B1(Auditorium), 2688, Haemajihaean-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-        (Takes approx. 7 minutes by car from Playce Camp)</p>
+        (Takes approx. 7 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Daily wear is not permitted when participating in this program; entry is allowed only after changing into yoga wear or sportswear.<br />
         Refunds are not possible if participation is prevented due to improper clothing.</p>
         `,
-		notice: `
+        notice: `
         <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
         <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
         <div class="common-txt">
@@ -1084,39 +1173,39 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe8PMQr5Pl0zvPQ5xSPcNaZLvoR2Ahg-e-aBWOw47_cWOghHw/viewform',
-		display: false,
-	},
-	{
-		program: 'singing-bowl-meditation',
-		title: 'Singing Bowl Meditation',
-		subtitle: 'Meditation awakening mind and body through singing bowl resonance',
-		description: `
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe8PMQr5Pl0zvPQ5xSPcNaZLvoR2Ahg-e-aBWOw47_cWOghHw/viewform',
+        display: false,
+    },
+    {
+        program: 'singing-bowl-meditation',
+        title: 'Singing Bowl Meditation',
+        subtitle: 'Meditation awakening mind and body through singing bowl resonance',
+        description: `
         Every day at 17:30 PM, deep vibrations and resonance from healing Crystal Singing Bowls offer comfortable rest to body and mind.<br />
         Clear and delicate sounds stabilize brainwaves while gently easing tense senses,<br />
         allowing time to let go of accumulated daily fatigue and stress.<br />
         Focus on your breathing amid softly spreading resonance to find inner balance and deep tranquility.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/05/EURQkUVmxY7h6HN0usai_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/05/EURQkUVmxY7h6HN0usai_1_',
-			'/api/editor/attach/view/default/2026/05/mnxeS8aPZbql2FwODH6J_1_',
-			'/api/editor/attach/view/default/2026/05/VCeh9RuIW5szrSGj7cRL_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: 'Wednesday',
-		duration: '17:30(Duration: 60 mins)',
-		priceGeneral: 'KRW 38,000',
-		priceGuest: 'KRW 35,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/05/EURQkUVmxY7h6HN0usai_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/05/EURQkUVmxY7h6HN0usai_1_',
+            '/api/editor/attach/view/default/2026/05/mnxeS8aPZbql2FwODH6J_1_',
+            '/api/editor/attach/view/default/2026/05/VCeh9RuIW5szrSGj7cRL_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: 'Wednesday',
+        duration: '17:30(Duration: 60 mins)',
+        priceGeneral: 'KRW 38,000',
+        priceGuest: 'KRW 35,000',
+        information: `
         <p class="ref-bu-list">※ Location: Meditation Room B1(Auditorium), 2688, Haemajihaean-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-        (Takes approx. 7 minutes by car from Playce Camp)</p>
+        (Takes approx. 7 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Daily wear is not permitted when participating in this program; entry is allowed only after changing into yoga wear or sportswear.<br />
         Refunds are not possible if participation is prevented due to improper clothing.</p>
         `,
-		notice: `
+        notice: `
         <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
         <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
         <div class="common-txt">
@@ -1130,37 +1219,37 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfU1q1Y1e-K8gAFT8EcICKH-WCUa36Pqrtn0i-UXOXir-_SFQ/viewform',
-		display: true,
-	},
-	{
-		program: 'tea-ceremony',
-		title: 'Jeju Tea Gathering',
-		subtitle: 'Tea class featuring 3 types of Jeju tea, tea treats, & custom Matcha whisking',
-		description: `
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfU1q1Y1e-K8gAFT8EcICKH-WCUa36Pqrtn0i-UXOXir-_SFQ/viewform',
+        display: true,
+    },
+    {
+        program: 'tea-ceremony',
+        title: 'Jeju Tea Gathering',
+        subtitle: 'Tea class featuring 3 types of Jeju tea, tea treats, & custom Matcha whisking',
+        description: `
         A tea class fully reflecting Jeju's nature and sentiment; enjoy 3 teas from Jeju tea gardens, tea treats, and a hands-on Matcha whisking session.<br />
         Experience distinct aromas and flavors of Jeju tea in one place, whisking Matcha powder into foam using a bamboo whisk to craft your custom Matcha.<br />
         Feel a meditation-like rest amid delicate hand movements and calm resonance, learning deep Jeju stories embedded in tea, utensils, and people.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/05/DBCCmYRRezjFp4ESQOfh_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/05/DBCCmYRRezjFp4ESQOfh_1_',
-			'/api/editor/attach/view/default/2026/05/eOPurCbsj8BDpZc0yYV4_1_',
-			'/api/editor/attach/view/default/2026/05/stBEtQKSyMNzkH64oIn1_1_',
-			'/api/editor/attach/view/default/2026/05/rA1GDroJbRsXU80EqN3p_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: 'Fri, Sat',
-		duration: '13:00(Duration: 90 mins)',
-		priceGeneral: 'KRW 45,000',
-		priceGuest: 'KRW 40,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/05/DBCCmYRRezjFp4ESQOfh_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/05/DBCCmYRRezjFp4ESQOfh_1_',
+            '/api/editor/attach/view/default/2026/05/eOPurCbsj8BDpZc0yYV4_1_',
+            '/api/editor/attach/view/default/2026/05/stBEtQKSyMNzkH64oIn1_1_',
+            '/api/editor/attach/view/default/2026/05/rA1GDroJbRsXU80EqN3p_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: 'Fri, Sat',
+        duration: '13:00(Duration: 90 mins)',
+        priceGeneral: 'KRW 45,000',
+        priceGuest: 'KRW 40,000',
+        information: `
         <p class="ref-bu-list">※ Location: Teahouse B1, 2688, Haemajihaean-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-        (Takes approx. 7 minutes by car from Playce Camp)</p>
+        (Takes approx. 7 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
-		notice: `
+        notice: `
         <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
         <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
         <div class="common-txt">
@@ -1174,41 +1263,41 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeVMuCws-z9iYYlO7msTd4835I_ynJZqp3GtxpqJaqJ3E68eQ/viewform',
-		display: true,
-	},
-	{
-		program: 'perfume-diy',
-		title: 'Custom Scent DIY',
-		subtitle: 'Signature scent created by blending over 50 varieties of fragrance oils representing Jeju',
-		description: `
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeVMuCws-z9iYYlO7msTd4835I_ynJZqp3GtxpqJaqJ3E68eQ/viewform',
+        display: true,
+    },
+    {
+        program: 'perfume-diy',
+        title: 'Custom Scent DIY',
+        subtitle: 'Signature scent created by blending over 50 varieties of fragrance oils representing Jeju',
+        description: `
         Blend over 50 fragrance oils including signature Jeju scents like citrus, gardenia, and Torreya to complete your unique signature scent.<br />
         The completed scent will be made into a deodorizer or fabric perfume suitable for cars, closets, bedding, or fabric spaces in daily life.<br />
         Remember your Jeju travel moments long after with gently lingering fragrances.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/AfSdvuLfwPra8L4F9xki_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/AfSdvuLfwPra8L4F9xki_1_',
-			'/api/editor/attach/view/default/2026/06/y0Lyd7Hhfub7SAvjP70s_1_',
-			'/api/editor/attach/view/default/2026/06/XuGfgUIR9f5VWCQN7aTx_1_'
-		],
+        thumbnail: '/api/editor/attach/view/default/2026/06/AfSdvuLfwPra8L4F9xki_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/AfSdvuLfwPra8L4F9xki_1_',
+            '/api/editor/attach/view/default/2026/06/y0Lyd7Hhfub7SAvjP70s_1_',
+            '/api/editor/attach/view/default/2026/06/XuGfgUIR9f5VWCQN7aTx_1_'
+        ],
 
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:30 ~ 17:30(30-minute intervals)',
-		priceGeneral: 'KRW 30,000',
-		priceGuest: 'KRW 25,000',
-		information: `
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:30 ~ 17:30(30-minute intervals)',
+        priceGeneral: 'KRW 30,000',
+        priceGuest: 'KRW 25,000',
+        information: `
         <p class="ref-bu-list">※ Location: 15, Goseongseo 5-gil, Aewol-eup, Jeju-si, Jeju-do<br />
-        (Takes approx. 60 minutes by car from Playce Camp)</p>
+        (Takes approx. 60 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Anyone aged 4 and above can easily and enjoyably participate.</p>
         <p class="ref-bu-list">※ Direct scent blending class.</p>
         <p class="ref-bu-list">※ Can make 200ml deodorizer or fabric perfume.</p>
         <p class="ref-bu-list">※ Uses over 50 types of fragrance oils including Jeju scents.</p>
         `,
-		notice: `
+        notice: `
         <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
         <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
         <div class="common-txt">
@@ -1219,40 +1308,40 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfB3sMzTaWVPOis2orkBuyXXiGh7baBkP4A1liRYUoF_Jte1A/viewform',
-		display: true,
-	},
-	{
-		program: 'diffuser-diy',
-		title: 'Perfume Diffuser DIY',
-		subtitle: 'Making a perfume diffuser to fill Jeju mood',
-		description: `
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfB3sMzTaWVPOis2orkBuyXXiGh7baBkP4A1liRYUoF_Jte1A/viewform',
+        display: true,
+    },
+    {
+        program: 'diffuser-diy',
+        title: 'Perfume Diffuser DIY',
+        subtitle: 'Making a perfume diffuser to fill Jeju mood',
+        description: `
         Directly select and blend Jeju fragrance oils like gardenia, Torreya, and citrus to craft a unique special scent.<br />
         Combine aesthetic bottles and floral objects to make a diffuser as beautiful as home decor, filling your space comfortably with subtle aroma.<br />
         Experience a healing DIY class holding travel memories in scent.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/Spd31nazIhMTCyvcj0Y6_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/Spd31nazIhMTCyvcj0Y6_1_',
-			'/api/editor/attach/view/default/2026/06/M4uZfRaVQXCVTzPPgr5s_1_',
-			'/api/editor/attach/view/default/2026/06/6rpFEecIGZtNJHQY9EKe_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:30 ~ 17:30(30-minute intervals)',
-		priceGeneral: 'KRW 35,000',
-		priceGuest: 'KRW 30,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/Spd31nazIhMTCyvcj0Y6_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/Spd31nazIhMTCyvcj0Y6_1_',
+            '/api/editor/attach/view/default/2026/06/M4uZfRaVQXCVTzPPgr5s_1_',
+            '/api/editor/attach/view/default/2026/06/6rpFEecIGZtNJHQY9EKe_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:30 ~ 17:30(30-minute intervals)',
+        priceGeneral: 'KRW 35,000',
+        priceGuest: 'KRW 30,000',
+        information: `
         <p class="ref-bu-list">※ Location: 15, Goseongseo 5-gil, Aewol-eup, Jeju-si, Jeju-do<br />
-        (Takes approx. 60 minutes by car from Playce Camp)</p>
+        (Takes approx. 60 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Anyone aged 4 and above can easily and enjoyably participate.</p>
         <p class="ref-bu-list">※ Can produce 100ml + 50ml or 150ml diffusers.</p>
         <p class="ref-bu-list">※ Uses various Jeju fragrance oils like gardenia, Torreya, citrus, etc.</p>
         <p class="ref-bu-list">※ Personally select fragrance oils and objects during creation.</p>
         `,
-		notice: `
+        notice: `
         <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
         <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
         <div class="common-txt">
@@ -1263,38 +1352,38 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSf_hf7hArN4FUuCc3Ltj1C0gZmAbaapk63TrhU7j4p19zS1rQ/viewform',
-		display: true,
-	},
-	{
-		program: 'sachet-class',
-		title: 'Jeju Sachet Class',
-		subtitle: 'Handcrafting a Jeju aesthetic sachet with custom blending',
-		description: `
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSf_hf7hArN4FUuCc3Ltj1C0gZmAbaapk63TrhU7j4p19zS1rQ/viewform',
+        display: true,
+    },
+    {
+        program: 'sachet-class',
+        title: 'Jeju Sachet Class',
+        subtitle: 'Handcrafting a Jeju aesthetic sachet with custom blending',
+        description: `
         Blend scents personally tailored to your taste to craft a sachet(scent pouch).<br />
         Combine diverse fragrance oils to complete your signature scent.<br />
         The completed sachet lasts softly for about 4 months, suitable for various spaces like closets, cars, or bedrooms.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/LhBRgnFzqoPJiaWDjgaE_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/LhBRgnFzqoPJiaWDjgaE_1_',
-			'/api/editor/attach/view/default/2026/06/2j31jKY4cG3Er3ZkjoAH_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:30 ~ 17:30(30-minute intervals)',
-		priceGeneral: 'KRW 30,000',
-		priceGuest: 'KRW 25,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/LhBRgnFzqoPJiaWDjgaE_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/LhBRgnFzqoPJiaWDjgaE_1_',
+            '/api/editor/attach/view/default/2026/06/2j31jKY4cG3Er3ZkjoAH_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:30 ~ 17:30(30-minute intervals)',
+        priceGeneral: 'KRW 30,000',
+        priceGuest: 'KRW 25,000',
+        information: `
         <p class="ref-bu-list">※ Location: 15, Goseongseo 5-gil, Aewol-eup, Jeju-si, Jeju-do<br />
-        (Takes approx. 60 minutes by car from Playce Camp)</p>
+        (Takes approx. 60 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Anyone aged 4 and above can easily and enjoyably participate.</p>
         <p class="ref-bu-list">※ 1 aging bottle, 2 scent pouches, and 4 sachet pouches provided.</p>
         <p class="ref-bu-list">※ Scent lasts approx. 4 months after completion.</p>
         `,
-		notice: `
+        notice: `
         <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
         <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
         <div class="common-txt">
@@ -1305,43 +1394,43 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdTSN5ETYL5cwC91cdPE6cmXX6BAdXfmhWVFvGxzYA1ern8ag/viewform',
-		display: true,
-	},
-	{
-		program: 'one-day-wellness',
-		title: 'One-Day Wellness Package',
-		subtitle: 'A one-day wellness package where you can choose two classes at your preferred times',
-		description: `
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdTSN5ETYL5cwC91cdPE6cmXX6BAdXfmhWVFvGxzYA1ern8ag/viewform',
+        display: true,
+    },
+    {
+        program: 'one-day-wellness',
+        title: 'One-Day Wellness Package',
+        subtitle: 'A one-day wellness package where you can choose two classes at your preferred times',
+        description: `
         A One-Day Wellness Package allowing you to choose two classes at your preferred times between morning(07:00 Meditation & 08:10 Yoga) and evening(17:30 & 19:00 Meditation/Yoga) sessions.<br />
         Morning sessions offer various wellness programs balancing mind and body like Chakra Meditation and Restorative Yoga.<br />
         Evening sessions provide vibrant programs like Live Music Meditation, Crystal Singing Bowl Meditation, Hatha Yoga, and Balance Yoga,<br />
         operating daily with different themes to deliver fresh wellness experiences each day.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/IzJqFInRW5g5sZGyCtjt_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/IzJqFInRW5g5sZGyCtjt_1_',
-			'/api/editor/attach/view/default/2026/06/pStUW7rVmFqSUyrAPheS_1_',
-			'/api/editor/attach/view/default/2026/06/mOXaXcAlWlbxfiKr70r0_1_',
-			'/api/editor/attach/view/default/2026/06/otFelRNAWi4rWMwUhiy3_1_',
-			'/api/editor/attach/view/default/2026/06/2XpUCQeKhKtCRQptdt90_1_',
-			'/api/editor/attach/view/default/2026/06/qukBIhmMZs4fqb8oRaCf_1_',
-			'/api/editor/attach/view/default/2026/06/Lkcq2UkGNkS1pQmYKUBu_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: 'Mon ~ Fri',
-		duration: 'Morning/Evening',
-		priceGeneral: 'KRW 60,000',
-		priceGuest: 'KRW 55,000',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/IzJqFInRW5g5sZGyCtjt_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/IzJqFInRW5g5sZGyCtjt_1_',
+            '/api/editor/attach/view/default/2026/06/pStUW7rVmFqSUyrAPheS_1_',
+            '/api/editor/attach/view/default/2026/06/mOXaXcAlWlbxfiKr70r0_1_',
+            '/api/editor/attach/view/default/2026/06/otFelRNAWi4rWMwUhiy3_1_',
+            '/api/editor/attach/view/default/2026/06/2XpUCQeKhKtCRQptdt90_1_',
+            '/api/editor/attach/view/default/2026/06/qukBIhmMZs4fqb8oRaCf_1_',
+            '/api/editor/attach/view/default/2026/06/Lkcq2UkGNkS1pQmYKUBu_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: 'Mon ~ Fri',
+        duration: 'Morning/Evening',
+        priceGeneral: 'KRW 60,000',
+        priceGuest: 'KRW 55,000',
+        information: `
         <p class="ref-bu-list">※ Location: Meditation Room B1(Auditorium), 2688, Haemajihaean-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-        (Takes approx. 7 minutes by car from Playce Camp)</p>
+        (Takes approx. 7 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Daily wear is not permitted when participating in this program; entry is allowed only after changing into yoga wear or sportswear.<br />
         Refunds are not possible if participation is prevented due to improper clothing.</p>
         `,
-		notice: `
+        notice: `
         <li>Reservations may be confirmed or canceled depending on availability after submission.</li>
         <li>Program participation is available upon payment of fees after reservation confirmation.</li><br />
         <div class="common-txt">
@@ -1355,7 +1444,7 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfWwMFZdUZWYKse-ljK-VPuKbB3IPNsoB4LuLSabeqN_uj-kg/viewform',
-		display: false,
-	}
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfWwMFZdUZWYKse-ljK-VPuKbB3IPNsoB4LuLSabeqN_uj-kg/viewform',
+        display: false,
+    }
 ];
