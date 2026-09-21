@@ -1,5 +1,51 @@
 const activities = [
     {
+		program: 'snoopygarden',
+		title: '스누피가든',
+		subtitle: '제주의 자연 속에서 피너츠 친구들을 만날 수 있는 특별한 공간',
+		description: `
+        제주의 자연 속에서 피너츠 친구들을 만날 수 있는 특별한 공간, 스누피가든을 만나 보세요.<br />
+        스누피와 찰리 브라운 등 사랑스러운 캐릭터와 함께 다양한 테마 공간을 둘러볼 수 있습니다.<br />
+        <br />
+        푸른 정원과 제주 자연이 어우러져 산책하듯 여유롭게 관람하기 좋습니다.<br />
+        곳곳에 마련된 캐릭터 조형물과 포토존에서 특별한 제주 여행의 추억을 남겨보며,<br />
+        계절마다 달라지는 자연 풍경과 피너츠의 감성을 함께 즐겨 보세요.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
+			'/api/editor/attach/view/default/2026/09/PL5W55SESXrSjTAnyoQK_1_',
+			'/api/editor/attach/view/default/2026/09/1F91LKnwYwSuMN8gS9QH_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: ``,
+		duration: `
+        하절기(4 ~ 9월): 09:00 ~ 19:00(입장 마감 18:00)<br />
+        동절기(10 ~ 3월): 09:00 ~ 18:00(입장 마감 17:00)
+        `,
+		priceGeneral: `
+        성인 19,000원<br />
+        청소년 16,000원<br />
+        어린이 13,000원
+        `,
+		priceGuest: `20% 할인`,
+		information: `
+        <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 구좌읍 금백조로 916<br />
+        (휘닉스 아일랜드에서 차량으로 약 20분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>별도의 사전 예약 없이 이용 가능하며, 할인 쿠폰은 프론트에 비치되어 있습니다.(소진 시 혜택 적용이 불가할 수 있습니다.)</li>
+            <li>타 할인 및 혜택과 중복 적용되지 않습니다.</li>
+        </ul>
+        `,
+		reservation: false,
+        inquiries: `스누피가든 <a href="tel:0648051118">064-805-1118</a>`,
+		display: true,
+    },
+    {
 		program: 'aquaplanet',
 		title: '아쿠아플라넷',
 		subtitle: '제주를 담은 월드클래스 아쿠아리움',
