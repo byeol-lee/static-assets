@@ -28,7 +28,7 @@ const activities = [
         `,
         priceGuest: `20% off`,
         information: `
-        <p class="ref-bu-list">※ Location: 95, Seopjikoji-ro, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Koreaㄴ<br />
+        <p class="ref-bu-list">※ Location: 95, Seopjikoji-ro, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea<br />
         (Takes approx. 1-minute drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
