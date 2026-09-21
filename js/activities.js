@@ -1,5 +1,48 @@
 const activities = [
     {
+		program: 'aquaplanet',
+		title: '아쿠아플라넷',
+		subtitle: '제주를 담은 월드클래스 아쿠아리움',
+		description: `
+        제주 바다를 그대로 옮겨놓은 듯한 특별한 해양 공간, 아쿠아플라넷 제주를 만나 보세요.<br />
+        대형 수조를 가득 채운 다양한 해양 생물을 가까이에서 관람할 수 있습니다.<br />
+        <br />
+        눈앞을 유영하는 상어와 가오리 등 생생한 바닷속 풍경으로 아이와 함께하는 가족여행부터 연인, 친구와의 제주여행 코스로도 추천합니다.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
+			'/api/editor/attach/view/default/2026/09/HtnfB1YA1toAnYdeNE7u_1_',
+			'/api/editor/attach/view/default/2026/09/fWtJFlGI3nES5xqEGa9b_1_',
+			'/api/editor/attach/view/default/2026/09/wvAlO4sNLfsAgzs65UJp_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: ``,
+		duration: `09:30 ~ 18:00`,
+		priceGeneral: `
+        대인 45,500원<br />
+        청소년 43,600원<br />
+        어린이 41,400원<br />
+        경로 43,600원
+        `,
+		priceGuest: `20% 할인`,
+		information: `
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 섭지코지로 95, 아쿠아플라넷 제주<br />
+        (휘닉스 아일랜드에서 차량으로 약 1분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>별도의 사전 예약 없이 이용 가능하며, 아쿠아플라넷 제주 매표소 방문 시 투숙 내역을 제시하시면 할인 혜택이 적용됩니다.</li>
+            <li>타 할인 및 혜택과 중복 적용되지 않습니다.</li>
+        </ul>
+        `,
+		reservation: false,
+        inquiries: `아쿠아플라넷 제주 <a href="tel:18337001">1833-7001</a>`,
+		display: true,
+    },
+    {
 		program: 'snoopygarden',
 		title: '스누피가든',
 		subtitle: '제주의 자연 속에서 피너츠 친구들을 만날 수 있는 특별한 공간',
@@ -43,49 +86,6 @@ const activities = [
         `,
 		reservation: false,
         inquiries: `스누피가든 <a href="tel:0648051118">064-805-1118</a>`,
-		display: true,
-    },
-    {
-		program: 'aquaplanet',
-		title: '아쿠아플라넷',
-		subtitle: '제주를 담은 월드클래스 아쿠아리움',
-		description: `
-        제주 바다를 그대로 옮겨놓은 듯한 특별한 해양 공간, 아쿠아플라넷 제주를 만나 보세요.<br />
-        대형 수조를 가득 채운 다양한 해양 생물을 가까이에서 관람할 수 있습니다.<br />
-        <br />
-        눈앞을 유영하는 상어와 가오리 등 생생한 바닷속 풍경으로 아이와 함께하는 가족여행부터 연인, 친구와의 제주여행 코스로도 추천합니다.
-        `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
-			'/api/editor/attach/view/default/2026/09/HtnfB1YA1toAnYdeNE7u_1_',
-			'/api/editor/attach/view/default/2026/09/fWtJFlGI3nES5xqEGa9b_1_',
-			'/api/editor/attach/view/default/2026/09/wvAlO4sNLfsAgzs65UJp_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: ``,
-		duration: `09:30 ~ 18:00`,
-		priceGeneral: `
-        대인 45,500원<br />
-        청소년 43,600원<br />
-        어린이 41,400원<br />
-        경로 43,600원
-        `,
-		priceGuest: `20% 할인`,
-		information: `
-        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 섭지코지로 95, 아쿠아플라넷 제주<br />
-        (휘닉스 아일랜드에서 차량으로 약 1분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
-        `,
-		notice: `
-        <ul class="dot-bu-list">
-            <li>별도의 사전 예약 없이 이용 가능하며, 아쿠아플라넷 제주 매표소 방문 시 투숙 내역을 제시하시면 할인 혜택이 적용됩니다.</li>
-            <li>타 할인 및 혜택과 중복 적용되지 않습니다.</li>
-        </ul>
-        `,
-		reservation: false,
-        inquiries: `아쿠아플라넷 제주 <a href="tel:18337001">1833-7001</a>`,
 		display: true,
     },
     {
