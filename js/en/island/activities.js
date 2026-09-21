@@ -1,9 +1,98 @@
 const activities = [
     {
-		program: 'traveler-pt',
-		title: 'Traveler PT',
-		subtitle: 'Professional personal training classes led directly by the gym owner, focusing on proper weight training',
-		description: `
+        program: 'aquaplanet',
+        title: 'Aqua Planet',
+        subtitle: 'A World-Class Aquarium Showcasing Jeju',
+        description: `
+        Discover Aqua Planet Jeju, a unique marine space that brings the beauty of Jeju’s ocean to life.<br />
+        Get up close with a wide variety of marine life in the massive aquarium tanks.<br />
+        <br />
+        With sharks, rays, and other marine life swimming right before your eyes, it is an ideal destination for family trips with children, as well as trips to Jeju with your partner or friends.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
+            '/api/editor/attach/view/default/2026/09/HtnfB1YA1toAnYdeNE7u_1_',
+            '/api/editor/attach/view/default/2026/09/fWtJFlGI3nES5xqEGa9b_1_',
+            '/api/editor/attach/view/default/2026/09/wvAlO4sNLfsAgzs65UJp_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `09:30 ~ 18:00`,
+        priceGeneral: `
+        Adults KRW 45,500<br />
+        Youth KRW 43,600<br />
+        Children KRW 41,400<br />
+        Seniors KRW 43,600
+        `,
+        priceGuest: `20% off`,
+        information: `
+        <p class="ref-bu-list">※ Location: 95, Seopjikoji-ro, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Koreaㄴ<br />
+        (Takes approx. 1-minute drive from Phoenix Island)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>No advance reservation is required. Present your stay details at the Aqua Planet Jeju ticket counter to receive the discount.</li>
+            <li>Cannot be combined with other discounts or benefits.</li>
+        </ul>
+        `,
+        reservation: false,
+        inquiries: `aqua planet JeJU <a href="tel:+8218337001">+82-1833-7001</a>`,
+        display: true,
+    },
+    {
+        program: 'snoopygarden',
+        title: 'Snoopy Garden',
+        subtitle: 'A Special Place to Meet the Peanuts Friends in Jeju’s Nature',
+        description: `
+        Discover Snoopy Garden, a special place where you can meet the Peanuts friends surrounded by the nature of Jeju.<br />
+        Explore a variety of themed spaces featuring beloved characters such as Snoopy and Charlie Brown.<br />
+        <br />
+        Stroll through the gardens at your own pace while enjoying the beautiful combination of lush greenery and Jeju’s natural scenery.<br />
+        Capture special memories of your Jeju trip at the character sculptures and photo spots throughout the garden,<br />
+        and enjoy the seasonal beauty of nature alongside the charm of Peanuts.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
+            '/api/editor/attach/view/default/2026/09/PL5W55SESXrSjTAnyoQK_1_',
+            '/api/editor/attach/view/default/2026/09/1F91LKnwYwSuMN8gS9QH_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `
+        Summer Season(April - September): 09:00 ~ 19:00(Last admission 18:00)<br />
+        Winter Season(October - March): 09:00 ~ 18:00(Last admission 17:00)
+        `,
+        priceGeneral: `
+        Adults KRW 19,000<br />
+        Youth KRW 16,000<br />
+        Children KRW 13,000
+        `,
+        priceGuest: `20% off`,
+        information: `
+        <p class="ref-bu-list">※ Location: 916, Geumbaekjo-ro, Gujwa-eup, Jeju-si, Jeju-do, Republic of Korea<br />
+        (Takes approx. 20-minute drive from Phoenix Island)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>No advance reservation is required. Discount coupons are available at the front desk.(Benefits may not be available once coupons run out.)</li>
+            <li>Cannot be combined with other discounts or benefits.</li>
+        </ul>
+        `,
+        reservation: false,
+        inquiries: `Snoopy Garden <a href="tel:+82648051118">+82-64-805-1118</a>`,
+        display: true,
+    },
+    {
+        program: 'traveler-pt',
+        title: 'Traveler PT',
+        subtitle: 'Professional personal training classes led directly by the gym owner, focusing on proper weight training',
+        description: `
         How about working out on the Stairway to Heaven with Seongsan Ilchulbong in view?<br />
         <br />
         Located in Seongsan, Jeju, this personal training program is led directly by the gym owner and focuses on weight training.<br />
@@ -12,39 +101,39 @@ const activities = [
         Beginners can learn the fundamentals step by step.<br />
         Learn proper exercise techniques and build consistent workout habits.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
-			'/api/editor/attach/view/default/2026/09/g4zgEx63Na5EvylB3cSJ_1_',
-			'/api/editor/attach/view/default/2026/09/FGLjKVVozcHBRTlzKIwK_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: `Weekdays`,
-		duration: `08:00`,
-		priceGeneral: `KRW 29,000`,
-		priceGuest: `KRW 20,000`,
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
+            '/api/editor/attach/view/default/2026/09/g4zgEx63Na5EvylB3cSJ_1_',
+            '/api/editor/attach/view/default/2026/09/FGLjKVVozcHBRTlzKIwK_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: `Weekdays`,
+        duration: `08:00`,
+        priceGeneral: `KRW 29,000`,
+        priceGuest: `KRW 20,000`,
+        information: `
         <p class="ref-bu-list">※ Location: 3F, 18 Ilchul-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
-        (Takes approx. 5 minutes by car from Phoenix Island)</p>
+        (Takes approx. 5 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Indoor sneakers are required.</p>
         <p class="ref-bu-list">※ Parking: Seongsan Health Subcenter(42, Goseongojo-ro, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea)</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>Your reservation will be confirmed once payment is completed after the reservation is confirmed.</li>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdUouyKsSC2mcsx2Toy0Wr9KVSGW5yyWraL00VuzT2J4UJTzQ/viewform?usp=publish-editor',
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdUouyKsSC2mcsx2Toy0Wr9KVSGW5yyWraL00VuzT2J4UJTzQ/viewform?usp=publish-editor',
         inquiries: ``,
-		display: true,
+        display: true,
     },
     {
-		program: 'jeju-snap',
-		title: 'One Frame in Jeju, Emotional Snap',
-		subtitle: 'Choose your favorite setting - a charming photo studio, Jeju stone walls, or the sea - and capture your special moments in photos.',
-		description: `
+        program: 'jeju-snap',
+        title: 'One Frame in Jeju, Emotional Snap',
+        subtitle: 'Choose your favorite setting - a charming photo studio, Jeju stone walls, or the sea - and capture your special moments in photos.',
+        description: `
         Capture special moments filled with the unique charm of Jeju.<br />
         <br />
         From a cozy photo studio featuring traditional rafters and stone walls, to a front yard surrounded by Jeju stone walls,<br />
@@ -53,19 +142,19 @@ const activities = [
         <br />
         Turn your travel memories into special photos you’ll treasure for years to come.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
-			'/api/editor/attach/view/default/2026/09/iQgK0K7N0EHa2wPqfxOk_1_',
-			'/api/editor/attach/view/default/2026/09/AOP8pu5DdYYiMVZZLBUf_1_',
-			'/api/editor/attach/view/default/2026/09/v9CE5E81DaYQNLGi6wid_1_',
-			'/api/editor/attach/view/default/2026/09/6pPKaCqCYtuucx9zrLZP_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: `Open daily(Closed Wednesdays)`,
-		duration: `11:00 ~ 17:00`,
-		priceGeneral: `
+        thumbnail: '/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
+            '/api/editor/attach/view/default/2026/09/iQgK0K7N0EHa2wPqfxOk_1_',
+            '/api/editor/attach/view/default/2026/09/AOP8pu5DdYYiMVZZLBUf_1_',
+            '/api/editor/attach/view/default/2026/09/v9CE5E81DaYQNLGi6wid_1_',
+            '/api/editor/attach/view/default/2026/09/6pPKaCqCYtuucx9zrLZP_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: `Open daily(Closed Wednesdays)`,
+        duration: `11:00 ~ 17:00`,
+        priceGeneral: `
         1-2 people: KRW 25,000<br />
         1 person with a pet: KRW 25,000<br />
         3 people: KRW 75,000<br />
@@ -73,24 +162,24 @@ const activities = [
         On-location shoot: KRW 150,000<br />
         Drone video(Approx. 40 sec.): KRW 40,000
         `,
-		priceGuest: `KRW 5,000 off the regular rate`,
-		information: `
+        priceGuest: `KRW 5,000 off the regular rate`,
+        information: `
         <p class="ref-bu-list">※ Location: Kkulkkuk Photo Studio, 941, Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea<br />
-        (Takes approx. 3 minutes by car from Phoenix Island)</p>
+        (Takes approx. 3 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Each person will receive one 4×6 postcard-size print from the photo shoot.</p>
         <p class="ref-bu-list">※ On-location shoots are available at nearby attractions, including Seongsan Ilchulbong and Seopjikoji, with no limit on the number of participants<br />
         After the shoot, select two photos to receive as two printed copies.</p>
         <p class="ref-bu-list">※ Drone shoots feature the sea at Seopjikoji and produce a video approximately 40 seconds long. The original drone video file will be provided.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>Same-day reservations are not available(Min. 1 day in advance)</li>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScoLvv1O_JRHA7WcPlGY06-wx0mMLKfn11yCepllGm5keFtGA/viewform?usp=dialog',
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScoLvv1O_JRHA7WcPlGY06-wx0mMLKfn11yCepllGm5keFtGA/viewform?usp=dialog',
         inquiries: ``,
-		display: true,
+        display: true,
     },
     {
         program: 'arte-kids-park',
@@ -119,7 +208,7 @@ const activities = [
         priceGuest: `20% off`,
         information: `
         <p class="ref-bu-list">※ Location: 929 Wolgak-ro, Aewol-eup, Jeju-si, Jeju<br />
-        (Takes approx. 1 hour 20 minutes by car from Phoenix Island)</p>
+        (Takes approx. 1 hour 20 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
         notice: `
@@ -296,7 +385,7 @@ const activities = [
 		`,
         information: `
         <p class="ref-bu-list">※ Location: 229-16 Gujwahaean-ro, Gujwa-eup, Jeju-si, Jeju-do<br />
-        (Takes approx. 35 minutes by car from Phoenix Island)</p>
+        (Takes approx. 35 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Children: Ages 37 months–13 years</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Please arrive 20 minutes prior to departure for smooth boarding.</p>
@@ -410,7 +499,7 @@ const activities = [
         `,
         information: `
         <p class="ref-bu-list">※ Location: 1F, 27 Handong-ro, Gujwa-eup, Jeju-si, Jeju<br />
-        (Takes approx. 25 minutes by car from Phoenix Island)</p>
+        (Takes approx. 25 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
         notice: `
@@ -457,7 +546,7 @@ const activities = [
         `,
         information: `
         <p class="ref-bu-list">※ Location: 923, Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
-        (Takes approx. 4 minutes by car from Phoenix Island)
+        (Takes approx. 4 minutes by drive from Phoenix Island)
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
         notice: `
@@ -508,7 +597,7 @@ const activities = [
         `,
         information: `
         <p class="ref-bu-list">※ Location: 923 Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
-      (Takes approx. 4 minutes by car from Phoenix Island)</p>
+      (Takes approx. 4 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
         notice: `
@@ -551,7 +640,7 @@ const activities = [
         priceGuest: 'KRW 69,000',
         information: `
         <p class="ref-bu-list">※ Location: Seongsan Scuba, 143-4 Seongsan-ri, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-      (Takes approx. 10 minutes by car from Phoenix Island)</p>
+      (Takes approx. 10 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Provided items: Skin scuba diving equipment, towel, shower amenities(shampoo, conditioner, body wash, soap), full shower facilities</p>
         <p class="ref-bu-list">※ Personal items to bring: Beachwear(rashguard top/bottom or water park shorts/swimsuit), personal toiletries, extra change of clothes</p>
         `,
@@ -609,7 +698,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Guest Benefit: Welcome drink provided(Coffee or Beverage)</p>
         <p class="ref-bu-list">※ Location: 945 Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-     (Takes approx. 5 minutes by car from Phoenix Island)</p>
+     (Takes approx. 5 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Photos taken during class may be used for promotional content. If you do not wish to be photographed or have photos used, please inform us prior to class.</p>
         <p class="ref-bu-list">※ Free parking is available in front of the venue.</p>
@@ -647,7 +736,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Guest Benefit: Welcome drink provided(Coffee or Beverage)</p>
         <p class="ref-bu-list">※ Location: 945 Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-     (Takes approx. 5 minutes by car from Phoenix Island)</p>
+     (Takes approx. 5 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Photos taken during class may be used for promotional content. If you do not wish to be photographed or have photos used, please inform us prior to class.</p>
         <p class="ref-bu-list">※ Free parking is available in front of the venue.</p>
@@ -689,7 +778,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Guest Benefit: Welcome drink provided(Coffee or Beverage)</p>
         <p class="ref-bu-list">※ Location: 945 Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-     (Takes approx. 5 minutes by car from Phoenix Island)</p>
+     (Takes approx. 5 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Photos taken during class may be used for promotional content. If you do not wish to be photographed or have photos used, please inform us prior to class.</p>
         <p class="ref-bu-list">※ Free parking is available in front of the venue.</p>
@@ -730,7 +819,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Guest Benefit: Welcome drink provided(Coffee or Beverage)</p>
         <p class="ref-bu-list">※ Location: 945 Hwanhaejangseong-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-     (Takes approx. 5 minutes by car from Phoenix Island)</p>
+     (Takes approx. 5 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Photos taken during class may be used for promotional content. If you do not wish to be photographed or have photos used, please inform us prior to class.</p>
         <p class="ref-bu-list">※ Free parking is available in front of the venue.</p>
@@ -772,7 +861,7 @@ const activities = [
         priceGuest: 'KRW 20,000',
         information: `
         <p class="ref-bu-list">※ Location: 15 Goseongseo 5-gil, Aewol-eup, Jeju-si, Jeju-do<br />
-     (Takes approx. 70 minutes by car from Phoenix Island)</p>
+     (Takes approx. 70 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Easy and fun program suitable for everyone aged 4 and above.</p>
         <p class="ref-bu-list">※ Fully customizable experience where you choose parts, fragrances, and colors yourself.</p>
@@ -818,7 +907,7 @@ const activities = [
         priceGuest: 'KRW 30,000',
         information: `
         <p class="ref-bu-list">※ Location: 15 Goseongseo 5-gil, Aewol-eup, Jeju-si, Jeju-do<br />
-     (Takes approx. 70 minutes by car from Phoenix Island)</p>
+     (Takes approx. 70 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Easy and fun program suitable for everyone aged 4 and above.</p>
         <p class="ref-bu-list">※ Includes 1 Herbarium LED base.</p>
@@ -862,7 +951,7 @@ const activities = [
         priceGuest: 'KRW 25,000',
         information: `
         <p class="ref-bu-list">※ Location: Teahouse B1, 2688 Haemajihaean-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-     (Takes approx. 15 minutes by car from Phoenix Island)</p>
+     (Takes approx. 15 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Casual clothes are NOT allowed; participation is only permitted after changing into yoga wear or sportswear.<br />
         No refunds if participation is restricted due to inappropriate attire.</p>
@@ -908,7 +997,7 @@ const activities = [
         priceGuest: 'KRW 55,000',
         information: `
         <p class="ref-bu-list">※ Location: 3242 Joongsangan-dongro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-     (Takes approx. 15 minutes by car from Phoenix Island)</p>
+     (Takes approx. 15 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
         notice: ``,
@@ -937,7 +1026,7 @@ const activities = [
         priceGuest: 'KRW 35,000',
         information: `
         <p class="ref-bu-list">※ Location: Popo Workshop, 93 Ojo-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
-     (Takes approx. 10 minutes by car from Phoenix Island)</p>
+     (Takes approx. 10 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Participation is available for ages 11 and up.</p>
         `,
@@ -968,7 +1057,7 @@ const activities = [
         priceGuest: 'KRW 25,000',
         information: `
         <p class="ref-bu-list">※ Location: Popo Workshop, 93 Ojo-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
-     (Takes approx. 10 minutes by car from Phoenix Island)</p>
+     (Takes approx. 10 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Participation is available for ages 11 and up.</p>
         `,
@@ -1005,7 +1094,7 @@ const activities = [
         priceGuest: 'KRW 26,000',
         information: `
         <p class="ref-bu-list">※ Location: 85 Seongeup-i-ri-ro, Pyoseon-myeon, Seogwipo-si, Jeju<br />
-     (Takes approx. 30 minutes by car from Phoenix Island)</p>
+     (Takes approx. 30 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Provided items: Ceramic piece made with a potter's wheel(2 teacups, plate, or mug, etc.)</p>
         `,
@@ -1050,7 +1139,7 @@ const activities = [
         priceGuest: 'KRW 30,000',
         information: `
         <p class="ref-bu-list">※ Location: Playce Camp Activity Lounge, 20 Dongryuam-ro, Seongsan-eup, Seogwipo-si, Jeju<br />
-      (Takes approx. 5 minutes by car from Phoenix Island)</p>
+      (Takes approx. 5 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Provided item: Yoga mat</p>
         <p class="ref-bu-list">※ Personal item: Comfortable clothing</p>
         <p class="ref-bu-list">※ Individual travel required to the venue.</p>
@@ -1102,7 +1191,7 @@ const activities = [
         priceGuest: 'KRW 35,000',
         information: `
         <p class="ref-bu-list">※ Location: Meditation Room B1(Auditorium), 2688 Haemajihaean-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-        (Takes approx. 15 minutes by car from Phoenix Island)</p>
+        (Takes approx. 15 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Casual clothes are NOT allowed; participation is only permitted after changing into yoga wear or sportswear.<br />
         No refunds if participation is restricted due to inappropriate attire.</p>
@@ -1147,7 +1236,7 @@ const activities = [
         priceGuest: 'KRW 35,000',
         information: `
         <p class="ref-bu-list">※ Location: Meditation Room B1(Auditorium), 2688 Haemajihaean-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-       (Takes approx. 15 minutes by car from Phoenix Island)</p>
+       (Takes approx. 15 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Casual clothes are NOT allowed; participation is only permitted after changing into yoga wear or sportswear.<br />
         No refunds if participation is restricted due to inappropriate attire.</p>
@@ -1193,7 +1282,7 @@ const activities = [
         priceGuest: 'KRW 40,000',
         information: `
         <p class="ref-bu-list">※ Location: Teahouse B1, 2688 Haemajihaean-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-      (Takes approx. 15 minutes by car from Phoenix Island)</p>
+      (Takes approx. 15 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         `,
         notice: `
@@ -1237,7 +1326,7 @@ const activities = [
         priceGuest: 'KRW 25,000',
         information: `
         <p class="ref-bu-list">※ Location: 15 Goseongseo 5-gil, Aewol-eup, Jeju-si, Jeju-do<br />
-      (Takes approx. 70 minutes by car from Phoenix Island)</p>
+      (Takes approx. 70 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Easy and fun program suitable for everyone aged 4 and above.</p>
         <p class="ref-bu-list">※ Scent blending workshop.</p>
@@ -1281,7 +1370,7 @@ const activities = [
         priceGuest: 'KRW 30,000',
         information: `
         <p class="ref-bu-list">※ Location: 15 Goseongseo 5-gil, Aewol-eup, Jeju-si, Jeju-do<br />
-      (Takes approx. 70 minutes by car from Phoenix Island)</p>
+      (Takes approx. 70 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Easy and fun program suitable for everyone aged 4 and above.</p>
         <p class="ref-bu-list">※ Available in 100ml + 50ml or 150ml sizes.</p>
@@ -1324,7 +1413,7 @@ const activities = [
         priceGuest: 'KRW 25,000',
         information: `
         <p class="ref-bu-list">※ Location: 15 Goseongseo 5-gil, Aewol-eup, Jeju-si, Jeju-do<br />
-      (Takes approx. 70 minutes by car from Phoenix Island)</p>
+      (Takes approx. 70 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Easy and fun program suitable for everyone aged 4 and above.</p>
         <p class="ref-bu-list">※ Includes 1 aging bottle, 2 scent pouches, and 4 sachet pouches.</p>
@@ -1372,7 +1461,7 @@ const activities = [
         priceGuest: 'KRW 55,000',
         information: `
         <p class="ref-bu-list">※ Location: Meditation Room B1(Auditorium), 2688 Haemajihaean-ro, Seongsan-eup, Seogwipo-si, Jeju-do<br />
-      (Takes approx. 10 minutes by car from Phoenix Island)</p>
+      (Takes approx. 10 minutes by drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Casual clothes are NOT allowed; participation is only permitted after changing into yoga wear or sportswear.<br />
         No refunds if participation is restricted due to inappropriate attire.</p>
