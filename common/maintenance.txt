@@ -1625,10 +1625,34 @@
     <div class="main-thumb-list">
         <ul class="list">
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=traveler-pt"
+                <a href="/static/playcecamp/activities/program?program=aquaplanet"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_" alt="" class="img">
+                        <img src="/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_" alt="" class="img">
+                    </div>
+                    <div class="con">
+                        <div class="title">아쿠아플라넷</div>
+                        <div class="info">제주를 담은 월드클래스 아쿠아리움</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a href="/static/playcecamp/activities/program?program=snoopygarden"
+                    class="link promotion-link countable-banner">
+                    <div class="thumb">
+                        <img src="/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_" alt="" class="img">
+                    </div>
+                    <div class="con">
+                        <div class="title">스누피가든</div>
+                        <div class="info">제주의 자연 속에서 피너츠 친구들을 만날 수 있는 특별한 공간</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a href="/static/playcecamp/activities/program?program=traveler-pt"
+                    class="link promotion-link countable-banner">
+                    <div class="thumb">
+                        <img src="/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_" alt="" class="img">
                     </div>
                     <div class="con">
                         <div class="title">여행자 PT</div>
@@ -1637,10 +1661,10 @@
                 </a>
             </li>
             <li class="item">
-                <a href="https://phoenixhnr.co.kr/static/playcecamp/activities/program?program=jeju-snap"
+                <a href="/static/playcecamp/activities/program?program=jeju-snap"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
-                        <img src="https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_" alt="" class="img">
+                        <img src="/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_" alt="" class="img">
                     </div>
                     <div class="con">
                         <div class="title">제주 한 장, 감성 스냅</div>
@@ -1693,30 +1717,6 @@
                     <div class="con">
                         <div class="title">제주 숲 체험</div>
                         <div class="info">제주 숲을 걸으며 자연과 생태에 숨겨진 이야기를 만나보는 숲 해설</div>
-                    </div>
-                </a>
-            </li>
-            <li class="item">
-                <a href="/static/playcecamp/activities/program?program=makgeolli-making"
-                    class="link promotion-link countable-banner">
-                    <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_" alt="" class="img">
-                    </div>
-                    <div class="con">
-                        <div class="title">찹쌀 막걸리 빚기&전통주 시음</div>
-                        <div class="info">직접 찹쌀 막걸리를 빚고, 다양한 전통주를 맛볼 수 있는 시간</div>
-                    </div>
-                </a>
-            </li>
-            <li class="item">
-                <a href="/static/playcecamp/activities/program?program=wing-surfing"
-                    class="link promotion-link countable-banner">
-                    <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_" alt="" class="img">
-                    </div>
-                    <div class="con">
-                        <div class="title">윙 서핑</div>
-                        <div class="info">제주의 아름다운 해안에서 윙 포일링의 기술을 마스터하세요!</div>
                     </div>
                 </a>
             </li>
