@@ -1505,17 +1505,18 @@
                     <a href="/page/board/event/190000047134" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-start="2026-09-10T00:00:00" data-end="2026-09-22T00:00:00"
+                <li class="modal-slider-item swiper-slide" data-start="2026-09-10T00:00:00"
+                    data-end="2026-09-22T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/09/gqlTa6zvNqAGCZ94omKH_1_');">
                     <a href="/page/board/package/16151" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-end="2026-09-14T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/09/0lDBeNZsVWnxEp7OQ6Iz_1_');">
-                    <a href="/page/board/package/16157" class="modal-slider-link" target="_blank">
+                <li class="modal-slider-item swiper-slide" data-start="2026-09-22T00:00:00"
+                    data-end="2026-10-01T00:00:00" style="background-image: url('/api/editor/attach/view/default/2026/09/A1711rRPp5JaS6EzjVUm_1_');">
+                    <a href="/page/board/event/120000047234" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-end="2026-09-24T00:00:00"
+                <li class="modal-slider-item swiper-slide" data-end="2026-11-27T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/08/wjTxfJEQOIFhHGXa8NSX_1_');">
                     <a href="/page/board/package/16107" class="modal-slider-link" target="_blank">
                     </a>
@@ -1546,9 +1547,9 @@
                     <a href="/page/pyeongchang/board/event/190000047134" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-start="2026-09-10T00:00:00" data-end="2026-09-21T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/09/gqlTa6zvNqAGCZ94omKH_1_');">
-                    <a href="/page/pyeongchang/board/package/16151" class="modal-slider-link" target="_blank">
+                <li class="modal-slider-item swiper-slide" data-start="2026-09-22T00:00:00"
+                    data-end="2026-10-01T00:00:00" style="background-image: url('/api/editor/attach/view/default/2026/09/gcdosOGiYmnXTUbEhD4D_1_');">
+                    <a href="/page/pyeongchang/board/package/16153" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
                 <li class="modal-slider-item swiper-slide" data-end="2026-09-24T00:00:00"
@@ -1572,9 +1573,9 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-end="2026-09-14T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/09/0lDBeNZsVWnxEp7OQ6Iz_1_');">
-                    <a href="/page/jeju/board/package/16157" class="modal-slider-link" target="_blank">
+                <li class="modal-slider-item swiper-slide" data-start="2026-09-22T00:00:00"
+                    data-end="2026-10-01T00:00:00" style="background-image: url('/api/editor/attach/view/default/2026/09/U3uSiw2eMz3oiTxzpKoK_1_');">
+                    <a href="/page/jeju/board/package/16155" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
                 <li class="modal-slider-item swiper-slide" data-end="2026-10-01T00:00:00"
@@ -1603,6 +1604,11 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
+                <li class="modal-slider-item swiper-slide" data-start="2026-09-22T00:00:00"
+                    data-end="2026-10-01T00:00:00" style="background-image: url('/api/editor/attach/view/default/2026/09/Tysgc11NcJ0uRHDUYaML_1_');">
+                    <a href="/page/playcecamp/board/package/16158" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
                 <li class="modal-slider-item swiper-slide"
                     style="background-image: url('/api/editor/attach/view/default/2026/04/l3vSqaNLcL1sM8ofBQOo_1_');">
                     <a href="/page/playcecamp/board/event/120000046480" class="modal-slider-link" target="_blank">
