@@ -32,9 +32,9 @@
         color: #e6007e;
     }
 
-    /* .header-banner .txt-banner {
+    .header-banner .txt-banner {
         background-position: bottom;
-    } */
+    }
 
     a.guide-link {
         font-size: 14px;
