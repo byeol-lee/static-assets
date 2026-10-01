@@ -283,8 +283,8 @@ const activities = [
         category: 'REST',
         date: ``,
         duration: `Departure between 20:00 ~ 22:00`,
-        priceGeneral: `KRW 45,000`,
-        priceGuest: `KRW 35,000`,
+        priceGeneral: `KRW 50,000`,
+        priceGuest: `KRW 40,000`,
         information: `
         <p class="ref-bu-list">※ Duration: Approx. 120 minutes</p>
         <p class="ref-bu-list">※ Detailed operating hours will be provided upon confirmation of the reservation, depending on the conditions of the day.</p>
