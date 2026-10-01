@@ -1,94 +1,5 @@
 const activities = [
     {
-        program: 'aquaplanet',
-        title: 'Aqua Planet',
-        subtitle: 'A World-Class Aquarium Showcasing Jeju',
-        description: `
-        Discover Aqua Planet Jeju, a unique marine space that brings the beauty of Jeju’s ocean to life.<br />
-        Get up close with a wide variety of marine life in the massive aquarium tanks.<br />
-        <br />
-        With sharks, rays, and other marine life swimming right before your eyes, it is an ideal destination for family trips with children, as well as trips to Jeju with your partner or friends.
-        `,
-        thumbnail: '/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
-        heroImage: [
-            '/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
-            '/api/editor/attach/view/default/2026/09/HtnfB1YA1toAnYdeNE7u_1_',
-            '/api/editor/attach/view/default/2026/09/fWtJFlGI3nES5xqEGa9b_1_',
-            '/api/editor/attach/view/default/2026/09/wvAlO4sNLfsAgzs65UJp_1_',
-        ],
-        tags: ['REST', 'HEALING'],
-        category: 'REST',
-        date: ``,
-        duration: `09:30 ~ 18:00`,
-        priceGeneral: `
-        Adults KRW 45,500<br />
-        Youth KRW 43,600<br />
-        Children KRW 41,400<br />
-        Seniors KRW 43,600
-        `,
-        priceGuest: `20% off`,
-        information: `
-        <p class="ref-bu-list">※ Location: 95, Seopjikoji-ro, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea<br />
-        (Takes approx. 4-minute drive from Playce Camp)</p>
-        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
-        `,
-        notice: `
-        <ul class="dot-bu-list">
-            <li>No advance reservation is required. Present your stay details at the Aqua Planet Jeju ticket counter to receive the discount.</li>
-            <li>Cannot be combined with other discounts or benefits.</li>
-        </ul>
-        `,
-        reservation: false,
-        inquiries: `aqua planet JeJU <a href="tel:+8218337001">+82-1833-7001</a>`,
-        display: true,
-    },
-    {
-        program: 'snoopygarden',
-        title: 'Snoopy Garden',
-        subtitle: 'A Special Place to Meet the Peanuts Friends in Jeju’s Nature',
-        description: `
-        Discover Snoopy Garden, a special place where you can meet the Peanuts friends surrounded by the nature of Jeju.<br />
-        Explore a variety of themed spaces featuring beloved characters such as Snoopy and Charlie Brown.<br />
-        <br />
-        Stroll through the gardens at your own pace while enjoying the beautiful combination of lush greenery and Jeju’s natural scenery.<br />
-        Capture special memories of your Jeju trip at the character sculptures and photo spots throughout the garden,<br />
-        and enjoy the seasonal beauty of nature alongside the charm of Peanuts.
-        `,
-        thumbnail: '/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
-        heroImage: [
-            '/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
-            '/api/editor/attach/view/default/2026/09/PL5W55SESXrSjTAnyoQK_1_',
-            '/api/editor/attach/view/default/2026/09/1F91LKnwYwSuMN8gS9QH_1_',
-        ],
-        tags: ['REST', 'HEALING'],
-        category: 'REST',
-        date: ``,
-        duration: `
-        Summer Season(April - September): 09:00 ~ 19:00(Last admission 18:00)<br />
-        Winter Season(October - March): 09:00 ~ 18:00(Last admission 17:00)
-        `,
-        priceGeneral: `
-        Adults KRW 19,000<br />
-        Youth KRW 16,000<br />
-        Children KRW 13,000
-        `,
-        priceGuest: `20% off`,
-        information: `
-        <p class="ref-bu-list">※ Location: 916, Geumbaekjo-ro, Gujwa-eup, Jeju-si, Jeju-do, Republic of Korea<br />
-        (Takes approx. 19-minute drive from Playce Camp)</p>
-        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
-        `,
-        notice: `
-        <ul class="dot-bu-list">
-            <li>No advance reservation is required. Discount coupons are available at the front desk.(Benefits may not be available once coupons run out.)</li>
-            <li>Cannot be combined with other discounts or benefits.</li>
-        </ul>
-        `,
-        reservation: false,
-        inquiries: `Snoopy Garden <a href="tel:+82648051118">+82-64-805-1118</a>`,
-        display: true,
-    },
-    {
         program: 'traveler-pt',
         title: 'Traveler PT',
         subtitle: 'Professional personal training classes led directly by the gym owner, focusing on proper weight training',
@@ -182,6 +93,203 @@ const activities = [
         display: true,
     },
     {
+        program: 'starlight-oreum',
+        title: 'Starlight Oreum Tour',
+        subtitle: 'A chance to experience Jeju’s night sky up close',
+        description: `
+        A nighttime trekking program where you hike up an oreum with a professional guide and admire the stars filling the night sky.<br />
+        Based on the weather and stargazing conditions of the day, a suitable oreum in eastern Jeju will be selected for the tour.<br />
+        <br />
+        Walk safely along the oreum with your guide and discover a side of Jeju that is different from its daytime scenery, creating special memories under the stars.<br />
+        During the trek, your guide will take photos of special moments beneath the stars.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
+            '/api/editor/attach/view/default/2026/09/sDLnIQdzyNPfL1j9IqAB_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `Departure between 20:00 ~ 22:00`,
+        priceGeneral: `KRW 45,000`,
+        priceGuest: `KRW 35,000`,
+        information: `
+        <p class="ref-bu-list">※ Duration: Approx. 120 minutes</p>
+        <p class="ref-bu-list">※ Detailed operating hours will be provided upon confirmation of the reservation, depending on the conditions of the day.</p>
+        <p class="ref-bu-list">※ The most suitable oreum will be selected based on the weather and conditions on the day.</p>
+        <p class="ref-bu-list">※ Location: 941-1, Ojo-ri, Seongsan-eup, Seogwipo-si, Jeju<br />
+        (Takes approx. 4-minute drive from Playce Camp)</p>
+        <p class="ref-bu-list">※ Guests are required to travel individually to the meeting point. From there, the guide will drive the group to an oreum in eastern Jeju selected according to the weather and stargazing conditions on the day.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>Reservations may be confirmed or canceled depending on program availability after the reservation request is submitted.</li>
+            <li>The program is available after the fee has been paid in advance following reservation confirmation.</li><br />
+            <div class="common-txt">
+                <p class="strong">[Cancellation/Refund Policy]</p>
+                <ul class="dot-bu-list">
+                    <li>Free cancellation up to 1 day before the scheduled date</li>
+                    <li>No refunds for same-day cancellations or no-shows</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeFp70MPCLGRpMV-VDn6W67tEPMzZ8TLonwaZyDb8Ktjjvohg/viewform?usp=publish-editor',
+        display: true,
+    },
+    {
+        program: 'makgeolli-making',
+        title: 'Makgeolli Brewing & Traditional Liquor Tasting',
+        subtitle: 'Make your own glutinous rice makgeolli and enjoy a tasting of a variety of traditional liquors.',
+        description: `
+		Learn about Korean traditional liquor and experience the art of making your own glutinous rice makgeolli.<br />
+		In collaboration with Suldoga Jeju Badang, a local Jeju brewery known for Kiwi Sul, Malgeun Badang, and Hanbadang, learn how makgeolli is made and craft your very own glutinous rice makgeolli.<br />
+		Taste a variety of locally brewed traditional liquors and discover the diverse flavors and aromas of Korea’s traditional drinks.<br />
+        <br />
+        <strong>Program A │ Glutinous Rice Makgeolli Making & Traditional Liquor Tasting</strong><br />
+        A light introduction to Korean traditional liquor, where you can make your own glutinous rice makgeolli and taste six different brewery-made liquors.<br />
+        Take home your homemade makgeolli and a cotton wrapping cloth.(Permitted in carry-on baggage on domestic flights.)<br />
+        <br />
+        <strong>Program B │ Makgeolli & Soju Making with Dinner</strong><br />
+        A more immersive experience featuring glutinous rice makgeolli brewing and the process of soju distillation, along with six types of brewery-made liquors and dinner.<br />
+        Includes your homemade makgeolli, a cotton wrapping cloth, 200 g of nuruk, and one bottle of original soju.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
+            '/api/editor/attach/view/default/2026/08/JvT9mdK9C1LqhE1PlwEv_1_',
+            '/api/editor/attach/view/default/2026/08/CJaUQsBZKnDzg5GerQ04_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: `
+        A: Thursday ~ Tuesday<br />
+        B: Friday ~ Monday
+        `,
+        duration: `
+        A: 13:30 ~ 14:30<br />
+        B: 16:00 ~ 18:00
+        `,
+        priceGeneral: `
+        A: KRW 29,000/person<br />
+        B: KRW 55,000/person
+        `,
+        priceGuest: `
+        A: KRW 27,000/person<br />
+        B: KRW 52,000/person
+        `,
+        information: `
+        <p class="ref-bu-list">※ Location: 1F, 27 Handong-ro, Gujwa-eup, Jeju-si, Jeju<br />
+        (Takes approx. 25 minutes by drive from Phoenix Island)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>After receiving the reservation request, your booking may be confirmed or canceled depending on program availability.</li>
+            <li>The program is available upon payment of the fee in advance following booking confirmation.</li><br />
+            <div class="common-txt">
+                <p class="strong">[Cancellation / Refund Policy]</p>
+                <ul class="dot-bu-list">
+                    <li>Free cancellation until 1 day before the date of use</li>
+                    <li>Same-day cancellation or no-show: Non-refundable</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe-UwiMp8M7eEfc4SXcNsxIGh4hD4v7XMqj379DXKm3zQEQ_w/viewform?usp=header',
+        display: true,
+    },
+    {
+        program: 'aquaplanet',
+        title: 'Aqua Planet',
+        subtitle: 'A World-Class Aquarium Showcasing Jeju',
+        description: `
+        Discover Aqua Planet Jeju, a unique marine space that brings the beauty of Jeju’s ocean to life.<br />
+        Get up close with a wide variety of marine life in the massive aquarium tanks.<br />
+        <br />
+        With sharks, rays, and other marine life swimming right before your eyes, it is an ideal destination for family trips with children, as well as trips to Jeju with your partner or friends.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
+            '/api/editor/attach/view/default/2026/09/HtnfB1YA1toAnYdeNE7u_1_',
+            '/api/editor/attach/view/default/2026/09/fWtJFlGI3nES5xqEGa9b_1_',
+            '/api/editor/attach/view/default/2026/09/wvAlO4sNLfsAgzs65UJp_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `09:30 ~ 18:00`,
+        priceGeneral: `
+        Adults KRW 45,500<br />
+        Youth KRW 43,600<br />
+        Children KRW 41,400<br />
+        Seniors KRW 43,600
+        `,
+        priceGuest: `20% off`,
+        information: `
+        <p class="ref-bu-list">※ Location: 95, Seopjikoji-ro, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea<br />
+        (Takes approx. 4-minute drive from Playce Camp)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>No advance reservation is required. Present your stay details at the Aqua Planet Jeju ticket counter to receive the discount.</li>
+            <li>Cannot be combined with other discounts or benefits.</li>
+        </ul>
+        `,
+        reservation: false,
+        inquiries: `aqua planet JeJU <a href="tel:+8218337001">+82-1833-7001</a>`,
+        display: true,
+    },
+    {
+        program: 'snoopygarden',
+        title: 'Snoopy Garden',
+        subtitle: 'A Special Place to Meet the Peanuts Friends in Jeju’s Nature',
+        description: `
+        Discover Snoopy Garden, a special place where you can meet the Peanuts friends surrounded by the nature of Jeju.<br />
+        Explore a variety of themed spaces featuring beloved characters such as Snoopy and Charlie Brown.<br />
+        <br />
+        Stroll through the gardens at your own pace while enjoying the beautiful combination of lush greenery and Jeju’s natural scenery.<br />
+        Capture special memories of your Jeju trip at the character sculptures and photo spots throughout the garden,<br />
+        and enjoy the seasonal beauty of nature alongside the charm of Peanuts.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
+            '/api/editor/attach/view/default/2026/09/PL5W55SESXrSjTAnyoQK_1_',
+            '/api/editor/attach/view/default/2026/09/1F91LKnwYwSuMN8gS9QH_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `
+        Summer Season(April - September): 09:00 ~ 19:00(Last admission 18:00)<br />
+        Winter Season(October - March): 09:00 ~ 18:00(Last admission 17:00)
+        `,
+        priceGeneral: `
+        Adults KRW 19,000<br />
+        Youth KRW 16,000<br />
+        Children KRW 13,000
+        `,
+        priceGuest: `20% off`,
+        information: `
+        <p class="ref-bu-list">※ Location: 916, Geumbaekjo-ro, Gujwa-eup, Jeju-si, Jeju-do, Republic of Korea<br />
+        (Takes approx. 19-minute drive from Playce Camp)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>No advance reservation is required. Discount coupons are available at the front desk.(Benefits may not be available once coupons run out.)</li>
+            <li>Cannot be combined with other discounts or benefits.</li>
+        </ul>
+        `,
+        reservation: false,
+        inquiries: `Snoopy Garden <a href="tel:+82648051118">+82-64-805-1118</a>`,
+        display: true,
+    },
+    {
         program: 'fitness-day-pass',
         title: 'Fitness Day Pass',
         subtitle: 'An unmanned gym equipped with the most extensive range of machines in Seongsan',
@@ -265,52 +373,6 @@ const activities = [
         display: true,
     },
     {
-        program: 'starlight-oreum',
-        title: 'Starlight Oreum Tour',
-        subtitle: 'A chance to experience Jeju’s night sky up close',
-        description: `
-        A nighttime trekking program where you hike up an oreum with a professional guide and admire the stars filling the night sky.<br />
-        Based on the weather and stargazing conditions of the day, a suitable oreum in eastern Jeju will be selected for the tour.<br />
-        <br />
-        Walk safely along the oreum with your guide and discover a side of Jeju that is different from its daytime scenery, creating special memories under the stars.<br />
-        During the trek, your guide will take photos of special moments beneath the stars.
-        `,
-        thumbnail: '/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
-        heroImage: [
-            '/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
-            '/api/editor/attach/view/default/2026/09/sDLnIQdzyNPfL1j9IqAB_1_',
-        ],
-        tags: ['REST', 'HEALING'],
-        category: 'REST',
-        date: ``,
-        duration: `Departure between 20:00 ~ 22:00`,
-        priceGeneral: `KRW 45,000`,
-        priceGuest: `KRW 35,000`,
-        information: `
-        <p class="ref-bu-list">※ Duration: Approx. 120 minutes</p>
-        <p class="ref-bu-list">※ Detailed operating hours will be provided upon confirmation of the reservation, depending on the conditions of the day.</p>
-        <p class="ref-bu-list">※ The most suitable oreum will be selected based on the weather and conditions on the day.</p>
-        <p class="ref-bu-list">※ Location: 941-1, Ojo-ri, Seongsan-eup, Seogwipo-si, Jeju<br />
-        (Takes approx. 4-minute drive from Playce Camp)</p>
-        <p class="ref-bu-list">※ Guests are required to travel individually to the meeting point. From there, the guide will drive the group to an oreum in eastern Jeju selected according to the weather and stargazing conditions on the day.</p>
-        `,
-        notice: `
-        <ul class="dot-bu-list">
-            <li>Reservations may be confirmed or canceled depending on program availability after the reservation request is submitted.</li>
-            <li>The program is available after the fee has been paid in advance following reservation confirmation.</li><br />
-            <div class="common-txt">
-                <p class="strong">[Cancellation/Refund Policy]</p>
-                <ul class="dot-bu-list">
-                    <li>Free cancellation up to 1 day before the scheduled date</li>
-                    <li>No refunds for same-day cancellations or no-shows</li>
-                </ul>
-            </div>
-        </ul>
-        `,
-        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeFp70MPCLGRpMV-VDn6W67tEPMzZ8TLonwaZyDb8Ktjjvohg/viewform?usp=publish-editor',
-        display: true,
-    },
-    {
         program: 'forest-experience',
         title: 'Jeju Forest Experience',
         subtitle: 'A guided forest experience exploring the hidden stories of Jeju’s nature and ecosystem',
@@ -351,68 +413,6 @@ const activities = [
         </ul>
         `,
         reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeYqiy1gv0ZkUIaWE6SKDL9c7ltNs7s4MDR1xkpQBXwzeTcEw/viewform?usp=publish-editor',
-        display: true,
-    },
-    {
-        program: 'makgeolli-making',
-        title: 'Makgeolli Brewing & Traditional Liquor Tasting',
-        subtitle: 'Make your own glutinous rice makgeolli and enjoy a tasting of a variety of traditional liquors.',
-        description: `
-		Learn about Korean traditional liquor and experience the art of making your own glutinous rice makgeolli.<br />
-		In collaboration with Suldoga Jeju Badang, a local Jeju brewery known for Kiwi Sul, Malgeun Badang, and Hanbadang, learn how makgeolli is made and craft your very own glutinous rice makgeolli.<br />
-		Taste a variety of locally brewed traditional liquors and discover the diverse flavors and aromas of Korea’s traditional drinks.<br />
-        <br />
-        <strong>Program A │ Glutinous Rice Makgeolli Making & Traditional Liquor Tasting</strong><br />
-        A light introduction to Korean traditional liquor, where you can make your own glutinous rice makgeolli and taste six different brewery-made liquors.<br />
-        Take home your homemade makgeolli and a cotton wrapping cloth.(Permitted in carry-on baggage on domestic flights.)<br />
-        <br />
-        <strong>Program B │ Makgeolli & Soju Making with Dinner</strong><br />
-        A more immersive experience featuring glutinous rice makgeolli brewing and the process of soju distillation, along with six types of brewery-made liquors and dinner.<br />
-        Includes your homemade makgeolli, a cotton wrapping cloth, 200 g of nuruk, and one bottle of original soju.
-        `,
-        thumbnail: '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
-        heroImage: [
-            '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
-            '/api/editor/attach/view/default/2026/08/JvT9mdK9C1LqhE1PlwEv_1_',
-            '/api/editor/attach/view/default/2026/08/CJaUQsBZKnDzg5GerQ04_1_',
-        ],
-        tags: ['REST', 'HEALING'],
-        category: 'REST',
-        date: `
-        A: Thursday ~ Tuesday<br />
-        B: Friday ~ Monday
-        `,
-        duration: `
-        A: 13:30 ~ 14:30<br />
-        B: 16:00 ~ 18:00
-        `,
-        priceGeneral: `
-        A: KRW 29,000/person<br />
-        B: KRW 55,000/person
-        `,
-        priceGuest: `
-        A: KRW 27,000/person<br />
-        B: KRW 52,000/person
-        `,
-        information: `
-        <p class="ref-bu-list">※ Location: 1F, 27 Handong-ro, Gujwa-eup, Jeju-si, Jeju<br />
-        (Takes approx. 25 minutes by drive from Phoenix Island)</p>
-        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
-        `,
-        notice: `
-        <ul class="dot-bu-list">
-            <li>After receiving the reservation request, your booking may be confirmed or canceled depending on program availability.</li>
-            <li>The program is available upon payment of the fee in advance following booking confirmation.</li><br />
-            <div class="common-txt">
-                <p class="strong">[Cancellation / Refund Policy]</p>
-                <ul class="dot-bu-list">
-                    <li>Free cancellation until 1 day before the date of use</li>
-                    <li>Same-day cancellation or no-show: Non-refundable</li>
-                </ul>
-            </div>
-        </ul>
-        `,
-        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe-UwiMp8M7eEfc4SXcNsxIGh4hD4v7XMqj379DXKm3zQEQ_w/viewform?usp=header',
         display: true,
     },
     {
