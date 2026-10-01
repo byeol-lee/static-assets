@@ -1,94 +1,5 @@
 const activities = [
     {
-		program: 'aquaplanet',
-		title: '아쿠아플라넷',
-		subtitle: '제주를 담은 월드클래스 아쿠아리움',
-		description: `
-        제주 바다를 그대로 옮겨놓은 듯한 특별한 해양 공간, 아쿠아플라넷 제주를 만나 보세요.<br />
-        대형 수조를 가득 채운 다양한 해양 생물을 가까이에서 관람할 수 있습니다.<br />
-        <br />
-        눈앞을 유영하는 상어와 가오리 등 생생한 바닷속 풍경으로 아이와 함께하는 가족여행부터 연인, 친구와의 제주여행 코스로도 추천합니다.
-        `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
-			'/api/editor/attach/view/default/2026/09/HtnfB1YA1toAnYdeNE7u_1_',
-			'/api/editor/attach/view/default/2026/09/fWtJFlGI3nES5xqEGa9b_1_',
-			'/api/editor/attach/view/default/2026/09/wvAlO4sNLfsAgzs65UJp_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: ``,
-		duration: `09:30 ~ 18:00`,
-		priceGeneral: `
-        대인 45,500원<br />
-        청소년 43,600원<br />
-        어린이 41,400원<br />
-        경로 43,600원
-        `,
-		priceGuest: `20% 할인`,
-		information: `
-        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 섭지코지로 95, 아쿠아플라넷 제주<br />
-        (플레이스 캠프에서 차량으로 약 4분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
-        `,
-		notice: `
-        <ul class="dot-bu-list">
-            <li>별도의 사전 예약 없이 이용 가능하며, 아쿠아플라넷 제주 매표소 방문 시 투숙 내역을 제시하시면 할인 혜택이 적용됩니다.</li>
-            <li>타 할인 및 혜택과 중복 적용되지 않습니다.</li>
-        </ul>
-        `,
-		reservation: false,
-        inquiries: `아쿠아플라넷 제주 <a href="tel:18337001">1833-7001</a>`,
-		display: true,
-    },
-    {
-		program: 'snoopygarden',
-		title: '스누피가든',
-		subtitle: '제주의 자연 속에서 피너츠 친구들을 만날 수 있는 특별한 공간',
-		description: `
-        제주의 자연 속에서 피너츠 친구들을 만날 수 있는 특별한 공간, 스누피가든을 만나 보세요.<br />
-        스누피와 찰리 브라운 등 사랑스러운 캐릭터와 함께 다양한 테마 공간을 둘러볼 수 있습니다.<br />
-        <br />
-        푸른 정원과 제주 자연이 어우러져 산책하듯 여유롭게 관람하기 좋습니다.<br />
-        곳곳에 마련된 캐릭터 조형물과 포토존에서 특별한 제주 여행의 추억을 남겨보며,<br />
-        계절마다 달라지는 자연 풍경과 피너츠의 감성을 함께 즐겨 보세요.
-        `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
-			'/api/editor/attach/view/default/2026/09/PL5W55SESXrSjTAnyoQK_1_',
-			'/api/editor/attach/view/default/2026/09/1F91LKnwYwSuMN8gS9QH_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: ``,
-		duration: `
-        하절기(4 ~ 9월): 09:00 ~ 19:00(입장 마감 18:00)<br />
-        동절기(10 ~ 3월): 09:00 ~ 18:00(입장 마감 17:00)
-        `,
-		priceGeneral: `
-        성인 19,000원<br />
-        청소년 16,000원<br />
-        어린이 13,000원
-        `,
-		priceGuest: `20% 할인`,
-		information: `
-        <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 구좌읍 금백조로 916<br />
-        (플레이스 캠프에서 차량으로 약 19분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
-        `,
-		notice: `
-        <ul class="dot-bu-list">
-            <li>별도의 사전 예약 없이 이용 가능하며, 할인 쿠폰은 프론트에 비치되어 있습니다.(소진 시 혜택 적용이 불가할 수 있습니다.)</li>
-            <li>타 할인 및 혜택과 중복 적용되지 않습니다.</li>
-        </ul>
-        `,
-		reservation: false,
-        inquiries: `스누피가든 <a href="tel:0648051118">064-805-1118</a>`,
-		display: true,
-    },
-    {
 		program: 'traveler-pt',
 		title: '여행자 PT',
 		subtitle: '관장 직접 지도 개인레슨 전문으로 올바른 웨이트 트레이닝 클래스',
@@ -182,6 +93,203 @@ const activities = [
 		display: true,
     },
     {
+		program: 'starlight-oreum',
+		title: '별빛 오름 투어',
+		subtitle: '제주의 밤을 가장 가까이 만나는 시간',
+		description: `
+        제주의 밤, 전문 가이드와 함께 오름에 올라 밤하늘을 가득 채운 별을 감상하는 야간 트레킹 프로그램입니다.<br />
+        그날의 날씨와 별 관측 환경을 고려해 제주 동쪽 지역의 오름 중 적합한 장소를 선정하여 진행합니다.<br />
+        <br />
+        가이드와 함께 안전하게 오름을 걸으며 낮과는 또 다른 제주의 풍경을 만나고, 별빛 아래에서 특별한 추억을 남겨 보세요.<br />
+        트레킹 중에는 가이드가 별과 함께하는 순간을 사진으로 촬영해 드립니다.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
+			'/api/editor/attach/view/default/2026/09/sDLnIQdzyNPfL1j9IqAB_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: ``,
+		duration: `20:00 ~ 22:00 사이 출발`,
+		priceGeneral: `50,000원`,
+		priceGuest: `40,000원`,
+		information: `
+        <p class="ref-bu-list">※ 소요 시간: 약 120분</p>
+        <p class="ref-bu-list">※ 자세한 운영 시간은 예약 확정 시 당일 상황에 따라 안내드립니다.</p>
+        <p class="ref-bu-list">※ 당일 날씨 및 기상 상황에 따라 가장 적합한 오름을 선정하여 진행합니다.</p>
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조리 941-1<br />
+        (플레이스 캠프에서 차량으로 약 4분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 집결 장소까지는 개별 이동 이후, 가이드분이 운전하여 당일 기상 및 별 관측 환경에 따라 선정된 제주 동쪽 지역의 오름으로 함께 이동하여 프로그램을 진행합니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
+            <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
+            <div class="common-txt">
+                <p class="strong">[취소/환불 규정]</p>
+                <ul class="dot-bu-list">
+                    <li>이용일 1일 전까지 무료 취소</li>
+                    <li>당일 취소 및 노쇼: 환불 불가</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeFp70MPCLGRpMV-VDn6W67tEPMzZ8TLonwaZyDb8Ktjjvohg/viewform?usp=publish-editor',
+		display: true,
+    },
+    {
+		program: 'makgeolli-making',
+		title: '찹쌀 막걸리 빚기&전통주 시음',
+		subtitle: '직접 찹쌀 막걸리를 빚고, 다양한 전통주를 맛볼 수 있는 시간',
+		description: `
+        전통주에 대해 배우고 직접 찹쌀 막걸리를 빚어보는 체험 프로그램입니다.<br />
+		키위술, 맑은바당, 한바당으로 유명한 제주 로컬 양조장 '술도가제주바당'과 함께 막걸리가 만들어지는 과정을 배우고, 직접 나만의 찹쌀 막걸리를 빚어봅니다.<br />
+		다양한 양조장 술을 시음하며 우리 술이 가진 다채로운 맛과 향도 경험해 보세요.<br />
+        <br />
+        <strong>Program A │ 찹쌀막걸리 만들기 & 전통주 시음</strong><br />
+        직접 찹쌀 막걸리를 빚고 양조장 술 6종을 시음하는 가벼운 전통주 체험입니다.<br />
+        직접 만든 막걸리와 면 보자기를 가져갈 수 있습니다.(국내선 기내 반입 가능)<br />
+        <br />
+        <strong>Program B │ 막걸리&소주 만들기와 저녁 식사</strong><br />
+        찹쌀 막걸리 빚기와 소주 증류 과정을 함께 체험하고, 양조장 술 6종과 저녁 식사를 즐기는 보다 깊이 있는 프로그램입니다.<br />
+        직접 만든 막걸리와 면 보자기, 누룩 200g, 오리지널 소주 1병이 제공됩니다.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
+			'/api/editor/attach/view/default/2026/08/JvT9mdK9C1LqhE1PlwEv_1_',
+			'/api/editor/attach/view/default/2026/08/CJaUQsBZKnDzg5GerQ04_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: `
+        A: 목 ~ 화<br />
+        B: 금 ~ 월
+        `,
+		duration: `
+        A: 13:30 ~ 14:30<br />
+        B: 16:00 ~ 18:00
+        `,
+		priceGeneral: `
+        A: 1인 29,000원<br />
+        B: 1인 55,000원
+        `,
+		priceGuest: `
+        A: 1인 27,000원<br />
+        B: 1인 52,000원
+        `,
+		information: `
+        <p class="ref-bu-list">※ 장소: 제주 제주시 구좌읍 한동로 27 1층<br />
+        (플레이스 캠프에서 차량으로 약 21분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
+            <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
+            <div class="common-txt">
+                <p class="strong">[취소/환불 규정]</p>
+                <ul class="dot-bu-list">
+                    <li>이용일 1일 전까지 무료 취소</li>
+                    <li>당일 취소 및 노쇼: 환불 불가</li>
+                </ul>
+            </div>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe-UwiMp8M7eEfc4SXcNsxIGh4hD4v7XMqj379DXKm3zQEQ_w/viewform?usp=header',
+		display: true,
+    },
+    {
+		program: 'aquaplanet',
+		title: '아쿠아플라넷',
+		subtitle: '제주를 담은 월드클래스 아쿠아리움',
+		description: `
+        제주 바다를 그대로 옮겨놓은 듯한 특별한 해양 공간, 아쿠아플라넷 제주를 만나 보세요.<br />
+        대형 수조를 가득 채운 다양한 해양 생물을 가까이에서 관람할 수 있습니다.<br />
+        <br />
+        눈앞을 유영하는 상어와 가오리 등 생생한 바닷속 풍경으로 아이와 함께하는 가족여행부터 연인, 친구와의 제주여행 코스로도 추천합니다.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
+			'/api/editor/attach/view/default/2026/09/HtnfB1YA1toAnYdeNE7u_1_',
+			'/api/editor/attach/view/default/2026/09/fWtJFlGI3nES5xqEGa9b_1_',
+			'/api/editor/attach/view/default/2026/09/wvAlO4sNLfsAgzs65UJp_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: ``,
+		duration: `09:30 ~ 18:00`,
+		priceGeneral: `
+        대인 45,500원<br />
+        청소년 43,600원<br />
+        어린이 41,400원<br />
+        경로 43,600원
+        `,
+		priceGuest: `20% 할인`,
+		information: `
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 섭지코지로 95, 아쿠아플라넷 제주<br />
+        (플레이스 캠프에서 차량으로 약 4분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>별도의 사전 예약 없이 이용 가능하며, 아쿠아플라넷 제주 매표소 방문 시 투숙 내역을 제시하시면 할인 혜택이 적용됩니다.</li>
+            <li>타 할인 및 혜택과 중복 적용되지 않습니다.</li>
+        </ul>
+        `,
+		reservation: false,
+        inquiries: `아쿠아플라넷 제주 <a href="tel:18337001">1833-7001</a>`,
+		display: true,
+    },
+    {
+		program: 'snoopygarden',
+		title: '스누피가든',
+		subtitle: '제주의 자연 속에서 피너츠 친구들을 만날 수 있는 특별한 공간',
+		description: `
+        제주의 자연 속에서 피너츠 친구들을 만날 수 있는 특별한 공간, 스누피가든을 만나 보세요.<br />
+        스누피와 찰리 브라운 등 사랑스러운 캐릭터와 함께 다양한 테마 공간을 둘러볼 수 있습니다.<br />
+        <br />
+        푸른 정원과 제주 자연이 어우러져 산책하듯 여유롭게 관람하기 좋습니다.<br />
+        곳곳에 마련된 캐릭터 조형물과 포토존에서 특별한 제주 여행의 추억을 남겨보며,<br />
+        계절마다 달라지는 자연 풍경과 피너츠의 감성을 함께 즐겨 보세요.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
+			'/api/editor/attach/view/default/2026/09/PL5W55SESXrSjTAnyoQK_1_',
+			'/api/editor/attach/view/default/2026/09/1F91LKnwYwSuMN8gS9QH_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: ``,
+		duration: `
+        하절기(4 ~ 9월): 09:00 ~ 19:00(입장 마감 18:00)<br />
+        동절기(10 ~ 3월): 09:00 ~ 18:00(입장 마감 17:00)
+        `,
+		priceGeneral: `
+        성인 19,000원<br />
+        청소년 16,000원<br />
+        어린이 13,000원
+        `,
+		priceGuest: `20% 할인`,
+		information: `
+        <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 구좌읍 금백조로 916<br />
+        (플레이스 캠프에서 차량으로 약 19분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>별도의 사전 예약 없이 이용 가능하며, 할인 쿠폰은 프론트에 비치되어 있습니다.(소진 시 혜택 적용이 불가할 수 있습니다.)</li>
+            <li>타 할인 및 혜택과 중복 적용되지 않습니다.</li>
+        </ul>
+        `,
+		reservation: false,
+        inquiries: `스누피가든 <a href="tel:0648051118">064-805-1118</a>`,
+		display: true,
+    },
+    {
 		program: 'fitness-day-pass',
 		title: '피트니스 1일 이용',
 		subtitle: '성산에서 최다 머신들로 갖춰진 무인 헬스장',
@@ -265,52 +373,6 @@ const activities = [
 		display: true,
     },
     {
-		program: 'starlight-oreum',
-		title: '별빛 오름 투어',
-		subtitle: '제주의 밤을 가장 가까이 만나는 시간',
-		description: `
-        제주의 밤, 전문 가이드와 함께 오름에 올라 밤하늘을 가득 채운 별을 감상하는 야간 트레킹 프로그램입니다.<br />
-        그날의 날씨와 별 관측 환경을 고려해 제주 동쪽 지역의 오름 중 적합한 장소를 선정하여 진행합니다.<br />
-        <br />
-        가이드와 함께 안전하게 오름을 걸으며 낮과는 또 다른 제주의 풍경을 만나고, 별빛 아래에서 특별한 추억을 남겨 보세요.<br />
-        트레킹 중에는 가이드가 별과 함께하는 순간을 사진으로 촬영해 드립니다.
-        `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
-			'/api/editor/attach/view/default/2026/09/sDLnIQdzyNPfL1j9IqAB_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: ``,
-		duration: `20:00 ~ 22:00 사이 출발`,
-		priceGeneral: `45,000원`,
-		priceGuest: `35,000원`,
-		information: `
-        <p class="ref-bu-list">※ 소요 시간: 약 120분</p>
-        <p class="ref-bu-list">※ 자세한 운영 시간은 예약 확정 시 당일 상황에 따라 안내드립니다.</p>
-        <p class="ref-bu-list">※ 당일 날씨 및 기상 상황에 따라 가장 적합한 오름을 선정하여 진행합니다.</p>
-        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조리 941-1<br />
-        (플레이스 캠프에서 차량으로 약 4분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 집결 장소까지는 개별 이동 이후, 가이드분이 운전하여 당일 기상 및 별 관측 환경에 따라 선정된 제주 동쪽 지역의 오름으로 함께 이동하여 프로그램을 진행합니다.</p>
-        `,
-		notice: `
-        <ul class="dot-bu-list">
-            <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
-            <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
-            <div class="common-txt">
-                <p class="strong">[취소/환불 규정]</p>
-                <ul class="dot-bu-list">
-                    <li>이용일 1일 전까지 무료 취소</li>
-                    <li>당일 취소 및 노쇼: 환불 불가</li>
-                </ul>
-            </div>
-        </ul>
-        `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeFp70MPCLGRpMV-VDn6W67tEPMzZ8TLonwaZyDb8Ktjjvohg/viewform?usp=publish-editor',
-		display: true,
-    },
-    {
 		program: 'forest-experience',
 		title: '제주 숲 체험',
 		subtitle: '제주 숲을 걸으며 자연과 생태에 숨겨진 이야기를 만나보는 숲 해설',
@@ -351,68 +413,6 @@ const activities = [
         </ul>
         `,
 		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeYqiy1gv0ZkUIaWE6SKDL9c7ltNs7s4MDR1xkpQBXwzeTcEw/viewform?usp=publish-editor',
-		display: true,
-    },
-    {
-		program: 'makgeolli-making',
-		title: '찹쌀 막걸리 빚기&전통주 시음',
-		subtitle: '직접 찹쌀 막걸리를 빚고, 다양한 전통주를 맛볼 수 있는 시간',
-		description: `
-        전통주에 대해 배우고 직접 찹쌀 막걸리를 빚어보는 체험 프로그램입니다.<br />
-		키위술, 맑은바당, 한바당으로 유명한 제주 로컬 양조장 '술도가제주바당'과 함께 막걸리가 만들어지는 과정을 배우고, 직접 나만의 찹쌀 막걸리를 빚어봅니다.<br />
-		다양한 양조장 술을 시음하며 우리 술이 가진 다채로운 맛과 향도 경험해 보세요.<br />
-        <br />
-        <strong>Program A │ 찹쌀막걸리 만들기 & 전통주 시음</strong><br />
-        직접 찹쌀 막걸리를 빚고 양조장 술 6종을 시음하는 가벼운 전통주 체험입니다.<br />
-        직접 만든 막걸리와 면 보자기를 가져갈 수 있습니다.(국내선 기내 반입 가능)<br />
-        <br />
-        <strong>Program B │ 막걸리&소주 만들기와 저녁 식사</strong><br />
-        찹쌀 막걸리 빚기와 소주 증류 과정을 함께 체험하고, 양조장 술 6종과 저녁 식사를 즐기는 보다 깊이 있는 프로그램입니다.<br />
-        직접 만든 막걸리와 면 보자기, 누룩 200g, 오리지널 소주 1병이 제공됩니다.
-        `,
-		thumbnail: '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
-			'/api/editor/attach/view/default/2026/08/JvT9mdK9C1LqhE1PlwEv_1_',
-			'/api/editor/attach/view/default/2026/08/CJaUQsBZKnDzg5GerQ04_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: `
-        A: 목 ~ 화<br />
-        B: 금 ~ 월
-        `,
-		duration: `
-        A: 13:30 ~ 14:30<br />
-        B: 16:00 ~ 18:00
-        `,
-		priceGeneral: `
-        A: 1인 29,000원<br />
-        B: 1인 55,000원
-        `,
-		priceGuest: `
-        A: 1인 27,000원<br />
-        B: 1인 52,000원
-        `,
-		information: `
-        <p class="ref-bu-list">※ 장소: 제주 제주시 구좌읍 한동로 27 1층<br />
-        (플레이스 캠프에서 차량으로 약 21분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
-        `,
-		notice: `
-        <ul class="dot-bu-list">
-            <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
-            <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
-            <div class="common-txt">
-                <p class="strong">[취소/환불 규정]</p>
-                <ul class="dot-bu-list">
-                    <li>이용일 1일 전까지 무료 취소</li>
-                    <li>당일 취소 및 노쇼: 환불 불가</li>
-                </ul>
-            </div>
-        </ul>
-        `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe-UwiMp8M7eEfc4SXcNsxIGh4hD4v7XMqj379DXKm3zQEQ_w/viewform?usp=header',
 		display: true,
     },
     {
