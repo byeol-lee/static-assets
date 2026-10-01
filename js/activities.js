@@ -283,8 +283,8 @@ const activities = [
 		category: 'REST',
 		date: ``,
 		duration: `20:00 ~ 22:00 사이 출발`,
-		priceGeneral: `45,000원`,
-		priceGuest: `35,000원`,
+		priceGeneral: `50,000원`,
+		priceGuest: `40,000원`,
 		information: `
         <p class="ref-bu-list">※ 소요 시간: 약 120분</p>
         <p class="ref-bu-list">※ 자세한 운영 시간은 예약 확정 시 당일 상황에 따라 안내드립니다.</p>
