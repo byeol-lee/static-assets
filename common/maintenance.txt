@@ -1500,29 +1500,17 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-end="2026-10-01T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/08/xinZI225EyPlCx5lDk3g_1_');">
-                    <a href="/page/board/event/190000047134" class="modal-slider-link" target="_blank">
-                    </a>
-                </li>
-                <li class="modal-slider-item swiper-slide" data-start="2026-10-01T00:00:00"
+                <li class="modal-slider-item swiper-slide" data-end="2026-12-01T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/09/wApb1UX1z1DZG1YqoWTk_1_');">
                     <a href="/page/board/event/190000047134" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-start="2026-09-10T00:00:00"
-                    data-end="2026-09-22T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/09/gqlTa6zvNqAGCZ94omKH_1_');">
-                    <a href="/page/board/package/16151" class="modal-slider-link" target="_blank">
-                    </a>
-                </li>
-                <li class="modal-slider-item swiper-slide" data-start="2026-09-22T00:00:00"
-                    data-end="2026-10-01T00:00:00"
+                <li class="modal-slider-item swiper-slide" data-end="2026-10-12T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/09/A1711rRPp5JaS6EzjVUm_1_');">
                     <a href="/page/board/event/120000047234" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-end="2026-10-01T00:00:00"
+                <li class="modal-slider-item swiper-slide" data-end="2026-11-01T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/09/ZpFxKs230HU0LhuPorjy_1_');">
                     <a href="/page/board/package/16163" class="modal-slider-link" target="_blank">
                     </a>
@@ -1543,19 +1531,13 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-end="2026-10-01T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/08/xinZI225EyPlCx5lDk3g_1_');">
-                    <a href="/page/pyeongchang/board/event/190000047134" class="modal-slider-link" target="_blank">
-                    </a>
-                </li>
-                <li class="modal-slider-item swiper-slide" data-start="2026-10-01T00:00:00"
+                <li class="modal-slider-item swiper-slide" data-end="2026-12-01T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/09/wApb1UX1z1DZG1YqoWTk_1_');">
                     <a href="/page/pyeongchang/board/event/190000047134" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-start="2026-09-22T00:00:00"
-                    data-end="2026-10-01T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/09/gcdosOGiYmnXTUbEhD4D_1_');">
+                <li class="modal-slider-item swiper-slide" data-end="2026-10-12T00:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/10/xJVErB4NsNU1ibjXRmxa_1_');">
                     <a href="/page/pyeongchang/board/package/16153" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
@@ -1575,13 +1557,12 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-start="2026-09-22T00:00:00"
-                    data-end="2026-10-01T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/09/U3uSiw2eMz3oiTxzpKoK_1_');">
+                <li class="modal-slider-item swiper-slide" data-end="2026-10-12T00:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/10/y3pDj0W8E8HGZZ9pPWbK_1_');">
                     <a href="/page/jeju/board/package/16155" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-end="2026-10-01T00:00:00"
+                <li class="modal-slider-item swiper-slide" data-end="2026-11-01T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/09/ZpFxKs230HU0LhuPorjy_1_');">
                     <a href="/page/jeju/board/package/16163" class="modal-slider-link" target="_blank">
                     </a>
@@ -1607,9 +1588,8 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-start="2026-09-22T00:00:00"
-                    data-end="2026-10-01T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/09/Tysgc11NcJ0uRHDUYaML_1_');">
+                <li class="modal-slider-item swiper-slide" data-end="2026-10-12T00:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/10/FmFviJq4X9uJwIl90SsR_1_');">
                     <a href="/page/playcecamp/board/package/16158" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
