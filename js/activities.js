@@ -1,5 +1,45 @@
 const activities = [
     {
+		program: 'buddy-ride',
+		title: '버디 라이드',
+		subtitle: '제주 동쪽의 아름다운 자연과 숨겨진 골목을 탐방하는 전기 자전거 라이딩 프로그램',
+		description: `
+        바다와 초원, 오름이 어우러진 제주 풍경을 따라 여유롭게 달려 보세요.<br />
+        평탄한 해안도로부터 도전적인 오르막길까지, 다양한 코스로 제주의 다채로운 풍경을 즐길 수 있습니다.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/10/GhVK4Loa4o3WMbU2TBww_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/10/GhVK4Loa4o3WMbU2TBww_1_',
+			'/api/editor/attach/view/default/2026/10/pgTluDKrOH4umD7gdy4X_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: ``,
+		duration: `08:00 ~ 20:00`,
+		priceGeneral: `30,000원`,
+		priceGuest: `
+        25,000원<br />
+        (전기 자전거 대여 + 가이드 동행 + 사진 촬영 지원)
+        `,
+		information: `
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조리 941-1<br />
+        (휘닉스 아일랜드에서 차량으로 약 8분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 전기 자전거는 일반 자전거보다 주행 속도와 무게가 있어, 키 130cm 미만의 어린이는 탑승이 어려울 수 있습니다. </p>
+        <p class="ref-bu-list">※ 해당 어린이는 준비된 유아용 트레일러를 이용해 함께 참여하실 수 있으니, 신청 전 참고 부탁드립니다.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>2인 이상 신청 시 예약 신청이 가능합니다.</li>
+            <li>프로그램 예약 후 가이드와 일정 및 시간을 조율하여 진행됩니다.</li>
+            <li>기상 상황에 따라 운영 일정이 변경될 수 있으며, 심한 우천 시에는 이용이 어렵습니다.</li>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScN8sfwXqEvGVjD7Yomqba8AgjelOo2nceT7mo8NXj7X1HbWg/viewform?usp=publish-editor',
+        inquiries: ``,
+		display: true,
+    },
+    {
 		program: 'aquaplanet',
 		title: '아쿠아플라넷',
 		subtitle: '제주를 담은 월드클래스 아쿠아리움',
