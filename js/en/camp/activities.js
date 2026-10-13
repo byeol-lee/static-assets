@@ -1,5 +1,45 @@
 const activities = [
     {
+		program: 'buddy-ride',
+		title: 'Buddy Ride',
+		subtitle: 'An electric bike tour exploring the beautiful nature and hidden alleys of eastern Jeju.',
+		description: `
+        Ride at a leisurely pace through Jeju’s scenic landscapes of coastline, grasslands, and volcanic hills.<br />
+        Enjoy a variety of views along routes ranging from flat coastal roads to challenging uphill trails.
+        `,
+		thumbnail: '/api/editor/attach/view/default/2026/10/GhVK4Loa4o3WMbU2TBww_1_',
+		heroImage: [
+			'/api/editor/attach/view/default/2026/10/GhVK4Loa4o3WMbU2TBww_1_',
+			'/api/editor/attach/view/default/2026/10/pgTluDKrOH4umD7gdy4X_1_',
+		],
+		tags: ['REST', 'HEALING'],
+		category: 'REST',
+		date: ``,
+		duration: `08:00 ~ 20:00`,
+		priceGeneral: `KRW 30,000`,
+		priceGuest: `
+        KRW 25,000<br />
+        (Electric bike rental + Guided tour + Photography assistance)
+        `,
+		information: `
+        <p class="ref-bu-list">※ Location: 941-1, Ojo-ri, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea<br />
+        (Takes approx. 3-minute drive from Playce Camp)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        <p class="ref-bu-list">※ Electric bikes are heavier and faster than regular bicycles, so children under 130 cm tall may have difficulty riding them.</p>
+        <p class="ref-bu-list">※ Children can join the tour in a provided child trailer. Please take this into consideration before booking.</p>
+        `,
+		notice: `
+        <ul class="dot-bu-list">
+            <li>Reservations are available for groups of 2 or more.</li>
+            <li>After booking, the guide will coordinate the schedule and time with you.</li>
+            <li>The schedule may change depending on weather conditions. The activity may be unavailable in heavy rain.</li>
+        </ul>
+        `,
+		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScN8sfwXqEvGVjD7Yomqba8AgjelOo2nceT7mo8NXj7X1HbWg/viewform?usp=publish-editor',
+        inquiries: ``,
+		display: true,
+    },
+    {
         program: 'traveler-pt',
         title: 'Traveler PT',
         subtitle: 'Professional personal training classes led directly by the gym owner, focusing on proper weight training',
