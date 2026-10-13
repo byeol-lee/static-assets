@@ -1500,6 +1500,17 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
+                <li class="modal-slider-item swiper-slide" data-end="2026-10-20T13:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/10/mOZ9XZIw1VHr7hmLdzLC_1_');">
+                    <a href="javascript:alert('10월 20일(화) 13시 OPEN!');" class="modal-slider-link">
+                    </a>
+                </li>
+                <li class="modal-slider-item swiper-slide" data-start="2026-10-20T13:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/10/mOZ9XZIw1VHr7hmLdzLC_1_');">
+                    <a href="/page/reservation/pyeongchang/snowpark/seasonpass" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
+                
                 <li class="modal-slider-item swiper-slide" data-end="2026-12-01T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/09/wApb1UX1z1DZG1YqoWTk_1_');">
                     <a href="/page/board/event/190000047134" class="modal-slider-link" target="_blank">
@@ -1536,6 +1547,17 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
+                <li class="modal-slider-item swiper-slide" data-end="2026-10-20T13:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/10/mOZ9XZIw1VHr7hmLdzLC_1_');">
+                    <a href="javascript:alert('10월 20일(화) 13시 OPEN!');" class="modal-slider-link">
+                    </a>
+                </li>
+                <li class="modal-slider-item swiper-slide" data-start="2026-10-20T13:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/10/mOZ9XZIw1VHr7hmLdzLC_1_');">
+                    <a href="/page/reservation/pyeongchang/snowpark/seasonpass" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
+
                 <li class="modal-slider-item swiper-slide" data-end="2026-12-01T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/09/wApb1UX1z1DZG1YqoWTk_1_');">
                     <a href="/page/pyeongchang/board/event/190000047134" class="modal-slider-link" target="_blank">
