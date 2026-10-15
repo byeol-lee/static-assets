@@ -1591,6 +1591,12 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
+                <li class="modal-slider-item swiper-slide" data-start="2026-10-16T00:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/10/Dlodkepzv4XLQgl1URLF_1_');">
+                    <a href="/page/jeju/board/package/16188" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
+
                 <li class="modal-slider-item swiper-slide" data-end="2026-10-12T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/10/y3pDj0W8E8HGZZ9pPWbK_1_');">
                     <a href="/page/jeju/board/package/16155" class="modal-slider-link" target="_blank">
