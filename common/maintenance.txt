@@ -1965,10 +1965,13 @@
         });
 
         /* ===== 성수기 ===== */
-        const dday = Math.ceil(
-            (new Date('2026-10-20') - new Date()) / (1000 * 60 * 60 * 24)
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        
+        const dday = Math.round(
+            (new Date('2026-10-20T00:00:00') - today) / (1000 * 60 * 60 * 24)
         );
-
+        
         $('#dDay').text(dday > 0 ? 'D-' + dday : 'D-Day');
 
         /* ===============================================
