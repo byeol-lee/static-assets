@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 text: [isEnglish ? 'Dec 24(Thu),<br />Dec 25(Fri)' : '12월 24일(목),<br />12월 25일(금)'],
                 align: ['right'],
                 arrow: ['top'],
-                bg: [false],
+                bg: [true],
                 bgStart: ['0%'],
                 bgWidth: ['15%'],
                 offsetX: ['0px', '-0px']
