@@ -96,24 +96,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 row: isEnglish ? 'Low season' : '비수기',
                 year: 2027,
                 month: isEnglish ? 'Feb' : '2월',
-                text: [isEnglish ? 'Feb 8(Mon)' : '2월 8일(월)', isEnglish ? 'Feb 28(Sun)' : '2월 28일(일)'],
-                align: ['left', 'left'],
+                text: [isEnglish ? 'Feb 8(Mon),<br />Feb 28(Sun)' : '2월 8일(월),<br />2월 28일(일)'],
+                align: ['left'],
                 arrow: ['top'],
                 bg: [false],
                 bgStart: ['0%'],
-                bgWidth: ['15%'],
-                offsetX: ['-12px', '65px']
+                bgWidth: ['95%'],
+                offsetX: ['-12px']
             },
             {
                 row: isEnglish ? 'High season' : '성수기',
                 year: 2026,
                 month: isEnglish ? 'Oct' : '10월',
-                text: [isEnglish ? 'Oct 2(Fri), Oct 3(Sat) ~ 4(Sun),<br />Oct 9(Fri) ~ 10(Sat)' : '10월 2일(금), 10월 3일(토) ~ 4일(일),<br />10월 9일(금) ~ 10일(토)'],
-                align: ['center'],
+                text: [isEnglish ? 'Oct 2(Fri),<br />Oct 3(Sat) ~ 4(Sun),<br />Oct 9(Fri) ~ 10(Sat)' : '10월 2일(금),<br />10월 3일(토) ~ 4일(일),<br />10월 9일(금) ~ 10일(토)'],
+                align: ['left'],
                 arrow: ['top'],
                 bg: [true],
                 bgStart: ['1%'],
-                bgWidth: ['55%'],
+                bgWidth: ['40%'],
                 offsetX: ['0px', '-0px']
             },
             {
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 year: 2026,
                 month: isEnglish ? 'Dec' : '12월',
                 text: [isEnglish ? 'Dec 31(Thu)' : '12월 31일(목)'],
-                align: ['right'],
+                align: ['left'],
                 arrow: ['top'],
                 bg: [false],
                 bgStart: ['0%'],
@@ -132,14 +132,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 row: isEnglish ? 'High season' : '성수기',
                 year: 2027,
                 month: isEnglish ? 'Feb' : '2월',
-                text: [isEnglish ? 'Feb 6(Sat) ~ 7(Sun)' : '2월 6일(토) ~ 7일(일)', isEnglish ? 'Feb 26(Fri) ~ 27(Sat)' : '2월 26일(금) ~ 27일(토)'],
-                align: ['right', 'left'],
-                arrow: ['bottom', 'top'],
+                text: [isEnglish ? 'Feb 6(Sat) ~ 7(Sun),<br />Feb 26(Fri) ~ 27(Sat)' : '2월 6일(토) ~ 7일(일),<br />2월 26일(금) ~ 27일(토)'],
+                align: ['center'],
+                arrow: ['top'],
                 bg: [true, true],
                 bgStart: ['2%', '81%'],
-                bgWidth: ['15%', '15%'],
-                offsetX: ['-64px', '63px']
+                bgWidth: ['95%'],
+                offsetX: ['-86px']
             }
+            // {
+            //     row: isEnglish ? 'High season' : '성수기',
+            //     year: 2027,
+            //     month: isEnglish ? 'Feb' : '2월',
+            //     text: [isEnglish ? 'Feb 6(Sat) ~ 7(Sun)' : '2월 6일(토) ~ 7일(일)', isEnglish ? 'Feb 26(Fri) ~ 27(Sat)' : '2월 26일(금) ~ 27일(토)'],
+            //     align: ['right', 'left'],
+            //     arrow: ['bottom', 'top'],
+            //     bg: [true, true],
+            //     bgStart: ['2%', '81%'],
+            //     bgWidth: ['15%', '15%'],
+            //     offsetX: ['-64px', '63px']
+            // }
         ]
     };
 
