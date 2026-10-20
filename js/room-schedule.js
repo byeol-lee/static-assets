@@ -97,12 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 year: 2027,
                 month: isEnglish ? 'Feb' : '2월',
                 text: [isEnglish ? 'Feb 8(Mon),<br />Feb 28(Sun)' : '2월 8일(월),<br />2월 28일(일)'],
-                align: ['left'],
+                align: ['center'],
                 arrow: ['top'],
-                bg: [false],
+                bg: [true],
                 bgStart: ['0%'],
                 bgWidth: ['95%'],
-                offsetX: ['-12px']
+                offsetX: ['30px']
             },
             {
                 row: isEnglish ? 'High season' : '성수기',
