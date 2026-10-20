@@ -35,36 +35,36 @@ document.addEventListener('DOMContentLoaded', () => {
                 year: 2026,
                 month: isEnglish ? 'Dec' : '12월',
                 text: [isEnglish ? 'Dec 11(Fri) ~ 12(Sat), Dec 24(Thu),<br />Dec 18(Fri) ~ 31(Thu)' : '12월 11일(금) ~ 12일(토), 12월 24일(목),<br />12월 18일(금) ~ 31일(목)'],
-                align: ['center'],
+                align: ['right'],
                 arrow: ['bottom'],
                 bg: [true],
                 bgStart: ['42%'],
-                bgWidth: ['260%'],
-                offsetX: ['-30px', '-0px']
+                bgWidth: ['58%'],
+                offsetX: ['-5px', '-0px']
             },
             {
                 row: isEnglish ? 'High season' : '성수기',
-                year: 2026,
+                year: 2027,
                 month: isEnglish ? 'Jan' : '1월',
-                text: [isEnglish ? 'Jan 1(Fri) ~ 31(Sun)' : '1월 1일(금) ~ 31일(일)'],
+                text: [isEnglish ? 'Jan 1(Fri) ~ 31(Sun)' : '1월 1일(금) ~<br />31일(일)'],
                 align: ['center'],
                 arrow: ['bottom'],
                 bg: [true],
-                bgStart: ['42%'],
-                bgWidth: ['260%'],
-                offsetX: ['-30px', '-0px']
+                bgStart: ['0%'],
+                bgWidth: ['100%'],
+                offsetX: ['-46px', '-0px']
             },
             {
                 row: isEnglish ? 'High season' : '성수기',
-                year: 2026,
+                year: 2027,
                 month: isEnglish ? 'Feb' : '2월',
-                text: [isEnglish ? 'Feb 1(Mon) ~ Feb 28(Sun)' : '2월 1일(월) ~ 28일(일)'],
-                align: ['center'],
+                text: [isEnglish ? 'Feb 1(Mon) ~ Feb 28(Sun)' : '2월 1일(월) ~<br />28일(일)'],
+                align: ['left'],
                 arrow: ['bottom'],
                 bg: [true],
-                bgStart: ['42%'],
-                bgWidth: ['260%'],
-                offsetX: ['-30px', '-0px']
+                bgStart: ['0%'],
+                bgWidth: ['100%'],
+                offsetX: ['21px', '-0px']
             },
             {
                 row: isEnglish ? 'Peak season' : '극성수기',
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 row: isEnglish ? 'Peak season' : '극성수기',
-                year: 2026,
+                year: 2027,
                 month: isEnglish ? 'Jan' : '1월',
                 text: [isEnglish ? 'High Season Fri/Sat,<br />Jan 1(Fri) ~ 3(Sun)' : '성수기 금/토요일,<br />1월 1일(금) ~ 3일(일)'],
                 align: ['center'],
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 row: isEnglish ? 'Peak season' : '극성수기',
-                year: 2026,
+                year: 2027,
                 month: isEnglish ? 'Feb' : '2월',
                 text: [isEnglish ? 'High Season Fri/Sat,<br />Feb 5(Fri) ~ 8(Mon),<br />Feb 26(Fri) ~ 28(Sun)' : '성수기 금/토요일,<br />2월 5일(금) ~ 8일(월),<br />2월 26일(금) ~ 28일(일)'],
                 align: ['center'],
