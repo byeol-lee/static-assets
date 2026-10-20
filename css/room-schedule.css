@@ -142,7 +142,7 @@
 
 .tooltip-container.align-left::after {
     margin-left: 11px;
-    margin-bottom: -5px;
+    /* margin-bottom: -5px; */
 }
 
 .tooltip-container.align-right.arrow-top::after {
