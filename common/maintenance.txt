@@ -1516,7 +1516,7 @@
                     </a>
                 </li>
                 <li class="modal-slider-item swiper-slide" data-end="2026-11-21T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/10/vSbtZh0Y9glRZpRu6ezq_1_');">
+                    style="background-image: url('/api/editor/attach/view/default/2026/10/dsDoXsDparpYoJQkGrEz_1_');">
                     <a href="/page/playcecamp/board/package/16201" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
@@ -1599,7 +1599,7 @@
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
                 <li class="modal-slider-item swiper-slide" data-end="2026-11-21T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/10/vSbtZh0Y9glRZpRu6ezq_1_');">
+                    style="background-image: url('/api/editor/attach/view/default/2026/10/dsDoXsDparpYoJQkGrEz_1_');">
                     <a href="/page/playcecamp/board/package/16201" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
