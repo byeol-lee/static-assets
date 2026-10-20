@@ -23,12 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 year: 2026,
                 month: isEnglish ? 'Oct' : '10월',
                 text: [isEnglish ? 'Oct 3(Sat) ~ 4(Sun),<br />Oct 9(Fri) ~ 10(Sat)' : '10월 3일(토) ~ 4일(일),<br />10월 9일(금) ~ 10일(토)'],
-                align: ['center'],
+                align: ['left'],
                 arrow: ['top'],
                 bg: [true],
                 bgStart: ['1%'],
                 bgWidth: ['30%'],
-                offsetX: ['-120px', '-0px']
+                offsetX: ['-4px', '-0px']
             },
             {
                 row: isEnglish ? 'High season' : '성수기',
