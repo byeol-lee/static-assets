@@ -124,9 +124,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 align: ['right'],
                 arrow: ['top'],
                 bg: [true],
-                bgStart: ['0%'],
+                bgStart: ['80%'],
                 bgWidth: ['15%'],
-                offsetX: ['0px', '-0px']
+                offsetX: ['8px', '-0px']
             },
             {
                 row: isEnglish ? 'Low season' : '비수기',
