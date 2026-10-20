@@ -114,13 +114,15 @@
     border: 1px solid #167a47;
 }
 
-.site-pyeongchang .tooltip-container.align-center::after,
-.site-pyeongchang .tooltip-container.align-left::after,
+.site-pyeongchang .tooltip-container.align-center.arrow-top::after,
+.site-pyeongchang .tooltip-container.align-left.arrow-top::after,
 .site-pyeongchang .tooltip-container.align-right.arrow-top::after {
     border-left: 1px solid #167a47;
     border-top: 1px solid #167a47;
 }
 
+.site-pyeongchang .tooltip-container.align-center.arrow-bottom::after,
+.site-pyeongchang .tooltip-container.align-left.arrow-bottom::after,
 .site-pyeongchang .tooltip-container.align-right.arrow-bottom::after {
     border-right: 1px solid #167a47;
     border-bottom: 1px solid #167a47;
