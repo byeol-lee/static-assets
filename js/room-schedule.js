@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 row: isEnglish ? 'High season' : '성수기',
                 year: 2026,
                 month: isEnglish ? 'Dec' : '12월',
-                text: [isEnglish ? 'Dec 11(Fri) ~ 12(Sat), <br />Dec 24(Thu),<br />Dec 18(Fri) ~ Feb 28(Sun)' : '12월 11일(금) ~ 12일(토),<br />12월 24일(목),<br />12월 18일(금) ~ 2월 28일(일)'],
+                text: [isEnglish ? 'Dec 11(Fri) ~ 12(Sat), Dec 24(Thu),<br />Dec 18(Fri) ~ Feb 28(Sun)' : '12월 11일(금) ~ 12일(토), 12월 24일(목),<br />12월 18일(금) ~ 2월 28일(일)'],
                 align: ['center'],
                 arrow: ['top'],
                 bg: [true],
                 bgStart: ['42%'],
                 bgWidth: ['260%'],
-                offsetX: ['5px', '-0px']
+                offsetX: ['-30px', '-0px']
             },
             {
                 row: isEnglish ? 'Peak season' : '극성수기',
@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 arrow: ['top'],
                 bg: [true],
                 bgStart: ['42%'],
-                bgWidth: ['15%'],
-                offsetX: ['5px', '-0px']
+                bgWidth: ['260%'],
+                offsetX: ['8px', '-0px']
             }
         ],
         island: [
