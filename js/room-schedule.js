@@ -46,7 +46,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 row: isEnglish ? 'Peak season' : '극성수기',
                 year: 2026,
                 month: isEnglish ? 'Dec' : '12월',
-                text: [isEnglish ? 'High Season Fri/Sat,<br />Dec 25(Fri) ~ Jan 3(Sun),<br />Feb 5(Fri) ~ 8(Mon),<br />Feb 26(Fri) ~ 28(Sun)' : '성수기 금/토요일,<br />12월 25일(금) ~ 1월 3일(일),<br />2월 5일(금) ~ 8일(월),<br />2월 26일(금) ~ 28일(일)'],
+                text: [isEnglish ? 'High Season Fri/Sat,<br />Dec 25(Fri) ~ Dec 31(Thu)' : '성수기 금/토요일,<br />12월 25일(금) ~ 12월 31일(목)'],
+                align: ['center'],
+                arrow: ['top'],
+                bg: [true],
+                bgStart: ['42%'],
+                bgWidth: ['260%'],
+                offsetX: ['8px', '-0px']
+            },
+            {
+                row: isEnglish ? 'Peak season' : '극성수기',
+                year: 2026,
+                month: isEnglish ? 'Jan' : '1월',
+                text: [isEnglish ? 'High Season Fri/Sat,<br />Jan 1(Fri) ~ Jan 3(Sun)' : '성수기 금/토요일,<br />1월 1일(금) ~ 1월 3일(일)'],
+                align: ['center'],
+                arrow: ['top'],
+                bg: [true],
+                bgStart: ['42%'],
+                bgWidth: ['260%'],
+                offsetX: ['8px', '-0px']
+            },
+            {
+                row: isEnglish ? 'Peak season' : '극성수기',
+                year: 2026,
+                month: isEnglish ? 'Feb' : '2월',
+                text: [isEnglish ? 'High Season Fri/Sat,<br />Feb 5(Fri) ~ 8(Mon),<br />Feb 26(Fri) ~ 28(Sun)' : '성수기 금/토요일,<br />2월 5일(금) ~ 8일(월),<br />2월 26일(금) ~ 28일(일)'],
                 align: ['center'],
                 arrow: ['top'],
                 bg: [true],
@@ -102,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 bg: [true],
                 bgStart: ['0%'],
                 bgWidth: ['95%'],
-                offsetX: ['30px']
+                offsetX: ['-30px']
             },
             {
                 row: isEnglish ? 'High season' : '성수기',
