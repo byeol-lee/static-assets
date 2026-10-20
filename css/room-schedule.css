@@ -134,7 +134,7 @@
     margin-bottom: -5px;
 }
 
-.tooltip-container.align-center.arrow-bottomtop::after,
+.tooltip-container.align-center.arrow-bottom::after,
 .tooltip-container.align-left.arrow-bottom::after,
 .tooltip-container.align-right.arrow-bottom::after {
     margin-top: -5px;
