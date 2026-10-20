@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 month: isEnglish ? 'Dec' : '12월',
                 text: [isEnglish ? 'Dec 11(Fri) ~ 12(Sat), Dec 24(Thu),<br />Dec 18(Fri) ~ Feb 28(Sun)' : '12월 11일(금) ~ 12일(토), 12월 24일(목),<br />12월 18일(금) ~ 2월 28일(일)'],
                 align: ['center'],
-                arrow: ['top'],
+                arrow: ['bottom'],
                 bg: [true],
                 bgStart: ['42%'],
                 bgWidth: ['260%'],
@@ -47,24 +47,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 year: 2026,
                 month: isEnglish ? 'Dec' : '12월',
                 text: [isEnglish ? 'High Season Fri/Sat,<br />Dec 25(Fri) ~ Dec 31(Thu)' : '성수기 금/토요일,<br />12월 25일(금) ~ 12월 31일(목)'],
-                align: ['center'],
+                align: ['right'],
                 arrow: ['top'],
                 bg: [true],
-                bgStart: ['42%'],
-                bgWidth: ['260%'],
-                offsetX: ['8px', '-0px']
+                bgStart: ['80%'],
+                bgWidth: ['20%'],
+                offsetX: ['10px', '-0px']
             },
             {
                 row: isEnglish ? 'Peak season' : '극성수기',
                 year: 2026,
                 month: isEnglish ? 'Jan' : '1월',
                 text: [isEnglish ? 'High Season Fri/Sat,<br />Jan 1(Fri) ~ Jan 3(Sun)' : '성수기 금/토요일,<br />1월 1일(금) ~ 1월 3일(일)'],
-                align: ['center'],
+                align: ['bottom'],
                 arrow: ['top'],
                 bg: [true],
-                bgStart: ['42%'],
-                bgWidth: ['260%'],
-                offsetX: ['8px', '-0px']
+                bgStart: ['0%'],
+                bgWidth: ['20%'],
+                offsetX: ['-10px', '-0px']
             },
             {
                 row: isEnglish ? 'Peak season' : '극성수기',
@@ -74,9 +74,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 align: ['center'],
                 arrow: ['top'],
                 bg: [true],
-                bgStart: ['42%'],
-                bgWidth: ['260%'],
-                offsetX: ['8px', '-0px']
+                bgStart: ['10%'],
+                bgWidth: ['90%'],
+                offsetX: ['-85px', '-0px']
             }
         ],
         island: [
