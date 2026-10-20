@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 bg: [true],
                 bgStart: ['0%'],
                 bgWidth: ['20%'],
-                offsetX: ['-130px', '-0px']
+                offsetX: ['-116px', '-0px']
             },
             {
                 row: isEnglish ? 'Peak season' : '극성수기',
