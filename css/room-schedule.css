@@ -128,8 +128,16 @@
     border-bottom: 1px solid #167a47;
 }
 
-.tooltip-container.align-center::after {
+.tooltip-container.align-center.arrow-top::after,
+.tooltip-container.align-left.arrow-top::after,
+.tooltip-container.align-right.arrow-top::after {
     margin-bottom: -5px;
+}
+
+.tooltip-container.align-center.arrow-bottomtop::after,
+.tooltip-container.align-left.arrow-bottom::after,
+.tooltip-container.align-right.arrow-bottom::after {
+    margin-top: -5px;
 }
 
 .tooltip-container.align-left::after {
