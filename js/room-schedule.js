@@ -1,39 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. 언어 판별 (HTML lang 속성, 페이지 URL의 ?lang=en, 또는 호출된 script src의 ?lang=en 감지)
     const currentScript = document.currentScript || Array.from(document.querySelectorAll('script')).pop();
     const scriptParams = new URLSearchParams(currentScript ? new URL(currentScript.src, window.location.href).search : '');
     const urlParams = new URLSearchParams(window.location.search);
 
-    // URL 경로에 '/en/'이 포함되어 있는지 확인하는 조건 추가
-    const isEnglish = document.documentElement.lang === 'en' || 
-                    window.location.pathname.includes('/en/') || 
-                    urlParams.get('lang') === 'en' || 
-                    scriptParams.get('lang') === 'en';
+    const isEnglish = document.documentElement.lang === 'en' ||
+        window.location.pathname.includes('/en/') ||
+        urlParams.get('lang') === 'en' ||
+        scriptParams.get('lang') === 'en';
 
-    // 2. 행 및 월 라벨 설정
-    const rows = isEnglish 
+    const rows = isEnglish
         ? ['Low season', 'High season', 'Peak season', 'Holidays']
         : ['비수기', '성수기', '극성수기', '연휴'];
 
-    const months = isEnglish 
-        ? ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug']
-        : ['9월', '10월', '11월', '12월', '1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월'];
+    const months = isEnglish
+        ? ['Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep']
+        : ['10월', '11월', '12월', '1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월'];
 
-    // 3. 통합 일정 데이터 (한/영 분기)
     const scheduleData = {
         park: [
-            {
-                row: isEnglish ? 'High season' : '성수기',
-                year: 2026,
-                month: isEnglish ? 'Sep' : '9월',
-                text: [isEnglish ? 'Sep 24(Thu)<br />~ 26(Sat)' : '9월 24일(목)<br />~ 26일(토)'],
-                align: ['right'],
-                arrow: ['bottom'],
-                bg: [true],
-                bgStart: ['72%'],
-                bgWidth: ['15%'],
-                offsetX: ['0px', '-0px']
-            },
             {
                 row: isEnglish ? 'High season' : '성수기',
                 year: 2026,
@@ -44,19 +28,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 bg: [true],
                 bgStart: ['1%'],
                 bgWidth: ['30%'],
-                offsetX: ['-101px', '-0px']
+                offsetX: ['-120px', '-0px']
             },
             {
                 row: isEnglish ? 'High season' : '성수기',
                 year: 2026,
                 month: isEnglish ? 'Dec' : '12월',
-                text: [isEnglish ? 'Dec 11(Fri) ~ 12(Sat)' : '12월 11일(금) ~ 12일(토)'],
+                text: [isEnglish ? 'Dec 11(Fri) ~ 12(Sat), <br />Dec 24(Thu),<br />Dec 18(Fri) ~ Feb 28(Sun)' : '12월 11일(금) ~ 12일(토),<br />12월 24일(목),<br />12월 18일(금) ~ 2월 28일(일)'],
+                align: ['center'],
+                arrow: ['top'],
+                bg: [true],
+                bgStart: ['42%'],
+                bgWidth: ['260%'],
+                offsetX: ['5px', '-0px']
+            },
+            {
+                row: isEnglish ? 'Peak season' : '극성수기',
+                year: 2026,
+                month: isEnglish ? 'Dec' : '12월',
+                text: [isEnglish ? 'High Season Fri/Sat,<br />Dec 25(Fri) ~ Jan 3(Sun),<br />Feb 5(Fri) ~ 8(Mon),<br />Feb 26(Fri) ~ 28(Sun)' : '성수기 금/토요일,<br />12월 25일(금) ~ 1월 3일(일),<br />2월 5일(금) ~ 8일(월),<br />2월 26일(금) ~ 28일(일)'],
                 align: ['center'],
                 arrow: ['top'],
                 bg: [true],
                 bgStart: ['42%'],
                 bgWidth: ['15%'],
-                offsetX: ['0px', '-0px']
+                offsetX: ['5px', '-0px']
             }
         ],
         island: [
@@ -76,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 row: isEnglish ? 'Low season' : '비수기',
                 year: 2026,
                 month: isEnglish ? 'Dec' : '12월',
-                text: [isEnglish ? 'Dec 25(Fri)' : '12월 25일(금)'],
+                text: [isEnglish ? 'Dec 24(Thu),<br />Dec 25(Fri)' : '12월 24일(목),<br />12월 25일(금)'],
                 align: ['right'],
                 arrow: ['top'],
                 bg: [false],
@@ -101,24 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 year: 2027,
                 month: isEnglish ? 'Feb' : '2월',
                 text: [isEnglish ? 'Feb 8(Mon)' : '2월 8일(월)', isEnglish ? 'Feb 28(Sun)' : '2월 28일(일)'],
-                align: ['left','left'],
+                align: ['left', 'left'],
                 arrow: ['top'],
                 bg: [false],
                 bgStart: ['0%'],
                 bgWidth: ['15%'],
                 offsetX: ['-12px', '65px']
-            },
-            {
-                row: isEnglish ? 'High season' : '성수기',
-                year: 2026,
-                month: isEnglish ? 'Sep' : '9월',
-                text: [isEnglish ? 'Sep 24(Thu)<br />~ 26(Sat)' : '9월 24일(목)<br />~ 26일(토)'],
-                align: ['right'],
-                arrow: ['bottom'],
-                bg: [true],
-                bgStart: ['72%'],
-                bgWidth: ['15%'],
-                offsetX: ['0px', '-0px']
             },
             {
                 row: isEnglish ? 'High season' : '성수기',
@@ -283,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderMobileTimeline();
 
     function setResortType() {
-        var siteType = getCurrentSiteType(); 
+        var siteType = getCurrentSiteType();
         var targetType = (siteType === 'island') ? 'island' : 'park';
 
         if (urlParams.get('type')) {
