@@ -1500,18 +1500,6 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-end="2026-10-20T13:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/10/mOZ9XZIw1VHr7hmLdzLC_1_');">
-                    <a href="javascript:alert('10월 20일(화) 13시 OPEN!');" class="modal-slider-link">
-                    </a>
-                </li>
-                <li class="modal-slider-item swiper-slide" data-start="2026-10-20T13:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/10/mOZ9XZIw1VHr7hmLdzLC_1_');">
-                    <a href="/page/reservation/pyeongchang/snowpark/seasonpass" class="modal-slider-link"
-                        target="_blank">
-                    </a>
-                </li>
-
                 <li class="modal-slider-item swiper-slide" data-end="2026-12-01T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/09/wApb1UX1z1DZG1YqoWTk_1_');">
                     <a href="/page/board/event/190000047134" class="modal-slider-link" target="_blank">
@@ -1522,14 +1510,14 @@
                     <a href="/page/customer/notice/14505" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-end="2026-10-12T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/09/A1711rRPp5JaS6EzjVUm_1_');">
-                    <a href="/page/board/event/120000047234" class="modal-slider-link" target="_blank">
-                    </a>
-                </li>
                 <li class="modal-slider-item swiper-slide" data-end="2026-11-01T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/10/QD0uPeFnBo1Z87Jxemdy_1_');">
                     <a href="/page/board/package/16163" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
+                <li class="modal-slider-item swiper-slide" data-end="2026-11-21T00:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/10/vSbtZh0Y9glRZpRu6ezq_1_');">
+                    <a href="/page/playcecamp/board/package/16201" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
             </ul>
@@ -1548,18 +1536,6 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-end="2026-10-20T13:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/10/mOZ9XZIw1VHr7hmLdzLC_1_');">
-                    <a href="javascript:alert('10월 20일(화) 13시 OPEN!');" class="modal-slider-link">
-                    </a>
-                </li>
-                <li class="modal-slider-item swiper-slide" data-start="2026-10-20T13:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/10/mOZ9XZIw1VHr7hmLdzLC_1_');">
-                    <a href="/page/reservation/pyeongchang/snowpark/seasonpass" class="modal-slider-link"
-                        target="_blank">
-                    </a>
-                </li>
-
                 <li class="modal-slider-item swiper-slide" data-end="2026-12-01T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/09/wApb1UX1z1DZG1YqoWTk_1_');">
                     <a href="/page/pyeongchang/board/event/190000047134" class="modal-slider-link" target="_blank">
@@ -1596,12 +1572,6 @@
                     <a href="/page/jeju/board/package/16188" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
-
-                <li class="modal-slider-item swiper-slide" data-end="2026-10-12T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/10/y3pDj0W8E8HGZZ9pPWbK_1_');">
-                    <a href="/page/jeju/board/package/16155" class="modal-slider-link" target="_blank">
-                    </a>
-                </li>
                 <li class="modal-slider-item swiper-slide" data-end="2026-11-01T00:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/10/QD0uPeFnBo1Z87Jxemdy_1_');">
                     <a href="/page/jeju/board/package/16163" class="modal-slider-link" target="_blank">
@@ -1628,9 +1598,9 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-end="2026-10-12T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/10/FmFviJq4X9uJwIl90SsR_1_');">
-                    <a href="/page/playcecamp/board/package/16158" class="modal-slider-link" target="_blank">
+                <li class="modal-slider-item swiper-slide" data-end="2026-11-21T00:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/10/vSbtZh0Y9glRZpRu6ezq_1_');">
+                    <a href="/page/playcecamp/board/package/16201" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
                 <li class="modal-slider-item swiper-slide"
@@ -1760,31 +1730,43 @@
 
 <script>
     $(function () {
-        // youtube
+        // snow park-youtube
         // $('.main-pyeongchang section.waterpark').html(`
         //     <h3 class="section-title" style="color: #232323;height: 80px;">25/26 SNOW PARK</h3>
         //     <div class="wrap scroll-check in"><iframe width="1200px" height="675px"
         //             src="https://www.youtube.com/embed/5euQGMrSKXE?rel=0&showinfo=0&modestbranding=1" frameborder="0"></iframe>
         //     </div>
         // `);
+        
+        // forest park
+        // $('.main-pyeongchang section.waterpark').html(`
+        //     <h3 class="section-title" style="color: #232323;height: 80px;">FOREST PARK</h3>
+        //     <div style="background-image: url(/images/ko/main/pyeongchang/2023key-visual_forestpark.gif);width: 1200px;height: 675px;margin: 0 auto;background-size: cover;"></div>
+        // `);
 
+        // snow park
         $('.main-pyeongchang section.waterpark').html(`
-            <h3 class="section-title" style="color: #232323;height: 80px;">FOREST PARK</h3>
-            <div style="background-image: url(/images/ko/main/pyeongchang/2023key-visual_forestpark.gif);width: 1200px;height: 675px;margin: 0 auto;background-size: cover;"></div>
+            <h3 class="section-title" style="color: #232323;height: 80px;">26/27 SNOW PARK</h3>
+            <div style="background-image: url(/images/ko/main/pyeongchang/2324key-visual.gif);width: 1200px;height: 675px;margin: 0 auto;background-size: cover;"></div>
         `);
 
-        // a/w
-        $('.noIE.mob .main-pyeongchang section.waterpark').html(`
-            <h3 class="section-title" style="font-size: 22px;color: #232323;">25/26 SNOW PARK</h3>
-            <div style="position: relative;padding-bottom: 56.25%;">
-                <iframe src="https://www.youtube.com/embed/5euQGMrSKXE?rel=0&showinfo=0&modestbranding=1" frameborder="0" style="width: 100%;height: 100%;position: absolute;"></iframe>
-            </div>
-        `);
+        // snow park-youtube
+        // $('.noIE.mob .main-pyeongchang section.waterpark').html(`
+        //     <h3 class="section-title" style="font-size: 22px;color: #232323;">25/26 SNOW PARK</h3>
+        //     <div style="position: relative;padding-bottom: 56.25%;">
+        //         <iframe src="https://www.youtube.com/embed/5euQGMrSKXE?rel=0&showinfo=0&modestbranding=1" frameborder="0" style="width: 100%;height: 100%;position: absolute;"></iframe>
+        //     </div>
+        // `);
 
-        // s/s
+        // forest park
+        // $('.noIE.mob .main-pyeongchang section.waterpark').html(`
+        //     <h3 class="section-title" style="font-size: 22px;color: #232323;">FOREST PARK</h3>
+        //     <div style="background-image: url(/images/ko/main/pyeongchang/2023key-visual_forestpark.gif);background-size: cover;background-position: 50% 50%;padding-top: 56.25%;"></div>
+        // `);
+
         $('.noIE.mob .main-pyeongchang section.waterpark').html(`
-            <h3 class="section-title" style="font-size: 22px;color: #232323;">FOREST PARK</h3>
-            <div style="background-image: url(/images/ko/main/pyeongchang/2023key-visual_forestpark.gif);background-size: cover;background-position: 50% 50%;padding-top: 56.25%;"></div>
+            <h3 class="section-title" style="font-size: 22px;color: #232323;">26/27 SNOW PARK</h3>
+            <div style="background-image: url(/images/ko/main/pyeongchang/2324key-visual.gif);background-size: cover;background-position: 50% 50%;padding-top: 56.25%;"></div>
         `);
     });
 </script>
@@ -1967,11 +1949,11 @@
         /* ===== 성수기 ===== */
         const today = new Date();
         today.setHours(0, 0, 0, 0);
-        
+
         const dday = Math.round(
             (new Date('2026-10-20T00:00:00') - today) / (1000 * 60 * 60 * 24)
         );
-        
+
         $('#dDay').text(dday > 0 ? 'D-' + dday : 'D-Day');
 
         /* ===============================================
