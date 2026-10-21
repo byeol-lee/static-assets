@@ -162,17 +162,17 @@
 
     .weather-wrap.park {
         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url('/api/editor/attach/view/default/2026/10/OGCEkyqagOGy3QEwsqPx_1_') center/cover no-repeat;
+            url('https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/10/OGCEkyqagOGy3QEwsqPx_1_') center/cover no-repeat;
     }
 
     .weather-wrap.island {
         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url('/api/editor/attach/view/default/2026/10/fVPEUbmRfUqZCKOmyU6o_1_') center/cover no-repeat;
+            url('https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/10/fVPEUbmRfUqZCKOmyU6o_1_') center/cover no-repeat;
     }
 
     .weather-wrap.camp {
         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url('/api/editor/attach/view/default/2026/05/IJmPZTDUbuA1hB1aFCrW_1_') center/cover no-repeat;
+            url('https://phoenixhnr.co.kr/api/editor/attach/view/default/2026/05/IJmPZTDUbuA1hB1aFCrW_1_') center/cover no-repeat;
     }
 
     .weather-card {
