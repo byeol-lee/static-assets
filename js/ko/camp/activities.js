@@ -1,5 +1,42 @@
 const activities = [
     {
+        program: 'water-singing-bowl',
+        title: '워터 싱잉 볼',
+        subtitle: '물 위에서 싱잉볼의 잔잔한 진동과 파장을 느끼며 몸을 이완시키는 프로그램 ',
+        description: `
+        물 위에서 싱잉 볼의 잔잔한 진동과 파장을 느끼며, 몸을 이완시키고 마음의 안정을 경험하는 프로그램입니다.<br />
+        잔잔한 물 위에 몸을 맡긴 채 싱잉 볼의 진동을 느끼며 긴장된 근육을 풀고 깊은 휴식을 경험해 보세요.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/10/yIttR1qsHk7mAd4FEjY0_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/10/yIttR1qsHk7mAd4FEjY0_1_',
+            '/api/editor/attach/view/default/2026/10/UtkGQ1dctVwPk7sAB7yP_1_',
+            '/api/editor/attach/view/default/2026/10/3uI992yUzFLqVxmPynek_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `10:00 ~ 23:00`,
+        priceGeneral: `90,000원`,
+        priceGuest: `60,000원`,
+        information: `
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조리 941-1<br />
+        (플레이스 캠프에서 차량으로 약 3분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 소요 시간: 50분 </p>
+        <p class="ref-bu-list">※ 편안한 복장(수영복 또는 물에 젖어도 되는 복장) 혹은 개인 수건을 지참해 주세요.</p>
+        <p class="ref-bu-list">※ 계절 및 진행 상황에 따라 운영 장소가 변경될 수 있으며, 동절기에는 실내로 운영됩니다. 그 외에는 야외 수영장에서 진행됩니다.</p
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>참여 인원 미달 시 운영이 불가할 수 있습니다.</li>
+        </ul>
+        `,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSc5OojfQcNsJSUuTA-NNtSOVyMYW6FijyefAJ1OCGXXZWenQg/viewform?usp=publish-editor',
+        inquiries: ``,
+        display: true,
+    },
+    {
 		program: 'buddy-ride',
 		title: '버디 라이드',
 		subtitle: '제주 동쪽의 아름다운 자연과 숨겨진 골목을 탐방하는 전기 자전거 라이딩 프로그램',
