@@ -1,92 +1,129 @@
 const activities = [
     {
-		program: 'buddy-ride',
-		title: '버디 라이드',
-		subtitle: '제주 동쪽의 아름다운 자연과 숨겨진 골목을 탐방하는 전기 자전거 라이딩 프로그램',
-		description: `
+        program: 'water-singing-bowl',
+        title: '워터 싱잉 볼',
+        subtitle: '물 위에서 싱잉볼의 잔잔한 진동과 파장을 느끼며 몸을 이완시키는 프로그램 ',
+        description: `
+        물 위에서 싱잉 볼의 잔잔한 진동과 파장을 느끼며, 몸을 이완시키고 마음의 안정을 경험하는 프로그램입니다.<br />
+        잔잔한 물 위에 몸을 맡긴 채 싱잉 볼의 진동을 느끼며 긴장된 근육을 풀고 깊은 휴식을 경험해 보세요.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/10/yIttR1qsHk7mAd4FEjY0_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/10/yIttR1qsHk7mAd4FEjY0_1_',
+            '/api/editor/attach/view/default/2026/10/UtkGQ1dctVwPk7sAB7yP_1_',
+            '/api/editor/attach/view/default/2026/10/3uI992yUzFLqVxmPynek_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `10:00 ~ 23:00`,
+        priceGeneral: `90,000원`,
+        priceGuest: `60,000원`,
+        information: `
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조리 941-1<br />
+        (휘닉스 아일랜드에서 차량으로 약 8분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 소요 시간: 50분 </p>
+        <p class="ref-bu-list">※ 편안한 복장(수영복 또는 물에 젖어도 되는 복장) 혹은 개인 수건을 지참해 주세요.</p>
+        <p class="ref-bu-list">※ 계절 및 진행 상황에 따라 운영 장소가 변경될 수 있으며, 동절기에는 실내로 운영됩니다. 그 외에는 야외 수영장에서 진행됩니다.</p
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>참여 인원 미달 시 운영이 불가할 수 있습니다.</li>
+        </ul>
+        `,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSc5OojfQcNsJSUuTA-NNtSOVyMYW6FijyefAJ1OCGXXZWenQg/viewform?usp=publish-editor',
+        inquiries: ``,
+        display: true,
+    },
+    {
+        program: 'buddy-ride',
+        title: '버디 라이드',
+        subtitle: '제주 동쪽의 아름다운 자연과 숨겨진 골목을 탐방하는 전기 자전거 라이딩 프로그램',
+        description: `
         바다와 초원, 오름이 어우러진 제주 풍경을 따라 여유롭게 달려 보세요.<br />
         평탄한 해안도로부터 도전적인 오르막길까지, 다양한 코스로 제주의 다채로운 풍경을 즐길 수 있습니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/10/GhVK4Loa4o3WMbU2TBww_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/10/GhVK4Loa4o3WMbU2TBww_1_',
-			'/api/editor/attach/view/default/2026/10/pgTluDKrOH4umD7gdy4X_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: ``,
-		duration: `08:00 ~ 20:00`,
-		priceGeneral: `30,000원`,
-		priceGuest: `
+        thumbnail: '/api/editor/attach/view/default/2026/10/GhVK4Loa4o3WMbU2TBww_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/10/GhVK4Loa4o3WMbU2TBww_1_',
+            '/api/editor/attach/view/default/2026/10/pgTluDKrOH4umD7gdy4X_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `08:00 ~ 20:00`,
+        priceGeneral: `30,000원`,
+        priceGuest: `
         25,000원<br />
         (전기 자전거 대여 + 가이드 동행 + 사진 촬영 지원)
         `,
-		information: `
+        information: `
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조리 941-1<br />
         (휘닉스 아일랜드에서 차량으로 약 8분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
         <p class="ref-bu-list">※ 전기 자전거는 일반 자전거보다 주행 속도와 무게가 있어, 키 130cm 미만의 어린이는 탑승이 어려울 수 있습니다. </p>
         <p class="ref-bu-list">※ 해당 어린이는 준비된 유아용 트레일러를 이용해 함께 참여하실 수 있으니, 신청 전 참고 부탁드립니다.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>2인 이상 신청 시 예약 신청이 가능합니다.</li>
             <li>프로그램 예약 후 가이드와 일정 및 시간을 조율하여 진행됩니다.</li>
             <li>기상 상황에 따라 운영 일정이 변경될 수 있으며, 심한 우천 시에는 이용이 어렵습니다.</li>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScN8sfwXqEvGVjD7Yomqba8AgjelOo2nceT7mo8NXj7X1HbWg/viewform?usp=publish-editor',
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScN8sfwXqEvGVjD7Yomqba8AgjelOo2nceT7mo8NXj7X1HbWg/viewform?usp=publish-editor',
         inquiries: ``,
-		display: true,
+        display: true,
     },
     {
-		program: 'aquaplanet',
-		title: '아쿠아플라넷',
-		subtitle: '제주를 담은 월드클래스 아쿠아리움',
-		description: `
+        program: 'aquaplanet',
+        title: '아쿠아플라넷',
+        subtitle: '제주를 담은 월드클래스 아쿠아리움',
+        description: `
         제주 바다를 그대로 옮겨놓은 듯한 특별한 해양 공간, 아쿠아플라넷 제주를 만나 보세요.<br />
         대형 수조를 가득 채운 다양한 해양 생물을 가까이에서 관람할 수 있습니다.<br />
         <br />
         눈앞을 유영하는 상어와 가오리 등 생생한 바닷속 풍경으로 아이와 함께하는 가족여행부터 연인, 친구와의 제주여행 코스로도 추천합니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
-			'/api/editor/attach/view/default/2026/09/HtnfB1YA1toAnYdeNE7u_1_',
-			'/api/editor/attach/view/default/2026/09/fWtJFlGI3nES5xqEGa9b_1_',
-			'/api/editor/attach/view/default/2026/09/wvAlO4sNLfsAgzs65UJp_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: ``,
-		duration: `09:30 ~ 18:00`,
-		priceGeneral: `
+        thumbnail: '/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/R8p3JRqIfyb3esnwyB3c_1_',
+            '/api/editor/attach/view/default/2026/09/HtnfB1YA1toAnYdeNE7u_1_',
+            '/api/editor/attach/view/default/2026/09/fWtJFlGI3nES5xqEGa9b_1_',
+            '/api/editor/attach/view/default/2026/09/wvAlO4sNLfsAgzs65UJp_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `09:30 ~ 18:00`,
+        priceGeneral: `
         대인 45,500원<br />
         청소년 43,600원<br />
         어린이 41,400원<br />
         경로 43,600원
         `,
-		priceGuest: `20% 할인`,
-		information: `
+        priceGuest: `20% 할인`,
+        information: `
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 섭지코지로 95, 아쿠아플라넷 제주<br />
         (휘닉스 아일랜드에서 차량으로 약 1분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>별도의 사전 예약 없이 이용 가능하며, 아쿠아플라넷 제주 매표소 방문 시 투숙 내역을 제시하시면 할인 혜택이 적용됩니다.</li>
             <li>타 할인 및 혜택과 중복 적용되지 않습니다.</li>
         </ul>
         `,
-		reservation: false,
+        reservation: false,
         inquiries: `아쿠아플라넷 제주 <a href="tel:18337001">1833-7001</a>`,
-		display: true,
+        display: true,
     },
     {
-		program: 'snoopygarden',
-		title: '스누피가든',
-		subtitle: '제주의 자연 속에서 피너츠 친구들을 만날 수 있는 특별한 공간',
-		description: `
+        program: 'snoopygarden',
+        title: '스누피가든',
+        subtitle: '제주의 자연 속에서 피너츠 친구들을 만날 수 있는 특별한 공간',
+        description: `
         제주의 자연 속에서 피너츠 친구들을 만날 수 있는 특별한 공간, 스누피가든을 만나 보세요.<br />
         스누피와 찰리 브라운 등 사랑스러운 캐릭터와 함께 다양한 테마 공간을 둘러볼 수 있습니다.<br />
         <br />
@@ -94,45 +131,45 @@ const activities = [
         곳곳에 마련된 캐릭터 조형물과 포토존에서 특별한 제주 여행의 추억을 남겨보며,<br />
         계절마다 달라지는 자연 풍경과 피너츠의 감성을 함께 즐겨 보세요.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
-			'/api/editor/attach/view/default/2026/09/PL5W55SESXrSjTAnyoQK_1_',
-			'/api/editor/attach/view/default/2026/09/1F91LKnwYwSuMN8gS9QH_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: ``,
-		duration: `
+        thumbnail: '/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_',
+            '/api/editor/attach/view/default/2026/09/PL5W55SESXrSjTAnyoQK_1_',
+            '/api/editor/attach/view/default/2026/09/1F91LKnwYwSuMN8gS9QH_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `
         하절기(4 ~ 9월): 09:00 ~ 19:00(입장 마감 18:00)<br />
         동절기(10 ~ 3월): 09:00 ~ 18:00(입장 마감 17:00)
         `,
-		priceGeneral: `
+        priceGeneral: `
         성인 19,000원<br />
         청소년 16,000원<br />
         어린이 13,000원
         `,
-		priceGuest: `20% 할인`,
-		information: `
+        priceGuest: `20% 할인`,
+        information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 구좌읍 금백조로 916<br />
         (휘닉스 아일랜드에서 차량으로 약 20분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>별도의 사전 예약 없이 이용 가능하며, 할인 쿠폰은 프론트에 비치되어 있습니다.(소진 시 혜택 적용이 불가할 수 있습니다.)</li>
             <li>타 할인 및 혜택과 중복 적용되지 않습니다.</li>
         </ul>
         `,
-		reservation: false,
+        reservation: false,
         inquiries: `스누피가든 <a href="tel:0648051118">064-805-1118</a>`,
-		display: true,
+        display: true,
     },
     {
-		program: 'traveler-pt',
-		title: '여행자 PT',
-		subtitle: '관장 직접 지도 개인레슨 전문으로 올바른 웨이트 트레이닝 클래스',
-		description: `
+        program: 'traveler-pt',
+        title: '여행자 PT',
+        subtitle: '관장 직접 지도 개인레슨 전문으로 올바른 웨이트 트레이닝 클래스',
+        description: `
         성산일출봉 보면서 천국의 계단 어때요?<br />
         <br />
         제주 성산에 위치한 개인레슨 전문 PT 프로그램으로 관장이 직접 지도하며 웨이트 트레이닝을 중심으로 진행합니다.<br />
@@ -141,39 +178,39 @@ const activities = [
         운동 초보자도 기초부터 차근차근 배우실 수 있습니다.<br />
         올바른 운동 방법과 꾸준한 운동 습관을 만들어드립니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
-			'/api/editor/attach/view/default/2026/09/g4zgEx63Na5EvylB3cSJ_1_',
-			'/api/editor/attach/view/default/2026/09/FGLjKVVozcHBRTlzKIwK_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: `평일 운영`,
-		duration: `08:00`,
-		priceGeneral: `29,000원`,
-		priceGuest: `20,000원`,
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/OL8MeM7KOguRy8mNO108_1_',
+            '/api/editor/attach/view/default/2026/09/g4zgEx63Na5EvylB3cSJ_1_',
+            '/api/editor/attach/view/default/2026/09/FGLjKVVozcHBRTlzKIwK_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: `평일 운영`,
+        duration: `08:00`,
+        priceGeneral: `29,000원`,
+        priceGuest: `20,000원`,
+        information: `
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 일출로 18, 3층<br />
         (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
         <p class="ref-bu-list">※ 실내 운동화 필수 지참</p>
         <p class="ref-bu-list">※ 주차 이용 시 성산보건지소(제주 서귀포시 성산읍 고성오조로 42)</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>예약 확정 이후 이용 요금 결제 완료 시 최종 예약이 완료됩니다.</li>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdUouyKsSC2mcsx2Toy0Wr9KVSGW5yyWraL00VuzT2J4UJTzQ/viewform?usp=publish-editor',
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdUouyKsSC2mcsx2Toy0Wr9KVSGW5yyWraL00VuzT2J4UJTzQ/viewform?usp=publish-editor',
         inquiries: ``,
-		display: true,
+        display: true,
     },
     {
-		program: 'jeju-snap',
-		title: '제주 한 장, 감성 스냅',
-		subtitle: '제주 감성 가득한 사진관·돌담·바다 중 원하는 장소를 선택해 특별한 순간을 사진으로 남겨 보세요.',
-		description: `
+        program: 'jeju-snap',
+        title: '제주 한 장, 감성 스냅',
+        subtitle: '제주 감성 가득한 사진관·돌담·바다 중 원하는 장소를 선택해 특별한 순간을 사진으로 남겨 보세요.',
+        description: `
         제주의 감성을 담아 특별한 순간을 사진으로 남겨 보세요.<br />
         <br />
         서까래와 돌담이 어우러진 감성적인 사진관부터 제주 돌담이 있는 앞마당, 섭지코지 바다가 보이는 포구까지!<br />
@@ -182,19 +219,19 @@ const activities = [
         <br />
         여행의 순간을 오래 간직할 수 있는 특별한 사진으로 남겨 보세요.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
-			'/api/editor/attach/view/default/2026/09/iQgK0K7N0EHa2wPqfxOk_1_',
-			'/api/editor/attach/view/default/2026/09/AOP8pu5DdYYiMVZZLBUf_1_',
-			'/api/editor/attach/view/default/2026/09/v9CE5E81DaYQNLGi6wid_1_',
-			'/api/editor/attach/view/default/2026/09/6pPKaCqCYtuucx9zrLZP_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: `매일 운영(수요일 제외)`,
-		duration: `11:00 ~ 17:00`,
-		priceGeneral: `
+        thumbnail: '/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/WeAHp6on5QOlzpqJ0UOG_1_',
+            '/api/editor/attach/view/default/2026/09/iQgK0K7N0EHa2wPqfxOk_1_',
+            '/api/editor/attach/view/default/2026/09/AOP8pu5DdYYiMVZZLBUf_1_',
+            '/api/editor/attach/view/default/2026/09/v9CE5E81DaYQNLGi6wid_1_',
+            '/api/editor/attach/view/default/2026/09/6pPKaCqCYtuucx9zrLZP_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: `매일 운영(수요일 제외)`,
+        duration: `11:00 ~ 17:00`,
+        priceGeneral: `
         1 ~ 2인: 25,000원<br />
         반려동물과 1인: 25,000원<br />
         3인: 75,000원<br />
@@ -202,8 +239,8 @@ const activities = [
         출장 촬영: 150,000원<br />
         드론 영상(40초 내외): 40,000원
         `,
-		priceGuest: `정상 요금 기준 5,000원 할인`,
-		information: `
+        priceGuest: `정상 요금 기준 5,000원 할인`,
+        information: `
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 환해장성로 941, 꿀꺽사진관<br />
         (휘닉스 아일랜드에서 차량으로 약 3분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
@@ -212,120 +249,120 @@ const activities = [
         출장 촬영 후 원하는 사진 2장을 셀렉하여 인화본 2장을 제공합니다.</p>
         <p class="ref-bu-list">※ 드론 촬영은 섭지코지 바다를 배경으로 약 40초 분량의 영상으로 제작되며, 촬영한 드론 영상은 원본 파일로 제공해 드립니다.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>당일 예약 불가(최소 1일 전까지 예약 가능)</li>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScoLvv1O_JRHA7WcPlGY06-wx0mMLKfn11yCepllGm5keFtGA/viewform?usp=dialog',
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScoLvv1O_JRHA7WcPlGY06-wx0mMLKfn11yCepllGm5keFtGA/viewform?usp=dialog',
         inquiries: ``,
-		display: true,
+        display: true,
     },
     {
-		program: 'arte-kids-park',
-		title: '아르떼 키즈 파크 제주',
-		subtitle: '환상적인 자연 속에서의 즐거운 놀이 세상',
-		description: `
+        program: 'arte-kids-park',
+        title: '아르떼 키즈 파크 제주',
+        subtitle: '환상적인 자연 속에서의 즐거운 놀이 세상',
+        description: `
         전 세계 천만 명 이상이 관람한 아르떼 뮤지엄(ARTE MUSEUM)이 선보이는 체험형 미디어 아트 놀이터입니다.<br />
         아이들이 마음껏 뛰어놀 수 있는 놀이 공간과 미디어 아트 전시 공간, 그리고 가족 모두를 위한 프로그램이 마련되어 있습니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/0qZpFDMh8hVwh5D6NtZb_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/0qZpFDMh8hVwh5D6NtZb_1_',
-			'/api/editor/attach/view/default/2026/09/Ya3xB6RMh3QcJ7mIhnhO_1_',
-			'/api/editor/attach/view/default/2026/09/gLm32h4RmSjJwxxzqjYL_1_',
-			'/api/editor/attach/view/default/2026/09/kfhNq4KbtYkMpX6gkXy7_1_',
-			'/api/editor/attach/view/default/2026/09/weRpjypFl9tpq8sZrARa_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: ``,
-		duration: `10:00 ~ 19:00`,
-		priceGeneral: `
+        thumbnail: '/api/editor/attach/view/default/2026/09/0qZpFDMh8hVwh5D6NtZb_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/0qZpFDMh8hVwh5D6NtZb_1_',
+            '/api/editor/attach/view/default/2026/09/Ya3xB6RMh3QcJ7mIhnhO_1_',
+            '/api/editor/attach/view/default/2026/09/gLm32h4RmSjJwxxzqjYL_1_',
+            '/api/editor/attach/view/default/2026/09/kfhNq4KbtYkMpX6gkXy7_1_',
+            '/api/editor/attach/view/default/2026/09/weRpjypFl9tpq8sZrARa_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `10:00 ~ 19:00`,
+        priceGeneral: `
         평일: 25,000원/주말&공휴일: 30,000원<br />
         2시간 이용권(12개월 ~ 13세 이하)
         `,
-		priceGuest: `20% 할인`,
-		information: `
+        priceGuest: `20% 할인`,
+        information: `
         <p class="ref-bu-list">※ 장소: 제주시 애월읍 월각로 929<br />
         (휘닉스 아일랜드에서 차량으로 약 1시간 20분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>별도의 사전 예약 없이 이용 가능하며, 할인 쿠폰은 프론트에 비치되어 있습니다.</li>
             <li>본 할인권은 최대 4인까지 적용 가능하며, 타 할인 및 혜택과 중복 적용되지 않습니다.</li>
             <li>본 할인권은 아르떼 키즈 파크 제주에서만 사용 가능합니다.</li>
         </ul>
         `,
-		reservation: false,
+        reservation: false,
         inquiries: `아르떼 키즈 파크 제주 <a href="tel:0647997007">064-799-7007</a>`,
-		display: true,
+        display: true,
     },
     {
-		program: 'arte-museum',
-		title: '아르떼 뮤지엄 제주',
-		subtitle: '국내 최대 규모의 몰입형 미디어 아트 전시관',
-		description: `
+        program: 'arte-museum',
+        title: '아르떼 뮤지엄 제주',
+        subtitle: '국내 최대 규모의 몰입형 미디어 아트 전시관',
+        description: `
         빛과 소리, 향기로 제주의 감성을 표현한 국내 최대 규모의 몰입형 미디어아트 전시관입니다.<br />
         약 1,400평의 넓은 공간에서 펼쳐지는 16개의 다채로운 미디어아트를 감상하며 아르떼 뮤지엄만의 압도적인 몰입감을 경험해 보세요.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/PEnbkWjB0mPFpc1yB1QY_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/PEnbkWjB0mPFpc1yB1QY_1_',
-			'/api/editor/attach/view/default/2026/09/rlQ3XwCRcl5aiRrpz3Zh_1_',
-			'/api/editor/attach/view/default/2026/09/N9XpA1VqBCwe2p6qB6JM_1_',
-			'/api/editor/attach/view/default/2026/09/wqfu2CH1nJBQlpRRuUtx_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: ``,
-		duration: `10:00 ~ 20:00(19:00 입장 마감)`,
-		priceGeneral: `
+        thumbnail: '/api/editor/attach/view/default/2026/09/PEnbkWjB0mPFpc1yB1QY_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/PEnbkWjB0mPFpc1yB1QY_1_',
+            '/api/editor/attach/view/default/2026/09/rlQ3XwCRcl5aiRrpz3Zh_1_',
+            '/api/editor/attach/view/default/2026/09/N9XpA1VqBCwe2p6qB6JM_1_',
+            '/api/editor/attach/view/default/2026/09/wqfu2CH1nJBQlpRRuUtx_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `10:00 ~ 20:00(19:00 입장 마감)`,
+        priceGeneral: `
         성인(63 ~ 07년생) 18,000원<br />
         청소년(08 ~ 13년생) 14,000원<br />
         어린이(14 ~ 19년생) 11,000원
         `,
-		priceGuest: `20% 할인`,
-		information: `
+        priceGuest: `20% 할인`,
+        information: `
         <p class="ref-bu-list">※ 장소: 제주시 애월읍 어림비로 478<br />
         (휘닉스 아일랜드에서 차량으로 약 1시간 20분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>별도의 사전 예약 없이 이용 가능하며, 할인 쿠폰은 프론트에 비치되어 있습니다.</li>
             <li>본 할인권은 최대 4인까지 적용 가능하며, 타 할인 및 혜택과 중복 적용되지 않습니다.</li>
             <li>본 할인권은 아르떼 뮤지엄 제주에서만 사용 가능합니다.</li>
         </ul>
         `,
-		reservation: false,
+        reservation: false,
         inquiries: `아르떼 뮤지엄 제주 <a href="tel:0647997007">064-799-7007</a>`,
-		display: true,
+        display: true,
     },
     {
-		program: 'starlight-oreum',
-		title: '별빛 오름 투어',
-		subtitle: '제주의 밤을 가장 가까이 만나는 시간',
-		description: `
+        program: 'starlight-oreum',
+        title: '별빛 오름 투어',
+        subtitle: '제주의 밤을 가장 가까이 만나는 시간',
+        description: `
         제주의 밤, 전문 가이드와 함께 오름에 올라 밤하늘을 가득 채운 별을 감상하는 야간 트레킹 프로그램입니다.<br />
         그날의 날씨와 별 관측 환경을 고려해 제주 동쪽 지역의 오름 중 적합한 장소를 선정하여 진행합니다.<br />
         <br />
         가이드와 함께 안전하게 오름을 걸으며 낮과는 또 다른 제주의 풍경을 만나고, 별빛 아래에서 특별한 추억을 남겨 보세요.<br />
         트레킹 중에는 가이드가 별과 함께하는 순간을 사진으로 촬영해 드립니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
-			'/api/editor/attach/view/default/2026/09/sDLnIQdzyNPfL1j9IqAB_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: ``,
-		duration: `20:00 ~ 22:00 사이 출발`,
-		priceGeneral: `50,000원`,
-		priceGuest: `40,000원`,
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_',
+            '/api/editor/attach/view/default/2026/09/sDLnIQdzyNPfL1j9IqAB_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `20:00 ~ 22:00 사이 출발`,
+        priceGeneral: `50,000원`,
+        priceGuest: `40,000원`,
+        information: `
         <p class="ref-bu-list">※ 소요 시간: 약 120분</p>
         <p class="ref-bu-list">※ 자세한 운영 시간은 예약 확정 시 당일 상황에 따라 안내드립니다.</p>
         <p class="ref-bu-list">※ 당일 날씨 및 기상 상황에 따라 가장 적합한 오름을 선정하여 진행합니다.</p>
@@ -333,7 +370,7 @@ const activities = [
         (휘닉스 아일랜드에서 차량으로 약 8분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 집결 장소까지는 개별 이동 이후, 가이드분이 운전하여 당일 기상 및 별 관측 환경에 따라 선정된 제주 동쪽 지역의 오름으로 함께 이동하여 프로그램을 진행합니다.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
             <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
@@ -346,37 +383,37 @@ const activities = [
             </div>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeFp70MPCLGRpMV-VDn6W67tEPMzZ8TLonwaZyDb8Ktjjvohg/viewform?usp=publish-editor',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeFp70MPCLGRpMV-VDn6W67tEPMzZ8TLonwaZyDb8Ktjjvohg/viewform?usp=publish-editor',
+        display: true,
     },
     {
-		program: 'forest-experience',
-		title: '제주 숲 체험',
-		subtitle: '제주 숲을 걸으며 자연과 생태에 숨겨진 이야기를 만나보는 숲 해설',
-		description: `
+        program: 'forest-experience',
+        title: '제주 숲 체험',
+        subtitle: '제주 숲을 걸으며 자연과 생태에 숨겨진 이야기를 만나보는 숲 해설',
+        description: `
         숲 해설 전문가와 초록숲 지그리 또는 사려니숲길을 따라 걸으며 자연에 숨겨진 이야기를 듣는 시간입니다.<br />
         맑은 공기를 느끼며 제주의 생태, 숲에 담긴 재미있는 이야기까지 함께 만나볼 수 있습니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/09/7zkhlz03ciOPFiLmIn8C_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/7zkhlz03ciOPFiLmIn8C_1_',
-			'/api/editor/attach/view/default/2026/09/JhVlpdFLn0ReUWhR7FIp_1_',
-			'/api/editor/attach/view/default/2026/09/1OnZABhiMvOijPeb3dwj_1_',
-			'/api/editor/attach/view/default/2026/09/O5FdP2Ur6R4gEuz5ieW4_1_',
-			'/api/editor/attach/view/default/2026/09/ovDNoPKSsmKpNvxPczGy_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: ``,
-		duration: `09:00 ~ 18:00`,
-		priceGeneral: `50,000원`,
-		priceGuest: `40,000원`,
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/09/7zkhlz03ciOPFiLmIn8C_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/7zkhlz03ciOPFiLmIn8C_1_',
+            '/api/editor/attach/view/default/2026/09/JhVlpdFLn0ReUWhR7FIp_1_',
+            '/api/editor/attach/view/default/2026/09/1OnZABhiMvOijPeb3dwj_1_',
+            '/api/editor/attach/view/default/2026/09/O5FdP2Ur6R4gEuz5ieW4_1_',
+            '/api/editor/attach/view/default/2026/09/ovDNoPKSsmKpNvxPczGy_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `09:00 ~ 18:00`,
+        priceGeneral: `50,000원`,
+        priceGuest: `40,000원`,
+        information: `
         <p class="ref-bu-list">※ 소요 시간: 약 120분</p>
         <p class="ref-bu-list">※ 예약 접수 후 가이드와의 유선 미팅을 통해 당일 기상 상황에 적합한 체험 장소를 선정하며, 안내받은 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 흙길 위주로 진행되는 프로그램으로 편안한 복장과 운동화 착용을 권장드립니다.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
             <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
@@ -389,14 +426,14 @@ const activities = [
             </div>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeYqiy1gv0ZkUIaWE6SKDL9c7ltNs7s4MDR1xkpQBXwzeTcEw/viewform?usp=publish-editor',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeYqiy1gv0ZkUIaWE6SKDL9c7ltNs7s4MDR1xkpQBXwzeTcEw/viewform?usp=publish-editor',
+        display: true,
     },
     {
-		program: 'yacht-tour',
-		title: '김녕에서의 요트 투어',
-		subtitle: '짜릿한 바다 낚시 체험, 운이 좋으면 돌고래를 만나는 특별한 순간까지!',
-		description: `
+        program: 'yacht-tour',
+        title: '김녕에서의 요트 투어',
+        subtitle: '짜릿한 바다 낚시 체험, 운이 좋으면 돌고래를 만나는 특별한 순간까지!',
+        description: `
         에메랄드빛 김녕 해상 풍차 마을을 배경으로 떠나는 특별한 요트 투어!<br />
         시원한 바닷바람을 맞으며 여유로운 세일링을 즐기고,약 15 ~ 20분간 진행되는 바다 낚시 체험으로 제주 바다의 또 다른 매력을 경험해 보세요.<br />
         <br />
@@ -405,25 +442,25 @@ const activities = [
         눈앞에 펼쳐지는 에메랄드빛 바다와 풍차가 어우러진 풍경 속에서 제주에서만 가능한 특별한 추억을 만들어 보세요.<br />
         <p class="ref-bu-list">※ 돌고래는 야생 동물이므로 출현 여부는 당일 해상 및 기상 상황에 따라 달라질 수 있습니다.</p>
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
-			'/api/editor/attach/view/default/2026/07/hPCeB1a4OtvkyLYm1jpl_1_',
-			'/api/editor/attach/view/default/2026/07/sAkf6QEqghhl9ufuOALl_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:00 ~ 17:00',
-		priceGeneral: `
+        thumbnail: '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/07/R94gh4KtRoEE2zK33I0I_1_',
+            '/api/editor/attach/view/default/2026/07/hPCeB1a4OtvkyLYm1jpl_1_',
+            '/api/editor/attach/view/default/2026/07/sAkf6QEqghhl9ufuOALl_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: `
 		성인 60,000원<br />
 		소인 40,000원
 		`,
-		priceGuest: `
+        priceGuest: `
 		성인 45,000원<br />
 		소인 33,000원
 		`,
-		information: `
+        information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 구좌읍 구좌해안로 229-16<br />
         (휘닉스 아일랜드에서 차량으로 약 35분 소요)</p>
 		<p class="ref-bu-list">※ 소인 기준: 37개월 ~ 13세</p>
@@ -436,7 +473,7 @@ const activities = [
         예약 후 반려동물 동반 여부를 반드시 사전에 알려주시기 바랍니다.</p>
         <p class="ref-bu-list">※ 현장에서는 멀미약이 제공되지 않습니다. 멀미가 걱정되시는 분은 출발 전 미리 준비하여 복용해 주시기 바랍니다.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
             <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
@@ -451,56 +488,56 @@ const activities = [
             </div>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeKoP36h8vjLEWOQgJlhzd22cIJdCsNckfQ2W3DPURF_wy0_w/viewform?usp=publish-editor',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeKoP36h8vjLEWOQgJlhzd22cIJdCsNckfQ2W3DPURF_wy0_w/viewform?usp=publish-editor',
+        display: true,
     },
     {
-		program: 'fitness-day-pass',
-		title: '피트니스 1일 이용',
-		subtitle: '성산에서 최다 머신들로 갖춰진 무인 헬스장',
-		description: `
+        program: 'fitness-day-pass',
+        title: '피트니스 1일 이용',
+        subtitle: '성산에서 최다 머신들로 갖춰진 무인 헬스장',
+        description: `
         제주 성산 최대 규모의 단독 1층 프리미엄 헬스장, 성산짐입니다.<br />
         성산 지역에서 다양한 머신을 갖춘 헬스장으로, 웨이트 트레이닝을 즐기는 분들부터 체계적인 운동을 원하는 분들까지<br />
         '1일 이용권'으로 편하게 이용하실 수 있습니다.<br />
         <br />
         365일 연중무휴, 24시간 무인 시스템으로 운영되어 시간에 구애받지 않고 개인 헬스장처럼 여유롭게 운동해 보세요.
         `,
-		thumbnail:'/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
-			'/api/editor/attach/view/default/2026/09/AM3mbl74r9M0CVKgFuX7_1_',
-			'/api/editor/attach/view/default/2026/09/nlFjkkoBU7jM2DsjXY8Z_1_',
-			'/api/editor/attach/view/default/2026/09/3PvWHufvYBQKgBf080no_1_',
-			'/api/editor/attach/view/default/2026/09/j4116ENiABeAFSSPGISV_1_',
-			'/api/editor/attach/view/default/2026/09/0uToerpPIwF2bCsSEjwf_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: ``,
-		duration: `00:00 ~ 24:00`,
-		priceGeneral: `20,000원`,
-		priceGuest: `15,000원`,
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_',
+            '/api/editor/attach/view/default/2026/09/AM3mbl74r9M0CVKgFuX7_1_',
+            '/api/editor/attach/view/default/2026/09/nlFjkkoBU7jM2DsjXY8Z_1_',
+            '/api/editor/attach/view/default/2026/09/3PvWHufvYBQKgBf080no_1_',
+            '/api/editor/attach/view/default/2026/09/j4116ENiABeAFSSPGISV_1_',
+            '/api/editor/attach/view/default/2026/09/0uToerpPIwF2bCsSEjwf_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `00:00 ~ 24:00`,
+        priceGeneral: `20,000원`,
+        priceGuest: `15,000원`,
+        information: `
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 성산중앙로 31, 1층<br />
         (휘닉스 아일랜드에서 차량으로 약 8분 소요)</p>
         <p class="ref-bu-list">※ 24시간 무인 시스템으로 운영되는 헬스장으로 별도의 샤워 시설은 마련되어 있지 않습니다.</p>
         <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>별도의 사전 예약 없이 이용 가능하며, 휘닉스 아일랜드 투숙 내역을 증빙하여 방문 시 전용 혜택을 받으실 수 있습니다.</li>
             <li>주차 무료</li>
         </ul>
         `,
-		reservation: false,
+        reservation: false,
         inquiries: `성산짐 <a href="tel:050713419372">0507-1341-9372</a>`,
-		display: true,
+        display: true,
     },
     {
-		program: 'makgeolli-making',
-		title: '찹쌀 막걸리 빚기&전통주 시음',
-		subtitle: '직접 찹쌀 막걸리를 빚고, 다양한 전통주를 맛볼 수 있는 시간',
-		description: `
+        program: 'makgeolli-making',
+        title: '찹쌀 막걸리 빚기&전통주 시음',
+        subtitle: '직접 찹쌀 막걸리를 빚고, 다양한 전통주를 맛볼 수 있는 시간',
+        description: `
         전통주에 대해 배우고 직접 찹쌀 막걸리를 빚어보는 체험 프로그램입니다.<br />
 		키위술, 맑은바당, 한바당으로 유명한 제주 로컬 양조장 '술도가제주바당'과 함께 막걸리가 만들어지는 과정을 배우고, 직접 나만의 찹쌀 막걸리를 빚어봅니다.<br />
 		다양한 양조장 술을 시음하며 우리 술이 가진 다채로운 맛과 향도 경험해 보세요.<br />
@@ -513,36 +550,36 @@ const activities = [
         찹쌀 막걸리 빚기와 소주 증류 과정을 함께 체험하고, 양조장 술 6종과 저녁 식사를 즐기는 보다 깊이 있는 프로그램입니다.<br />
         직접 만든 막걸리와 면 보자기, 누룩 200g, 오리지널 소주 1병이 제공됩니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
-			'/api/editor/attach/view/default/2026/08/JvT9mdK9C1LqhE1PlwEv_1_',
-			'/api/editor/attach/view/default/2026/08/CJaUQsBZKnDzg5GerQ04_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: `
+        thumbnail: '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/08/je24hxH11ZOwWNiZjXiE_1_',
+            '/api/editor/attach/view/default/2026/08/JvT9mdK9C1LqhE1PlwEv_1_',
+            '/api/editor/attach/view/default/2026/08/CJaUQsBZKnDzg5GerQ04_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: `
         A: 목 ~ 화<br />
         B: 금 ~ 월
         `,
-		duration: `
+        duration: `
         A: 13:30 ~ 14:30<br />
         B: 16:00 ~ 18:00
         `,
-		priceGeneral: `
+        priceGeneral: `
         A: 1인 29,000원<br />
         B: 1인 55,000원
         `,
-		priceGuest: `
+        priceGuest: `
         A: 1인 27,000원<br />
         B: 1인 52,000원
         `,
-		information: `
+        information: `
         <p class="ref-bu-list">※ 장소: 제주 제주시 구좌읍 한동로 27 1층<br />
         (휘닉스 아일랜드에서 차량으로 약 25분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
             <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
@@ -555,41 +592,41 @@ const activities = [
             </div>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe-UwiMp8M7eEfc4SXcNsxIGh4hD4v7XMqj379DXKm3zQEQ_w/viewform?usp=header',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe-UwiMp8M7eEfc4SXcNsxIGh4hD4v7XMqj379DXKm3zQEQ_w/viewform?usp=header',
+        display: true,
     },
     {
-		program: 'wing-surfing',
-		title: '윙 서핑',
-		subtitle: '제주의 아름다운 해안에서 윙 포일링의 기술을 마스터하세요!',
-		description: `
+        program: 'wing-surfing',
+        title: '윙 서핑',
+        subtitle: '제주의 아름다운 해안에서 윙 포일링의 기술을 마스터하세요!',
+        description: `
         제주 바다에서 즐기는 윙 포일링 프라이빗 레슨입니다.<br />
         초보자부터 실력 향상을 원하는 분까지 수준에 맞춘 2시간 맞춤 강습으로 진행되며, 필요한 장비는 모두 제공됩니다.<br />
         당일 바람과 조류에 따라 최적의 해변에서 진행되어 안전하고 즐겁게 윙 포일링을 경험할 수 있습니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
-			'/api/editor/attach/view/default/2026/08/2AE83MGdLdnl5hRKRKMF_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '09:00 ~ 18:00',
-		priceGeneral: `
+        thumbnail: '/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/08/VbnoicmnTEhBXKRxkwIa_1_',
+            '/api/editor/attach/view/default/2026/08/2AE83MGdLdnl5hRKRKMF_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '09:00 ~ 18:00',
+        priceGeneral: `
         150,000원<br />
         (2시간/장비 대여료 포함)
         `,
-		priceGuest: `
+        priceGuest: `
         135,000원<br />
         (2시간/장비 대여료 포함)
         `,
-		information: `
+        information: `
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 환해장성로 923<br />
         (휘닉스 아일랜드에서 차량으로 약 4분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
             <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
@@ -603,14 +640,14 @@ const activities = [
             </div>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdiOkPW8VAXjVNJ8WL_fGXVzWSYnQKRirbTcsUXQIf-SpzT3g/viewform?usp=publish-editor',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdiOkPW8VAXjVNJ8WL_fGXVzWSYnQKRirbTcsUXQIf-SpzT3g/viewform?usp=publish-editor',
+        display: true,
     },
     {
-		program: 'kitesurfing',
-		title: '카이트서핑',
-		subtitle: '바람을 타고 바다 위를 질주하는 특별한 액티비티!',
-		description: `
+        program: 'kitesurfing',
+        title: '카이트서핑',
+        subtitle: '바람을 타고 바다 위를 질주하는 특별한 액티비티!',
+        description: `
         제주의 푸른 바다와 시원한 바람을 온몸으로 느끼는 특별한 해양 스포츠<br />
         IKO(국제카이트보딩기구) 공인 강사와 함께하는 카이트서핑을 처음 접하는 분들을 위한 원데이 레슨부터,<br />
         기본기를 갖춘 라이더를 위한 1시간 레슨까지 실력에 맞는 프로그램을 선택해 즐길 수 있습니다.<br />
@@ -621,29 +658,29 @@ const activities = [
         1시간 레슨은 기본적인 카이트 컨트롤이 가능한 참가자를 대상으로 진행되며,<br />
         라이딩 기술을 보완하고 더욱 자유롭고 역동적인 카이트서핑을 즐길 수 있도록 구성되어 있습니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_',
-			'/api/editor/attach/view/default/2026/07/dGkT6E7lMtWgszB0yyi3_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '09:00 ~ 18:00',
-		priceGeneral: `
+        thumbnail: '/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/07/M16op1Os106QrWBpwss4_1_',
+            '/api/editor/attach/view/default/2026/07/dGkT6E7lMtWgszB0yyi3_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '09:00 ~ 18:00',
+        priceGeneral: `
         원데이 325,000원(장비 대여료 포함)<br />
         1시간 100,000원(장비 대여료 별도)
         `,
-		priceGuest: `
+        priceGuest: `
         원데이 292,500원(장비 대여료 포함)<br />
         1시간 90,000원(장비 대여료 별도)
         `,
-		information: `
+        information: `
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 환해장성로 923<br />
         (휘닉스 아일랜드에서 차량으로 약 4분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해주셔야 합니다.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
             <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
@@ -657,37 +694,37 @@ const activities = [
             </div>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSd9i_sZCaSV23tYKcyZQAiOVYQVFDhTts5IH_dSYEL2OPP1hA/viewform?usp=publish',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSd9i_sZCaSV23tYKcyZQAiOVYQVFDhTts5IH_dSYEL2OPP1hA/viewform?usp=publish',
+        display: true,
     },
     {
-		program: 'scuba-diving',
-		title: '스쿠버 다이빙 체험',
-		subtitle: '성산일출봉을 바라보며 바다로 입수하는 짜릿한 경험',
-		description: `
+        program: 'scuba-diving',
+        title: '스쿠버 다이빙 체험',
+        subtitle: '성산일출봉을 바라보며 바다로 입수하는 짜릿한 경험',
+        description: `
         스쿠버 다이빙은 이동 동선에 따라 때로는 불필요하게 느낄 수 있는 육체적 시간적 에너지의 소모를 동반합니다.<br />
         성산일출봉을 바라보며 바다로 입수하는 짜릿한 경험은 또 하나의 즐거움입니다.<br />
         성산일출봉의 수중 세계를 경험하고 바다 생물들과 함께할 수 있는 기회, 도전하세요!
         `,
-		thumbnail: '/images/ko/activity/playcecamp/outdoor/out-scuba-diving-idx01.jpg',
-		heroImage: [
-			'/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-1.jpg',
-			'/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-2.jpg',
-			'/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-3.jpg'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '09:00, 11:00, 14:00, 15:30(2시간)',
-		priceGeneral: '150,000원',
-		priceGuest: '69,000원',
-		information: `
+        thumbnail: '/images/ko/activity/playcecamp/outdoor/out-scuba-diving-idx01.jpg',
+        heroImage: [
+            '/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-1.jpg',
+            '/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-2.jpg',
+            '/images/ko/activity/playcecamp/outdoor/out-scuba-diving06-3.jpg'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '09:00, 11:00, 14:00, 15:30(2시간)',
+        priceGeneral: '150,000원',
+        priceGuest: '69,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 성산리 143-4, 성산스쿠버<br />
         (휘닉스 아일랜드에서 차량으로 약 10분 소요)</p>
         <p class="ref-bu-list">※ 제공 항목: 스킨 스쿠버 다이빙 장비, 수건, 샤워 용품(샴푸, 린스, 바디 워시, 비누), 샤워장 완비</p>
         <p class="ref-bu-list">※ 개인 준비물: 비치 웨어(래시 가드 상/하의 or 워터 파크 반바지 or 수영복), 개인 세면 도구, 여벌 옷</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>액티비티 프로그램은 사전 예약제로 운영됩니다.</li>
             <li>투숙객 할인은 프로그램 참여 당일 현장에서 객실 카드 또는 예약 확정 문자로 확인합니다.</li>
@@ -707,38 +744,38 @@ const activities = [
             </div>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfl2K0y_N0wLXg0UEtelRvoOzRtSoIHDRn0svw8Mw_wZTaKhQ/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfl2K0y_N0wLXg0UEtelRvoOzRtSoIHDRn0svw8Mw_wZTaKhQ/viewform',
+        display: true,
     },
     {
-		program: 'surfing-class',
-		title: '서핑 클래스',
-		subtitle: '처음이어도 즐거운 제주 서핑 체험',
-		description: `
+        program: 'surfing-class',
+        title: '서핑 클래스',
+        subtitle: '처음이어도 즐거운 제주 서핑 체험',
+        description: `
         푸른 제주 바다 위에서 짜릿한 서핑의 순간을 경험해 보세요.<br />
         전문 강사와 함께하는 체계적인 강습으로 처음 서핑을 접하는 분들도 부담 없이 즐길 수 있으며,<br />
         프로그램 예약 시 강습부터 웻슈트 대여, 샤워 시설까지 모두 포함되어 가볍게 몸만 와서 참여할 수 있습니다.<br />
         제주의 바람과 파도를 온몸으로 느끼며 여행 속 가장 시원한 순간을 만들어 보세요.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_',
-			'/api/editor/attach/view/default/2026/06/vLeWQGVIL7oRwIe4lYd1_1_',
-			'/api/editor/attach/view/default/2026/06/VtMg21Z66rMqk3tBuiMn_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:00 ~ 17:00',
-		priceGeneral: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/2Hs9YcmBYS3a3VJSDTQA_1_',
+            '/api/editor/attach/view/default/2026/06/vLeWQGVIL7oRwIe4lYd1_1_',
+            '/api/editor/attach/view/default/2026/06/VtMg21Z66rMqk3tBuiMn_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: `
         체험 강습(1시간): 50,000원<br />
         비기너 강습(1시간 30분 + 무제한 자유 서핑): 60,000원
         `,
-		priceGuest: `
+        priceGuest: `
         체험 강습(1시간): 50,000원<br />
         비기너 강습(1시간 30분 + 무제한 자유 서핑): 60,000원
         `,
-		information: `
+        information: `
         <p class="ref-bu-list">※ 투숙객 혜택: 웰컴 드링크 제공(커피 or 음료)</p>
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 환해장성로 945<br />
         (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
@@ -746,7 +783,7 @@ const activities = [
         <p class="ref-bu-list">※ 수업 중 촬영된 사진은 추후 홍보 콘텐츠로 활용될 수 있습니다. 촬영 및 활용을 원하지 않으시는 경우, 수업 시작 전 미리 말씀 부탁드립니다.</p>
         <p class="ref-bu-list">※ 주차는 가게 앞에 가능하며, 무료 주차입니다.</p>
         `,
-		notice: `
+        notice: `
         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
         <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
         <div class="common-txt">
@@ -757,26 +794,26 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSc1fUSdvlpACcjnZnPZwKzOOSTio2BYXcuvgJV7UsvwGjrgCg/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSc1fUSdvlpACcjnZnPZwKzOOSTio2BYXcuvgJV7UsvwGjrgCg/viewform',
+        display: true,
     },
     {
-		program: 'keyring-diy',
-		title: '키링 DIY',
-		subtitle: '제주 도안으로 만드는 특별한 아크릴 키링',
-		description: `
+        program: 'keyring-diy',
+        title: '키링 DIY',
+        subtitle: '제주 도안으로 만드는 특별한 아크릴 키링',
+        description: `
         제주의 색과 감성을 담아 나만의 제주 여행 감성이 깃든 키링을 만들어 보세요.<br />
         한라봉, 제주 말, 한라산, 조개, 동백꽃 등 제주를 닮은 다양한 도안 위에 나만의 취향과 색감을 더해 특별한 작품을 완성합니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
-		heroImage: '/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:00 ~ 17:00',
-		priceGeneral: '15,000원',
-		priceGuest: '15,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
+        heroImage: '/api/editor/attach/view/default/2026/06/XsdrBaCiUeOwzSKXtZyB_1_',
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: '15,000원',
+        priceGuest: '15,000원',
+        information: `
         <p class="ref-bu-list">※ 투숙객 혜택: 웰컴 드링크 제공(커피 or 음료)</p>
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 환해장성로 945<br />
         (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
@@ -784,7 +821,7 @@ const activities = [
         <p class="ref-bu-list">※ 수업 중 촬영된 사진은 추후 홍보 콘텐츠로 활용될 수 있습니다. 촬영 및 활용을 원하지 않으시는 경우, 수업 시작 전 미리 말씀 부탁드립니다.</p>
         <p class="ref-bu-list">※ 주차는 가게 앞에 가능하며, 무료 주차입니다.</p>
         `,
-		notice: `
+        notice: `
         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
         <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
         <div class="common-txt">
@@ -795,30 +832,30 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScoZX4ZZYuXtC2HAfuz4AthJMK1tfSajZOYR7d487Cz4CRdMg/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScoZX4ZZYuXtC2HAfuz4AthJMK1tfSajZOYR7d487Cz4CRdMg/viewform',
+        display: true,
     },
     {
-		program: 'bookmark-diy',
-		title: '책갈피 DIY',
-		subtitle: '제주 도안으로 완성하는 스테인드 책갈피',
-		description: `
+        program: 'bookmark-diy',
+        title: '책갈피 DIY',
+        subtitle: '제주 도안으로 완성하는 스테인드 책갈피',
+        description: `
         햇살 아래 은은하게 반짝이는 스테인드 글라스 감성의 책갈피를 만들어 보세요.<br />
         제주를 담은 다양한 도안과 컬러 아크릴을 조합해 세상에 하나뿐인 나만의 책갈피를 완성합니다.<br />
         책을 펼치는 순간마다 제주의 여행 기억과 감성이 함께 머무는 특별한 글라스아트 클래스를 경험해 보세요.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
-			'/api/editor/attach/view/default/2026/06/30su09CIE0F6GU3IXtSq_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:00 ~ 17:00',
-		priceGeneral: '15,000원',
-		priceGuest: '15,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/9tyD0WCFtU1pGkpIlslU_1_',
+            '/api/editor/attach/view/default/2026/06/30su09CIE0F6GU3IXtSq_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: '15,000원',
+        priceGuest: '15,000원',
+        information: `
         <p class="ref-bu-list">※ 투숙객 혜택: 웰컴 드링크 제공(커피 or 음료)</p>
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 환해장성로 945<br />
         (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
@@ -826,7 +863,7 @@ const activities = [
         <p class="ref-bu-list">※ 수업 중 촬영된 사진은 추후 홍보 콘텐츠로 활용될 수 있습니다. 촬영 및 활용을 원하지 않으시는 경우, 수업 시작 전 미리 말씀 부탁드립니다.</p>
         <p class="ref-bu-list">※ 주차는 가게 앞에 가능하며, 무료 주차입니다.</p>
         `,
-		notice: `
+        notice: `
         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
         <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
         <div class="common-txt">
@@ -837,29 +874,29 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdSHUxZxi1WaHKzsploaaEv6IOQyNSbt2LyriB6fSqDyMzqQw/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdSHUxZxi1WaHKzsploaaEv6IOQyNSbt2LyriB6fSqDyMzqQw/viewform',
+        display: true,
     },
     {
         program: 'hand-mirror-diy',
-		title: '손 거울 DIY',
-		subtitle: '제주 감성을 담아 만드는 손거울 아트 클래스',
-		description: `
+        title: '손 거울 DIY',
+        subtitle: '제주 감성을 담아 만드는 손거울 아트 클래스',
+        description: `
         제주의 색과 감성을 담아 나만의 컬러를 더해 특별한 손거울을 완성합니다.<br />
         매일 꺼내볼 때마다 제주의 여행 순간이 다시 떠오르는 감성 가득한 아트 클래스를 경험해 보세요.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
-			'/api/editor/attach/view/default/2026/06/z5U5mMjiTvu0JPbv288u_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:00 ~ 17:00',
-		priceGeneral: '20,000원',
-		priceGuest: '20,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/Gql4DSwwgcYzRAtp5ddm_1_',
+            '/api/editor/attach/view/default/2026/06/z5U5mMjiTvu0JPbv288u_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: '20,000원',
+        priceGuest: '20,000원',
+        information: `
         <p class="ref-bu-list">※ 투숙객 혜택: 웰컴 드링크 제공(커피 or 음료)</p>
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 환해장성로 945<br />
         (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
@@ -867,7 +904,7 @@ const activities = [
         <p class="ref-bu-list">※ 수업 중 촬영된 사진은 추후 홍보 콘텐츠로 활용될 수 있습니다. 촬영 및 활용을 원하지 않으시는 경우, 수업 시작 전 미리 말씀 부탁드립니다.</p>
         <p class="ref-bu-list">※ 주차는 가게 앞에 가능하며, 무료 주차입니다.</p>
         `,
-		notice: `
+        notice: `
         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
         <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
         <div class="common-txt">
@@ -878,31 +915,31 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdpG32wY9-mILpNnSwrM5ObtmmUNBn21-qGy3YyqSXM4tSvYg/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdpG32wY9-mILpNnSwrM5ObtmmUNBn21-qGy3YyqSXM4tSvYg/viewform',
+        display: true,
     },
     {
         program: 'candle-diy',
-		title: '제주 바다 캔들 DIY',
-		subtitle: '바다빛으로 완성하는 제주 캔들 클래스',
-		description: `
+        title: '제주 바다 캔들 DIY',
+        subtitle: '바다빛으로 완성하는 제주 캔들 클래스',
+        description: `
         제주의 바다를 닮은 컬러와 오브제로 세상에 하나뿐인 바다 캔들을 만들어 보세요.<br />
         푸른 제주 바다를 연상시키는 컬러 왁스와 조개, 모래, 돌 등 다양한 오브제를 활용해 나만의 감성을 담은 특별한 캔들을 완성합니다.<br />
         은은한 향과 함께 제주의 여행 순간을 오래 간직할 수 있는 감성 가득한 DIY 클래스입니다.<br />
         제주 바다의 반짝이는 기억을 작은 캔들 안에 담아 보세요.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_',
-			'/api/editor/attach/view/default/2026/06/W1jsF6a5yYmKXwpGofbK_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:30 ~ 17:30(30분 단위)',
-		priceGeneral: '30,000원',
-		priceGuest: '20,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/O7mQOxk1UtIzPxFdrVOx_1_',
+            '/api/editor/attach/view/default/2026/06/W1jsF6a5yYmKXwpGofbK_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:30 ~ 17:30(30분 단위)',
+        priceGeneral: '30,000원',
+        priceGuest: '20,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 애월읍 고성서5길 15<br />
         (휘닉스 아일랜드에서 차량으로 약 70분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
@@ -912,7 +949,7 @@ const activities = [
         <p class="ref-bu-list">※ 270ml 대용량 캔들로 제작됩니다.</p>
         <p class="ref-bu-list">※ 워머용 캔들로도 제작 가능합니다.</p>
         `,
-		notice: `
+        notice: `
         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
         <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
         <div class="common-txt">
@@ -923,32 +960,32 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfGD9E-miZXQEv3avRU0KwpLwXHqWVcwB0MlBlM3oNU8SAw8Q/viewform?usp=publish-editor',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfGD9E-miZXQEv3avRU0KwpLwXHqWVcwB0MlBlM3oNU8SAw8Q/viewform?usp=publish-editor',
+        display: true,
     },
     {
         program: 'mood-lamp-diy',
-		title: '수국 무드등 DIY',
-		subtitle: '빛으로 피어나는 수국 무드등 클래스',
-		description: `
+        title: '수국 무드등 DIY',
+        subtitle: '빛으로 피어나는 수국 무드등 클래스',
+        description: `
         제주의 수국 감성을 담아 은은하게 빛나는 나만의 무드등을 만들어 보세요.<br />
         다양한 컬러의 수국 플라워와 오브제를 조합해 취향에 맞는 디자인으로 완성할 수 있으며, 따뜻한 조명이 더해져 공간을 감성적으로 채워줍니다.<br />
         여행의 순간을 오래 간직할 수 있는 특별한 제주 감성 DIY 클래스를 경험해 보세요.<br />
         은은한 빛과 함께 하루의 분위기를 더욱 따뜻하게 만들어줍니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/fkVEFSdWlCykzjnvScE9_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/fkVEFSdWlCykzjnvScE9_1_',
-			'/api/editor/attach/view/default/2026/06/6xK3s63wSVDpqUGAeUDj_1_',
-			'/api/editor/attach/view/default/2026/06/LB7IVWpIYOKFyUunaPNp_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:30 ~ 17:30(30분 단위)',
-		priceGeneral: '35,000원',
-		priceGuest: '30,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/fkVEFSdWlCykzjnvScE9_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/fkVEFSdWlCykzjnvScE9_1_',
+            '/api/editor/attach/view/default/2026/06/6xK3s63wSVDpqUGAeUDj_1_',
+            '/api/editor/attach/view/default/2026/06/LB7IVWpIYOKFyUunaPNp_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:30 ~ 17:30(30분 단위)',
+        priceGeneral: '35,000원',
+        priceGuest: '30,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 애월읍 고성서5길 15<br />
         (휘닉스 아일랜드에서 차량으로 약 70분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
@@ -956,7 +993,7 @@ const activities = [
         <p class="ref-bu-list">※ 하바리움 LED 받침대 1개 제공</p>
         <p class="ref-bu-list">※ 용기와 꽃은 직접 선택하여 진행됩니다.</p>
         `,
-		notice: `
+        notice: `
         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
         <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
         <div class="common-txt">
@@ -967,32 +1004,32 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScRx1RrAN-PiO7rPN2yvY0DE6wWQTWhSLIq9xNYQKjbHBkktA/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScRx1RrAN-PiO7rPN2yvY0DE6wWQTWhSLIq9xNYQKjbHBkktA/viewform',
+        display: true,
     },
     {
         program: 'tea-class',
-		title: '프라이빗 티 클래스',
-		subtitle: '은은한 차의 향과 함께 천천히 나에게 집중하는 시간',
-		description: `
+        title: '프라이빗 티 클래스',
+        subtitle: '은은한 차의 향과 함께 천천히 나에게 집중하는 시간',
+        description: `
         30분간 진행되는 클래스에서는 차에 대한 이야기와 다기 사용 방법을 배우며 차를 편안하게 즐기는 시간을 가집니다.<br />
         클래스 종료 후에는 안내자가 자리를 비워 드리며, 60분 동안 프라이빗한 공간에서 오롯이 자신만의 티 타임을 경험하실 수 있습니다.<br />
         차에 대한 설명과 다기 사용 안내문도 함께 제공되어 처음 접하시는 분들도 부담 없이 편안하게 즐기실 수 있습니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/05/cQe0W3xJE5YGWImGxeDh_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/05/cQe0W3xJE5YGWImGxeDh_1_',
-			'/api/editor/attach/view/default/2026/05/Cgvmcsdzq6JdCzgX2tm7_1_',
-			'/api/editor/attach/view/default/2026/05/jo9HVC4WZVQzi8unhhqK_1_',
-			'/api/editor/attach/view/default/2026/05/VnQ4g7fZeAN3OgtnLaOu_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '12:00, 13:00, 14:00, 15:00(진행 시간: 90분)',
-		priceGeneral: '미진행',
-		priceGuest: '25,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/05/cQe0W3xJE5YGWImGxeDh_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/05/cQe0W3xJE5YGWImGxeDh_1_',
+            '/api/editor/attach/view/default/2026/05/Cgvmcsdzq6JdCzgX2tm7_1_',
+            '/api/editor/attach/view/default/2026/05/jo9HVC4WZVQzi8unhhqK_1_',
+            '/api/editor/attach/view/default/2026/05/VnQ4g7fZeAN3OgtnLaOu_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '12:00, 13:00, 14:00, 15:00(진행 시간: 90분)',
+        priceGeneral: '미진행',
+        priceGuest: '25,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 해맞이해안로 2688, 지하 1층 티하우스<br />
         (휘닉스 아일랜드에서 차량으로 약 15분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
@@ -1001,7 +1038,7 @@ const activities = [
         <p class="ref-bu-list">※ 1인 1차가 제공됩니다.(차 종류의 차는 예약 접수 시 선택 바랍니다.)</p>
         <p class="ref-bu-list">※ 회차별 1팀만 예약 가능합니다.</p>
         `,
-		notice: `
+        notice: `
         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
         <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
         <div class="common-txt">
@@ -1015,104 +1052,104 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdyVKfBCTuPvOOkXB5I8ABIMBMezdXRsbcc1aJM4QxU1lGGzg/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdyVKfBCTuPvOOkXB5I8ABIMBMezdXRsbcc1aJM4QxU1lGGzg/viewform',
+        display: true,
     },
     {
         program: 'wall-hanging-diy',
-		title: '월 행잉 DIY',
-		subtitle: '실과 패브릭으로 완성하는 감성 인테리어 오브제, 월 행잉 DIY 클래스',
-		description: `
+        title: '월 행잉 DIY',
+        subtitle: '실과 패브릭으로 완성하는 감성 인테리어 오브제, 월 행잉 DIY 클래스',
+        description: `
         알록달록한 제주 구옥을 내 손으로 직접 만들어 보는 특별한 시간<br />
         제주의 감성을 담은 작은 집을 하나씩 완성하며, 여행의 순간을 오래도록 추억할 수 있는 DIY 클래스입니다.<br />
         완성된 작품은 창가나 벽에 걸어두어 일상 속에서도 제주를 떠올릴 수 있는 감성 오브제로 활용할 수 있습니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/05/jhZsodnKIazb4kVDV0bn_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/05/jhZsodnKIazb4kVDV0bn_1_',
-			'/api/editor/attach/view/default/2026/05/NhEbCijYuIcdussy1VxK_1_'
-		],
-		tags: ['ART', 'HANDMADE'],
-		category: 'ART',
-		date: '금 ~ 수요일',
-		duration: '12:00 ~ 16:00',
-		priceGeneral: '60,000원',
-		priceGuest: '55,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/05/jhZsodnKIazb4kVDV0bn_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/05/jhZsodnKIazb4kVDV0bn_1_',
+            '/api/editor/attach/view/default/2026/05/NhEbCijYuIcdussy1VxK_1_'
+        ],
+        tags: ['ART', 'HANDMADE'],
+        category: 'ART',
+        date: '금 ~ 수요일',
+        duration: '12:00 ~ 16:00',
+        priceGeneral: '60,000원',
+        priceGuest: '55,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 중산간동로 3242<br />
         (휘닉스 아일랜드에서 차량으로 약 15분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         `,
-		notice: ``,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdmltPFYpCOZCeR-BqDHtWqCIjiF2ehVlhraEMoQ0XLboml_g/viewform',
-		display: true,
+        notice: ``,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdmltPFYpCOZCeR-BqDHtWqCIjiF2ehVlhraEMoQ0XLboml_g/viewform',
+        display: true,
     },
     {
         program: 'glass-art-suncatcher',
-		title: '글라스 아트 썬캐처',
-		subtitle: '햇살이 비치는 순간 더욱 아름다운 빛과 그림자를 만들어 내는 썬캐쳐 클래스',
-		description: `
+        title: '글라스 아트 썬캐처',
+        subtitle: '햇살이 비치는 순간 더욱 아름다운 빛과 그림자를 만들어 내는 썬캐쳐 클래스',
+        description: `
         유리 절단이나 납땜 과정 없이 누구나 쉽고 안전하게 스테인드 글라스 감성을 경험할 수 있으며, 초보자도 부담 없이 나만의 감성 소품을 완성할 수 있습니다.<br />
         완성된 썬캐쳐는 공간에 따뜻한 분위기를 더해주는 특별한 오브제로, 제주 여행 속 소중한 추억을 직접 만들어 갈 수 있는 체험입니다.<br />
         반짝이는 빛을 담은 나만의 썬캐쳐를 만들어 보세요.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/05/AMoIJ3UxrVM0UjL7McD5_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/05/AMoIJ3UxrVM0UjL7McD5_1_',
-			'/api/editor/attach/view/default/2026/05/MC3G79ZIqbjoOEk0B9Ka_1_'
-		],
-		tags: ['ART', 'DIY', 'INDOCK'],
-		category: 'ART',
-		date: '목 ~ 화요일',
-		duration: '10:00 ~ 17:00',
-		priceGeneral: '38,000원',
-		priceGuest: '35,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/05/AMoIJ3UxrVM0UjL7McD5_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/05/AMoIJ3UxrVM0UjL7McD5_1_',
+            '/api/editor/attach/view/default/2026/05/MC3G79ZIqbjoOEk0B9Ka_1_'
+        ],
+        tags: ['ART', 'DIY', 'INDOCK'],
+        category: 'ART',
+        date: '목 ~ 화요일',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: '38,000원',
+        priceGuest: '35,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조로 93, 포포 공방<br />
         (휘닉스 아일랜드에서 차량으로 약 10분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 본 프로그램은 11세 이상부터 참여 가능합니다.</p>
         `,
-		notice: ``,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdR1F796ednS9nNG-sD3pxtvO75mZtZQNsxF_oS72fcuAwgmw/viewform',
-		display: true,
+        notice: ``,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdR1F796ednS9nNG-sD3pxtvO75mZtZQNsxF_oS72fcuAwgmw/viewform',
+        display: true,
     },
     {
         program: 'glass-art-doorbell',
-		title: '글라스 아트 도어벨',
-		subtitle: '제주의 감성을 담은 글라스 아트 도어벨 클래스',
-		description: `
+        title: '글라스 아트 도어벨',
+        subtitle: '제주의 감성을 담은 글라스 아트 도어벨 클래스',
+        description: `
         한라봉, 동백꽃, 돌하르방 등 제주를 대표하는 오브제를 활용해 좋은 기운을 담은 특별한 인테리어 소품을 만들어 보세요.<br />
         유리 절단이나 납땜 과정 없이 누구나 쉽고 안전하게 참여할 수 있으며, 스테인드 글라스 특유의 감성과 반짝이는 색감을 부담 없이 경험할 수 있습니다.<br />
         햇살이 비칠 때마다 더욱 아름답게 빛나는 나만의 도어벨로 제주의 따뜻한 분위기를 일상 속 공간에 더해 보세요.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/05/o5rzMpiF835pPq2QnrRv_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/05/hhjlI6NIJ7Zjt7EcsOpk_1_',
-			'/api/editor/attach/view/default/2026/05/o5rzMpiF835pPq2QnrRv_1_',
-			'/api/editor/attach/view/default/2026/05/sRnE5927v3LuuVwijOJZ_1_'
-		],
-		tags: ['ART', 'DIY'],
-		category: 'ART',
-		date: '목 ~ 화요일',
-		duration: '10:00 ~ 17:00',
-		priceGeneral: '28,000원',
-		priceGuest: '25,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/05/o5rzMpiF835pPq2QnrRv_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/05/hhjlI6NIJ7Zjt7EcsOpk_1_',
+            '/api/editor/attach/view/default/2026/05/o5rzMpiF835pPq2QnrRv_1_',
+            '/api/editor/attach/view/default/2026/05/sRnE5927v3LuuVwijOJZ_1_'
+        ],
+        tags: ['ART', 'DIY'],
+        category: 'ART',
+        date: '목 ~ 화요일',
+        duration: '10:00 ~ 17:00',
+        priceGeneral: '28,000원',
+        priceGuest: '25,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조로 93, 포포 공방<br />
         (휘닉스 아일랜드에서 차량으로 약 10분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 본 프로그램은 11세 이상부터 참여 가능합니다.</p>
         `,
-		notice: ``,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe_xXFXoM6FVJ0Y8qwQfrh6C8w9dbENiRCCB_jAX7kfsQLWIw/viewform',
-		display: true,
+        notice: ``,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe_xXFXoM6FVJ0Y8qwQfrh6C8w9dbENiRCCB_jAX7kfsQLWIw/viewform',
+        display: true,
     },
     {
         program: 'pottery-class',
-		title: '도예 클래스',
-		subtitle: '손끝으로 빚어내는 특별한 추억, 전통 도자기 체험',
-		description: `
+        title: '도예 클래스',
+        subtitle: '손끝으로 빚어내는 특별한 추억, 전통 도자기 체험',
+        description: `
         물레를 이용해 전통 방식으로 나만의 도자기를 만들어보는 체험입니다.<br />
         커피잔, 머그컵, 그릇, 앞접시, 술잔(2개) 체험 품목 중 원하는 작품을 선택해 직접 제작할 수 있습니다.<br />
         <br />
@@ -1122,25 +1159,25 @@ const activities = [
         <br />
         <p class="ref-bu-list">※ 작품의 크기나 추가 제작 내용에 따라 별도 비용이 발생할 수 있습니다.</p>
         `,
-		thumbnail: '/api/editor/attach/view/default/2025/05/NRjatN0z0eClQ9m41w4B_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2025/05/NRjatN0z0eClQ9m41w4B_1_',
-			'/api/editor/attach/view/default/2025/05/jfYpdDZlBBROOTuw1BI8_1_',
-			'/api/editor/attach/view/default/2025/05/CzltJ9UVhiQKzFgg7kme_1_'
-		],
-		tags: ['LOCAL', 'HANDMADE', 'EXPERIENCE'],
-		category: 'LOCAL',
-		date: '월 ~ 토',
-		duration: '11:00, 15:00/40분 ~ 60분',
-		priceGeneral: '31,000원',
-		priceGuest: '26,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2025/05/NRjatN0z0eClQ9m41w4B_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2025/05/NRjatN0z0eClQ9m41w4B_1_',
+            '/api/editor/attach/view/default/2025/05/jfYpdDZlBBROOTuw1BI8_1_',
+            '/api/editor/attach/view/default/2025/05/CzltJ9UVhiQKzFgg7kme_1_'
+        ],
+        tags: ['LOCAL', 'HANDMADE', 'EXPERIENCE'],
+        category: 'LOCAL',
+        date: '월 ~ 토',
+        duration: '11:00, 15:00/40분 ~ 60분',
+        priceGeneral: '31,000원',
+        priceGuest: '26,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 표선면 성읍이리로 85<br />
         (휘닉스 아일랜드에서 차량으로 약 30분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 제공 항목: 물레를 사용하여 만든 도자 작품(찻잔 2개 or 접시 or 머그 컵 등)</p>
         `,
-		notice: `
+        notice: `
         <li>본 프로그램은 한국어로만 진행됩니다.</li>
         <li>사전 연락 없이 불참하거나 프로그램 시작 후 10분 이내에 도착하지 않을 경우 No-Show로 간주되어 참여가 제한될 수 있습니다.</li>
         <li>프로그램은 주최 측 및 호스트의 운영 상황에 따라 일정이나 내용이 변경될 수 있습니다.</li><br />
@@ -1155,31 +1192,31 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSd6Qg7MWgQo4GHd4tG4Wozux9nTbUqN7EqQkYz45AhiM6hhzw/viewform',
-		display: true,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSd6Qg7MWgQo4GHd4tG4Wozux9nTbUqN7EqQkYz45AhiM6hhzw/viewform',
+        display: true,
     },
     {
-		program: 'day-yoga',
-		title: '데이 요가',
-		subtitle: '여행의 아침을 상쾌하게 맞이하는 리프레쉬 요가',
-		description: `
+        program: 'day-yoga',
+        title: '데이 요가',
+        subtitle: '여행의 아침을 상쾌하게 맞이하는 리프레쉬 요가',
+        description: `
         몸과 마음을 스트레칭해 주며 요가를 처음 접하는 분들과 아침을 상쾌하게 맞이하실 분들을 위한 클래스입니다.<br />
         간단한 스트레칭과 함께 척추를 따라 몸을 일깨워주는 동작으로 진행됩니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2024/12/8HisF02v6NK4XxNeiL72_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2024/12/8HisF02v6NK4XxNeiL72_1_',
-			'/api/editor/attach/view/default/2024/12/JpU4R9ARZ9BpwOeETNE1_1_',
-			'/api/editor/attach/view/default/2024/12/xqwW8cryUPuUFvEImLkp_1_',
-			'/api/editor/attach/view/default/2024/12/UX0henYQKukEl3Zha3AB_1_'
-		],
-		tags: ['REST', 'HEALING', 'YOGA'],
-		category: 'REST',
-		date: '',
-		duration: '10:00 ~ 11:20',
-		priceGeneral: '35,000원',
-		priceGuest: '30,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2024/12/8HisF02v6NK4XxNeiL72_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2024/12/8HisF02v6NK4XxNeiL72_1_',
+            '/api/editor/attach/view/default/2024/12/JpU4R9ARZ9BpwOeETNE1_1_',
+            '/api/editor/attach/view/default/2024/12/xqwW8cryUPuUFvEImLkp_1_',
+            '/api/editor/attach/view/default/2024/12/UX0henYQKukEl3Zha3AB_1_'
+        ],
+        tags: ['REST', 'HEALING', 'YOGA'],
+        category: 'REST',
+        date: '',
+        duration: '10:00 ~ 11:20',
+        priceGeneral: '35,000원',
+        priceGuest: '30,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 동류암로 20, 플레이스 캠프 액티비티 라운지<br />
         (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
         <p class="ref-bu-list">※ 제공 항목: 요가 매트</p>
@@ -1195,7 +1232,7 @@ const activities = [
             <li>11:20 - 클래스 종료</li>
         </ul> -->
         `,
-		notice: `
+        notice: `
         <li>액티비티 프로그램은 사전 예약제로 운영됩니다.</li>
         <li>투숙객 할인은 프로그램 참여 당일 현장에서 객실 카드 또는 예약 확정 문자로 확인합니다.</li>
         <li>본 프로그램은 주최측 및 호스트의 상황에 따라 변동될 수 있습니다.</li>
@@ -1213,38 +1250,38 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSemW5kBpPOOz-ys0E6U__pAJYaZZsbXJJ_mzRgrJRGqI-9-zw/viewform',
-		display: true,
-	},
-	{
-		program: 'morning-yoga',
-		title: '아침 요가',
-		subtitle: '요일별 다양한 웰니스 프로그램으로 몸과 마음의 균형을 깨우는 요가 클래스',
-		description: `
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSemW5kBpPOOz-ys0E6U__pAJYaZZsbXJJ_mzRgrJRGqI-9-zw/viewform',
+        display: true,
+    },
+    {
+        program: 'morning-yoga',
+        title: '아침 요가',
+        subtitle: '요일별 다양한 웰니스 프로그램으로 몸과 마음의 균형을 깨우는 요가 클래스',
+        description: `
         매일 오전 8시 10분, 몸과 마음의 균형을 깨우는 웰니스 요가 프로그램이 진행됩니다.<br />
         깊은 이완으로 하루를 여는 릴렉스 요가부터 차크라의 균형과 마음의 안정을 돕는 명상 요가, 편백 롤러를 활용해 긴장을 풀어주는 리스토러티브 요가까지.<br />
         요일마다 각기 다른 컨셉의 프로그램으로 여행 속 여유롭고 평온한 아침을 경험해 보세요.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/05/PevxgaNHduOhIZQGoDiM_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/05/PevxgaNHduOhIZQGoDiM_1_',
-			'/api/editor/attach/view/default/2026/05/J846Z0L7LhSlli2PQCh4_1_',
-			'/api/editor/attach/view/default/2026/05/OhDjhJCzmJ6dx8umJcc7_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '월 ~ 일요일',
-		duration: '08:10(진행 시간: 60 ~ 70분)',
-		priceGeneral: '38,000원',
-		priceGuest: '35,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/05/PevxgaNHduOhIZQGoDiM_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/05/PevxgaNHduOhIZQGoDiM_1_',
+            '/api/editor/attach/view/default/2026/05/J846Z0L7LhSlli2PQCh4_1_',
+            '/api/editor/attach/view/default/2026/05/OhDjhJCzmJ6dx8umJcc7_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '월 ~ 일요일',
+        duration: '08:10(진행 시간: 60 ~ 70분)',
+        priceGeneral: '38,000원',
+        priceGuest: '35,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 해맞이해안로 2688, 지하 1층 명상실(오디토리움)<br />
         (휘닉스 아일랜드에서 차량으로 약 15분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 본 프로그램 참여 시 일상복은 입장이 불가하며 요가복, 운동복으로 환복하신 후 참여가 가능합니다.<br />
         복장 미비로 인한 프로그램 이용이 불가한 경우 환불이 불가합니다.</p>
         `,
-		notice: `
+        notice: `
         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
         <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
         <div class="common-txt">
@@ -1258,39 +1295,39 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe8PMQr5Pl0zvPQ5xSPcNaZLvoR2Ahg-e-aBWOw47_cWOghHw/viewform',
-		display: false,
-	},
-	{
-		program: 'singing-bowl-meditation',
-		title: '싱잉볼 명상',
-		subtitle: '싱잉볼의 울림으로 몸과 마음을 깨우는 명상',
-		description: `
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSe8PMQr5Pl0zvPQ5xSPcNaZLvoR2Ahg-e-aBWOw47_cWOghHw/viewform',
+        display: false,
+    },
+    {
+        program: 'singing-bowl-meditation',
+        title: '싱잉볼 명상',
+        subtitle: '싱잉볼의 울림으로 몸과 마음을 깨우는 명상',
+        description: `
         매일 오후 17시 30분, 치유의 에너지를 지닌 크리스탈 싱잉볼의 깊은 진동과 울림이 몸과 마음에 편안한 휴식을 선사합니다.<br />
         맑고 섬세한 사운드가 뇌파를 안정시키고 긴장된 감각을 부드럽게 이완시키며,<br />
         일상 속 쌓인 피로와 스트레스를 내려놓는 시간을 경험할 수 있습니다.<br />
         잔잔하게 퍼지는 울림 속에서 호흡에 집중하며, 내면의 균형과 깊은 안정감을 찾아 보세요.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/05/EURQkUVmxY7h6HN0usai_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/05/EURQkUVmxY7h6HN0usai_1_',
-			'/api/editor/attach/view/default/2026/05/mnxeS8aPZbql2FwODH6J_1_',
-			'/api/editor/attach/view/default/2026/05/VCeh9RuIW5szrSGj7cRL_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '수요일',
-		duration: '17:30(진행 시간: 60분)',
-		priceGeneral: '38,000원',
-		priceGuest: '35,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/05/EURQkUVmxY7h6HN0usai_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/05/EURQkUVmxY7h6HN0usai_1_',
+            '/api/editor/attach/view/default/2026/05/mnxeS8aPZbql2FwODH6J_1_',
+            '/api/editor/attach/view/default/2026/05/VCeh9RuIW5szrSGj7cRL_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '수요일',
+        duration: '17:30(진행 시간: 60분)',
+        priceGeneral: '38,000원',
+        priceGuest: '35,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 해맞이해안로 2688, 지하 1층 명상실(오디토리움)<br />
         (휘닉스 아일랜드에서 차량으로 약 15분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 본 프로그램 참여 시 일상복은 입장이 불가하며 요가복, 운동복으로 환복하신 후 참여가 가능합니다.<br />
         복장 미비로 인한 프로그램 이용이 불가한 경우 환불이 불가합니다.</p>
         `,
-		notice: `
+        notice: `
         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
         <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
         <div class="common-txt">
@@ -1304,37 +1341,37 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfU1q1Y1e-K8gAFT8EcICKH-WCUa36Pqrtn0i-UXOXir-_SFQ/viewform',
-		display: true,
-	},
-	{
-		program: 'tea-ceremony',
-		title: '제주 차회',
-		subtitle: '3가지의 제주 차&다식&나만의 말차 만들기로 구성된 티 클래스',
-		description: `
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfU1q1Y1e-K8gAFT8EcICKH-WCUa36Pqrtn0i-UXOXir-_SFQ/viewform',
+        display: true,
+    },
+    {
+        program: 'tea-ceremony',
+        title: '제주 차회',
+        subtitle: '3가지의 제주 차&다식&나만의 말차 만들기로 구성된 티 클래스',
+        description: `
         제주의 자연과 감성을 오롯이 담아낸 티 클래스로 제주 다원의 3가지 차와 다식, 그리고 말차 격불 체험을 함께 즐겨 보세요.<br />
         한 자리에서 제주 차가 지닌 각기 다른 향과 풍미를 경험하고, 차선을 이용해 직접 말차 거품을 내며 나만의 말차를 완성합니다.<br />
         손끝의 움직임과 차분한 울림 속에서 작은 명상 같은 휴식을 경험할 수 있으며, 차와 다기, 사람에 담긴 제주의 깊은 이야기도 함께 만나볼 수 있습니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/05/DBCCmYRRezjFp4ESQOfh_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/05/DBCCmYRRezjFp4ESQOfh_1_',
-			'/api/editor/attach/view/default/2026/05/eOPurCbsj8BDpZc0yYV4_1_',
-			'/api/editor/attach/view/default/2026/05/stBEtQKSyMNzkH64oIn1_1_',
-			'/api/editor/attach/view/default/2026/05/rA1GDroJbRsXU80EqN3p_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '금, 토',
-		duration: '13:00(진행 시간: 90분)',
-		priceGeneral: '45,000원',
-		priceGuest: '40,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/05/DBCCmYRRezjFp4ESQOfh_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/05/DBCCmYRRezjFp4ESQOfh_1_',
+            '/api/editor/attach/view/default/2026/05/eOPurCbsj8BDpZc0yYV4_1_',
+            '/api/editor/attach/view/default/2026/05/stBEtQKSyMNzkH64oIn1_1_',
+            '/api/editor/attach/view/default/2026/05/rA1GDroJbRsXU80EqN3p_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '금, 토',
+        duration: '13:00(진행 시간: 90분)',
+        priceGeneral: '45,000원',
+        priceGuest: '40,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 해맞이해안로 2688, 지하 1층 티하우스<br />
         (휘닉스 아일랜드에서 차량으로 약 15분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         `,
-		notice: `
+        notice: `
         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
         <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
         <div class="common-txt">
@@ -1348,32 +1385,32 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeVMuCws-z9iYYlO7msTd4835I_ynJZqp3GtxpqJaqJ3E68eQ/viewform',
-		display: true,
-	},
-	{
-		program: 'perfume-diy',
-		title: '나만의 커스텀 향 DIY',
-		subtitle: '제주를 대표하는 50여종의 다양한 향료를 조합하여 만드는 시그니처 향',
-		description: `
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeVMuCws-z9iYYlO7msTd4835I_ynJZqp3GtxpqJaqJ3E68eQ/viewform',
+        display: true,
+    },
+    {
+        program: 'perfume-diy',
+        title: '나만의 커스텀 향 DIY',
+        subtitle: '제주를 대표하는 50여종의 다양한 향료를 조합하여 만드는 시그니처 향',
+        description: `
         제주 감귤, 치자, 비자 등 제주를 대표하는 향을 포함한 50여 종의 다양한 향료를 직접 조합해 세상에 하나뿐인 시그니처 향을 완성합니다.<br />
         완성한 향은 탈취제 또는 섬유 향수로 만들어 드리며 차량, 옷장, 침구, 패브릭 공간 등 일상 속 다양한 공간에서 사용할 수 있습니다.<br />
         은은하게 퍼지는 향과 함께 제주의 여행 순간을 오래도록 기억해 보세요.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/AfSdvuLfwPra8L4F9xki_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/AfSdvuLfwPra8L4F9xki_1_',
-			'/api/editor/attach/view/default/2026/06/y0Lyd7Hhfub7SAvjP70s_1_',
-			'/api/editor/attach/view/default/2026/06/XuGfgUIR9f5VWCQN7aTx_1_'
-		],
+        thumbnail: '/api/editor/attach/view/default/2026/06/AfSdvuLfwPra8L4F9xki_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/AfSdvuLfwPra8L4F9xki_1_',
+            '/api/editor/attach/view/default/2026/06/y0Lyd7Hhfub7SAvjP70s_1_',
+            '/api/editor/attach/view/default/2026/06/XuGfgUIR9f5VWCQN7aTx_1_'
+        ],
 
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:30 ~ 17:30(30분 단위)',
-		priceGeneral: '30,000원',
-		priceGuest: '25,000원',
-		information: `
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:30 ~ 17:30(30분 단위)',
+        priceGeneral: '30,000원',
+        priceGuest: '25,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 애월읍 고성서5길 15<br />
         (휘닉스 아일랜드에서 차량으로 약 70분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
@@ -1382,7 +1419,7 @@ const activities = [
         <p class="ref-bu-list">※ 200ml 탈취제 또는 섬유 향수 제작 가능합니다.</p>
         <p class="ref-bu-list">※ 제주 향을 포함한 50여 종의 향료를 사용합니다.</p>
         `,
-		notice: `
+        notice: `
         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
         <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
         <div class="common-txt">
@@ -1393,31 +1430,31 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfB3sMzTaWVPOis2orkBuyXXiGh7baBkP4A1liRYUoF_Jte1A/viewform',
-		display: true,
-	},
-	{
-		program: 'diffuser-diy',
-		title: '퍼퓸 디퓨저 DIY',
-		subtitle: '제주 무드를 채우는 퍼퓸 디퓨저 만들기',
-		description: `
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfB3sMzTaWVPOis2orkBuyXXiGh7baBkP4A1liRYUoF_Jte1A/viewform',
+        display: true,
+    },
+    {
+        program: 'diffuser-diy',
+        title: '퍼퓸 디퓨저 DIY',
+        subtitle: '제주 무드를 채우는 퍼퓸 디퓨저 만들기',
+        description: `
         제주 치자, 비자, 감귤 등 제주를 대표하는 향료를 직접 선택하고 조합해 세상에 하나뿐인 특별한 향을 완성합니다.<br />
         감성적인 보틀과 플라워 오브제를 더해 인테리어 소품처럼 아름다운 디퓨저를 제작하며, 은은하게 퍼지는 향이 공간을 편안하게 채워줍니다.<br />
         여행의 기억을 향으로 간직하는 힐링 가득한 DIY 클래스를 경험해 보세요.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/Spd31nazIhMTCyvcj0Y6_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/Spd31nazIhMTCyvcj0Y6_1_',
-			'/api/editor/attach/view/default/2026/06/M4uZfRaVQXCVTzPPgr5s_1_',
-			'/api/editor/attach/view/default/2026/06/6rpFEecIGZtNJHQY9EKe_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:30 ~ 17:30(30분 단위)',
-		priceGeneral: '35,000원',
-		priceGuest: '30,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/Spd31nazIhMTCyvcj0Y6_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/Spd31nazIhMTCyvcj0Y6_1_',
+            '/api/editor/attach/view/default/2026/06/M4uZfRaVQXCVTzPPgr5s_1_',
+            '/api/editor/attach/view/default/2026/06/6rpFEecIGZtNJHQY9EKe_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:30 ~ 17:30(30분 단위)',
+        priceGeneral: '35,000원',
+        priceGuest: '30,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 애월읍 고성서5길 15<br />
         (휘닉스 아일랜드에서 차량으로 약 70분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
@@ -1426,7 +1463,7 @@ const activities = [
         <p class="ref-bu-list">※ 제주 치자, 비자, 감귤 등 다양한 제주 향료를 사용합니다.</p>
         <p class="ref-bu-list">※ 향료와 오브제를 직접 선택하여 제작합니다.</p>
         `,
-		notice: `
+        notice: `
         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
         <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
         <div class="common-txt">
@@ -1437,30 +1474,30 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSf_hf7hArN4FUuCc3Ltj1C0gZmAbaapk63TrhU7j4p19zS1rQ/viewform',
-		display: true,
-	},
-	{
-		program: 'sachet-class',
-		title: '제주 사쉐 클래스',
-		subtitle: '직접 조향하는 제주 감성 사쉐 만들기',
-		description: `
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSf_hf7hArN4FUuCc3Ltj1C0gZmAbaapk63TrhU7j4p19zS1rQ/viewform',
+        display: true,
+    },
+    {
+        program: 'sachet-class',
+        title: '제주 사쉐 클래스',
+        subtitle: '직접 조향하는 제주 감성 사쉐 만들기',
+        description: `
         나만의 취향을 담아 직접 향을 조향하고 사쉐(향 주머니)를 만들어 보세요.<br />
         다양한 향료를 조합해 세상에 하나뿐인 나만의 향을 완성합니다.<br />
         완성된 사쉐는 약 4개월 동안 은은한 향이 지속되어 옷장, 차량, 침실 등 다양한 공간에서 사용할 수 있습니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/LhBRgnFzqoPJiaWDjgaE_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/LhBRgnFzqoPJiaWDjgaE_1_',
-			'/api/editor/attach/view/default/2026/06/2j31jKY4cG3Er3ZkjoAH_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '',
-		duration: '10:30 ~ 17:30(30분 단위)',
-		priceGeneral: '30,000원',
-		priceGuest: '25,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/LhBRgnFzqoPJiaWDjgaE_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/LhBRgnFzqoPJiaWDjgaE_1_',
+            '/api/editor/attach/view/default/2026/06/2j31jKY4cG3Er3ZkjoAH_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '',
+        duration: '10:30 ~ 17:30(30분 단위)',
+        priceGeneral: '30,000원',
+        priceGuest: '25,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 제주시 애월읍 고성서5길 15<br />
         (휘닉스 아일랜드에서 차량으로 약 70분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
@@ -1468,7 +1505,7 @@ const activities = [
         <p class="ref-bu-list">※ 숙성병 1개, 향 주머니 2개, 사쉐 파우치 4개 제공</p>
         <p class="ref-bu-list">※ 완성 후 약 4개월간 향이 지속됩니다.</p>
         `,
-		notice: `
+        notice: `
         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
         <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
         <div class="common-txt">
@@ -1479,43 +1516,43 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdTSN5ETYL5cwC91cdPE6cmXX6BAdXfmhWVFvGxzYA1ern8ag/viewform',
-		display: true,
-	},
-	{
-		program: 'one-day-wellness',
-		title: '원데이 웰니스 패키지',
-		subtitle: '원하는 시간대의 두 가지 클래스를 선택해 즐기실 수 있는 원데이 웰니스 패키지',
-		description: `
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSdTSN5ETYL5cwC91cdPE6cmXX6BAdXfmhWVFvGxzYA1ern8ag/viewform',
+        display: true,
+    },
+    {
+        program: 'one-day-wellness',
+        title: '원데이 웰니스 패키지',
+        subtitle: '원하는 시간대의 두 가지 클래스를 선택해 즐기실 수 있는 원데이 웰니스 패키지',
+        description: `
         07:00 명상&08:10 요가와 17:30&19:00 명상/요가 프로그램 중 원하는 시간대의 두 가지 클래스를 선택해 즐기실 수 있는 원데이 웰니스 패키지<br />
         오전 타임에는 차크라 명상, 리스토러티브 요가 등 몸과 마음의 균형을 깨우는 다양한 웰니스 프로그램이 진행되며,<br />
         오후 타임에는 라이브 뮤직 명상, 크리스탈 싱잉볼 명상, 하타요가, 밸런스 요가 등<br />
         감각적인 프로그램들이 요일별로 다르게 운영되어 매일 새로운 웰니스 경험을 선사합니다.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/06/IzJqFInRW5g5sZGyCtjt_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/06/IzJqFInRW5g5sZGyCtjt_1_',
-			'/api/editor/attach/view/default/2026/06/pStUW7rVmFqSUyrAPheS_1_',
-			'/api/editor/attach/view/default/2026/06/mOXaXcAlWlbxfiKr70r0_1_',
-			'/api/editor/attach/view/default/2026/06/otFelRNAWi4rWMwUhiy3_1_',
-			'/api/editor/attach/view/default/2026/06/2XpUCQeKhKtCRQptdt90_1_',
-			'/api/editor/attach/view/default/2026/06/qukBIhmMZs4fqb8oRaCf_1_',
-			'/api/editor/attach/view/default/2026/06/Lkcq2UkGNkS1pQmYKUBu_1_'
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: '월 ~ 금',
-		duration: '오전/오후',
-		priceGeneral: '60,000원',
-		priceGuest: '55,000원',
-		information: `
+        thumbnail: '/api/editor/attach/view/default/2026/06/IzJqFInRW5g5sZGyCtjt_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/06/IzJqFInRW5g5sZGyCtjt_1_',
+            '/api/editor/attach/view/default/2026/06/pStUW7rVmFqSUyrAPheS_1_',
+            '/api/editor/attach/view/default/2026/06/mOXaXcAlWlbxfiKr70r0_1_',
+            '/api/editor/attach/view/default/2026/06/otFelRNAWi4rWMwUhiy3_1_',
+            '/api/editor/attach/view/default/2026/06/2XpUCQeKhKtCRQptdt90_1_',
+            '/api/editor/attach/view/default/2026/06/qukBIhmMZs4fqb8oRaCf_1_',
+            '/api/editor/attach/view/default/2026/06/Lkcq2UkGNkS1pQmYKUBu_1_'
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: '월 ~ 금',
+        duration: '오전/오후',
+        priceGeneral: '60,000원',
+        priceGuest: '55,000원',
+        information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 해맞이해안로 2688, 지하 1층 명상실(오디토리움)<br />
         (휘닉스 아일랜드에서 차량으로 약 10분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 휘닉스 아일랜드가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
         <p class="ref-bu-list">※ 본 프로그램 참여 시 일상복은 입장이 불가하며 요가복, 운동복으로 환복하신 후 참여가 가능합니다.<br />
         복장 미비로 인한 프로그램 이용이 불가한 경우 환불이 불가합니다.</p>
         `,
-		notice: `
+        notice: `
         <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
         <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li><br />
         <div class="common-txt">
@@ -1529,7 +1566,7 @@ const activities = [
             </ul>
         </div>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfWwMFZdUZWYKse-ljK-VPuKbB3IPNsoB4LuLSabeqN_uj-kg/viewform',
-		display: false,
-	}
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSfWwMFZdUZWYKse-ljK-VPuKbB3IPNsoB4LuLSabeqN_uj-kg/viewform',
+        display: false,
+    }
 ];
