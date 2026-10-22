@@ -1,5 +1,42 @@
 const activities = [
     {
+        program: 'water-singing-bowl',
+        title: 'Water Singing Bowl',
+        subtitle: 'A program where you experience the gentle vibrations and waves of singing bowls on water and relax your body.',
+        description: `
+        A program where you experience the gentle vibrations and waves of singing bowls on water, relax your body, and find peace of mind.<br />
+        Let your body float on calm water, feel the vibrations of the singing bowls, release muscle tension, and enjoy deep relaxation.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/10/yIttR1qsHk7mAd4FEjY0_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/10/yIttR1qsHk7mAd4FEjY0_1_',
+            '/api/editor/attach/view/default/2026/10/UtkGQ1dctVwPk7sAB7yP_1_',
+            '/api/editor/attach/view/default/2026/10/3uI992yUzFLqVxmPynek_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `10:00 ~ 23:00`,
+        priceGeneral: `KRW 90,000`,
+        priceGuest: `KRW 60,000`,
+        information: `
+        <p class="ref-bu-list">※ Location: 941-1, Ojo-ri, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea<br />
+        (Takes approx. 3-minute drive from Playce Camp)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        <p class="ref-bu-list">※ Duration: 50 minutes</p>
+        <p class="ref-bu-list">※ Please bring comfortable clothing(swimwear or clothes suitable for getting wet) or your own towel.</p>
+        <p class="ref-bu-list">※ The location may change depending on the season and operating conditions. During winter, the program takes place indoors; otherwise, it is held at the outdoor pool.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>The program may not operate if the minimum number of participants is not met.</li>
+        </ul>
+        `,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSc5OojfQcNsJSUuTA-NNtSOVyMYW6FijyefAJ1OCGXXZWenQg/viewform?usp=publish-editor',
+        inquiries: ``,
+        display: true,
+    },
+    {
 		program: 'buddy-ride',
 		title: 'Buddy Ride',
 		subtitle: 'An electric bike tour exploring the beautiful nature and hidden alleys of eastern Jeju.',
