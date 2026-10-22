@@ -1625,6 +1625,18 @@
     <div class="main-thumb-list">
         <ul class="list">
             <li class="item">
+                <a href="/static/playcecamp/activities/program?program=water-singing-bowl"
+                    class="link promotion-link countable-banner">
+                    <div class="thumb">
+                        <img src="/api/editor/attach/view/default/2026/10/yIttR1qsHk7mAd4FEjY0_1_" alt="" class="img">
+                    </div>
+                    <div class="con">
+                        <div class="title">워터 싱잉 볼</div>
+                        <div class="info">물 위에서 싱잉볼의 잔잔한 진동과 파장을 느끼며 몸을 이완시키는 프로그램</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
                 <a href="/static/playcecamp/activities/program?program=buddy-ride"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
@@ -1709,18 +1721,6 @@
                     </div>
                 </a>
             </li>
-            <li class="item">
-                <a href="/static/playcecamp/activities/program?program=fitness-day-pass"
-                    class="link promotion-link countable-banner">
-                    <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/09/uLBQYpEBzyQDqC7qF38M_1_" alt="" class="img">
-                    </div>
-                    <div class="con">
-                        <div class="title">피트니스 1일 이용</div>
-                        <div class="info">성산에서 최다 머신들로 갖춰진 무인 헬스장</div>
-                    </div>
-                </a>
-            </li>
         </ul>
         <div class="controls">
             <div class="paging activities-paging"></div>
@@ -1737,7 +1737,7 @@
         //             src="https://www.youtube.com/embed/5euQGMrSKXE?rel=0&showinfo=0&modestbranding=1" frameborder="0"></iframe>
         //     </div>
         // `);
-        
+
         // forest park
         // $('.main-pyeongchang section.waterpark').html(`
         //     <h3 class="section-title" style="color: #232323;height: 80px;">FOREST PARK</h3>
