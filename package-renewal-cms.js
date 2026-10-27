@@ -390,17 +390,26 @@ $(document).ready(function () {
     return (val && val.trim() !== '') ? val : ($el.attr('placeholder') || '');
   }
 
-  function goToSlide($slider, nextIndex) {
+function goToSlide($slider, nextIndex, withTransition = true) {
     const $track = $slider.find('.tpl-card-track');
     const $dots = $slider.find('.tpl-slider-dot');
-    const totalSlides = $track.find('.tpl-card-slide').length;
+    const totalRealSlides = $dots.length; // 실제 슬라이드 개수
     
-    if (nextIndex < 0) nextIndex = totalSlides - 1;
-    if (nextIndex >= totalSlides) nextIndex = 0;
+    if (!withTransition) {
+      $track.css('transition', 'none');
+    } else {
+      $track.css('transition', 'transform 0.4s ease-in-out');
+    }
 
     $slider.data('current-slide', nextIndex);
     $track.css('transform', 'translateX(-' + (nextIndex * 100) + '%)');
-    $dots.removeClass('is-active').eq(nextIndex).addClass('is-active');
+
+    // 인디케이터 매핑 (복제된 마지막 슬라이드인 경우 첫 번째 인디케이터 활성화)
+    let dotIndex = nextIndex;
+    if (nextIndex >= totalRealSlides) {
+      dotIndex = 0;
+    }
+    $dots.removeClass('is-active').eq(dotIndex).addClass('is-active');
   }
 
   function initSliders($scope) {
@@ -410,15 +419,33 @@ $(document).ready(function () {
       $slider.data('auto-init', true);
       $slider.data('current-slide', 0);
 
-      const $slides = $slider.find('.tpl-card-slide');
+      const $track = $slider.find('.tpl-card-track');
+      const $slides = $track.find('.tpl-card-slide');
+      
       if ($slides.length > 1) {
+        // 무한 루프를 위해 첫 번째 슬라이드를 복제해서 트랙 끝에 추가
+        const $firstClone = $slides.first().clone().removeAttr('data-slide').attr('data-clone', 'true');
+        $track.append($firstClone);
+
         const timer = setInterval(function () {
           if (!document.body.contains($slider[0])) {
             clearInterval(timer);
             return;
           }
-          const current = $slider.data('current-slide') || 0;
-          goToSlide($slider, current + 1);
+          let current = $slider.data('current-slide') || 0;
+          current++;
+          const totalSlidesWithClone = $track.find('.tpl-card-slide').length;
+
+          if (current >= totalSlidesWithClone - 1) {
+            // 복제된 마지막 슬라이드에 도달했을 때
+            goToSlide($slider, current, true);
+            // 트랙 이동이 끝난 후, 애니메이션 없이 즉시 첫 번째 위치로 순간 이동
+            setTimeout(function() {
+              goToSlide($slider, 0, false);
+            }, 400); // transition 시간과 일치
+          } else {
+            goToSlide($slider, current, true);
+          }
         }, 4000);
 
         let startX = 0;
@@ -429,8 +456,20 @@ $(document).ready(function () {
           const endX = e.originalEvent.changedTouches[0].clientX;
           const diff = startX - endX;
           if (Math.abs(diff) > 50) {
-            const current = $slider.data('current-slide') || 0;
-            goToSlide($slider, diff > 0 ? current + 1 : current - 1);
+            let current = $slider.data('current-slide') || 0;
+            const totalRealSlides = $slider.find('.tpl-slider-dot').length;
+            if (diff > 0) {
+              current++;
+              if (current >= totalRealSlides) {
+                goToSlide($slider, current, true);
+                setTimeout(() => goToSlide($slider, 0, false), 400);
+                return;
+              }
+            } else {
+              current--;
+              if (current < 0) current = totalRealSlides - 1;
+            }
+            goToSlide($slider, current, true);
           }
         });
       }
