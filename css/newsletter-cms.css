@@ -70,7 +70,7 @@
     margin: 0 0 12px;
     color: #222;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.5;
 }
 
@@ -134,7 +134,7 @@
     }
 
     .newsletter-page__footer-title {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     .newsletter-page__footer-desc {
