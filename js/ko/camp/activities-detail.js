@@ -69,23 +69,46 @@ if (currentActivity) {
     }
 
     const noticeListEl = document.getElementById('activityNotice');
+
     if (noticeListEl) {
-        if (currentActivity.notice) {
-            noticeListEl.innerHTML = currentActivity.notice;
+        const noticeTitleEl = noticeListEl.previousElementSibling;
+
+        if (currentActivity.notice === false) {
+            noticeListEl.style.display = 'none';
+
+            if (
+                noticeTitleEl &&
+                noticeTitleEl.matches('h4.head-sub.next-section')
+            ) {
+                noticeTitleEl.style.display = 'none';
+            }
         } else {
-            noticeListEl.innerHTML = `
-                <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
-                <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li>
-                <li>본 프로그램은 한국어로만 진행됩니다.</li><br />
-                <div class="common-txt">
-                    <p class="strong">[취소/환불 규정]</p>
-                    <ul class="dot-bu-list">
-                        <li>이용 3일 전 취소: 100% 환불</li>
-                        <li>이용 2일 전 취소: 50% 환불</li>
-                        <li>이용 1일 전 ~ 당일 취소: 환불 불가</li>
-                    </ul>
-                </div>
-            `;
+            noticeListEl.style.display = '';
+
+            if (
+                noticeTitleEl &&
+                noticeTitleEl.matches('h4.head-sub.next-section')
+            ) {
+                noticeTitleEl.style.display = '';
+            }
+
+            if (currentActivity.notice) {
+                noticeListEl.innerHTML = currentActivity.notice;
+            } else {
+                noticeListEl.innerHTML = `
+                    <li>예약 접수 이후 프로그램 이용 가능 여부에 따라 예약 확정 또는 취소 처리될 수 있습니다.</li>
+                    <li>예약 확정 이후 사전 이용 요금 납부 시 프로그램 이용 가능합니다.</li>
+                    <li>본 프로그램은 한국어로만 진행됩니다.</li><br />
+                    <div class="common-txt">
+                        <p class="strong">[취소/환불 규정]</p>
+                        <ul class="dot-bu-list">
+                            <li>이용 3일 전 취소: 100% 환불</li>
+                            <li>이용 2일 전 취소: 50% 환불</li>
+                            <li>이용 1일 전 ~ 당일 취소: 환불 불가</li>
+                        </ul>
+                    </div>
+                `;
+            }
         }
     }
 
