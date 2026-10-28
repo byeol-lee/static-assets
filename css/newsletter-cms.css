@@ -81,8 +81,8 @@
     line-height: 1.7;
 }
 
-.newsletter-page__buttons {
-    display: flex;
+.newsletter-page__content a .newsletter-page__buttons {
+    display: flex !important;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
