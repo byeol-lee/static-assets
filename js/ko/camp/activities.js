@@ -1,5 +1,42 @@
 const activities = [
     {
+        program: 'scent-lab',
+        title: '향 취향 연구소',
+        subtitle: '나에게 어울리는 향을 찾고 나만의 30ml 향수를 만드는 체험 프로그램 ',
+        description: `
+        직접 개발한 향 취향 진단 앱을 통해 나에게 어울리는 향을 발견하고, 다양한 향을 조합해 나만의 향수를 만드는 프로그램입니다.<br />
+        향기 속에 담긴 나만의 취향을 탐색하며, 세상에 하나뿐인 30ml 향수를 완성해 보세요.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/10/O5MkTrQ5ylgCq20hcP5F_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/10/O5MkTrQ5ylgCq20hcP5F_1_',
+            '/api/editor/attach/view/default/2026/10/t1ZihR6Iik55ZpvQXS45_1_',
+            '/api/editor/attach/view/default/2026/10/fnbWvZ8QWTiiruMltpU6_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: `월 ~ 토`,
+        duration: `10:00 ~ 18:00`,
+        priceGeneral: `55,000원`,
+        priceGuest: `
+        49,500원<br />
+        (5ml 향수 추가 증정)
+        `,
+        information: `
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 표선면 토산리 468-1<br />
+        (플레이스 캠프에서 차량으로 약 29분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 소요 시간: 약 60분(향 취향 진단 약 4분 포함)</p>
+        <p class="ref-bu-list">※ 7가지 향 계열과 67종의 원료를 활용해 취향에 맞는 향을 추천합니다.</p>
+        <p class="ref-bu-list">※ 취향 진단 결과를 바탕으로 5가지 원료를 선택해 나만의 향수를 조합합니다.</p>
+        <p class="ref-bu-list">※ 완성된 향수는 30ml 용량으로 제공됩니다.</p>
+        `,
+        notice: false,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSd2Eonj1ljSfLqoLhask3blqPC8u9QgE0wCJz3tADIB41pbFg/viewform?usp=publish-editor',
+        inquiries: ``,
+        display: true,
+    },
+    {
         program: 'water-singing-bowl',
         title: '워터 싱잉 볼',
         subtitle: '물 위에서 싱잉볼의 잔잔한 진동과 파장을 느끼며 몸을 이완시키는 프로그램',
@@ -659,11 +696,10 @@ const activities = [
     {
 		program: 'scuba-diving',
 		title: '스쿠버 다이빙 체험',
-		subtitle: '성산일출봉을 바라보며 바다로 입수하는 짜릿한 경험',
+		subtitle: '사계절 내내 즐기는 성산일출봉 스쿠버 다이빙!',
 		description: `
-        스쿠버 다이빙은 이동 동선에 따라 때로는 불필요하게 느낄 수 있는 육체적 시간적 에너지의 소모를 동반합니다.<br />
-        성산일출봉을 바라보며 바다로 입수하는 짜릿한 경험은 또 하나의 즐거움입니다.<br />
-        성산일출봉의 수중 세계를 경험하고 바다 생물들과 함께할 수 있는 기회, 도전하세요!
+		계절에 구애받지 않고 일 년 내내 제주의 아름다운 수중 세계를 경험해 보세요.<br />
+        성산일출봉을 바라보며 푸른 바다로 입수하는 짜릿한 순간부터 다채로운 해양 생물들과의 특별한 만남까지!
         `,
 		thumbnail: '/images/ko/activity/playcecamp/outdoor/out-scuba-diving-idx01.jpg',
 		heroImage: [
@@ -676,7 +712,7 @@ const activities = [
 		date: '',
 		duration: '09:00, 11:00, 14:00, 15:30(2시간)',
 		priceGeneral: '150,000원',
-		priceGuest: '69,000원',
+		priceGuest: '64,000원',
 		information: `
         <p class="ref-bu-list">※ 장소: 제주특별자치도 서귀포시 성산읍 성산리 143-4, 성산스쿠버<br />
         (플레이스 캠프에서 차량으로 약 5분 소요)</p>
@@ -1134,7 +1170,7 @@ const activities = [
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 표선면 성읍이리로 85<br />
         (플레이스 캠프에서 차량으로 약 25분 소요)</p>
         <p class="ref-bu-list">※ 본 프로그램은 플레이스 캠프가 아닌 프로그램 진행 장소까지 개별 이동해 주셔야 합니다.</p>
-        <p class="ref-bu-list">※ 제공 항목: 물레를 사용하여 만든 도자 작품(찻잔 2개 or 접시 or 머그 컵 등)</p>
+        <p class="ref-bu-list">※ 제공 항목: 2만원 상품(찻잔 2개 or 접시 or 머그 컵) + 상감기법 + 택배비 포함</p>
         `,
 		notice: `
         <li>본 프로그램은 한국어로만 진행됩니다.</li>
