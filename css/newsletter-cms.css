@@ -82,7 +82,7 @@
 }
 
 .newsletter-page__content a .newsletter-page__buttons {
-    display: flex !important;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -90,7 +90,7 @@
 }
 
 .newsletter-page__button {
-    display: inline-flex;
+    display: inline-flex !important;
     justify-content: center;
     align-items: center;
     min-width: 180px;
