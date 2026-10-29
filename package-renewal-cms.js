@@ -31,7 +31,7 @@ $(document).ready(function () {
       priceNotice: "주중: 일~목 체크인, 주말: 금~토 체크인 입니다.",
       rooms: [
         {
-          period: "08.01 ~ 08.31",
+          period: "99.99 ~ 99.99",
           room: "로얄",
           weekdayPrice: "340,000",
           weekdayLink: "#",
