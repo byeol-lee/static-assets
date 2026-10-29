@@ -1635,6 +1635,18 @@
     <div class="main-thumb-list">
         <ul class="list">
             <li class="item">
+                <a href="/static/playcecamp/activities/program?program=scent-lab"
+                    class="link promotion-link countable-banner">
+                    <div class="thumb">
+                        <img src="/api/editor/attach/view/default/2026/10/O5MkTrQ5ylgCq20hcP5F_1_" alt="" class="img">
+                    </div>
+                    <div class="con">
+                        <div class="title">향 취향 연구소</div>
+                        <div class="info">나에게 어울리는 향을 찾고 나만의 30ml 향수를 만드는 체험 프로그램</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
                 <a href="/static/playcecamp/activities/program?program=water-singing-bowl"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
@@ -1716,18 +1728,6 @@
                     <div class="con">
                         <div class="title">아쿠아플라넷</div>
                         <div class="info">제주를 담은 월드클래스 아쿠아리움</div>
-                    </div>
-                </a>
-            </li>
-            <li class="item">
-                <a href="/static/playcecamp/activities/program?program=snoopygarden"
-                    class="link promotion-link countable-banner">
-                    <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/09/SloVwLMdyveOrubeDnTZ_1_" alt="" class="img">
-                    </div>
-                    <div class="con">
-                        <div class="title">스누피가든</div>
-                        <div class="info">제주의 자연 속에서 피너츠 친구들을 만날 수 있는 특별한 공간</div>
                     </div>
                 </a>
             </li>
