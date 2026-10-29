@@ -1,5 +1,42 @@
 const activities = [
     {
+        program: 'scent-lab',
+        title: 'Scent Lab',
+        subtitle: 'A fragrance-making experience where you discover your signature scent and create your own 30 ml perfume.',
+        description: `
+        Discover the scents that suit you through an in-house scent preference app, then blend different scents to create your own perfume.<br />
+        Explore your personal scent preferences and create a one-of-a-kind 30 ml perfume.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/10/O5MkTrQ5ylgCq20hcP5F_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/10/O5MkTrQ5ylgCq20hcP5F_1_',
+            '/api/editor/attach/view/default/2026/10/t1ZihR6Iik55ZpvQXS45_1_',
+            '/api/editor/attach/view/default/2026/10/fnbWvZ8QWTiiruMltpU6_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: `Mon ~ Sat`,
+        duration: `10:00 ~ 18:00`,
+        priceGeneral: `KRW 55,000`,
+        priceGuest: `
+        KRW 49,500<br />
+        (Complimentary 5 ml perfume)
+        `,
+        information: `
+        <p class="ref-bu-list">※ Location: 41, Tosanjungang-ro 49beon-gil, Pyoseon-myeon, Seogwipo-si, Jeju-do, Republic of Korea<br />
+        (Takes approx. 30-minute drive from Phoenix Island)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        <p class="ref-bu-list">※ Duration: Approx. 60 minutes(including a 4-minute scent preference test)</p>
+        <p class="ref-bu-list">※ Discover scents suited to your preferences from 7 scent families and 67 ingredients.</p>
+        <p class="ref-bu-list">※ Select 5 ingredients based on your test results to create your own perfume.</p>
+        <p class="ref-bu-list">※ Your finished perfume is provided in a 30 ml bottle.</p>
+        `,
+        notice: false,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSd2Eonj1ljSfLqoLhask3blqPC8u9QgE0wCJz3tADIB41pbFg/viewform?usp=publish-editor',
+        inquiries: ``,
+        display: true,
+    },
+    {
         program: 'water-singing-bowl',
         title: 'Water Singing Bowl',
         subtitle: 'A program where you experience the gentle vibrations and waves of singing bowls on water and relax your body.',
