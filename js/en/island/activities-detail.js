@@ -66,23 +66,46 @@ if (currentActivity) {
     }
 
     const noticeListEl = document.getElementById('activityNotice');
+
     if (noticeListEl) {
-        if (currentActivity.notice) {
-            noticeListEl.innerHTML = currentActivity.notice;
+        const noticeTitleEl = noticeListEl.previousElementSibling;
+
+        if (currentActivity.notice === false) {
+            noticeListEl.style.display = 'none';
+
+            if (
+                noticeTitleEl &&
+                noticeTitleEl.matches('h4.head-sub.next-section')
+            ) {
+                noticeTitleEl.style.display = 'none';
+            }
         } else {
-            noticeListEl.innerHTML = `
-                <li>Your reservation may be confirmed or canceled depending on program availability after your booking request is received.</li>
-                <li>After your reservation is confirmed, the program can be used once the participation fee has been paid in advance.</li>
-                <li>This program is conducted in Korean only.</li><br />
-                <div class="common-txt">
-                    <p class="strong">[Cancellation & Refund Policy]</p>
-                    <ul class="dot-bu-list">
-                        <li>Cancellation 3 days before the activity: 100% refund</li>
-                        <li>Cancellation 2 days before the activity: 50% refund</li>
-                        <li>Cancellation from 1 day before the activity to the same day: No refund</li>
-                    </ul>
-                </div>
-            `;
+            noticeListEl.style.display = '';
+
+            if (
+                noticeTitleEl &&
+                noticeTitleEl.matches('h4.head-sub.next-section')
+            ) {
+                noticeTitleEl.style.display = '';
+            }
+
+            if (currentActivity.notice) {
+                noticeListEl.innerHTML = currentActivity.notice;
+            } else {
+                noticeListEl.innerHTML = `
+                    <li>Your reservation may be confirmed or canceled depending on program availability after your booking request is received.</li>
+                    <li>After your reservation is confirmed, the program can be used once the participation fee has been paid in advance.</li>
+                    <li>This program is conducted in Korean only.</li><br />
+                    <div class="common-txt">
+                        <p class="strong">[Cancellation & Refund Policy]</p>
+                        <ul class="dot-bu-list">
+                            <li>Cancellation 3 days before the activity: 100% refund</li>
+                            <li>Cancellation 2 days before the activity: 50% refund</li>
+                            <li>Cancellation from 1 day before the activity to the same day: No refund</li>
+                        </ul>
+                    </div>
+                `;
+            }
         }
     }
 
