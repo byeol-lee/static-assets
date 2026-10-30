@@ -31,9 +31,9 @@ $(document).ready(function () {
       priceNotice: "주중: 일~목 체크인, 주말: 금~토 체크인 입니다.",
       rooms: [
         {
-          period: "99.99 ~ 99.99",
+          period: "08.01 ~ 08.31",
           room: "로얄",
-          weekdayPrice: "100,000",
+          weekdayPrice: "340,000",
           weekdayLink: "#",
           weekendPrice: "420,000",
           weekendLink: "#",
@@ -318,29 +318,50 @@ $(document).ready(function () {
     renderTemplate();
   });
 
-  // 카드 이미지: 슬롯별로 한 장씩 등록/교체 (최대 4장)
-  $(document).on('change', '.in-card-img', function (e) {
-    const idx = Number($(this).data('index'));
-    const imageIdx = Number($(this).data('image-index'));
-    const file = (e.target.files || [])[0];
-    if (!file || !file.type.startsWith('image/')) return;
+// 카드 이미지: 서버 업로드 후 URL 반영 (최대 4장)
+$(document).on('change', '.in-card-img', async function (e) {
+  const idx = Number($(this).data('index'));
+  const imageIdx = Number($(this).data('image-index'));
+  const file = (e.target.files || [])[0];
 
-    const $input = $(this);
-    let $nameSpan = $input.siblings('.file-name-display');
-    if ($nameSpan.length === 0) {
-      $nameSpan = $('<span class="file-name-display" style="font-size:11px;color:#333;margin-left:4px;display:inline-block;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"></span>');
-      $input.after($nameSpan);
+  if (!file || !file.type.startsWith('image/')) return;
+
+  const $input = $(this);
+  let $nameSpan = $input.siblings('.file-name-display');
+
+  if ($nameSpan.length === 0) {
+    $nameSpan = $('<span class="file-name-display" style="font-size:11px;color:#333;margin-left:4px;display:inline-block;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"></span>');
+    $input.after($nameSpan);
+  }
+
+  $nameSpan.text('업로드 중...');
+
+  try {
+    if (!window.phoenixUploader || typeof window.phoenixUploader.uploadImage !== 'function') {
+      throw new Error('이미지 업로드 기능을 찾을 수 없습니다.');
     }
-    $nameSpan.text(file.name);
 
-    const reader = new FileReader();
-    reader.onload = function (evt) {
-      if (!Array.isArray(cardsData[idx].imgSrcs)) cardsData[idx].imgSrcs = [];
-      cardsData[idx].imgSrcs[imageIdx] = evt.target.result;
-      renderTemplate();
-    };
-    reader.readAsDataURL(file);
-  });
+    const result = await window.phoenixUploader.uploadImage(file);
+
+    if (!result || !result.url) {
+      throw new Error('서버 이미지 URL을 반환받지 못했습니다.');
+    }
+
+    if (!Array.isArray(cardsData[idx].imgSrcs)) {
+      cardsData[idx].imgSrcs = [];
+    }
+
+    cardsData[idx].imgSrcs[imageIdx] = result.url;
+
+    $nameSpan.text(file.name);
+    renderTemplate();
+
+  } catch (error) {
+    $nameSpan.text('업로드 실패');
+    alert(error.message || '카드 이미지 업로드에 실패했습니다.');
+    console.error('[카드 이미지 업로드 오류]', error);
+  }
+});
 
   $(document).on('click', '.btn-add-card-image', function () {
     const idx = Number($(this).data('index'));
@@ -360,25 +381,44 @@ $(document).ready(function () {
     renderTemplate();
   });
 
-  $('#in-main-img').on('change', function (e) {
-    const file = e.target.files[0];
-    if (file) {
-      const $input = $(this);
-      let $nameSpan = $input.siblings('.file-name-display');
-      if ($nameSpan.length === 0) {
-        $nameSpan = $('<span class="file-name-display" style="font-size:11px;color:#333;margin-left:6px;display:inline-block;"></span>');
-        $input.after($nameSpan);
-      }
-      $nameSpan.text(file.name);
+// 메인 이미지: 서버 업로드 후 URL 반영
+$('#in-main-img').on('change', async function (e) {
+  const file = e.target.files[0];
 
-      const reader = new FileReader();
-      reader.onload = function (evt) {
-        mainImgSrc = evt.target.result;
-        renderTemplate();
-      };
-      reader.readAsDataURL(file);
+  if (!file || !file.type.startsWith('image/')) return;
+
+  const $input = $(this);
+  let $nameSpan = $input.siblings('.file-name-display');
+
+  if ($nameSpan.length === 0) {
+    $nameSpan = $('<span class="file-name-display" style="font-size:11px;color:#333;margin-left:6px;display:inline-block;"></span>');
+    $input.after($nameSpan);
+  }
+
+  $nameSpan.text('업로드 중...');
+
+  try {
+    if (!window.phoenixUploader || typeof window.phoenixUploader.uploadImage !== 'function') {
+      throw new Error('이미지 업로드 기능을 찾을 수 없습니다.');
     }
-  });
+
+    const result = await window.phoenixUploader.uploadImage(file);
+
+    if (!result || !result.url) {
+      throw new Error('서버 이미지 URL을 반환받지 못했습니다.');
+    }
+
+    mainImgSrc = result.url;
+
+    $nameSpan.text(file.name);
+    renderTemplate();
+
+  } catch (error) {
+    $nameSpan.text('업로드 실패');
+    alert(error.message || '메인 이미지 업로드에 실패했습니다.');
+    console.error('[메인 이미지 업로드 오류]', error);
+  }
+});
 
   $('input:not(.in-card-title, .in-card-link, .in-price-stay, .in-price-notice, .in-price-period, .in-price-room, .in-price-weekday, .in-link-weekday, .in-price-weekend, .in-link-weekend, .in-price-holiday, .in-link-holiday, .in-price-common, .in-link-common), textarea:not(.in-card-sub, .in-card-notice, .in-price-notice)').on('input propertychange change', function () {
     renderTemplate();
