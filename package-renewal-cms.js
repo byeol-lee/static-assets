@@ -33,7 +33,7 @@ $(document).ready(function () {
         {
           period: "08.01 ~ 08.31",
           room: "로얄",
-          weekdayPrice: "340,000",
+          weekdayPrice: "100,000",
           weekdayLink: "#",
           weekendPrice: "420,000",
           weekendLink: "#",
