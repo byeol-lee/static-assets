@@ -837,6 +837,14 @@ ${generatedHTML}
   const workspaceFields = ['#in-main-badge','#in-main-title','#in-main-desc','#in-info-reserve-period','#in-info-stay-period','#in-cta-title','#in-cta-desc','#in-bullets'];
 
   function cloneData(value) { return JSON.parse(JSON.stringify(value)); }
+  function getMainTitle(tab) {
+    const data = tab && tab.data ? tab.data : snapshotWorkspace();
+    const title = data && data.fields ? data.fields['#in-main-title'] : '';
+    return String(title || '').trim() || 'Phoenix HNR Template';
+  }
+  function safeFileName(value) {
+    return String(value || 'Phoenix HNR Template').trim().replace(/[\\/:*?"<>|]/g, '_').replace(/[. ]+$/g, '') || 'Phoenix HNR Template';
+  }
   function snapshotWorkspace() {
     const fields = {};
     workspaceFields.forEach(sel => fields[sel] = $(sel).val() || '');
@@ -929,9 +937,10 @@ ${generatedHTML}
   async function saveCurrentHtml(saveAs) {
     const tab = activeTab();
     if (!tab) return;
+    saveActiveSnapshot();
     const content = getCurrentHtml();
     try {
-      const result = await window.phoenixUploader.saveHtml({content, filePath: tab.htmlPath || '', defaultName: (tab.name || 'template').replace(/[\\/:*?"<>|]/g,'_') + '.html', saveAs: !!saveAs});
+      const result = await window.phoenixUploader.saveHtml({content, filePath: tab.htmlPath || '', defaultName: safeFileName(getMainTitle(tab)) + '.html', saveAs: !!saveAs});
       if (result && result.saved) {
         tab.htmlPath = result.filePath || tab.htmlPath || '';
         // HTML output and editable project data are separate: do not clear tab.dirty here.
@@ -943,11 +952,13 @@ ${generatedHTML}
     const tab = activeTab();
     if (!tab) return;
     saveActiveSnapshot();
-    const project = { format:'phoenix-hnr-template-project', version:1, name:tab.name, data:tab.data };
+    const projectTitle = getMainTitle(tab);
+    const project = { format:'phoenix-hnr-template-project', version:1, name:projectTitle, data:tab.data };
     try {
-      const result = await window.phoenixUploader.saveProject({project, filePath:tab.projectPath || '', defaultName:(tab.name || '작업').replace(/[\\/:*?"<>|]/g,'_') + '.phxwork', saveAs:!!saveAs});
+      const result = await window.phoenixUploader.saveProject({project, filePath:tab.projectPath || '', defaultName:safeFileName(projectTitle) + '.phxwork', saveAs:!!saveAs});
       if (result && result.saved) {
         tab.projectPath = result.filePath || tab.projectPath || '';
+        tab.name = result.fileName || projectTitle;
         tab.dirty = false;
         drawTabs();
         alert('작업 파일 저장이 완료됐습니다.');
@@ -966,7 +977,7 @@ ${generatedHTML}
       saveActiveSnapshot();
       const number = workspace.nextId++;
       const id = 'workspace-' + number;
-      const name = project.name || result.fileName || ('불러온 작업 ' + number);
+      const name = result.fileName || project.name || ('불러온 작업 ' + number);
       const data = cloneData(project.data);
       workspace.tabs.push({id,name,type:'template',data,dirty:false,projectPath:result.filePath || '',htmlPath:''});
       workspace.activeId = id;
