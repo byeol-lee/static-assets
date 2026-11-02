@@ -355,6 +355,7 @@ $(document).on('change', '.in-card-img', async function (e) {
 
     $nameSpan.text(file.name);
     renderTemplate();
+    markDirty();
 
   } catch (error) {
     $nameSpan.text('업로드 실패');
@@ -412,6 +413,7 @@ $('#in-main-img').on('change', async function (e) {
 
     $nameSpan.text(file.name);
     renderTemplate();
+    markDirty();
 
   } catch (error) {
     $nameSpan.text('업로드 실패');
@@ -829,69 +831,75 @@ ${generatedHTML}
   });
 
 
-  // Workspace tabs: each template tab keeps its own form data and generated HTML.
-  const workspace = { tabs: [], activeId: null, nextId: 1 };
+  // Workspace tabs: keep each template's editable data independent.
+  const workspace = { tabs: [], activeId: null, nextId: 2, changingTab: false };
   let workspaceDefaults = null;
   const workspaceFields = ['#in-main-badge','#in-main-title','#in-main-desc','#in-info-reserve-period','#in-info-stay-period','#in-cta-title','#in-cta-desc','#in-bullets'];
+
+  function cloneData(value) { return JSON.parse(JSON.stringify(value)); }
   function snapshotWorkspace() {
     const fields = {};
-    workspaceFields.forEach(sel => fields[sel] = $(sel).val());
+    workspaceFields.forEach(sel => fields[sel] = $(sel).val() || '');
     return {
       fields,
       property: $('input[name="in-property"]:checked').val() || 'PHOENIX HOTELS & RESORT',
       mainImgSrc,
-      cardsData: JSON.parse(JSON.stringify(cardsData)),
-      stayGroupsData: JSON.parse(JSON.stringify(stayGroupsData)),
-      html: $('#code-text').text()
+      cardsData: cloneData(cardsData),
+      stayGroupsData: cloneData(stayGroupsData)
     };
   }
   function restoreWorkspace(data) {
     if (!data) return;
-    workspaceFields.forEach(sel => $(sel).val(data.fields[sel] || ''));
-    $('input[name="in-property"][value="' + String(data.property || '').replace(/"/g,'\\"') + '"]').prop('checked', true);
+    workspace.changingTab = true;
+    workspaceFields.forEach(sel => $(sel).val(data.fields && data.fields[sel] != null ? data.fields[sel] : ''));
+    $('input[name="in-property"]').prop('checked', false);
+    $('input[name="in-property"][value="' + String(data.property || 'PHOENIX HOTELS & RESORT').replace(/"/g,'\\"') + '"]').prop('checked', true);
     mainImgSrc = data.mainImgSrc || mainImgSrc;
-    cardsData = JSON.parse(JSON.stringify(data.cardsData || cardsData));
-    stayGroupsData = JSON.parse(JSON.stringify(data.stayGroupsData || stayGroupsData));
-    renderCardForms(); renderStayForms(); renderTemplate();
+    cardsData = cloneData(data.cardsData || cardsData);
+    stayGroupsData = cloneData(data.stayGroupsData || stayGroupsData);
+    renderCardForms();
+    renderStayForms();
+    renderTemplate();
+    workspace.changingTab = false;
   }
   function activeTab() { return workspace.tabs.find(t => t.id === workspace.activeId); }
-  function markDirty() {
-    const tab = activeTab();
-    if (tab && tab.type === 'template') { tab.dirty = true; drawTabs(); }
-  }
-  function drawTabs() {
-    const $tabs = $('#phoenix-workspace-tabs').empty();
-    workspace.tabs.forEach(tab => {
-      const $item = $('<div>').css({display:'flex',alignItems:'center',gap:'5px',padding:'5px 9px',border:'1px solid #ccc',borderRadius:'5px',background:tab.id===workspace.activeId?'#fff':'#e7e7e7',whiteSpace:'nowrap'});
-      const $name = $('<button type="button">').text((tab.dirty?'● ':'') + tab.name).css({border:0,background:'transparent',cursor:'pointer'});
-      $name.on('click', () => switchTab(tab.id));
-      const $close = $('<button type="button">×</button>').attr('aria-label','탭 닫기').css({border:0,background:'transparent',cursor:'pointer'}).on('click', () => closeTab(tab.id));
-      $item.append($name,$close); $tabs.append($item);
-    });
-    const $new = $('<button type="button">+ 새 작업</button>').css({padding:'5px 10px',cursor:'pointer'}).on('click',newTab);
-    $tabs.append($new);
-  }
   function saveActiveSnapshot() {
     const tab = activeTab();
     if (tab && tab.type === 'template') tab.data = snapshotWorkspace();
   }
+  function markDirty() {
+    if (workspace.changingTab) return;
+    const tab = activeTab();
+    if (tab) { tab.dirty = true; saveActiveSnapshot(); drawTabs(); }
+  }
+  function drawTabs() {
+    const $tabs = $('#phoenix-workspace-tabs').empty();
+    workspace.tabs.forEach(tab => {
+      const isActive = tab.id === workspace.activeId;
+      const $item = $('<div>').addClass('phoenix-workspace-tab').attr({'data-tab-id':tab.id,'aria-selected':isActive ? 'true' : 'false'}).css({display:'flex',alignItems:'center',gap:'5px',padding:'5px 9px',border:'1px solid ' + (isActive ? '#30343b' : '#c8cbd0'),borderRadius:'5px',backgroundColor:isActive ? '#ffffff' : '#e7e9ec',whiteSpace:'nowrap',boxShadow:isActive ? 'inset 0 -2px 0 #30343b' : 'none'});
+      const $name = $('<button type="button">').text((tab.dirty ? '● ' : '') + tab.name).css({border:0,background:'transparent',color:'#20242a',fontWeight:isActive?'700':'400',cursor:'pointer'}).on('click', () => switchTab(tab.id));
+      const $close = $('<button type="button">×</button>').attr('aria-label','탭 닫기').css({border:0,background:'transparent',color:'#555',cursor:'pointer',fontSize:'16px'}).on('click', () => closeTab(tab.id));
+      $item.append($name,$close);
+      $tabs.append($item);
+    });
+    const $new = $('<button type="button" class="phoenix-new-workspace">+ 새 작업</button>').css({padding:'7px 13px',cursor:'pointer',border:'1px solid #252a31',borderRadius:'5px',background:'#30343b',color:'#fff',fontWeight:'600'}).on('click',newTab);
+    $tabs.append($new);
+  }
   function switchTab(id) {
-    if (id === workspace.activeId) return;
+    if (id === workspace.activeId || workspace.changingTab) return;
     saveActiveSnapshot();
     const tab = workspace.tabs.find(t => t.id === id);
     if (!tab) return;
     workspace.activeId = id;
-    $('#phoenix-raw-workspace').hide();
-    $('.app-container').show();
     restoreWorkspace(tab.data);
     drawTabs();
   }
   function newTab() {
     saveActiveSnapshot();
-    const id = 'workspace-' + workspace.nextId++;
-    const initial = workspace.tabs.find(t => t.id === 'workspace-1');
-    const data = workspaceDefaults ? JSON.parse(JSON.stringify(workspaceDefaults)) : (initial ? JSON.parse(JSON.stringify(initial.data)) : snapshotWorkspace());
-    workspace.tabs.push({id, name:'새 작업 ' + (workspace.nextId - 1), type:'template', data, dirty:false});
+    const number = workspace.nextId++;
+    const id = 'workspace-' + number;
+    const data = workspaceDefaults ? cloneData(workspaceDefaults) : snapshotWorkspace();
+    workspace.tabs.push({id, name:'새 작업 ' + (number - 1), type:'template', data, dirty:false, projectPath:''});
     workspace.activeId = id;
     restoreWorkspace(data);
     drawTabs();
@@ -899,70 +907,106 @@ ${generatedHTML}
   function closeTab(id) {
     const tab = workspace.tabs.find(t => t.id === id);
     if (!tab) return;
-    if (tab.dirty && !confirm('저장하지 않은 변경 사항이 있습니다. 탭을 닫을까요?')) return;
-    if (workspace.tabs.length === 1) { newTab(); workspace.tabs = workspace.tabs.filter(t => t.id !== id); }
-    else workspace.tabs = workspace.tabs.filter(t => t.id !== id);
-    if (workspace.activeId === id) {
+    if (tab.dirty && !confirm('저장하지 않은 작업 내용이 있습니다. 이 탭을 닫을까요?')) return;
+    const wasActive = workspace.activeId === id;
+    workspace.tabs = workspace.tabs.filter(t => t.id !== id);
+    if (!workspace.tabs.length) {
+      const data = workspaceDefaults ? cloneData(workspaceDefaults) : snapshotWorkspace();
+      const nextId = 'workspace-' + workspace.nextId++;
+      workspace.tabs.push({id:nextId,name:'새 작업 ' + (workspace.nextId - 2),type:'template',data,dirty:false,projectPath:''});
+    }
+    if (wasActive) {
       const next = workspace.tabs[workspace.tabs.length - 1];
       workspace.activeId = next.id;
-      if (next.type === 'raw') showRawTab(next); else { $('#phoenix-raw-workspace').hide(); $('.app-container').show(); restoreWorkspace(next.data); }
+      restoreWorkspace(next.data);
     }
     drawTabs();
+  }
+  function getCurrentHtml() {
+    renderTemplate();
+    return $('#code-text').text();
   }
   async function saveCurrentHtml(saveAs) {
     const tab = activeTab();
     if (!tab) return;
-    let content;
-    if (tab.type === 'raw') content = $('#phoenix-raw-editor').val();
-    else { renderTemplate(); content = $('#code-text').text(); }
+    const content = getCurrentHtml();
     try {
-      const result = await window.phoenixUploader.saveHtml({content, filePath: tab.savedPath || '', defaultName: (tab.name || 'template').replace(/[\\/:*?"<>|]/g,'_') + '.html', saveAs: !!saveAs});
-      if (result && result.saved) { tab.dirty = false; tab.savedPath = result.filePath || ''; if (tab.type === 'raw') tab.html = content; else tab.data = snapshotWorkspace(); drawTabs(); }
-    } catch (error) { alert('HTML 저장에 실패했습니다.\\n' + (error.message || error)); }
+      const result = await window.phoenixUploader.saveHtml({content, filePath: tab.htmlPath || '', defaultName: (tab.name || 'template').replace(/[\\/:*?"<>|]/g,'_') + '.html', saveAs: !!saveAs});
+      if (result && result.saved) {
+        tab.htmlPath = result.filePath || tab.htmlPath || '';
+        // HTML output and editable project data are separate: do not clear tab.dirty here.
+        alert('HTML 저장이 완료됐습니다.');
+      }
+    } catch (error) { alert('HTML 저장에 실패했습니다.\n' + (error.message || error)); }
   }
-  function showRawTab(tab) {
-    $('.app-container').hide();
-    let $raw = $('#phoenix-raw-workspace');
-    if (!$raw.length) {
-      $raw = $('<div id="phoenix-raw-workspace" style="height:calc(100vh - 44px);display:flex;flex-direction:column;padding:12px;box-sizing:border-box;gap:10px;"><iframe title="HTML 미리보기" style="width:100%;height:48%;border:1px solid #ccc;background:#fff;"></iframe><textarea id="phoenix-raw-editor" style="width:100%;height:52%;resize:none;"></textarea></div>');
-      $('body').append($raw);
-      $raw.find('textarea').on('input', function(){ const t=activeTab(); if(t){t.html=this.value;t.dirty=true;$raw.find('iframe')[0].srcdoc=this.value;drawTabs();} });
-    }
-    $raw.show().find('textarea').val(tab.html || '');
-    $raw.find('iframe')[0].srcdoc = tab.html || '';
-  }
-  async function openHtmlTab() {
+  async function saveProject(saveAs) {
+    const tab = activeTab();
+    if (!tab) return;
+    saveActiveSnapshot();
+    const project = { format:'phoenix-hnr-template-project', version:1, name:tab.name, data:tab.data };
     try {
-      const result = await window.phoenixUploader.openHtml();
-      if (!result || !result.content) return;
+      const result = await window.phoenixUploader.saveProject({project, filePath:tab.projectPath || '', defaultName:(tab.name || '작업').replace(/[\\/:*?"<>|]/g,'_') + '.phxwork', saveAs:!!saveAs});
+      if (result && result.saved) {
+        tab.projectPath = result.filePath || tab.projectPath || '';
+        tab.dirty = false;
+        drawTabs();
+        alert('작업 파일 저장이 완료됐습니다.');
+      }
+    } catch (error) { alert('작업 파일 저장에 실패했습니다.\n' + (error.message || error)); }
+  }
+  async function openProjectTab() {
+    try {
+      const result = await window.phoenixUploader.openProject();
+      if (!result || !result.project) return;
+      const project = result.project;
+      if (project.format !== 'phoenix-hnr-template-project' || !project.data) {
+        alert('지원하지 않는 작업 파일입니다.');
+        return;
+      }
       saveActiveSnapshot();
-      const id = 'workspace-' + workspace.nextId++;
-      workspace.tabs.push({id,name:result.fileName || 'HTML 문서',type:'raw',html:result.content,savedPath:result.filePath || '',dirty:false});
-      workspace.activeId=id; showRawTab(activeTab()); drawTabs();
-    } catch(error) { alert('HTML 파일을 열지 못했습니다.\\n' + (error.message || error)); }
+      const number = workspace.nextId++;
+      const id = 'workspace-' + number;
+      const name = project.name || result.fileName || ('불러온 작업 ' + number);
+      const data = cloneData(project.data);
+      workspace.tabs.push({id,name,type:'template',data,dirty:false,projectPath:result.filePath || '',htmlPath:''});
+      workspace.activeId = id;
+      restoreWorkspace(data);
+      drawTabs();
+    } catch(error) { alert('작업 파일을 열지 못했습니다.\n' + (error.message || error)); }
+  }
+  function hasUnsavedWork() {
+    saveActiveSnapshot();
+    return workspace.tabs.some(tab => tab.dirty);
   }
   function requestExit() {
-    const hasDirty = workspace.tabs.some(t => t.dirty);
-    if (!hasDirty || confirm('저장하지 않은 작업이 있습니다. 저장하지 않고 종료할까요?')) window.phoenixUploader.confirmClose(true);
+    if (!hasUnsavedWork() || confirm('저장하지 않은 작업 영역이 있습니다. 저장하지 않고 종료할까요?')) window.phoenixUploader.confirmClose(true);
   }
-  workspace.tabs.push({id:'workspace-1',name:'작업 1',type:'template',data:null,dirty:false});
-  workspace.activeId='workspace-1';
-  // Capture edits and structural changes without changing the original form handlers.
+  function requestRefresh() {
+    if (!hasUnsavedWork() || confirm('저장하지 않은 작업 영역이 있습니다. 저장하지 않고 새로고침할까요?')) window.phoenixUploader.reloadGenerator();
+  }
+
+  workspace.tabs.push({id:'workspace-1',name:'작업 1',type:'template',data:null,dirty:false,projectPath:'',htmlPath:''});
+  workspace.activeId = 'workspace-1';
   $(document).on('input change', '.admin-panel input, .admin-panel textarea', markDirty);
-  $(document).on('click', '#btn-add-card,#btn-add-stay,.btn-del-card,.btn-del-stay,.btn-del-room,.btn-add-room,.btn-add-card-image,.btn-del-card-image', markDirty);
+  $(document).on('click', '#btn-add-card,#btn-add-stay,.btn-del-card,.btn-del-stay,.btn-del-room,.btn-add-room,.btn-add-card-image,.btn-del-card-image', function(){ setTimeout(markDirty, 0); });
   $('#btn-save-html').on('click', () => saveCurrentHtml(false));
-  if (window.phoenixUploader && window.phoenixUploader.onMenuAction) {
+  if (window.phoenixUploader && window.phoenixUploader.onMenuAction && !window.__phoenixWorkspaceMenuBound) {
+    window.__phoenixWorkspaceMenuBound = true;
     window.phoenixUploader.onMenuAction(action => {
       if (action === 'new') newTab();
-      if (action === 'open') openHtmlTab();
-      if (action === 'save') saveCurrentHtml(false);
-      if (action === 'save-as') saveCurrentHtml(true);
+      if (action === 'open-project') openProjectTab();
+      if (action === 'save-project') saveProject(false);
+      if (action === 'save-project-as') saveProject(true);
+      if (action === 'save-html') saveCurrentHtml(false);
+      if (action === 'save-html-as') saveCurrentHtml(true);
+      if (action === 'refresh') requestRefresh();
       if (action === 'exit') requestExit();
     });
   }
   window.__phoenixWorkspaceManager = true;
+  window.__phoenixProjectManager = true;
+  window.__phoenixRefreshGuard = true;
   drawTabs();
-
   renderCardForms();
   renderStayForms();
   renderTemplate();
