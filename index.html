@@ -13,7 +13,8 @@
 
 <body>
 
-  <div class="app-container">
+  <div id="phoenix-workspace-tabs" style="height:44px;display:flex;align-items:center;gap:6px;padding:6px 10px;background:#f3f4f6;border-bottom:1px solid #ddd;overflow-x:auto;"></div>
+  <div class="app-container" style="height:calc(100vh - 44px);">
     <!-- 1. 어드민 입력 패널 -->
     <div class="admin-panel">
       <h2>HTML</h2>
@@ -111,6 +112,7 @@
         <span style="font-weight:bold;">미리보기</span>
         <div>
           <button class="btn-action" id="btn-toggle-code">HTML 소스보기/복사</button>
+          <button class="btn-action" id="btn-save-html" type="button">HTML 저장</button>
         </div>
       </div>
 
