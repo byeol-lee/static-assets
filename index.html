@@ -9,6 +9,20 @@
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="package-renewal-cms.css" />
+
+
+  <style>
+    .app-container{position:relative;display:flex!important;flex-direction:row!important;align-items:stretch;min-width:0;overflow:hidden;}
+    .admin-panel{width:30%!important;flex:0 0 30%;min-width:0;overflow:auto;}
+    .preview-panel{width:70%!important;flex:1 1 70%;min-width:0;overflow:hidden;display:flex;flex-direction:column;}
+    .panel-split-controller{position:absolute;z-index:20;top:6px;left:30%;transform:translateX(-50%);display:flex;align-items:center;gap:7px;padding:4px 8px;background:#fff;border:1px solid #c8cbd0;border-radius:6px;box-shadow:0 1px 4px #0002;font-size:11px;white-space:nowrap;}
+    .panel-split-controller input{width:90px;}
+    .preview-controls{display:flex;flex-direction:column;gap:7px;margin-bottom:10px;width:100%;max-width:1200px;}
+    .preview-presets{display:flex;flex-wrap:wrap;gap:5px;}
+    .preview-width-control{display:flex;align-items:center;gap:8px;font-size:12px;width:100%;}
+    .preview-width-control input{flex:1;min-width:80px;}
+    .mobile-frame-container{width:320px;max-width:1200px;flex:0 0 auto;min-height:720px;}
+  </style>
 </head>
 
 <body>
@@ -24,7 +38,7 @@
     .preview-body{
       flex:1 1 auto;
       min-height:0;
-      align-items:stretch;
+      align-items:center;
       justify-content:flex-start;
       padding:12px;
       overflow:auto;
@@ -35,7 +49,7 @@
       min-height:720px;
       display:flex;
       justify-content:center;
-      align-self:stretch;
+      align-self:center;
     }
     .mobile-frame{
       height:100%;
@@ -54,6 +68,11 @@
     }
   </style>
   <div class="app-container" style="height:calc(100vh - 44px);">
+    <div class="panel-split-controller" aria-label="좌우 영역 비율 조절">
+      <span>HTML <strong id="admin-width-value">30%</strong></span>
+      <input id="panel-split-slider" type="range" min="20" max="60" step="1" value="30" aria-label="HTML 영역 너비">
+      <span>미리보기 <strong id="preview-panel-width-value">70%</strong></span>
+    </div>
     <!-- 1. 어드민 입력 패널 -->
     <div class="admin-panel">
       <h2>HTML</h2>
@@ -156,12 +175,17 @@
       </div>
 
       <div class="preview-body" style="flex-direction: column;">
-        <div style="margin-bottom: 10px; display: flex; gap: 6px; align-items: center;">
-          <span style="font-size: 12px; color: #666;">화면 크기:</span>
-          <button class="btn-secondary btn-device-size" data-width="340px">기본 (320px)</button>
-          <button class="btn-secondary btn-device-size" data-width="375px">아이폰 (375px)</button>
-          <button class="btn-secondary btn-device-size" data-width="414px">큰폰 (414px)</button>
-          <button class="btn-secondary btn-device-size" data-width="100%">전체 (100%)</button>
+        <div class="preview-controls">
+          <div class="preview-presets">
+            <button class="btn-secondary btn-device-size" data-width="320">최소 320px</button>
+            <button class="btn-secondary btn-device-size" data-width="768">중간 768px</button>
+            <button class="btn-secondary btn-device-size" data-width="819">819px</button>
+            <button class="btn-secondary btn-device-size" data-width="820">820px</button>
+            <button class="btn-secondary btn-device-size" data-width="1200">최대 1200px</button>
+          </div>
+          <label class="preview-width-control">미리보기 폭 <strong id="preview-width-value">320px</strong>
+            <input id="preview-width-slider" type="range" min="320" max="1200" step="1" value="320">
+          </label>
         </div>
 
         <div class="mobile-frame-container" id="mobile-frame-container" style="width: 340px;">
