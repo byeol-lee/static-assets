@@ -794,9 +794,26 @@ function goToSlide($slider, nextIndex, withTransition = true) {
 </div>
 `.trim();
 
-    const $renderArea = $('#preview-render');
-    $renderArea.html(generatedHTML);
-    initSliders($renderArea);
+    // Render inside an iframe so responsive media queries use the preview
+    // viewport width instead of the Electron application's window width.
+    const previewFrame = document.getElementById('preview-frame');
+    if (previewFrame) {
+      const cssHref = new URL('package-renewal-cms.css', document.baseURI).href;
+      const templateScriptHref = new URL('package-renewal-template.js', document.baseURI).href;
+      previewFrame.srcdoc = `<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="stylesheet" href="${cssHref}">
+  <style>html,body{margin:0;padding:0;width:100%;min-height:100%;}body{overflow-x:hidden;}</style>
+</head>
+<body>
+${generatedHTML}
+<script src="${templateScriptHref}"><\/script>
+</body>
+</html>`;
+    }
 
     const fullSourceCode = `
 <link rel="stylesheet" href="package-renewal-cms.css" />
@@ -807,29 +824,8 @@ ${generatedHTML}
     $('#code-text').text(fullSourceCode);
   }
 
-  // 미리보기 화면 동작 인터랙션
-  $(document).on('click', '#btn-open-sheet', function () {
-    $('#sheet-bg').addClass('active');
-    $('#bottom-sheet').addClass('active');
-  });
-
-  $(document).on('click', '#btn-close-sheet, #sheet-bg', function () {
-    $('#sheet-bg').removeClass('active');
-    $('#bottom-sheet').removeClass('active');
-  });
-
-  $(document).on('click', '.tpl-price-period-acc', function () {
-    $(this).closest('.tpl-price-group').toggleClass('active');
-  });
-
-  $(document).on('click', '.tpl-slider-dot', function (e) {
-    e.preventDefault();
-    e.stopPropagation();
-    const $slider = $(this).closest('.tpl-card-slider');
-    const next = Number($(this).attr('data-slide-to'));
-    goToSlide($slider, next);
-  });
-
+  // Preview interactions are initialized inside the preview iframe by
+  // package-renewal-template.js, keeping them isolated from the editor UI.
 
   // Workspace tabs: keep each template's editable data independent.
   const workspace = { tabs: [], activeId: null, nextId: 2, changingTab: false };
