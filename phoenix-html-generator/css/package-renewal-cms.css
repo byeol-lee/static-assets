@@ -484,8 +484,7 @@ body {
 .tpl-sticky-val {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #000;
-    /* color: #f7441b; */
+    color: #f7441b;
 }
 
 .tpl-sticky-btn {
