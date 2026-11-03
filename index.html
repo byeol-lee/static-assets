@@ -14,7 +14,45 @@
 <body>
 
   <div id="phoenix-workspace-tabs" style="height:44px;display:flex;align-items:center;gap:6px;padding:6px 10px;background:#f3f4f6;border-bottom:1px solid #ddd;overflow-x:auto;"></div>
-  <style>.phoenix-workspace-tab[aria-selected="true"]{background:#fff!important;border-color:#30343b!important}.phoenix-new-workspace{background:#30343b!important;color:#fff!important}</style>
+  <style>
+    .phoenix-workspace-tab[aria-selected="true"]{background:#fff!important;border-color:#30343b!important}
+    .phoenix-new-workspace{background:#30343b!important;color:#fff!important}
+
+    /* 미리보기 프레임이 EXE 창의 가용 높이를 충분히 사용하도록 보완 */
+    .preview-panel{min-height:0;min-width:0;}
+    .preview-header{flex:0 0 auto;}
+    .preview-body{
+      flex:1 1 auto;
+      min-height:0;
+      align-items:stretch;
+      justify-content:flex-start;
+      padding:12px;
+      overflow:auto;
+    }
+    .preview-body > div:first-child{flex:0 0 auto;}
+    .mobile-frame-container{
+      flex:1 0 auto;
+      min-height:720px;
+      display:flex;
+      justify-content:center;
+      align-self:stretch;
+    }
+    .mobile-frame{
+      height:100%;
+      min-height:720px;
+      max-height:none;
+    }
+    .mobile-screen{
+      height:100%;
+      min-height:720px;
+      max-height:none;
+    }
+    #preview-frame{
+      height:100%!important;
+      min-height:720px!important;
+      max-height:none!important;
+    }
+  </style>
   <div class="app-container" style="height:calc(100vh - 44px);">
     <!-- 1. 어드민 입력 패널 -->
     <div class="admin-panel">
@@ -128,7 +166,7 @@
 
         <div class="mobile-frame-container" id="mobile-frame-container" style="width: 340px;">
           <div class="mobile-frame" style="width: 100%;">
-            <iframe class="mobile-screen" id="preview-frame" title="템플릿 미리보기" style="width:100%;height:667px;max-height:667px;min-height:0;border:0;display:block;" srcdoc="<!doctype html><html lang='ko'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0, viewport-fit=cover'></head><body></body></html>"></iframe>
+            <iframe class="mobile-screen" id="preview-frame" title="템플릿 미리보기" style="width:100%;height:100%;max-height:none;min-height:720px;border:0;display:block;" srcdoc="<!doctype html><html lang='ko'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0, viewport-fit=cover'></head><body></body></html>"></iframe>
           </div>
         </div>
       </div>
