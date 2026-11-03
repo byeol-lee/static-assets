@@ -1039,10 +1039,15 @@ ${generatedHTML}
 });
 
 function setPreviewWidth(width) {
-    const value = Math.max(320, Math.min(1200, Number(width) || 320));
-    $('#mobile-frame-container').css({ width: value + 'px', maxWidth: '1200px' });
-    $('#preview-width-slider').val(value);
-    $('#preview-width-value').text(value + 'px');
+    const value = Math.max(
+        320,
+        Math.min(1920, Number(width) || 320)
+    );
+
+    $('#mobile-frame-container').css({
+        width: value + 'px',
+        maxWidth: '1920px'
+    });
 }
 $(document).on('click', '.btn-device-size', function () {
     setPreviewWidth($(this).attr('data-width'));
@@ -1050,16 +1055,6 @@ $(document).on('click', '.btn-device-size', function () {
 $(document).on('input change', '#preview-width-slider', function () {
     setPreviewWidth(this.value);
 });
-$(document).on('input change', '#panel-split-slider', function () {
-    const left = Math.max(20, Math.min(60, Number(this.value) || 30));
-    const right = 100 - left;
-    $('.admin-panel').css({ width: left + '%', flex: '0 0 ' + left + '%' });
-    $('.preview-panel').css({ width: right + '%', flex: '1 1 ' + right + '%' });
-    $('#admin-width-value').text(left + '%');
-    $('#preview-panel-width-value').text(right + '%');
-    $('.panel-split-controller').css('left', left + '%');
-});
 $(function () {
     setPreviewWidth(320);
-    $('#panel-split-slider').trigger('input');
 });
