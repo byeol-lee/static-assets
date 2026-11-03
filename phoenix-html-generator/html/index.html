@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Safe Area 대응을 위해 viewport-fit=cover 추가 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>HTML 생성기</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/package-renewal-cms.css" />
+
+
+    <style>
+        .app-container {
+            position: relative;
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: stretch;
+            min-width: 0;
+            overflow: hidden;
+        }
+
+        .admin-panel {
+            width: 30% !important;
+            flex: 0 0 30%;
+            min-width: 0;
+            overflow: auto;
+        }
+
+        .preview-panel {
+            width: 70% !important;
+            flex: 1 1 70%;
+            min-width: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .preview-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .preview-presets {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: center;
+        }
+
+        .mobile-frame-container {
+            width: 320px;
+            max-width: 1200px;
+            flex: 0 0 auto;
+            min-height: 720px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="phoenix-workspace-tabs"
+        style="height:44px;display:flex;align-items:center;gap:6px;padding:6px 10px;background:#f3f4f6;border-bottom:1px solid #ddd;overflow-x:auto;">
+    </div>
+    <style>
+        .phoenix-workspace-tab[aria-selected="true"] {
+            background: #fff !important;
+            border-color: #30343b !important
+        }
+
+        .phoenix-new-workspace {
+            background: #30343b !important;
+            color: #fff !important
+        }
+
+        /* 미리보기 프레임이 EXE 창의 가용 높이를 충분히 사용하도록 보완 */
+        .preview-panel {
+            min-height: 0;
+            min-width: 0;
+        }
+
+        .preview-header {
+            flex: 0 0 auto;
+        }
+
+        .preview-body {
+            flex: 1 1 auto;
+            min-height: 0;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 12px;
+            overflow: auto;
+        }
+
+        .preview-body>div:first-child {
+            flex: 0 0 auto;
+        }
+
+        .mobile-frame-container {
+            flex: 1 0 auto;
+            min-height: 720px;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+
+        .mobile-frame {
+            height: 100%;
+            min-height: 720px;
+            max-height: none;
+        }
+
+        .mobile-screen {
+            height: 100%;
+            min-height: 720px;
+            max-height: none;
+        }
+
+        #preview-frame {
+            height: 100% !important;
+            min-height: 720px !important;
+            max-height: none !important;
+        }
+    </style>
+    <div class="app-container" style="height:calc(100vh - 44px);">
+        <!-- 1. 어드민 입력 패널 -->
+        <div class="admin-panel">
+            <h2>HTML</h2>
+
+            <!-- 메인 비주얼 & 헤더 -->
+            <div class="form-section">
+                <h3>222 메인 섹션</h3>
+                <div class="form-group">
+                    <label>메인 이미지(1920*1080)</label>
+                    <input type="file" id="in-main-img" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label>PROPERTY 선택</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="in-property" value="PHOENIX HOTELS & RESORT" checked> PHOENIX
+                            HOTELS & RESORT
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="in-property" value="PHOENIX PARK"> PHOENIX PARK
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="in-property" value="PHOENIX ISLAND"> PHOENIX ISLAND
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="in-property" value="PLAYCE CAMP by PHOENIX"> PLAYCE CAMP by
+                            PHOENIX
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>메인 비주얼 원형 뱃지 문구 (선택)/줄바꿈 시
+                        <pre><code>&lt;br /&gt;</code></pre>사용
+                    </label>
+                    <input type="text" id="in-main-badge" placeholder="연박 전용 / 추가 혜택">
+                </div>
+                <div class="form-group">
+                    <label>메인 타이틀</label>
+                    <input type="text" id="in-main-title" placeholder="COOL SUMMER">
+                </div>
+                <div class="form-group">
+                    <label>상세 설명</label>
+                    <textarea id="in-main-desc" placeholder="뜨거운 여름, 휘닉스 아일랜드에서 FUN하고 COOL하게!"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>예약 기간</label>
+                    <input type="text" id="in-info-reserve-period" placeholder="2026.06.01 ~ 08.31">
+                </div>
+                <div class="form-group">
+                    <label>투숙 기간</label>
+                    <input type="text" id="in-info-stay-period" placeholder="2026.06.01 ~ 09.15">
+                </div>
+            </div>
+
+            <!-- CTA 안내 박스 -->
+            <div class="form-section">
+                <h3>2. 안내 & 예약(CTA) 박스</h3>
+                <div class="form-group">
+                    <label>박스 제목</label>
+                    <input type="text" id="in-cta-title" placeholder="사계절 온수풀">
+                </div>
+                <div class="form-group">
+                    <label>박스 설명</label>
+                    <textarea id="in-cta-desc" placeholder="제주 섭지코지의 바다 바람을 느끼고, 자연이 주는 아름다운 색을 즐겨 보세요."></textarea>
+                </div>
+            </div>
+
+            <!-- 컨텐츠 카드 영역 -->
+            <div class="form-section">
+                <h3>3. 컨텐츠 카드 영역 (최대 10개)</h3>
+                <div id="card-form-container"></div>
+                <button type="button" class="btn-add-card" id="btn-add-card">+ 카드 추가</button>
+            </div>
+
+            <!-- 이용 안내 섹션 -->
+            <div class="form-section">
+                <h3>4. 이용 안내 (불릿 리스트)</h3>
+                <div class="form-group">
+                    <label>안내 항목들 (줄바꿈으로 구분)</label>
+                    <textarea id="in-bullets" style="height: 100px;" placeholder="쾌적한 환경을 위해 수영모 착용이 의무화되어 있습니다.
+36개월 미만 유아는 방수 기저귀 착용 필수입니다.
+기상 악화 시 운영 시간이 변경될 수 있습니다."></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>5. 이용 요금표 관리</h3>
+                <div id="stay-form-container"></div>
+                <button type="button" class="btn-add-stay" id="btn-add-stay">+ 박수 그룹 추가</button>
+            </div>
+        </div>
+
+        <div class="preview-panel">
+            <div class="preview-header">
+                <span style="font-weight:bold;">미리보기</span>
+                <div>
+                    <button class="btn-action" id="btn-toggle-code">HTML 소스보기/복사</button>
+                    <button class="btn-action" id="btn-save-html" type="button">HTML 저장</button>
+                </div>
+            </div>
+
+            <div class="preview-body" style="flex-direction: column;">
+                <div class="preview-controls">
+                    <div class="preview-presets">
+                        <button class="btn-secondary btn-device-size" data-width="320">320px</button>
+                        <button class="btn-secondary btn-device-size" data-width="375">375px</button>
+                        <button class="btn-secondary btn-device-size" data-width="1920">1920px</button>
+                    </div>
+                </div>
+
+                <div class="mobile-frame-container" id="mobile-frame-container" style="width: 340px;">
+                    <div class="mobile-frame" style="width: 100%;">
+                        <iframe class="mobile-screen" id="preview-frame" title="템플릿 미리보기"
+                            style="width:100%;height:100%;max-height:none;min-height:720px;border:0;display:block;"
+                            srcdoc="<!doctype html><html lang='ko'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0, viewport-fit=cover'></head><body></body></html>"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-container" id="code-output">
+                <button class="btn-secondary" id="btn-copy" style="float: right; margin-bottom: 10px;">코드 전체 복사</button>
+                <pre><code id="code-text"></code></pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- 분리된 외부 JS 파일 로드 -->
+    <script src="../js/package-renewal-cms.js"></script>
+
+</body>
+
+</html>
