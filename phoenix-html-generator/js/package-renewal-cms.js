@@ -5,10 +5,6 @@ $(document).ready(function () {
     let cardsData = [
         {
             imgSrcs: [
-                "https://phoenixhnr.co.kr/api/attach/view/event/140000046772/thumbs_p/",
-                "https://phoenixhnr.co.kr/api/attach/view/event/110000047318/thumbs_p/",
-                "https://phoenixhnr.co.kr/api/attach/view/event/140000046772/thumbs_p/",
-                "https://phoenixhnr.co.kr/api/attach/view/event/110000047318/thumbs_p/"
             ],
             title: "",
             sub: "",
@@ -88,7 +84,7 @@ $(document).ready(function () {
                 <span class="file-name-display" style="font-size:11px;color:#333;margin-left:4px;display:inline-block;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${src && src.startsWith('data:') ? '업로드된 파일' : (src ? '기본 이미지' : '')}</span>
                 ${imgSrcs.length > 1 ? `<button type="button" class="btn-del-card-image" data-index="${index}" data-image-index="${imageIndex}" style="flex-shrink:0;">삭제</button>` : ''}
               </div>`).join('')}
-            ${(imgSrcs.length < 4) ? `<button type="button" class="btn-add-card-image" data-index="${index}">+ 이미지 추가</button>` : '<p style="font-size:12px;color:#666;margin:8px 0;">※ 최대 4개 등록 가능</p>'}
+            ${(imgSrcs.length < 4) ? `<button type="button" class="btn-add-card-image custom-file-btn" data-index="${index}">+ 이미지 추가</button>` : '<p style="font-size:12px;color:#666;margin:8px 0;">※ 최대 4개 등록 가능</p>'}
           </div>
           <div class="form-group">
             <label>상품 구성명</label>
@@ -563,7 +559,7 @@ $(document).ready(function () {
             }
 
             const cardImages = (card.imgSrcs || []).filter(src => typeof src === 'string' && src.trim() !== '');
-            if (!cardImages.length) cardImages.push("https://phoenixhnr.co.kr/api/attach/view/event/140000046772/thumbs_p/");
+            // if (!cardImages.length) cardImages.push("https://phoenixhnr.co.kr/api/attach/view/event/140000046772/thumbs_p/");
 
             const slideImagesHtml = cardImages.map((src, imageIdx) => `<img src="${src}" class="tpl-card-img tpl-card-slide" data-slide="${imageIdx}" alt="Card Image ${idx + 1}-${imageIdx + 1}">`).join('');
             const sliderTrackHtml = `<div class="tpl-card-track" style="transform: translateX(0%);">${slideImagesHtml}</div>`;
