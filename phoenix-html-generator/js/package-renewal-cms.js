@@ -933,12 +933,32 @@ ${generatedHTML}
         const missing = [];
         if (!$('#in-property').val()) missing.push('메인 섹션 > 구분');
         if (!($('#in-main-title').val() || '').trim()) missing.push('메인 섹션 > 객실 패키지명');
+        if (!($('#in-info-reserve-period').val() || '').trim()) missing.push('메인 섹션 > 예약 기간');
+        if (!($('#in-info-stay-period').val() || '').trim()) missing.push('메인 섹션 > 투숙 기간');
 
         cardsData.forEach((card, index) => {
             const cardNo = index + 1;
             const firstImage = card.imgSrcs && card.imgSrcs[0];
             if (!firstImage || !String(firstImage).trim()) missing.push(`상품 구성 상세 > 상세 #${cardNo} > 이미지 1`);
             if (!String(card.title || '').trim()) missing.push(`상품 구성 상세 > 상세 #${cardNo} > 상품 구성명`);
+        });
+
+        const priceTypes = [
+            { price: 'weekdayPrice', link: 'weekdayLink', label: '주중' },
+            { price: 'weekendPrice', link: 'weekendLink', label: '주말' },
+            { price: 'holidayPrice', link: 'holidayLink', label: '연휴' },
+            { price: 'commonPrice', link: 'commonLink', label: '공통' }
+        ];
+        stayGroupsData.forEach((group, sIdx) => {
+            (group.rooms || []).forEach((room, rIdx) => {
+                priceTypes.forEach(type => {
+                    const price = String(room[type.price] || '').trim();
+                    const url = String(room[type.link] || '').trim();
+                    if (price && !url) {
+                        missing.push(`이용 요금 > 요금 항목 #${sIdx + 1} > 객실 항목 #${rIdx + 1} > ${type.label} 예약 URL`);
+                    }
+                });
+            });
         });
 
         if (missing.length) {
@@ -1041,13 +1061,19 @@ ${generatedHTML}
     workspaceDefaults = JSON.parse(JSON.stringify(workspace.tabs[0].data));
 
     $('#btn-toggle-code').on('click', function () {
+        // 소스 보기를 열 때 필수값과 예약 URL을 먼저 검증합니다.
+        if (!$('#code-output').is(':visible') && !validateRequiredFields()) return;
         $('#code-output').slideToggle();
     });
 
     $('#btn-copy').on('click', function () {
-        const code = $('#code-text').text();
+        // 소스 복사도 HTML 저장과 동일한 필수값 검증을 거칩니다.
+        if (!validateRequiredFields()) return;
+        const code = getCurrentHtml();
         navigator.clipboard.writeText(code).then(function () {
             alert('전체 HTML 소스가 복사되었습니다.');
+        }).catch(function (error) {
+            alert('HTML 소스 복사에 실패했습니다.\n' + (error.message || error));
         });
     });
 
