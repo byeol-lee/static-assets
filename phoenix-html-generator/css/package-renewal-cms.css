@@ -1,4 +1,3 @@
-/* Admin Generator Style */
 * {
     font-family: 'Pretendard', sans-serif;
     box-sizing: border-box;
@@ -7,8 +6,8 @@
 }
 
 body {
-    font-family: 'Noto Sans KR', -apple-system, sans-serif;
-    color: #333;
+    font-family: 'Pretendard', sans-serif;
+    color: #222;
 }
 
 .app-container {
@@ -17,10 +16,10 @@ body {
     overflow: hidden;
 }
 
-/* 좌측 어드민 폼 */
 .admin-panel {
-    width: 40%;
-    padding: 20px;
+    width: 30%;
+    min-width: 400px;
+    padding: 16px;
     overflow-y: auto;
     background: #fff;
     border-right: 1px solid #ddd;
@@ -31,50 +30,76 @@ body {
     margin-bottom: 20px;
     color: #222;
     padding-bottom: 10px;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #222;
 }
 
 .form-section {
-    background: #fafafa;
-    border: 1px solid #e1e1e1;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
     position: relative;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+}
+.form-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .form-section h3 {
-    font-size: 1rem;
+    font-size: 16px;
     margin-bottom: 12px;
-    color: #666;
+    color: #222;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.form-group {
-    margin-bottom: 12px;
+.form-group,
+.card-item-form {
+    margin-bottom: 16px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
 }
 
 .form-group label {
     display: block;
     font-size: 12px;
     font-weight: 600;
-    margin-bottom: 4px;
-    color: #666;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.form-group .custom-file-btn {
+    display: inline-block;
+    padding: 4px 8px;
+    background: #f0f0f0;
+    border: 1px solid #222;
+    color: #222;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.form-group .custom-file-btn:hover {
+    background: #e0e0e0;
 }
 
 .form-group input[type="text"],
 .form-group textarea {
     width: 100%;
-    padding: 8px 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 13px;
+    padding: 8px;
+    border: 1px solid #888;
+    font-size: 12px;
 }
 
-.form-group textarea {
-    height: 70px;
+textarea {
+/* .form-group textarea { */
+    height: 80px;
+    block-size: 80px;
     resize: vertical;
 }
 
@@ -96,7 +121,7 @@ body {
     gap: 6px;
     font-size: 12px !important;
     font-weight: normal !important;
-    color: #333 !important;
+    color: #222 !important;
     cursor: pointer;
     margin-bottom: 0 !important;
 }
@@ -104,20 +129,16 @@ body {
 /* 동적 카드를 위한 스타일 */
 .card-item-form,
 .stay-group-form {
-    background: #fff;
+    /* background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 6px;
-    padding: 12px;
+    padding: 12px; */
     margin-bottom: 16px;
     position: relative;
 }
 
 .room-item-form {
-    background: #fdfdfd;
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
-    padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     position: relative;
 }
 
@@ -146,10 +167,10 @@ body {
     background: #f7441b;
     color: #fff;
     border: none;
-    padding: 3px 8px;
-    border-radius: 3px;
+    padding: 4px 8px;
+    border-radius: 2px;
     cursor: pointer;
-    font-size: 11px;
+    font-size: 10px;
 }
 
 .btn-add-card,
@@ -167,13 +188,13 @@ body {
 }
 
 .btn-add-room {
-    background: #555;
+    background: #666;
     color: #fff;
     border: none;
-    padding: 6px 10px;
-    border-radius: 4px;
+    padding: 4px 8px;
+    border-radius: 2px;
     cursor: pointer;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
     width: 100%;
     margin-top: 5px;
@@ -185,7 +206,7 @@ body {
 }
 
 .btn-add-room:hover {
-    background: #333;
+    background: #222;
 }
 
 .btn-action {
@@ -193,10 +214,9 @@ body {
     color: #fff;
     border: none;
     padding: 10px 16px;
-    border-radius: 4px;
     cursor: pointer;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .btn-action:hover {
@@ -214,12 +234,12 @@ body {
 }
 
 /* 우측 미리보기 & 코드 영역 */
-.preview-panel {
-    width: 60%;
+/* .preview-panel {
+    width: 70%;
     display: flex;
     flex-direction: column;
     background: #e9ecef;
-}
+} */
 
 .preview-header {
     padding: 15px 20px;
@@ -416,7 +436,7 @@ body {
 }
 
 .tpl-card-btn-wrap {
-    text-align: center;
+    text-align: left;
     margin-top: 16px;
 }
 
@@ -484,8 +504,7 @@ body {
 .tpl-sticky-val {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #000;
-    /* color: #f7441b; */
+    color: #f7441b;
 }
 
 .tpl-sticky-btn {
@@ -653,7 +672,7 @@ body {
 .tpl-price-period-acc {
     font-size: 0.875rem;
     font-weight: 600;
-    color: #333;
+    color: #222;
     padding: 8px 16px;
     background: #f9f9f9;
     display: flex;
@@ -733,10 +752,13 @@ body {
     text-align: right;
     flex: 1;
     font-variant-numeric: tabular-nums;
+    overflow-wrap: anywhere;
 }
 
 .tpl-btn-reserve-sm {
-    width: 72px;
+    width: 64px;
+    min-width: 64px;
+    max-width: 64px;
     background: #222;
     color: #fff;
     text-decoration: none;
@@ -879,7 +901,7 @@ body {
     overflow: auto;
     min-width: 280px;
     max-width: 100%;
-    border: 2px dashed #bbb;
+    box-shadow: 0 0 0 1px #222;
     background: rgba(0, 0, 0, 0.02);
 }
 
@@ -896,7 +918,7 @@ body {
         font-size: 1.5rem;
         max-width: none;
     }
-    
+
     /* 1. 상단 메인 섹션 이미지는 브라우저 100% 사용 */
     .tpl-hero {
         width: 100vw;
@@ -918,9 +940,9 @@ body {
     }
 
     .tpl-sub-title {
-       font-size: 0.875rem;
+        font-size: 0.875rem;
     }
-    
+
     .tpl-title {
         font-size: 2.5rem;
     }
@@ -1057,7 +1079,7 @@ body {
         width: 100%;
         max-height: 88vh;
         max-height: 88dvh;
-        padding: 16px 16px calc(20px + env(safe-area-inset-bottom, 0px));
+        padding: 16px 16px calc(16px + env(safe-area-inset-bottom, 0px));
     }
 
     .tpl-bottom-sheet.active {
@@ -1089,132 +1111,117 @@ body {
     .tpl-sheet-header {
         padding-top: 8px;
     }
+
+    .tpl-card-btn-wrap {
+        text-align: center;
+    }
 }
 
 /* Styles moved from index.html */
 .app-container {
-            position: relative;
-            display: flex !important;
-            flex-direction: row !important;
-            align-items: stretch;
-            min-width: 0;
-            overflow: hidden;
-        }
+    position: relative;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch;
+    min-width: 0;
+    overflow: hidden;
+}
 
-        .admin-panel {
-            width: 30% !important;
-            flex: 0 0 30%;
-            min-width: 0;
-            overflow: auto;
-        }
+.preview-panel {
+    width: 70%;
+    flex: 1 1 70%;
+    min-width: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
 
-        .preview-panel {
-            width: 70% !important;
-            flex: 1 1 70%;
-            min-width: 0;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
+.preview-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 1200px;
+}
 
-        .preview-controls {
-            display: flex;
-            flex-direction: column;
-            gap: 7px;
-            margin-bottom: 10px;
-            width: 100%;
-            max-width: 1200px;
-        }
+.preview-presets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
 
-        .preview-presets {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            justify-content: center;
-        }
+.mobile-frame-container {
+    width: 320px;
+    max-width: 1200px;
+    flex: 0 0 auto;
+    min-height: 720px;
+}
 
-        .mobile-frame-container {
-            width: 320px;
-            max-width: 1200px;
-            flex: 0 0 auto;
-            min-height: 720px;
-        }
+/* .phoenix-workspace-tab[aria-selected="true"] {
+    background: #fff !important;
+    border-color: #222 !important
+} */
 
-.phoenix-workspace-tab[aria-selected="true"] {
-            background: #fff !important;
-            border-color: #30343b !important
-        }
+/* 미리보기 프레임이 EXE 창의 가용 높이를 충분히 사용하도록 보완 */
+/* .preview-panel {
+    min-height: 0;
+    min-width: 0;
+} */
 
-        .phoenix-new-workspace {
-            background: #30343b !important;
-            color: #fff !important
-        }
+.preview-header {
+    flex: 0 0 auto;
+}
 
-        /* 미리보기 프레임이 EXE 창의 가용 높이를 충분히 사용하도록 보완 */
-        .preview-panel {
-            min-height: 0;
-            min-width: 0;
-        }
+.preview-body {
+    flex: 1 1 auto;
+    min-height: 0;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px;
+    overflow: auto;
+}
 
-        .preview-header {
-            flex: 0 0 auto;
-        }
+.preview-body>div:first-child {
+    flex: 0 0 auto;
+}
 
-        .preview-body {
-            flex: 1 1 auto;
-            min-height: 0;
-            align-items: center;
-            justify-content: flex-start;
-            padding: 12px;
-            overflow: auto;
-        }
+.mobile-frame-container {
+    flex: 1 0 auto;
+    min-height: 720px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
 
-        .preview-body>div:first-child {
-            flex: 0 0 auto;
-        }
+.mobile-frame {
+    height: 100%;
+    min-height: 720px;
+    max-height: none;
+}
 
-        .mobile-frame-container {
-            flex: 1 0 auto;
-            min-height: 720px;
-            display: flex;
-            justify-content: center;
-            align-self: center;
-        }
+.mobile-screen {
+    height: 100%;
+    min-height: 720px;
+    max-height: none;
+    border: 0;
+}
 
-        .mobile-frame {
-            height: 100%;
-            min-height: 720px;
-            max-height: none;
-        }
 
-        .mobile-screen {
-            height: 100%;
-            min-height: 720px;
-            max-height: none;
-        }
-
-        #preview-frame {
-            height: 100% !important;
-            min-height: 720px !important;
-            max-height: none !important;
-        }
-
-/* --------------------------------------------------
-   Application layout (moved from index.html)
--------------------------------------------------- */
 #phoenix-workspace-tabs {
-    height: 44px;
+    height: 50px;
     display: flex;
     align-items: center;
-    gap: 6px;
-    padding: 6px 10px;
-    background: #f3f4f6;
-    border-bottom: 1px solid #ddd;
+    gap: 8px;
+    padding: 0 16px;
+    /* background: #222; */
+    border-bottom: 1px solid #eee;
     overflow-x: auto;
 }
 
 .app-container-workspace {
-    height: calc(100vh - 44px);
+    height: calc(100vh - 50px);
 }
 
 .textarea-bullets {
@@ -1250,4 +1257,3 @@ body {
     float: right;
     margin-bottom: 10px;
 }
-
