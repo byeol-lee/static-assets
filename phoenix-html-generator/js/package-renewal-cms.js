@@ -13,29 +13,27 @@ $(document).ready(function () {
             title: "",
             sub: "",
             notice: "",
-            link: ""
+            link: "https://phoenixhnr.co.kr/m/page/main"
         },
-        {
-            imgSrcs: ["https://phoenixhnr.co.kr/api/attach/view/event/110000047318/thumbs_p/"],
-            title: "",
-            sub: "",
-            notice: "",
-            link: ""
-        }
+        // {
+        //     imgSrcs: ["https://phoenixhnr.co.kr/api/attach/view/event/110000047318/thumbs_p/"],
+        //     title: "",
+        //     sub: "",
+        //     notice: "",
+        //     link: ""
+        // }
     ];
 
-    // 주중, 주말, 연휴, 공통 순서
     let stayGroupsData = [
         {
             stayCategory: "2박",
-            priceNotice: "주중: 일~목 체크인, 주말: 금~토 체크인 입니다.",
             rooms: [
                 {
                     period: "08.01 ~ 08.31",
                     room: "로얄",
-                    weekdayPrice: "100,000",
+                    weekdayPrice: "9,999,999",
                     weekdayLink: "#",
-                    weekendPrice: "420,000",
+                    weekendPrice: "9,999,999",
                     weekendLink: "#",
                     holidayPrice: "",
                     holidayLink: "",
@@ -45,7 +43,7 @@ $(document).ready(function () {
                 {
                     period: "08.01 ~ 08.31",
                     room: "스카이 스탠다드 패밀리",
-                    weekdayPrice: "490,000",
+                    weekdayPrice: "9,999,999",
                     weekdayLink: "#link1",
                     weekendPrice: "9,999,999",
                     weekendLink: "#link2",
@@ -54,11 +52,11 @@ $(document).ready(function () {
                     commonPrice: "",
                     commonLink: ""
                 }
-            ]
+            ],
+            priceNotice: ""
         }
     ];
 
-    // 숫자에 3자리마다 콤마를 찍어주는 헬퍼 함수
     function formatNumber(val) {
         if (!val) return '';
         const numbers = val.toString().replace(/[^0-9]/g, '');
@@ -77,34 +75,35 @@ $(document).ready(function () {
             const cardHtml = `
         <div class="card-item-form" data-index="${index}">
           <div class="card-item-header">
-            <span class="card-item-title">카드 #${index + 1}</span>
+            <span class="card-item-title">구성 상세 #${index + 1}</span>
             ${cardsData.length > 1 ? `<button type="button" class="btn-del-card" onclick="deleteCard(${index})">삭제</button>` : ''}
           </div>
           <div class="form-group card-images-form">
-            <label>카드 이미지 (최대 4개, 1920×1080 권장)</label>
+            <label>이미지(960×540)</label>
             ${imgSrcs.map((src, imageIndex) => `
               <div class="card-image-slot" style="display:flex;align-items:center;gap:8px;margin:8px 0;">
                 <span style="min-width:58px;font-size:12px;">이미지 ${imageIndex + 1}</span>
-                <input type="file" class="in-card-img" data-index="${index}" data-image-index="${imageIndex}" accept="image/*" style="min-width:0;flex:1;">
+                <label for="in-card-img-${index}-${imageIndex}" class="custom-file-btn">파일 선택</label>
+                <input type="file" id="in-card-img-${index}-${imageIndex}" class="in-card-img" data-index="${index}" data-image-index="${imageIndex}" accept="image/*" style="display:none;">
                 <span class="file-name-display" style="font-size:11px;color:#333;margin-left:4px;display:inline-block;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${src && src.startsWith('data:') ? '업로드된 파일' : (src ? '기본 이미지' : '')}</span>
                 ${imgSrcs.length > 1 ? `<button type="button" class="btn-del-card-image" data-index="${index}" data-image-index="${imageIndex}" style="flex-shrink:0;">삭제</button>` : ''}
               </div>`).join('')}
-            ${(imgSrcs.length < 4) ? `<button type="button" class="btn-add-card-image" data-index="${index}">+ 이미지 추가</button>` : '<p style="font-size:12px;color:#888;margin:6px 0;">이미지는 최대 4개까지 등록할 수 있습니다.</p>'}
+            ${(imgSrcs.length < 4) ? `<button type="button" class="btn-add-card-image" data-index="${index}">+ 이미지 추가</button>` : '<p style="font-size:12px;color:#666;margin:8px 0;">※ 최대 4개 등록 가능</p>'}
           </div>
           <div class="form-group">
-            <label>컨텐츠 타이틀</label>
-            <input type="text" class="in-card-title" data-index="${index}" value="${card.title}" placeholder="사계절 온수풀">
+            <label>상품 구성명</label>
+            <input type="text" class="in-card-title" data-index="${index}" value="${card.title}" placeholder="상품 구성명">
           </div>
           <div class="form-group">
-            <label>서브 카피 (설명)</label>
-            <textarea class="in-card-sub" data-index="${index}" placeholder="사계절 따뜻한 온수풀에서 제주 바다의 일몰을 감상하며 여유로운 휴식을 경험하세요.">${card.sub}</textarea>
+            <label>상품 구성 상세</label>
+            <textarea class="in-card-sub" data-index="${index}" placeholder="상품 구성 상세">${card.sub}</textarea>
           </div>
           <div class="form-group">
-            <label>추가 안내 문구 (※ 기호 자동 붙음)</label>
+            <label>추가 안내(※ 기호 자동)</label>
             <textarea class="in-card-notice" data-index="${index}" placeholder="성수기 이용 불가&#10;주말 이용 시 추가 비용 발생">${card.notice || ''}</textarea>
           </div>
           <div class="form-group">
-            <label>자세히 보기 버튼 링크 URL</label>
+            <label>자세히 보기 URL</label>
             <input type="text" class="in-card-link" data-index="${index}" value="${card.link || ''}" placeholder="https://...">
           </div>
         </div>
@@ -127,7 +126,7 @@ $(document).ready(function () {
           <div class="room-item-form" data-sidx="${sIdx}" data-ridx="${rIdx}">
             <div class="room-item-header">
               <span class="room-item-title">객실 항목 #${rIdx + 1}</span>
-              ${stayGroup.rooms.length > 1 ? `<button type="button" class="btn-del-room" onclick="deleteRoom(${sIdx},${rIdx})">삭제</button>` : ''}
+              ${stayGroup.rooms.length > 1 ? `<button type="button" class="btn-del-room" onclick="deleteRoom(${sIdx},${rIdx})">객실 삭제</button>` : ''}
             </div>
             <div class="form-group">
               <label>기간</label>
@@ -141,7 +140,7 @@ $(document).ready(function () {
             <!-- 주중 / 주말 / 연휴 / 공통 -->
             <div style="display:flex; gap:10px; margin-bottom: 8px;">
               <div class="form-group" style="flex:1;">
-                <label>주중 요금</label>
+                <label>주중</label>
                 <input type="text" class="in-price-weekday" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.weekdayPrice)}" placeholder="예: 340,000">
               </div>
               <div class="form-group" style="flex:1;">
@@ -152,7 +151,7 @@ $(document).ready(function () {
 
             <div style="display:flex; gap:10px; margin-bottom: 8px;">
               <div class="form-group" style="flex:1;">
-                <label>주말 요금</label>
+                <label>주말</label>
                 <input type="text" class="in-price-weekend" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.weekendPrice)}" placeholder="예: 420,000">
               </div>
               <div class="form-group" style="flex:1;">
@@ -163,18 +162,18 @@ $(document).ready(function () {
 
             <div style="display:flex; gap:10px; margin-bottom: 8px;">
               <div class="form-group" style="flex:1;">
-                <label>연휴 요금</label>
+                <label>연휴</label>
                 <input type="text" class="in-price-holiday" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.holidayPrice)}" placeholder="예: 500,000">
               </div>
               <div class="form-group" style="flex:1;">
-                <label>연휴 예약 URL</label>
+                <label>연휴 URL</label>
                 <input type="text" class="in-link-holiday" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.holidayLink || ''}" placeholder="https://...">
               </div>
             </div>
 
             <div style="display:flex; gap:10px;">
               <div class="form-group" style="flex:1;">
-                <label>공통 요금</label>
+                <label>공통</label>
                 <input type="text" class="in-price-common" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.commonPrice)}" placeholder="예: 300,000">
               </div>
               <div class="form-group" style="flex:1;">
@@ -191,10 +190,10 @@ $(document).ready(function () {
         <div class="stay-group-form" data-sidx="${sIdx}">
           <div class="stay-group-header">
             <span class="stay-group-title">요금 항목 #${sIdx + 1}</span>
-            ${stayGroupsData.length > 1 ? `<button type="button" class="btn-del-stay" onclick="deleteStay(${sIdx})">박수 그룹 삭제</button>` : ''}
+            ${stayGroupsData.length > 1 ? `<button type="button" class="btn-del-stay" onclick="deleteStay(${sIdx})">항목 삭제</button>` : ''}
           </div>
           <div class="form-group">
-            <label>박수 (선택 - 미입력 시 뱃지 미노출)</label>
+            <label>박수(미입력 시 미노출)</label>
             <input type="text" class="in-price-stay" data-sidx="${sIdx}" value="${stayGroup.stayCategory}" placeholder="예: 1박">
           </div>
           <div class="room-container">
@@ -203,8 +202,8 @@ $(document).ready(function () {
           <button type="button" class="btn-add-room" onclick="addRoom(${sIdx})">+ 객실 추가</button>
           
           <div class="form-group" style="margin-top: 15px;">
-            <label>요금표 안내 문구 (※ 기호 자동 붙음)</label>
-            <textarea class="in-price-notice" data-sidx="${sIdx}" style="height: 60px;" placeholder="주중: 일~목 체크인, 주말: 금~토 체크인 입니다.">${stayGroup.priceNotice || ''}</textarea>
+            <label>요금 안내(※ 기호 자동)</label>
+            <textarea class="in-price-notice" data-sidx="${sIdx}" style="height: 60px;" placeholder="요금 안내 설명">${stayGroup.priceNotice || ''}</textarea>
           </div>
         </div>
       `;
@@ -214,7 +213,7 @@ $(document).ready(function () {
 
     $('#btn-add-card').on('click', function () {
         if (cardsData.length < 10) {
-            cardsData.push({ imgSrcs: ["https://phoenixhnr.co.kr/api/attach/view/event/140000046772/thumbs_p/"], title: "", sub: "", notice: "", link: "" });
+            cardsData.push({ imgSrcs: [""], title: "", sub: "", notice: "", link: "" });
             renderCardForms();
             renderTemplate();
         }
@@ -262,7 +261,8 @@ $(document).ready(function () {
         }
     };
 
-    $(document).on('input propertychange change', '.in-card-title, .in-card-sub, .in-card-notice, .in-card-link', function () {
+    $(document).on('input propertychange change', '#in-property, .in-card-title, .in-card-sub, .in-card-notice, .in-card-link', function () {
+        if ($(this).is('#in-property')) { renderTemplate(); return; }
         const idx = $(this).data('index');
         const $parent = $(this).closest('.card-item-form');
         cardsData[idx].title = $parent.find('.in-card-title').val();
@@ -519,7 +519,7 @@ $(document).ready(function () {
     }
 
     function renderTemplate() {
-        const selectedPropertyVal = $('input[name="in-property"]:checked').val() || 'PHOENIX HOTELS & RESORT';
+        const selectedPropertyVal = $('#in-property').val() || '';
         const subTitle = selectedPropertyVal;
 
         let badgeBgColor = '#f7441b';
@@ -531,18 +531,18 @@ $(document).ready(function () {
             badgeBgColor = '#e6007e';
         }
 
-        const mainTitle = getValOrPlaceholder('#in-main-title');
+        const mainTitle = ($('#in-main-title').val() || '').trim();
         const mainBadge = ($('#in-main-badge').val() || '').trim();
-        const mainDesc = getValOrPlaceholder('#in-main-desc').replace(/\n/g, '<br>');
-        const infoReservePeriod = getValOrPlaceholder('#in-info-reserve-period');
-        const infoStayPeriod = getValOrPlaceholder('#in-info-stay-period');
-        const ctaTitle = getValOrPlaceholder('#in-cta-title');
-        const ctaDesc = getValOrPlaceholder('#in-cta-desc').replace(/\n/g, '<br>');
+        const mainDesc = ($('#in-main-desc').val() || '').trim().replace(/\n/g, '<br>');
+        const infoReservePeriod = ($('#in-info-reserve-period').val() || '').trim();
+        const infoStayPeriod = ($('#in-info-stay-period').val() || '').trim();
+        const ctaTitle = ($('#in-cta-title').val() || '').trim();
+        const ctaDesc = ($('#in-cta-desc').val() || '').trim().replace(/\n/g, '<br>');
 
         let cardsHtml = '';
         cardsData.forEach((card, idx) => {
-            const title = card.title.trim() !== '' ? card.title : '사계절 온수풀';
-            const rawSub = card.sub.trim() !== '' ? card.sub : '사계절 따뜻한 온수풀에서 제주 바다의 일몰을 감상하며 여유로운 휴식을 경험하세요.';
+            const title = (card.title || '').trim();
+            const rawSub = (card.sub || '').trim();
 
             let noticeHtml = '';
             if (card.notice && card.notice.trim() !== '') {
@@ -574,15 +574,15 @@ $(document).ready(function () {
       <div class="tpl-card-item">
         <div class="tpl-card-slider" data-card-index="${idx}">${sliderTrackHtml}${sliderControls}</div>
         <div class="tpl-card-copy">
-        <div class="tpl-card-title">${title}</div>
-        <div class="tpl-card-sub">${rawSub.replace(/\n/g, '<br>')}</div>
+        ${title ? `<div class="tpl-card-title">${title}</div>` : ''}
+        ${rawSub ? `<div class="tpl-card-sub">${rawSub.replace(/\n/g, '<br>')}</div>` : ''}
         ${noticeHtml}
         ${btnHtml}
         </div>
       </div>`;
         });
 
-        const rawBullets = getValOrPlaceholder('#in-bullets');
+        const rawBullets = ($('#in-bullets').val() || '').trim();
         let bulletHtml = '';
         rawBullets.split('\n').forEach(line => {
             if (line.trim() !== '') bulletHtml += `<li>${line}</li>`;
@@ -614,7 +614,7 @@ $(document).ready(function () {
 
             const periodMap = {};
             group.rooms.forEach(r => {
-                const periodKey = r.period.trim() || '전 일정';
+                const periodKey = (r.period || '').trim();
                 if (!periodMap[periodKey]) periodMap[periodKey] = [];
                 periodMap[periodKey].push(r);
 
@@ -631,7 +631,7 @@ $(document).ready(function () {
                 sheetContentHtml += `
         <div class="tpl-price-group ${isActive}">
           <div class="tpl-price-period-acc">
-            <span>${period}</span>
+            ${period ? `<span>${period}</span>` : ''}
             <span class="acc-arrow">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
@@ -641,7 +641,7 @@ $(document).ready(function () {
           <div class="tpl-price-body">`;
 
                 periodMap[period].forEach(item => {
-                    const roomName = item.room.trim() || '기본 객실';
+                    const roomName = (item.room || '').trim();
 
                     const activeEntries = [];
                     const rawTypes = [
@@ -662,13 +662,15 @@ $(document).ready(function () {
                         }
                     });
 
+                    if (!activeEntries.length) return;
+
                     const uniqueLinks = [...new Set(activeEntries.map(e => e.link))];
                     const isMerged = activeEntries.length > 1 && uniqueLinks.length === 1;
 
                     if (isMerged) {
                         sheetContentHtml += `
             <div class="tpl-room-card merged-card">
-              <div class="tpl-room-title">${roomName}</div>
+              ${roomName ? `<div class="tpl-room-title">${roomName}</div>` : ''}
               <div class="tpl-room-prices-container">
                 <div class="tpl-price-sub-rows">`;
 
@@ -688,7 +690,7 @@ $(document).ready(function () {
                     } else {
                         sheetContentHtml += `
             <div class="tpl-room-card">
-              <div class="tpl-room-title">${roomName}</div>
+              ${roomName ? `<div class="tpl-room-title">${roomName}</div>` : ''}
               <div class="tpl-room-prices-container">`;
 
                         activeEntries.forEach(entry => {
@@ -725,27 +727,19 @@ $(document).ready(function () {
   </div>
   
   <div class="tpl-content">
-    <div class="tpl-sub-title">${subTitle}</div>
-    <div class="tpl-title">${mainTitle}</div>
-    <div class="tpl-desc">${mainDesc}</div>
-    
-    <div class="tpl-info-list">
-      <div class="tpl-info-item">
-        <div class="tpl-info-label">예약 기간</div>
-        <div class="tpl-info-val">${infoReservePeriod}</div>
-      </div>
-      <div class="tpl-info-item">
-        <div class="tpl-info-label">투숙 기간</div>
-        <div class="tpl-info-val">${infoStayPeriod}</div>
-      </div>
-    </div>
+    ${subTitle ? `<div class="tpl-sub-title">${subTitle}</div>` : ''}
+    ${mainTitle ? `<div class="tpl-title">${mainTitle}</div>` : ''}
+    ${mainDesc ? `<div class="tpl-desc">${mainDesc}</div>` : ''}
+    ${(infoReservePeriod || infoStayPeriod) ? `<div class="tpl-info-list">
+      ${infoReservePeriod ? `<div class="tpl-info-item"><div class="tpl-info-label">예약 기간</div><div class="tpl-info-val">${infoReservePeriod}</div></div>` : ''}
+      ${infoStayPeriod ? `<div class="tpl-info-item"><div class="tpl-info-label">투숙 기간</div><div class="tpl-info-val">${infoStayPeriod}</div></div>` : ''}
+    </div>` : ''}
 
-    <!-- CTA BOX -->
-    <div class="tpl-cta-box">
+    ${(ctaTitle || ctaDesc) ? `<div class="tpl-cta-box">
       <div class="tpl-sub-title">BENEFITS</div>
-      <div class="tpl-cta-title">${ctaTitle}</div>
-      <div class="tpl-cta-desc">${ctaDesc}</div>
-    </div>
+      ${ctaTitle ? `<div class="tpl-cta-title">${ctaTitle}</div>` : ''}
+      ${ctaDesc ? `<div class="tpl-cta-desc">${ctaDesc}</div>` : ''}
+    </div>` : ''}
 
     <!-- Content Cards -->
     <div class="tpl-card-list">
@@ -753,10 +747,7 @@ $(document).ready(function () {
     </div>
 
     <!-- Bullet Info -->
-    <div class="tpl-bullet-title">이용 안내</div>
-    <ul class="tpl-bullet-list">
-      ${bulletHtml}
-    </ul>
+    ${bulletHtml ? `<div class="tpl-bullet-title">이용 안내</div><ul class="tpl-bullet-list">${bulletHtml}</ul>` : ''}
 
     <!-- 공통 고정 영역: 취소/변경 수수료 안내 -->
     <div class="tpl-bullet-title">취소/변경 수수료 안내</div>
@@ -768,14 +759,10 @@ $(document).ready(function () {
   </div>
 
   <!-- 스티키 하단 예약 바 -->
-  <div class="tpl-sticky-bar">
-    <div class="tpl-sticky-price">
-      <span class="tpl-sticky-val">${minPriceDisplay}</span>
-    </div>
+  ${minPriceNum !== Infinity ? `<div class="tpl-sticky-bar">
+    <div class="tpl-sticky-price"><span class="tpl-sticky-val">${minPriceDisplay}</span></div>
     <button type="button" class="tpl-sticky-btn" id="btn-open-sheet">자세히 보기</button>
   </div>
-
-  <!-- 박수 그룹화 & 아코디언 바텀 시트 팝업 -->
   <div class="tpl-bottom-sheet-bg" id="sheet-bg"></div>
   <div class="tpl-bottom-sheet" id="bottom-sheet">
     <div class="tpl-sheet-handle"></div>
@@ -790,7 +777,7 @@ $(document).ready(function () {
     <div class="tpl-sheet-body">
       ${sheetContentHtml}
     </div>
-  </div>
+  </div>` : ''}
 </div>
 `.trim();
 
@@ -854,7 +841,7 @@ ${generatedHTML}
         workspaceFields.forEach(sel => fields[sel] = $(sel).val() || '');
         return {
             fields,
-            property: $('input[name="in-property"]:checked').val() || 'PHOENIX HOTELS & RESORT',
+            property: $('#in-property').val() || '',
             mainImgSrc,
             cardsData: cloneData(cardsData),
             stayGroupsData: cloneData(stayGroupsData)
@@ -864,8 +851,7 @@ ${generatedHTML}
         if (!data) return;
         workspace.changingTab = true;
         workspaceFields.forEach(sel => $(sel).val(data.fields && data.fields[sel] != null ? data.fields[sel] : ''));
-        $('input[name="in-property"]').prop('checked', false);
-        $('input[name="in-property"][value="' + String(data.property || 'PHOENIX HOTELS & RESORT').replace(/"/g, '\\"') + '"]').prop('checked', true);
+        $('#in-property').val(data.property || '');
         mainImgSrc = data.mainImgSrc || mainImgSrc;
         cardsData = cloneData(data.cardsData || cardsData);
         stayGroupsData = cloneData(data.stayGroupsData || stayGroupsData);
@@ -888,17 +874,17 @@ ${generatedHTML}
         const $tabs = $('#phoenix-workspace-tabs').empty();
         workspace.tabs.forEach(tab => {
             const isActive = tab.id === workspace.activeId;
-            const $item = $('<div>').addClass('phoenix-workspace-tab').attr({ 'data-tab-id': tab.id, 'aria-selected': isActive ? 'true' : 'false' }).css({ display: 'flex', alignItems: 'center', gap: '5px', padding: '5px 9px', border: '1px solid ' + (isActive ? '#30343b' : '#c8cbd0'), borderRadius: '5px', backgroundColor: isActive ? '#ffffff' : '#e7e9ec', whiteSpace: 'nowrap', boxShadow: isActive ? 'inset 0 -2px 0 #30343b' : 'none' });
+            const $item = $('<div>').addClass('phoenix-workspace-tab').attr({ 'data-tab-id': tab.id, 'aria-selected': isActive ? 'true' : 'false' }).css({ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', boxShadow: 'inset 0 0 0 2px ' + (isActive ? '#222' : '#ddd'), backgroundColor: isActive ? '#ffffff' : '#ddd', whiteSpace: 'nowrap', height: '32px' });
             const $name = $('<button type="button">').text((tab.dirty ? '● ' : '') + tab.name).css({ border: 0, background: 'transparent', color: '#20242a', fontWeight: isActive ? '700' : '400', cursor: 'pointer' }).on('click', () => switchTab(tab.id));
             if (workspace.tabs.length > 1) {
-                const $close = $('<button type="button">×</button>').attr('aria-label', '탭 닫기').css({ border: 0, background: 'transparent', color: '#555', cursor: 'pointer', fontSize: '16px' }).on('click', () => closeTab(tab.id));
+                const $close = $('<button type="button">×</button>').attr('aria-label', '탭 닫기').css({ border: 0, background: 'transparent', color: '#222', cursor: 'pointer', fontSize: '16px' }).on('click', () => closeTab(tab.id));
                 $item.append($name, $close);
             } else {
                 $item.append($name);
             }
             $tabs.append($item);
         });
-        const $new = $('<button type="button" class="phoenix-new-workspace">+ New</button>').css({ padding: '7px 13px', cursor: 'pointer', border: '1px solid #252a31', borderRadius: '5px', background: '#30343b', color: '#fff', fontWeight: '600' }).on('click', newTab);
+        const $new = $('<button type="button" class="phoenix-new-workspace">+ NEW</button>').css({ padding: '8px 16px', cursor: 'pointer', border: 'none', background: '#222', color: '#fff', fontWeight: '600' }).on('click', newTab);
         $tabs.append($new);
     }
     function switchTab(id) {
@@ -943,7 +929,27 @@ ${generatedHTML}
         renderTemplate();
         return $('#code-text').text();
     }
+    function validateRequiredFields() {
+        const missing = [];
+        if (!$('#in-property').val()) missing.push('메인 섹션 > 구분');
+        if (!($('#in-main-title').val() || '').trim()) missing.push('메인 섹션 > 객실 패키지명');
+
+        cardsData.forEach((card, index) => {
+            const cardNo = index + 1;
+            const firstImage = card.imgSrcs && card.imgSrcs[0];
+            if (!firstImage || !String(firstImage).trim()) missing.push(`상품 구성 상세 > 상세 #${cardNo} > 이미지 1`);
+            if (!String(card.title || '').trim()) missing.push(`상품 구성 상세 > 상세 #${cardNo} > 상품 구성명`);
+        });
+
+        if (missing.length) {
+            alert('필수 항목을 입력하거나 등록해 주세요.\n\n' + missing.map(item => '• ' + item).join('\n'));
+            return false;
+        }
+        return true;
+    }
+
     async function saveCurrentHtml(saveAs) {
+        if (!validateRequiredFields()) return;
         const tab = activeTab();
         if (!tab) return;
         saveActiveSnapshot();
@@ -958,6 +964,7 @@ ${generatedHTML}
         } catch (error) { alert('HTML 저장에 실패했습니다.\n' + (error.message || error)); }
     }
     async function saveProject(saveAs) {
+        if (!validateRequiredFields()) return;
         const tab = activeTab();
         if (!tab) return;
         saveActiveSnapshot();
@@ -1007,7 +1014,7 @@ ${generatedHTML}
 
     workspace.tabs.push({ id: 'workspace-1', name: 'Untitled-1', type: 'template', data: null, dirty: false, projectPath: '', htmlPath: '' });
     workspace.activeId = 'workspace-1';
-    $(document).on('input change', '.admin-panel input, .admin-panel textarea', markDirty);
+    $(document).on('input change', '.admin-panel input, .admin-panel textarea, .admin-panel select', markDirty);
     $(document).on('click', '#btn-add-card,#btn-add-stay,.btn-del-card,.btn-del-stay,.btn-del-room,.btn-add-room,.btn-add-card-image,.btn-del-card-image', function () { setTimeout(markDirty, 0); });
     $('#btn-save-html').on('click', () => saveCurrentHtml(false));
     if (window.phoenixUploader && window.phoenixUploader.onMenuAction && !window.__phoenixWorkspaceMenuBound) {
