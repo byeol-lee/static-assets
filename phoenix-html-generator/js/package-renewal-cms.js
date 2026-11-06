@@ -140,46 +140,37 @@ $(document).ready(function () {
                     type="hidden"
                     id="${displayId}"
                     class="date-range-display"
-                    value="${start && end
-                        ? dateRangeToDisplay(start, end)
-                        : (value || '')}"
+                    value="${value || ''}"
                 >
 
                 <div class="date-range-pickers">
-                    <div
-                        class="date-picker-field"
-                        role="button"
-                        tabindex="0"
-                        aria-haspopup="dialog"
-                        aria-label="시작일 달력 열기"
-                    >
-                        <span class="date-picker-caption">시작일</span>
+                    <label class="date-picker-field">
+                        <span class="date-picker-caption">
+                            ${start ? dateToDisplay(start) : '시작일'}
+                        </span>
+                        <span class="date-picker-value"></span>
                         <input
                             type="date"
                             class="date-range-start"
+                            aria-label="예약 시작일 선택"
                             value="${start}"
-                            aria-label="시작일 선택"
                         >
-                    </div>
+                    </label>
 
                     <span class="date-range-separator">-</span>
 
-                    <div
-                        class="date-picker-field"
-                        role="button"
-                        tabindex="0"
-                        aria-haspopup="dialog"
-                        aria-label="종료일 달력 열기"
-                    >
-                        <span class="date-picker-caption">종료일</span>
+                    <label class="date-picker-field">
+                        <span class="date-picker-caption">
+                            ${end ? dateToDisplay(end) : '종료일'}
+                        </span>
+                        <span class="date-picker-value"></span>
                         <input
                             type="date"
                             class="date-range-end"
+                            aria-label="예약 종료일 선택"
                             value="${end}"
-                            min="${start}"
-                            aria-label="종료일 선택"
                         >
-                    </div>
+                    </label>
                 </div>
             </div>
         `;
@@ -435,9 +426,10 @@ $(document).ready(function () {
 
     $(document).on('change', '.date-range-start, .date-range-end', function () {
         const $range = $(this).closest('.date-range-control');
-
-        const start = $range.find('.date-range-start').val();
+        const startInput = $range.find('.date-range-start');
         const endInput = $range.find('.date-range-end');
+
+        const start = startInput.val();
 
         endInput.attr('min', start || '');
 
@@ -446,11 +438,24 @@ $(document).ready(function () {
         }
 
         const end = endInput.val();
+
+        // 선택한 날짜로 시작일 / 종료일 문구 변경
+        $range.find('.date-picker-caption').eq(0)
+            .text(start ? dateToDisplay(start) : '시작일');
+
+        $range.find('.date-picker-caption').eq(1)
+            .text(end ? dateToDisplay(end) : '종료일');
+
+        // 날짜 표시 영역은 사용하지 않음
+        $range.find('.date-picker-value').text('');
+
+        // 기존 숨겨진 데이터 갱신
         const formatted = dateRangeToDisplay(start, end);
 
-        const $display = $range.find('.date-range-display');
-
-        $display.val(formatted).trigger('input');
+        $range.find('.date-range-display')
+            .val(formatted)
+            .trigger('input')
+            .trigger('change');
     });
 
     $(document).on('input', '.reservation-input', function () {
