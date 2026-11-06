@@ -18,10 +18,9 @@
             <div class="form-section">
                 <h3>1. 메인 섹션</h3>
                 <div class="form-group">
-                    <label>구분</label>
+                    <label for="in-property">구분</label>
                     <select id="in-property" required>
                         <option value="" selected>지점 선택</option>
-                        <option value="PHOENIX HOTELS & RESORT">PHOENIX HOTELS & RESORT</option>
                         <option value="PHOENIX PARK">PHOENIX PARK</option>
                         <option value="PHOENIX ISLAND">PHOENIX ISLAND</option>
                         <option value="PLAYCE CAMP by PHOENIX">PLAYCE CAMP by PHOENIX</option>
@@ -31,7 +30,7 @@
                 <div class="form-group">
                     <div style="display: flex; align-items: center;justify-content: space-between;">
                         <label>메인 이미지(1920×600)</label>
-                        <label for="in-main-img" class="custom-file-btn">이미지 선택</label>
+                        <label for="in-main-img" class="custom-file-btn">파일 선택</label>
                         <input type="file" id="in-main-img" accept="image/*" style="display:none;">
                     </div>
                 </div>
@@ -50,11 +49,11 @@
                 </div>
                 <div class="form-group">
                     <label>예약 기간</label>
-                    <input type="text" id="in-info-reserve-period" placeholder="0000.00.00 - 00.00">
+                    <div class="date-range-control"><input type="hidden" id="in-info-reserve-period" class="date-range-display"><div class="date-range-pickers"><label class="date-picker-field"><span class="date-picker-caption">시작일</span><span class="date-picker-value">날짜 선택</span><input type="date" class="date-range-start" aria-label="예약 시작일 선택"></label><span class="date-range-separator">-</span><label class="date-picker-field"><span class="date-picker-caption">종료일</span><span class="date-picker-value">날짜 선택</span><input type="date" class="date-range-end" aria-label="예약 종료일 선택"></label></div><div class="date-range-summary" aria-live="polite">시작일과 종료일을 선택해 주세요.</div></div>
                 </div>
                 <div class="form-group">
                     <label>투숙 기간</label>
-                    <input type="text" id="in-info-stay-period" placeholder="0000.00.00 - 00.00">
+                    <div class="date-range-control"><input type="hidden" id="in-info-stay-period" class="date-range-display"><div class="date-range-pickers"><label class="date-picker-field"><span class="date-picker-caption">시작일</span><span class="date-picker-value">날짜 선택</span><input type="date" class="date-range-start" aria-label="투숙 시작일 선택"></label><span class="date-range-separator">-</span><label class="date-picker-field"><span class="date-picker-caption">종료일</span><span class="date-picker-value">날짜 선택</span><input type="date" class="date-range-end" aria-label="투숙 종료일 선택"></label></div><div class="date-range-summary" aria-live="polite">시작일과 종료일을 선택해 주세요.</div></div>
                 </div>
             </div>
 
