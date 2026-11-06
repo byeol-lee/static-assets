@@ -8,7 +8,7 @@ $(document).ready(function () {
             title: "",
             sub: "",
             notice: "",
-            link: "https://phoenixhnr.co.kr/m/page/main"
+            link: ""
         },
         // {
         //     imgSrcs: ["https://phoenixhnr.co.kr/api/attach/view/event/110000047318/thumbs_p/"],
@@ -24,7 +24,7 @@ $(document).ready(function () {
             stayCategory: "",
             rooms: [
                 {
-                    period: "",
+                    period: "0000.00.00 - 0000.00.00",
                     room: "",
                     weekdayPrice: "9,999,999",
                     weekdayLink: "",
@@ -116,29 +116,73 @@ $(document).ready(function () {
     function syncDateRangeControl($range, value) {
         const parts = String(value || '').split(' - ');
         const start = displayToDate(parts[0]);
-        const end = parts.length > 1 ? rangeEndToDate(parts[0], parts[1]) : '';
+        const end = parts.length > 1
+            ? rangeEndToDate(parts[0], parts[1])
+            : '';
+
         $range.find('.date-range-start').val(start);
-        $range.find('.date-range-end').val(end).attr('min', start || '');
-        $range.find('.date-range-start').closest('.date-picker-field').find('.date-picker-value').text(start ? dateToDisplay(start) : '날짜 선택');
-        const endDisplay = end ? dateToDisplay(end) : '날짜 선택';
-        $range.find('.date-range-end').closest('.date-picker-field').find('.date-picker-value').text(endDisplay);
-        $range.find('.date-range-summary').text(start && end ? dateRangeToDisplay(start, end) : '시작일과 종료일을 선택해 주세요.');
+
+        $range.find('.date-range-end')
+            .val(end)
+            .attr('min', start || '');
     }
 
     function dateRangeMarkup(displayId, value, extraClass = '') {
         const parts = String(value || '').split(' - ');
         const start = displayToDate(parts[0]);
-        const end = parts.length > 1 ? rangeEndToDate(parts[0], parts[1]) : '';
-        const summary = start && end ? dateRangeToDisplay(start, end) : '시작일과 종료일을 선택해 주세요.';
-        return `<div class="date-range-control ${extraClass}">
-            <input type="hidden" id="${displayId}" class="date-range-display" value="${start && end ? dateRangeToDisplay(start, end) : (value || '')}">
-            <div class="date-range-pickers">
-                <div class="date-picker-field" role="button" tabindex="0" aria-haspopup="dialog" aria-label="시작일 달력 열기"><span class="date-picker-caption">시작일</span><span class="date-picker-value">${start ? dateToDisplay(start) : '날짜 선택'}</span><input type="date" class="date-range-start" value="${start}" aria-label="시작일 선택"></div>
-                <span class="date-range-separator">-</span>
-                <div class="date-picker-field" role="button" tabindex="0" aria-haspopup="dialog" aria-label="종료일 달력 열기"><span class="date-picker-caption">종료일</span><span class="date-picker-value">${end ? dateToDisplay(end) : '날짜 선택'}</span><input type="date" class="date-range-end" value="${end}" min="${start}" aria-label="종료일 선택"></div>
+        const end = parts.length > 1
+            ? rangeEndToDate(parts[0], parts[1])
+            : '';
+
+        return `
+            <div class="date-range-control ${extraClass}">
+                <input
+                    type="hidden"
+                    id="${displayId}"
+                    class="date-range-display"
+                    value="${start && end
+                        ? dateRangeToDisplay(start, end)
+                        : (value || '')}"
+                >
+
+                <div class="date-range-pickers">
+                    <div
+                        class="date-picker-field"
+                        role="button"
+                        tabindex="0"
+                        aria-haspopup="dialog"
+                        aria-label="시작일 달력 열기"
+                    >
+                        <span class="date-picker-caption">시작일</span>
+                        <input
+                            type="date"
+                            class="date-range-start"
+                            value="${start}"
+                            aria-label="시작일 선택"
+                        >
+                    </div>
+
+                    <span class="date-range-separator">-</span>
+
+                    <div
+                        class="date-picker-field"
+                        role="button"
+                        tabindex="0"
+                        aria-haspopup="dialog"
+                        aria-label="종료일 달력 열기"
+                    >
+                        <span class="date-picker-caption">종료일</span>
+                        <input
+                            type="date"
+                            class="date-range-end"
+                            value="${end}"
+                            min="${start}"
+                            aria-label="종료일 선택"
+                        >
+                    </div>
+                </div>
             </div>
-            <div class="date-range-summary" aria-live="polite">${summary}</div>
-        </div>`;
+        `;
     }
 
     function renderCardForms() {
@@ -217,7 +261,7 @@ $(document).ready(function () {
             </div>
             
             <!-- 주중 / 주말 / 연휴 / 공통 -->
-            <div style="display:flex; gap:10px; margin-bottom: 8px;">
+            <div style="display:flex; gap:8px;">
               <div class="form-group" style="flex:1;">
                 <label>주중</label>
                 <input type="text" class="in-price-weekday" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.weekdayPrice)}" placeholder="예: 340,000">
@@ -228,7 +272,7 @@ $(document).ready(function () {
               </div>
             </div>
 
-            <div style="display:flex; gap:10px; margin-bottom: 8px;">
+            <div style="display:flex; gap:8px;">
               <div class="form-group" style="flex:1;">
                 <label>주말</label>
                 <input type="text" class="in-price-weekend" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.weekendPrice)}" placeholder="예: 420,000">
@@ -239,7 +283,7 @@ $(document).ready(function () {
               </div>
             </div>
 
-            <div style="display:flex; gap:10px; margin-bottom: 8px;">
+            <div style="display:flex; gap:8px;">
               <div class="form-group" style="flex:1;">
                 <label>연휴</label>
                 <input type="text" class="in-price-holiday" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.holidayPrice)}" placeholder="예: 500,000">
@@ -250,7 +294,7 @@ $(document).ready(function () {
               </div>
             </div>
 
-            <div style="display:flex; gap:10px;">
+            <div style="display:flex; gap:8px;">
               <div class="form-group" style="flex:1;">
                 <label>공통</label>
                 <input type="text" class="in-price-common" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.commonPrice)}" placeholder="예: 300,000">
@@ -391,18 +435,22 @@ $(document).ready(function () {
 
     $(document).on('change', '.date-range-start, .date-range-end', function () {
         const $range = $(this).closest('.date-range-control');
+
         const start = $range.find('.date-range-start').val();
         const endInput = $range.find('.date-range-end');
+
         endInput.attr('min', start || '');
-        if (start && endInput.val() && endInput.val() < start) endInput.val(start);
+
+        if (start && endInput.val() && endInput.val() < start) {
+            endInput.val(start);
+        }
+
         const end = endInput.val();
         const formatted = dateRangeToDisplay(start, end);
+
         const $display = $range.find('.date-range-display');
+
         $display.val(formatted).trigger('input');
-        $range.find('.date-range-summary').text(formatted || '시작일과 종료일을 선택해 주세요.');
-        $range.find('.date-range-start').closest('.date-picker-field').find('.date-picker-value').text(start ? dateToDisplay(start) : '날짜 선택');
-        const endDisplay = end ? dateToDisplay(end) : '날짜 선택';
-        $range.find('.date-range-end').closest('.date-picker-field').find('.date-picker-value').text(endDisplay);
     });
 
     $(document).on('input', '.reservation-input', function () {
