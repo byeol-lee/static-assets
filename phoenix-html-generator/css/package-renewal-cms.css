@@ -920,13 +920,6 @@ textarea {
     background: rgba(0, 0, 0, 0.02);
 }
 
-.mobile-frame-container::after {
-    content: '↔ 좌우 크기 조절 가능';
-    font-size: 11px;
-    color: #888;
-    margin-top: 6px;
-}
-
 /* 반응형 미디어쿼리 (PC 1200px 기준) */
 @media (min-width: 820px) {
     .tpl-wrap {
