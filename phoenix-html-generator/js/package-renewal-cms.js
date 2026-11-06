@@ -4,8 +4,7 @@ $(document).ready(function () {
 
     let cardsData = [
         {
-            imgSrcs: [
-            ],
+            imgSrcs: [""],
             title: "",
             sub: "",
             notice: "",
@@ -22,27 +21,15 @@ $(document).ready(function () {
 
     let stayGroupsData = [
         {
-            stayCategory: "2박",
+            stayCategory: "",
             rooms: [
                 {
-                    period: "08.01 ~ 08.31",
-                    room: "로얄",
+                    period: "",
+                    room: "",
                     weekdayPrice: "9,999,999",
-                    weekdayLink: "#",
-                    weekendPrice: "9,999,999",
-                    weekendLink: "#",
-                    holidayPrice: "",
-                    holidayLink: "",
-                    commonPrice: "",
-                    commonLink: ""
-                },
-                {
-                    period: "08.01 ~ 08.31",
-                    room: "스카이 스탠다드 패밀리",
-                    weekdayPrice: "9,999,999",
-                    weekdayLink: "#link1",
-                    weekendPrice: "9,999,999",
-                    weekendLink: "#link2",
+                    weekdayLink: "",
+                    weekendPrice: "",
+                    weekendLink: "",
                     holidayPrice: "",
                     holidayLink: "",
                     commonPrice: "",
@@ -60,6 +47,100 @@ $(document).ready(function () {
         return Number(numbers).toLocaleString();
     }
 
+    const roomOptionsByProperty = {
+        'PHOENIX PARK': [
+            '스카이 스탠다드', '스카이 스위트', '스카이 로얄', '스카이 로얄 스위트',
+            '스카이 스탠다드 패밀리', '스카이 스위트 패밀리', '스카이 스위트 벙커',
+            '카카오프렌즈 스카이 스탠다드', '카카오프렌즈 스카이 스위트',
+            '스탠다드', '스위트', '로얄', '로얄 스위트',
+            '수페리어', '수페리어 발코니', '가누다 힐링 스위트'
+        ],
+        'PHOENIX ISLAND': ['로얄', '로얄 스위트', '힐리우스'],
+        'PLAYCE CAMP by PHOENIX': ['스탠다드', '스탠다드 +', '디럭스', '로프트', '듀플렉스 I', '듀플렉스 II', '듀플렉스 +', '펜트하우스']
+    };
+
+    function getRoomOptions(property, selected) {
+        const options = roomOptionsByProperty[property] || [];
+        let html = '<option value="">객실 선택</option>';
+        options.forEach(option => {
+            const value = String(option);
+            html += `<option value="${value}" ${value === selected ? 'selected' : ''}>${value}</option>`;
+        });
+        return html;
+    }
+
+    function resolveReservationHref(value) {
+        const input = String(value || '').trim();
+        if (/^https?:\/\//i.test(input)) {
+            try {
+                const parsed = new URL(input);
+                if ((parsed.protocol === 'https:' || parsed.protocol === 'http:') && parsed.hostname.includes('.') && !/\s/.test(input)) return input;
+            } catch (error) { /* 유효하지 않은 URL */ }
+        }
+        const digits = input.replace(/\D/g, '');
+        if (/^\+?[0-9()\-\s]+$/.test(input) && digits.length >= 8 && digits.length <= 15) {
+            return 'tel:' + (input.trim().startsWith('+') ? '+' : '') + digits;
+        }
+        return '';
+    }
+
+    function sanitizeReservationInput(value) {
+        return String(value || '').replace(/[^a-zA-Z0-9:/?&=#._%+~@!$'()*,-]/g, '').slice(0, 500);
+    }
+
+    function dateToDisplay(value) {
+        return value ? value.replace(/-/g, '.') : '';
+    }
+
+    function displayToDate(value) {
+        const match = String(value || '').match(/^(\d{4})\.(\d{2})\.(\d{2})$/);
+        return match ? `${match[1]}-${match[2]}-${match[3]}` : '';
+    }
+
+    function dateRangeToDisplay(start, end) {
+        if (!start || !end) return '';
+        const startText = dateToDisplay(start);
+        const endText = dateToDisplay(end);
+        return `${startText} - ${endText}`;
+    }
+
+    function rangeEndToDate(startText, endText) {
+        const fullEnd = displayToDate(endText);
+        if (fullEnd) return fullEnd;
+        const startYear = String(startText || '').slice(0, 4);
+        return startYear && /^\d{2}\.\d{2}$/.test(String(endText || ''))
+            ? displayToDate(`${startYear}.${endText}`)
+            : '';
+    }
+
+    function syncDateRangeControl($range, value) {
+        const parts = String(value || '').split(' - ');
+        const start = displayToDate(parts[0]);
+        const end = parts.length > 1 ? rangeEndToDate(parts[0], parts[1]) : '';
+        $range.find('.date-range-start').val(start);
+        $range.find('.date-range-end').val(end).attr('min', start || '');
+        $range.find('.date-range-start').closest('.date-picker-field').find('.date-picker-value').text(start ? dateToDisplay(start) : '날짜 선택');
+        const endDisplay = end ? dateToDisplay(end) : '날짜 선택';
+        $range.find('.date-range-end').closest('.date-picker-field').find('.date-picker-value').text(endDisplay);
+        $range.find('.date-range-summary').text(start && end ? dateRangeToDisplay(start, end) : '시작일과 종료일을 선택해 주세요.');
+    }
+
+    function dateRangeMarkup(displayId, value, extraClass = '') {
+        const parts = String(value || '').split(' - ');
+        const start = displayToDate(parts[0]);
+        const end = parts.length > 1 ? rangeEndToDate(parts[0], parts[1]) : '';
+        const summary = start && end ? dateRangeToDisplay(start, end) : '시작일과 종료일을 선택해 주세요.';
+        return `<div class="date-range-control ${extraClass}">
+            <input type="hidden" id="${displayId}" class="date-range-display" value="${start && end ? dateRangeToDisplay(start, end) : (value || '')}">
+            <div class="date-range-pickers">
+                <div class="date-picker-field" role="button" tabindex="0" aria-haspopup="dialog" aria-label="시작일 달력 열기"><span class="date-picker-caption">시작일</span><span class="date-picker-value">${start ? dateToDisplay(start) : '날짜 선택'}</span><input type="date" class="date-range-start" value="${start}" aria-label="시작일 선택"></div>
+                <span class="date-range-separator">-</span>
+                <div class="date-picker-field" role="button" tabindex="0" aria-haspopup="dialog" aria-label="종료일 달력 열기"><span class="date-picker-caption">종료일</span><span class="date-picker-value">${end ? dateToDisplay(end) : '날짜 선택'}</span><input type="date" class="date-range-end" value="${end}" min="${start}" aria-label="종료일 선택"></div>
+            </div>
+            <div class="date-range-summary" aria-live="polite">${summary}</div>
+        </div>`;
+    }
+
     function renderCardForms() {
         const $container = $('#card-form-container');
         $container.empty();
@@ -71,7 +152,7 @@ $(document).ready(function () {
             const cardHtml = `
         <div class="card-item-form" data-index="${index}">
           <div class="card-item-header">
-            <span class="card-item-title">구성 상세 #${index + 1}</span>
+            <span class="card-item-title">상품 구성 상세 #${index + 1}</span>
             ${cardsData.length > 1 ? `<button type="button" class="btn-del-card" onclick="deleteCard(${index})">삭제</button>` : ''}
           </div>
           <div class="form-group card-images-form">
@@ -100,7 +181,7 @@ $(document).ready(function () {
           </div>
           <div class="form-group">
             <label>자세히 보기 URL</label>
-            <input type="text" class="in-card-link" data-index="${index}" value="${card.link || ''}" placeholder="https://...">
+            <input type="text" class="in-card-link" data-index="${index}" value="${card.link || ''}" placeholder="https://... 또는 02-1234-5678" inputmode="url">
           </div>
         </div>
       `;
@@ -126,11 +207,13 @@ $(document).ready(function () {
             </div>
             <div class="form-group">
               <label>기간</label>
-              <input type="text" class="in-price-period" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.period || ''}" placeholder="예: 00.00 ~ 00.00">
+              ${dateRangeMarkup('', room.period || '', 'room-date-range').replace('date-range-display', `date-range-display in-price-period" data-sidx="${sIdx}" data-ridx="${rIdx}`).replace('id="" ', '')}
             </div>
             <div class="form-group">
               <label>객실</label>
-              <input type="text" class="in-price-room" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.room || ''}" placeholder="예: 로얄">
+              <select class="in-price-room" data-sidx="${sIdx}" data-ridx="${rIdx}">
+                ${getRoomOptions($('#in-property').val(), room.room || '')}
+              </select>
             </div>
             
             <!-- 주중 / 주말 / 연휴 / 공통 -->
@@ -140,8 +223,8 @@ $(document).ready(function () {
                 <input type="text" class="in-price-weekday" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.weekdayPrice)}" placeholder="예: 340,000">
               </div>
               <div class="form-group" style="flex:1;">
-                <label>주중 예약 URL</label>
-                <input type="text" class="in-link-weekday" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.weekdayLink || ''}" placeholder="https://...">
+                <label>주중 예약 URL/유선</label>
+                <input type="text" class="in-link-weekday reservation-input" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.weekdayLink || ''}" placeholder="https://... 또는 02-1234-5678" inputmode="url">
               </div>
             </div>
 
@@ -151,8 +234,8 @@ $(document).ready(function () {
                 <input type="text" class="in-price-weekend" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.weekendPrice)}" placeholder="예: 420,000">
               </div>
               <div class="form-group" style="flex:1;">
-                <label>주말 예약 URL</label>
-                <input type="text" class="in-link-weekend" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.weekendLink || ''}" placeholder="https://...">
+                <label>주말 예약 URL/유선</label>
+                <input type="text" class="in-link-weekend reservation-input" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.weekendLink || ''}" placeholder="https://... 또는 02-1234-5678" inputmode="url">
               </div>
             </div>
 
@@ -162,8 +245,8 @@ $(document).ready(function () {
                 <input type="text" class="in-price-holiday" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.holidayPrice)}" placeholder="예: 500,000">
               </div>
               <div class="form-group" style="flex:1;">
-                <label>연휴 URL</label>
-                <input type="text" class="in-link-holiday" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.holidayLink || ''}" placeholder="https://...">
+                <label>연휴 예약 URL/유선</label>
+                <input type="text" class="in-link-holiday reservation-input" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.holidayLink || ''}" placeholder="https://... 또는 02-1234-5678" inputmode="url">
               </div>
             </div>
 
@@ -173,8 +256,8 @@ $(document).ready(function () {
                 <input type="text" class="in-price-common" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.commonPrice)}" placeholder="예: 300,000">
               </div>
               <div class="form-group" style="flex:1;">
-                <label>공통 예약 URL</label>
-                <input type="text" class="in-link-common" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.commonLink || ''}" placeholder="https://...">
+                <label>공통 예약 URL/유선</label>
+                <input type="text" class="in-link-common reservation-input" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.commonLink || ''}" placeholder="https://...">
               </div>
             </div>
 
@@ -185,7 +268,7 @@ $(document).ready(function () {
             const stayHtml = `
         <div class="stay-group-form" data-sidx="${sIdx}">
           <div class="stay-group-header">
-            <span class="stay-group-title">요금 항목 #${sIdx + 1}</span>
+            <span class="stay-group-title">이용 요금 #${sIdx + 1}</span>
             ${stayGroupsData.length > 1 ? `<button type="button" class="btn-del-stay" onclick="deleteStay(${sIdx})">항목 삭제</button>` : ''}
           </div>
           <div class="form-group">
@@ -258,7 +341,15 @@ $(document).ready(function () {
     };
 
     $(document).on('input propertychange change', '#in-property, .in-card-title, .in-card-sub, .in-card-notice, .in-card-link', function () {
-        if ($(this).is('#in-property')) { renderTemplate(); return; }
+        if ($(this).is('#in-property')) {
+            const allowedRooms = (roomOptionsByProperty[$(this).val()] || []).filter(option => typeof option === 'string');
+            stayGroupsData.forEach(group => (group.rooms || []).forEach(room => {
+                if (room.room && !allowedRooms.includes(room.room)) room.room = '';
+            }));
+            renderStayForms();
+            renderTemplate();
+            return;
+        }
         const idx = $(this).data('index');
         const $parent = $(this).closest('.card-item-form');
         cardsData[idx].title = $parent.find('.in-card-title').val();
@@ -266,6 +357,68 @@ $(document).ready(function () {
         cardsData[idx].notice = $parent.find('.in-card-notice').val();
         cardsData[idx].link = $parent.find('.in-card-link').val();
         renderTemplate();
+    });
+
+    // 날짜 입력칸 전체를 클릭하면 네이티브 달력 선택기를 연다.
+    // 투명한 date input은 포인터 입력을 받지 않고, 부모 영역이 클릭을 처리한다.
+    function openDatePicker(field) {
+        const input = field && field.querySelector('input[type="date"]');
+        if (!input || input.disabled) return;
+        try {
+            if (typeof input.showPicker === 'function') {
+                input.showPicker();
+            } else {
+                input.focus();
+                input.click();
+            }
+        } catch (error) {
+            // showPicker 미지원 또는 브라우저 제한 시 기본 클릭 동작으로 대체
+            input.focus();
+            input.click();
+        }
+    }
+
+    $(document).on('click', '.date-picker-field', function () {
+        openDatePicker(this);
+    });
+
+    $(document).on('keydown', '.date-picker-field', function (event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            openDatePicker(this);
+        }
+    });
+
+    $(document).on('change', '.date-range-start, .date-range-end', function () {
+        const $range = $(this).closest('.date-range-control');
+        const start = $range.find('.date-range-start').val();
+        const endInput = $range.find('.date-range-end');
+        endInput.attr('min', start || '');
+        if (start && endInput.val() && endInput.val() < start) endInput.val(start);
+        const end = endInput.val();
+        const formatted = dateRangeToDisplay(start, end);
+        const $display = $range.find('.date-range-display');
+        $display.val(formatted).trigger('input');
+        $range.find('.date-range-summary').text(formatted || '시작일과 종료일을 선택해 주세요.');
+        $range.find('.date-range-start').closest('.date-picker-field').find('.date-picker-value').text(start ? dateToDisplay(start) : '날짜 선택');
+        const endDisplay = end ? dateToDisplay(end) : '날짜 선택';
+        $range.find('.date-range-end').closest('.date-picker-field').find('.date-picker-value').text(endDisplay);
+    });
+
+    $(document).on('input', '.reservation-input', function () {
+        const cleaned = sanitizeReservationInput(this.value);
+        if (this.value !== cleaned) this.value = cleaned;
+        const href = resolveReservationHref(cleaned);
+        $(this).toggleClass('is-invalid-reservation', !!cleaned && !href);
+    });
+
+    $(document).on('blur', '.reservation-input', function () {
+        const value = String(this.value || '').trim();
+        if (value && !resolveReservationHref(value)) {
+            this.value = '';
+            $(this).removeClass('is-invalid-reservation');
+            $(this).trigger('input');
+        }
     });
 
     $(document).on('input propertychange change', '.in-price-stay, .in-price-notice', function () {
@@ -518,7 +671,7 @@ $(document).ready(function () {
         const selectedPropertyVal = $('#in-property').val() || '';
         const subTitle = selectedPropertyVal;
 
-        let badgeBgColor = '#f7441b';
+        let badgeBgColor = '#167a47';
         if (selectedPropertyVal === 'PHOENIX PARK') {
             badgeBgColor = '#167a47';
         } else if (selectedPropertyVal === 'PHOENIX ISLAND') {
@@ -653,7 +806,7 @@ $(document).ready(function () {
                             activeEntries.push({
                                 label: t.label,
                                 val: valStr + (valStr.includes('원') ? '' : '원'),
-                                link: (t.link && t.link.trim() !== '') ? t.link.trim() : '#'
+                                link: resolveReservationHref(t.link)
                             });
                         }
                     });
@@ -680,7 +833,7 @@ $(document).ready(function () {
 
                         sheetContentHtml += `
                 </div>
-                <a href="${uniqueLinks[0]}" class="tpl-btn-reserve-sm" target="_blank">예약하기</a>
+                ${uniqueLinks[0] ? `<a href="${uniqueLinks[0]}" class="tpl-btn-reserve-sm" ${uniqueLinks[0].startsWith('tel:') ? '' : 'target="_blank"'}>예약하기</a>` : '<span class="tpl-btn-reserve-sm is-disabled" aria-disabled="true">예약하기</span>'}
               </div>
             </div>`;
                     } else {
@@ -694,7 +847,7 @@ $(document).ready(function () {
                 <div class="tpl-price-sub-row">
                   <span class="tpl-room-sub-label">${entry.label}</span>
                   <span class="tpl-room-val">${entry.val}</span>
-                  <a href="${entry.link}" class="tpl-btn-reserve-sm" target="_blank">예약하기</a>
+                  ${entry.link ? `<a href="${entry.link}" class="tpl-btn-reserve-sm" ${entry.link.startsWith('tel:') ? '' : 'target="_blank"'}>예약하기</a>` : '<span class="tpl-btn-reserve-sm is-disabled" aria-disabled="true">예약하기</span>'}
                 </div>`;
                         });
 
@@ -756,7 +909,7 @@ $(document).ready(function () {
 
   <!-- 스티키 하단 예약 바 -->
   ${minPriceNum !== Infinity ? `<div class="tpl-sticky-bar">
-    <div class="tpl-sticky-price"><span class="tpl-sticky-val">${minPriceDisplay}</span></div>
+    <div class="tpl-sticky-price"><span class="tpl-sticky-val" style="color:${badgeBgColor};">${minPriceDisplay}</span></div>
     <button type="button" class="tpl-sticky-btn" id="btn-open-sheet">자세히 보기</button>
   </div>
   <div class="tpl-bottom-sheet-bg" id="sheet-bg"></div>
@@ -847,6 +1000,8 @@ ${generatedHTML}
         if (!data) return;
         workspace.changingTab = true;
         workspaceFields.forEach(sel => $(sel).val(data.fields && data.fields[sel] != null ? data.fields[sel] : ''));
+        syncDateRangeControl($('#in-info-reserve-period').closest('.date-range-control'), $('#in-info-reserve-period').val());
+        syncDateRangeControl($('#in-info-stay-period').closest('.date-range-control'), $('#in-info-stay-period').val());
         $('#in-property').val(data.property || '');
         mainImgSrc = data.mainImgSrc || mainImgSrc;
         cardsData = cloneData(data.cardsData || cardsData);
@@ -947,12 +1102,14 @@ ${generatedHTML}
         ];
         stayGroupsData.forEach((group, sIdx) => {
             (group.rooms || []).forEach((room, rIdx) => {
+                if (!String(room.period || '').trim()) {
+                    missing.push(`이용 요금 > 이용 요금 #${sIdx + 1} > 객실 항목 #${rIdx + 1} > 기간`);
+                }
+
                 priceTypes.forEach(type => {
                     const price = String(room[type.price] || '').trim();
                     const url = String(room[type.link] || '').trim();
-                    if (price && !url) {
-                        missing.push(`이용 요금 > 요금 항목 #${sIdx + 1} > 객실 항목 #${rIdx + 1} > ${type.label} 예약 URL`);
-                    }
+                    // 예약 URL/유선은 선택 입력이며, 미입력 시 미리보기 버튼을 비활성화합니다.
                 });
             });
         });
