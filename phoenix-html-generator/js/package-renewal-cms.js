@@ -4,19 +4,15 @@ $(document).ready(function () {
 
     let cardsData = [
         {
-            imgSrcs: [""],
+            imgSrcs: [
+                "https://phoenixhnr.co.kr/api/attach/view/event/110000047318/thumbs_p/",
+                "https://phoenixhnr.co.kr/api/attach/view/event/110000047318/thumbs_p/"
+            ],
             title: "",
             sub: "",
             notice: "",
             link: ""
-        },
-        // {
-        //     imgSrcs: ["https://phoenixhnr.co.kr/api/attach/view/event/110000047318/thumbs_p/"],
-        //     title: "",
-        //     sub: "",
-        //     notice: "",
-        //     link: ""
-        // }
+        }
     ];
 
     let stayGroupsData = [
@@ -24,9 +20,9 @@ $(document).ready(function () {
             stayCategory: "",
             rooms: [
                 {
-                    period: "0000.00.00 - 0000.00.00",
+                    period: "",
                     room: "",
-                    weekdayPrice: "9,999,999",
+                    weekdayPrice: "",
                     weekdayLink: "",
                     weekendPrice: "",
                     weekendLink: "",
@@ -146,7 +142,7 @@ $(document).ready(function () {
                 <div class="date-range-pickers">
                     <label class="date-picker-field">
                         <span class="date-picker-caption">
-                            ${start ? dateToDisplay(start) : '시작일'}
+                            ${start ? dateToDisplay(start) : '0000.00.00'}
                         </span>
                         <span class="date-picker-value"></span>
                         <input
@@ -161,7 +157,7 @@ $(document).ready(function () {
 
                     <label class="date-picker-field">
                         <span class="date-picker-caption">
-                            ${end ? dateToDisplay(end) : '종료일'}
+                            ${end ? dateToDisplay(end) : '0000.00.00'}
                         </span>
                         <span class="date-picker-value"></span>
                         <input
@@ -441,10 +437,10 @@ $(document).ready(function () {
 
         // 선택한 날짜로 시작일 / 종료일 문구 변경
         $range.find('.date-picker-caption').eq(0)
-            .text(start ? dateToDisplay(start) : '시작일');
+            .text(start ? dateToDisplay(start) : '0000.00.00');
 
         $range.find('.date-picker-caption').eq(1)
-            .text(end ? dateToDisplay(end) : '종료일');
+            .text(end ? dateToDisplay(end) : '0000.00.00');
 
         // 날짜 표시 영역은 사용하지 않음
         $range.find('.date-picker-value').text('');
@@ -724,7 +720,7 @@ $(document).ready(function () {
         const selectedPropertyVal = $('#in-property').val() || '';
         const subTitle = selectedPropertyVal;
 
-        let badgeBgColor = '#167a47';
+        let badgeBgColor = '#76777a';
         if (selectedPropertyVal === 'PHOENIX PARK') {
             badgeBgColor = '#167a47';
         } else if (selectedPropertyVal === 'PHOENIX ISLAND') {
@@ -733,18 +729,28 @@ $(document).ready(function () {
             badgeBgColor = '#e6007e';
         }
 
-        const mainTitle = ($('#in-main-title').val() || '').trim();
-        const mainBadge = ($('#in-main-badge').val() || '').trim();
-        const mainDesc = ($('#in-main-desc').val() || '').trim().replace(/\n/g, '<br>');
-        const infoReservePeriod = ($('#in-info-reserve-period').val() || '').trim();
-        const infoStayPeriod = ($('#in-info-stay-period').val() || '').trim();
-        const ctaTitle = ($('#in-cta-title').val() || '').trim();
-        const ctaDesc = ($('#in-cta-desc').val() || '').trim().replace(/\n/g, '<br>');
+        const mainTitle = getValOrPlaceholder('#in-main-title');
+        const mainBadge = getValOrPlaceholder('#in-main-badge');
+        const mainDesc = getValOrPlaceholder('#in-main-desc');
+        const infoReservePeriod = getValOrPlaceholder('#in-info-reserve-period') || '0000.00.00 - 0000.00.00';
+        const infoStayPeriod = getValOrPlaceholder('#in-info-stay-period') || '0000.00.00 - 0000.00.00';
+        const ctaTitle = getValOrPlaceholder('#in-cta-title');
+        const ctaDesc = getValOrPlaceholder('#in-cta-desc').replace(/\n/g, '<br />');
+        // const mainTitle = ($('#in-main-title').val() || '').trim();
+        // const mainBadge = ($('#in-main-badge').val() || '').trim();
+        // const mainDesc = ($('#in-main-desc').val() || '').trim().replace(/\n/g, '<br />');
+        // const infoReservePeriod = ($('#in-info-reserve-period').val() || '').trim();
+        // const infoStayPeriod = ($('#in-info-stay-period').val() || '').trim();
+        // const ctaTitle = ($('#in-cta-title').val() || '').trim();
+        // const ctaDesc = ($('#in-cta-desc').val() || '').trim().replace(/\n/g, '<br />');
 
         let cardsHtml = '';
         cardsData.forEach((card, idx) => {
-            const title = (card.title || '').trim();
-            const rawSub = (card.sub || '').trim();
+
+            const title = getValOrPlaceholder('.in-card-title');
+            const rawSub = getValOrPlaceholder('.in-card-sub');
+            // const title = card.title.trim() !== '' ? card.title : '사계절 온수풀';
+            // const rawSub = card.sub.trim() !== '' ? card.sub : '사계절 따뜻한 온수풀에서 제주 바다의 일몰을 감상하며 여유로운 휴식을 경험하세요.';
 
             let noticeHtml = '';
             if (card.notice && card.notice.trim() !== '') {
@@ -784,7 +790,8 @@ $(document).ready(function () {
       </div>`;
         });
 
-        const rawBullets = ($('#in-bullets').val() || '').trim();
+        const rawBullets = getValOrPlaceholder('#in-bullets');
+        // const rawBullets = ($('#in-bullets').val() || '').trim();
         let bulletHtml = '';
         rawBullets.split('\n').forEach(line => {
             if (line.trim() !== '') bulletHtml += `<li>${line}</li>`;
@@ -816,7 +823,7 @@ $(document).ready(function () {
 
             const periodMap = {};
             group.rooms.forEach(r => {
-                const periodKey = (r.period || '').trim();
+                const periodKey = (r.period || '').trim() || '0000.00.00 - 0000.00.00';
                 if (!periodMap[periodKey]) periodMap[periodKey] = [];
                 periodMap[periodKey].push(r);
 
@@ -1162,7 +1169,13 @@ ${generatedHTML}
                 priceTypes.forEach(type => {
                     const price = String(room[type.price] || '').trim();
                     const url = String(room[type.link] || '').trim();
-                    // 예약 URL/유선은 선택 입력이며, 미입력 시 미리보기 버튼을 비활성화합니다.
+
+                    // 요금이 입력된 경우 해당 항목의 예약 URL/유선도 필수
+                    if (price && !url) {
+                        missing.push(
+                            `이용 요금 > 이용 요금 #${sIdx + 1} > 객실 항목 #${rIdx + 1} > ${type.label} 예약 URL/유선`
+                        );
+                    }
                 });
             });
         });
