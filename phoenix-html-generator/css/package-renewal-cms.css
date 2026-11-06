@@ -39,6 +39,7 @@ body {
     margin-bottom: 24px;
     padding-bottom: 24px;
 }
+
 .form-section:last-child {
     border-bottom: none;
     margin-bottom: 0;
@@ -69,6 +70,10 @@ body {
     font-weight: 600;
     margin-bottom: 6px;
     color: #222;
+}
+
+.form-group label.date-picker-field {
+    margin-bottom: 0;
 }
 
 .form-group .custom-file-btn {
@@ -106,7 +111,7 @@ body {
 }
 
 textarea {
-/* .form-group textarea { */
+    /* .form-group textarea { */
     height: 80px;
     block-size: 80px;
     resize: vertical;
@@ -1279,16 +1284,91 @@ textarea {
 
 
 /* 날짜 범위 선택: 달력 버튼 + YYYY.MM.DD 표시 */
-.date-range-control { width: 100%; }
-.date-range-display { display: none !important; }
-.date-range-pickers { display: flex; align-items: flex-end; gap: 10px; width: 100%; }
-.date-picker-field { position: relative; display: flex; flex: 1; flex-direction: column; gap: 5px; min-width: 0; padding: 8px 38px 8px 10px; min-height: 62px; border: 1px solid #d5d9df; border-radius: 7px; background: #fff; cursor: pointer; }
-.date-picker-caption { color: #858b95; font-size: 11px; font-weight: 600; line-height: 1.2; }
-.date-picker-value { color: #252a31; font-size: 13px; font-weight: 600; line-height: 1.4; white-space: nowrap; }
-.date-picker-field:after { content: ''; position: absolute; right: 11px; top: 50%; width: 20px; height: 20px; transform: translateY(-25%); pointer-events: none; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='16' rx='2'/%3E%3Cpath d='M16 3v4M8 3v4M3 10h18'/%3E%3C/svg%3E") center / 20px 20px no-repeat; }
-.date-picker-field input[type="date"] { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; pointer-events: none; cursor: pointer; }
-.date-picker-field:focus-visible { outline: 2px solid #1677d2; outline-offset: 2px; }
-.date-range-separator { flex: 0 0 auto; align-self: center; padding-top: 15px; color: #777; font-size: 14px; font-weight: 600; }
-.date-range-summary { margin-top: 7px; color: #777; font-size: 11px; line-height: 1.4; }
-.room-date-range { margin-bottom: 2px; }
-.reservation-input.is-invalid-reservation { border-color: #d33 !important; background: #fff8f8; }
+.date-range-control {
+    width: 100%;
+}
+
+.date-range-display {
+    display: none !important;
+}
+
+.date-range-pickers {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.date-picker-field {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+    padding: 8px;
+    min-height: 32px;
+    border: 1px solid #888;
+    background: #fff;
+    cursor: pointer;
+}
+
+.date-picker-caption {
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.date-picker-value {
+    color: #252a31;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.date-picker-field:after {
+    content: '';
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='16' rx='2'/%3E%3Cpath d='M16 3v4M8 3v4M3 10h18'/%3E%3C/svg%3E") center / 20px 20px no-repeat;
+}
+
+.date-picker-field input[type="date"] {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.date-picker-field:focus-visible {
+    outline: 2px solid #1677d2;
+    outline-offset: 2px;
+}
+
+.date-range-separator {
+    align-self: center;
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.date-range-summary {
+    margin-top: 7px;
+    color: #777;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.reservation-input.is-invalid-reservation {
+    border-color: #d33 !important;
+    background: #fff8f8;
+}
