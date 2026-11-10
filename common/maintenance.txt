@@ -1516,7 +1516,7 @@
                     </a>
                 </li>
                 <li class="modal-slider-item swiper-slide" data-end="2027-02-26T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/10/QD0uPeFnBo1Z87Jxemdy_1_');">
+                    style="background-image: url('/api/editor/attach/view/default/2026/11/CVi2reYKZ4gK5QNvD7dC_1_');">
                     <a href="/page/board/package/16163" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
@@ -1578,7 +1578,7 @@
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
                 <li class="modal-slider-item swiper-slide" data-end="2027-02-26T00:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/10/QD0uPeFnBo1Z87Jxemdy_1_');">
+                    style="background-image: url('/api/editor/attach/view/default/2026/11/CVi2reYKZ4gK5QNvD7dC_1_');">
                     <a href="/page/jeju/board/package/16163" class="modal-slider-link" target="_blank">
                     </a>
                 </li>
