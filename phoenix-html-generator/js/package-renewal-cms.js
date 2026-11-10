@@ -183,7 +183,7 @@ $(document).ready(function () {
             const cardHtml = `
         <div class="card-item-form" data-index="${index}">
           <div class="card-item-header">
-            <span class="card-item-title">상품 구성 상세 #${index + 1}</span>
+            <span class="card-item-title">3-${index + 1}. 상품 구성 상세</span>
             ${cardsData.length > 1 ? `<button type="button" class="btn-del-card" onclick="deleteCard(${index})">삭제</button>` : ''}
           </div>
           <div class="form-group card-images-form">
@@ -207,12 +207,12 @@ $(document).ready(function () {
             <textarea class="in-card-sub" data-index="${index}" placeholder="상품 구성 상세">${card.sub}</textarea>
           </div>
           <div class="form-group">
-            <label>추가 안내(※ 기호 자동)</label>
+            <label>추가 안내('※' 자동)</label>
             <textarea class="in-card-notice" data-index="${index}" placeholder="성수기 이용 불가&#10;주말 이용 시 추가 비용 발생">${card.notice || ''}</textarea>
           </div>
           <div class="form-group">
             <label>자세히 보기 URL</label>
-            <input type="text" class="in-card-link" data-index="${index}" value="${card.link || ''}" placeholder="https://... 또는 02-1234-5678" inputmode="url">
+            <input type="text" class="in-card-link" data-index="${index}" value="${card.link || ''}" placeholder="https://" inputmode="url">
           </div>
         </div>
       `;
@@ -233,7 +233,7 @@ $(document).ready(function () {
                 roomsHtml += `
           <div class="room-item-form" data-sidx="${sIdx}" data-ridx="${rIdx}">
             <div class="room-item-header">
-              <span class="room-item-title">객실 항목 #${rIdx + 1}</span>
+            <span class="room-item-title">객실 항목 #${rIdx + 1}</span>
               ${stayGroup.rooms.length > 1 ? `<button type="button" class="btn-del-room" onclick="deleteRoom(${sIdx},${rIdx})">객실 삭제</button>` : ''}
             </div>
             <div class="form-group">
@@ -251,44 +251,44 @@ $(document).ready(function () {
             <div style="display:flex; gap:8px;">
               <div class="form-group" style="flex:1;">
                 <label>주중</label>
-                <input type="text" class="in-price-weekday" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.weekdayPrice)}" placeholder="예: 340,000">
+                <input type="text" class="in-price-weekday" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.weekdayPrice)}" placeholder="340,000">
               </div>
               <div class="form-group" style="flex:1;">
                 <label>주중 예약 URL/유선</label>
-                <input type="text" class="in-link-weekday reservation-input" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.weekdayLink || ''}" placeholder="https://... 또는 02-1234-5678" inputmode="url">
+                <input type="text" class="in-link-weekday reservation-input" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.weekdayLink || ''}" placeholder="https://... or 0212345678" inputmode="url">
               </div>
             </div>
 
             <div style="display:flex; gap:8px;">
               <div class="form-group" style="flex:1;">
                 <label>주말</label>
-                <input type="text" class="in-price-weekend" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.weekendPrice)}" placeholder="예: 420,000">
+                <input type="text" class="in-price-weekend" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.weekendPrice)}" placeholder="420,000">
               </div>
               <div class="form-group" style="flex:1;">
                 <label>주말 예약 URL/유선</label>
-                <input type="text" class="in-link-weekend reservation-input" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.weekendLink || ''}" placeholder="https://... 또는 02-1234-5678" inputmode="url">
+                <input type="text" class="in-link-weekend reservation-input" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.weekendLink || ''}" placeholder="https://... or 0212345678" inputmode="url">
               </div>
             </div>
 
             <div style="display:flex; gap:8px;">
               <div class="form-group" style="flex:1;">
                 <label>연휴</label>
-                <input type="text" class="in-price-holiday" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.holidayPrice)}" placeholder="예: 500,000">
+                <input type="text" class="in-price-holiday" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.holidayPrice)}" placeholder="500,000">
               </div>
               <div class="form-group" style="flex:1;">
                 <label>연휴 예약 URL/유선</label>
-                <input type="text" class="in-link-holiday reservation-input" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.holidayLink || ''}" placeholder="https://... 또는 02-1234-5678" inputmode="url">
+                <input type="text" class="in-link-holiday reservation-input" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.holidayLink || ''}" placeholder="https://... or 0212345678" inputmode="url">
               </div>
             </div>
 
             <div style="display:flex; gap:8px;">
               <div class="form-group" style="flex:1;">
                 <label>공통</label>
-                <input type="text" class="in-price-common" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.commonPrice)}" placeholder="예: 300,000">
+                <input type="text" class="in-price-common" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${formatNumber(room.commonPrice)}" placeholder="300,000">
               </div>
               <div class="form-group" style="flex:1;">
                 <label>공통 예약 URL/유선</label>
-                <input type="text" class="in-link-common reservation-input" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.commonLink || ''}" placeholder="https://...">
+                <input type="text" class="in-link-common reservation-input" data-sidx="${sIdx}" data-ridx="${rIdx}" value="${room.commonLink || ''}" placeholder="https://... or 0212345678">
               </div>
             </div>
 
@@ -304,7 +304,7 @@ $(document).ready(function () {
           </div>
           <div class="form-group">
             <label>박수(미입력 시 미노출)</label>
-            <input type="text" class="in-price-stay" data-sidx="${sIdx}" value="${stayGroup.stayCategory}" placeholder="예: 1박">
+            <input type="text" class="in-price-stay" data-sidx="${sIdx}" value="${stayGroup.stayCategory}" placeholder="1박">
           </div>
           <div class="room-container">
             ${roomsHtml}
@@ -312,8 +312,8 @@ $(document).ready(function () {
           <button type="button" class="btn-add-room" onclick="addRoom(${sIdx})">+ 객실 추가</button>
           
           <div class="form-group" style="margin-top: 15px;">
-            <label>요금 안내(※ 기호 자동)</label>
-            <textarea class="in-price-notice" data-sidx="${sIdx}" style="height: 60px;" placeholder="요금 안내 설명">${stayGroup.priceNotice || ''}</textarea>
+            <label>추가 안내('※' 자동)</label>
+            <textarea class="in-price-notice" data-sidx="${sIdx}" style="height: 60px;" placeholder="추가 안내 설명">${stayGroup.priceNotice || ''}</textarea>
           </div>
         </div>
       `;
@@ -390,8 +390,6 @@ $(document).ready(function () {
         renderTemplate();
     });
 
-    // 날짜 입력칸 전체를 클릭하면 네이티브 달력 선택기를 연다.
-    // 투명한 date input은 포인터 입력을 받지 않고, 부모 영역이 클릭을 처리한다.
     function openDatePicker(field) {
         const input = field && field.querySelector('input[type="date"]');
         if (!input || input.disabled) return;
@@ -403,7 +401,6 @@ $(document).ready(function () {
                 input.click();
             }
         } catch (error) {
-            // showPicker 미지원 또는 브라우저 제한 시 기본 클릭 동작으로 대체
             input.focus();
             input.click();
         }
