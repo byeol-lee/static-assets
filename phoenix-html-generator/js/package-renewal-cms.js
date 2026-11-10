@@ -193,7 +193,7 @@ $(document).ready(function () {
                 <span style="min-width:58px;font-size:12px;">이미지 ${imageIndex + 1}</span>
                 <label for="in-card-img-${index}-${imageIndex}" class="custom-file-btn">파일 선택</label>
                 <input type="file" id="in-card-img-${index}-${imageIndex}" class="in-card-img" data-index="${index}" data-image-index="${imageIndex}" accept="image/*" style="display:none;">
-                <span class="file-name-display" style="font-size:11px;color:#333;margin-left:4px;display:inline-block;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${src && src.startsWith('data:') ? '업로드된 파일' : (src ? '기본 이미지' : '')}</span>
+                <span class="file-name-display" style="font-size:11px;color:#333;margin-left:4px;display:inline-block;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${src && src.startsWith('data:') ? '업로드된 파일1' : (src ? '기본 이미지2' : '')}</span>
                 ${imgSrcs.length > 1 ? `<button type="button" class="btn-del-card-image" data-index="${index}" data-image-index="${imageIndex}" style="flex-shrink:0;">삭제</button>` : ''}
               </div>`).join('')}
             ${(imgSrcs.length < 4) ? `<button type="button" class="btn-add-card-image custom-file-btn" data-index="${index}">+ 이미지 추가</button>` : '<p style="font-size:12px;color:#666;margin:8px 0;">※ 최대 4개 등록 가능</p>'}
