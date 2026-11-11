@@ -1,13 +1,14 @@
 $(document).ready(function () {
 
-    let mainImgSrc = "https://phoenixhnr.co.kr/api/attach/view/event/120000046598/thumbs_p/";
+    let mainImgSrc = "https://byeol-lee.github.io/static-assets/phoenix-html-generator/example.jpg";
+    let mainImgName = "";
 
     let cardsData = [
         {
             imgSrcs: [
-                "https://phoenixhnr.co.kr/api/attach/view/event/110000047318/thumbs_p/",
-                "https://phoenixhnr.co.kr/api/attach/view/event/110000047318/thumbs_p/"
+                "https://byeol-lee.github.io/static-assets/phoenix-html-generator/example.jpg"
             ],
+            imgNames: [""],
             title: "",
             sub: "",
             notice: "",
@@ -179,6 +180,8 @@ $(document).ready(function () {
         cardsData.forEach((card, index) => {
             const imgSrcs = (card.imgSrcs && card.imgSrcs.length > 0) ? card.imgSrcs : [""];
             card.imgSrcs = imgSrcs;
+            if (!Array.isArray(card.imgNames)) card.imgNames = [];
+            card.imgNames.length = imgSrcs.length;
 
             const cardHtml = `
         <div class="card-item-form" data-index="${index}">
@@ -187,16 +190,19 @@ $(document).ready(function () {
             ${cardsData.length > 1 ? `<button type="button" class="btn-del-card" onclick="deleteCard(${index})">삭제</button>` : ''}
           </div>
           <div class="form-group card-images-form">
-            <label>이미지(960×540)</label>
             ${imgSrcs.map((src, imageIndex) => `
-              <div class="card-image-slot" style="display:flex;align-items:center;gap:8px;margin:8px 0;">
-                <span style="min-width:58px;font-size:12px;">이미지 ${imageIndex + 1}</span>
-                <label for="in-card-img-${index}-${imageIndex}" class="custom-file-btn">파일 선택</label>
-                <input type="file" id="in-card-img-${index}-${imageIndex}" class="in-card-img" data-index="${index}" data-image-index="${imageIndex}" accept="image/*" style="display:none;">
-                <span class="file-name-display" style="font-size:11px;color:#333;margin-left:4px;display:inline-block;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${src && src.startsWith('data:') ? '업로드된 파일' : (src ? '기본 이미지' : '')}</span>
-                ${imgSrcs.length > 1 ? `<button type="button" class="btn-del-card-image" data-index="${index}" data-image-index="${imageIndex}" style="flex-shrink:0;">삭제</button>` : ''}
+              <div class="card-image-slot" style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0;">
+                <div style="display:flex;align-items:center;gap:8px;min-width:0;">
+                  <span style="font-size:12px;white-space:nowrap;">이미지(960×540)${imgSrcs.length > 1 ? ` ${imageIndex + 1}` : ''}</span>
+                  ${imgSrcs.length > 1 ? `<button type="button" class="btn-del-card-image" data-index="${index}" data-image-index="${imageIndex}" style="flex-shrink:0;">삭제</button>` : ''}
+                </div>
+                <div style="display:flex;align-items:center;justify-content:flex-end;gap:16px;min-width:0;">
+                  <span class="file-name-display" style="font-size:11px;color:#333;display:inline-block;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${card.imgNames[imageIndex] || (src ? '기본 이미지' : '')}</span>
+                  <label for="in-card-img-${index}-${imageIndex}" class="custom-file-btn" style="flex-shrink:0;">파일 선택</label>
+                  <input type="file" id="in-card-img-${index}-${imageIndex}" class="in-card-img" data-index="${index}" data-image-index="${imageIndex}" accept="image/*" style="display:none;">
+                </div>
               </div>`).join('')}
-            ${(imgSrcs.length < 4) ? `<button type="button" class="btn-add-card-image custom-file-btn" data-index="${index}">+ 이미지 추가</button>` : '<p style="font-size:12px;color:#666;margin:8px 0;">※ 최대 4개 등록 가능</p>'}
+            ${(imgSrcs.length < 4) ? `<div style="display:flex;justify-content:flex-end;margin-top:8px;"><button type="button" class="btn-add-card-image custom-file-btn" data-index="${index}">+ 이미지 추가</button></div>` : '<p style="font-size:12px;color:#666;margin:8px 0;text-align:right;">※ 최대 4개 등록 가능</p>'}
           </div>
           <div class="form-group">
             <label>상품 구성명</label>
@@ -323,7 +329,7 @@ $(document).ready(function () {
 
     $('#btn-add-card').on('click', function () {
         if (cardsData.length < 10) {
-            cardsData.push({ imgSrcs: [""], title: "", sub: "", notice: "", link: "" });
+            cardsData.push({ imgSrcs: [""], imgNames: [""], title: "", sub: "", notice: "", link: "" });
             renderCardForms();
             renderTemplate();
         }
@@ -520,13 +526,7 @@ $(document).ready(function () {
         if (!file || !file.type.startsWith('image/')) return;
 
         const $input = $(this);
-        let $nameSpan = $input.siblings('.file-name-display');
-
-        if ($nameSpan.length === 0) {
-            $nameSpan = $('<span class="file-name-display" style="font-size:11px;color:#333;margin-left:4px;display:inline-block;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"></span>');
-            $input.after($nameSpan);
-        }
-
+        const $nameSpan = $input.closest('.card-image-slot').find('.file-name-display');
         $nameSpan.text('업로드 중...');
 
         try {
@@ -545,6 +545,8 @@ $(document).ready(function () {
             }
 
             cardsData[idx].imgSrcs[imageIdx] = result.url;
+            if (!Array.isArray(cardsData[idx].imgNames)) cardsData[idx].imgNames = [];
+            cardsData[idx].imgNames[imageIdx] = file.name;
 
             $nameSpan.text(file.name);
             renderTemplate();
@@ -562,6 +564,8 @@ $(document).ready(function () {
         if (!Array.isArray(cardsData[idx].imgSrcs)) cardsData[idx].imgSrcs = [];
         if (cardsData[idx].imgSrcs.length >= 4) return;
         cardsData[idx].imgSrcs.push('');
+        if (!Array.isArray(cardsData[idx].imgNames)) cardsData[idx].imgNames = [];
+        cardsData[idx].imgNames.push('');
         renderCardForms();
         renderTemplate();
     });
@@ -571,6 +575,7 @@ $(document).ready(function () {
         const imageIdx = Number($(this).data('image-index'));
         if (!Array.isArray(cardsData[idx].imgSrcs) || cardsData[idx].imgSrcs.length <= 1) return;
         cardsData[idx].imgSrcs.splice(imageIdx, 1);
+        if (Array.isArray(cardsData[idx].imgNames)) cardsData[idx].imgNames.splice(imageIdx, 1);
         renderCardForms();
         renderTemplate();
     });
@@ -582,13 +587,7 @@ $(document).ready(function () {
         if (!file || !file.type.startsWith('image/')) return;
 
         const $input = $(this);
-        let $nameSpan = $input.siblings('.file-name-display');
-
-        if ($nameSpan.length === 0) {
-            $nameSpan = $('<span class="file-name-display" style="font-size:11px;color:#333;margin-left:6px;display:inline-block;"></span>');
-            $input.after($nameSpan);
-        }
-
+        const $nameSpan = $('#main-img-file-name');
         $nameSpan.text('업로드 중...');
 
         try {
@@ -603,6 +602,7 @@ $(document).ready(function () {
             }
 
             mainImgSrc = result.url;
+            mainImgName = file.name;
 
             $nameSpan.text(file.name);
             renderTemplate();
@@ -765,7 +765,7 @@ $(document).ready(function () {
             const cardImages = (card.imgSrcs || []).filter(src => typeof src === 'string' && src.trim() !== '');
             // if (!cardImages.length) cardImages.push("https://phoenixhnr.co.kr/api/attach/view/event/140000046772/thumbs_p/");
 
-            const slideImagesHtml = cardImages.map((src, imageIdx) => `<img src="${src}" class="tpl-card-img tpl-card-slide" data-slide="${imageIdx}" alt="Card Image ${idx + 1}-${imageIdx + 1}">`).join('');
+            const slideImagesHtml = cardImages.map((src, imageIdx) => `<img src="${src}" class="tpl-card-img tpl-card-slide" data-slide="${imageIdx}" alt="${subTitle} ${mainTitle} 객실 패키지 ${title} 사진 ${idx + 1}-${imageIdx + 1}">`).join('');
             const sliderTrackHtml = `<div class="tpl-card-track" style="transform: translateX(0%);">${slideImagesHtml}</div>`;
 
             const sliderControls = cardImages.length > 1 ? `<div class="tpl-slider-dots">${cardImages.map((_, dotIdx) => `<button type="button" class="tpl-slider-dot ${dotIdx === 0 ? 'is-active' : ''}" data-slide-to="${dotIdx}" aria-label="${dotIdx + 1}번째 이미지"></button>`).join('')}</div>` : '';
@@ -923,7 +923,7 @@ $(document).ready(function () {
         const generatedHTML = `
 <div class="tpl-wrap">
   <div class="tpl-hero">
-    <img src="${mainImgSrc}" class="tpl-img" alt="Main Image">
+    <img src="${mainImgSrc}" class="tpl-img" alt="${subTitle} ${mainTitle} 객실 패키지 사진">
     ${mainBadge ? `<span class="tpl-main-badge" style="background:${badgeBgColor};">${mainBadge.replace(/\n/g, '<br>')}</span>` : ''}
   </div>
   
@@ -1038,6 +1038,7 @@ ${generatedHTML}
             fields,
             property: $('#in-property').val() || '',
             mainImgSrc,
+            mainImgName,
             cardsData: cloneData(cardsData),
             stayGroupsData: cloneData(stayGroupsData)
         };
@@ -1050,6 +1051,8 @@ ${generatedHTML}
         syncDateRangeControl($('#in-info-stay-period').closest('.date-range-control'), $('#in-info-stay-period').val());
         $('#in-property').val(data.property || '');
         mainImgSrc = data.mainImgSrc || mainImgSrc;
+        mainImgName = data.mainImgName || '';
+        $('#main-img-file-name').text(mainImgName);
         cardsData = cloneData(data.cardsData || cardsData);
         stayGroupsData = cloneData(data.stayGroupsData || stayGroupsData);
         renderCardForms();
