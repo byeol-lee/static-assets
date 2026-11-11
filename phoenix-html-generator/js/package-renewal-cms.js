@@ -193,7 +193,7 @@ $(document).ready(function () {
                 <span style="min-width:58px;font-size:12px;">이미지 ${imageIndex + 1}</span>
                 <label for="in-card-img-${index}-${imageIndex}" class="custom-file-btn">파일 선택</label>
                 <input type="file" id="in-card-img-${index}-${imageIndex}" class="in-card-img" data-index="${index}" data-image-index="${imageIndex}" accept="image/*" style="display:none;">
-                <span class="file-name-display" style="font-size:11px;color:#333;margin-left:4px;display:inline-block;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${src && src.startsWith('data:') ? '업로드된 파일1' : (src ? '기본 이미지2' : '')}</span>
+                <span class="file-name-display" style="font-size:11px;color:#333;margin-left:4px;display:inline-block;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${src && src.startsWith('data:') ? '업로드된 파일' : (src ? '기본 이미지' : '')}</span>
                 ${imgSrcs.length > 1 ? `<button type="button" class="btn-del-card-image" data-index="${index}" data-image-index="${imageIndex}" style="flex-shrink:0;">삭제</button>` : ''}
               </div>`).join('')}
             ${(imgSrcs.length < 4) ? `<button type="button" class="btn-add-card-image custom-file-btn" data-index="${index}">+ 이미지 추가</button>` : '<p style="font-size:12px;color:#666;margin:8px 0;">※ 최대 4개 등록 가능</p>'}
@@ -475,7 +475,6 @@ $(document).ready(function () {
         renderTemplate();
     });
 
-    // 요금 입력 시 실시간으로 콤마 포맷팅 적용
     $(document).on('input', '.in-price-weekday, .in-price-weekend, .in-price-holiday, .in-price-common', function () {
         const $this = $(this);
         const originalVal = $this.val();
@@ -513,7 +512,6 @@ $(document).ready(function () {
         renderTemplate();
     });
 
-    // 카드 이미지: 서버 업로드 후 URL 반영 (최대 4장)
     $(document).on('change', '.in-card-img', async function (e) {
         const idx = Number($(this).data('index'));
         const imageIdx = Number($(this).data('image-index'));
@@ -641,7 +639,6 @@ $(document).ready(function () {
         $slider.data('current-slide', nextIndex);
         $track.css('transform', 'translateX(-' + (nextIndex * 100) + '%)');
 
-        // 인디케이터 매핑 (복제된 마지막 슬라이드인 경우 첫 번째 인디케이터 활성화)
         let dotIndex = nextIndex;
         if (nextIndex >= totalRealSlides) {
             dotIndex = 0;
@@ -674,9 +671,7 @@ $(document).ready(function () {
                     const totalSlidesWithClone = $track.find('.tpl-card-slide').length;
 
                     if (current >= totalSlidesWithClone - 1) {
-                        // 복제된 마지막 슬라이드에 도달했을 때
                         goToSlide($slider, current, true);
-                        // 트랙 이동이 끝난 후, 애니메이션 없이 즉시 첫 번째 위치로 순간 이동
                         setTimeout(function () {
                             goToSlide($slider, 0, false);
                         }, 400); // transition 시간과 일치
@@ -987,8 +982,6 @@ $(document).ready(function () {
 </div>
 `.trim();
 
-        // Render inside an iframe so responsive media queries use the preview
-        // viewport width instead of the Electron application's window width.
         const previewFrame = document.getElementById('preview-frame');
         if (previewFrame) {
             const cmsScriptUrl = document.currentScript && document.currentScript.src
@@ -1025,10 +1018,6 @@ ${generatedHTML}
         $('#code-text').text(fullSourceCode);
     }
 
-    // Preview interactions are initialized inside the preview iframe by
-    // package-renewal-html.js, keeping them isolated from the editor UI.
-
-    // Workspace tabs: keep each template's editable data independent.
     const workspace = { tabs: [], activeId: null, nextId: 2, changingTab: false };
     let workspaceDefaults = null;
     const workspaceFields = ['#in-main-badge', '#in-main-title', '#in-main-desc', '#in-info-reserve-period', '#in-info-stay-period', '#in-cta-title', '#in-cta-desc', '#in-bullets'];
@@ -1167,7 +1156,6 @@ ${generatedHTML}
                     const price = String(room[type.price] || '').trim();
                     const url = String(room[type.link] || '').trim();
 
-                    // 요금이 입력된 경우 해당 항목의 예약 URL/유선도 필수
                     if (price && !url) {
                         missing.push(
                             `이용 요금 > 이용 요금 #${sIdx + 1} > 객실 항목 #${rIdx + 1} > ${type.label} 예약 URL/유선`
@@ -1277,13 +1265,11 @@ ${generatedHTML}
     workspaceDefaults = JSON.parse(JSON.stringify(workspace.tabs[0].data));
 
     $('#btn-toggle-code').on('click', function () {
-        // 소스 보기를 열 때 필수값과 예약 URL을 먼저 검증합니다.
         if (!$('#code-output').is(':visible') && !validateRequiredFields()) return;
         $('#code-output').slideToggle();
     });
 
     $('#btn-copy').on('click', function () {
-        // 소스 복사도 HTML 저장과 동일한 필수값 검증을 거칩니다.
         if (!validateRequiredFields()) return;
         const code = getCurrentHtml();
         navigator.clipboard.writeText(code).then(function () {
