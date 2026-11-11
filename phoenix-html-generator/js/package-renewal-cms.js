@@ -22,8 +22,8 @@ $(document).ready(function () {
             rooms: [
                 {
                     period: "",
-                    room: "객실 선택 필수",
-                    weekdayPrice: "1",
+                    room: "",
+                    weekdayPrice: "",
                     weekdayLink: "",
                     weekendPrice: "",
                     weekendLink: "",
@@ -519,6 +519,30 @@ $(document).ready(function () {
         renderTemplate();
     });
 
+    // 이미지 실제 크기 확인
+    function getImageDimensions(file) {
+        return new Promise((resolve, reject) => {
+            const imageUrl = URL.createObjectURL(file);
+            const image = new Image();
+
+            image.onload = function () {
+                const dimensions = {
+                    width: image.naturalWidth,
+                    height: image.naturalHeight
+                };
+                URL.revokeObjectURL(imageUrl);
+                resolve(dimensions);
+            };
+
+            image.onerror = function () {
+                URL.revokeObjectURL(imageUrl);
+                reject(new Error('이미지 파일을 확인할 수 없습니다.'));
+            };
+
+            image.src = imageUrl;
+        });
+    }
+
     $(document).on('change', '.in-card-img', async function (e) {
         const idx = Number($(this).data('index'));
         const imageIdx = Number($(this).data('image-index'));
@@ -528,9 +552,17 @@ $(document).ready(function () {
 
         const $input = $(this);
         const $nameSpan = $input.closest('.card-image-slot').find('.file-name-display');
-        $nameSpan.text('업로드 중...');
 
         try {
+            const dimensions = await getImageDimensions(file);
+            if (dimensions.width !== 960 || dimensions.height !== 540) {
+                alert(`상품 구성 사진은 960×540px 이미지만 업로드할 수 있습니다.\n선택한 이미지: ${dimensions.width}×${dimensions.height}px`);
+                $input.val('');
+                return;
+            }
+
+            $nameSpan.text('업로드 중...');
+
             if (!window.phoenixUploader || typeof window.phoenixUploader.uploadImage !== 'function') {
                 throw new Error('이미지 업로드 기능을 찾을 수 없습니다.');
             }
@@ -589,9 +621,17 @@ $(document).ready(function () {
 
         const $input = $(this);
         const $nameSpan = $('#main-img-file-name');
-        $nameSpan.text('업로드 중...');
 
         try {
+            const dimensions = await getImageDimensions(file);
+            if (dimensions.width !== 1920 || dimensions.height !== 1080) {
+                alert(`대표 이미지는 1920×1080px 이미지만 업로드할 수 있습니다.\n선택한 이미지: ${dimensions.width}×${dimensions.height}px`);
+                $input.val('');
+                return;
+            }
+
+            $nameSpan.text('업로드 중...');
+
             if (!window.phoenixUploader || typeof window.phoenixUploader.uploadImage !== 'function') {
                 throw new Error('이미지 업로드 기능을 찾을 수 없습니다.');
             }
@@ -1053,7 +1093,7 @@ ${generatedHTML}
         $('#in-property').val(data.property || '');
         mainImgSrc = data.mainImgSrc || mainImgSrc;
         mainImgName = data.mainImgName || '';
-        $('#main-img-file-name').text(mainImgName || 'example.jpg').css('color', mainImgName ? '#333' : '#999');
+        $('#main-img-file-name').text(mainImgName);
         cardsData = cloneData(data.cardsData || cardsData);
         stayGroupsData = cloneData(data.stayGroupsData || stayGroupsData);
         renderCardForms();
