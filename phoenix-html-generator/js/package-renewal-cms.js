@@ -22,8 +22,8 @@ $(document).ready(function () {
             rooms: [
                 {
                     period: "",
-                    room: "",
-                    weekdayPrice: "",
+                    room: "객실 선택 필수",
+                    weekdayPrice: "1",
                     weekdayLink: "",
                     weekendPrice: "",
                     weekendLink: "",
@@ -193,16 +193,17 @@ $(document).ready(function () {
             ${imgSrcs.map((src, imageIndex) => `
               <div class="card-image-slot" style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0;">
                 <div style="display:flex;align-items:center;gap:8px;min-width:0;">
-                  <span style="font-size:12px;white-space:nowrap;">이미지(960×540)${imgSrcs.length > 1 ? ` ${imageIndex + 1}` : ''}</span>
+                  <span style="font-size:12px;white-space:nowrap;font-weight:600;">이미지(960×540)${imgSrcs.length > 1 ? ` ${imageIndex + 1}` : ''}</span>
                   ${imgSrcs.length > 1 ? `<button type="button" class="btn-del-card-image" data-index="${index}" data-image-index="${imageIndex}" style="flex-shrink:0;">삭제</button>` : ''}
                 </div>
                 <div style="display:flex;align-items:center;justify-content:flex-end;gap:16px;min-width:0;">
-                  <span class="file-name-display" style="font-size:11px;color:#333;display:inline-block;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${card.imgNames[imageIndex] || (src ? '기본 이미지' : '')}</span>
+                  <span class="file-name-display" style="font-size:11px;color:#333;display:inline-block;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${card.imgNames[imageIndex] || (src ? 'example.jpg' : '')}</span>
                   <label for="in-card-img-${index}-${imageIndex}" class="custom-file-btn" style="flex-shrink:0;">파일 선택</label>
                   <input type="file" id="in-card-img-${index}-${imageIndex}" class="in-card-img" data-index="${index}" data-image-index="${imageIndex}" accept="image/*" style="display:none;">
                 </div>
               </div>`).join('')}
-            ${(imgSrcs.length < 4) ? `<div style="display:flex;justify-content:flex-end;margin-top:8px;"><button type="button" class="btn-add-card-image custom-file-btn" data-index="${index}">+ 이미지 추가</button></div>` : '<p style="font-size:12px;color:#666;margin:8px 0;text-align:right;">※ 최대 4개 등록 가능</p>'}
+            ${(imgSrcs.length < 4) ? `<div style="display:flex;justify-content:space-between;margin-top:8px;"><button type="button" class="btn-add-card-image" data-index="${index}">+ 이미지 추가</button></div>` : ''}
+            <p style="font-size:12px;color:#666;margin:8px 0;text-align:left;">※ 최대 4개 등록 가능</p>
           </div>
           <div class="form-group">
             <label>상품 구성명</label>
@@ -1052,7 +1053,7 @@ ${generatedHTML}
         $('#in-property').val(data.property || '');
         mainImgSrc = data.mainImgSrc || mainImgSrc;
         mainImgName = data.mainImgName || '';
-        $('#main-img-file-name').text(mainImgName);
+        $('#main-img-file-name').text(mainImgName || 'example.jpg').css('color', mainImgName ? '#333' : '#999');
         cardsData = cloneData(data.cardsData || cardsData);
         stayGroupsData = cloneData(data.stayGroupsData || stayGroupsData);
         renderCardForms();
