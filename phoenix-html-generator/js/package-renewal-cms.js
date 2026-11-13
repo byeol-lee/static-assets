@@ -1113,21 +1113,88 @@ ${generatedHTML}
     }
     function drawTabs() {
         const $tabs = $('#phoenix-workspace-tabs').empty();
+        const $new = $('<button type="button" class="phoenix-new-workspace">+ NEW</button>')
+            .css({
+                padding: '8px 16px',
+                cursor: 'pointer',
+                border: 'none',
+                background: '#222',
+                color: '#fff',
+                fontWeight: '600',
+                flexShrink: 0
+            })
+            .on('click', newTab);
+
+        $tabs.append($new);
+
         workspace.tabs.forEach(tab => {
             const isActive = tab.id === workspace.activeId;
-            const $item = $('<div>').addClass('phoenix-workspace-tab').attr({ 'data-tab-id': tab.id, 'aria-selected': isActive ? 'true' : 'false' }).css({ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', boxShadow: 'inset 0 0 0 2px ' + (isActive ? '#222' : '#ddd'), backgroundColor: isActive ? '#ffffff' : '#ddd', whiteSpace: 'nowrap', height: '32px' });
-            const $name = $('<button type="button">').text((tab.dirty ? '● ' : '') + tab.name).css({ border: 0, background: 'transparent', color: '#20242a', fontWeight: isActive ? '700' : '400', cursor: 'pointer' }).on('click', () => switchTab(tab.id));
+
+            const $item = $('<div>')
+                .addClass('phoenix-workspace-tab')
+                .attr({
+                    'data-tab-id': tab.id,
+                    'aria-selected': isActive ? 'true' : 'false'
+                })
+                .css({
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    padding: '8px 16px',
+                    boxShadow: 'inset 0 0 0 2px ' + (isActive ? '#222' : '#ddd'),
+                    backgroundColor: isActive ? '#ffffff' : '#ddd',
+                    whiteSpace: 'nowrap',
+                    height: '32px'
+                });
+
+            const $name = $('<button type="button">')
+                .text((tab.dirty ? '● ' : '') + tab.name)
+                .css({
+                    border: 0,
+                    background: 'transparent',
+                    color: '#20242a',
+                    fontWeight: isActive ? '700' : '400',
+                    cursor: 'pointer'
+                })
+                .on('click', () => switchTab(tab.id));
+
             if (workspace.tabs.length > 1) {
-                const $close = $('<button type="button">×</button>').attr('aria-label', '탭 닫기').css({ border: 0, background: 'transparent', color: '#222', cursor: 'pointer', fontSize: '16px' }).on('click', () => closeTab(tab.id));
+                const $close = $('<button type="button">×</button>')
+                    .attr('aria-label', '탭 닫기')
+                    .css({
+                        border: 0,
+                        background: 'transparent',
+                        color: '#222',
+                        cursor: 'pointer',
+                        fontSize: '16px'
+                    })
+                    .on('click', () => closeTab(tab.id));
+
                 $item.append($name, $close);
             } else {
                 $item.append($name);
             }
+
             $tabs.append($item);
         });
-        const $new = $('<button type="button" class="phoenix-new-workspace">+ NEW</button>').css({ padding: '8px 16px', cursor: 'pointer', border: 'none', background: '#222', color: '#fff', fontWeight: '600' }).on('click', newTab);
-        $tabs.append($new);
     }
+    // function drawTabs() {
+    //     const $tabs = $('#phoenix-workspace-tabs').empty();
+    //     workspace.tabs.forEach(tab => {
+    //         const isActive = tab.id === workspace.activeId;
+    //         const $item = $('<div>').addClass('phoenix-workspace-tab').attr({ 'data-tab-id': tab.id, 'aria-selected': isActive ? 'true' : 'false' }).css({ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', boxShadow: 'inset 0 0 0 2px ' + (isActive ? '#222' : '#ddd'), backgroundColor: isActive ? '#ffffff' : '#ddd', whiteSpace: 'nowrap', height: '32px' });
+    //         const $name = $('<button type="button">').text((tab.dirty ? '● ' : '') + tab.name).css({ border: 0, background: 'transparent', color: '#20242a', fontWeight: isActive ? '700' : '400', cursor: 'pointer' }).on('click', () => switchTab(tab.id));
+    //         if (workspace.tabs.length > 1) {
+    //             const $close = $('<button type="button">×</button>').attr('aria-label', '탭 닫기').css({ border: 0, background: 'transparent', color: '#222', cursor: 'pointer', fontSize: '16px' }).on('click', () => closeTab(tab.id));
+    //             $item.append($name, $close);
+    //         } else {
+    //             $item.append($name);
+    //         }
+    //         $tabs.append($item);
+    //     });
+    //     const $new = $('<button type="button" class="phoenix-new-workspace">+ NEW</button>').css({ padding: '8px 16px', cursor: 'pointer', border: 'none', background: '#222', color: '#fff', fontWeight: '600' }).on('click', newTab);
+    //     $tabs.append($new);
+    // }
     function switchTab(id) {
         if (id === workspace.activeId || workspace.changingTab) return;
         saveActiveSnapshot();
@@ -1313,7 +1380,7 @@ ${generatedHTML}
         $('#code-output').slideToggle();
     });
 
-    $('#btn-copy').on('click', function () {
+    $('#btn-copy-html').on('click', function () {
         if (!validateRequiredFields()) return;
         const code = getCurrentHtml();
         navigator.clipboard.writeText(code).then(function () {
