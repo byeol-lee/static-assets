@@ -1239,7 +1239,7 @@ textarea:focus::placeholder {
     height: 64px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 33px;
     padding: 0 16px;
     /* background: #222; */
     border-bottom: 1px solid #eee;
@@ -1387,4 +1387,183 @@ textarea:focus::placeholder {
 .reservation-input.is-invalid-reservation {
     border-color: #d33 !important;
     background: #fff8f8;
+}
+/* ===== Mobile-like scrolling (overlay indicators) ===== */
+html,
+body,
+.app-container,
+.admin-panel,
+.preview-body,
+.mobile-screen,
+.code-container,
+.tpl-sheet-body,
+#phoenix-workspace-tabs {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+
+*::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+    display: none !important;
+}
+
+/* Keep the workspace tabs horizontally scrollable without reserving scrollbar space. */
+#phoenix-workspace-tabs {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+    cursor: grab;
+}
+
+#phoenix-workspace-tabs.is-pointer-scrolling,
+.admin-panel.is-pointer-scrolling,
+.preview-body.is-pointer-scrolling,
+.code-container.is-pointer-scrolling,
+.tpl-sheet-body.is-pointer-scrolling {
+    cursor: grabbing;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.admin-panel,
+.preview-body,
+.code-container,
+.tpl-sheet-body {
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+}
+
+/* Custom indicators are positioned over the content and never affect layout. */
+.phx-scroll-indicator {
+    position: fixed;
+    z-index: 99999;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 160ms ease;
+    background: rgba(0, 0, 0, 0.10);
+    border-radius: 99px;
+}
+
+.phx-scroll-indicator.is-visible {
+    opacity: 1;
+}
+
+.phx-scroll-indicator-thumb {
+    position: absolute;
+    background: rgba(80, 80, 80, 0.68);
+    border-radius: 99px;
+}
+
+.phx-scroll-indicator.is-vertical {
+    width: 4px;
+}
+
+.phx-scroll-indicator.is-vertical .phx-scroll-indicator-thumb {
+    width: 4px;
+    left: 0;
+}
+
+.phx-scroll-indicator.is-horizontal {
+    height: 4px;
+}
+
+.phx-scroll-indicator.is-horizontal .phx-scroll-indicator-thumb {
+    height: 4px;
+    top: 0;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .phx-scroll-indicator { display: none; }
+}
+
+
+/* ===== Workspace tabs: fixed NEW button + independently scrolling file tabs ===== */
+#phoenix-workspace-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    min-width: 0;
+}
+
+#phoenix-workspace-tabs > .phoenix-new-workspace {
+    position: relative;
+    z-index: 2;
+    flex: 0 0 auto;
+}
+
+#phoenix-workspace-tabs > .phoenix-new-workspace::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 32px;
+    background-color: #ddd;
+    right: -17px;
+    top: 0;
+}
+
+#phoenix-workspace-tabs .phoenix-workspace-tab-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 100%;
+    gap: 8px;
+    /* margin-left: -8px; */
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+#phoenix-workspace-tabs .phoenix-workspace-tab-list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+#phoenix-workspace-tabs.has-tab-overflow .phoenix-workspace-tab-list::before {
+    content: "";
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    flex: 0 0 32px;
+    align-self: stretch;
+    margin-left: -40px;
+    pointer-events: none;
+    background: linear-gradient(to right, #fff 0%, rgba(255,255,255,0) 100%);
+}
+
+#phoenix-workspace-tabs.has-tab-overflow .phoenix-workspace-tab-list::after {
+    content: "";
+    position: sticky;
+    right: 0;
+    z-index: 2;
+    flex: 0 0 32px;
+    align-self: stretch;
+    margin-left: -40px;
+    pointer-events: none;
+    background: linear-gradient(to left, #fff 0%, rgba(255,255,255,0) 100%);
+}
+
+/* 스크롤 맨 앞에서는 왼쪽 그라데이션 숨김 */
+#phoenix-workspace-tabs.is-at-start .phoenix-workspace-tab-list::before {
+    display: none;
+}
+
+/* 스크롤 맨 뒤에서는 오른쪽 그라데이션 숨김 */
+#phoenix-workspace-tabs.is-at-end .phoenix-workspace-tab-list::after {
+    display: none;
+}
+
+#phoenix-workspace-tabs .phoenix-workspace-tab {
+    flex: 0 0 auto;
 }
