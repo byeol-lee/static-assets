@@ -6,6 +6,7 @@ $(document).ready(function () {
     let cardsData = [
         {
             imgSrcs: [
+                "https://byeol-lee.github.io/static-assets/phoenix-html-generator/example.jpg",
                 "https://byeol-lee.github.io/static-assets/phoenix-html-generator/example.jpg"
             ],
             imgNames: [""],
@@ -812,15 +813,16 @@ $(document).ready(function () {
             const sliderControls = cardImages.length > 1 ? `<div class="tpl-slider-dots">${cardImages.map((_, dotIdx) => `<button type="button" class="tpl-slider-dot ${dotIdx === 0 ? 'is-active' : ''}" data-slide-to="${dotIdx}" aria-label="${dotIdx + 1}번째 이미지"></button>`).join('')}</div>` : '';
 
             cardsHtml += `
-      <div class="tpl-card-item">
-        <div class="tpl-card-slider" data-card-index="${idx}">${sliderTrackHtml}${sliderControls}</div>
-        <div class="tpl-card-copy">
-        ${title ? `<div class="tpl-card-title">${title}</div>` : ''}
-        ${rawSub ? `<div class="tpl-card-sub">${rawSub.replace(/\n/g, '<br>')}</div>` : ''}
-        ${noticeHtml}
-        ${btnHtml}
-        </div>
-      </div>`;
+            <div class="tpl-card-item">
+                <div class="tpl-card-slider" data-card-index="${idx}">${sliderTrackHtml}${sliderControls}</div>
+                <div class="tpl-card-copy">
+                ${title ? `<div class="tpl-card-title">${title}</div>` : ''}
+                ${rawSub ? `<div class="tpl-card-sub">${rawSub.replace(/\n/g, '<br>')}</div>` : ''}
+                ${noticeHtml}
+                ${btnHtml}
+                </div>
+            </div>
+            `;
         });
 
         const rawBullets = getValOrPlaceholder('#in-bullets');
@@ -1035,26 +1037,37 @@ $(document).ready(function () {
             const templateScriptHref = usesGithubAssetFolders
                 ? new URL('package-renewal-html.js', cmsScriptUrl).href
                 : new URL('package-renewal-html.js', document.baseURI).href;
-            previewFrame.srcdoc = `<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <link rel="stylesheet" href="${cssHref}">
-  <style>html,body{margin:0;padding:0;width:100%;min-height:100%;}body{overflow-x:hidden;}</style>
-</head>
-<body>
-${generatedHTML}
-<script src="${templateScriptHref}"><\/script>
-</body>
-</html>`;
+            previewFrame.srcdoc = `
+            <!DOCTYPE html>
+            <html lang="ko">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+                <link rel="stylesheet" href="${cssHref}">
+                <style>
+                    html,body {
+                        margin: 0;
+                        padding: 0;
+                        width: 100%;
+                        min-height: 100%;
+                    }
+                    body {
+                        overflow-x: hidden;
+                    }
+                </style>
+            </head>
+            <body>
+            ${generatedHTML}
+            <script src="${templateScriptHref}"><\/script>
+            </body>
+            </html>`;
         }
 
         const fullSourceCode = `
-<link rel="stylesheet" href="package-renewal-cms.css" />
-${generatedHTML}
-<script src="package-renewal-html.js"></script>
-    `.trim();
+        <link rel="stylesheet" href="https://byeol-lee.github.io/static-assets/phoenix-html-generator/css/package-renewal-cms.css" />
+        ${generatedHTML}
+        <script src="https://byeol-lee.github.io/static-assets/phoenix-html-generator/js/package-renewal-html.js"></script>
+        `.trim();
 
         $('#code-text').text(fullSourceCode);
     }
@@ -1125,7 +1138,8 @@ ${generatedHTML}
             })
             .on('click', newTab);
 
-        $tabs.append($new);
+        const $tabList = $('<div class="phoenix-workspace-tab-list"></div>');
+        $tabs.append($new, $tabList);
 
         workspace.tabs.forEach(tab => {
             const isActive = tab.id === workspace.activeId;
@@ -1175,8 +1189,30 @@ ${generatedHTML}
                 $item.append($name);
             }
 
-            $tabs.append($item);
+            $tabList.append($item);
         });
+
+        const tabList = $tabList[0];
+
+        const updateTabOverflow = () => {
+            const hasOverflow = tabList.scrollWidth > tabList.clientWidth + 1;
+            const isAtStart = tabList.scrollLeft <= 1;
+            const isAtEnd = tabList.scrollLeft + tabList.clientWidth >= tabList.scrollWidth - 1;
+
+            $tabs.toggleClass('has-tab-overflow', hasOverflow);
+            $tabs.toggleClass('is-at-start', hasOverflow && isAtStart);
+            $tabs.toggleClass('is-at-end', hasOverflow && isAtEnd);
+        };
+
+        tabList.addEventListener('scroll', updateTabOverflow, { passive: true });
+
+        updateTabOverflow();
+
+        if (typeof requestAnimationFrame === 'function') {
+            requestAnimationFrame(updateTabOverflow);
+        }
+
+
     }
     // function drawTabs() {
     //     const $tabs = $('#phoenix-workspace-tabs').empty();
@@ -1213,6 +1249,8 @@ ${generatedHTML}
         workspace.activeId = id;
         restoreWorkspace(data);
         drawTabs();
+        const tabList = document.querySelector('#phoenix-workspace-tabs .phoenix-workspace-tab-list');
+        if (tabList) tabList.scrollLeft = tabList.scrollWidth;
     }
     function closeTab(id) {
         if (workspace.tabs.length <= 1) return;
@@ -1412,3 +1450,190 @@ $(document).on('input change', '#preview-width-slider', function () {
 $(function () {
     setPreviewWidth(320);
 });
+/* ===== Mobile-like scrolling: overlay indicators + mouse drag-to-scroll ===== */
+(function initPhoenixMobileLikeScrolling() {
+    const INTERACTIVE_SELECTOR = 'input, textarea, select, button, a, iframe, [contenteditable="true"], .phoenix-workspace-tab button';
+
+    function installScrollExperience(doc) {
+        if (!doc || doc.__phoenixScrollExperienceInstalled) return;
+        doc.__phoenixScrollExperienceInstalled = true;
+        const win = doc.defaultView;
+        const indicators = new WeakMap();
+        const timers = new WeakMap();
+        const scrollRoot = doc.scrollingElement || doc.documentElement;
+
+        /* The iframe is a separate document: give it its own scrollbar/indicator styles. */
+        if (!doc.getElementById('phx-mobile-scroll-styles')) {
+            const style = doc.createElement('style');
+            style.id = 'phx-mobile-scroll-styles';
+            style.textContent = `
+                html, body, * { scrollbar-width: none !important; -ms-overflow-style: none !important; }
+                *::-webkit-scrollbar { width: 0 !important; height: 0 !important; display: none !important; }
+                html, body { overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+                .phx-scroll-indicator { position: fixed; z-index: 2147483647; pointer-events: none; opacity: 0; transition: opacity 160ms ease; background: rgba(0,0,0,.10); border-radius: 99px; }
+                .phx-scroll-indicator.is-visible { opacity: 1; }
+                .phx-scroll-indicator-thumb { position: absolute; background: rgba(80,80,80,.68); border-radius: 99px; }
+                .phx-scroll-indicator.is-vertical { width: 4px; }
+                .phx-scroll-indicator.is-vertical .phx-scroll-indicator-thumb { width: 4px; left: 0; }
+                .phx-scroll-indicator.is-horizontal { height: 4px; }
+                .phx-scroll-indicator.is-horizontal .phx-scroll-indicator-thumb { height: 4px; top: 0; }
+                @media (hover: none) and (pointer: coarse) { .phx-scroll-indicator { display: none; } }
+            `;
+            (doc.head || doc.documentElement).appendChild(style);
+        }
+
+        function isScrollable(el, axis) {
+            if (!el || el.nodeType !== 1) return false;
+            const isRoot = el === scrollRoot || el === doc.body || el === doc.documentElement;
+            const measure = isRoot ? scrollRoot : el;
+            const size = axis === 'y' ? measure.scrollHeight - measure.clientHeight : measure.scrollWidth - measure.clientWidth;
+            if (size <= 2) return false;
+            if (isRoot) return true;
+            const style = win.getComputedStyle(el);
+            const overflow = axis === 'y' ? style.overflowY : style.overflowX;
+            return /(auto|scroll|overlay)/.test(overflow);
+        }
+
+        function getIndicator(el, axis) {
+            let item = indicators.get(el);
+            if (!item) { item = {}; indicators.set(el, item); }
+            if (item[axis]) return item[axis];
+            const track = doc.createElement('div');
+            track.className = 'phx-scroll-indicator is-' + (axis === 'y' ? 'vertical' : 'horizontal');
+            const thumb = doc.createElement('div');
+            thumb.className = 'phx-scroll-indicator-thumb';
+            track.appendChild(thumb);
+            (doc.body || doc.documentElement).appendChild(track);
+            item[axis] = { track, thumb };
+            return item[axis];
+        }
+
+        function updateIndicator(el, axis) {
+            if (!isScrollable(el, axis)) return;
+            const { track, thumb } = getIndicator(el, axis);
+            const isRoot = el === scrollRoot || el === doc.body || el === doc.documentElement;
+            const rect = isRoot
+                ? { top: 0, right: win.innerWidth, bottom: win.innerHeight, left: 0, width: win.innerWidth, height: win.innerHeight }
+                : el.getBoundingClientRect();
+            const measure = isRoot ? scrollRoot : el;
+            if (axis === 'y') {
+                const trackSize = Math.max(24, rect.height);
+                const ratio = measure.clientHeight / measure.scrollHeight;
+                const thumbSize = Math.max(24, trackSize * ratio);
+                const maxScroll = measure.scrollHeight - measure.clientHeight;
+                const scrollTop = isRoot ? (win.scrollY || measure.scrollTop) : el.scrollTop;
+                const top = rect.top + (trackSize - thumbSize) * (scrollTop / maxScroll);
+                track.style.left = Math.max(0, Math.min(win.innerWidth - 5, rect.right - 5)) + 'px';
+                track.style.top = Math.max(0, rect.top) + 'px';
+                track.style.height = Math.min(trackSize, win.innerHeight - Math.max(0, rect.top)) + 'px';
+                thumb.style.height = thumbSize + 'px';
+                thumb.style.top = Math.max(0, top - Math.max(0, rect.top)) + 'px';
+            } else {
+                const trackSize = Math.max(24, rect.width);
+                const ratio = measure.clientWidth / measure.scrollWidth;
+                const thumbSize = Math.max(24, trackSize * ratio);
+                const maxScroll = measure.scrollWidth - measure.clientWidth;
+                const left = rect.left + (trackSize - thumbSize) * (el.scrollLeft / maxScroll);
+                track.style.left = Math.max(0, rect.left) + 'px';
+                track.style.top = Math.min(win.innerHeight - 5, rect.bottom - 5) + 'px';
+                track.style.width = Math.min(trackSize, win.innerWidth - Math.max(0, rect.left)) + 'px';
+                thumb.style.width = thumbSize + 'px';
+                thumb.style.left = Math.max(0, left - Math.max(0, rect.left)) + 'px';
+            }
+        }
+
+        function showIndicator(el, axis) {
+            updateIndicator(el, axis);
+            const item = getIndicator(el, axis);
+            item.track.classList.add('is-visible');
+            clearTimeout(timers.get(item.track));
+            timers.set(item.track, win.setTimeout(() => item.track.classList.remove('is-visible'), 700));
+        }
+
+        function findScrollable(target, axis) {
+            let el = target && target.nodeType === 1 ? target : target && target.parentElement;
+            while (el && el !== doc.body && el !== doc.documentElement) {
+                if (isScrollable(el, axis)) return el;
+                el = el.parentElement;
+            }
+            return isScrollable(scrollRoot, axis) ? scrollRoot : null;
+        }
+
+        doc.addEventListener('scroll', function (event) {
+            const rawTarget = event.target;
+            const el = (rawTarget === doc || rawTarget === doc.body || rawTarget === doc.documentElement) ? scrollRoot : rawTarget;
+            if (!el || el.nodeType !== 1) return;
+            if (isScrollable(el, 'y')) showIndicator(el, 'y');
+            if (isScrollable(el, 'x')) showIndicator(el, 'x');
+        }, true);
+
+        /* Desktop mouse wheel also moves the tab strip horizontally. */
+        const tabs = doc.getElementById('phoenix-workspace-tabs');
+        if (tabs) tabs.addEventListener('wheel', function (event) {
+            if (Math.abs(event.deltaY) > Math.abs(event.deltaX) && tabs.scrollWidth > tabs.clientWidth) {
+                tabs.scrollLeft += event.deltaY;
+                event.preventDefault();
+                showIndicator(tabs, 'x');
+            }
+        }, { passive: false });
+
+        /* Drag empty areas like a touch screen. Form controls and buttons remain clickable. */
+        let drag = null;
+        doc.addEventListener('pointerdown', function (event) {
+            const inTabs = !!event.target.closest('#phoenix-workspace-tabs');
+            if (event.pointerType !== 'mouse' || event.button !== 0) return;
+            if (event.target.closest(INTERACTIVE_SELECTOR) && !(inTabs && !event.target.closest('.phoenix-new-workspace, [aria-label=\"탭 닫기\"]'))) return;
+            const axis = inTabs ? 'x' : 'y';
+            const el = findScrollable(event.target, axis);
+            if (!el) return;
+            const isRoot = el === scrollRoot || el === doc.body || el === doc.documentElement;
+            drag = { el, axis, isRoot, x: event.clientX, y: event.clientY, startX: isRoot ? (win.scrollX || el.scrollLeft) : el.scrollLeft, startY: isRoot ? (win.scrollY || el.scrollTop) : el.scrollTop, moved: false };
+        });
+        doc.addEventListener('pointermove', function (event) {
+            if (!drag) return;
+            const dx = event.clientX - drag.x;
+            const dy = event.clientY - drag.y;
+            const delta = drag.axis === 'x' ? dx : dy;
+            if (!drag.moved && Math.abs(delta) < 5) return;
+            drag.moved = true;
+            drag.el.classList.add('is-pointer-scrolling');
+            if (drag.axis === 'x') drag.el.scrollLeft = drag.startX - dx;
+            else if (drag.isRoot) win.scrollTo(win.scrollX, drag.startY - dy);
+            else drag.el.scrollTop = drag.startY - dy;
+            showIndicator(drag.el, drag.axis);
+            event.preventDefault();
+        }, { passive: false });
+        function endDrag() {
+            if (!drag) return;
+            drag.el.classList.remove('is-pointer-scrolling');
+            if (drag.moved) doc.__phoenixSuppressNextClick = true;
+            drag = null;
+        }
+        doc.addEventListener('pointerup', endDrag);
+        doc.addEventListener('pointercancel', endDrag);
+        doc.addEventListener('click', function (event) {
+            if (doc.__phoenixSuppressNextClick) {
+                event.preventDefault();
+                event.stopPropagation();
+                doc.__phoenixSuppressNextClick = false;
+            }
+        }, true);
+        win.addEventListener('resize', () => {
+            doc.querySelectorAll('.phx-scroll-indicator').forEach(el => el.classList.remove('is-visible'));
+        });
+    }
+
+    function boot() {
+        installScrollExperience(document);
+        const frame = document.getElementById('preview-frame');
+        if (frame) {
+            frame.addEventListener('load', function () {
+                try { installScrollExperience(frame.contentDocument); } catch (error) { /* Cross-origin previews are left untouched. */ }
+            });
+            try { if (frame.contentDocument && frame.contentDocument.readyState === 'complete') installScrollExperience(frame.contentDocument); } catch (error) { }
+        }
+    }
+
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot, { once: true });
+    else boot();
+})();
