@@ -1,5 +1,67 @@
 const activities = [
     {
+        program: 'secret-grass-tour',
+        title: 'Secret Silver Grass Tour',
+        subtitle: `A special opportunity to discover Jeju's hidden scenery and unwind both body and mind.`,
+        description: `
+        Enjoy the autumn scenery at Gasiri, a hidden silver grass destination in Jeju, explore a mysterious green tea field cave, and relax with a warm cup of green tea and a soothing foot bath.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/11/AZid8Xf7mXpx9QnXIWB3_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/11/AZid8Xf7mXpx9QnXIWB3_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `09:00 ~ 18:00`,
+        priceGeneral: `KRW 50,000`,
+        priceGuest: `KRW 45,000`,
+        information: `
+        <p class="ref-bu-list">※ Location: 23-20, Iljudong-ro 4120beon-gil, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea<br />
+        (Takes approx. 5-minute drive from Phoenix Island)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        <p class="ref-bu-list">※ Duration: Approx. 180 minutes</p>
+        <p class="ref-bu-list">※ Includes: Gasiri silver grass field tour + cave exploration + a cup of green tea and foot bath</p>
+        <p class="ref-bu-list">※ Please wear sneakers and comfortable clothing suitable for walking.</p>
+        `,
+        notice: false,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeyyxR56CglHCr-NCLDcN-k2fYWsbToK54vXOV0rg7rzqwirQ/viewform?usp=header',
+        inquiries: ``,
+        display: true,
+    },
+    {
+        program: 'gomang-fishing',
+        title: 'Traditional Jeju Gomang Fishing',
+        subtitle: 'A unique ocean experience where you try Gomang fishing, a traditional fishing method of Jeju.',
+        description: `
+        Using a bamboo fishing rod, drop your fishing line into small holes between the rocks, known as "Gomang," and catch fish while discovering the traditional fishing lifestyle and charm of Jeju's coastal villages.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/11/Z8MAUPvIk2mcplz34oqi_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/11/Z8MAUPvIk2mcplz34oqi_1_',
+            '/api/editor/attach/view/default/2026/11/ZFJhCylKO2bmsNwK7crQ_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `09:00 ~ 18:00`,
+        priceGeneral: `KRW 50,000`,
+        priceGuest: `
+        KRW 40,000`,
+        information: `
+        <p class="ref-bu-list">※ Location: 23-20, Iljudong-ro 4120beon-gil, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea<br />
+        (Takes approx. 5-minute drive from Phoenix Island)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        <p class="ref-bu-list">※ Duration: Approx. 180 minutes</p>
+        <p class="ref-bu-list">※ Includes: Local guide + bamboo fishing rod</p>
+        <p class="ref-bu-list">※ Please wear sneakers and comfortable clothing suitable for walking.</p>
+        `,
+        notice: false,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeWgE4Zm88wkcUW1Ly6d_p8eBgb278F9OQlPqT1cPboUAaliQ/viewform?usp=publish-editor',
+        inquiries: ``,
+        display: true,
+    },
+    {
         program: 'scent-lab',
         title: 'Scent Lab',
         subtitle: 'A fragrance-making experience where you discover your signature scent and create your own 30 ml perfume.',
