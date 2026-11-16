@@ -12,7 +12,7 @@ const activities = [
         ],
         tags: ['REST', 'HEALING'],
         category: 'REST',
-        date: `월 ~ 토`,
+        date: ``,
         duration: `09:00 ~ 18:00`,
         priceGeneral: `50,000원`,
         priceGuest: `45,000원`,
