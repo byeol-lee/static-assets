@@ -1,6 +1,68 @@
 const activities = [
     {
         program: 'scent-lab',
+        title: '시크릿 억새 투어',
+        subtitle: '제주의 숨은 풍경을 발견하고, 지친 몸과 마음까지 쉬어가는 특별한 시간',
+        description: `
+        제주의 숨은 억새 명소 가시리에서 가을 풍경을 만끽하고, 신비로운 녹차밭 동굴을 둘러본 뒤 따뜻한 녹차 한 잔과 함께 족욕으로 여유를 즐겨 보세요.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/11/AZid8Xf7mXpx9QnXIWB3_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/11/AZid8Xf7mXpx9QnXIWB3_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: `월 ~ 토`,
+        duration: `09:00 ~ 18:00`,
+        priceGeneral: `50,000원`,
+        priceGuest: `45,000원`,
+        information: `
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조리 941-1<br />
+        (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 소요 시간: 약 180분</p>
+        <p class="ref-bu-list">※ 포함 사항: 가시리 억새밭 투어 + 동굴 탐방 + 녹차 한 잔과 족욕 타임</p>
+        <p class="ref-bu-list">※ 운동화와 걷기 편한 복장으로 참여 부탁드립니다.</p>
+        `,
+        notice: false,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeyyxR56CglHCr-NCLDcN-k2fYWsbToK54vXOV0rg7rzqwirQ/viewform?usp=header',
+        inquiries: ``,
+        display: true,
+    },
+    {
+        program: 'scent-lab',
+        title: '제주 전통 고망낚시',
+        subtitle: '제주의 전통 낚시 방식인 고망 낚시를 직접 체험하는 특별한 바다 체험',
+        description: `
+        대나무 낚싯대를 들고 바위틈 작은 구멍인 '고망'에 낚싯줄을 넣어 물고기를 낚으며, 제주 어촌의 옛 생활방식과 바다의 매력을 경험해 보세요.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/11/ZFJhCylKO2bmsNwK7crQ_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/11/ZFJhCylKO2bmsNwK7crQ_1_',
+            '/api/editor/attach/view/default/2026/11/Z8MAUPvIk2mcplz34oqi_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `09:00 ~ 18:00`,
+        priceGeneral: `50,000원`,
+        priceGuest: `
+        40,000원`,
+        information: `
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조리 941-1<br />
+        (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
+        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 소요 시간: 약 180분</p>
+        <p class="ref-bu-list">※ 포함 사항: 현지 가이드 동행 + 대나무 낚시대 제공</p>
+        <p class="ref-bu-list">※ 운동화와 걷기 편한 복장으로 참여 부탁드립니다.</p>
+        `,
+        notice: false,
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLSeWgE4Zm88wkcUW1Ly6d_p8eBgb278F9OQlPqT1cPboUAaliQ/viewform?usp=publish-editor',
+        inquiries: ``,
+        display: true,
+    },
+    {
+        program: 'scent-lab',
         title: '향 취향 연구소',
         subtitle: '나에게 어울리는 향을 찾고 나만의 30ml 향수를 만드는 체험 프로그램 ',
         description: `
