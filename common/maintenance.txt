@@ -1505,9 +1505,11 @@
                     <a href="javascript:alert('11월 26일(목) 13시 OPEN!');" class="modal-slider-link">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-start="2026-11-26T13:00:00" data-end="2026-11-26T14:00:00"
+                <li class="modal-slider-item swiper-slide" data-start="2026-11-26T13:00:00"
+                    data-end="2026-11-26T14:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/11/QGawaiJNXOvbh4TAPqtd_1_');">
-                    <a href="/page/reservation/pyeongchang/snowpark/seasonpass" class="modal-slider-link" target="_blank">
+                    <a href="/page/reservation/pyeongchang/snowpark/seasonpass" class="modal-slider-link"
+                        target="_blank">
                     </a>
                 </li>
                 <li class="modal-slider-item swiper-slide"
@@ -1551,9 +1553,11 @@
                     <a href="javascript:alert('11월 26일(목) 13시 OPEN!');" class="modal-slider-link">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-start="2026-11-26T13:00:00" data-end="2026-11-26T14:00:00"
+                <li class="modal-slider-item swiper-slide" data-start="2026-11-26T13:00:00"
+                    data-end="2026-11-26T14:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/11/QGawaiJNXOvbh4TAPqtd_1_');">
-                    <a href="/page/reservation/pyeongchang/snowpark/seasonpass" class="modal-slider-link" target="_blank">
+                    <a href="/page/reservation/pyeongchang/snowpark/seasonpass" class="modal-slider-link"
+                        target="_blank">
                     </a>
                 </li>
                 <li class="modal-slider-item swiper-slide"
@@ -1639,6 +1643,30 @@
     <h3 class="section-title">ACTIVITIES</h3>
     <div class="main-thumb-list">
         <ul class="list">
+            <li class="item">
+                <a href="/static/playcecamp/activities/program?program=secret-grass-tour"
+                    class="link promotion-link countable-banner">
+                    <div class="thumb">
+                        <img src="/api/editor/attach/view/default/2026/11/AZid8Xf7mXpx9QnXIWB3_1_" alt="" class="img">
+                    </div>
+                    <div class="con">
+                        <div class="title">시크릿 억새 투어</div>
+                        <div class="info">제주의 숨은 풍경을 발견하고, 지친 몸과 마음까지 쉬어가는 특별한 시간</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a href="/static/playcecamp/activities/program?program=gomang-fishing"
+                    class="link promotion-link countable-banner">
+                    <div class="thumb">
+                        <img src="/api/editor/attach/view/default/2026/11/Z8MAUPvIk2mcplz34oqi_1_" alt="" class="img">
+                    </div>
+                    <div class="con">
+                        <div class="title">제주 전통 고망낚시</div>
+                        <div class="info">제주의 전통 낚시 방식인 고망 낚시를 직접 체험하는 특별한 바다 체험</div>
+                    </div>
+                </a>
+            </li>
             <li class="item">
                 <a href="/static/playcecamp/activities/program?program=scent-lab"
                     class="link promotion-link countable-banner">
