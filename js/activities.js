@@ -1399,8 +1399,7 @@ const activities = [
     {
         program: 'singing-bowl-meditation',
         title: '싱잉 볼 명상',
-        subtitle: '싱잉
-			볼의 울림으로 몸과 마음을 깨우는 명상',
+        subtitle: '싱잉 볼의 울림으로 몸과 마음을 깨우는 명상',
         description: `
         매일 오후 17시 30분, 치유의 에너지를 지닌 크리스탈 싱잉 볼의 깊은 진동과 울림이 몸과 마음에 편안한 휴식을 선사합니다.<br />
         맑고 섬세한 사운드가 뇌파를 안정시키고 긴장된 감각을 부드럽게 이완시키며,<br />
