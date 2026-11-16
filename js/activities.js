@@ -36,10 +36,10 @@ const activities = [
         description: `
         대나무 낚싯대를 들고 바위틈 작은 구멍인 '고망'에 낚싯줄을 넣어 물고기를 낚으며, 제주 어촌의 옛 생활방식과 바다의 매력을 경험해 보세요.
         `,
-        thumbnail: '/api/editor/attach/view/default/2026/11/ZFJhCylKO2bmsNwK7crQ_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/11/Z8MAUPvIk2mcplz34oqi_1_',
         heroImage: [
-            '/api/editor/attach/view/default/2026/11/ZFJhCylKO2bmsNwK7crQ_1_',
             '/api/editor/attach/view/default/2026/11/Z8MAUPvIk2mcplz34oqi_1_',
+            '/api/editor/attach/view/default/2026/11/ZFJhCylKO2bmsNwK7crQ_1_',
         ],
         tags: ['REST', 'HEALING'],
         category: 'REST',
