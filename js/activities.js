@@ -1,6 +1,6 @@
 const activities = [
     {
-        program: 'scent-lab',
+        program: 'secret-grass-tour',
         title: '시크릿 억새 투어',
         subtitle: '제주의 숨은 풍경을 발견하고, 지친 몸과 마음까지 쉬어가는 특별한 시간',
         description: `
@@ -30,7 +30,7 @@ const activities = [
         display: true,
     },
     {
-        program: 'scent-lab',
+        program: 'gomang-fishing',
         title: '제주 전통 고망낚시',
         subtitle: '제주의 전통 낚시 방식인 고망 낚시를 직접 체험하는 특별한 바다 체험',
         description: `
