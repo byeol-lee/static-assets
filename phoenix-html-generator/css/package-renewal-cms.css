@@ -961,6 +961,19 @@ textarea:focus::placeholder {
     color: transparent;
 }
 
+.app-footer {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 11px;
+    color: #999;
+    box-sizing: border-box;
+}
+
 /* 반응형 미디어쿼리 (PC 1200px 기준) */
 @media (min-width: 820px) {
     .tpl-wrap {
@@ -1014,7 +1027,7 @@ textarea:focus::placeholder {
         gap: 32px;
         align-items: start;
         padding: 24px 0;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #ddd;
     }
 
     .tpl-card-item .tpl-card-slider {
@@ -1263,12 +1276,12 @@ textarea:focus::placeholder {
     gap: 33px;
     padding: 0 16px;
     /* background: #222; */
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
     overflow-x: auto;
 }
 
 .app-container-workspace {
-    height: calc(100vh - 64px);
+    height: calc(100vh - 96px);
 }
 
 .textarea-bullets {
@@ -1441,6 +1454,7 @@ body,
 }
 
 #phoenix-workspace-tabs.is-pointer-scrolling,
+#phoenix-workspace-file-tabs.is-pointer-scrolling,
 .admin-panel.is-pointer-scrolling,
 .preview-body.is-pointer-scrolling,
 .code-container.is-pointer-scrolling,
@@ -1504,20 +1518,20 @@ body,
 
 
 /* ===== Workspace tabs: fixed NEW button + independently scrolling file tabs ===== */
-#phoenix-workspace-tabs {
+#phoenix-workspace-file-tabs {
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
     min-width: 0;
 }
 
-#phoenix-workspace-tabs > .phoenix-new-workspace {
+#phoenix-workspace-file-tabs > .phoenix-new-workspace {
     position: relative;
     z-index: 2;
     flex: 0 0 auto;
 }
 
-#phoenix-workspace-tabs > .phoenix-new-workspace::after {
+#phoenix-workspace-file-tabs > .phoenix-new-workspace::after {
     content: "";
     position: absolute;
     width: 1px;
@@ -1527,7 +1541,7 @@ body,
     top: 0;
 }
 
-#phoenix-workspace-tabs .phoenix-workspace-tab-list {
+#phoenix-workspace-file-tabs .phoenix-workspace-tab-list {
     position: relative;
     display: flex;
     align-items: center;
@@ -1545,13 +1559,13 @@ body,
     -webkit-overflow-scrolling: touch;
 }
 
-#phoenix-workspace-tabs .phoenix-workspace-tab-list::-webkit-scrollbar {
+#phoenix-workspace-file-tabs .phoenix-workspace-tab-list::-webkit-scrollbar {
     display: none;
     width: 0;
     height: 0;
 }
 
-#phoenix-workspace-tabs.has-tab-overflow .phoenix-workspace-tab-list::before {
+#phoenix-workspace-file-tabs.has-tab-overflow .phoenix-workspace-tab-list::before {
     content: "";
     position: sticky;
     left: 0;
@@ -1563,7 +1577,7 @@ body,
     background: linear-gradient(to right, #fff 0%, rgba(255,255,255,0) 100%);
 }
 
-#phoenix-workspace-tabs.has-tab-overflow .phoenix-workspace-tab-list::after {
+#phoenix-workspace-file-tabs.has-tab-overflow .phoenix-workspace-tab-list::after {
     content: "";
     position: sticky;
     right: 0;
@@ -1576,15 +1590,133 @@ body,
 }
 
 /* 스크롤 맨 앞에서는 왼쪽 그라데이션 숨김 */
-#phoenix-workspace-tabs.is-at-start .phoenix-workspace-tab-list::before {
+#phoenix-workspace-file-tabs.is-at-start .phoenix-workspace-tab-list::before {
     display: none;
 }
 
 /* 스크롤 맨 뒤에서는 오른쪽 그라데이션 숨김 */
-#phoenix-workspace-tabs.is-at-end .phoenix-workspace-tab-list::after {
+#phoenix-workspace-file-tabs.is-at-end .phoenix-workspace-tab-list::after {
     display: none;
 }
 
-#phoenix-workspace-tabs .phoenix-workspace-tab {
+#phoenix-workspace-file-tabs .phoenix-workspace-tab {
     flex: 0 0 auto;
+}
+
+
+/* ===== Phoenix application menu ===== */
+#phoenix-workspace-tabs.app-menu {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+    border-bottom: 1px solid #ddd;
+    overflow: visible;
+    white-space: normal;
+    position: relative;
+    z-index: 1000;
+    background: #fff;
+}
+
+.app-menu-dropdown {
+    position: relative;
+    height: 100%;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.app-menu-trigger {
+    border: 0;
+    background: none;
+    color: #222;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.app-menu-items {
+    display: none;
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    min-width: 210px;
+    padding: 6px 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 20px rgba(0,0,0,.14);
+    z-index: 1001;
+}
+
+.app-menu-dropdown.is-open .app-menu-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-menu-items button {
+    width: 100%;
+    min-height: 34px;
+    padding: 7px 14px;
+    border: 0;
+    background: transparent;
+    color: #20242a;
+    text-align: left;
+    font: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.app-menu-items button:hover {
+    background: #f1f1f1;
+}
+
+.app-menu-divider {
+    height: 1px;
+    margin: 5px 0;
+    background: #e5e5e5;
+}
+
+.app-menu-brand {
+    color: #20242a;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .02em;
+}
+
+#phoenix-workspace-file-tabs {
+    height: 48px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    background: #f7f7f7;
+}
+
+#phoenix-workspace-file-tabs .phoenix-workspace-tab-list {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 100%;
+    gap: 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+#phoenix-workspace-file-tabs .phoenix-workspace-tab-list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.app-container-workspace {
+    height: calc(100vh - 96px - 48px);
 }
