@@ -194,7 +194,20 @@ $(document).ready(function () {
             ${imgSrcs.map((src, imageIndex) => `
               <div class="card-image-slot" style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0;">
                 <div style="display:flex;align-items:center;gap:8px;min-width:0;">
-                  <span style="font-size:12px;white-space:nowrap;font-weight:600;">이미지(960×540)${imgSrcs.length > 1 ? ` ${imageIndex + 1}` : ''}</span>
+                  <span style="font-size:12px;white-space:nowrap;font-weight:600;">사진(960×540)
+                  ${imgSrcs.length > 1 ? '' : `<span class="required-mark">＊</span>`}</span>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:flex-end;gap:16px;min-width:0;">
+                  <span class="file-name-display" style="font-size:11px;color:#333;display:inline-block;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${card.imgNames[imageIndex] || (src ? 'example.jpg' : '')}</span>
+                  <input type="file" id="in-card-img-${index}-${imageIndex}" class="in-card-img" data-index="${index}" data-image-index="${imageIndex}" accept="image/*" style="display:none;">
+                  <label for="in-card-img-${index}-${imageIndex}" class="custom-file-btn" style="flex-shrink:0;">파일 선택</label>
+                  ${imgSrcs.length > 1 ? `<button type="button" class="btn-del-card-image" data-index="${index}" data-image-index="${imageIndex}" style="flex-shrink:0;">삭제</button>` : ''}
+                </div>
+              </div>`).join('')}
+            <!-- ${imgSrcs.map((src, imageIndex) => `
+              <div class="card-image-slot" style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0;">
+                <div style="display:flex;align-items:center;gap:8px;min-width:0;">
+                  <span style="font-size:12px;white-space:nowrap;font-weight:600;">사진(960×540)<span class="required-mark">＊</span>${imgSrcs.length > 1 ? ` ${imageIndex + 1}` : ''}</span>
                   ${imgSrcs.length > 1 ? `<button type="button" class="btn-del-card-image" data-index="${index}" data-image-index="${imageIndex}" style="flex-shrink:0;">삭제</button>` : ''}
                 </div>
                 <div style="display:flex;align-items:center;justify-content:flex-end;gap:16px;min-width:0;">
@@ -202,12 +215,13 @@ $(document).ready(function () {
                   <label for="in-card-img-${index}-${imageIndex}" class="custom-file-btn" style="flex-shrink:0;">파일 선택</label>
                   <input type="file" id="in-card-img-${index}-${imageIndex}" class="in-card-img" data-index="${index}" data-image-index="${imageIndex}" accept="image/*" style="display:none;">
                 </div>
-              </div>`).join('')}
-            ${(imgSrcs.length < 4) ? `<div style="display:flex;justify-content:space-between;margin-top:8px;"><button type="button" class="btn-add-card-image" data-index="${index}">+ 이미지 추가</button></div>` : ''}
+              </div>`).join('')} -->
+
+            ${(imgSrcs.length < 4) ? `<div style="display:flex;justify-content:space-between;margin-top:8px;"><button type="button" class="btn-add-card-image" data-index="${index}">+ 사진 추가</button></div>` : ''}
             <p style="font-size:12px;color:#666;margin:8px 0;text-align:left;">※ 최대 4개 등록 가능</p>
           </div>
           <div class="form-group">
-            <label>상품 구성명</label>
+            <label>상품 구성명<span class="required-mark">＊</span></label>
             <input type="text" class="in-card-title" data-index="${index}" value="${card.title}" placeholder="상품 구성명">
           </div>
           <div class="form-group">
@@ -241,21 +255,24 @@ $(document).ready(function () {
                 roomsHtml += `
           <div class="room-item-form" data-sidx="${sIdx}" data-ridx="${rIdx}">
             <div class="room-item-header">
-            <span class="room-item-title">객실 항목 #${rIdx + 1}</span>
-              ${stayGroup.rooms.length > 1 ? `<button type="button" class="btn-del-room" onclick="deleteRoom(${sIdx},${rIdx})">객실 삭제</button>` : ''}
+            <span class="room-item-title">객실 상세 #${rIdx + 1}</span>
+              ${stayGroup.rooms.length > 1 ? `<button type="button" class="btn-del-room" onclick="deleteRoom(${sIdx},${rIdx})">삭제</button>` : ''}
             </div>
             <div class="form-group">
-              <label>기간</label>
+              <label>기간<span class="required-mark">＊</span></label>
               ${dateRangeMarkup('', room.period || '', 'room-date-range').replace('date-range-display', `date-range-display in-price-period" data-sidx="${sIdx}" data-ridx="${rIdx}`).replace('id="" ', '')}
             </div>
             <div class="form-group">
-              <label>객실</label>
+              <label>객실<span class="required-mark">＊</span></label>
               <select class="in-price-room" data-sidx="${sIdx}" data-ridx="${rIdx}">
                 ${getRoomOptions($('#in-property').val(), room.room || '')}
               </select>
             </div>
             
             <!-- 주중 / 주말 / 연휴 / 공통 -->
+            <div class="price-item-header">
+                <span class="price-group-title">이용 요금 #${rIdx + 1}</span>
+            </div>
             <div style="display:flex; gap:8px;">
               <div class="form-group" style="flex:1;">
                 <label>주중</label>
@@ -308,7 +325,7 @@ $(document).ready(function () {
         <div class="stay-group-form" data-sidx="${sIdx}">
           <div class="stay-group-header">
             <span class="stay-group-title">이용 요금 #${sIdx + 1}</span>
-            ${stayGroupsData.length > 1 ? `<button type="button" class="btn-del-stay" onclick="deleteStay(${sIdx})">항목 삭제</button>` : ''}
+            ${stayGroupsData.length > 1 ? `<button type="button" class="btn-del-stay" onclick="deleteStay(${sIdx})">삭제</button>` : ''}
           </div>
           <div class="form-group">
             <label>박수(미입력 시 미노출)</label>
@@ -537,7 +554,7 @@ $(document).ready(function () {
 
             image.onerror = function () {
                 URL.revokeObjectURL(imageUrl);
-                reject(new Error('이미지 파일을 확인할 수 없습니다.'));
+                reject(new Error('사진 파일을 확인할 수 없습니다.'));
             };
 
             image.src = imageUrl;
@@ -557,7 +574,7 @@ $(document).ready(function () {
         try {
             const dimensions = await getImageDimensions(file);
             if (dimensions.width !== 960 || dimensions.height !== 540) {
-                alert(`상품 구성 사진은 960×540px 이미지만 업로드할 수 있습니다.\n선택한 이미지: ${dimensions.width}×${dimensions.height}px`);
+                alert(`상품 구성 사진은 960×540px 사진만 업로드할 수 있습니다.\n선택한 사진: ${dimensions.width}×${dimensions.height}px`);
                 $input.val('');
                 return;
             }
@@ -565,13 +582,13 @@ $(document).ready(function () {
             $nameSpan.text('업로드 중...');
 
             if (!window.phoenixUploader || typeof window.phoenixUploader.uploadImage !== 'function') {
-                throw new Error('이미지 업로드 기능을 찾을 수 없습니다.');
+                throw new Error('사진 업로드 기능을 찾을 수 없습니다.');
             }
 
             const result = await window.phoenixUploader.uploadImage(file);
 
             if (!result || !result.url) {
-                throw new Error('서버 이미지 URL을 반환받지 못했습니다.');
+                throw new Error('서버 사진 URL을 반환받지 못했습니다.');
             }
 
             if (!Array.isArray(cardsData[idx].imgSrcs)) {
@@ -588,8 +605,8 @@ $(document).ready(function () {
 
         } catch (error) {
             $nameSpan.text('업로드 실패');
-            alert(error.message || '카드 이미지 업로드에 실패했습니다.');
-            console.error('[카드 이미지 업로드 오류]', error);
+            alert(error.message || '카드 사진 업로드에 실패했습니다.');
+            console.error('[카드 사진 업로드 오류]', error);
         }
     });
 
@@ -626,7 +643,7 @@ $(document).ready(function () {
         try {
             const dimensions = await getImageDimensions(file);
             if (dimensions.width !== 1920 || dimensions.height !== 1080) {
-                alert(`대표 이미지는 1920×1080px 이미지만 업로드할 수 있습니다.\n선택한 이미지: ${dimensions.width}×${dimensions.height}px`);
+                alert(`대표 사진는 1920×1080px 사진만 업로드할 수 있습니다.\n선택한 사진: ${dimensions.width}×${dimensions.height}px`);
                 $input.val('');
                 return;
             }
@@ -634,13 +651,13 @@ $(document).ready(function () {
             $nameSpan.text('업로드 중...');
 
             if (!window.phoenixUploader || typeof window.phoenixUploader.uploadImage !== 'function') {
-                throw new Error('이미지 업로드 기능을 찾을 수 없습니다.');
+                throw new Error('사진 업로드 기능을 찾을 수 없습니다.');
             }
 
             const result = await window.phoenixUploader.uploadImage(file);
 
             if (!result || !result.url) {
-                throw new Error('서버 이미지 URL을 반환받지 못했습니다.');
+                throw new Error('서버 사진 URL을 반환받지 못했습니다.');
             }
 
             mainImgSrc = result.url;
@@ -652,8 +669,8 @@ $(document).ready(function () {
 
         } catch (error) {
             $nameSpan.text('업로드 실패');
-            alert(error.message || '메인 이미지 업로드에 실패했습니다.');
-            console.error('[메인 이미지 업로드 오류]', error);
+            alert(error.message || '메인 사진 업로드에 실패했습니다.');
+            console.error('[메인 사진 업로드 오류]', error);
         }
     });
 
@@ -810,7 +827,7 @@ $(document).ready(function () {
             const slideImagesHtml = cardImages.map((src, imageIdx) => `<img src="${src}" class="tpl-card-img tpl-card-slide" data-slide="${imageIdx}" alt="${subTitle} ${mainTitle} 객실 패키지 ${title} 사진 ${idx + 1}-${imageIdx + 1}">`).join('');
             const sliderTrackHtml = `<div class="tpl-card-track" style="transform: translateX(0%);">${slideImagesHtml}</div>`;
 
-            const sliderControls = cardImages.length > 1 ? `<div class="tpl-slider-dots">${cardImages.map((_, dotIdx) => `<button type="button" class="tpl-slider-dot ${dotIdx === 0 ? 'is-active' : ''}" data-slide-to="${dotIdx}" aria-label="${dotIdx + 1}번째 이미지"></button>`).join('')}</div>` : '';
+            const sliderControls = cardImages.length > 1 ? `<div class="tpl-slider-dots">${cardImages.map((_, dotIdx) => `<button type="button" class="tpl-slider-dot ${dotIdx === 0 ? 'is-active' : ''}" data-slide-to="${dotIdx}" aria-label="${dotIdx + 1}번째 사진"></button>`).join('')}</div>` : '';
 
             cardsHtml += `
             <div class="tpl-card-item">
@@ -1285,7 +1302,7 @@ $(document).ready(function () {
         cardsData.forEach((card, index) => {
             const cardNo = index + 1;
             const firstImage = card.imgSrcs && card.imgSrcs[0];
-            if (!firstImage || !String(firstImage).trim()) missing.push(`상품 구성 상세 > 상세 #${cardNo} > 이미지 1`);
+            if (!firstImage || !String(firstImage).trim()) missing.push(`상품 구성 상세 > 상세 #${cardNo} > 사진 1`);
             if (!String(card.title || '').trim()) missing.push(`상품 구성 상세 > 상세 #${cardNo} > 상품 구성명`);
         });
 
@@ -1298,7 +1315,7 @@ $(document).ready(function () {
         stayGroupsData.forEach((group, sIdx) => {
             (group.rooms || []).forEach((room, rIdx) => {
                 if (!String(room.period || '').trim()) {
-                    missing.push(`이용 요금 > 이용 요금 #${sIdx + 1} > 객실 항목 #${rIdx + 1} > 기간`);
+                    missing.push(`이용 요금 > 이용 요금 #${sIdx + 1} > 객실 추가 #${rIdx + 1} > 기간`);
                 }
 
                 priceTypes.forEach(type => {
@@ -1307,7 +1324,7 @@ $(document).ready(function () {
 
                     if (price && !url) {
                         missing.push(
-                            `이용 요금 > 이용 요금 #${sIdx + 1} > 객실 항목 #${rIdx + 1} > ${type.label} 예약 URL/유선`
+                            `이용 요금 > 이용 요금 #${sIdx + 1} > 객실 추가 #${rIdx + 1} > ${type.label} 예약 URL/유선`
                         );
                     }
                 });
@@ -1331,7 +1348,6 @@ $(document).ready(function () {
             const result = await window.phoenixUploader.saveHtml({ content, filePath: tab.htmlPath || '', defaultName: safeFileName(getMainTitle(tab)) + '.html', saveAs: !!saveAs });
             if (result && result.saved) {
                 tab.htmlPath = result.filePath || tab.htmlPath || '';
-                // HTML output and editable project data are separate: do not clear tab.dirty here.
                 alert('HTML 저장이 완료됐습니다.');
             }
         } catch (error) { alert('HTML 저장에 실패했습니다.\n' + (error.message || error)); }
