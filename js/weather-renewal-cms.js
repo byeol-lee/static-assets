@@ -534,7 +534,7 @@ function setWeather(data) {
         window.seoulWindValue &&
         IS_ISLAND
     ) {
-        
+
     // if (
     //     window.seoulTempValue &&
     //     window.seoulWindValue &&
@@ -562,8 +562,8 @@ function setWeather(data) {
             );
 
         const feelGap =
-            seoulFeelTemp -
-            currentFeelTemp;
+            currentFeelTemp -
+            seoulFeelTemp;
 
         // island
         if (gap <= 0) {
