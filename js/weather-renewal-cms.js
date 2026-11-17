@@ -542,8 +542,12 @@ function setWeather(data) {
     // ) {
 
         const gap =
-            parseFloat(window.seoulTempValue) -
-            parseFloat(data.temp);
+            parseFloat(data.temp) -
+            parseFloat(window.seoulTempValue);
+
+        // const gap =
+        //     parseFloat(window.seoulTempValue) -
+        //     parseFloat(data.temp);
 
         const seoulFeelTemp =
             parseFloat(
@@ -566,7 +570,7 @@ function setWeather(data) {
             seoulFeelTemp;
 
         // island
-        if (gap <= 0) {
+        if (gap >= 0) {
 
             $('#seoulWeatherWrap').show();
 
