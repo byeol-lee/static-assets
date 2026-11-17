@@ -4,14 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Phoenix HTML Generator</title>
+    <title>PHOENIX HOTELS &amp; RESORT</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="package-renewal-cms.css" />
 </head>
 
 <body>
 
-    <div id="phoenix-workspace-tabs" class="phoenix-workspace-tabs"></div>
+    <!-- Custom application menu (replaces the native Electron menu) -->
+    <nav id="phoenix-workspace-tabs" class="phoenix-workspace-tabs app-menu" aria-label="Application menu">
+        <div class="app-menu-dropdown">
+            <button type="button" class="app-menu-trigger" aria-haspopup="true" aria-expanded="false" role="menuitem" data-menu-action="new">New</button>
+            <button type="button" class="app-menu-trigger" aria-haspopup="true" aria-expanded="false" role="menuitem" data-menu-action="open-project">Open</button>
+            <button type="button" class="app-menu-trigger" aria-haspopup="true" aria-expanded="false" role="menuitem" data-menu-action="save-project">Save Work File</button>
+            <button type="button" class="app-menu-trigger" aria-haspopup="true" aria-expanded="false" role="menuitem" data-menu-action="save-html">Save HTML</button>
+            <button type="button" class="app-menu-trigger" aria-haspopup="true" aria-expanded="false" role="menuitem" data-menu-action="refresh">Reload</button>
+            <button type="button" class="app-menu-trigger" aria-haspopup="true" aria-expanded="false" role="menuitem" data-menu-action="help">Help</button>
+            
+            <!-- <button type="button" class="app-menu-trigger" aria-haspopup="true" aria-expanded="false">APP</button>
+            <div class="app-menu-items" role="menu">
+                <button type="button" role="menuitem" data-menu-action="new">+ NEW</button>
+                <div class="app-menu-divider"></div>
+                <button type="button" role="menuitem" data-menu-action="open-project">Open</button>
+                <button type="button" role="menuitem" data-menu-action="save-project">Save Work File</button>
+                <button type="button" role="menuitem" data-menu-action="save-project-as">Save Work File As</button>
+                <div class="app-menu-divider"></div>
+                <button type="button" role="menuitem" data-menu-action="save-html">Save HTML</button>
+                <button type="button" role="menuitem" data-menu-action="save-html-as">Save HTML As</button>
+                <div class="app-menu-divider"></div>
+                <button type="button" role="menuitem" data-menu-action="refresh">Refresh</button>
+                <button type="button" role="menuitem" data-menu-action="exit">Exit</button>
+                <div class="app-menu-divider"></div>
+                <button type="button" role="menuitem" data-menu-action="help">Help</button>
+            </div> -->
+        </div>
+        <!-- <strong class="app-menu-brand">PHOENIX HOTELS &amp; RESORT</strong> -->
+    </nav>
+
+    <!-- Workspace file tabs -->
+    <div id="phoenix-workspace-file-tabs" class="phoenix-workspace-tabs phoenix-workspace-file-tabs"></div>
     <div class="app-container app-container-workspace">
         <div class="admin-panel">
             <!-- <h2>객실 패키지</h2> -->
@@ -148,6 +180,9 @@
             </div>
         </div>
     </div>
+    <footer class="app-footer">
+        <p>Copyright 2026. ○○○. All Rights Reserved.</p>
+    </footer>
 
     <!-- 분리된 외부 JS 파일 로드 -->
     <script src="package-renewal-cms.js"></script>
