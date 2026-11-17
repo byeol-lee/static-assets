@@ -73,6 +73,9 @@ const REGION_NAME =
 const SEOUL_NX = 61;
 const SEOUL_NY = 126;
 
+const IS_ISLAND =
+    document.querySelector('.weather-wrap.island');
+
 const IS_PARK =
     document.querySelector('.weather-wrap.park');
 
@@ -529,8 +532,14 @@ function setWeather(data) {
     if (
         window.seoulTempValue &&
         window.seoulWindValue &&
-        IS_PARK
+        IS_ISLAND
     ) {
+        
+    // if (
+    //     window.seoulTempValue &&
+    //     window.seoulWindValue &&
+    //     IS_PARK
+    // ) {
 
         const gap =
             parseFloat(window.seoulTempValue) -
