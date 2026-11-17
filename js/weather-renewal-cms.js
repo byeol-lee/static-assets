@@ -556,7 +556,8 @@ function setWeather(data) {
             seoulFeelTemp -
             currentFeelTemp;
 
-        if (gap >= 0) {
+        // island
+        if (gap <= 0) {
 
             $('#seoulWeatherWrap').show();
 
@@ -572,13 +573,36 @@ function setWeather(data) {
                 '°' +
                 '</u> ' +
                 ' 따뜻한 ' +
-                // ' 더 시원한 ' +
                 REGION_NAME +
                 '의 날씨를 느껴 보세요.';
 
         } else {
             $('#seoulWeatherWrap').hide();
         }
+
+        // park
+        // if (gap >= 0) {
+
+        //     $('#seoulWeatherWrap').show();
+
+        //     desc =
+        //         '서울보다 ' +
+        //         '<u >' +
+        //         gap.toFixed(1) +
+        //         '°' +
+        //         '</u>' +
+        //         ', 체감 온도 ' +
+        //         '<u >' +
+        //         feelGap.toFixed(1) +
+        //         '°' +
+        //         '</u> ' +
+        //         ' 더 시원한 ' +
+        //         REGION_NAME +
+        //         '의 날씨를 느껴 보세요.';
+
+        // } else {
+        //     $('#seoulWeatherWrap').hide();
+        // }
 
     } else {
         $('#seoulWeatherWrap').hide();
