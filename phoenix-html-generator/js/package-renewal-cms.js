@@ -1142,21 +1142,9 @@ $(document).ready(function () {
         if (tab) { tab.dirty = true; saveActiveSnapshot(); drawTabs(); }
     }
     function drawTabs() {
-        const $tabs = $('#phoenix-workspace-tabs').empty();
-        const $new = $('<button type="button" class="phoenix-new-workspace">+ NEW</button>')
-            .css({
-                padding: '8px 16px',
-                cursor: 'pointer',
-                border: 'none',
-                background: '#222',
-                color: '#fff',
-                fontWeight: '600',
-                flexShrink: 0
-            })
-            .on('click', newTab);
-
+        const $tabs = $('#phoenix-workspace-file-tabs').empty();
         const $tabList = $('<div class="phoenix-workspace-tab-list"></div>');
-        $tabs.append($new, $tabList);
+        $tabs.append($tabList);
 
         workspace.tabs.forEach(tab => {
             const isActive = tab.id === workspace.activeId;
@@ -1266,7 +1254,7 @@ $(document).ready(function () {
         workspace.activeId = id;
         restoreWorkspace(data);
         drawTabs();
-        const tabList = document.querySelector('#phoenix-workspace-tabs .phoenix-workspace-tab-list');
+        const tabList = document.querySelector('#phoenix-workspace-file-tabs .phoenix-workspace-tab-list');
         if (tabList) tabList.scrollLeft = tabList.scrollWidth;
     }
     function closeTab(id) {
@@ -1406,6 +1394,96 @@ $(document).ready(function () {
     $(document).on('input change', '.admin-panel input, .admin-panel textarea, .admin-panel select', markDirty);
     $(document).on('click', '#btn-add-card,#btn-add-stay,.btn-del-card,.btn-del-stay,.btn-del-room,.btn-add-room,.btn-add-card-image,.btn-del-card-image', function () { setTimeout(markDirty, 0); });
     $('#btn-save-html').on('click', () => saveCurrentHtml(false));
+
+    // Browser-only file operations. Electron's existing preload bridge is unchanged.
+    if (!window.phoenixUploader) {
+        const browserDownload = (content, fileName, mime) => {
+            const url = URL.createObjectURL(new Blob([content], { type: mime }));
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = fileName;
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+            setTimeout(() => URL.revokeObjectURL(url), 1000);
+        };
+        window.phoenixUploader = {
+            saveHtml: async ({ content, defaultName }) => {
+                browserDownload(content, defaultName || 'template.html', 'text/html;charset=utf-8');
+                return { saved: true };
+            },
+            saveProject: async ({ project, defaultName }) => {
+                browserDownload(JSON.stringify(project, null, 2), defaultName || 'project.phxwork', 'application/json');
+                return { saved: true };
+            },
+            openProject: () => new Promise(resolve => {
+                const input = document.createElement('input');
+                input.type = 'file';
+                input.accept = '.phxwork,.json';
+                input.style.display = 'none';
+                document.body.appendChild(input);
+                input.addEventListener('change', async () => {
+                    try {
+                        const file = input.files && input.files[0];
+                        resolve(file ? { project: JSON.parse(await file.text()), fileName: file.name } : null);
+                    } catch (error) {
+                        alert('작업 파일을 읽지 못했습니다.\\n' + (error.message || error));
+                        resolve(null);
+                    } finally { input.remove(); }
+                }, { once: true });
+                input.click();
+                window.addEventListener('focus', () => setTimeout(() => {
+                    if (input.isConnected && !input.files.length) { input.remove(); resolve(null); }
+                }, 500), { once: true });
+            }),
+            reloadGenerator: () => window.location.reload(),
+            confirmClose: () => window.close()
+        };
+    }
+
+    // Custom HTML application menu actions.
+    $(document).on('click', '.app-menu-trigger', function () {
+        const $menu = $(this).closest('.app-menu-dropdown');
+        const isOpen = $menu.toggleClass('is-open').hasClass('is-open');
+        $(this).attr('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.app-menu-dropdown').length) {
+            $('.app-menu-dropdown').removeClass('is-open');
+            $('.app-menu-trigger').attr('aria-expanded', 'false');
+        }
+    });
+    $(document).on('click', '[data-menu-action]', function () {
+        const action = $(this).attr('data-menu-action');
+        $('.app-menu-dropdown').removeClass('is-open');
+        $('.app-menu-trigger').attr('aria-expanded', 'false');
+        if (action === 'help') {
+            alert('E-mail: byeol.lee@kakao.com');
+            return;
+        }
+        {
+            // HTML menu actions also work in a regular browser; native file actions use
+            // the browser-compatible bridge below when Electron is unavailable.
+            const actionMap = {
+                'new': 'new',
+                'open-project': 'open-project',
+                'save-project': 'save-project',
+                'save-project-as': 'save-project-as',
+                'save-html': 'save-html',
+                'save-html-as': 'save-html-as',
+                'refresh': 'refresh',
+                'exit': 'exit'
+            };
+            if (actionMap[action] === 'new') newTab();
+            else if (actionMap[action] === 'open-project') openProjectTab();
+            else if (actionMap[action] === 'save-project') saveProject(false);
+            else if (actionMap[action] === 'save-project-as') saveProject(true);
+            else if (actionMap[action] === 'save-html') saveCurrentHtml(false);
+            else if (actionMap[action] === 'save-html-as') saveCurrentHtml(true);
+            else if (actionMap[action] === 'refresh') requestRefresh();
+            else if (actionMap[action] === 'exit') requestExit();
+        }
+    });
     if (window.phoenixUploader && window.phoenixUploader.onMenuAction && !window.__phoenixWorkspaceMenuBound) {
         window.__phoenixWorkspaceMenuBound = true;
         window.phoenixUploader.onMenuAction(action => {
@@ -1584,7 +1662,7 @@ $(function () {
         }, true);
 
         /* Desktop mouse wheel also moves the tab strip horizontally. */
-        const tabs = doc.getElementById('phoenix-workspace-tabs');
+        const tabs = doc.getElementById('phoenix-workspace-file-tabs');
         if (tabs) tabs.addEventListener('wheel', function (event) {
             if (Math.abs(event.deltaY) > Math.abs(event.deltaX) && tabs.scrollWidth > tabs.clientWidth) {
                 tabs.scrollLeft += event.deltaY;
@@ -1596,7 +1674,7 @@ $(function () {
         /* Drag empty areas like a touch screen. Form controls and buttons remain clickable. */
         let drag = null;
         doc.addEventListener('pointerdown', function (event) {
-            const inTabs = !!event.target.closest('#phoenix-workspace-tabs');
+            const inTabs = !!event.target.closest('#phoenix-workspace-file-tabs');
             if (event.pointerType !== 'mouse' || event.button !== 0) return;
             if (event.target.closest(INTERACTIVE_SELECTOR) && !(inTabs && !event.target.closest('.phoenix-new-workspace, [aria-label=\"탭 닫기\"]'))) return;
             const axis = inTabs ? 'x' : 'y';
