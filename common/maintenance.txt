@@ -1500,14 +1500,14 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-end="2026-11-26T13:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/11/QGawaiJNXOvbh4TAPqtd_1_');">
-                    <a href="javascript:alert('11월 26일(목) 13시 OPEN!');" class="modal-slider-link">
+                <li class="modal-slider-item swiper-slide" data-end="2026-11-22T13:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/11/sjKvWMlv8fplvCjvFlr3_1_');">
+                    <a href="javascript:alert('11월 22일(일) 13시 OPEN!');" class="modal-slider-link">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-start="2026-11-26T13:00:00"
+                <li class="modal-slider-item swiper-slide" data-start="2026-11-22T13:00:00"
                     data-end="2026-11-26T14:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/11/QGawaiJNXOvbh4TAPqtd_1_');">
+                    style="background-image: url('/api/editor/attach/view/default/2026/11/sjKvWMlv8fplvCjvFlr3_1_');">
                     <a href="/page/reservation/pyeongchang/snowpark/seasonpass" class="modal-slider-link"
                         target="_blank">
                     </a>
@@ -1548,14 +1548,14 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
-                <li class="modal-slider-item swiper-slide" data-end="2026-11-26T13:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/11/QGawaiJNXOvbh4TAPqtd_1_');">
-                    <a href="javascript:alert('11월 26일(목) 13시 OPEN!');" class="modal-slider-link">
+                <li class="modal-slider-item swiper-slide" data-end="2026-11-22T13:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/11/sjKvWMlv8fplvCjvFlr3_1_');">
+                    <a href="javascript:alert('11월 22일(일) 13시 OPEN!');" class="modal-slider-link">
                     </a>
                 </li>
-                <li class="modal-slider-item swiper-slide" data-start="2026-11-26T13:00:00"
+                <li class="modal-slider-item swiper-slide" data-start="2026-11-22T13:00:00"
                     data-end="2026-11-26T14:00:00"
-                    style="background-image: url('/api/editor/attach/view/default/2026/11/QGawaiJNXOvbh4TAPqtd_1_');">
+                    style="background-image: url('/api/editor/attach/view/default/2026/11/sjKvWMlv8fplvCjvFlr3_1_');">
                     <a href="/page/reservation/pyeongchang/snowpark/seasonpass" class="modal-slider-link"
                         target="_blank">
                     </a>
