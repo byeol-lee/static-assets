@@ -1505,6 +1505,11 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
+                <li class="modal-slider-item swiper-slide" data-end="2026-11-28T00:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/11/v8MARniKkptqKdJFJMUW_1_');">
+                    <a href="/page/board/event/150000047550" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
                 <li class="modal-slider-item swiper-slide" data-end="2026-11-22T13:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/11/c9D8LYD3RjS2TMD6jMdx_1_');">
                     <a href="javascript:alert('11월 22일(일) 13시 OPEN!');" class="modal-slider-link">
@@ -1553,6 +1558,11 @@
     <div class="modal-inner">
         <div class="modal-slider">
             <ul class="modal-slider-list swiper-wrapper">
+                <li class="modal-slider-item swiper-slide" data-end="2026-11-28T00:00:00"
+                    style="background-image: url('/api/editor/attach/view/default/2026/11/v8MARniKkptqKdJFJMUW_1_');">
+                    <a href="/page/pyeongchang/board/event/150000047550" class="modal-slider-link" target="_blank">
+                    </a>
+                </li>
                 <li class="modal-slider-item swiper-slide" data-end="2026-11-22T13:00:00"
                     style="background-image: url('/api/editor/attach/view/default/2026/11/c9D8LYD3RjS2TMD6jMdx_1_');">
                     <a href="javascript:alert('11월 22일(일) 13시 OPEN!');" class="modal-slider-link">
