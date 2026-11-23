@@ -4,32 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Phoenix HTML Generator</title>
+    <title>PHOENIX HOTELS &amp; RESORT</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="package-renewal-cms.css" />
+    <link rel="stylesheet" href="https://byeol-lee.github.io/static-assets/phoenix-html-generator/css/package-renewal-cms.css" />
 </head>
 
 <body>
 
-    <div id="phoenix-workspace-tabs" class="phoenix-workspace-tabs"></div>
+    <!-- Custom application menu (replaces the native Electron menu) -->
+    <nav id="phoenix-workspace-tabs" class="phoenix-workspace-tabs app-menu" aria-label="Application menu">
+        <div class="app-menu-dropdown">
+            <button type="button" class="app-menu-trigger" aria-haspopup="true" aria-expanded="false" role="menuitem" data-menu-action="new">New</button>
+            <button type="button" class="app-menu-trigger" aria-haspopup="true" aria-expanded="false" role="menuitem" data-menu-action="open-project">Open</button>
+            <button type="button" class="app-menu-trigger" aria-haspopup="true" aria-expanded="false" role="menuitem" data-menu-action="save-project">Save Work File</button>
+            <button type="button" class="app-menu-trigger" aria-haspopup="true" aria-expanded="false" role="menuitem" data-menu-action="save-html">Save HTML</button>
+            <button type="button" class="app-menu-trigger" aria-haspopup="true" aria-expanded="false" role="menuitem" data-menu-action="refresh">Reload</button>
+            <button type="button" class="app-menu-trigger" aria-haspopup="true" aria-expanded="false" role="menuitem" data-menu-action="help">Help</button>
+            
+            <!-- <button type="button" class="app-menu-trigger" aria-haspopup="true" aria-expanded="false">APP</button>
+            <div class="app-menu-items" role="menu">
+                <button type="button" role="menuitem" data-menu-action="new">+ NEW</button>
+                <div class="app-menu-divider"></div>
+                <button type="button" role="menuitem" data-menu-action="open-project">Open</button>
+                <button type="button" role="menuitem" data-menu-action="save-project">Save Work File</button>
+                <button type="button" role="menuitem" data-menu-action="save-project-as">Save Work File As</button>
+                <div class="app-menu-divider"></div>
+                <button type="button" role="menuitem" data-menu-action="save-html">Save HTML</button>
+                <button type="button" role="menuitem" data-menu-action="save-html-as">Save HTML As</button>
+                <div class="app-menu-divider"></div>
+                <button type="button" role="menuitem" data-menu-action="refresh">Refresh</button>
+                <button type="button" role="menuitem" data-menu-action="exit">Exit</button>
+                <div class="app-menu-divider"></div>
+                <button type="button" role="menuitem" data-menu-action="help">Help</button>
+            </div> -->
+        </div>
+        <!-- <strong class="app-menu-brand">PHOENIX HOTELS &amp; RESORT</strong> -->
+    </nav>
+
+    <!-- Workspace file tabs -->
+    <div id="phoenix-workspace-file-tabs" class="phoenix-workspace-tabs phoenix-workspace-file-tabs"></div>
     <div class="app-container app-container-workspace">
         <div class="admin-panel">
             <!-- <h2>객실 패키지</h2> -->
             <div class="form-section">
                 <h3>1. 메인 섹션</h3>
                 <div class="form-group">
-                    <label for="in-property">구분</label>
-                    <select id="in-property" required>
-                        <option value="" disabled selected>지점 선택</option>
-                        <option value="PHOENIX PARK">PHOENIX PARK</option>
-                        <option value="PHOENIX ISLAND">PHOENIX ISLAND</option>
-                        <option value="PLAYCE CAMP by PHOENIX">PLAYCE CAMP by PHOENIX</option>
-                    </select>
+                    <label for="in-property">구분<span class="required-mark">＊</span></label>
+                    <!-- <div class="select-required"> -->
+                        <select id="in-property" required>
+                            <option value="" disabled selected>지점 선택</option>
+                            <option value="PHOENIX PARK">PHOENIX PARK</option>
+                            <option value="PHOENIX ISLAND">PHOENIX ISLAND</option>
+                            <option value="PLAYCE CAMP by PHOENIX">PLAYCE CAMP by PHOENIX</option>
+                        </select>
+                    <!-- </div> -->
                 </div>
 
                 <div class="form-group">
                     <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
-                        <label style="margin:0;">객실 패키지 사진(1920×1080)</label>
+                        <label style="margin:0;">객실 패키지 사진(1920×1080)<span class="required-mark">＊</span></label>
                         <div style="display:flex;align-items:center;justify-content:flex-end;gap:8px;min-width:0;">
                             <span id="main-img-file-name" class="file-name-display" style="font-size:11px;color:#333;display:inline-block;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">example.jpg</span>
                             <label for="in-main-img" class="custom-file-btn" style="flex-shrink:0;">파일 선택</label>
@@ -43,7 +77,7 @@
                     <input type="text" id="in-main-badge" placeholder="혜택<br />추가">
                 </div>
                 <div class="form-group">
-                    <label>객실 패키지명</label>
+                    <label>객실 패키지명<span class="required-mark">＊</span></label>
                     <input type="text" id="in-main-title" placeholder="객실 패키지명">
                 </div>
                 <div class="form-group">
@@ -51,7 +85,7 @@
                     <textarea id="in-main-desc" placeholder="객실 패키지 설명"></textarea>
                 </div>
                 <div class="form-group">
-                    <label>예약 기간</label>
+                    <label>예약 기간<span class="required-mark">＊</span></label>
                     <div class="date-range-control"><input type="hidden" id="in-info-reserve-period"
                             class="date-range-display">
                         <div class="date-range-pickers"><label class="date-picker-field"><span
@@ -66,7 +100,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>투숙 기간</label>
+                    <label>투숙 기간<span class="required-mark">＊</span></label>
                     <div class="date-range-control"><input type="hidden" id="in-info-stay-period"
                             class="date-range-display">
                         <div class="date-range-pickers"><label class="date-picker-field"><span
@@ -109,7 +143,7 @@
             <div class="form-section">
                 <h3>5. 이용 요금</h3>
                 <div id="stay-form-container"></div>
-                <button type="button" class="btn-add-stay" id="btn-add-stay">+ 항목 추가</button>
+                <button type="button" class="btn-add-stay" id="btn-add-stay">+ 요금 추가</button>
             </div>
         </div>
 
@@ -146,9 +180,12 @@
             </div>
         </div>
     </div>
+    <footer class="app-footer">
+        <p>Copyright 2026. ○○○. All Rights Reserved.</p>
+    </footer>
 
     <!-- 분리된 외부 JS 파일 로드 -->
-    <script src="package-renewal-cms.js"></script>
+    <script src="https://byeol-lee.github.io/static-assets/phoenix-html-generator/js/package-renewal-cms.js"></script>
 
 </body>
 
