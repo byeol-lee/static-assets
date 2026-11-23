@@ -19,7 +19,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조리 941-1<br />
         (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 본 프로그램은 상기 안내된 주소에서 먼저 집결한 후, 가이드가 직접 차량을 운전하거나 도보로 프로그램 진행 장소까지 동행합니다.</p>
         <p class="ref-bu-list">※ 소요 시간: 약 180분</p>
         <p class="ref-bu-list">※ 포함 사항: 가시리 억새밭 투어 + 동굴 탐방 + 녹차 한 잔과 족욕 타임</p>
         <p class="ref-bu-list">※ 운동화와 걷기 편한 복장으로 참여 부탁드립니다.</p>
@@ -51,7 +51,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조리 941-1<br />
         (휘닉스 아일랜드에서 차량으로 약 5분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 본 프로그램은 상기 안내된 주소에서 먼저 집결한 후, 가이드가 직접 차량을 운전하거나 도보로 프로그램 진행 장소까지 동행합니다.</p>
         <p class="ref-bu-list">※ 소요 시간: 약 180분</p>
         <p class="ref-bu-list">※ 포함 사항: 현지 가이드 동행 + 대나무 낚시대 제공</p>
         <p class="ref-bu-list">※ 운동화와 걷기 편한 복장으로 참여 부탁드립니다.</p>
@@ -467,7 +467,7 @@ const activities = [
         <p class="ref-bu-list">※ 당일 날씨 및 기상 상황에 따라 가장 적합한 오름을 선정하여 진행합니다.</p>
         <p class="ref-bu-list">※ 장소: 제주 서귀포시 성산읍 오조리 941-1<br />
         (휘닉스 아일랜드에서 차량으로 약 8분 소요)</p>
-        <p class="ref-bu-list">※ 본 프로그램은 집결 장소까지는 개별 이동 이후, 가이드분이 운전하여 당일 기상 및 별 관측 환경에 따라 선정된 제주 동쪽 지역의 오름으로 함께 이동하여 프로그램을 진행합니다.</p>
+        <p class="ref-bu-list">※ 본 프로그램은 상기 안내된 주소에서 먼저 집결한 후, 가이드가 직접 차량을 운전하거나 도보로 프로그램 진행 장소까지 동행합니다.</p>
         `,
         notice: `
         <ul class="dot-bu-list">
@@ -509,7 +509,7 @@ const activities = [
         priceGuest: `40,000원`,
         information: `
         <p class="ref-bu-list">※ 소요 시간: 약 120분</p>
-        <p class="ref-bu-list">※ 예약 접수 후 가이드와의 유선 미팅을 통해 당일 기상 상황에 적합한 체험 장소를 선정하며, 안내받은 장소까지 개별 이동해 주셔야 합니다.</p>
+        <p class="ref-bu-list">※ 본 프로그램은 상기 안내된 주소에서 먼저 집결한 후, 가이드가 직접 차량을 운전하거나 도보로 프로그램 진행 장소까지 동행합니다.</p>
         <p class="ref-bu-list">※ 흙길 위주로 진행되는 프로그램으로 편안한 복장과 운동화 착용을 권장드립니다.</p>
         `,
         notice: `
