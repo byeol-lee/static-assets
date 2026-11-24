@@ -1,5 +1,52 @@
 const activities = [
     {
+        program: 'zarolo-museum',
+        title: 'Zarolo Museum',
+        subtitle: 'An indoor media art museum featuring glasses-free 3D and holographic experiences',
+        description: `
+        Discover Zarolo Museum, a unique art space in Jungmun, Jeju.<br />
+        Original artworks and thoughtfully curated exhibitions offer an artistic experience away from the everyday.<br />
+        <br />
+        Take your time exploring each artwork and finding fresh inspiration. The museum is a great stop for a date or a Jeju trip with friends or family.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/11/QhQB84brSPdNepjfHOyM_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/11/QhQB84brSPdNepjfHOyM_1_',
+            '/api/editor/attach/view/default/2026/11/fHGFK4ukY7syRrrgyQFn_1_',
+            '/api/editor/attach/view/default/2026/11/qrT9REZet72hVp9X6YU8_1_',
+            '/api/editor/attach/view/default/2026/11/DnnFFjjdpkEWt3Oks0cC_1_',
+            '/api/editor/attach/view/default/2026/11/CnKgsFxLeGP75ZSfCJwc_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `
+        10:00 ~ 20:00<br />
+        (Last admission at 18:30)
+        `,
+        priceGeneral: `
+        Adults KRW 20,000<br />
+        Youth KRW 15,000<br />
+        Children KRW 13,000<br />
+        Seniors KRW 10,000
+        `,
+        priceGuest: `30% off(for up to 4 guests)`,
+        information: `
+        <p class="ref-bu-list">※ Location: Zarolo Museum, 227-20, Jungmungwangwang-ro, Seogwipo-si, Jeju-do, Republic of Korea<br />
+        (Takes approx. 1 hour and 23 minutes drive from Playce Camp)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>Advance reservations are not required. Present proof of your stay at the ticket office to receive the discount.</li>
+            <li>This offer cannot be combined with other discounts or benefits.</li>
+        </ul>
+        `,
+        reservation: false,
+        inquiries: `Zarolo Museum <a href="tel:+82648058371">+82-64-805-8371</a>`,
+        display: true,
+    },
+    {
         program: 'secret-grass-tour',
         title: 'Secret Silver Grass Tour',
         subtitle: `A special opportunity to discover Jeju's hidden scenery and unwind both body and mind.`,
