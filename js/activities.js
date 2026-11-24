@@ -9,12 +9,12 @@ const activities = [
         <br />
         작품 하나하나를 감상하며 새로운 영감을 얻고, 여유로운 시간을 보낼 수 있어 연인과의 데이트부터 친구, 가족과 함께하는 제주 여행 코스로도 추천합니다.
         `,
-        thumbnail: '/api/editor/attach/view/default/2026/11/QhQB84brSPdNepjfHOyM_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/11/DnnFFjjdpkEWt3Oks0cC_1_',
         heroImage: [
+            '/api/editor/attach/view/default/2026/11/DnnFFjjdpkEWt3Oks0cC_1_',
             '/api/editor/attach/view/default/2026/11/QhQB84brSPdNepjfHOyM_1_',
             '/api/editor/attach/view/default/2026/11/fHGFK4ukY7syRrrgyQFn_1_',
             '/api/editor/attach/view/default/2026/11/qrT9REZet72hVp9X6YU8_1_',
-            '/api/editor/attach/view/default/2026/11/DnnFFjjdpkEWt3Oks0cC_1_',
             '/api/editor/attach/view/default/2026/11/CnKgsFxLeGP75ZSfCJwc_1_',
         ],
         tags: ['REST', 'HEALING'],
