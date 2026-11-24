@@ -1,5 +1,52 @@
 const activities = [
     {
+        program: 'zarolo-museum',
+        title: 'Zarolo Museum',
+        subtitle: 'An indoor media art museum featuring glasses-free 3D and holographic experiences',
+        description: `
+        Discover Zarolo Museum, a unique art space in Jungmun, Jeju.<br />
+        Original artworks and thoughtfully curated exhibitions offer an artistic experience away from the everyday.<br />
+        <br />
+        Take your time exploring each artwork and finding fresh inspiration. The museum is a great stop for a date or a Jeju trip with friends or family.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/11/QhQB84brSPdNepjfHOyM_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/11/QhQB84brSPdNepjfHOyM_1_',
+            '/api/editor/attach/view/default/2026/11/fHGFK4ukY7syRrrgyQFn_1_',
+            '/api/editor/attach/view/default/2026/11/qrT9REZet72hVp9X6YU8_1_',
+            '/api/editor/attach/view/default/2026/11/DnnFFjjdpkEWt3Oks0cC_1_',
+            '/api/editor/attach/view/default/2026/11/CnKgsFxLeGP75ZSfCJwc_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `
+        10:00 ~ 20:00<br />
+        (Last admission at 18:30)
+        `,
+        priceGeneral: `
+        Adults KRW 20,000<br />
+        Youth KRW 15,000<br />
+        Children KRW 13,000<br />
+        Seniors KRW 10,000
+        `,
+        priceGuest: `30% off(for up to 4 guests)`,
+        information: `
+        <p class="ref-bu-list">※ Location: Zarolo Museum, 227-20, Jungmungwangwang-ro, Seogwipo-si, Jeju-do, Republic of Korea<br />
+        (Takes approx. 1 hour and 24 minutes drive from Phoenix Island)</p>
+        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>Advance reservations are not required. Present proof of your stay at the ticket office to receive the discount.</li>
+            <li>This offer cannot be combined with other discounts or benefits.</li>
+        </ul>
+        `,
+        reservation: false,
+        inquiries: `Zarolo Museum <a href="tel:+82648058371">+82-64-805-8371</a>`,
+        display: true,
+    },
+    {
         program: 'secret-grass-tour',
         title: 'Secret Silver Grass Tour',
         subtitle: `A special opportunity to discover Jeju's hidden scenery and unwind both body and mind.`,
@@ -19,7 +66,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: 23-20, Iljudong-ro 4120beon-gil, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea<br />
         (Takes approx. 5-minute drive from Phoenix Island)</p>
-        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        <p class="ref-bu-list">※ Please meet at the address listed above. Your guide will then drive you or walk with you to the program venue.</p>
         <p class="ref-bu-list">※ Duration: Approx. 180 minutes</p>
         <p class="ref-bu-list">※ Includes: Gasiri silver grass field tour + cave exploration + a cup of green tea and foot bath</p>
         <p class="ref-bu-list">※ Please wear sneakers and comfortable clothing suitable for walking.</p>
@@ -51,7 +98,7 @@ const activities = [
         information: `
         <p class="ref-bu-list">※ Location: 23-20, Iljudong-ro 4120beon-gil, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea<br />
         (Takes approx. 5-minute drive from Phoenix Island)</p>
-        <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
+        <p class="ref-bu-list">※ Please meet at the address listed above. Your guide will then drive you or walk with you to the program venue.</p>
         <p class="ref-bu-list">※ Duration: Approx. 180 minutes</p>
         <p class="ref-bu-list">※ Includes: Local guide + bamboo fishing rod</p>
         <p class="ref-bu-list">※ Please wear sneakers and comfortable clothing suitable for walking.</p>
@@ -136,44 +183,44 @@ const activities = [
         display: true,
     },
     {
-		program: 'buddy-ride',
-		title: 'Buddy Ride',
-		subtitle: 'An electric bike tour exploring the beautiful nature and hidden alleys of eastern Jeju.',
-		description: `
+        program: 'buddy-ride',
+        title: 'Buddy Ride',
+        subtitle: 'An electric bike tour exploring the beautiful nature and hidden alleys of eastern Jeju.',
+        description: `
         Ride at a leisurely pace through Jeju’s scenic landscapes of coastline, grasslands, and volcanic hills.<br />
         Enjoy a variety of views along routes ranging from flat coastal roads to challenging uphill trails.
         `,
-		thumbnail: '/api/editor/attach/view/default/2026/10/GhVK4Loa4o3WMbU2TBww_1_',
-		heroImage: [
-			'/api/editor/attach/view/default/2026/10/GhVK4Loa4o3WMbU2TBww_1_',
-			'/api/editor/attach/view/default/2026/10/pgTluDKrOH4umD7gdy4X_1_',
-		],
-		tags: ['REST', 'HEALING'],
-		category: 'REST',
-		date: ``,
-		duration: `08:00 ~ 20:00`,
-		priceGeneral: `KRW 30,000`,
-		priceGuest: `
+        thumbnail: '/api/editor/attach/view/default/2026/10/GhVK4Loa4o3WMbU2TBww_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/10/GhVK4Loa4o3WMbU2TBww_1_',
+            '/api/editor/attach/view/default/2026/10/pgTluDKrOH4umD7gdy4X_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `08:00 ~ 20:00`,
+        priceGeneral: `KRW 30,000`,
+        priceGuest: `
         KRW 25,000<br />
         (Electric bike rental + Guided tour + Photography assistance)
         `,
-		information: `
+        information: `
         <p class="ref-bu-list">※ Location: 941-1, Ojo-ri, Seongsan-eup, Seogwipo-si, Jeju-do, Republic of Korea<br />
         (Takes approx. 8-minute drive from Phoenix Island)</p>
         <p class="ref-bu-list">※ Please make your own way to the program venue.</p>
         <p class="ref-bu-list">※ Electric bikes are heavier and faster than regular bicycles, so children under 130 cm tall may have difficulty riding them.</p>
         <p class="ref-bu-list">※ Children can join the tour in a provided child trailer. Please take this into consideration before booking.</p>
         `,
-		notice: `
+        notice: `
         <ul class="dot-bu-list">
             <li>Reservations are available for groups of 2 or more.</li>
             <li>After booking, the guide will coordinate the schedule and time with you.</li>
             <li>The schedule may change depending on weather conditions. The activity may be unavailable in heavy rain.</li>
         </ul>
         `,
-		reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScN8sfwXqEvGVjD7Yomqba8AgjelOo2nceT7mo8NXj7X1HbWg/viewform?usp=publish-editor',
+        reservation: 'https://docs.google.com/forms/d/e/1FAIpQLScN8sfwXqEvGVjD7Yomqba8AgjelOo2nceT7mo8NXj7X1HbWg/viewform?usp=publish-editor',
         inquiries: ``,
-		display: true,
+        display: true,
     },
     {
         program: 'aquaplanet',
@@ -467,7 +514,7 @@ const activities = [
         <p class="ref-bu-list">※ The most suitable oreum will be selected based on the weather and conditions on the day.</p>
         <p class="ref-bu-list">※ Location: 941-1, Ojo-ri, Seongsan-eup, Seogwipo-si, Jeju<br />
         (Takes approx. 8-minute drive from Phoenix Island)</p>
-        <p class="ref-bu-list">※ Guests are required to travel individually to the meeting point. From there, the guide will drive the group to an oreum in eastern Jeju selected according to the weather and stargazing conditions on the day.</p>
+        <p class="ref-bu-list">※ Please meet at the address listed above. Your guide will then drive you or walk with you to the program venue.</p>
         `,
         notice: `
         <ul class="dot-bu-list">
@@ -509,7 +556,7 @@ const activities = [
         priceGuest: `KRW 40,000`,
         information: `
         <p class="ref-bu-list">※ Duration: Approx. 120 minutes</p>
-        <p class="ref-bu-list">※ After submitting a reservation request, the experience location suitable for the weather conditions on the day will be selected through a phone consultation with the guide. Guests are required to travel individually to the designated location.</p>
+        <p class="ref-bu-list">※ Please meet at the address listed above. Your guide will then drive you or walk with you to the program venue.</p>
         <p class="ref-bu-list">※ As the program mainly takes place on unpaved forest trails, comfortable clothing and sneakers are recommended.</p>
         `,
         notice: `
