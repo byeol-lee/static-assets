@@ -1,6 +1,6 @@
 const activities = [
     {
-        program: 'secret-grass-tour',
+        program: 'zarolo-museum',
         title: '자롤로 뮤지엄',
         subtitle: '안경 없이 즐기는 3D·홀로그램 기반 실내 미디어 아트 체험 뮤지엄',
         description: `
