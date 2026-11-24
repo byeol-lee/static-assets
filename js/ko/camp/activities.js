@@ -1,6 +1,53 @@
 const activities = [
     {
         program: 'secret-grass-tour',
+        title: '자롤로 뮤지엄',
+        subtitle: '안경 없이 즐기는 3D·홀로그램 기반 실내 미디어 아트 체험 뮤지엄',
+        description: `
+        제주 중문에서 만나는 특별한 예술 공간, 자롤로 뮤지엄을 소개합니다.<br />
+        독창적인 작품과 감각적인 전시가 어우러진 공간에서 일상과는 다른 예술적 경험을 즐길 수 있습니다.<br />
+        <br />
+        작품 하나하나를 감상하며 새로운 영감을 얻고, 여유로운 시간을 보낼 수 있어 연인과의 데이트부터 친구, 가족과 함께하는 제주 여행 코스로도 추천합니다.
+        `,
+        thumbnail: '/api/editor/attach/view/default/2026/11/QhQB84brSPdNepjfHOyM_1_',
+        heroImage: [
+            '/api/editor/attach/view/default/2026/11/QhQB84brSPdNepjfHOyM_1_',
+            '/api/editor/attach/view/default/2026/11/fHGFK4ukY7syRrrgyQFn_1_',
+            '/api/editor/attach/view/default/2026/11/qrT9REZet72hVp9X6YU8_1_',
+            '/api/editor/attach/view/default/2026/11/DnnFFjjdpkEWt3Oks0cC_1_',
+            '/api/editor/attach/view/default/2026/11/CnKgsFxLeGP75ZSfCJwc_1_',
+        ],
+        tags: ['REST', 'HEALING'],
+        category: 'REST',
+        date: ``,
+        duration: `
+        10:00 ~ 20:00<br />
+        (18:30 입장 마감)
+        `,
+        priceGeneral: `
+        성인 20,000원<br />
+        청소년 15,000원<br />
+        어린이 13,000원<br />
+        경로 10,000원<br />
+        `,
+        priceGuest: `30% 할인(최대 4인까지)`,
+        information: `
+        <p class="ref-bu-list">※ 장소: 제주 서귀포시 중문관광로 227-20 자롤로 뮤지엄<br />
+        (플레이스 캠프에서 차량으로 약 1시간 23분 소요)</p>
+        <p class="ref-bu-list">※  본 프로그램은 진행 장소까지 개별 이동해주셔야 합니다.</p>
+        `,
+        notice: `
+        <ul class="dot-bu-list">
+            <li>별도의 사전 예약 없이 이용 가능하며, 매표소 방문 시 투숙 내역을 제시하시면 할인 혜택이 적용됩니다.</li>
+            <li>타 할인 및 혜택과 중복 적용되지 않습니다.</li>
+        </ul>
+        `,
+        reservation: false,
+        inquiries: `자롤로 뮤지엄 <a href="tel:0648058371">064-805-8371</a>`,
+        display: true,
+    },
+    {
+        program: 'secret-grass-tour',
         title: '시크릿 억새 투어',
         subtitle: '제주의 숨은 풍경을 발견하고, 지친 몸과 마음까지 쉬어가는 특별한 시간',
         description: `
