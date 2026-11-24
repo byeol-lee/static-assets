@@ -1659,6 +1659,18 @@
     <div class="main-thumb-list">
         <ul class="list">
             <li class="item">
+                <a href="/static/playcecamp/activities/program?program=zarolo-museum"
+                    class="link promotion-link countable-banner">
+                    <div class="thumb">
+                        <img src="/api/editor/attach/view/default/2026/11/DnnFFjjdpkEWt3Oks0cC_1_" alt="" class="img">
+                    </div>
+                    <div class="con">
+                        <div class="title">자롤로 뮤지엄</div>
+                        <div class="info">안경 없이 즐기는 3D·홀로그램 기반 실내 미디어 아트 체험 뮤지엄</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
                 <a href="/static/playcecamp/activities/program?program=secret-grass-tour"
                     class="link promotion-link countable-banner">
                     <div class="thumb">
@@ -1739,19 +1751,6 @@
                     <div class="con">
                         <div class="title">제주 한 장, 감성 스냅</div>
                         <div class="info">제주 감성 가득한 장소를 선택해 특별한 순간을 사진으로 남겨 보세요.</div>
-                    </div>
-                </a>
-            </li>
-
-            <li class="item">
-                <a href="/static/playcecamp/activities/program?program=starlight-oreum"
-                    class="link promotion-link countable-banner">
-                    <div class="thumb">
-                        <img src="/api/editor/attach/view/default/2026/09/6J6U6GBjkQ97cta89tMP_1_" alt="" class="img">
-                    </div>
-                    <div class="con">
-                        <div class="title">별빛 오름 투어</div>
-                        <div class="info">제주의 밤을 가장 가까이 만나는 시간</div>
                     </div>
                 </a>
             </li>
