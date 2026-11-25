@@ -9,12 +9,12 @@ const activities = [
         <br />
         Take your time exploring each artwork and finding fresh inspiration. The museum is a great stop for a date or a Jeju trip with friends or family.
         `,
-        thumbnail: '/api/editor/attach/view/default/2026/11/QhQB84brSPdNepjfHOyM_1_',
+        thumbnail: '/api/editor/attach/view/default/2026/11/DnnFFjjdpkEWt3Oks0cC_1_',
         heroImage: [
+            '/api/editor/attach/view/default/2026/11/DnnFFjjdpkEWt3Oks0cC_1_',
             '/api/editor/attach/view/default/2026/11/QhQB84brSPdNepjfHOyM_1_',
             '/api/editor/attach/view/default/2026/11/fHGFK4ukY7syRrrgyQFn_1_',
             '/api/editor/attach/view/default/2026/11/qrT9REZet72hVp9X6YU8_1_',
-            '/api/editor/attach/view/default/2026/11/DnnFFjjdpkEWt3Oks0cC_1_',
             '/api/editor/attach/view/default/2026/11/CnKgsFxLeGP75ZSfCJwc_1_',
         ],
         tags: ['REST', 'HEALING'],
