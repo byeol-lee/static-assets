@@ -2029,10 +2029,10 @@
                     let htmlVal = $(this).html();
                     if (htmlVal) {
                         if (htmlVal.indexOf('타월/생수') !== -1) {
-                            $(this).html(htmlVal.replace('타월/생수', '타월'));
+                            $(this).html(htmlVal.replace('타월/생수', '대여 용품'));
                         }
                         if (htmlVal.indexOf('Towel/Bottled water') !== -1) {
-                            $(this).html(htmlVal.replace('Towel/Bottled water', 'Towel'));
+                            $(this).html(htmlVal.replace('Towel/Bottled water', 'Rental items'));
                         }
                     }
                 });
