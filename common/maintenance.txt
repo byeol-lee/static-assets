@@ -2013,7 +2013,9 @@
                     "생수 1L(1개)",
                     "생수(2개)",
                     "1L Bottled water(1 bottle)",
-                    "Bottled water(2 bottles)"
+                    "Bottled water(2 bottles)",
+                    "에어 드레서",
+                    "Air dresser"
                 ];
 
                 $('li, p, td').each(function () {
